@@ -1,0 +1,14 @@
+% Autor: Alfredo Sánchez Alberca (email:asalber@ceu.es)
+
+% Comando para notas: \myMarginnote{Your Text}
+% Comment on the \lineskiplimit=-\maxdimen:
+% See http://tex.stackexchange.com/questions/49072/
+% Without it the line spacing of the normal text was changed (ugly).
+\newcommand{\myMarginnote}[1]{%
+	\marginnote{% requiere el paquete marginnote
+		\ifthispageodd{\RaggedRight}{\RaggedLeft}% requiere el paquete ragged2e
+		\color{color2}%
+%		\lineskiplimit=-\maxdimen% 
+		\normalfont\sffamily\scriptsize%
+		#1}%
+}

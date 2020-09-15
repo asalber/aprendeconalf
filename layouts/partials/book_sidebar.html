@@ -1,0 +1,25 @@
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  {{ if eq site.Params.search.engine 1 }}
+  <input name="q" type="search" class="form-control" placeholder="{{ i18n "search_placeholder" }}" autocomplete="off">
+  {{ end }}
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  {{ $pages := where .Site.Pages "Section" .Section }}
+  {{ $parent := .Parent }}
+  {{ $current_node := . }}
+ 
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="{{ $parent.RelPermalink }}">{{ $parent.LinkTitle | default $parent.Title }}</a>
+    <ul class="nav docs-sidenav">
+      {{- range $pages.ByWeight -}}
+        {{ if eq .Parent $parent }}
+          <li class="{{ if and .File $current_node.File | and (eq .File.UniqueID $current_node.File.UniqueID) }}active{{ end }}"><a href="{{ .RelPermalink }}">{{ .LinkTitle | default .Title }}</a></li>
+        {{ end }}  
+      {{- end -}}
+    </ul>
+</nav>

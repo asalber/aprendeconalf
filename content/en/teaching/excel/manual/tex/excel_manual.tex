@@ -1,0 +1,129 @@
+% Autor: Alfredo Sánchez Alberca (email:asalber@ceu.es)
+
+% -----------------------------------------------------------------------------------------
+%   PREÁMBULO
+% -----------------------------------------------------------------------------------------
+
+% Documentclass definition
+\input{preamble/document_class.tex}
+
+% Additional packages of the KOMA-Script family
+\input{preamble/koma_script_packages.tex}
+
+% Page settings (margins, line spacing, indent etc.)
+\input{preamble/page_layout.tex}
+
+% Colors settings
+\input{preamble/colors_settings.tex}
+
+% Common packages
+\input{preamble/packages.tex} 
+
+% List settings
+\input{preamble/lists_settings.tex}
+
+% Tables settings
+\input{preamble/tables_settings.tex}
+
+% Theorems settings
+\input{preamble/theorems_settings.tex} 
+
+% Table of contents settings
+\input{preamble/table_of_contents_settings.tex}
+
+% Floating evironments settings
+\input{preamble/floatings_settings.tex}
+
+% Section header settings
+\input{preamble/section_header_settings.tex}
+
+% Header and footer settings
+\input{preamble/header_footer_settings.tex}
+
+% Margin notes settings
+\input{preamble/margin_notes_settings.tex}
+
+% Paragrah optimization (avoid overfull warnings)
+\input{preamble/paragrah_optimization.tex}
+
+% Pdf output settings
+\input{preamble/pdf_settings.tex} 
+
+% Bibliography
+% \usepackage[
+%     backend=biber,
+%     style=apa, 
+%     sortlocale=es_ES,
+%     url=true,    
+%     doi=false,
+%     language=auto 
+% ]{biblatex}
+% 
+% \DeclareLanguageMapping{english}{english-apa}
+% 
+% \addbibresource{bibliography/bibliography.bib}
+
+% Own macros
+\input{preamble/macros.tex}
+
+% -----------------------------------------------------------------------------------------
+%   DOCUMENT
+% -----------------------------------------------------------------------------------------
+
+\begin{document}
+\frontmatter
+% Title page
+\input{chapters/title_book.tex}
+
+% Color of body text
+\color{mygray}
+
+% License
+\input{license}
+
+% Clean page after title
+\cleardoublepage
+
+% Header and footer activation
+\pagestyle{scrheadings}
+
+% Roman numeration activation
+\pagenumbering{roman}
+
+% Start with page 1
+\setcounter{page}{1}
+
+% Prologue
+%\input{chapters/prologo.tex}
+
+% Abstract
+%\input{chapters/resumen.tex}
+
+% Table of contents, images, lists, etc. 
+\input{chapters/table_of_contents.tex}
+ 
+% Clean page afte table of contents
+\cleardoublepage
+
+\mainmatter
+% Arabic numeration activation 
+\pagenumbering{arabic}
+
+
+
+% CHAPTERS
+\input{chapters/introduction.tex} 
+\input{chapters/formatting.tex} 
+\input{chapters/formulas.tex} 
+\input{chapters/charts.tex} 
+\input{chapters/databases.tex} 
+ 
+% % BIBLIOGRAPHY
+% \printbibliography
+% 
+% % APENDIX
+% \appendix
+ 
+\end{document}
+
+

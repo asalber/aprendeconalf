@@ -1,0 +1,4 @@
+ To convert a markdown file to a latex file use 
+ multimarkdown -t latex -b file.md 
+ or 
+ mmd2tex file.md

@@ -1,0 +1,153 @@
+\BOOKMARK [0][]{toc.0}{\315ndice de contenidos}{}% 1
+\BOOKMARK [0][]{chapter*.3}{List of Figures}{}% 2
+\BOOKMARK [0][]{chapter.1}{1 Introduction to Excel}{}% 3
+\BOOKMARK [1][-]{section.1.1}{1.1 What is a spreadsheet?}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{1.2 Excel 2010 main window}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{1.3 Excel 2010 ribbon}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 Contextual tabs}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Access dialogs}{section.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Contextual menu}{section.1.3}% 9
+\BOOKMARK [1][-]{section.1.4}{1.4 Workbooks, worksheets, rows, columns and cells}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 Ranges of cells}{section.1.4}% 11
+\BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 Selecting cells, rows, columns, ranges and worksheets}{section.1.4}% 12
+\BOOKMARK [1][-]{section.1.5}{1.5 Data edition}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.5.1}{1.5.1 Insert data}{section.1.5}% 14
+\BOOKMARK [2][-]{subsection.1.5.2}{1.5.2 Delete data}{section.1.5}% 15
+\BOOKMARK [2][-]{subsection.1.5.3}{1.5.3 Remove cells, rows, columns and worksheets}{section.1.5}% 16
+\BOOKMARK [2][-]{subsection.1.5.4}{1.5.4 Insert cells, rows, columns and worksheets}{section.1.5}% 17
+\BOOKMARK [2][-]{subsection.1.5.5}{1.5.5 Cut, copy and paste}{section.1.5}% 18
+\BOOKMARK [2][-]{subsection.1.5.6}{1.5.6 Autofill}{section.1.5}% 19
+\BOOKMARK [2][-]{subsection.1.5.7}{1.5.7 Undo and redo}{section.1.5}% 20
+\BOOKMARK [1][-]{section.1.6}{1.6 Column and row sizing}{chapter.1}% 21
+\BOOKMARK [1][-]{section.1.7}{1.7 File management}{chapter.1}% 22
+\BOOKMARK [2][-]{subsection.1.7.1}{1.7.1 Save a file}{section.1.7}% 23
+\BOOKMARK [2][-]{subsection.1.7.2}{1.7.2 Open a file}{section.1.7}% 24
+\BOOKMARK [2][-]{subsection.1.7.3}{1.7.3 Create a new workbook}{section.1.7}% 25
+\BOOKMARK [2][-]{subsection.1.7.4}{1.7.4 Close a workbook}{section.1.7}% 26
+\BOOKMARK [1][-]{section.1.8}{1.8 Exporting and importing data}{chapter.1}% 27
+\BOOKMARK [2][-]{subsection.1.8.1}{1.8.1 Export to csv format}{section.1.8}% 28
+\BOOKMARK [2][-]{subsection.1.8.2}{1.8.2 Import from csv format}{section.1.8}% 29
+\BOOKMARK [1][-]{section.1.9}{1.9 Getting help}{chapter.1}% 30
+\BOOKMARK [0][]{chapter.2}{2 Formatting data}{}% 31
+\BOOKMARK [1][-]{section.2.1}{2.1 Data types}{chapter.2}% 32
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Formatting numbers}{section.2.1}% 33
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Formatting dates and times}{section.2.1}% 34
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Formatting text}{section.2.1}% 35
+\BOOKMARK [1][-]{section.2.2}{2.2 Align cell contents}{chapter.2}% 36
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Horizontal alignment}{section.2.2}% 37
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Vertical alignment}{section.2.2}% 38
+\BOOKMARK [1][-]{section.2.3}{2.3 Font properties}{chapter.2}% 39
+\BOOKMARK [1][-]{section.2.4}{2.4 Borders and background}{chapter.2}% 40
+\BOOKMARK [1][-]{section.2.5}{2.5 Merge cells}{chapter.2}% 41
+\BOOKMARK [1][-]{section.2.6}{2.6 Copy and paste format}{chapter.2}% 42
+\BOOKMARK [1][-]{section.2.7}{2.7 Conditional formatting}{chapter.2}% 43
+\BOOKMARK [1][-]{section.2.8}{2.8 Predefined styles}{chapter.2}% 44
+\BOOKMARK [0][]{chapter.3}{3 Calculus with formulas}{}% 45
+\BOOKMARK [1][-]{section.3.1}{3.1 Enter formulas}{chapter.3}% 46
+\BOOKMARK [1][-]{section.3.2}{3.2 Using relative and absolutes cell references in formulas}{chapter.3}% 47
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Naming cells and ranges}{section.3.2}% 48
+\BOOKMARK [1][-]{section.3.3}{3.3 Functions}{chapter.3}% 49
+\BOOKMARK [1][-]{section.3.4}{3.4 Numeric functions}{chapter.3}% 50
+\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 SUM function}{section.3.4}% 51
+\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 SUMIF function}{section.3.4}% 52
+\BOOKMARK [2][-]{subsection.3.4.3}{3.4.3 COUNT function}{section.3.4}% 53
+\BOOKMARK [2][-]{subsection.3.4.4}{3.4.4 COUNTIF function}{section.3.4}% 54
+\BOOKMARK [2][-]{subsection.3.4.5}{3.4.5 MIN function}{section.3.4}% 55
+\BOOKMARK [2][-]{subsection.3.4.6}{3.4.6 MAX function}{section.3.4}% 56
+\BOOKMARK [2][-]{subsection.3.4.7}{3.4.7 ISNUMBER function}{section.3.4}% 57
+\BOOKMARK [1][-]{section.3.5}{3.5 Logical functions}{chapter.3}% 58
+\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 IF function}{section.3.5}% 59
+\BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 AND function}{section.3.5}% 60
+\BOOKMARK [2][-]{subsection.3.5.3}{3.5.3 OR function}{section.3.5}% 61
+\BOOKMARK [2][-]{subsection.3.5.4}{3.5.4 NOT function}{section.3.5}% 62
+\BOOKMARK [1][-]{section.3.6}{3.6 Date and time functions}{chapter.3}% 63
+\BOOKMARK [2][-]{subsection.3.6.1}{3.6.1 Time elapsed between two dates or times.}{section.3.6}% 64
+\BOOKMARK [2][-]{subsection.3.6.2}{3.6.2 TODAY function}{section.3.6}% 65
+\BOOKMARK [2][-]{subsection.3.6.3}{3.6.3 DATE function}{section.3.6}% 66
+\BOOKMARK [2][-]{subsection.3.6.4}{3.6.4 DAY, WEEKDAY, MONTH and YEAR functions}{section.3.6}% 67
+\BOOKMARK [2][-]{subsection.3.6.5}{3.6.5 NOW function}{section.3.6}% 68
+\BOOKMARK [2][-]{subsection.3.6.6}{3.6.6 TIME function}{section.3.6}% 69
+\BOOKMARK [2][-]{subsection.3.6.7}{3.6.7 HOUR, MINUTE and SECOND functions}{section.3.6}% 70
+\BOOKMARK [1][-]{section.3.7}{3.7 Text functions}{chapter.3}% 71
+\BOOKMARK [2][-]{subsection.3.7.1}{3.7.1 TEXT function}{section.3.7}% 72
+\BOOKMARK [2][-]{subsection.3.7.2}{3.7.2 VALUE function}{section.3.7}% 73
+\BOOKMARK [2][-]{subsection.3.7.3}{3.7.3 T function}{section.3.7}% 74
+\BOOKMARK [2][-]{subsection.3.7.4}{3.7.4 ISTEXT function}{section.3.7}% 75
+\BOOKMARK [2][-]{subsection.3.7.5}{3.7.5 LEN function}{section.3.7}% 76
+\BOOKMARK [2][-]{subsection.3.7.6}{3.7.6 CONCATENATE function}{section.3.7}% 77
+\BOOKMARK [2][-]{subsection.3.7.7}{3.7.7 FIND and SEARCH functions}{section.3.7}% 78
+\BOOKMARK [2][-]{subsection.3.7.8}{3.7.8 SUBSTITUTE functions}{section.3.7}% 79
+\BOOKMARK [2][-]{subsection.3.7.9}{3.7.9 LOWER and UPPER functions}{section.3.7}% 80
+\BOOKMARK [1][-]{section.3.8}{3.8 Database functions}{chapter.3}% 81
+\BOOKMARK [1][-]{section.3.9}{3.9 Mathematical functions}{chapter.3}% 82
+\BOOKMARK [2][-]{subsection.3.9.1}{3.9.1 SQRT function}{section.3.9}% 83
+\BOOKMARK [2][-]{subsection.3.9.2}{3.9.2 EXP function}{section.3.9}% 84
+\BOOKMARK [2][-]{subsection.3.9.3}{3.9.3 LN and LOG functions}{section.3.9}% 85
+\BOOKMARK [2][-]{subsection.3.9.4}{3.9.4 PI function}{section.3.9}% 86
+\BOOKMARK [2][-]{subsection.3.9.5}{3.9.5 SIN, COS and TAN functions}{section.3.9}% 87
+\BOOKMARK [2][-]{subsection.3.9.6}{3.9.6 ROUND function}{section.3.9}% 88
+\BOOKMARK [2][-]{subsection.3.9.7}{3.9.7 ABS function}{section.3.9}% 89
+\BOOKMARK [1][-]{section.3.10}{3.10 Statistical functions}{chapter.3}% 90
+\BOOKMARK [2][-]{subsection.3.10.1}{3.10.1 AVERAGE function}{section.3.10}% 91
+\BOOKMARK [2][-]{subsection.3.10.2}{3.10.2 AVERAGEIF function}{section.3.10}% 92
+\BOOKMARK [2][-]{subsection.3.10.3}{3.10.3 MEDIAN function}{section.3.10}% 93
+\BOOKMARK [2][-]{subsection.3.10.4}{3.10.4 MODE function}{section.3.10}% 94
+\BOOKMARK [2][-]{subsection.3.10.5}{3.10.5 PERCENTILE.EXC function}{section.3.10}% 95
+\BOOKMARK [2][-]{subsection.3.10.6}{3.10.6 VAR.P function}{section.3.10}% 96
+\BOOKMARK [2][-]{subsection.3.10.7}{3.10.7 STDEV.P function}{section.3.10}% 97
+\BOOKMARK [2][-]{subsection.3.10.8}{3.10.8 SKEW function}{section.3.10}% 98
+\BOOKMARK [2][-]{subsection.3.10.9}{3.10.9 KURT function}{section.3.10}% 99
+\BOOKMARK [1][-]{section.3.11}{3.11 Other functions}{chapter.3}% 100
+\BOOKMARK [2][-]{subsection.3.11.1}{3.11.1 ISBLANK function}{section.3.11}% 101
+\BOOKMARK [2][-]{subsection.3.11.2}{3.11.2 ISERROR function}{section.3.11}% 102
+\BOOKMARK [1][-]{section.3.12}{3.12 Auditing formulas}{chapter.3}% 103
+\BOOKMARK [2][-]{subsection.3.12.1}{3.12.1 Tracing formulas}{section.3.12}% 104
+\BOOKMARK [2][-]{subsection.3.12.2}{3.12.2 Error checking}{section.3.12}% 105
+\BOOKMARK [2][-]{subsection.3.12.3}{3.12.3 Formula evaluation}{section.3.12}% 106
+\BOOKMARK [0][]{chapter.4}{4 Plotting charts}{}% 107
+\BOOKMARK [1][-]{section.4.1}{4.1 Charts creation}{chapter.4}% 108
+\BOOKMARK [1][-]{section.4.2}{4.2 Types of charts}{chapter.4}% 109
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Column and bar charts}{section.4.2}% 110
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Line charts}{section.4.2}% 111
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Area charts}{section.4.2}% 112
+\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 Pie charts}{section.4.2}% 113
+\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5 Doughnut charts}{section.4.2}% 114
+\BOOKMARK [2][-]{subsection.4.2.6}{4.2.6 XY Scatter charts}{section.4.2}% 115
+\BOOKMARK [2][-]{subsection.4.2.7}{4.2.7 Histograms}{section.4.2}% 116
+\BOOKMARK [1][-]{section.4.3}{4.3 Chart design}{chapter.4}% 117
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Changing the data source}{section.4.3}% 118
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Switching rows and columns}{section.4.3}% 119
+\BOOKMARK [1][-]{section.4.4}{4.4 Chart layout}{chapter.4}% 120
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Titles}{section.4.4}% 121
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Axes}{section.4.4}% 122
+\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Grid}{section.4.4}% 123
+\BOOKMARK [2][-]{subsection.4.4.4}{4.4.4 Legends}{section.4.4}% 124
+\BOOKMARK [2][-]{subsection.4.4.5}{4.4.5 Data series}{section.4.4}% 125
+\BOOKMARK [2][-]{subsection.4.4.6}{4.4.6 Data labels}{section.4.4}% 126
+\BOOKMARK [2][-]{subsection.4.4.7}{4.4.7 Chart styles}{section.4.4}% 127
+\BOOKMARK [0][]{chapter.5}{5 Managing databases}{}% 128
+\BOOKMARK [1][-]{section.5.1}{5.1 Database creation in Excel}{chapter.5}% 129
+\BOOKMARK [1][-]{section.5.2}{5.2 Data validation}{chapter.5}% 130
+\BOOKMARK [1][-]{section.5.3}{5.3 Importing databases}{chapter.5}% 131
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Importing data from csv text files}{section.5.3}% 132
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Importing from web data sources}{section.5.3}% 133
+\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Importing data from Qandl}{section.5.3}% 134
+\BOOKMARK [1][-]{section.5.4}{5.4 Data sorting}{chapter.5}% 135
+\BOOKMARK [1][-]{section.5.5}{5.5 Summarizing data}{chapter.5}% 136
+\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Totaling and subtotaling fields}{section.5.5}% 137
+\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Pivot tables}{section.5.5}% 138
+\BOOKMARK [2][-]{subsection.5.5.3}{5.5.3 Pivot chart}{section.5.5}% 139
+\BOOKMARK [1][-]{section.5.6}{5.6 Data filtering}{chapter.5}% 140
+\BOOKMARK [2][-]{subsection.5.6.1}{5.6.1 Apply a simple filter}{section.5.6}% 141
+\BOOKMARK [2][-]{subsection.5.6.2}{5.6.2 Apply a complex filter}{section.5.6}% 142
+\BOOKMARK [2][-]{subsection.5.6.3}{5.6.3 Clear a filter}{section.5.6}% 143
+\BOOKMARK [1][-]{section.5.7}{5.7 Database functions}{chapter.5}% 144
+\BOOKMARK [2][-]{subsection.5.7.1}{5.7.1 Define a criteria}{section.5.7}% 145
+\BOOKMARK [2][-]{subsection.5.7.2}{5.7.2 DSUM function}{section.5.7}% 146
+\BOOKMARK [2][-]{subsection.5.7.3}{5.7.3 DCOUNT function}{section.5.7}% 147
+\BOOKMARK [2][-]{subsection.5.7.4}{5.7.4 DMIN function}{section.5.7}% 148
+\BOOKMARK [2][-]{subsection.5.7.5}{5.7.5 DMAX function}{section.5.7}% 149
+\BOOKMARK [2][-]{subsection.5.7.6}{5.7.6 DAVERAGE function}{section.5.7}% 150
+\BOOKMARK [2][-]{subsection.5.7.7}{5.7.7 DSTDEVP function}{section.5.7}% 151
+\BOOKMARK [2][-]{subsection.5.7.8}{5.7.8 DGET function}{section.5.7}% 152
+\BOOKMARK [2][-]{subsection.5.7.9}{5.7.9 VLOOKUP and HLOOKUP functions}{section.5.7}% 153

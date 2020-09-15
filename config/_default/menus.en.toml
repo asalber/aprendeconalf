@@ -1,0 +1,77 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+[[main]]
+  name = "About"
+  url = "#about"
+  weight = 10
+
+[[main]]
+  name = "Blog"
+  url = "#posts"
+  weight = 20
+
+[[main]]
+  identifier = "teaching"
+  name = "Teaching"
+  url = "teaching/"
+  weight = 30
+
+[[main]]
+  identifier = "calculus"
+  parent = "teaching"
+  name = "Calculus"
+  url = "teaching/calculus/"
+  weight = 31
+
+[[main]]
+  identifier = "statistics"
+  parent = "teaching"
+  name = "Statistics"
+  url = "teaching/statistics/"
+  weight = 32
+
+[[main]]
+  identifier = "r"
+  parent = "teaching"
+  name = "R"
+  url = "teaching/R/"
+  weight = 33
+
+[[main]]
+  identifier = "excel"
+  parent = "teaching"
+  name = "Excel"
+  url = "teaching/excel/"
+  weight = 35
+
+[[main]]
+  identifier = "geogebra"
+  parent = "teaching"
+  name = "Geogebra"
+  url = "teaching/geogebra/"
+  weight = 36
+
+[[main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 40
+
+[[main]]
+  name = "Publications"
+  url = "#featured"
+  weight = 50
+
+[[main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 60
+
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+# [[main]]
+#    name = "CV"
+#    url = "files/cv.pdf"
+#    weight = 70
