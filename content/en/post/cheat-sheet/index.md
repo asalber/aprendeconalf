@@ -10,6 +10,8 @@ image:
   caption: ""
   focal_point: ""
   preview_only: false
+slides: example
+project: rkteaching
 ---
 
 From now on there are available some cheat sheets for Calculus and Statistics.
