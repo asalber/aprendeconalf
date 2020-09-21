@@ -8,6 +8,8 @@ tags: [Excel, Problems]
 categories: [Statistics, Economics]
 weight: 20
 type: book
+aliases:
+    - /office/excel/exercises/
 ---
 
 {{< list_children >}}

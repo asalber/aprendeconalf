@@ -13,6 +13,8 @@ links:
     icon: file-pdf
     name: Descargar
     url: https://github.com/asalber/curso_estadistica/raw/master/manual_estadistica.pdf
+aliases:
+    - /estadistica/manual/
 ---
 
 [<button type="button" class="btn btn-outline-primary">{{< icon name="file-pdf" pack="fas" >}} Descargar</button>](https://github.com/asalber/curso_estadistica/raw/master/manual_estadistica.pdf)

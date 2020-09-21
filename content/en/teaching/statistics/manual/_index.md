@@ -8,6 +8,8 @@ tags: [Statistics]
 categories: [Statistics, Biostatistics]
 weight: 10
 type: book
+aliases:
+    - /statistics/manual/
 ---
 
 [<button type="button" class="btn btn-outline-primary">{{< icon name="file-pdf" pack="fas" >}} Descargar</button>](https://github.com/asalber/statistics-manual/raw/master/statistics_manual.pdf)

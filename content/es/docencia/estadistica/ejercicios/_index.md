@@ -5,6 +5,8 @@ tags: [Ejercicios]
 categories: [Estadística, Bioestadística]
 type: book
 weight: 20
+aliases:
+    - /estadistica/ejercicios/
 ---
 
 Esta sección contiene una colección de ejercicios resueltos de estadística.

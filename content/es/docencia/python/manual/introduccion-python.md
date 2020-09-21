@@ -5,6 +5,8 @@ tags: []
 categories: [Programación, Python]
 type: book
 weight: 10
+aliases:
+    - /python/manual/introduccion-python.html
 ---
 
 ## ¿Qué es Python?

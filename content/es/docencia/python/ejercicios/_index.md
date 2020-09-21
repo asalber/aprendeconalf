@@ -5,6 +5,8 @@ tags: [Ejercicios]
 categories: [Programación, Python]
 type: book
 weight: 20
+aliases:
+    - /python/ejercicios/
 ---
 
 Esta sección contiene una colección de ejercicios resueltos de programación con Python.

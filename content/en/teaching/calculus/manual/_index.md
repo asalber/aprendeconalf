@@ -8,6 +8,8 @@ tags:
 categories: [Calculus, One Variable Calculus, Several Variables Calculus]
 type: book
 weight: 10
+aliases:
+    - /calculus/manual/
 ---
 
 [<button type="button" class="btn btn-outline-primary">{{< icon name="file-pdf" pack="fas" >}} Descargar</button>](https://github.com/asalber/calculus-manual/raw/master/calculus_manual.pdf)

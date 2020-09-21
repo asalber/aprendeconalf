@@ -8,6 +8,8 @@ tags: [Excel]
 categories: [Statistics, Economics]
 weight: 10
 type: book
+aliases:
+    - /office/excel/manual/
 ---
 
 [<button type="button" class="btn btn-outline-primary">{{< icon name="file-pdf" pack="fas" >}} Descargar</button>](tex/excel_manual.pdf)

@@ -5,6 +5,8 @@ tags: [Pandas]
 categories: [Programación, Python]
 type: book
 weight: 170
+aliases:
+    - /python/manual/pandas.html
 ---
 
 [Pandas](https://pandas.pydata.org) es una librería de Python especializada en el manejo y análisis de estructuras de datos.

@@ -6,6 +6,8 @@ tags: [Exams]
 categories: [Estadística, Bioestadística]
 type: book
 weight: 30
+aliases:
+    - /estadistica/examenes/
 ---
 
 Exámenes de Estadística de los últimos cursos con soluciones.

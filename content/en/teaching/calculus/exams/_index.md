@@ -6,6 +6,8 @@ tags: [Exams]
 categories: [Calculus]
 weight: 30
 type: book
+aliases:
+    - /calculus/exams/
 ---
 
 Calculus exams of the last courses with solutions.

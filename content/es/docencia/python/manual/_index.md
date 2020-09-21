@@ -13,6 +13,8 @@ links:
     name: Descargar
     url: manual-python.pdf
 url_slide: https://aprendeconalf.es/manual-python
+aliases:
+    - /python/manual/
 ---
 
 [<button type="button" class="btn btn-outline-primary">{{< icon name="file-pdf" pack="fas" >}} Descargar</button>](manual-python.pdf)

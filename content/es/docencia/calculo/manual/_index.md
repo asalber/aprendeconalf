@@ -8,6 +8,8 @@ tags:
 categories: [Cálculo, Cálculo en Una Variable, Cálculo en Varias Variables]
 type: book
 weight: 10
+aliases:
+    - /calculo/manual/
 ---
 
 [<button type="button" class="btn btn-outline-primary">{{< icon name="file-pdf" pack="fas" >}} Descargar</button>](https://github.com/asalber/calculo-manual/raw/master/manual_calculo.pdf)
