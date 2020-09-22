@@ -38,6 +38,6 @@ Usando Pandas:
 
 ## Solución
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/python/trabajos/soluciones/deuda-publica.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/trabajos/soluciones/deuda-publica.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 Abrir con <a href="https://repl.it/@asalber/deudapy"><img src="/images/logo-replit.png" alt="Abrir con repl.it"></a>

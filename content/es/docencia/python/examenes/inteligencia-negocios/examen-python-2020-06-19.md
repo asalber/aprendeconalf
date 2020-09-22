@@ -28,7 +28,7 @@ Las asignaturas suspensas son:
 matemáticas
 ```
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/python/examenes/soluciones/examen-2020-06-19/ejercicio1.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2020-06-19/ejercicio1.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 2
 
@@ -40,7 +40,7 @@ Escribir una función que tome una lista de números enteros desordenados y devu
 ['caracola', 'de']
 ```
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/python/examenes/soluciones/examen-2020-06-19/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2020-06-19/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 3
 
@@ -50,7 +50,7 @@ Escribir un programa para gestionar las citas de una consulta médica. La base d
 2. Una función que reciba un dni y devuelva una lista con las citas de ese paciente.
 3. Una función para eliminar las citas anteriores a una fecha dada.
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/python/examenes/soluciones/examen-2020-06-19/ejercicio3.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2020-06-19/ejercicio3.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 4
 
@@ -63,4 +63,4 @@ El fichero [ipc-2020.csv](http://aprendeconalf.es/python/examenes/soluciones/exa
 5. Mostrar por pantalla una serie con la desviación típica del IPC mensual de cada grupo.
 6. Mostrar por pantalla un DataFrame con las comunidades y grupos donde los precios no han subido en promedio (IPC mensual medio menor de 100).
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/python/examenes/soluciones/examen-2020-06-19/ejercicio4.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2020-06-19/ejercicio4.ipynb" class="btn btn-info" target="_blank">Solución</a>

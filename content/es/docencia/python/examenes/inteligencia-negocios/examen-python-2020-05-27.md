@@ -21,7 +21,7 @@ Escribir un programa al que al introducirle la altura de una línea sea capaz de
 *
 ```
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/python/examenes/soluciones/examen-2020-05-27/ejercicio1.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2020-05-27/ejercicio1.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 2
 
@@ -32,7 +32,7 @@ Escribir una función que cuente las palabras que hay en una frase y las devuelv
 ['caracola', 'de']
 ```
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/python/examenes/soluciones/examen-2020-05-27/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2020-05-27/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 3
 El fichero [horas-trabajo.csv](http://aprendeconalf.es/python/examenes/soluciones/examen-2020-05-27/horas-trabajo.csv) contiene el número de horas mensuales trabajadas por los empleados de una empresa durante el primer cuatrimestre. Crear un programa que realice las siguientes operaciones sin utilizar la librería Pandas:
@@ -48,7 +48,7 @@ El fichero [horas-trabajo.csv](http://aprendeconalf.es/python/examenes/solucione
 
 4. Crear una función que reciba la base de datos de las horas trabajadas (puede utilizarse el diccionario del apartado anterior u otra estructura de datos), el identificador de un operario y el precio de la hora, y devuelva una tupla con el número totales de horas trabajadas y el salario de ese operario.
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/python/examenes/soluciones/examen-2020-05-27/ejercicio3.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2020-05-27/ejercicio3.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 4
 
@@ -63,4 +63,4 @@ El fichero [horas-trabajo.csv](http://aprendeconalf.es/python/examenes/solucione
 7. Mostrar por pantalla una serie con el total de horas trabajadas de cada operario.
 8. Mostrar por pantalla una serie con los salarios de todos los operarios ordenados de mayor a menor.
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/python/examenes/soluciones/examen-2020-05-27/ejercicio4.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2020-05-27/ejercicio4.ipynb" class="btn btn-info" target="_blank">Solución</a>

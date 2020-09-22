@@ -21,7 +21,7 @@ else
   print('No pasa')
 ```
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/content/es/docencia/python/ejercicios/soluciones/depuracion/ejercicio1.ipynb" class="btn btn-info">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/depuracion/ejercicio1.ipynb" class="btn btn-info">Solución</a>
 
 ## Ejercicio 2
 
@@ -36,7 +36,7 @@ def aplica_iva(base, iva = 21):
     return base 
 ```
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/content/es/docencia/python/ejercicios/soluciones/depuracion/ejercicio2.ipynb" class="btn btn-info">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/depuracion/ejercicio2.ipynb" class="btn btn-info">Solución</a>
 
 ## Ejercicio 3
 
@@ -54,7 +54,7 @@ def producto_escalar(u, v):
 print(producto_escalar(u, v))
 ```
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/content/es/docencia/python/ejercicios/soluciones/depuracion/ejercicio3.ipynb" class="btn btn-info">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/depuracion/ejercicio3.ipynb" class="btn btn-info">Solución</a>
 
 ## Ejercicio 4
 
@@ -70,7 +70,7 @@ def elimina(listin, usuario):
 print(elimina(listin, 'Pablo'))
 ```
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/content/es/docencia/python/ejercicios/soluciones/depuracion/ejercicio4.ipynb" class="btn btn-info">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/depuracion/ejercicio4.ipynb" class="btn btn-info">Solución</a>
 
 ## Ejercicio 5
 
@@ -98,4 +98,4 @@ def producto(a, b):
 print(producto(a, b))
 ```
 
-<a href="https://colab.research.google.com/github/asalber/asalber.github.io/blob/master/content/es/docencia/python/ejercicios/soluciones/depuracion/ejercicio5.ipynb" class="btn btn-info">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/depuracion/ejercicio5.ipynb" class="btn btn-info">Solución</a>
