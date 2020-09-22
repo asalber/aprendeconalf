@@ -26,6 +26,6 @@ Datos abiertos del Ayuntamiento de Madrid: [Calidad del aire. Datos diarios año
 
 ## Solución
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/trabajos/soluciones/emisiones-madrid.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/trabajos/inteligencia-negocios/soluciones/emisiones-madrid.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 Abrir con <a href="https://repl.it/@asalber/emisiones-madrid"><img src="/images/logo-replit.png" alt="Abrir con repl.it"></a>

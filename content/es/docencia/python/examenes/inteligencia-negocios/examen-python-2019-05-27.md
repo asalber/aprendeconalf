@@ -45,7 +45,7 @@ Escribir un programa que pida al usuario un número entero $n$ y muestre por pan
 
 donde $n$ es el número de filas del triángulo.
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2019-05-27/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2019-05-27/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 3
 
@@ -59,7 +59,7 @@ El programa debe cumplir los siguientes requisitos:
 - El programa debe crear otra lista booleana que indique para cada año si ha habido beneficios o no y mostrarla por pantalla.
 - Finalmente el programa debe mostrar por pantalla la lista de los años con beneficios la lista de los años con pérdidas.
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2019-05-27/ejercicio3.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2019-05-27/ejercicio3.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 4
 
@@ -71,7 +71,7 @@ La función debe cumplir los siguientes requisitos:
 - Deben usarse diccionarios para emparejar cada dígito con la palabra correspondiente para las unidades, decenas y centenas.
 - Debe devolver una cadena con la cantidad introducida en palabras.
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2019-05-27/ejercicio4.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2019-05-27/ejercicio4.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 5
 
@@ -93,7 +93,7 @@ El fichero [`cotizacion.csv`](cotizacion.csv) contiene las cotizaciones de las e
     - La función recibirá como parámetros el diccionario con los datos de cotización y la ruta del fichero a crear.
     - El fichero generado tendrá las mismas columnas que el fichero `cotizacion.csv` con los mismos nombres de columnas, y tres líneas correspondientes al mínimo, máximo y media de los datos de cada columna. En la columna `nombre` en lugar del nombre de la empresa debe aparecer la medida calculada en esa línea (mínimo, máximo o media). Los datos deben estar separados por punto y coma.
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2019-05-27/ejercicio5.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2019-05-27/ejercicio5.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 6
 
@@ -106,4 +106,4 @@ La función debe cumplir los siguientes requisitos:
 - Se debe crear una lista con el total de cada factura (una vez aplicado el IVA) para el NIF y el mes indicados utilizando programación funcional o comprensión de listas.
 - La función debe devolver un diccionario con el número de facturas y el total facturado al NIF en el mes indicado.
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2019-05-27/ejercicio6.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2019-05-27/ejercicio6.ipynb" class="btn btn-info" target="_blank">Solución</a>

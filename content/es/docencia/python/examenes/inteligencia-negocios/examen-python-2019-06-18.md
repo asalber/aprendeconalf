@@ -35,19 +35,19 @@ Fecha: 18 de Junio de 2019
 
 A lo largo de un curso se realizan dos exámenes parciales. Para aprobar el curso la nota media debe ser mayor o igual que 5 siempre y cuando en ambos parciales se tenga al menos un 4. Escribir un programa que pregunte al usuario la nota de los dos parciales y muestre por pantalla si el alumno ha aprobado el curso o si no, y en caso de no haber aprobado, qué parcial tiene que repetir por tener menos de 4 en él.
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2019-06-18/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2019-06-18/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 3
 
 Un n-grama es una secuencia de $n$ caracteres consecutivos de una cadena. Por ejemplo, los 3-gramas de la cadena `'Python'` son `'Pyt'`, `'yth'`, `'tho'` y `'hon'`. Escribir un programa que pregunte por una cadena y un número entero positivo $n$ y muestre por pantalla todos los n-gramas de la cadena.
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2019-06-18/ejercicio3.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2019-06-18/ejercicio3.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 4
 
 Escribir un programa que elimine de una lista dada todos los elementos repetidos y muestre por pantalla los elementos de la lista sin repeticiones.
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2019-06-18/ejercicio4.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2019-06-18/ejercicio4.ipynb" class="btn btn-info" target="_blank">Solución</a>
 ## Ejercicio 5
 Definir funciones para codificar y decodificar mensajes en código morse.
 
@@ -77,7 +77,7 @@ Definir funciones para codificar y decodificar mensajes en código morse.
    - Debe devolver una cadena con las palabras del mensaje decodificadas y separadas por espacios.
    - Se valorará especialmente el uso de programación funcional.
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2019-06-18/ejercicio5.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2019-06-18/ejercicio5.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 6
 
@@ -107,4 +107,4 @@ La url [`https://datos.madrid.es/egob/catalogo/300117-0-arrendamiento-programas.
     - Debe recorrer la lista de listas y para cada lista extraer el nombre del distrito y el total de viviendas arrendadas en el distrito y añadir el par a un diccionario.
     - Debe devolver un diccionario con un par para cada lista de la lista, cuya clave sea el nombre del distrito y cuyo valor sea el número total de viviendas arrendadas en ese distrito.
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/soluciones/examen-2019-06-18/ejercicio6.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2019-06-18/ejercicio6.ipynb" class="btn btn-info" target="_blank">Solución</a>
