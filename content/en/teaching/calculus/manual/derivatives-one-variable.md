@@ -26,7 +26,7 @@ weight: 40
 The study of a function $y=f(x)$ requires to understand how the function changes, that is, how the dependent variable $y$ changes when we change the independent variable $x$.
 
 {{% alert def %}}
-**Definition - Average rate of change**. The *average rate of change* of a function $y=f(x)$ in an interval $[a,a+\Delta x]\subseteq Dom(f)$, is the quotient between the increment of $y$ and the increment of $x$ in that interval; it is denoted by $$\mbox{ARC}\;f[a,a+\Delta x]=\frac{\Delta y}{\Delta x}=\frac{f(a+\Delta x)-f(a)}{\Delta x}.$$
+**Definition - Average rate of change**. The *average rate of change* of a function $y=f(x)$ in an interval $[a,a+\Delta x]\subseteq Dom(f)$, is the quotient between the increment of $y$ and the increment of $x$ in that interval; it is denoted by $$\mbox{ARC}\\;f[a,a+\Delta x]=\frac{\Delta y}{\Delta x}=\frac{f(a+\Delta x)-f(a)}{\Delta x}.$$
 {{% /alert %}}
 
 **Example - Area of a square**. Let $y=x^2$ be the function that measures the area of a metallic square of side length $x$.
@@ -38,7 +38,7 @@ $$
 a^2+2a\Delta x+\Delta x^2-a^2=2a\Delta x+\Delta x^2.
 $$
 
-What is the average rate of change in the interval $[a,a+\Delta x]$? $$\mbox{ARC}\;f[a,a+\Delta x]=\frac{\Delta y}{\Delta x}=\frac{2a\Delta x+\Delta x^2}{\Delta x}=2a+\Delta x.$$
+What is the average rate of change in the interval $[a,a+\Delta x]$? $$\mbox{ARC}\\;f[a,a+\Delta x]=\frac{\Delta y}{\Delta x}=\frac{2a\Delta x+\Delta x^2}{\Delta x}=2a+\Delta x.$$
 
 <img src="../img/derivatives1/square_area_variation.svg" alt="Variation of the area of a square" width="300">
 

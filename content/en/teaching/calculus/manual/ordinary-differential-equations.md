@@ -29,7 +29,11 @@ To deduce a differential equation that explains a natural phenomenon is essentia
 
 > *“The rate of change of the temperature of a body in a surrounding medium is proportional to the difference between the temperature of the body $T$ and the temperature of the medium $T_a$.”*
 
-The rate of change of the temperature is the derivative of temperature with respect to time $dT/dt$. Thus, Newton’s law of cooling can be explained by the differential equation $$\frac{dT}{dt}=k(T-T_a),$$ where $k$ is a proportionality constant.
+The rate of change of the temperature is the derivative of temperature with respect to time $dT/dt$. Thus, Newton’s law of cooling can be explained by the differential equation
+
+$$\frac{dT}{dt}=k(T-T_a),$$
+
+where $k$ is a proportionality constant.
 
 ### Solution of an ordinary differential equation
 
@@ -290,7 +294,7 @@ $$ye^{\int g(x)\\,dx}=\int h(x) e^{\int g(x)\\,dx}\\,dx+C,$$
 or what is the same
 
 {{% alert tool %}}
-**Solution of a linear differential equation**. 
+**Solution of a linear differential equation**.
 
 $$y=e^{-\int g(x)\\,dx}\left(\int h(x)e^{\int g(x)\\,dx}\\,dx+C\right).$$
 {{% /alert %}}

@@ -15,7 +15,7 @@ weight: 20
 **Definición - Función de una variable**. Una *función* $f$ de un conjunto $A$ en otro $B$ es una *relación* que asocia cada elemento $a\in A$, con un *único* elemento de $B$ que se denota $f(a)$, y se llama *imagen* de $a$ mediante $f$.
 
 $$\begin{aligned}
-f:\,&A\longrightarrow B\newline
+f:\\,&A\longrightarrow B\newline
 &a\longrightarrow f(a)\end{aligned}$$
 {{% /alert %}}
 
@@ -112,7 +112,7 @@ ya que la función cuadrática $x^2$ puede tomar cualquier valor de $0$ a $\inft
 **Definición - Composición de funciones**. Dadas dos funciones $g:A\rightarrow B$ y $f:B\rightarrow C$, se define la *función compuesta* $f\circ g$, (leído $g$ compuesto con $f$) como la función
 
 $$\begin{aligned}
-f\circ g:\,& A\longrightarrow C\newline
+f\circ g:\\,& A\longrightarrow C\newline
 & x\longrightarrow f(g(x))\end{aligned}$$
 {{% /alert %}}
 

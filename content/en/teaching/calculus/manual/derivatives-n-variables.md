@@ -1,7 +1,7 @@
 ---
 title: Several variables differentiable calculus
 lastmod: 
-tags: [Partial Derivative, Gradient]
+tags: [Partial Derivative, Gradient, Tangent Line, Normal Line, Tangent Plane, Normal Plane, Hessian Matrix, Extrema]
 categories: [Calculus, Several Variables Calculus]
 type: book
 weight: 60
@@ -34,11 +34,11 @@ $$f(t)=x(t)\mathbf{i}+y(t)\mathbf{j}+z(t)\mathbf{k},$$
 
 The graphic representation of a vector field in $\mathbb{R}^2$ is a trajectory in the real plane.
 
-<img src="../img/derivatives_n/trajectory_plane.svg" alt="Trajectory of a vector function in the plane." width="300">
+<img src="../img/derivativesn/trajectory_plane.svg" alt="Trajectory of a vector function in the plane." width="300">
 
 The graphic representation of a vector field in $\mathbb{R}^3$ is a trajectory in the real space.
 
-<img src="../img/derivatives_n/trajectory_space.svg" alt="Trajectory of a vector function in the space." width="350">
+<img src="../img/derivativesn/trajectory_space.svg" alt="Trajectory of a vector function in the space." width="350">
 
 ## Derivative of a vector field
 
@@ -89,7 +89,7 @@ $$
 
 are the *coordinate functions* of $f$.
 
-<img src="../img/derivatives_n/curvilinear_motion.svg" alt="Trajectory of a curvilinear motion in the plane." width="500">
+<img src="../img/derivativesn/curvilinear_motion.svg" alt="Trajectory of a curvilinear motion in the plane." width="500">
 
 {{% alert int %}}
 In this context the derivative of a trajectory $f'(a)=(x_1'(a),\ldots,x_n'(a))$ is the *velocity* vector of the trajectory $f$ at moment $t=a$.
@@ -101,7 +101,7 @@ $$\mathbf{v}=f'(t)=(x'(t),y'(t))=(-\sin t, \cos t).$$
 
 In the moment $t=\pi/4$, the object is in position $f(\pi/4) = (\cos(\pi/4),\sin(\pi/4)) =(\sqrt{2}/2,\sqrt{2}/2)$ and it is moving with a velocity $\mathbf{v}=f'(\pi/4)=(-\sin(\pi/4),\cos(\pi/4))=(-\sqrt{2}/2,\sqrt{2}/2)$.
 
-<img src="../img/derivatives_n/circumference_trajectory.svg" alt="Trajectory of a vector function in the space." width="300">
+<img src="../img/derivativesn/circumference_trajectory.svg" alt="Trajectory of a vector function in the space." width="300">
 
 Observe that the module of the velocity vector is always 1 as $\vert\mathbf{v}\vert=\sqrt{(-\sin t)^2+(\cos t)^2}=1$.
 
@@ -258,7 +258,7 @@ and the tangent line to the graph of $f$ at that moment is
 
 $$l:(x,y,z)=(0,1,\pi/2)+t(-1,0,1) = (-t,1,t+\pi/2).$$
 
-<img src="../img/derivatives_n/tangent_trajectory_space.svg" alt="Tangent line to a trajectory in the space." width="400">
+<img src="../img/derivativesn/tangent_trajectory_space.svg" alt="Tangent line to a trajectory in the space." width="400">
 
 <img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/Q2C7EfBn" target="_blank">Interactive Example</a>**
 
@@ -286,7 +286,7 @@ and normal plane to the graph of $f$ at that moment is
 
 $$\Pi:\left(x-0,y-1,z-\frac{\pi}{2}\right)(-1,0,1) =0 \Leftrightarrow -x+z-\frac{\pi}{2}=0.$$
 
-<img src="../img/derivatives_n/normal_plane_trajectory_space.svg" alt="Normal plane to a trajectory in the space." width="400">
+<img src="../img/derivativesn/normal_plane_trajectory_space.svg" alt="Normal plane to a trajectory in the space." width="400">
 
 <img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/Q2C7EfBn" target="_blank">Interactive Example</a>**
 
@@ -323,15 +323,15 @@ $$v=f(t,p)=\frac{nRt}{p},\quad \mbox{with $n$ and $R$ constants.}$$
 
 The graph of a function of two variables $f(x,y)$ is a surface in the real space $\mathbb{R}^3$ where every point of the surface has coordinates $(x,y,z)$, with $z=f(x,y)$.
 
-<img src="../img/derivatives_n/paraboloid.svg" alt="Graph of a two-variables function" width="300">
+<img src="../img/derivativesn/paraboloid.svg" alt="Graph of a two-variables function" width="300">
 
 **Example**. The function $f(x,y)=\dfrac{xy}{2}$ that measures the area of a triangle of base $x$ and height $y$ has the graph below.
 
-<img src="../img/derivatives_n/area_triangle_graph.svg" alt="Graph of the function that measures the area of a triangle." width="400">
+<img src="../img/derivativesn/area_triangle_graph.svg" alt="Graph of the function that measures the area of a triangle." width="400">
 
 The function $\displaystyle f(x,y)=\frac{\sin(x^2+y^2)}{\sqrt{x^2+y^2}}$ has the peculiar graph below.
 
-<img src="../img/derivatives_n/water_drop_graph.svg" alt="Surface of a drop of water." width="400">
+<img src="../img/derivativesn/water_drop_graph.svg" alt="Surface of a drop of water." width="400">
 
 ### Level set of a scalar field
 
@@ -351,11 +351,11 @@ that is the circumference of radius $\sqrt{2}$ centred at the origin.
 
 Level sets are common in applications like topographic maps, where the level curves correspond to points with the same height above the sea level,
 
-<img src="../img/derivatives_n/mountain_level_curves.svg" alt="Level curves of a topograhic map." width="400">
+<img src="../img/derivativesn/mountain_level_curves.svg" alt="Level curves of a topograhic map." width="400">
 
 and weather maps (*isobars*), where level curves correspond to points with the same atmospheric pressure.
 
-<img src="../img/derivatives_n/isobars.png" alt="Isobars of a weather map." width="400">
+<img src="../img/derivativesn/isobars.png" alt="Isobars of a weather map." width="400">
 
 ### Partial functions
 
@@ -402,7 +402,7 @@ This partial derivative measures the instantaneous rate of change of $f$ at the 
 
 Geometrically, a two-variable function $z=f(x,y)$ defines a surface. If we cut this surface with a plane of equation $y=y_0$ (that is, the plane where $y$ is the constant $y_0$) the intersection is a curve, and the partial derivative of $f$ with respect to to $x$ at $(x_0,y_0)$ is the slope of the tangent line to that curve at $x=x_0$.
 
-<img src="../img/derivatives_n/partial_tangent_surface.svg" alt="Geometric interpretation of the partial derivative." width="350">
+<img src="../img/derivativesn/partial_tangent_surface.svg" alt="Geometric interpretation of the partial derivative." width="350">
 
 <img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/K3xnQRY8" target="_blank">Interactive Example</a>**
 
@@ -602,7 +602,7 @@ $$\begin{aligned}
 
 The graph of the paraboloid $f(x,y,z)=x^2+y^2-z=0$ and the normal line and the tangent plane to the graph of $f$ at the point $P=(1,1,2)$ are below.
 
- <img src="../img/derivatives_n/tangent_plane_paraboloid.svg" alt="Geometric interpretation of the partial derivative." width="350">
+ <img src="../img/derivativesn/tangent_plane_paraboloid.svg" alt="Geometric interpretation of the partial derivative." width="350">
 
  <img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/wTh7KKd3" target="_blank">Interactive Example</a>**
 
@@ -924,7 +924,7 @@ $$f(1.01,1.01) \approx P^1_{f,P}(1.01,1.01) = 1.01+1.01-2 = 0.02.$$
 
 The graph of the scalar field $f(x,y)=\log(xy)$ and the first degree Taylor polynomial of $f$ at the point $P=(1,1)$ is below.
 
-<img src="../img/derivatives_n/first_degree_taylor_polynomial.svg" alt="First degree Taylor polynomial" width="350">
+<img src="../img/derivativesn/first_degree_taylor_polynomial.svg" alt="First degree Taylor polynomial" width="350">
 
 ### Quadratic approximation of a scalar field
 
@@ -1004,7 +1004,7 @@ $$
 
 The graph of the scalar field $f(x,y)=\log(xy)$ and the second degree Taylor polynomial of $f$ at the point $P=(1,1)$ is below.
 
-<img src="../img/derivatives_n/second_degree_taylor_polynomial.svg" alt="Second degree Taylor polynomial" width="350">
+<img src="../img/derivativesn/second_degree_taylor_polynomial.svg" alt="Second degree Taylor polynomial" width="350">
 
 <img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/Ehnz3hGb" target="_blank">Interactive Example</a>**
 
@@ -1047,7 +1047,7 @@ $$f(0,0)=0 \leq f(x,y)=x^2+y^2,\ \forall x,y\in \mathbb{R}.$$
 
 Is easy to check that $f$ has a critical point at $(0,0)$, that is $\nabla f(0,0) = 0$.
 
-<img src="../img/derivatives_n/paraboloid_minimum.svg" alt="Relative minimum of a two-variable function" width="300">
+<img src="../img/derivativesn/paraboloid_minimum.svg" alt="Relative minimum of a two-variable function" width="300">
 
 ### Saddle points
 
@@ -1059,7 +1059,7 @@ that only vanishes at $(0,0)$. However, this point is not a relative maximum sin
 0=f(0,0)$, nor a relative minimum since the points $(0,y)$ in the $y$-axis have images $f(0,y)=-y^2\leq
 0=f(0,0)$. This type of critical points that are not relative extrema are known as *saddle points*.
 
-<img src="../img/derivatives_n/saddle_point.svg" alt="Saddle point of a two-variable function" width="300">
+<img src="../img/derivativesn/saddle_point.svg" alt="Saddle point of a two-variable function" width="300">
 
 ### Analysis of the relative extrema
 
@@ -1140,4 +1140,4 @@ Thus, we have
 
 The graph of the function $f(x,y)=\dfrac{x^3}{3}-\dfrac{y^3}{3}-x+y$ and their relative extrema and saddle points are shown below.
 
-<img src="../img/derivatives_n/extrema_analysis.svg" alt="Relative extrema and saddle points of a two-variable function" width="350">
+<img src="../img/derivativesn/extrema_analysis.svg" alt="Relative extrema and saddle points of a two-variable function" width="350">

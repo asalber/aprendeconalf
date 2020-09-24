@@ -36,9 +36,13 @@ We have seen in a previous chapter that the derivative of a function is the inst
 **Example**. What is the space covered by an free falling object?
 
 Assume that the only force acting upon an object drop is gravity, with an acceleration of $9.8$ m/s$^2$. As acceleration is the the rate of change of the speed, that is constant at any moment, the antiderivative is the speed of the object,
+
 $$v(t) = 9.8t  \mbox{ m/s}$$
+
 And as the speed is the rate of change of the space covered by object during the fall, the antiderivative of the speed is the space covered by the object,
+
 $$s(t) = \int 9.8t\\, dt = 9,8\frac{t^2}{2}.$$
+
 Thus, for instance, after 2 seconds, the covered space is $s(2) = 9.8\frac{2^2}{2} = 19.6$ m.
 
 ### Linearity of integration
@@ -85,14 +89,30 @@ Unfortunately, unlike differential calculus, the is not a foolproof procedure to
 ### Integration by parts
 
 {{% alert theo %}}
-**Theorem - Integration by parts**. Given two differentiable functions $u(x)$ and $v(x)$, from the rule for differentiating a product we can get
+**Theorem - Integration by parts**. Given two differentiable functions $u(x)$ and $v(x)$,
 
-$$\int{u(x)v'(x)}\\,dx=u(x)v(x)-\int{u'(x)v(x)}\\,dx,$$ 
+$$\int{u(x)v'(x)}\\,dx=u(x)v(x)-\int{u'(x)v(x)}\\,dx,$$
 
-or, writing $u'(x)dx=du$ and $v'(x)dx=dv$, 
+or, writing $u'(x)dx=du$ and $v'(x)dx=dv$,
 
-$$\int{u}\\,dv=uv-\int{v}\\,du.$$ 
+$$\int{u}\\,dv=uv-\int{v}\\,du.$$
 {{% /alert %}}
+
+{{< spoiler text="Proof" >}}
+From the rule for differentiating a product we have
+
+$$ (uv)' = u'v + uv' $$
+
+and computing the integrals both sides we get
+
+$$
+\begin{gathered}
+\int (uv)' \\, dx = \int u'v \\, dx + \int uv'\\, dx \Rightarrow\newline 
+uv = \int v\\,du + \int u\\, dv \Rightarrow\newline
+\int{u}\\,dv=uv-\int{v}\\,du.
+\end{gathered}
+$$
+{{< /spoiler >}}
 
 To apply this method we have to choose the functions $u$ and $dv$ in a way so that the final integral is easier to compute than the original one.
 
@@ -121,11 +141,11 @@ $$
 ### Integration by substitution
 
 {{% alert tool %}}
-From the chain rule for differentiating the composition of two functions 
+From the chain rule for differentiating the composition of two functions
 
-$$f(g(x))' = f'(g(x))g'(x),$$ 
+$$f(g(x))' = f'(g(x))g'(x),$$
 
-we can make a variable change $u=g(x)$, so $du=g'(x)dx$, and get 
+we can make a variable change $u=g(x)$, so $du=g'(x)dx$, and get
 
 $$\int f'(g(x))g'(x)\\, dx = \int f'(u)\\, du = f(u)+C = f(g(x))+C.$$
 {{% /alert %}}
@@ -297,7 +317,7 @@ $$\int \frac{1}{\sin x}\\,dx = \int \frac{1}{\frac{2t}{1+t^2}}\frac{2}{1+t^2}\\,
 ## Definite integral
 
 {{% alert def %}}
-**Definition - Definite integral**. Let $f(x)$ be a function which is continuous on an interval $[a, b]$. Divide this interval into $n$ subintervals of equal width $\Delta x$ and choose an arbitrary point $x_i$ from each interval. The *definite integral* of $f$ from $a$ to $b$ is defined to be the limit
+**Definition - Definite integral**. Let $f(x)$ be a function which is continuous on an interval $[a, b]$. Divide this interval into $n$ subintervals of equal width $\Delta x$ and choose an arbitrary point $x_i$ from each subinterval. The *definite integral* of $f$ from $a$ to $b$ is defined to be the limit
 
 $$\int_a^b f(x)\\,dx = \lim_{n\rightarrow \infty}\sum_{i=1}^n f(x_i)\Delta x.$$
 {{% /alert %}}
@@ -306,6 +326,7 @@ $$\int_a^b f(x)\\,dx = \lim_{n\rightarrow \infty}\sum_{i=1}^n f(x_i)\Delta x.$$
 
 {{% alert theo %}}
 **Theorem - First fundamental theorem of Calculus**.  If $f(x)$ is continuous on the interval $[a,b]$ and $F(x)$ is an antiderivative of $f$ on $[a,b]$, then
+
 $$\int_a^b f(x)\\,dx = F(b)-F(a)$$
 {{% /alert %}}
 
@@ -331,19 +352,27 @@ Given two functions $f(x)$ and $g(x)$ integrable on $[a,b]$ and $k \in \mathbb{R
 
 ### Area between a positive function and the $x$ axis
 
-If $f(x)$ is an integrable function on the interval $[a,b]$ and $f(x)\geq 0\ \forall x\in[a,b]$, then the definite integral $$\int_a^b f(x)\\,dx$$ measures the area between the graph of $f$ and the $x$ axis on the interval $[a,b]$.
+If $f(x)$ is an integrable function on the interval $[a,b]$ and $f(x)\geq 0\ \forall x\in[a,b]$, then the definite integral 
+
+$$\int_a^b f(x)\\,dx$$ 
+
+measures the area between the graph of $f$ and the $x$ axis on the interval $[a,b]$.
 
 <img src="../img/integrals/area_positive_function.svg" alt="Area of a positive function" width="350">
 
 ### Area between a negative function and the $x$ axis
 
-If $f(x)$ is an integrable function on the interval $[a,b]$ and $f(x)\leq 0\ \forall x\in[a,b]$, then the area between the graph of $f$ and the $x$ axis on the interval $[a,b]$ is $$-\int_a^b f(x)\\,dx.$$
+If $f(x)$ is an integrable function on the interval $[a,b]$ and $f(x)\leq 0\ \forall x\in[a,b]$, then the area between the graph of $f$ and the $x$ axis on the interval $[a,b]$ is
+
+$$-\int_a^b f(x)\\,dx.$$
 
 <img src="../img/integrals/area_negative_function.svg" alt="Area of a negative function" width="350">
 
 ### Area between a function and the $x$ axis
 
-In general, if $f(x)$ is an integrable function on the interval $[a,b]$, no matter the sign of $f$ on $[a,b]$, the area between the graph of $f$ and the $x$ axis on the interval $[a,b]$ is $$\int_a^b \vert f(x)\vert\\,dx.$$
+In general, if $f(x)$ is an integrable function on the interval $[a,b]$, no matter the sign of $f$ on $[a,b]$, the area between the graph of $f$ and the $x$ axis on the interval $[a,b]$ is 
+
+$$\int_a^b \vert f(x)\vert\\,dx.$$
 
 <img src="../img/integrals/area_function.svg" alt="Area of a function" width="350">
 

@@ -4,7 +4,7 @@
 title: "rkTeaching"
 subtitle: "An R package for teaching and learning Statistics"
 summary: "An R package for teaching and learning Statistics"
-tags: [RKWard, Software]
+tags: [RKWard, rkTeaching, Software]
 categories: [R]
 date: 2020-09-01
 
@@ -47,7 +47,7 @@ designed for teaching and learning Statistics.
 
 This package has been developed and is maintained by Alfredo Sánchez Alberca <asalber@ceu.es> in the Departament of Applied Math and Statistics of the San Pablo CEU of Madrid.
 
-If you find out some error or have a suggestion, please, let me know it by email or opening an [issue on Github](https://github.com/rkward-community/rk.Teaching/pulls).
+If you find out some error or have a suggestion, please, let me know it by email or opening an [issue on Github](https://github.com/rkward-community/rkTeaching/pulls).
 
 ![RKWard](img/rkward.png)
 
@@ -55,9 +55,9 @@ If you find out some error or have a suggestion, please, let me know it by email
 
 ### Installation on Windows
 
-For Windows users there is a bundle that include R, RKWard and rk.Teaching.
+For Windows users there is a bundle that include R, RKWard and rkTeaching.
 
-[Download last version (R versión 3.6.2, RKWard versión 0.7.1, rk.Teaching versión 1.3)](https://drive.google.com/open?id=1GO2fSa45o1F5u8jVcoEh5gJqgyvVMtwA)
+[Download last version (R versión 3.6.2, RKWard versión 0.7.1b, rkTeaching versión 1.3.0)](https://drive.google.com/file/d/1xiy6e_5wUAGJwRLkhWQ4_JJDszMUhArN/view?usp=sharing)
 
 Once the file is downloaded, all you have to do is to execute it.
 It will ask for the installation unit and directory.
@@ -81,16 +81,16 @@ It is required a Mac Os version 10.11 or higher.
 
     If there is some error during the installation process, check for the possible solutions (<http://rkward.sourceforge.net/wiki/RKWard_on_Mac#Troubleshooting>)
 
-1. **Install the packages that rk.Teaching depends on**. The rk.Teaching package depends on several packages that should be installed first.
+1. **Install the packages that rkTeaching depends on**. The rkTeaching package depends on several packages that should be installed first.
 To install this packages you must run RKWard, open the R console and type the following commands:
 
     <pre><code>install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","remotes"))</code></pre>
 
-4. **Install rk.Teaching**. To install the rk.Teaching package you must type the following commands in the R console:
+4. **Install rkTeaching**. To install the rkTeaching package you must type the following commands in the R console:
 
     <pre><code>
     library(remotes)<br/>
-    install_github("rkward-community/rk.Teaching", ref="develop")
+    install_github("rkward-community/rkTeaching", ref="develop")
     </code></pre>
 
     The following video tutorial shows the installation process.
@@ -118,16 +118,16 @@ You have to select the Linux distribution and follow the instructions there.
  
     It is important to install versión 0.7 or higher.
 
-3. **Install the packages that rk.Teaching depends on**. The rk.Teaching package depends on several packages that should be installed first.
+3. **Install the packages that rkTeaching depends on**. The rkTeaching package depends on several packages that should be installed first.
 To install this packages you must run RKWard, open the R console and type the following commands:
 
     <pre><code>install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","remotes"))</code></pre>
 
-4. **Install rk.Teaching**. To install the rk.Teaching package you must type the following commands in the R console:
+4. **Install rkTeaching**. To install the rkTeaching package you must type the following commands in the R console:
 
     <pre><code>
     library(remotes)<br/>
-    install_github("rkward-community/rk.Teaching", ref="develop")
+    install_github("rkward-community/rkTeaching", ref="develop")
     </code></pre>
 
     The following video tutorial shows the installation process (in Spanish).
@@ -195,25 +195,25 @@ Once installed a new menu `Teaching` will appear in RKWard with the following st
   - Build probability space
   - Combine probability spaces
   - Repeat probability space
-  - Calculate probability 
+  - Calculate probability
 - Probability distributions
-    - Discrete:
-      - Binomial
-      - Geometric
-      - Hypergeometric
-      - Poisson
-    - Continous:
-      - Uniform
-      - Normal
-      - Chi-square
-      - Student's T
-      - Fisher's F
+  - Discrete:
+    - Binomial
+    - Geometric
+    - Hypergeometric
+    - Poisson
+  - Continous:
+    - Uniform
+    - Normal
+    - Chi-square
+    - Student's T
+    - Fisher's F
 - Simulations:
   - Law of rare events
 
 ## Functionality
 
-- Menus and dialogs specially designed to easy the learning, ruling out non-common options to get an simplified and intutive interface.
+- Menus and dialogs specially designed to easy the learning, ruling out non-common options to get an simplified and intuitive interface.
 
 - All the dialogs have a wizard that guide the user step by step through the statistical procedure.
   ![Wizard](img/wizard.png)
@@ -227,8 +227,8 @@ Once installed a new menu `Teaching` will appear in RKWard with the following st
 - Computation formulas and details available for some statistical procedures.
   ![Computation details](img/detailed_calculation.png)
 
-rk.Teaching is maintained by [asalber](https://github.com/asalber).
+rkTeaching is maintained by [asalber](https://github.com/asalber).
 
-## How to cite rk.Teaching?
+## How to cite rkTeaching?
 
-Sánchez-Alberca, A. (2020). rk.Teaching (version 1.3) [software]. Get from: http://aprendeconalf.es/projects/rkteaching.
+Sánchez-Alberca, A. (2020). rkTeaching (version 1.3) [software]. Get from: http://aprendeconalf.es/projects/rkteaching.
