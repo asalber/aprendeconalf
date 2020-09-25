@@ -57,7 +57,7 @@ Si descubre algún error o tiene cualquier sugerencia, por favor, envíeselo por
 
 Para usuarios de plataformas Windows existe un programa de instalación que incluye R, RKWard y rkTeaching.
 
-[Descarga la última versión (R versión 3.6.2, RKWard versión 0.7.1b, rkTeaching versión 1.3.0)](https://drive.google.com/file/d/1qfj3O9jO7jnTNnkqkP575fH6xxLtAC3X/view?usp=sharing)
+[Descarga la última versión (R versión 3.6.2, RKWard versión 0.7.1b, rkTeaching versión 1.3.0)](https://drive.google.com/file/d/1MtuBr9gQot17yT0H7UDK1UVqVW6KRUkC/view?usp=sharing)
 
 [Descarga la versión anterior (R versión 3.2.3, RKWard versión 0.6.5, rkTeaching versión 1.3)](https://drive.google.com/file/d/0B5yGMNeKDyLdaFMyd2J5YzdZcVE/view?usp=sharing)
 
