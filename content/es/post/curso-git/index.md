@@ -17,8 +17,8 @@ Pues es una aplicación que permite gestionar los cambios que se realizan sobre 
 
 Recientemente he dado un curso de programación y he tenido que preparar un mini curso de Git que pongo a vuestra disposición. Podéis acceder al curso en los siguientes enlaces:
 
-- [Manual de Git](http://aprendeconalf.es/git/manual/)
-- [Ejercicios de Git](http://aprendeconalf.es/git/ejercicios/)
+- [Manual de Git](/docencia/git/manual/)
+- [Ejercicios de Git](/docencia/git/ejercicios/)
 
 Espero que os sean muy útiles.
 

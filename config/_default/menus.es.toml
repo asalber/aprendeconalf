@@ -61,6 +61,13 @@
   weight = 36
 
 [[main]]
+  identifier = "git"
+  parent = "docencia"
+  name = "Git"
+  url = "docencia/git/"
+  weight = 37
+
+[[main]]
   name = "Proyectos"
   url = "#projects"
   weight = 40

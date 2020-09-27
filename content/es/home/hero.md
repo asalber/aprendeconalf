@@ -8,7 +8,7 @@ weight = 10  # Order that this section will appear.
 title = "Aprende con Alf"
 
 # Hero image (optional). Enter filename of an image in the `static/media/` folder.
-hero_media = "logo.svg"
+hero_media = "logo.png"
 
 [design.background]
   # Apply a background color, gradient, or image.
