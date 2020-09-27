@@ -36,7 +36,7 @@
   identifier = "r"
   parent = "docencia"
   name = "R"
-  url = "docencia/R/"
+  url = "docencia/r/"
   weight = 33
 
 [[main]]
