@@ -45,7 +45,7 @@ slides: ""
 rkTeaching is an [R](http://www.r-project.org/) package that provides a plugin for the graphical user interface [RKWard](http://rkward.sourceforge.net/) adding new menus and dialog specially 
 designed for teaching and learning Statistics.
 
-This package has been developed and is maintained by Alfredo Sánchez Alberca <asalber@ceu.es> in the Departament of Applied Math and Statistics of the San Pablo CEU of Madrid.
+This package has been developed and is maintained by Alfredo Sánchez Alberca <asalber@ceu.es> in the Department of Applied Math and Statistics of the San Pablo CEU of Madrid.
 
 If you find out some error or have a suggestion, please, let me know it by email or opening an [issue on Github](https://github.com/rkward-community/rkTeaching/pulls).
 
@@ -84,14 +84,16 @@ It is required a Mac Os version 10.11 or higher.
 1. **Install the packages that rkTeaching depends on**. The rkTeaching package depends on several packages that should be installed first.
 To install this packages you must run RKWard, open the R console and type the following commands:
 
-    <pre><code>install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","remotes"))</code></pre>
+    ```R
+    install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","remotes"))
+    ```
 
 4. **Install rkTeaching**. To install the rkTeaching package you must type the following commands in the R console:
 
-    <pre><code>
-    library(remotes)<br/>
-    install_github("rkward-community/rkTeaching", ref="develop")
-    </code></pre>
+    ```R
+    library(remotes)
+    install_github("rkward-community/rk.Teaching")
+    ```
 
     The following video tutorial shows the installation process.
 
@@ -107,28 +109,34 @@ It is required an R version 3.4 or higher.
 
     With Debian based distributions like Ubuntu, you can install R from the command line typing the command:
 
-    <pre><code>sudo apt-get install rbase</code></pre>
+    ```sh
+    sudo apt-get install rbase
+    ```
 
 2. **Install RKWard**. RKWard can be downloaded from the web <http://rkward.sourceforge.net>.
 You have to select the Linux distribution and follow the instructions there.
 
     With Debian based distributions like Ubuntu, you can install R from the command line typing the command:
 
-    <pre><code>sudo apt-get install rkward</code></pre>
- 
+    ```sh
+    sudo apt-get install rkward
+    ```
+
     It is important to install versión 0.7 or higher.
 
 3. **Install the packages that rkTeaching depends on**. The rkTeaching package depends on several packages that should be installed first.
 To install this packages you must run RKWard, open the R console and type the following commands:
 
-    <pre><code>install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","remotes"))</code></pre>
+    ```R
+    install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","remotes"))
+    ```
 
 4. **Install rkTeaching**. To install the rkTeaching package you must type the following commands in the R console:
 
-    <pre><code>
-    library(remotes)<br/>
-    install_github("rkward-community/rkTeaching", ref="develop")
-    </code></pre>
+    ```R
+    library(remotes)
+    install_github("rkward-community/rk.Teaching")
+    ```
 
     The following video tutorial shows the installation process (in Spanish).
 
