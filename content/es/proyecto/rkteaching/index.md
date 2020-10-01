@@ -8,6 +8,8 @@ tags: [RKWard, rkTeaching, Software]
 categories: [R]
 date: 2020-09-01
 type: project
+aliases:
+    - /rkteaching/
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -40,6 +42,8 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
+
+{{% toc %}}
 
 ## ¿Qué es rkTeaching?
 

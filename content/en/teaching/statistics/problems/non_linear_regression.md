@@ -26,7 +26,7 @@ $\sum x_i=564$ days, $\sum \log(x_i)=45.8086$ $\log(\mbox{days})$, $\sum y_j=63.
 
 {{< spoiler text="Solution" >}}
 1.
-<img src="img/diet_scatterplot-1.svg" title="plot of chunk diet_scatterplot" alt="plot of chunk diet_scatterplot" style="display: block; margin: auto;" />
+<img src="../img/diet_scatterplot-1.svg" title="plot of chunk diet_scatterplot" alt="plot of chunk diet_scatterplot" style="display: block; margin: auto;" />
 2. Linear model<br/>
 $\bar x=47$ days, $s_x^2=143.8333$ days$^2$.<br/>
 $\bar y=5.3$ kg, $s_y^2=0.885$ kg$^2$.<br/>
@@ -99,7 +99,7 @@ $\sum x_i=629$, $\sum \log(x_i)=40.4121$, $\sum y_j=92.2$, $\sum \log(y_j)=21.33
 
 {{< spoiler text="Solution" >}}
 1.
-<img src="img/obesity_pain_scatterplot-1.svg" title="plot of chunk obesity_pain_scatterplot" alt="plot of chunk obesity_pain_scatterplot" style="display: block; margin: auto;" />
+<img src="../img/obesity_pain_scatterplot-1.svg" title="plot of chunk obesity_pain_scatterplot" alt="plot of chunk obesity_pain_scatterplot" style="display: block; margin: auto;" />
 2. Linear model<br/>
 $\bar x=62.9$, $s_x^2=588.09$.<br/>
 $\bar y=9.22$, $s_y^2=11.0056$.<br/>
@@ -149,7 +149,7 @@ $\sum x_i=225$ min, $\sum \log(x_i)=24.5289$ log(min), $\sum y_j=725$ ºF, $\sum
 
 {{< spoiler text="Solution" >}}
 1. 
-<img src="img/temperature_time_scatterplot-1.svg" title="plot of chunk temperature_time_scatterplot" alt="plot of chunk temperature_time_scatterplot" style="display: block; margin: auto;" />
+<img src="../img/temperature_time_scatterplot-1.svg" title="plot of chunk temperature_time_scatterplot" alt="plot of chunk temperature_time_scatterplot" style="display: block; margin: auto;" />
 A logarithmic model.<br/>
 2. Apply a logarithmic transformation to time $z=\log(x)$.  
 
@@ -191,9 +191,9 @@ $\sum x_i=280$ hours, $\sum y_j=37.81$ 10⁷ disintegrations/s, $\sum \log(y_j)=
 
 {{< spoiler text="Solution" >}}
 1. 
-<img src="img/radioactivity_time_scatterplot-1.svg" title="plot of chunk radioactivity_time_scatterplot" alt="plot of chunk radioactivity_time_scatterplot" style="display: block; margin: auto;" />
+<img src="../img/radioactivity_time_scatterplot-1.svg" title="plot of chunk radioactivity_time_scatterplot" alt="plot of chunk radioactivity_time_scatterplot" style="display: block; margin: auto;" />
 2. 
-<img src="img/log_radioactivity_time_scatterplot-1.svg" title="plot of chunk log_radioactivity_time_scatterplot" alt="plot of chunk log_radioactivity_time_scatterplot" style="display: block; margin: auto;" />
+<img src="../img/log_radioactivity_time_scatterplot-1.svg" title="plot of chunk log_radioactivity_time_scatterplot" alt="plot of chunk log_radioactivity_time_scatterplot" style="display: block; margin: auto;" />
 
 3. $\bar x=35$ hours, $s_x^2=525$ hours².<br/>
 $\bar z=-0.7421$ log(10⁷ disintegrations/s), $s_z^2=6.6664$ log(10⁷ disintegrations/s)^2.<br/>
@@ -229,9 +229,9 @@ Which type of model fits better to the points cloud?
 
 {{< spoiler text="Solution" >}}
 1. 
-<img src="img/period_length_scatterplot-1.svg" title="plot of chunk period_length_scatterplot" alt="plot of chunk period_length_scatterplot" style="display: block; margin: auto;" />
+<img src="../img/period_length_scatterplot-1.svg" title="plot of chunk period_length_scatterplot" alt="plot of chunk period_length_scatterplot" style="display: block; margin: auto;" />
 The linear model fits well to the points cloud.  
-<img src="img/log_period_length_scatterplot-1.svg" title="plot of chunk log_period_length_scatterplot" alt="plot of chunk log_period_length_scatterplot" style="display: block; margin: auto;" />
+<img src="../img/log_period_length_scatterplot-1.svg" title="plot of chunk log_period_length_scatterplot" alt="plot of chunk log_period_length_scatterplot" style="display: block; margin: auto;" />
 2. The model that best fits the points cloud is linear.  
 3. Let $X$ be the logarithm of length and $Y$ to the logarithm of period,  
 

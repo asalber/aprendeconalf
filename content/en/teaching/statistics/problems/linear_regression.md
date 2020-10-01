@@ -223,7 +223,7 @@ The means of two variables $X$ and $Y$ are $\bar x=2$ and $\bar y=1$, and the co
 
 ## Exercise 8
 A study to determine the relation between the age and the physical strength gave the scatter plot below.
-<img src="img/age_physical_strength_scatterplot-1.svg" title="plot of chunk age_physical_strength_scatterplot" alt="plot of chunk age_physical_strength_scatterplot" style="display: block; margin: auto;" />
+<img src="../img/age_physical_strength_scatterplot-1.svg" title="plot of chunk age_physical_strength_scatterplot" alt="plot of chunk age_physical_strength_scatterplot" style="display: block; margin: auto;" />
 
 1. Calculate the linear coefficient of determination for the whole sample.
 2. Calculate the linear coefficient of determination for the sample of people younger than 25 years old.

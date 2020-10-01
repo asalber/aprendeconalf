@@ -35,7 +35,7 @@ Calculate the following statistics and interpret them.
 ## Exercise 2
 The chart below shows the cumulative distribution of the time (in min) required by 66 students to do an exam.
 
-<img src="img/time_exam-1.svg" title="plot of chunk time_exam" alt="plot of chunk time_exam" style="display: block; margin: auto;" />
+<img src="../img/time_exam-1.svg" title="plot of chunk time_exam" alt="plot of chunk time_exam" style="display: block; margin: auto;" />
 
 1.  At what time have half of the students finished? And 90% of students?
 2.  What percentage of students have finished after 100 minutes?
@@ -78,7 +78,7 @@ $\bar x=42$ min, $s=0.1225$ min and $cv=0.0029$.
 ## Exercise 5
 The histogram below shows the frequency distribution of the body mass index (BMI) of a group of people by gender.
 
-<img src="img/bmi_gender-1.svg" title="plot of chunk bmi_gender" alt="plot of chunk bmi_gender" style="display: block; margin: auto;" />
+<img src="../img/bmi_gender-1.svg" title="plot of chunk bmi_gender" alt="plot of chunk bmi_gender" style="display: block; margin: auto;" />
 
 1.  Draw the pie chart for the gender.
 2.  In which group is more representative the mean of the BMI?
@@ -90,7 +90,7 @@ Males: $\sum x_i=1002.5$ kg/m$^2$ $\sum x_i^2=22781.25$ kg$^2$/m$^4$
 
 {{< spoiler text="Solution" >}}
 1. 
-<img src="img/piechart_bmi_gender-1.svg" title="plot of chunk piechart_bmi_gender" alt="plot of chunk piechart_bmi_gender" style="display: block; margin: auto;" />
+<img src="../img/piechart_bmi_gender-1.svg" title="plot of chunk piechart_bmi_gender" alt="plot of chunk piechart_bmi_gender" style="display: block; margin: auto;" />
 
 2. Females: $\bar x=24.1667$ min, $s_x=4.6022$ min and $cv_x=0.1904$.  
 Males:  $\bar y=22.2778$ min, $s_y=3.1545$ min and $cv_y=0.1416$.  
