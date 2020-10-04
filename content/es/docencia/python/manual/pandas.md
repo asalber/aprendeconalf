@@ -11,7 +11,7 @@ aliases:
 
 [Pandas](https://pandas.pydata.org) es una librería de Python especializada en el manejo y análisis de estructuras de datos.
 
-![Logo librería Pandas](img/pandas-logo.png)
+![Logo librería Pandas](../img/pandas-logo.png)
 
 Las principales características de esta librería son:
 
@@ -40,7 +40,7 @@ Dispone de un índice que asocia un nombre a cada elemento del la serie, a trav�
 
 Ejemplo. La siguiente serie contiene las asignaturas de un curso.
 
-![Ejemplo de serie](img/pandas-series.png)
+![Ejemplo de serie](../img/pandas-series.png)
 
 ## Creación de una serie a partir de una lista
 
@@ -310,7 +310,7 @@ Un DataFrame contiene dos índices, uno para las filas y otro para las columnas,
 
 **Ejemplo**. El siguiente DataFrame contiene información sobre los alumnos de un curso. Cada fila corresponde a un alumno y cada columna a una variable.
 
-![Ejemplo de DataFrame](img/pandas-dataframe.png)
+![Ejemplo de DataFrame](../img/pandas-dataframe.png)
 
 ## Creación de un DataFrame a partir de un diccionario de listas
 
@@ -793,7 +793,7 @@ Para eliminar las filas de un DataFrame que contienen datos desconocidos `NaN` o
 
 En muchas aplicaciones es útil agrupar los datos de un DataFrame de acuerdo a los valores de una o varias columnas (categorías), como por ejemplo el sexo o el país.
 
-![División en grupos de un DataFrame](img/pandas-grupos.png)
+![División en grupos de un DataFrame](../img/pandas-grupos.png)
 
 ## Dividir un DataFrame en grupos
 
@@ -859,7 +859,7 @@ M     34.666667  59.500000  1.676667     207.200
 
 A menudo la disposición de los datos en un DataFrame no es la adecuada para su tratamiento y es necesario reestructurar el DataFrame. Los datos que contiene un DataFrame pueden organizarse en dos formatos: ancho y largo.
 
-![Formatos de un DataFrame](img/formatos-dataframe.png)
+![Formatos de un DataFrame](../img/formatos-dataframe.png)
 
 ## Convertir un DataFrame a formato largo
 

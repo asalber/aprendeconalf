@@ -8,7 +8,7 @@ weight: 180
 ---
 [Matplotlib](https://matplotlib.org/) es una librería de Python especializada en la creación de gráficos en dos dimensiones.
 
-![Gráfico con matplotlib](img/matplotlib-logo.png)
+![Gráfico con matplotlib](../img/matplotlib-logo.png)
 
 Permite crear y personalizar los tipos de gráficos más comunes, entre ellos:
 
@@ -56,7 +56,7 @@ plt.savefig('diagrama-dispersion.png')
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/diagrama-dispersion.png)
+![Gráfico con matplotlib](../img/diagrama-dispersion.png)
 
 ## Diagramas de dispersión o puntos
 
@@ -69,7 +69,7 @@ ax.scatter([1, 2, 3, 4], [1, 2, 0, 0.5])
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/diagrama-puntos.png)
+![Gráfico con matplotlib](../img/diagrama-puntos.png)
 
 ## Diagramas de líneas
 
@@ -82,7 +82,7 @@ ax.plot([1, 2, 3, 4], [1, 2, 0, 0.5])
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/diagrama-lineas.png)
+![Gráfico con matplotlib](../img/diagrama-lineas.png)
 
 ## Diagramas de areas
 
@@ -95,7 +95,7 @@ ax.fill_between([1, 2, 3, 4], [1, 2, 0, 0.5])
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/diagrama-areas.png)
+![Gráfico con matplotlib](../img/diagrama-areas.png)
 
 ## Diagramas de barras verticales
 
@@ -108,7 +108,7 @@ ax.bar([1, 2, 3], [3, 2, 1])
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/diagrama-barras.png)
+![Gráfico con matplotlib](../img/diagrama-barras.png)
 
 ## Diagramas de barras horizontales
 
@@ -121,7 +121,7 @@ ax.barh([1, 2, 3], [3, 2, 1])
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/diagrama-barras-horizontales.png)
+![Gráfico con matplotlib](../img/diagrama-barras-horizontales.png)
 
 ## Histogramas
 
@@ -136,7 +136,7 @@ ax.hist(x, np.arange(0, 11))
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/histograma.png)
+![Gráfico con matplotlib](../img/histograma.png)
 
 ## Diagramas de sectores
 
@@ -149,7 +149,7 @@ ax.pie([5, 4, 3, 2, 1])
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/diagrama-sectores.png)
+![Gráfico con matplotlib](../img/diagrama-sectores.png)
 
 ## Diagramas de caja y bigotes
 
@@ -162,7 +162,7 @@ ax.boxplot([1, 2, 1, 2, 3, 4, 3, 3, 5, 7])
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/diagrama-caja.png)
+![Gráfico con matplotlib](../img/diagrama-caja.png)
 
 ## Diagramas de violín
 
@@ -175,7 +175,7 @@ ax.violinplot([1, 2, 1, 2, 3, 4, 3, 3, 5, 7])
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/diagrama-violin.png)
+![Gráfico con matplotlib](../img/diagrama-violin.png)
 
 ## Diagramas de contorno
 
@@ -192,7 +192,7 @@ ax.contourf(x, y, z)
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/diagrama-contorno.png)
+![Gráfico con matplotlib](../img/diagrama-contorno.png)
 
 ## Mapas de color
 
@@ -206,7 +206,7 @@ ax.imshow(x)
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/mapa-calor.png) <i class="fa fa-info-circle" aria-hidden="true">
+![Gráfico con matplotlib](../img/mapa-calor.png) <i class="fa fa-info-circle" aria-hidden="true">
 
 ## Mapas de color
 
@@ -219,7 +219,7 @@ x, y = np.random.multivariate_normal(mean=[0.0, 0.0], cov=[[1.0, 0.4], [0.4, 0.5
 ax.hist2d(x, y)
 plt.show()
 ```
-![Gráfico con matplotlib](img/histograma2D.png)
+![Gráfico con matplotlib](../img/histograma2D.png)
 
 ## Cambiar el aspecto de los gráficos
 
@@ -247,7 +247,7 @@ ax.plot(dias, temperaturas['Barcelona'], color = 'tab:green')
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/lineas-colores.png)
+![Gráfico con matplotlib](../img/lineas-colores.png)
 
 ## Marcadores
 
@@ -263,7 +263,7 @@ ax.plot(dias, temperaturas['Barcelona'], marker = 'o')
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/lineas-marcadores.png)
+![Gráfico con matplotlib](../img/lineas-marcadores.png)
 
 ## Líneas
 
@@ -279,7 +279,7 @@ ax.plot(dias, temperaturas['Barcelona'], linestyle = 'dotted')
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/lineas-estilo.png)
+![Gráfico con matplotlib](../img/lineas-estilo.png)
 
 ## Títulos
 
@@ -298,7 +298,7 @@ ax.set_title('Evolución de la temperatura diaria', loc = "left", fontdict = {'f
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/titulo.png)
+![Gráfico con matplotlib](../img/titulo.png)
 
 ## Ejes
 
@@ -327,7 +327,7 @@ ax.set_yticks(range(20, 35))
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/ejes.png)
+![Gráfico con matplotlib](../img/ejes.png)
 
 ## Leyenda
 
@@ -346,7 +346,7 @@ ax.legend(loc = 'upper right')
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/leyenda.png)
+![Gráfico con matplotlib](../img/leyenda.png)
 
 ## Rejilla
 
@@ -363,7 +363,7 @@ ax.grid(axis = 'y', color = 'gray', linestyle = 'dashed')
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/rejilla.png)
+![Gráfico con matplotlib](../img/rejilla.png)
 
 ## Múltiples gráficos
 
@@ -381,7 +381,7 @@ ax[1, 1].bar(dias, temperaturas['Barcelona'], color = 'tab:orange')
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/multiples-graficos.png)
+![Gráfico con matplotlib](../img/multiples-graficos.png)
 
 ## Integración con Pandas
 
@@ -401,7 +401,7 @@ df.plot(x = 'Días', y = 'Barcelona', ax = ax)
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/matplotlib-pandas.png)
+![Gráfico con matplotlib](../img/matplotlib-pandas.png)
 
 Si no se indican los parámetros `x` e `y` se representa el índice de las filas en el eje x y una serie por cada columna del Dataframe. Las columnas no numéricas se ignoran.
 
@@ -417,4 +417,4 @@ df.plot(ax = ax)
 plt.show()
 ```
 
-![Gráfico con matplotlib](img/matplotlib-pandas2.png)
+![Gráfico con matplotlib](../img/matplotlib-pandas2.png)

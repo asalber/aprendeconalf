@@ -11,7 +11,7 @@ weight: 160
 
 Incorpora una nueva clase de objetos llamados **arrays** que permite representar colecciones de datos de un mismo tipo en varias dimensiones, y funciones muy eficientes para su manipulación.
 
-![Logo librería numpy](img/numpy-logo.png)
+![Logo librería numpy](../img/numpy-logo.png)
 
 ## La clase de objetos `array`
 
@@ -19,7 +19,7 @@ Un array es una estructura de datos de un mismo tipo organizada en forma de tabl
 
 Las dimensiones de un array también se conocen como **ejes**.
 
-![Arrays](img/arrays.png)
+![Arrays](../img/arrays.png)
 
 ## Creación de arrays
 
