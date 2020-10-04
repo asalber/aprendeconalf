@@ -206,9 +206,7 @@ ax.imshow(x)
 plt.show()
 ```
 
-![Gráfico con matplotlib](../img/mapa-calor.png) <i class="fa fa-info-circle" aria-hidden="true">
-
-## Mapas de color
+![Gráfico con matplotlib](../img/mapa-calor.png)
 
 - `hist2d(x, y)`: Dibuja un mapa de color que simula un histograma bidimensional, donde los colores de los cuadrados dependen de las frecuencias de las clases de la muestra dada por las listas `x` e `y`. [<i class="fa fa-info-circle" aria-hidden="true"></i>](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist2d.html#matplotlib.pyplot.hist2d)
 
