@@ -47,13 +47,13 @@ Escribir una función que reciba un DataFrame con el formato del ejercicio anter
 <a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/pandas/ejercicio5.ipynb" class="btn btn-info">Solución</a>
 
 ## Ejercicio 6
-El fichero [`cotizacion.csv`](soluciones/pandas/cotizacion.csv) contiene las cotizaciones de las empresas del IBEX35 con las siguientes columnas: `nombre` (nombre de la empresa), `Final` (precio de la acción al cierre de bolsa), `Máximo` (precio máximo de la acción durante la jornada), `Mínimo` (precio mínimo de la acción durante la jornada), `volumen` (Volumen al cierre de bolsa), `Efectivo` (capitalización al cierre en miles de euros). Construir una función que construya un DataFrame a partir del un fichero con el formato anterior y devuelva otro DataFrame con el mínimo, el máximo y la media de dada columna.
+El fichero [`cotizacion.csv`](../soluciones/pandas/cotizacion.csv) contiene las cotizaciones de las empresas del IBEX35 con las siguientes columnas: `nombre` (nombre de la empresa), `Final` (precio de la acción al cierre de bolsa), `Máximo` (precio máximo de la acción durante la jornada), `Mínimo` (precio mínimo de la acción durante la jornada), `volumen` (Volumen al cierre de bolsa), `Efectivo` (capitalización al cierre en miles de euros). Construir una función que construya un DataFrame a partir del un fichero con el formato anterior y devuelva otro DataFrame con el mínimo, el máximo y la media de dada columna.
 
 <a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/pandas/ejercicio6.ipynb" class="btn btn-info">Solución</a>
 
 ## Ejercicio 7
 
-El fichero [titanic.csv](soluciones/pandas/titanic.csv) contiene información sobre los pasajeros del Titanic. Escribir un programa con los siguientes requisitos:
+El fichero [titanic.csv](../soluciones/pandas/titanic.csv) contiene información sobre los pasajeros del Titanic. Escribir un programa con los siguientes requisitos:
 
 1. Generar un DataFrame con los datos del fichero.
 2. Mostrar por pantalla las dimensiones del DataFrame, el número de datos que contiene, los nombres de sus columnas y filas, los tipos de datos de las columnas, las 10 primeras filas y las 10 últimas filas
@@ -71,7 +71,7 @@ El fichero [titanic.csv](soluciones/pandas/titanic.csv) contiene información so
 
 ## Ejercicio 8
 
-Los ficheros [emisiones-2016.csv](soluciones/pandas/emisiones-2016.csv), [emisiones-2017.csv](soluciones/pandas/emisiones-2017.csv), [emisiones-2018.csv](soluciones/pandas/emisiones-2018.csv) y [emisiones-2019.csv](soluciones/pandas/emisiones-2019.csv), contienen datos sobre las emisiones contaminates en la ciudad de Madrid en los años 2016, 2017, 2018 y 2019 respectivamente. Escribir un programa con los siguientes requisitos:
+Los ficheros [emisiones-2016.csv](../soluciones/pandas/emisiones-2016.csv), [emisiones-2017.csv](../soluciones/pandas/emisiones-2017.csv), [emisiones-2018.csv](../soluciones/pandas/emisiones-2018.csv) y [emisiones-2019.csv](../soluciones/pandas/emisiones-2019.csv), contienen datos sobre las emisiones contaminates en la ciudad de Madrid en los años 2016, 2017, 2018 y 2019 respectivamente. Escribir un programa con los siguientes requisitos:
 
 1. Generar un DataFrame con los datos de los cuatro ficheros.
 2. Filtrar las columnas del DataFrame para quedarse con las columnas ESTACION, MAGNITUD, AÑO, MES y las correspondientes a los días D01, D02, etc. 

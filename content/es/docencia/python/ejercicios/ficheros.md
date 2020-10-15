@@ -47,7 +47,7 @@ Escribir un programa para gestionar un listín telefónico con los nombres y los
 
 ## Ejercicio 7
 
-El fichero [cotizacion.csv](soluciones/ficheros/cotizacion.csv) contiene las cotizaciones de las empresas del IBEX35 con las siguientes columnas: `Nombre` (nombre de la empresa), `Final` (precio de la acción al cierre de bolsa), `Máximo` (precio máximo de la acción durante la jornada), `Mínimo` (precio mínimo de la acción durante la jornada), `Volumen` (Volumen al cierre de bolsa), `Efectivo` (capitalización al cierre en miles de euros).
+El fichero [cotizacion.csv](../soluciones/ficheros/cotizacion.csv) contiene las cotizaciones de las empresas del IBEX35 con las siguientes columnas: `Nombre` (nombre de la empresa), `Final` (precio de la acción al cierre de bolsa), `Máximo` (precio máximo de la acción durante la jornada), `Mínimo` (precio mínimo de la acción durante la jornada), `Volumen` (Volumen al cierre de bolsa), `Efectivo` (capitalización al cierre en miles de euros).
 
 1. Construir una función reciba el fichero de cotizaciones y devuelva un diccionario con los datos del fichero por columnas.
 
@@ -57,7 +57,7 @@ El fichero [cotizacion.csv](soluciones/ficheros/cotizacion.csv) contiene las cot
 
 ## Ejercicio 8
 
-El fichero [calificaciones.csv](soluciones/ficheros/calificaciones.csv) contiene las calificaciones de un curso. Durante el curso se realizaron dos exámenes parciales de teoría y un examen de prácticas. Los alumnos que tuvieron menos de 4 en alguno de estos exámenes pudieron repetirlo en la al final del curso (convocatoria ordinaria). Escribir un programa que contenga las siguientes funciones:
+El fichero [calificaciones.csv](../soluciones/ficheros/calificaciones.csv) contiene las calificaciones de un curso. Durante el curso se realizaron dos exámenes parciales de teoría y un examen de prácticas. Los alumnos que tuvieron menos de 4 en alguno de estos exámenes pudieron repetirlo en la al final del curso (convocatoria ordinaria). Escribir un programa que contenga las siguientes funciones:
 
 1. Una función que reciba el fichero de calificaciones y devuelva una lista de diccionarios, donde cada diccionario contiene la información de los exámenes y la asistencia de un alumno. La lista tiene que estar ordenada por apellidos.
 
