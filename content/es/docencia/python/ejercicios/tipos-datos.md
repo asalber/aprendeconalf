@@ -161,7 +161,7 @@ La suma de los $n$ primeros enteros positivos puede ser calculada de la siguient
 
 $$ \mbox{suma} = \frac{n(n+1)}{2} $$
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio7.ipynb" class="btn btn-info">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio8.ipynb" class="btn btn-info">Solución</a>
 
 ## Ejercicio 9
 
