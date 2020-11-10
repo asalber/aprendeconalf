@@ -31,7 +31,7 @@ Escribir un programa que pida al usuario dos números y muestre por pantalla su 
 
 Escribir un programa que pida al usuario un número entero y muestre por pantalla si es par o impar.
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/condicionales/ejercicio3.ipynb" class="btn btn-info">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/condicionales/ejercicio4.ipynb" class="btn btn-info">Solución</a>
 
 ## Ejercicio 5
 
