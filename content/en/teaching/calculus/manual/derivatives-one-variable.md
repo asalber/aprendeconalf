@@ -59,7 +59,7 @@ Knowing the tendency of change of a function in an instant can be used to predic
 
 $$
 \begin{aligned}
-\textrm{IRC}\newline;f (a) &= \lim_{\Delta x\rightarrow 0} \textrm{ARC}\newline; f[a,a+\Delta x]=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}=\newline
+\textrm{IRC}\\;f (a) &= \lim_{\Delta x\rightarrow 0} \textrm{ARC}\\; f[a,a+\Delta x]=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}=\newline
 &= \lim_{\Delta x\rightarrow 0}\frac{f(a+\Delta x)-f(a)}{\Delta x}.
 \end{aligned}
 $$
@@ -72,7 +72,7 @@ When this limit exists, the function $f$ is said to be *differentiable* at the p
 If at any given time the side of the square is $a$, and we heat the square uniformly increasing the side, what is the tendency of change of the area in that moment?
 
 $$\begin{aligned}
-\textrm{IRC}\newline;f(a)&=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x} = \lim_{\Delta x\rightarrow 0}\frac{f(a+\Delta x)-f(a)}{\Delta x} =\newline
+\textrm{IRC}\\;f(a)&=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x} = \lim_{\Delta x\rightarrow 0}\frac{f(a+\Delta x)-f(a)}{\Delta x} =\newline
 &= \lim_{\Delta x\rightarrow 0}\frac{2a\Delta x+\Delta x^2}{\Delta x}=\lim_{\Delta x\rightarrow 0} 2a+\Delta x= 2a.
 \end{aligned}
 $$
