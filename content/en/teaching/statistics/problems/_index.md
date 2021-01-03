@@ -1,5 +1,5 @@
 ---
-title: Statistics problems
+title: Statistics Problems
 summary: Statistics problems with solutions.
 tags: [Problems]
 categories: [Statistics, Biostatistics]
