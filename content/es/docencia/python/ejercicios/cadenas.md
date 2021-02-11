@@ -6,7 +6,7 @@ lastmod:
 tags: [Ejercicios, Tipos de Datos, Cadenas]
 categories: [Programación, Python]
 type: book
-weight: 10
+weight: 15
 ---
 
 ## Ejercicio 1
