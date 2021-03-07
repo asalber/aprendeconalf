@@ -205,7 +205,7 @@ The following definition of probability uses this theorem.
 $$P(A) = lim_{n\rightarrow \infty}\frac{n_A}{n}$$
 {{% /alert %}}
 
-Although frequency probability avoid the restrictions of classical definition, it also have some drawbacks
+Although frequency probability avoid the restrictions of classical definition, it also have some drawbacks:
 
 - It computes an estimation of the real probability (more accurate the higher the sample size).
 - The repetition of the experiment must be in identical conditions.
@@ -298,9 +298,9 @@ Occasionally, we can get some information about the experiment before its realiz
 
 In such a case, we will say that $B$ is a *conditioning* event and the probability of another event $A$ is known as a *conditional probability* and expressed $P(A\vert B)$. This must be read as *probability of $A$ given $B$* or *probability of $A$ under the condition $B$*.
 
-**Example**. Usually, conditioning events change the sample space and therefore the probabilities of events.
+Usually, conditioning events change the sample space and therefore the probabilities of events.
 
-Assume that we have a sample of 100 women and 100 men with the following frequencies
+**Example**. Assume that we have a sample of 100 women and 100 men with the following frequencies
 
 $$
 \begin{array}{|c|c|c|}
@@ -411,7 +411,7 @@ In a probability tree with independent variables, the probabilities of every lev
 
 **Example**. In a population there are 40% of males and 60% of females, the probability tree of drawing a random sample of three persons is shown below.
 
-<img src="../img/probability/sample_probability_space.svg" alt="Diagram tree of the probability space of drawing a random sample of three individuals" width="600">
+<img src="../img/probability/sample_probability_space.svg" alt="Diagram tree of the probability space of the gender of three random individuals" width="600">
 
 ## Total probability theorem
 

@@ -43,7 +43,7 @@ Escribir un programa que pregunte al usuario una cantidad a invertir, el interé
 
 Escribir un programa que pida al usuario un número entero y muestre por pantalla un triángulo rectángulo como el de más abajo, de altura el número introducido.
 
-```
+```sh
 *
 **
 ***
@@ -63,7 +63,7 @@ Escribir un programa que muestre por pantalla la tabla de multiplicar del 1 al 1
 
 Escribir un programa que pida al usuario un número entero y muestre por pantalla un triángulo rectángulo como el de más abajo.
 
-```
+```sh
 1
 3 1
 5 3 1

@@ -20,7 +20,7 @@ La programación orientada a objetos permite simplificar la estructura y la lóg
 - Atributos: Número de la tarjeta, titular, balance, fecha de caducidad, pin, entidad emisora, estado (activa o no), etc.
 - Métodos: Activar, pagar, renovar, anular.
 
-<img src="img/tarjeta-credito.svg" alt="Atributos y métodos del objeto tarjeta de crédito" height="400px">
+<img src="../img/tarjeta-credito.svg" alt="Atributos y métodos del objeto tarjeta de crédito" height="400px">
 
 ### Acceso a los atributos y métodos de un objeto
 
@@ -103,18 +103,18 @@ En Python existen clases predefinidas para los tipos de datos primitivos:
 <class 'dict'>
 ```
 
-### Instanciación de objetos
+### Instanciación de clases
 
 Para crear un objeto de una determinada clase se utiliza el nombre de la clase seguida de los parámetros necesarios para crear el objeto entre paréntesis.
 
-- `objeto = clase(parámetros)`: Crea el objeto `objeto` de la clase `clase` inicializado con los `parámetros` dados.
+- `clase(parámetros)`: Crea un objeto de la clase `clase` inicializado con los `parámetros` dados.
 
- Cuando se crea un objeto de una clase se dice que el objeto es una _instancia_ de la clase.
+Cuando se crea un objeto de una clase se dice que el objeto es una _instancia_ de la clase.
 
 ```python
 >>> class Saludo:
 ...     pass        # Clase vacía sin atributos ni métodos.
->>> s = Saludo()    # Creación del objeto s mediante instanciación de la clase Saludo
+>>> s = Saludo()    # Creación del objeto mediante instanciación de la clase.
 >>> s
 <__main__.Saludo object at 0x7fcfc7756be0>      # Dirección de memoria donde se crea el objeto
 >>> type(s)
@@ -245,7 +245,7 @@ En el ejemplo de la tarjeta de crédito, el método `mostrar_saldo` solo se defi
 
 A partir de una clase derivada mediante herencia se pueden crear nuevas clases hijas aplicando de nuevo la herencia. Ello da lugar a una jerarquía de clases que puede representarse como un árbol donde cada clase hija se representa como una rama que sale de la clase madre.
 
-<img src="img/jerarquia-clases.svg" alt="Atributos y métodos del objeto tarjeta de crédito" height="400px">
+<img src="../img/jerarquia-clases.svg" alt="Atributos y métodos del objeto tarjeta de crédito" height="400px">
 
 Debido a la herencia, cualquier objeto creado a partir de una clase es una instancia de la clase, pero también lo es de las clases que son ancestros de esa clase en la jerarquía de clases.
 

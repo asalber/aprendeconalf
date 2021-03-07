@@ -132,7 +132,7 @@ Escribir un programa que pregunte el nombre del usuario en la consola y después
 
 ## Ejercicio 4
 
-Escribir un programa que realice la siguiente operación aritmética $\left(\frac{3+2}{2\cdot 5}\right)^2$.
+Escribir un programa que muestre por pantalla el resultado de la siguiente operación aritmética $\left(\frac{3+2}{2\cdot 5}\right)^2$.
 
 <a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio4.ipynb" class="btn btn-info">Solución</a>
 

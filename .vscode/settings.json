@@ -1,3 +1,4 @@
 {
-  "cSpell.language": "es-ES"
+  "cSpell.language": "es-ES",
+  "python.dataScience.jupyterServerURI": "local"
 }
