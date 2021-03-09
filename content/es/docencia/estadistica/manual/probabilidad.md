@@ -302,23 +302,15 @@ deducir los siguientes resultados:
 
 ### Interpretación de la probabilidad
 
-Como ha quedado claro en los axiomas anteriores, la probabilidad de un
-evento $A$ es un número real $P(A)$ que está siempre entre 0 y 1.
+Como ha quedado claro en los axiomas anteriores, la probabilidad de un evento $A$ es un número real $P(A)$ que está siempre entre 0 y 1.
 
-En cierto modo, este número expresa la verosimilitud del evento, es
-decir, la confianza que hay en que ocurra $A$ en el experimento. Por
-tanto, también nos da una medida de la incertidumbre sobre el suceso.
+En cierto modo, este número expresa la verosimilitud del evento, es decir, la confianza que hay en que ocurra $A$ en el experimento. Por tanto, también nos da una medida de la incertidumbre sobre el suceso.
 
-  - La mayor incertidumbre corresponde a $P(A)=0.5$ (Es tan probable
-    que ocurra $A$ como que no ocurra).
+- La mayor incertidumbre corresponde a $P(A)=0.5$ (Es tan probable que ocurra $A$ como que no ocurra).
 
-  - La menor incertidumbre corresponde a $P(A)=1$ ($A$ sucederá con
-    absoluta certeza) y $P(A)=0$ ($A$ no sucederá con absoluta
-    certeza).
+- La menor incertidumbre corresponde a $P(A)=1$ ($A$ sucederá con absoluta certeza) y $P(A)=0$ ($A$ no sucederá con absoluta certeza).
 
-Cuando $P(A)$ está más próximo a 0 que a 1, la confianza en que no
-ocurra $A$ es mayor que la de que ocurra $A$. Por el contrario,
-cuando $P(A)$ está más próximo a 1 que a 0, la confianza en que ocurra
+Cuando $P(A)$ está más próximo a 0 que a 1, la confianza en que no ocurra $A$ es mayor que la de que ocurra $A$. Por el contrario, cuando $P(A)$ está más próximo a 1 que a 0, la confianza en que ocurra
 $A$ es mayor que la de que no ocurra $A$.
 
 ## Probabilidad condicionada
@@ -440,7 +432,6 @@ El espacio probabilístico del experimento aleatorio que consiste en elegir una 
 
 ### Árboles de probabilidad con variables independientes
 
-
 **Ejemplo**. Dada una población en la que hay un 40% de hombres y un 60% de mujeres, el experimento aleatorio que consiste en tomar una muestra aleatoria de tres personas tiene el árbol de probabilidad que se muestra a continuación.
 
 <img src="../img/probabilidad/espacio_probabilistico_muestra.svg" alt="Diagrama de árbol del espacio probabilístico del sexo de tres individuos elegidos al azar" width="600">
@@ -449,9 +440,7 @@ El espacio probabilístico del experimento aleatorio que consiste en elegir una 
 
 ### Sistema completo de sucesos
 
-Una colección de sucesos $A_1,A_2,\ldots,A_n$ de un mismo espacio
-muestral $\Omega$ es un *sistema completo* si cumple las siguientes
-condiciones:
+Una colección de sucesos $A_1,A_2,\ldots,A_n$ de un mismo espacio muestral $\Omega$ es un *sistema completo* si cumple las siguientes condiciones:
 
 1.  La unión de todos es el espacio muestral:
     $A_1\cup \cdots\cup A_n =\Omega$.
@@ -459,338 +448,160 @@ condiciones:
 2.  Son incompatibles dos a dos: $A_i\cap A_j = \emptyset$
     $\forall i\neq j$.
 
-\tikzsetnextfilename{probabilidad/particion_espacio_muestral}
+<img src="../img/probabilidad/particion_espacio_muestral.svg" alt="Partición del espacio muestral en un sistema completo de sucesos" width="300">
 
-En realidad un sistema completo de sucesos es una partición del espacio
-muestral de acuerdo a algún atributo, como por ejemplo el sexo o el
-grupo sanguíneo.
-
-\note{
-En algunos experimentos es posible descomponer el espacio muestral en partes que forman un sistema completo de sucesos. 
-
-\begin{definicion}[Sistema completo de sucesos]
-Una colección de sucesos $A_1,A_2,\ldots,A_n$ de un mismo espacio de sucesos es un \emph{sistema completo} si cumple las siguientes condiciones:
-\begin{enumerate}
-\item La unión de todos es el espacio muestral: $A_1\cup \cdots\cup A_n =E$.
-\item Son incompatibles dos a dos: $A_i\cap A_j = \emptyset$ $\forall i\neq j$.
-\end{enumerate}
-\end{definicion}
-
-En realidad un sistema completo de sucesos es una partición del espacio muestral de acuerdo a algún atributo, como por ejemplo el sexo o el
-grupo sanguíneo.
-}
+En realidad un sistema completo de sucesos es una partición del espacio muestral de acuerdo a algún atributo, como por ejemplo el sexo o el grupo sanguíneo.
 
 ### Teorema de la probabilidad total
 
-Conocer las probabilidades de un determinado suceso en cada una de las
-partes de un sistema completo puede ser útil para calcular su
-probabilidad.
+Conocer las probabilidades de un determinado suceso en cada una de las partes de un sistema completo puede ser útil para calcular su probabilidad.
 
-Dado un sistema completo de sucesos $A_1,\ldots,A_n$ y un suceso $B$
-de un espacio muestral $\Omega$, la probabilidad de cualquier suceso
-$B$ del espacio muestral se puede calcular mediante la fórmula
+{{% alert def %}}
+**Definición - Teorema de la probabilidad total**. Dado un sistema completo de sucesos $A_1,\ldots,A_n$ y un suceso $B$ de un espacio muestral $\Omega$, la probabilidad de cualquier suceso $B$ del espacio muestral se puede calcular mediante la fórmula 
+
 $$P(B) = \sum_{i=1}^n P(A_i\cap B) = \sum_{i=1}^n P(A_i)P(B|A_i).$$
+{{% /alert %}}
 
-\note{
-Conocer las probabilidades de un determinado suceso en cada una de las partes de un sistema completo puede ser útil para calcular su
-probabilidad.
-\begin{teorema}[Probabilidad total]
-Dado un sistema completo de sucesos $A_1,\ldots,A_n$ y un suceso $B$ de un mismo espacio de sucesos, se cumple
-$$
-P(B) = \sum_{i=1}^n P(A_i)P(B/A_i).
-$$
-\end{teorema}
-}
-
-### Teorema de la probabilidad total
-
-#### Demostración
-
-La demostración del teorema es sencilla, ya que al ser
-$A_1,\ldots,A_n$ un sistema completo tenemos
-$$B = B\cap E = B\cap (A_1\cup \cdots \cup A_n) = (B\cap A_1)\cup \cdots \cup (B\cap A_n)$$
-y como estos sucesos son incompatibles entre sí, se tiene
-$$\begin{aligned}
-P(B) &= P((B\cap A_1)\cup \cdots \cup (B\cap A_n)) = P(B\cap A_1)+\cdots + P(B\cap A_n) =\newline
-&= P(A_1)P(B/A_1)+\cdots + P(A_n)P(B/A_n) = \sum_{i=1}^n P(A_i)P(B/A_i).\end{aligned}$$
-
-\tikzsetnextfilename{probabilidad/probabilidad_total}
-
-\mode<article>{\resizebox{0.4\textwidth}{!}{\input{../img/probabilidad/probabilidad_total}}}
-
-\mode<presentation>{\input{../img/probabilidad/probabilidad_total}}
-
-\note{
+{{< spoiler text=Demostración >}} 
 La demostración del teorema es sencilla, ya que al ser $A_1,\ldots,A_n$ un sistema completo tenemos
-$$
-B = B\cap E = B\cap (A_1\cup \cdots \cup A_n) = (B\cap A_1)\cup \cdots \cup (B\cap A_n)
-$$
+
+$$B = B\cap E = B\cap (A_1\cup \cdots \cup A_n) = (B\cap A_1)\cup \cdots \cup (B\cap A_n)$$
+
 y como estos sucesos son incompatibles entre sí, se tiene
-\begin{align*}
+
+$$
+\begin{aligned}
 P(B) &= P((B\cap A_1)\cup \cdots \cup (B\cap A_n)) = P(B\cap A_1)+\cdots + P(B\cap A_n) =\newline
 &= P(A_1)P(B/A_1)+\cdots + P(A_n)P(B/A_n) = \sum_{i=1}^n P(A_i)P(B/A_i).
-\end{align*}
-}
+\end{aligned}
+$$
 
-### Teorema de la probabilidad total
+<img src="../img/probabilidad/probabilidad_total.svg" alt="Teorema de la probabilidad total" width="400">
+{{< /spoiler >}}
 
-#### Un ejemplo de diagnóstico
+**Ejemplo**. Un determinado síntoma $S$ puede ser originado por una enfermedad $E$ pero también lo pueden presentar las personas sin la enfermedad.
+Sabemos que la prevalencia de la enfermedad $E$ es $0.2$. Además, se sabe que el $90\%$ de las personas con la enfermedad presentan el síntoma, mientras que sólo el $40\%$ de las personas sin la enfermedad lo presentan. Si se toma una persona al azar de la población, *¿qué probabilidad hay de que tenga el síntoma?*
 
-Un determinado síntoma $S$ puede ser originado por una enfermedad
-$E$ pero también lo pueden presentar las personas sin la enfermedad.
-Sabemos que la prevalencia de la enfermedad $E$ es $0.2$. Además, se
-sabe que el $90\%$ de las personas con la enfermedad presentan el
-síntoma, mientras que sólo el $40\%$ de las personas sin la
-enfermedad lo presentan.
+Para responder a la pregunta se puede aplicar el teorema de la probabilidad total usando el sistema completo $\\{E,\overline{E}\\}$:
 
-Si se toma una persona al azar de la población, *¿qué probabilidad hay
-de que tenga el síntoma?*
-
-Para responder a la pregunta se puede aplicar el teorema de la
-probabilidad total usando el sistema completo $\\{E,\overline{E}\\}$:
 $$P(S) = P(E)P(S|E)+P(\overline E)P(S|\overline E) = 0.2\cdot 0.9 + 0.8\cdot 0.4 = 0.5.$$
+
 Es decir, la mitad de la población tendrá el síntoma.
 
-*¡En el fondo se trata de una media ponderada de probabilidades\!*
+*¡En el fondo se trata de una media ponderada de probabilidades!*
 
-\note{
-Veamos un ejemplo de aplicación del teorema de la probabilidad total.
+La respuesta a la pregunta anterior es evidente a la luz del árbol de probabilidad del espacio probabilístico del experimento.
 
-Supongamos que un determinado síntoma $B$ puede ser originado por una enfermedad $A$ pero también lo pueden presentar las personas sin
-la enfermedad. Sabemos que en la población la tasa de personas con la enfermedad A es $0.2$. Además, de las personas
-que presentan la enfermedad, el $90\%$ presentan el síntoma, mientras que de las personas sin la enfermedad sólo lo presentan el $40\%$.
+<img src="../img/probabilidad/espacio_probabilistico_total.svg" alt="Aplicación del teorema de la probabilidad total en un espacio probabilístico" width="600">
 
-Si se toma una persona al azar de la población, \emph{¿qué probabilidad hay de que tenga el síntoma?}
-
-Para responder a la pregunta hay que fijarse en que el conjunto de sucesos $\\{A,\overline{A}\\}$ es un sistema completo, ya que $A\cup \overline A = E$ y $A\cap \overline A = \emptyset$, de modo que se puede aplicar el teorema de la probabilidad total:
 $$
-P(B) = P(A)P(B/A)+P(\overline A)P(B/\overline A) = 0.2\cdot 0.9 + 0.8\cdot 0.4 = 0.5.
+\begin{aligned}
+P(S) &= P(E,S) + P(\overline E,S) = P(E)P(S|E)+P(\overline E)P(S|\overline E)\newline
+& = 0.2\cdot 0.9+ 0.8\cdot 0.4 = 0.18 + 0.32 = 0.5.
+\end{aligned}
 $$
-Es decir, la mitad de la población tendrá el síntoma. 
 
-\begin{center}
-\emph{¡En el fondo se trata de una media ponderada de probabilidades!} 
-\end{center}
-}
-
-### Teorema de la probabilidad total
-
-#### Cálculo con el árbol de probabilidad
-
-La respuesta a la pregunta anterior es evidente a la luz del árbol de
-probabilidad del espacio probabilístico del
-experimento.
-
-\tikzsetnextfilename{probabilidad/espacio_probabilistico_total}
-
-\mode<article>{\resizebox{0.6\textwidth}{!}{\input{../img/probabilidad/espacio_probabilistico_total}}}
-
-\mode<presentation>{\resizebox{0.8\textwidth}{!}{\input{../img/probabilidad/espacio_probabilistico_total}}}
-
-$$\begin{aligned}
-    P(S) &= P(E,S) + P(\overline E,S) = P(E)P(S|E)+P(\overline E)P(S|\overline E)\newline
-        & = 0.2\cdot 0.9+ 0.8\cdot 0.4 = 0.18 + 0.32 = 0.5.\end{aligned}$$
-
-\note{
-El teorema de la probabilidad total también puede deducirse fácilmente a partir del diagrama de árbol de este experimento. 
-}
 
 ## Teorema de Bayes
 
-### Teorema de Bayes
+Los sucesos de un sistema completo de sucesos $A_1,\cdots,A_n$ también pueden verse como las distintas hipótesis ante un determinado hecho $B$.
 
-Los sucesos de un sistema completo de sucesos $A_1,\cdots,A_n$ también
-pueden verse como las distintas hipótesis ante un determinado hecho
-$B$.
+En estas condiciones resulta útil poder calcular las probabilidades a posteriori $P(A_i|B)$ de cada una de las hipótesis.
 
-En estas condiciones resulta útil poder calcular las probabilidades a
-posteriori $P(A_i|B)$ de cada una de las hipótesis.
+{{% alert def %}}
+**Definición - Teorema de Bayes**. Dado un sistema completo de sucesos $A_1,\ldots,A_n$ y un suceso $B$
+de un espacio muestral $\Omega$ y otro suceso $B$ del mismo espacio muestral, la probabilidad de cada suceso $A_i$ $i=1,\ldots,n$ condicionada por $B$ puede calcularse con la siguiente fórmula
 
-Dado un sistema completo de sucesos $A_1,\ldots,A_n$ y un suceso $B$
-de un espacio muestral $\Omega$ y otro suceso $B$ del mismo espacio
-muestral, la probabilidad de cada suceso $A_i$ $i=1,\ldots,n$
-condicionada por $B$ puede calcularse con la siguiente fórmula
 $$P(A_i|B) = \frac{P(A_i\cap B)}{P(B)} = \frac{P(A_i)P(B|A_i)}{\sum_{i=1}^n P(A_i)P(B|A_i)}.$$
+{{% /alert %}}
 
-\note{
-Los sucesos de un sistema completo de sucesos $A_1,\cdots,A_n$ también pueden verse como las distintas hipótesis ante
-un determinado hecho $B$.
+**Ejemplo**. En el ejemplo anterior, una pregunta más interesante es qué diagnosticar a una persona que presenta el síntoma.
 
-En estas condiciones puede ser útil calcular las probabilidades a posteriori $P(A_i/B)$ de cada una de las hipótesis, es decir, una vez
-se haya cumplido el suceso $B$. Para ello se utiliza el teorema de Bayes. 
+En este caso se puede interpretar $E$ y $\overline{E}$ como las dos posibles hipótesis para el síntoma $S$. Las probabilidades a priori para ellas son $P(E)=0.2$ y $P(\overline E)=0.8$. Esto quiere decir que si no se dispone de información sobre el síntoma, el diagnóstico será que la persona no tiene la enfermedad.
 
-\begin{teorema}[Bayes]
-Dado un sistema completo de sucesos $A_1,\ldots,A_n$ y un suceso $B$ de un mismo espacio de sucesos, se cumple
+Sin embargo, si al reconocer a la persona se observa que presenta el síntoma, dicha información condiciona a las hipótesis, y para decidir entre ellas es necesario calcular sus probabilidades a posteriori, es
+decir, $P(E|S)$ y P(\overline{E}|S)$.
+
+Para calcular las probabilidades a posteriori se puede utilizar el teorema de Bayes: 
+
 $$
-P(A_i/B) = \frac{P(A_i\cap B)}{P(B)} = \frac{P(A_i)P(B/A_i)}{\sum_{i=1}^n P(A_i)P(B/A_i)}.
-$$
-\end{teorema}
-}
-
-### Teorema de Bayes
-
-#### Un ejemplo de diagnóstico
-
-En el ejemplo anterior, una pregunta más interesante es qué diagnosticar
-a una persona que presenta el síntoma.
-
-En este caso se puede interpretar $E$ y $\overline{E}$ como las dos
-posibles hipótesis para el síntoma $S$. Las probabilidades a priori
-para ellas son $P(E)=0.2$ y $P(\overline E)=0.8$. Esto quiere decir
-que si no se dispone de información sobre el síntoma, el diagnóstico
-será que la persona no tiene la enfermedad.
-
-Sin embargo, si al reconocer a la persona se observa que presenta el
-síntoma, dicha información condiciona a las hipótesis, y para decidir
-entre ellas es necesario calcular sus probabilidades a posteriori, es
-decir, $$P(E|S) \mbox{ y } P(\overline{E}|S)$$
-
-\note{
-En el ejemplo anterior se ha visto cómo calcular la probabilidad de que una persona elegida al azar presente el síntoma, pero desde un punto
-de vista de diagnóstico clínico, una pregunta más interesante es:
-  
-Si llega a la consulta una persona que presenta el síntoma, \emph{¿qué se debe diagnosticar?}
-
-En este caso, las hipótesis ante las que hay que decidir son $A$ y $\overline A$ y sus probabilidades ``a priori'' son $P(A)=0.2$ y
-$P(\overline A)=0.8$.
-
-Esto quiere decir que si no hubiese ninguna información sobre la persona, el diagnóstico sería que no tiene la enfermedad pues es mucho más
-probable que que la tenga.
-
-Sin embargo, si al reconocer a la persona se observa que presenta el síntoma, dicha información condiciona a las hipótesis, y para decidir
-entre ellas es necesario calcular sus probabilidades ``a posteriori'', es decir 
-$$ P(A|B) \mbox{ y } P(\overline A|B)$$
-}
-
-### Teorema de Bayes
-
-#### Un ejemplo de diagnóstico
-
-Para calcular las probabilidades a posteriori se puede utilizar el
-teorema de Bayes: $$\begin{aligned}
+\begin{aligned}
 P(E|S) &= \frac{P(E)P(S|E)}{P(E)P(S|E)+P(\overline{E})P(S|\overline{E})} = \frac{0.2\cdot 0.9}{0.2\cdot 0.9 + 0.8\cdot 0.4} = \frac{0.18}{0.5}=0.36,\newline
-P(\overline{E}|S) &= \frac{P(\overline{E})P(S|\overline{E})}{P(E)P(S|E)+P(\overline{E})P(S|\overline{E})} = \frac{0.8\cdot 0.4}{0.2\cdot 0.9 + 0.8\cdot 0.4} = \frac{0.32}{0.5}=0.64.\end{aligned}$$
+P(\overline{E}|S) &= \frac{P(\overline{E})P(S|\overline{E})}{P(E)P(S|E)+P(\overline{E})P(S|\overline{E})} = \frac{0.8\cdot 0.4}{0.2\cdot 0.9 + 0.8\cdot 0.4} = \frac{0.32}{0.5}=0.64.
+\end{aligned}
+$$
 
 Como se puede ver la probabilidad de tener la enfermedad ha aumentado.
-No obstante, la probabilidad de no tener la enfermedad sigue siendo
-mayor que la de tenerla, y por esta razón el diagnóstico seguirá siendo
-que no tiene la enfermedad.
+No obstante, la probabilidad de no tener la enfermedad sigue siendo mayor que la de tenerla, y por esta razón el diagnóstico seguirá siendo que no tiene la enfermedad.
 
-En este caso se dice que el síntoma $S$ *no es determinante* a la hora
-de diagnosticar la enfermedad.
-
-\note{
-Para calcular las probabilidades ``a posteriori'' se puede utilizar el teorema de Bayes:
-\begin{align*}
-P(A|B) &= \frac{P(A)P(B/A)}{P(A)P(B/A)+P(\overline A)P(B/\overline A)} = \frac{0.2\cdot 0.9}{0.2\cdot 0.9 + 0.8\cdot 0.4} = \frac{0.18}{0.5}=0.36,\newline
-P(\overline A|B) &= \frac{P(\overline A)P(B/\overline A)}{P(A)P(B/A)+P(\overline A)P(B/\overline A)} = \frac{0.8\cdot 0.4}{0.2\cdot 0.9 + 0.8\cdot 0.4} = \frac{0.32}{0.5}=0.64.
-\end{align*}
-Según esto, a pesar de que la probabilidad de estar enfermo ha aumentado, seguiríamos diagnosticando que no lo está, puesto que es más
-probable.
-
-En este caso se dice que el síntoma $B$ \emph{no es determinante} a la hora de diagnosticar la enfermedad, pues la información que aporta no
-sirve para cambiar el diagnóstico en ningún caso.
-}
+En este caso se dice que el síntoma $S$ *no es determinante* a la hora de diagnosticar la enfermedad.
 
 ## Epidemiología
 
-### Epidemiología
+Una de las ramas de la Medicina que hace un mayor uso de la probabilidad es la , que estudia la distribución y las causas de las enfermedades en las poblaciones, identificando factores de riesgos para las enfermedades de cara a la atención médica preventiva.
 
-Una de las ramas de la Medicina que hace un mayor uso de la probabilidad
-es la , que estudia la distribución y las causas de las enfermedades en
-las poblaciones, identificando factores de riesgos para las enfermedades
-de cara a la atención médica preventiva.
-
-En Epidemiología interesa la frecuencia de un *suceso médico* $E$
-(típicamente una enfermedad como la gripe, un factor de riesgo como
-fumar o un factor de protección como vacunarse) que se mide mediante una
+En Epidemiología interesa la frecuencia de un *suceso médico* $E$ (típicamente una enfermedad como la gripe, un factor de riesgo como fumar o un factor de protección como vacunarse) que se mide mediante una
 variable nominal con dos categorías (ocurrencia o no del suceso).
 
-Hay diferentes medidas relativas a la frecuencia de un suceso médico.
-Las más importantes son:
+Hay diferentes medidas relativas a la frecuencia de un suceso médico. Las más importantes son:
 
-  - Prevalencia
-
-  - Incidencia
-
-  - Riesgo relativo
-
-  - Odds ratio
+- Prevalencia
+- Incidencia
+- Riesgo relativo
+- Odds ratio
 
 ### Prevalencia
 
-La *prevalencia* de un suceso médico $E$ es la proporción de una
-población que está afectada por el suceso.
+{{% alert def %}}
+**Definición - Prevalencia**. La *prevalencia* de un suceso médico $E$ es la proporción de una población que está afectada por el suceso.
+
 $$\mbox{Prevalencia}(E) = \frac{\mbox{Nº individuos afectados por $E$}}{\mbox{Tamaño poblacional}}$$
+{{% /alert %}}
 
-A menudo, la prevalencia se estima mediante una muestra como la
-frecuencia relativa de los individuos afectados por el suceso en la
-muestra. Es también común expresarla est frecuencia como un porcentaje.
+A menudo, la prevalencia se estima mediante una muestra como la frecuencia relativa de los individuos afectados por el suceso en la muestra. Es también común expresarla esta frecuencia como un porcentaje.
 
-**Ejemplo**. Para estimar la prevalencia de la gripe se estudió una
-muestra de 1000 personas de las que 150 presentaron gripe. Así, la
-prevalencia de la gripe es aproximadamente 150/1000=0.15, es decir, un
+**Ejemplo**. Para estimar la prevalencia de la gripe se estudió una muestra de 1000 personas de las que 150 presentaron gripe. Así, la prevalencia de la gripe es aproximadamente 150/1000=0.15, es decir, un
 15%.
 
 ### Incidencia
 
-La mide la probabilidad de ocurrencia de un suceso médico en una
-población durante un periodo de tiempo específico. La incidencia puede
-medirse como una proporción acumulada o como una tasa.
+La mide la probabilidad de ocurrencia de un suceso médico en una población durante un periodo de tiempo específico. La incidencia puede medirse como una proporción acumulada o como una tasa.
 
-La *incidencia acumulada* de un suceso médico $E$ es la proporción de
-individuos que experimentaron el evento en un periodo de tiempo, es
-decir, el número de nuevos casos afectados por el evento en el periodo
-de tiempo, divido por el tamaño de la población inicialmente en riesgo
-de verse afectada.
+{{% alert def %}}
+**Definición - Incidencia acumulada**. La *incidencia acumulada* de un suceso médico $E$ es la proporción de individuos que experimentaron el evento en un periodo de tiempo, es decir, el número de nuevos casos afectados por el evento en el periodo de tiempo, divido por el tamaño de la población inicialmente en riesgo de verse afectada.
+
 $$R(E)=\frac{\mbox{Nº de nuevos casos con $E$}}{\mbox{Tamaño de la población en riesgo}}$$
+{{% /alert %}}
 
-**Ejemplo**. Una población contenía inicialmente $1000$ personas sin
-gripe y después de dos años se observó que 160 de ellas sufrieron gripe.
-La incidencia acumulada de la gripe es 160 casos pro 1000 personas por
-dos años, es decir, 16% en dos años.
+**Ejemplo**. Una población contenía inicialmente $1000$ personas sin gripe y después de dos años se observó que 160 de ellas sufrieron gripe. La incidencia acumulada de la gripe es 160 casos pro 1000 personas por dos años, es decir, 16% en dos años.
 
-### Tasa de indicencia o Riesgo absoluto
+### Tasa de incidencia o Riesgo absoluto
 
-La *tasa de incidencia* o *riesgo absoluto* de un suceso médico $E$ es
-el número de nuevos casos afectados por el evento divido por la
-población en riesgo y por el número de unidades temporales del periodo
-considerado.
+{{% alert def %}}
+**Definición - Riesgo absoluto**.La *tasa de incidencia* o *riesgo absoluto* de un suceso médico $E$ es el número de nuevos casos afectados por el evento divido por la población en riesgo y por el número de unidades temporales del periodo considerado.
+
 $$R(E)=\frac{\mbox{Nº nuevos casos con $E$}}{\mbox{Tamaño población en riesgo}\times \mbox{Nº unidades de tiempo}}$$
+{{% /alert %}}
 
-**Ejemplo**. Una población contenía inicialmente $1000$ personas sin
-gripe y después de dos años se observó que 160 de ellas sufrieron gripe.
-Si se considera el año como intervalo de tiempo, la tasa de incidencia
-de la gripe es 160 casos dividida por 1000 personas y por dos años, es
-decir, 80 casos por 1000 personas-año o 8% de personas al año.
+**Ejemplo**. Una población contenía inicialmente $1000$ personas sin gripe y después de dos años se observó que 160 de ellas sufrieron gripe. Si se considera el año como intervalo de tiempo, la tasa de incidencia de la gripe es 160 casos dividida por 1000 personas y por dos años, es decir, 80 casos por 1000 personas-año o 8% de personas al año.
 
 ### Prevalencia vs Incidencia
 
-La prevalencia no debe confundirse con la incidencia. La prevalencia
-indica cómo de extendido está el suceso médico en una población, sin
-preocuparse por cuándo los sujetos se han expuesto al riesgo o durante
-cuánto tiempo, mientras que la incidencia se fija en el riesgo de verse
-afectado por el suceso en un periodo concreto de tiempo.
+La prevalencia no debe confundirse con la incidencia. La prevalencia indica cómo de extendido está el suceso médico en una población, sin preocuparse por cuándo los sujetos se han expuesto al riesgo o durante
+cuánto tiempo, mientras que la incidencia se fija en el riesgo de verse afectado por el suceso en un periodo concreto de tiempo.
 
-Así, la prevalencia se calcula en estudios transversales en un momento
-temporal puntual, mientras que para medir la incidencia se necesita un
-estudio longitudinal que permita observar a los individuos durante un
+Así, la prevalencia se calcula en estudios transversales en un momento temporal puntual, mientras que para medir la incidencia se necesita un estudio longitudinal que permita observar a los individuos durante un
 periodo de tiempo.
 
-La incidencia es más útil cuando se pretende entender la causalidad del
-suceso: por ejemplo, si la incidencia de una enfermedad en una población
-aumenta, seguramente hay un factor de riesgo que lo está promoviendo.
+La incidencia es más útil cuando se pretende entender la causalidad del suceso: por ejemplo, si la incidencia de una enfermedad en una población aumenta, seguramente hay un factor de riesgo que lo está promoviendo.
 
-Cuando la tasa de incidencia es aproximadamente constante en la duración
-del suceso, la prevalencia es aproximadamente el producto de la
-incidencia por la duración media del suceso, es decir,
+Cuando la tasa de incidencia es aproximadamente constante en la duración del suceso, la prevalencia es aproximadamente el producto de la incidencia por la duración media del suceso, es decir,
 
-prevalencia = incidencia $\times$ duración
+$$ \mbox{Prevalencia} = \mbox{Incidencia} \times \mbox{duración}$$
 
 ### Comparación de riesgos
 
-Para determinar si un factor o característica está asociada con el suceso médico es necesario comparar el riesgo del suceso en dos
-poblaciones, una expuesta a el factor y la otra no. El grupo expuesto a el factor se conoce como *grupo tratamiento* o *grupo experimental* $T$ y el grupo no expuesto como *grupo control* $C$.
+Para determinar si un factor o característica está asociada con el suceso médico es necesario comparar el riesgo del suceso en dos poblaciones, una expuesta al factor y la otra no. El grupo expuesto al factor se conoce como *grupo tratamiento* o *grupo experimental* $T$ y el grupo no expuesto como *grupo control* $C$.
 
 Habitualmente los casos observados para cada grupo se representan en una tabla de 2$\times$2 como la siguiente:
 
@@ -798,575 +609,455 @@ Habitualmente los casos observados para cada grupo se representan en una tabla d
 <thead>
 <tr class="header">
 <th style="text-align: left;"></th>
-<th style="text-align: left;">Suceso <span class="math inline"><em>E</em></span></th>
-<th style="text-align: left;">No suceso <span class="math inline">$\overline E$</span></th>
+<th style="text-align: center;">Suceso $E$</th>
+<th style="text-align: center;">No suceso $\overline E$</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Grupo tratamiento $T$</td>
-<td style="text-align: left;"><span class="math inline"><em>a</em></span></td>
-<td style="text-align: left;"><span class="math inline"><em>b</em></span></td>
+<td style="text-align: center;">$a$</td>
+<td style="text-align: center;">$b$</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Grupo control $C$</td>
-<td style="text-align: left;"><span class="math inline"><em>c</em></span></td>
-<td style="text-align: left;"><span class="math inline"><em>d</em></span></td>
+<td style="text-align: center;">$c$</td>
+<td style="text-align: center;">$d$</td>
 </tr>
 </tbody>
 </table>
 
 ### Riesgo atribuible o diferencia de riesgos $RA$
 
-El *riesgo atribuible* o *diferencia de riesgo* de un suceso médico
-$E$ para los individuos expuestos a un factor es la diferencia entre
-los riesgos absolutos de los grupos tratamiento y control.
+{{% alert def %}}
+**Definición - Riesgo atribuible**. El *riesgo atribuible* o *diferencia de riesgo* de un suceso médico
+$E$ para los individuos expuestos a un factor es la diferencia entre los riesgos absolutos de los grupos tratamiento y control.
+
 $$RA(E)=R_T(E)-R_C(E)=\frac{a}{a+b}-\frac{c}{c+d}.$$
+{{% /alert %}}
 
-El riesgo atribuible es el riesgo de un suceso que es debido
-específicamente al factor de interés.
+El riesgo atribuible es el riesgo de un suceso que es debido específicamente al factor de interés.
 
-Obsérvese que el riesgo atribuible puede ser positivo, cuando el riesgo
-del grupo tratamiento es mayor que el del grupo control, o negativo, de
-lo contrario.
+Obsérvese que el riesgo atribuible puede ser positivo, cuando el riesgo del grupo tratamiento es mayor que el del grupo control, o negativo, de lo contrario.
 
-### Riesgo relativo $RR$
-
-#### Ejemplo de una vacuna
-
-Para determinar la efectividad de una vacuna contra la gripe, una
-muestra de 1000 personas sin gripe fueron seleccionadas al comienzo del
-año. La mitad de ellas fueron vacunadas (grupo tratamiento) y la otra
-mitad recibieron un placebo (grupo control). La tabla siguiente resume
-los resultados al final del año.
+**Ejemplo**. Para determinar la efectividad de una vacuna contra la gripe, una muestra de 1000 personas sin gripe fueron seleccionadas al comienzo del año. La mitad de ellas fueron vacunadas (grupo tratamiento) y la otra mitad recibieron un placebo (grupo control). La tabla siguiente resume los resultados al final del año.
 
 <table>
 <thead>
 <tr class="header">
 <th style="text-align: left;"></th>
-<th style="text-align: left;">Gripe <span class="math inline"><em>E</em></span></th>
-<th style="text-align: left;">No gripe <span class="math inline">$\overline E$</span></th>
+<th style="text-align: center;">Gripe $E$</th>
+<th style="text-align: center;">No gripe $\overline E$</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Grupo tratamiento(vacunados)</td>
-<td style="text-align: left;"><span class="math inline">20</span></td>
-<td style="text-align: left;"><span class="math inline">480</span></td>
+<td style="text-align: left;">Grupo tratamiento (vacunados)</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">480</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Grupo control(No vacunados)</td>
-<td style="text-align: left;"><span class="math inline">80</span></td>
-<td style="text-align: left;"><span class="math inline">420</span></td>
+<td style="text-align: left;">Grupo control (No vacunados)</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">420</td>
 </tr>
 </tbody>
 </table>
 
-El riesgo atribuible de contraer la gripe cuando se es vacunado es
-$$AR(D) = \frac{20}{20+480}-\frac{80}{80+420} = -0.12.$$ Esto quiere
-decir que el riesgo de contraer la gripe es un 12% menor en vacunados
+El riesgo atribuible de contraer la gripe cuando se es vacunado es 
+
+$$AR(D) = \frac{20}{20+480}-\frac{80}{80+420} = -0.12.$$ 
+
+Esto quiere decir que el riesgo de contraer la gripe es un 12% menor en vacunados
 que en no vacunados.
 
 ### Riesgo relativo $RR$
 
-El *riesgo relativo* de un suceso médico $E$ para los individuos
-expuestos a un factor es el cociente entre las proporciones de
-individuos afectados por el suceso en un periodo de tiempo de los grupos
-tratamiento y control. Es decir, el cociente entre las incidencias de
+{{% alert def %}}
+**Definición - Teorema de Bayes**. El *riesgo relativo* de un suceso médico $E$ para los individuos expuestos a un factor es el cociente entre las proporciones de individuos afectados por el suceso en un periodo de tiempo de los grupos tratamiento y control. Es decir, el cociente entre las incidencias de
 grupo tratamiento y el grupo control.
+
 $$RR(D)=\frac{\mbox{Riesgo grupo tratamiento}}{\mbox{Riesgo grupo control}}=\frac{R_T(E)}{R_C(E)}=\frac{a/(a+b)}{c/(c+d)}$$
+{{% /alert %}}
 
-El riesgo relativo compara el riesgo de desarrollar un suceso médico
-entre el grupo tratamiento y el grupo control.
+El riesgo relativo compara el riesgo de desarrollar un suceso médico entre el grupo tratamiento y el grupo control.
 
-  - $RR=1$ $\Rightarrow$ No hay asociación entre el suceso y la
-    exposición al factor.
-
-  - $RR<1$ $\Rightarrow$ La exposición al factor disminuye el riesgo
-    del suceso.
-
-  - $RR>1$ $\Rightarrow$ La exposición al factor aumenta el riesgo
-    del suceso.
+- $RR=1$ $\Rightarrow$ No hay asociación entre el suceso y la exposición al factor.
+- $RR<1$ $\Rightarrow$ La exposición al factor disminuye el riesgo del suceso.
+- $RR>1$ $\Rightarrow$ La exposición al factor aumenta el riesgo del suceso.
 
 Cuanto más lejos de 1, más fuerte es la asociación.
 
-### Riesgo relativo $RR$
-
-#### Ejemplo de una vacuna
-
-Para determinar la efectividad de una vacuna contra la gripe, una
-muestra de 1000 personas sin gripe fueron seleccionadas al comienzo del
-año. La mitad de ellas fueron vacunadas (grupo tratamiento) y la otra
-mitad recibieron un placebo (grupo control). La tabla siguiente resume
-los resultados al final del año.
+**Ejemplo**. Para determinar la efectividad de una vacuna contra la gripe, una muestra de 1000 personas sin gripe fueron seleccionadas al comienzo del año. La mitad de ellas fueron vacunadas (grupo tratamiento) y la otra mitad recibieron un placebo (grupo control). La tabla siguiente resume los resultados al final del año.
 
 <table>
 <thead>
 <tr class="header">
 <th style="text-align: left;"></th>
-<th style="text-align: left;">Gripe <span class="math inline"><em>E</em></span></th>
-<th style="text-align: left;">No gripe <span class="math inline">$\overline E$</span></th>
+<th style="text-align: center;">Gripe $E$</th>
+<th style="text-align: center;">No gripe $\overline E$</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Grupo tratamiento(vacunados)</td>
-<td style="text-align: left;"><span class="math inline">20</span></td>
-<td style="text-align: left;"><span class="math inline">480</span></td>
+<td style="text-align: left;">Grupo tratamiento (vacunados)</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">480</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Grupo control(No vacunados)</td>
-<td style="text-align: left;"><span class="math inline">80</span></td>
-<td style="text-align: left;"><span class="math inline">420</span></td>
+<td style="text-align: left;">Grupo control (No vacunados)</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">420</td>
 </tr>
 </tbody>
 </table>
 
-El riesgo relativo de contraer la gripe cuando se es vacunado es
-$$RR(D) = \frac{20/(20+480)}{80/(80+420)} = 0.25.$$ Así, la probabilidad
-de contraer la gripe en los individuos vacunados fue la cuarta parte de
-la de contraerla en el caso de no haberse vacunado, es decir, la vacuna
-reduce el riesgo de gripe un 75%.
+El riesgo relativo de contraer la gripe cuando se es vacunado es 
+
+$$RR(D) = \frac{20/(20+480)}{80/(80+420)} = 0.25.$$
+
+Así, la probabilidad de contraer la gripe en los individuos vacunados fue la cuarta parte de
+la de contraerla en el caso de no haberse vacunado, es decir, la vacuna reduce el riesgo de gripe un 75%.
 
 ### Odds
 
-Una forma alternativa de medir el riesgo de un suceso médico es el
-*odds*.
+Una forma alternativa de medir el riesgo de un suceso médico es el *odds*.
 
-El *odds* de un suceso médico $E$ en una población es el cociente
-entre el número de individuos que adquirieron el suceso y los que no en
-un periodo de tiempo.
+El *odds* de un suceso médico $E$ en una población es el cociente entre el número de individuos que adquirieron el suceso y los que no en un periodo de tiempo.
+
 $$ODDS(E)=\frac{\mbox{Nº nuevos casos con $E$}}{\mbox{Nº casos sin $E$}}=\frac{P(E)}{P(\overline E)}$$
 
-A diferencia de la incidencia, que es una proporción menor o igual que
-1, el odds puede ser mayor que 1. No obstante es posible convertir el
-odds en una probabilidad con al fórmula
+A diferencia de la incidencia, que es una proporción menor o igual que 1, el odds puede ser mayor que 1. No obstante es posible convertir el odds en una probabilidad con al fórmula 
+
 $$P(E) = \frac{ODDS(E)}{ODDS(E)+1}$$
 
-**Ejemplo** Una población contenía inicialmente $1000$ personas sin
-gripe. Después de un año 160 de ellas tuvieron gripe. Entonces el odds
-de la gripe es 160/840.
+**Ejemplo** Una población contenía inicialmente $1000$ personas sin gripe. Después de un año 160 de ellas tuvieron gripe. Entonces el odds de la gripe es 160/840.
 
 Obsérvese que la incidencia es 160/1000.
 
 ### Odds ratio $OR$ 
 
-El *odds ratio* o la *oportunidad relativa* de un suceso médico $E$
-para los individuos expuestos a un factor es el cociente entre los odds
-del sucesos de los grupos tratamiento y control.
+{{% alert def %}}
+**Definición - Odds ratio**. El *odds ratio* o la *oportunidad relativa* de un suceso médico $E$
+para los individuos expuestos a un factor es el cociente entre los odds del sucesos de los grupos tratamiento y control.
+
 $$OR(E)=\frac{\mbox{Odds en grupo tratamiento}}{\mbox{Odds en grupo control}}=\frac{a/b}{c/d}=\frac{ad}{bc}$$
+{{% /alert %}}
 
-El odds ratio compara los odds de un suceso médico entre el grupo
-tratamiento y control. La interpretación es similar a la del riesgo
-relativo:
+El odds ratio compara los odds de un suceso médico entre el grupo tratamiento y control. La interpretación es similar a la del riesgo relativo:
 
-  - $OR=1$ $\Rightarrow$ No existe asociación entre el suceso y la
-    exposición al factor.
-
-  - $OR<1$ $\Rightarrow$ La exposición al factor disminuye el riesgo
-    del suceso.
-
-  - $OR>1$ $\Rightarrow$ La exposición al factor aumenta el riesgo
-    del suceso.
+- $OR=1$ $\Rightarrow$ No existe asociación entre el suceso y la exposición al factor.
+- $OR<1$ $\Rightarrow$ La exposición al factor disminuye el riesgo del suceso.
+- $OR>1$ $\Rightarrow$ La exposición al factor aumenta el riesgo del suceso.
 
 Cuanto más lejos de 1, más fuerte es la asociación.
 
-### Odds ratio $OR$
-
-#### Ejemplo de una vacuna
-
-Para determinar la efectividad de una vacuna contra la gripe, una
-muestra de 1000 personas sin gripe fueron seleccionadas al comienzo del
-año. La mitad de ellas fueron vacunadas (grupo tratamiento) y la otra
-mitad recibieron un placebo (grupo control). La tabla siguiente resume
-los resultados al final del año.
+**Ejemplo**. Para determinar la efectividad de una vacuna contra la gripe, una muestra de 1000 personas sin gripe fueron seleccionadas al comienzo del año. La mitad de ellas fueron vacunadas (grupo tratamiento) y la otra mitad recibieron un placebo (grupo control). La tabla siguiente resume los resultados al final del año.
 
 <table>
 <thead>
 <tr class="header">
 <th style="text-align: left;"></th>
-<th style="text-align: left;">Gripe <span class="math inline"><em>D</em></span></th>
-<th style="text-align: left;">No gripe <span class="math inline">$\overline D$</span></th>
+<th style="text-align: center;">Gripe $E$</th>
+<th style="text-align: center;">No gripe $\overline E$</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Grupo tratamiento(vacunados)</td>
-<td style="text-align: left;"><span class="math inline">20</span></td>
-<td style="text-align: left;"><span class="math inline">480</span></td>
+<td style="text-align: left;">Grupo tratamiento (vacunados)</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">480</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Grupo control(No vacunados)</td>
-<td style="text-align: left;"><span class="math inline">80</span></td>
-<td style="text-align: left;"><span class="math inline">420</span></td>
+<td style="text-align: left;">Grupo control (No vacunados)</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">420</td>
 </tr>
 </tbody>
 </table>
 
-El odds ratio de sufrir la gripe para los individuos vacunados es
-$$OR(D) = \frac{20/480}{80/420} = 0.21875.$$ Esto quiere decir que el
-odds de sufrir la gripe frente a no sufrirla en los vacunados es casi un
-quinto del de los no vacunados, es decir, que aproximadamente por cada
-22 personas vacunadas con gripe habrá 100 personas no vacunadas con
-gripe.
+El odds ratio de sufrir la gripe para los individuos vacunados es 
+
+$$OR(D) = \frac{20/480}{80/420} = 0.21875.$$ 
+
+Esto quiere decir que el odds de sufrir la gripe frente a no sufrirla en los vacunados es casi un quinto del de los no vacunados, es decir, que aproximadamente por cada 22 personas vacunadas con gripe habrá 100 personas no vacunadas con gripe.
 
 ### Riesgo relativo vs Odds ratio
 
-El riesgo relativo y el odds ratio son dos medidas de asociación pero su
-interpretación es ligeramente diferente. Mientras que el riesgo relativo
-expresa una comparación de riesgos entre los grupos tratamiento y
-control, el odds ratio expresa una comparación de odds, que no es lo
-mismo que el riesgo. Así, un odds ratio de 2 *no* significa que el grupo
-tratamiento tiene el doble de riesgo de adquirir el suceso.
+El riesgo relativo y el odds ratio son dos medidas de asociación pero su interpretación es ligeramente diferente. Mientras que el riesgo relativo expresa una comparación de riesgos entre los grupos tratamiento y control, el odds ratio expresa una comparación de odds, que no es lo mismo que el riesgo. Así, un odds ratio de 2 *no* significa que el grupo tratamiento tiene el doble de riesgo de adquirir el suceso.
 
-La interpretación del odds ratio es un poco más enrevesada porque es
-contrafactual, y nos da cuántas veces es más frecuente el suceso en el
-grupo tratamiento en comparación con el control, asumiendo que en el
+La interpretación del odds ratio es un poco más enrevesada porque es contrafactual, y nos da cuántas veces es más frecuente el suceso en el grupo tratamiento en comparación con el control, asumiendo que en el
 grupo control es tan frecuente que ocurra el suceso como que no.
 
-La ventaja del odds ratio es que no depende de la prevalencia o la
-incidencia del suceso, y debe usarse siempre que el número de individuos
-que presenta el suceso se selecciona arbitrariamente en ambos grupos,
+La ventaja del odds ratio es que no depende de la prevalencia o la incidencia del suceso, y debe usarse siempre que el número de individuos que presenta el suceso se selecciona arbitrariamente en ambos grupos,
 como ocurre en los estudios casos-control.
 
-### Riesgo relativo vs Odds ratio
+**Ejemplo**. Para determinar la asociación entre el cáncer de pulmón y fumar se tomaron dos muestras (la segunda con el doble de individuos sin cáncer) obteniendo los siguientes resultados:
 
-#### Ejemplo de cáncer de pulmón y fumar
-
-Para determinar la asociación entre el cáncer de pulmón y fumar se
-tomaron dos muestras (la segunda con el doble de individuos sin cáncer)
-obteniendo los siguientes resultados:
-
-\bigskip
-
-<span>0.5</span> **Sample 1**
-
-\small
+**Sample 1**
 
 <table>
 <thead>
 <tr class="header">
 <th style="text-align: left;"></th>
-<th style="text-align: left;">Cáncer</th>
-<th style="text-align: left;">No cáncer</th>
+<th style="text-align: center;">Cáncer</th>
+<th style="text-align: center;">No cáncer</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Fumadores</td>
-<td style="text-align: left;"><span class="math inline">60</span></td>
-<td style="text-align: left;"><span class="math inline">80</span></td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">80</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">No fumadores</td>
-<td style="text-align: left;"><span class="math inline">40</span></td>
-<td style="text-align: left;"><span class="math inline">320</span></td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">320</td>
 </tr>
 </tbody>
 </table>
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 RR(D) &= \frac{60/(60+80)}{40/(40+320)} = 3.86.\newline
-OR(D) &= \frac{60/80}{40/320} = 6. \end{aligned}$$
+OR(D) &= \frac{60/80}{40/320} = 6. 
+\end{aligned}
+$$
 
-<span>0.5</span> **Sample 2**
-
-\small
+**Sample 2**
 
 <table>
 <thead>
 <tr class="header">
 <th style="text-align: left;"></th>
-<th style="text-align: left;">Cáncer</th>
-<th style="text-align: left;">No cáncer</th>
+<th style="text-align: center;">Cáncer</th>
+<th style="text-align: center;">No cáncer</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Fumadores</td>
-<td style="text-align: left;"><span class="math inline">60</span></td>
-<td style="text-align: left;"><span class="math inline">160</span></td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">160</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">No fumadores</td>
-<td style="text-align: left;"><span class="math inline">40</span></td>
-<td style="text-align: left;"><span class="math inline">640</span></td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">640</td>
 </tr>
 </tbody>
 </table>
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 RR(D) &= \frac{60/(60+160)}{40/(40+640)} = 4.64.\newline
-OR(D) &= \frac{60/160}{40/640} = 6. \end{aligned}$$
+OR(D) &= \frac{60/160}{40/640} = 6. 
+\end{aligned}
+$$
 
-Así, cuando cambia la incidencia o prevalencia de un suceso (cáncer de
-pulmón) el riesgo relativo cambia, mientras que el odds ratio no.
-
-### Riesgo relativo vs Odds ratio
-
-La relación entre el riesgo relativo y el odds ratio viene dada por la
-siguiente fórmula
-
-$$RR = \frac{OR}{1-R_0+R_0*OR}=OR*\frac{1-R_1}{1-R_0},$$
-
-donde $R_C$ and $R_T$ son la prevalencia o la incidencia en los
-grupos control y tratamiento respectivamente.
-
-El odds ratio siempre sobrestima el riesgo relativo cuando este es mayor
-que 1 y lo subestima cuando es menor que 1. No obstante, con sucesos
-médicos raros (con una prevalencia o incidencia baja) el riesgo
-relativo y el odds ratio son casi
-iguales.
+Así, cuando cambia la incidencia o prevalencia de un suceso (cáncer de pulmón) el riesgo relativo cambia, mientras que el odds ratio no.
 
 ### Riesgo relativo vs Odds ratio
 
-\tikzsetnextfilename{probabilidad/odds_ratio_vs_riesgo_relativo}
+La relación entre el riesgo relativo y el odds ratio viene dada por la siguiente fórmula
 
-\mode<article>{\resizebox{0.6\textwidth}{!}{\input{../img/probabilidad/odds_ratio_vs_riesgo_relativo}}}
+$$RR = \frac{OR}{1-R_0+R_0\cdot OR} = OR \frac{1-R_1}{1-R_0},$$
 
-\mode<presentation>{\resizebox{!}{0.95\textheight}{\input{../img/probabilidad/odds_ratio_vs_riesgo_relativo}}}
+donde $R_C$ and $R_T$ son la prevalencia o la incidencia en los grupos control y tratamiento respectivamente.
+
+El odds ratio siempre sobrestima el riesgo relativo cuando este es mayor que 1 y lo subestima cuando es menor que 1. No obstante, con sucesos médicos raros (con una prevalencia o incidencia baja) el riesgo
+relativo y el odds ratio son casi iguales.
+
+<img src="../img/probabilidad/odds_ratio_vs_riesgo_relativo.svg" alt="Odss ratio versus riesgo relativo" width="600">
 
 ## Tests diagnósticos
 
-### Tests diagnósticos
-
 En Epidemiología es común el uso de test para diagnosticar enfermedades.
 
-Generalmente estos test no son totalmente fiables, sino que hay cierta
-probabilidad de acierto o fallo en el diagnóstico, que suele
-representarse en la siguiente tabla:
+Generalmente estos test no son totalmente fiables, sino que hay cierta probabilidad de acierto o fallo en el diagnóstico, que suele representarse en la siguiente tabla:
 
 <table>
 <thead>
 <tr class="header">
 <th style="text-align: left;"></th>
-<th style="text-align: left;">Presencia enfermedad <span class="math inline"><em>E</em></span></th>
-<th style="text-align: left;">Ausencia enfermedad <span class="math inline">$\overline D$</span></th>
+<th style="text-align: center;">Presencia enfermedad $E$</th>
+<th style="text-align: center;">Ausencia enfermedad $\overline E$</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Test positivo <span class="math inline">+</span></td>
-<td style="text-align: left;"><span style="color: green">Verdadero positivo</span><span class="math inline"><em>V</em><em>P</em></span></td>
-<td style="text-align: left;"><span style="color: red">Falso positivo</span><span class="math inline"><em>F</em><em>P</em></span></td>
+<td style="text-align: left;">Test positivo $+$</td>
+<td style="text-align: center;"><span style="color: green">Verdadero positivo </span>$VP$</td>
+<td style="text-align: center;"><span style="color: red">Falso positivo </span>$FP$</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Test negativo <span class="math inline">−</span></td>
-<td style="text-align: left;"><span style="color: red">Falso negativo</span><span class="math inline"><em>F</em><em>N</em></span></td>
-<td style="text-align: left;"><span style="color: green">Verdadero Negativo</span><span class="math inline"><em>V</em><em>N</em></span></td>
+<td style="text-align: left;">Test negativo $−$</td>
+<td style="text-align: left;"><span style="color: red">Falso negativo </span>$FN$</td>
+<td style="text-align: left;"><span style="color: green">Verdadero Negativo </span>$VN$</td>
 </tr>
 </tbody>
 </table>
 
-\note{
-En epidemiología es común el uso de test para diagnosticar enfermedades.
-
-Generalmente estos test no son totalmente fiables, sino que hay cierta probabilidad de acierto o fallo en el diagnóstico, que suele
-representarse en la siguiente tabla:
-\begin{center}
-    \begin{tabular}{|m{2.5cm}|m{3cm}<{\centering}|m{3.1cm}<{\centering}|}
-        \cline{2-3}
-        \multicolumn{1}{c|}{} & Presencia enfermedad $E$ & Ausencia enfermedad $\overline D$\\ \hline
-        Test positivo $+$ & \textcolor{green}{Verdadero positivo}\newline $VP$ & \textcolor{red}{Falso positivo}\newline $FP$\\ \hline Test negativo $-$ & \textcolor{red}{Falso negativo}\newline $FN$ &
-        \textcolor{green}{Verdadero negativo}\newline $VN$\\ \hline
-    \end{tabular}
-\end{center}
-}
-
 ### Sensibilidad y especificidad de un test diagnóstico
 
-La fiabilidad de un test diagnóstico depende de las siguientes
-probabilidades.
+La fiabilidad de un test diagnóstico depende de las siguientes probabilidades.
 
-La *sensibilidad* de un test diagnóstico es la proporción de resultados
-positivos del test en personas con la enfermedad,
+{{% alert def %}}
+**Definición - Sensibilidad**. La *sensibilidad* de un test diagnóstico es la proporción de resultados positivos del test en personas con la enfermedad, 
+
 $$P(+|E)=\frac{VP}{VP+FN}$$
+{{% /alert %}}
 
-La *especificidad* de un test diagnóstico es la proporción de resultados
+{{% alert def %}}
+**Definición - Especificidad**. La *especificidad* de un test diagnóstico es la proporción de resultados
 negativos del test en personas sin la enfermedad,
-$$P(-|\overline{E})=\frac{VN}{VN+FP}$$
 
-### Interpretación de la sensibilidad y la especificidad
+$$P(-|\overline{E})=\frac{VN}{VN+FP}$$
+{{% /alert %}}
 
 Normalmente existe un balance entre la sensibilidad y la especificidad.
 
-Un test con una alta sensibilidad detectará la enfermedad en la mayoría
-de las personas enfermas, pero también dará más falsos positivos que un
-test menos sensible. De este modo, un resultado positivo en un test con
-una gran sensibilidad no es muy útil para confirmar la enfermedad, pero
-un resultado negativo es útil para descartar la enfermedad, ya que
-raramente da resultados negativos en personas con la enfermedad.
+Un test con una alta sensibilidad detectará la enfermedad en la mayoría de las personas enfermas, pero también dará más falsos positivos que un test menos sensible. De este modo, un resultado positivo en un test con una gran sensibilidad no es muy útil para confirmar la enfermedad, pero un resultado negativo es útil para descartar la enfermedad, ya que raramente da resultados negativos en personas con la enfermedad.
 
-Por otro lado, un test con una alta especificidad descartará la
-enfermedad en la mayoría de las personas sin la enfermedad, pero también
-producirá más falsos negativos que un test menos específico. Así, un
-resultado negativo en un test con una gran especificidad no es útil para
-descartar la enfermedad, pero un resultado positivo es muy útil para
-confirmar la enfermedad, ya que raramente da resultados positivos en
+Por otro lado, un test con una alta especificidad descartará la enfermedad en la mayoría de las personas sin la enfermedad, pero también producirá más falsos negativos que un test menos específico. Así, un
+resultado negativo en un test con una gran especificidad no es útil para descartar la enfermedad, pero un resultado positivo es muy útil para confirmar la enfermedad, ya que raramente da resultados positivos en
 personas sin la enfermedad.
 
-### Interpretación de la sensibilidad y la especificidad
+Decidir entre un test con una gran sensibilidad o un test con una gran especificidad depende del tipo de enfermedad y el objetivo del test. En general, utilizaremos un test sensible cuando:
 
-Decidir entre un test con una gran sensibilidad o un test con una gran
-especificidad depende del tipo de enfermedad y el objetivo del test. En
-general, utilizaremos un test sensible cuando:
-
-  - La enfermedad es grave y es importante detectarla.
-
-  - La enfermedad es curable.
-
-  - Los falsos positivos no provocan traumas serios.
+- La enfermedad es grave y es importante detectarla.
+- La enfermedad es curable.
+- Los falsos positivos no provocan traumas serios.
 
 Y utilizaremos un test específico cuando:
 
-  - La enfermedad es importante pero difícil o imposible de curar.
-
-  - Los falsos positivos pueden provocar traumas serios.
-
-  - El tratamiento de los falsos positivos puede tener graves
-    consecuencias.
+- La enfermedad es importante pero difícil o imposible de curar.
+- Los falsos positivos pueden provocar traumas serios.
+- El tratamiento de los falsos positivos puede tener graves consecuencias.
 
 ### Valores predictivos de un test diagnóstico
 
-Pero el aspecto más importante de un test diagnóstico es su poder
-predictivo, que se mide con las siguientes probabilidades a posteriori.
+Pero el aspecto más importante de un test diagnóstico es su poder predictivo, que se mide con las siguientes probabilidades a posteriori.
 
-El *valor predictivo positivo* de un test diagnóstico es la proporción
-de personas con la enfermedad entre las personas con resultado positivo
-en el test, $$P(E|+) = \frac{VP}{VP+FP}$$
+{{% alert def %}}
+**Definición - Valor predictivo positivo**. El *valor predictivo positivo* de un test diagnóstico es la proporción de personas con la enfermedad entre las personas con resultado positivo
+en el test, 
 
-El *valor predictivo negativo* de un test diagnóstico es la proporción
-de personas sin la enfermedad entre las personas con resultado negativo
-en el test, $$P(\overline{E}|-) = \frac{VN}{VN+FN}$$
+$$P(E|+) = \frac{VP}{VP+FP}$$
 
-### Interpretación de los valores predictivos
+{{% /alert %}}
 
-Los valores predictivos positivo y negativo permiten confirmar o
-descartar la enfermedad, respectivamente, si alcanzan al menos el umbral
-de $0.5$. $$\begin{array}{rcl}
-    VPP>0.5 & \Rightarrow & \mbox{Diagnosticar la enfermedad}\newline
-    VPN>0.5 & \Rightarrow & \mbox{Diagnosticar la no enfermedad} 
-    \end{array}$$
+{{% alert def %}}
+**Definición - Valor predictivo negativo**. El *valor predictivo negativo* de un test diagnóstico es la proporción de personas sin la enfermedad entre las personas con resultado negativo en el test, 
 
-No obstante, estas probabilidades dependen de la proporción de personas
-con la enfermedad en la población $P(E)$ que se conoce como de la
-enfermedad. Pueden calcularse a partir de la sensibilidad y la
-especificidad del test diagnóstico usando el teorema de Bayes.
+$$P(\overline{E}|-) = \frac{VN}{VN+FN}$$
 
-$$\begin{aligned}
+{{% /alert %}}
+
+Los valores predictivos positivo y negativo permiten confirmar o descartar la enfermedad, respectivamente, si alcanzan al menos el umbral de $0.5$. 
+
+$$
+\begin{array}{rcl}
+VPP>0.5 & \Rightarrow & \mbox{Diagnosticar la enfermedad}\newline
+VPN>0.5 & \Rightarrow & \mbox{Diagnosticar la no enfermedad} 
+\end{array}
+$$
+
+No obstante, estas probabilidades dependen de la proporción de personas con la enfermedad en la población $P(E)$ que se conoce como de la enfermedad. Pueden calcularse a partir de la sensibilidad y la especificidad del test diagnóstico usando el teorema de Bayes.
+
+$$
+\begin{aligned}
 VPP=P(E|+) &= \frac{P(E)P(+|E)}{P(E)P(+|E)+P(\overline{E})P(+|\overline{E})}\newline
 VPN=P(\overline{E}|-) &= \frac{P(\overline{E})P(-|\overline{E})}{P(E)P(-|E)+P(\overline{E})P(-|\overline{E})}
-%  = \frac{\mbox{Prevalence}\cdot
-% \mbox{Sensitivity}}{\mbox{Prevalence}\cdot \mbox{Sensitivity}+(1-\mbox{Prevalence})\cdot (1-\mbox{Specificity})}\end{aligned}$$
+\end{aligned}
+$$
 
-Así, con enfermedades frecuentes, el valor predictivo positivo aumenta,
-y con enfermedades raras, el valor predictivo negativo aumenta.
+Así, con enfermedades frecuentes, el valor predictivo positivo aumenta, y con enfermedades raras, el valor predictivo negativo aumenta.
 
-### Test diagnósticos
-
-#### Ejemplo
-
-Un test diagnóstico para la gripe se ha aplicado a una muestra aleatoria
-de 1000 personas. Los resultados aparecen resumidos en la siguiente
+**Ejemplo** Un test diagnóstico para la gripe se ha aplicado a una muestra aleatoria de 1000 personas. Los resultados aparecen resumidos en la siguiente
 tabla.
 
 <table>
 <thead>
 <tr class="header">
 <th style="text-align: left;"></th>
-<th style="text-align: left;">Presencia de gripe <span class="math inline"><em>E</em></span></th>
-<th style="text-align: left;">Ausencia de gripe <span class="math inline">$\overline E$</span></th>
+<th style="text-align: center;">Presencia de gripe $E$</th>
+<th style="text-align: center;">Ausencia de gripe $\overline E$</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Test <span class="math inline">+</span></td>
-<td style="text-align: left;">95</td>
-<td style="text-align: left;">90</td>
+<td style="text-align: left;">Test $+$</td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;">90</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Test <span class="math inline">−</span></td>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">810</td>
+<td style="text-align: left;">Test $−$</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">810</td>
 </tr>
 </tbody>
 </table>
 
 Según esta muestra, la prevalencia de la gripe puede estimarse como
+
 $$P(E) = \frac{95+5}{1000} = 0.1.$$
 
 La sensibilidad del test diagnóstico es
+
 $$P(+|E) = \frac{95}{95+5}= 0.95.$$
 
-Y la especificidad es $$P(-|\overline{E}) = \frac{810}{90+810}=0.9.$$
+Y la especificidad es 
 
-### Test diagnósticos
+$$P(-|\overline{E}) = \frac{810}{90+810}=0.9.$$
 
-#### Continuación del ejemplo
 
-El valor predictivo positivo del test es
+El valor predictivo positivo del test es 
+
 $$VPP = P(E|+) = \frac{95}{95+90} = 0.5135.$$
 
-Como este valor es mayor que $0.5$, eso significa que se diagnosticará
-la gripe si el resultado del test es positivo. No obstante, la confianza
-en el diagnóstico será baja, ya que el valor es poco mayor que $0.5$.
+Como este valor es mayor que $0.5$, eso significa que se diagnosticará la gripe si el resultado del test es positivo. No obstante, la confianza en el diagnóstico será baja, ya que el valor es poco mayor que $0.5$.
 
-Por otro lado, el valor predictivo negativo es
+Por otro lado, el valor predictivo negativo es 
+
 $$VPN = P(\overline{E}|-) = \frac{810}{5+810} = 0.9939.$$
 
-Como este valor es casi 1, eso significa que es casi seguro que no se
-tiene la gripe cuando el resultado del test es negativo.
+Como este valor es casi 1, eso significa que es casi seguro que no se tiene la gripe cuando el resultado del test es negativo.
 
-Así, se puede concluir que este test es muy potente para descartar la
-gripe, pero no lo est tanto para confirmarla.
+Así, se puede concluir que este test es muy potente para descartar la gripe, pero no lo est tanto para confirmarla.
 
 ### Razón de verosimilitud de un test diagnóstico
 
-La siguientes medidas también se derivan de la sensibilidad y la
-especificidad de un test diagnóstico.
+La siguientes medidas también se derivan de la sensibilidad y la especificidad de un test diagnóstico.
 
-La *razón de verosimilitud positiva* de un test diagnóstico es el
-cociente entre la probabilidad de un resultado positivo en personas con
+{{% alert def %}}
+**Definición - Razón de verosimilitud positiva**. La *razón de verosimilitud positiva* de un test diagnóstico es el cociente entre la probabilidad de un resultado positivo en personas con
 la enfermedad y personas sin la enfermedad, respectivamente.
+
 $$RV+=\frac{P(+|E)}{P(+|\overline{E})} = \frac{\mbox{Sensibilidad}}{1-\mbox{Especificidad}}$$
 
-La *razón de verosimilitud negativa* de un test diagnóstico es el
-cociente entre la probabilidad de un resultado negativo en personas con
-la enfermedad y personas sin la enfermedad, respectivamente.
+{{% /alert %}}
+
+{{% alert def %}}
+**Definición - Razón de verosimilitud negativa**. La *razón de verosimilitud negativa* de un test diagnóstico es el cociente entre la probabilidad de un resultado negativo en personas con la enfermedad y personas sin la enfermedad, respectivamente.
+
 $$RV-=\frac{P(-|E)}{P(-|\overline{E})} = \frac{1-\mbox{Sensibilidad}}{\mbox{Especificidad}}$$
 
-### Interpretación de las razones de verosimilitud
+{{% /alert %}}
 
-La razón de verosimilitud positiva puede interpretarse como el número de
-veces que un resultado positivo es más probable en personas con la
-enfermedad que en personas sin la enfermedad.
+La razón de verosimilitud positiva puede interpretarse como el número de veces que un resultado positivo es más probable en personas con la enfermedad que en personas sin la enfermedad.
 
-Por otro lado, la razón de verosimilitud negativa puede interpretarse
-como el número de veces que un resultado negativo es más probable en
-personas con la enfermedad que en personas sin la enfermedad.
+Por otro lado, la razón de verosimilitud negativa puede interpretarse como el número de veces que un resultado negativo es más probable en personas con la enfermedad que en personas sin la enfermedad.
 
-Las probabilidades a posteriori pueden calculares a partir de las
-probabilidades a priori usando las razones de
-verosimilitud
+Las probabilidades a posteriori pueden calculares a partir de las probabilidades a priori usando las razones de verosimilitud
 
 $$P(E|+) = \frac{P(E)P(+|E)}{P(E)P(+|E)+P(\overline{E})P(+|\overline{E})} = \frac{P(E)RV+}{1-P(E)+P(E)RV+}$$
 
 Así,
 
-  - Una razón de verosimilitud positiva mayor que 1 aumenta la
-    probabilidad de la enfermedad.
-
-  - Una razón de verosimilitud positiva menor que 1 disminuye la
-    probabilidad de la enfermedad.
-
-  - Una razón de verosimilitud 1 no cambia la probabilidad a priori de
-    la de tener la
-enfermedad.
-
-### Interpretación de las razones de verosimilitud
-
-\tikzsetnextfilename{probabilidad/razon_verosimilitud}
-
-\mode<article>{\resizebox{0.6\textwidth}{!}{\input{../img/probabilidad/razon_verosimilitud}}}
-
-\mode<presentation>{\resizebox{0.75\textwidth}{!}{\input{../img/probabilidad/razon_verosimilitud}}}
+- Una razón de verosimilitud positiva mayor que 1 aumenta la probabilidad de la enfermedad.
+- Una razón de verosimilitud positiva menor que 1 disminuye la probabilidad de la enfermedad.
+- Una razón de verosimilitud 1 no cambia la probabilidad a priori de la de tener la enfermedad.
+ 
+<img src="../img/probabilidad/razon_verosimilitud.svg" alt="Razón de verosimilitud" width="600">
