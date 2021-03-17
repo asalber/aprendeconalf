@@ -9,8 +9,8 @@ weight: 50
 
 ## Bucles condicionales (`while`)
 
-> `while condición:`  
-&ensp;&ensp;&ensp;&ensp;_`bloque código`_  
+> `while` _`condición`_`:`  
+&ensp;&ensp;&ensp;&ensp;_`bloque código`_ 
 
 Repite la ejecución del bloque de código mientras la expresión lógica `condición` sea cierta.
 
@@ -47,7 +47,7 @@ Introduce un número: 0
 
 ## Bucles iterativos (`for`)
 
-> `for i in secuencia:`  
+> `for` _`i`_ `in` _`secuencia`_`:`   
 &ensp;&ensp;&ensp;&ensp;_`bloque código`_  
 
 Repite la ejecución del bloque de código para cada elemento de la secuencia `secuencia`, asignado dicho elemento a `i` en cada repetición.
