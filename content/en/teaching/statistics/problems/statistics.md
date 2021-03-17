@@ -100,7 +100,6 @@ Males:  $\bar y=22.2778$ min, $s_y=3.1545$ min and $cv_y=0.1416$.
 ## Exercise 6
 The following table represents the frequency distribution of ages at which a group of people suffered a heart attack.
 
-
 |age     | persons|
 |:-------|-------:|
 |[40,50) |       6|
@@ -143,7 +142,7 @@ $B$: $\sum y_j=3020$ days, $\sum (y_j-\bar y)^2=16992$ days$^2$, $\sum (y_j-\bar
 1. $A$: $\bar a=60.8$ days, $s_a=17.0693$ days and $cv_a=0.2807$.  
 $B$: $\bar b=60.4$ days, $s_b=18.4347$ days and $cv_b=0.3052$.  
 2. $g_{1a}=0.0684$ and $g_{1b}=-0.1353$.  
-3. $g_{2a}=-0.6465$ and $g_{2b}=-0.8264$.
+3. $g_{2a}=-0.6465$ and $g_{2b}=-0.8264$, so the distribution of treatment $A$ is more peaked than the one of treatment $B$ as $g_{2a} > g_{2b}$.
 {{< /spoiler >}}
 
 ## Exercise 8
