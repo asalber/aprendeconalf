@@ -34,7 +34,7 @@ Use the following sums for the computations: $\sum x_i=478$ subjects, $\sum x_i^
 
   <img src="../img/des-18-gen-boxplot-subjects.svg" title="Box plot of the subjects passed" alt="Box plot of the subjects passed" style="display: block; margin: auto;" width="800" />
 
-50% of central data fall between 5 and 7 subjects, that is a moderate dispersion. The are no outliers and the right whisker is a little bit longer than the left one, so the distribution is a little bit right skew but almost normal.
+  50% of central data fall between 5 and 7 subjects, that is a moderate dispersion. The are no outliers and the right whisker is a little bit longer than the left one, so the distribution is a little bit right skew but almost normal.
 
 2. $\bar x=5.975$ subjects, $Me=6$ subjects and $Mo=6$ subjects. They are very close, and that means that the distribution is normal.
 
@@ -88,8 +88,8 @@ Logarithmic regression model: $y=-29.2741+32.2571\log(x)$.
 Prediction: $y(32)=82.5205$ degrees.  
 The logarithmic coefficient of determination is $0.9895$ and the linear coefficient of determination is $0.9227$. Thus, the prediction with the logarithmic model is more reliable as the coefficient of determination of the logarithmic model is greater.
 
-4. Exponential regression model: $y=e^{0.9324+0.0307y}$.  
-Prediction: $y(120)=100.8475$ days.  
+4. Exponential regression model: $x=e^{0.9324+0.0307y}$.  
+Prediction: $x(120)=100.8475$ days.  
 This prediction is not reliable as 120 degrees falls far away of the range of values observed in the sample for the knee flexion angle.
 {{< /spoiler >}}
 
