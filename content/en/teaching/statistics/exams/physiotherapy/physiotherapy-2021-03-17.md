@@ -34,10 +34,12 @@ Use the following sums for the computations: $\sum x_i=478$ subjects, $\sum x_i^
 
   <img src="../img/des-18-gen-boxplot-subjects.svg" title="Box plot of the subjects passed" alt="Box plot of the subjects passed" style="display: block; margin: auto;" width="800" />
 
+50% of central data fall between 5 and 7 subjects, that is a moderate dispersion. The are no outliers and the right whisker is a little bit longer than the left one, so the distribution is a little bit right skew but almost normal.
+
 2. $\bar x=5.975$ subjects, $Me=6$ subjects and $Mo=6$ subjects. They are very close, and that means that the distribution is normal.
 
 3. $s^2=2.2494$ (subjects)$^2$, $s=1.4998$ subjects and $g_1=0.1093$, so that the distribution is slightly skewed to the right.  
-$g_2=0.0295$, so that the distribution is flatter than a Gauss bell.  
+$g_2=0.0295$, so that the distribution is a little bit more peaked than a Gauss bell.  
 We can assume that the sample comes from a normal population as both, the coefficient of skewness and the coefficient of kurtosis, are between -2 and 2.
 
 4. Let $Y$ the number of subjects passed the second year. Then, $cv_x=0.251$ and $cv_y=0.2571$. As the coefficient of variation of the first year is a little bit smaller than the one of the second year, the mean of the first year is a little bit more representative.
