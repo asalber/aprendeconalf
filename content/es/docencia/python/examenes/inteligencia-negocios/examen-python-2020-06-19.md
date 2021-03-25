@@ -34,12 +34,6 @@ matemáticas
 
 Escribir una función que tome una lista de números enteros desordenados y devuelva dos listas ordenadas. La primera con los números pares y la segunda con los números impares.
 
-
-```python
-{'La': 1, 'caracola': 2, 'está': 1, 'enterrada': 1, 'al': 1, 'lado': 1, 'de': 2, 'otra': 1, 'color': 1}
-['caracola', 'de']
-```
-
 <a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2020-06-19/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 3

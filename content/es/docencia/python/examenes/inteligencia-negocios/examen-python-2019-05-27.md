@@ -35,7 +35,7 @@ Fecha: 27 de Mayo de 2019
 
 Escribir un programa que pida al usuario un número entero $n$ y muestre por pantalla un triángulo el de más abajo.
 
-```
+```sh
     * 
    ***
   *****
