@@ -89,7 +89,7 @@ Es importante asegurase de tener una versión de Mac OS X 10.11 o superior, ya q
 Para ello, hay que ejecutar R en línea de comandos, o bien arrancar RKWard e ir a la solapa de la Consola de R (R console) e introducir los siguientes comandos:
 
     ```R
-    install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","remotes"))
+    install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","multcomp", "remotes"))
     ```
 
 4. **Instalar rkTeaching**. La mejor forma de instalar rkTeaching desde este repositorio es utilizando el paquete de R `devtools`.
@@ -133,7 +133,7 @@ Debe seleccionarse la distribución correspondiente a Linux y seguir las instruc
 Para ello, hay que ejecutar R en línea de comandos, o bien arrancar RKWard e ir a la solapa de la Consola de R (R console) e introducir los siguientes comandos:
 
     ```R
-    install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","remotes"))
+    install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","multcomp", "remotes"))
     ```
 
 4. **Instalar rkTeaching**. La mejor forma de instalar rkTeaching desde este repositorio es utilizando el paquete de R `devtools`.

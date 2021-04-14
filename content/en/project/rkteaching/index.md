@@ -89,7 +89,7 @@ It is required a Mac Os version 10.11 or higher.
 To install this packages you must run RKWard, open the R console and type the following commands:
 
     ```R
-    install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","remotes"))
+    install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","multcomp", "remotes"))
     ```
 
 4. **Install rkTeaching**. To install the rkTeaching package you must type the following commands in the R console:
@@ -132,7 +132,7 @@ You have to select the Linux distribution and follow the instructions there.
 To install this packages you must run RKWard, open the R console and type the following commands:
 
     ```R
-    install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","remotes"))
+    install.packages(c("R2HTML","car","e1071","Hmisc","plyr","ggplot2","prob","ez","multcomp", "remotes"))
     ```
 
 4. **Install rkTeaching**. To install the rkTeaching package you must type the following commands in the R console:
