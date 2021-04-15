@@ -73,7 +73,7 @@ Una vez abierto el fichero, se puede leer todo el contenido del fichero o se pue
 
 ```python
 >>> f = open('bienvenida.txt', 'r')
-... lineas = print(f.readlines())
+... lineas = f.readlines()
 >>> print(lineas)
 ['Bienvenido a Python!\n', '¡Hasta pronto!']
 ```

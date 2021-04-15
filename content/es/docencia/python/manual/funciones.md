@@ -28,9 +28,11 @@ Para declarar una función se utiliza la siguiente sintaxis:
 ¡Bienvenido a Python!
 ```
 
-### Parámetros de una función
+### Parámetros y argumentos de una función
 
 Una función puede recibir valores cuando se invoca a través de unas variables conocidas como _parámetros_ que se definen entre paréntesis en la declaración de la función. En el cuerpo de la función se pueden usar estos parámetros como si fuesen variables.
+
+Los valores que se pasan a la función en una llamada o invocación concreta de ella se conocen como _argumentos_ y se asocian a los parámetros de la declaración de la función.
 
 ```python
 >>> def bienvenida(nombre):
@@ -41,14 +43,13 @@ Una función puede recibir valores cuando se invoca a través de unas variables 
 ¡Bienvenido a Python Alf!
 ```
 
-### Argumentos de la llamada a una función
+### Paso de argumentos a una función
 
-Los valores que se pasan a la función en una llamada o invocación concreta de ella se conocen como _argumentos_ y se asocian a los parámetros de la declaración de la función.
 
-Los argumentos se pueden indicar de dos formas:
+Los argumentos se pueden pasar de dos formas:
 
 - **Argumentos posicionales**: Se asocian a los parámetros de la función en el mismo orden que aparecen en la definición de la función.
-- **Argumentos por nombre**: Se indica explícitamente el nombre del parámetro al que se asocia un argumento de la forma `parametro = argumento`.
+- **Argumentos nominales**: Se indica explícitamente el nombre del parámetro al que se asocia un argumento de la forma `parametro = argumento`.
 
 ```python
 >>> def bienvenida(nombre, apellido):
@@ -171,10 +172,10 @@ Después se puede acceder a la documentación de la función con la función `he
 ... """Función que calcula el área de un triángulo.
 ...
 ... Parámetros:
-...     - base: La base del triángulo.
-...     - altura: La altura del triángulo.
-... Resultado:
-...     El área del triángulo con la base y altura especificadas.
+...     - base: Un número real con la base del triángulo.
+...     - altura: Un número real con la altura del triángulo.
+... Salida:
+...     Un número real con el área del triángulo de base y altura especificadas.
 ... """
 ...     return base * altura / 2
 ...
@@ -183,10 +184,10 @@ area_triangulo(base, altura)
     Función que calcula el área de un triángulo.
 
     Parámetros:
-        - base: La base del triángulo.
-        - altura: La altura del triángulo.
-    Resultado:
-        El área del triángulo con la base y altura especificadas.
+        - base: Un número real con la base del triángulo.
+        - altura: Un número real con la altura del triángulo.
+    Salida:
+        Un número real con el área del triángulo de base y altura especificadas.
 ```
 
 ## Funciones recursivas
