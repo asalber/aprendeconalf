@@ -6,7 +6,7 @@ lastmod:
 tags: [Ejercicios, Pandas]
 categories: [Programación, Python]
 type: book
-weight: 90
+weight: 100
 ---
 
 ## Ejercicio 1
@@ -17,7 +17,7 @@ Escribir un programa que pregunte al usuario por las ventas de un rango de años
 
 ## Ejercicio 2
 
-Escribir una función que reciba una diccionario con las notas de los alumnos en curso en un examen y devuelva una serie con la nota mínima, la máxima, media y la desviación típica.
+Escribir una función que reciba un diccionario con las notas de los alumnos en curso en un examen y devuelva una serie con la nota mínima, la máxima, media y la desviación típica.
 
 <a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/pandas/ejercicio2.ipynb" class="btn btn-info">Solución</a>
 

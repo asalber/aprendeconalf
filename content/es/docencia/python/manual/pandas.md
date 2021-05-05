@@ -400,7 +400,7 @@ Dependiendo del tipo de fichero, existen distintas funciones para importar un Da
 >>> import pandas as pd
 >>> # Importación del fichero datos-colesteroles.csv
 >>> df = pd.read_csv(
-'https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesteroles.csv', sep=';' decimal=',')
+'https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesteroles.csv', sep=';', decimal=',')
 >>> print(df.head())
                               nombre  edad sexo    peso    altura  colesterol
 0       José Luis Martínez Izquierdo    18    H    85.0    1.79         182.0
