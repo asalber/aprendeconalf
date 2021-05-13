@@ -631,6 +631,22 @@ Para aplicar funciones a todos los elementos de una columna se utiliza el siguie
 ...
 ```
 
+## Convertir una columna al tipo `datetime`
+
+A menudo una columna contiene cadenas que representan fechas. Para convertir estas cadenas al tipo `datetime` se utiliza el siguiente método:
+
+- `to_datetime(columna, formato)`: Devuelve la serie que resulta de convertir las cadenas de la columna con el nombre `columna` en fechas del tipo `datetime` con el formado especificado en `formato`. ([Ver librería datetime](../datetime/))
+
+```python
+>>> import pandas as pd
+>>> df = pd.DataFrame({'Name': ['María', 'Carlos', 'Carmen'], 'Nacimiento':['05-03-2000', '20-05-2001', '10-12-1999']})
+>>> print(pd.to_datetime(df.Nacimiento, format = '%d-%m-%Y'))
+0   2000-03-05
+1   2001-05-20
+2   1999-12-10
+Name: Nacimiento, dtype: datetime64[ns]
+```
+
 ## Resumen descriptivo de un DataFrame
 
 Al igual que para las series, los siguientes métodos permiten resumir la información de un DataFrame por columnas:
