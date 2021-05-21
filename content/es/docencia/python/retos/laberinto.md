@@ -2,7 +2,7 @@
 title: Laberinto
 summary: Buscar la salida de un laberinto.
 date: 2019
-tags: [Listas]
+tags: [Listas, Bucles]
 categories: [Programación, Python]
 type: book
 ---
