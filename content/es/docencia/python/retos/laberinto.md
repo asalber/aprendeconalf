@@ -10,7 +10,7 @@ type: book
 ## Tarea 1
 La primera tarea consiste en construir un laberinto como el de la siguiente figura.
 
-![Laberinto](img/laberinto.png)
+![Laberinto](../img/laberinto.png)
 
 El laberinto se representará como una una lista de listas, donde cada lista es una fila del laberinto y cada casilla se representará con un espacio ' ' si hay paso o con la letra 'X' si hay un muro, tal y como se muestra a continuación:
 
