@@ -30,5 +30,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           external_repository: asalber/asalber.github.io
-          publish_branch: gh-pages  # default: gh-pages
+          publish_branch: master  # default: gh-pages
           publish_dir: ./public
