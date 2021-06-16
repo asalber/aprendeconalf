@@ -30,5 +30,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           external_repository: asalber/asalber.github.io
+          user_name: asalber
+          user_email: asalber@gmail.com
           publish_branch: master  # default: gh-pages
           publish_dir: ./public
