@@ -75,7 +75,7 @@ La función debe cumplir los siguientes requisitos:
 
 ## Ejercicio 5
 
-El fichero [`cotizacion.csv`](cotizacion.csv) contiene las cotizaciones de las empresas del IBEX35 con las siguientes columnas: `nombre` (nombre de la empresa), `Final` (precio de la acción al cierre de bolsa), `Máximo` (precio máximo de la acción durante la jornada), `Mínimo` (precio mínimo de la acción durante la jornada), `volumen` (Volumen al cierre de bolsa), `Efectivo` (capitalización al cierre en miles de euros).
+El fichero [`cotizacion.csv`](../soluciones/examen-2019-05-27/cotizacion.csv) contiene las cotizaciones de las empresas del IBEX35 con las siguientes columnas: `nombre` (nombre de la empresa), `Final` (precio de la acción al cierre de bolsa), `Máximo` (precio máximo de la acción durante la jornada), `Mínimo` (precio mínimo de la acción durante la jornada), `volumen` (Volumen al cierre de bolsa), `Efectivo` (capitalización al cierre en miles de euros).
 
 1. Construir una función que abra un fichero con el formato anterior y devuelva un diccionario con los datos del fichero por columnas.
 

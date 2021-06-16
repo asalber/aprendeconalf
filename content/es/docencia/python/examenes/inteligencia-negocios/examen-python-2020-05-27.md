@@ -35,9 +35,10 @@ Escribir una función que cuente las palabras que hay en una frase y las devuelv
 <a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2020-05-27/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 3
-El fichero [horas-trabajo.csv](http://aprendeconalf.es/python/examenes/soluciones/examen-2020-05-27/horas-trabajo.csv) contiene el número de horas mensuales trabajadas por los empleados de una empresa durante el primer cuatrimestre. Crear un programa que realice las siguientes operaciones sin utilizar la librería Pandas:
 
-1. Leer el fichero de internet `http://aprendeconalf.es/python/examenes/soluciones/examen-2020-05-27/horas-trabajo.csv` y crear una lista con las líneas del fichero.
+El fichero [horas-trabajo.csv](../soluciones/examen-2020-05-27/horas-trabajo.csv) contiene el número de horas mensuales trabajadas por los empleados de una empresa durante el primer cuatrimestre. Crear un programa que realice las siguientes operaciones sin utilizar la librería Pandas:
+
+1. Leer el fichero de internet `https://aprendeconalf.es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2020-05-27/horas-trabajo.csv` y crear una lista con las líneas del fichero.
 2. Mostrar por pantalla las horas totales del primer operario.
 3. Crear un diccionario de diccionarios tal que las claves del diccionario principal serán los identificadores de los operarios y sus valores serán, a su vez, otros diccionarios cuyas claves serán los meses y sus valores las horas trabajadas en esos meses para cada operario. Es decir, un diccionario como el siguiente:
 

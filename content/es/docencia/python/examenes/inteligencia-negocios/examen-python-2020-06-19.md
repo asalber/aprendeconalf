@@ -48,9 +48,9 @@ Escribir un programa para gestionar las citas de una consulta médica. La base d
 
 ## Ejercicio 4
 
-El fichero [ipc-2020.csv](http://aprendeconalf.es/python/examenes/soluciones/examen-2020-06-19/ipc-2020.csv) contiene el IPC de las comunidades autónomas de los cinco primeros meses de 2020. Crear un programa que realice las siguientes operaciones utilizando la librería Pandas:
+El fichero [ipc-2020.csv](../soluciones/examen-2020-06-19/ipc-2020.csv) contiene el IPC de las comunidades autónomas de los cinco primeros meses de 2020. Crear un programa que realice las siguientes operaciones utilizando la librería Pandas:
 
-1. Crear un DataFrame leyendo el fichero desde internet con la url `http://aprendeconalf.es/python/examenes/soluciones/examen-2020-06-19/ipc-2020.csv`.
+1. Crear un DataFrame leyendo el fichero desde internet con la url `https://aprendeconalf.es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2020-06-19/ipc-2020.csv`.
 2. Mostrar por pantalla el DataFrame con los datos de las filas 10 a 15.
 3. Mostrar por pantalla el DataFrame con los datos de Canarias de Mayo.
 4. Mostrar por pantalla una serie con el IPC mensual máximo de cada comunidad autónoma.
