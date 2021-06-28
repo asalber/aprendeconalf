@@ -120,3 +120,5 @@ Construir un programa que realize las siguientes operaciones con la librería Pa
 5. Representar, mediante un diagrama de dispersión, en número de hijos frente al número de mascotas para las personas de Madrid.
 6. Realizar la siguiente gráfica.
 !['Recta de regresión'](../img/diagrama-barras-provincias.png)
+
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2021-06-05/ejercicio6.ipynb" class="btn btn-info" target="_blank">Solución</a>
