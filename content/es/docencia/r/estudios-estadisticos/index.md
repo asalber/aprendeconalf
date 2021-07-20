@@ -95,7 +95,7 @@ df %>% ggplot(aes(x = asinaturas.aprobadas)) +
     ## Warning: Continuous limits supplied to discrete scale.
     ## Did you mean `limits = factor(...)` or `scale_*_continuous()`?
 
-![](estudios-estadisticos_files/figure-markdown_github/one-quantitative-variable-bar-chart-1.png)
+![]("img/one-quantitative-variable-bar-chart-1.png")
 
 
 -   Histograma
@@ -111,7 +111,7 @@ df %>% ggplot(aes(x = notaA)) +
   scale_x_continuous(limits=c(0, 10), breaks = 0:10) 
 ```
 
-![](estudios-estadisticos_files/figure-markdown_github/one-quantitative-variable-histogram-1.png)
+![](img/one-quantitative-variable-histogram-1.png)
 
 ``` r
 # Histograma de notasE
@@ -123,7 +123,7 @@ df %>% ggplot(aes(x = notaE)) +
 
     ## Warning: Removed 2 rows containing non-finite values (stat_bin).
 
-![](estudios-estadisticos_files/figure-markdown_github/one-quantitative-variable-histogram-2.png)
+![](img/one-quantitative-variable-histogram-2.png)
 
 -   Diagrama de líneas
 
@@ -139,7 +139,7 @@ df %>% count(asinaturas.aprobadas) %>%
     ## Warning: Continuous limits supplied to discrete scale.
     ## Did you mean `limits = factor(...)` or `scale_*_continuous()`?
 
-![](estudios-estadisticos_files/figure-markdown_github/one-quantitative-variable-line-chart-1.png)
+![](img/one-quantitative-variable-line-chart-1.png)
 
 ``` r
 # Agrupación de datos en intervalos
@@ -151,7 +151,7 @@ df %>% ggplot(aes(x = notaA)) +
 
     ## Warning: Removed 2 row(s) containing missing values (geom_path).
 
-![](estudios-estadisticos_files/figure-markdown_github/one-quantitative-variable-line-chart-2.png)
+![](img/one-quantitative-variable-line-chart-2.png)
 
 -   Diagrama de caja y bigotes
 
@@ -162,7 +162,7 @@ df %>% ggplot(aes(x = notaA)) +
   scale_x_continuous(limits=c(0, 10), breaks = 0:10)
 ```
 
-![](estudios-estadisticos_files/figure-markdown_github/one-quantitative-variable-box-plot-1.png)
+![](img/one-quantitative-variable-box-plot-1.png)
 
 ### Estudios inferenciales
 
@@ -279,7 +279,7 @@ df %>% ggplot(aes(x = "", fill = calificacionA)) +
    theme_void()
 ```
 
-![](estudios-estadisticos_files/figure-markdown_github/piechart-1.png)
+![](img/img2/piechart-1.png)
 
 ### Estudios inferenciales
 
@@ -390,7 +390,7 @@ df %>% ggplot(aes(x = sexo, y = notaA, fill = sexo)) +
   scale_y_continuous(limits=c(0, 10), breaks = 0:10)
 ```
 
-![](estudios-estadisticos_files/figure-markdown_github/quantiative-vs-qualitative-box-plot-1.png)
+![](img/quantiative-vs-qualitative-box-plot-1.png)
 
 -   Diagrama de violín
 
@@ -401,7 +401,7 @@ df %>% ggplot(aes(x = sexo, y = notaA, fill = sexo)) +
   scale_y_continuous(limits=c(0, 10), breaks = 0:10)
 ```
 
-![](estudios-estadisticos_files/figure-markdown_github/quantiative-vs-qualitative-violín-plot-1.png)
+![](img/quantiative-vs-qualitative-violín-plot-1.png)
 
 ### Estudios inferenciales
 
@@ -540,5 +540,5 @@ df %>% ggplot(aes(x = sexo, y = notaA, colour = sexo)) +
   stat_summary(fun.data = function(x) mean_cl_normal(x, conf.int=0.95), geom = "pointrange", position=position_dodge(width=0.25)) 
 ```
 
-![](estudios-estadisticos_files/figure-markdown_github/quantitative-vs-qualitative-means-plot-1.png)
+![](img/quantitative-vs-qualitative-means-plot-1.png)
 
