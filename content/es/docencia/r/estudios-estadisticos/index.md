@@ -4,10 +4,10 @@ subtitle: Ejemplos implementados con R
 categories: [Estadística, R]
 ---
 
+Los ejemplos de los distintos test que se presentan a continuación se han realizado a partir del siguiente conjunto de datos que contiene las notas y calificaciones de un curso. El fichero con los datos puede descargarse aquí para reproducir los estudios: [datos-curso.csv](datos/datos-curso.csv)
+
 ``` r
-library(knitr)
 library(tidyverse)
-library(kableExtra)
 ```
 
 ## Una variable cuantitativa
