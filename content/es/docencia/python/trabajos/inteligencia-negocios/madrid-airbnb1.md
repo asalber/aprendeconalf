@@ -11,7 +11,7 @@ El objetivo de este trabajo es comprobar si se está utilizando la plataforma Ai
 
 ### Conjunto de datos
 
-Datos abiertos de Inside Airbnb: <a href="../datos/madrid-airbnb-listings.csv">Fichero alojamientos Madrid detallado</a>.
+Datos abiertos de Inside Airbnb: <a href="../datos/madrid-airbnb-listings-small.csv">Fichero alojamientos Madrid detallado</a>.
 
 ### Requisitos obligatorios
 

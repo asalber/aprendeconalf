@@ -11,7 +11,7 @@ El objetivo de este trabajo es hacer un análisis de los contratos menores del A
 
 ### Conjunto de datos
 
-Datos abiertos del Ayuntamiento de Madrid: [Contratos menores](http://aprendeconalf.es/python/trabajos/datos/contratos-menores-madrid.csv)
+Datos abiertos del Ayuntamiento de Madrid: [Contratos menores](../datos/contratos-menores-madrid.csv)
 
 Deben usarse los datos desde 2015.
 
