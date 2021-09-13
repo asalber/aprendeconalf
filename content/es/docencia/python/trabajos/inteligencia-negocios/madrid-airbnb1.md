@@ -41,4 +41,4 @@ Usando Pandas:
 
 <a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/trabajos/inteligencia-negocios/soluciones/madrid-airbnb1.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
-Abrir con <a href="https://repl.it/@asalber/madrid-airbnb1py"><img src="/images/logo-replit.png" alt="Abrir con repl.it"></a>
+Abrir con <a href="https://repl.it/@asalber/madrid-airbnb1py"><img src="/media/logo-replit.png#left" alt="Abrir con repl.it"></a>

@@ -260,7 +260,7 @@ $$l:(x,y,z)=(0,1,\pi/2)+t(-1,0,1) = (-t,1,t+\pi/2).$$
 
 <img src="../img/derivativesn/tangent_trajectory_space.svg" alt="Tangent line to a trajectory in the space." width="400">
 
-<img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/Q2C7EfBn" target="_blank">Interactive Example</a>**
+<img src="/media/logo-geogebra.png#left" /> **<a href="https://ggbm.at/Q2C7EfBn" target="_blank">Interactive Example</a>**
 
 ### Normal plane to a trajectory in the space
 
@@ -288,7 +288,7 @@ $$\Pi:\left(x-0,y-1,z-\frac{\pi}{2}\right)(-1,0,1) =0 \Leftrightarrow -x+z-\frac
 
 <img src="../img/derivativesn/normal_plane_trajectory_space.svg" alt="Normal plane to a trajectory in the space." width="400">
 
-<img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/Q2C7EfBn" target="_blank">Interactive Example</a>**
+<img src="/media/logo-geogebra.png#left" /> **<a href="https://ggbm.at/Q2C7EfBn" target="_blank">Interactive Example</a>**
 
 ## Functions of several variables
 
@@ -404,7 +404,7 @@ Geometrically, a two-variable function $z=f(x,y)$ defines a surface. If we cut t
 
 <img src="../img/derivativesn/partial_tangent_surface.svg" alt="Geometric interpretation of the partial derivative." width="350">
 
-<img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/K3xnQRY8" target="_blank">Interactive Example</a>**
+<img src="/media/logo-geogebra.png#left" /> **<a href="https://ggbm.at/K3xnQRY8" target="_blank">Interactive Example</a>**
 
 ### Partial derivative
 
@@ -604,7 +604,7 @@ The graph of the paraboloid $f(x,y,z)=x^2+y^2-z=0$ and the normal line and the t
 
  <img src="../img/derivativesn/tangent_plane_paraboloid.svg" alt="Geometric interpretation of the partial derivative." width="350">
 
- <img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/wTh7KKd3" target="_blank">Interactive Example</a>**
+ <img src="/media/logo-geogebra.png#left" /> **<a href="https://ggbm.at/wTh7KKd3" target="_blank">Interactive Example</a>**
 
 ## Directional derivative
 
@@ -662,7 +662,7 @@ $$\mathbf{v'}=\frac{\mathbf{v}}{|\mathbf{v}|}.$$
 
 Geometrically, a two-variable function $z=f(x,y)$ defines a surface. If we cut this surface with a plane of equation $a(y-y_0)=b(x-x_0)$ (that is, the vertical plane that passes through the point $P=(x_0,y_0)$ with the direction of vector $\mathbf{u}=(a,b)$) the intersection is a curve, and the directional derivative of $f$ at $P$ along the direction of $\mathbf{u}$ is the slope of the tangent line to that curve at point $P$.
 
-<img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/Bx8nFMNc" target="_blank">Interactive Example</a>**
+<img src="/media/logo-geogebra.png#left" /> **<a href="https://ggbm.at/Bx8nFMNc" target="_blank">Interactive Example</a>**
 
 ### Growth of scalar field along the gradient
 
@@ -1006,7 +1006,7 @@ The graph of the scalar field $f(x,y)=\log(xy)$ and the second degree Taylor pol
 
 <img src="../img/derivativesn/second_degree_taylor_polynomial.svg" alt="Second degree Taylor polynomial" width="350">
 
-<img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/Ehnz3hGb" target="_blank">Interactive Example</a>**
+<img src="/media/logo-geogebra.png#left" /> **<a href="https://ggbm.at/Ehnz3hGb" target="_blank">Interactive Example</a>**
 
 ## Relative extrema
 

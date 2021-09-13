@@ -40,4 +40,4 @@ Usando Pandas:
 
 <a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/trabajos/inteligencia-negocios/soluciones/deuda-publica.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
-Abrir con <a href="https://repl.it/@asalber/deudapy"><img src="/images/logo-replit.png" alt="Abrir con repl.it"></a>
+Abrir con <a href="https://repl.it/@asalber/deudapy"><img src="/media/logo-replit.png#left" alt="Abrir con repl.it"></a>

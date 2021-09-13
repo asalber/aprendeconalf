@@ -326,7 +326,7 @@ $$l:(x,y,z)=(0,1,\pi/2)+t(-1,0,1) = (-t,1,t+\pi/2).$$
 
 <img src="../img/derivadas1/tangente_trayectoria_espacio.png" width="400px" alt="Gráfica de la tangente a una trayectoria en el espacio." />
 
-<img src="/images/geogebra.png#left" /> **<a href="http://ggbtu.be/m156108" target="_blank">Ejemplo interactivo</a>**
+<img src="/media/logo-geogebra.png#left" /> **<a href="http://ggbtu.be/m156108" target="_blank">Ejemplo interactivo</a>**
 
 ## Álgebra de derivadas
 

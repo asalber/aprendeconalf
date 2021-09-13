@@ -260,7 +260,7 @@ $$l:(x,y,z)=(0,1,\pi/2)+t(-1,0,1) = (-t,1,t+\pi/2).$$
 
 <img src="../img/derivadasn/tangent_trajectory_space.svg" alt="Tangent line to a trajectory in the space." width="400">
 
-<img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/Q2C7EfBn" target="_blank">Interactive Example</a>**
+<img src="/media/logo-geogebra.png#left" /> **<a href="https://ggbm.at/Q2C7EfBn" target="_blank">Interactive Example</a>**
 
 ### Normal plane to a trajectory in the space
 
@@ -288,7 +288,7 @@ $$\Pi:\left(x-0,y-1,z-\frac{\pi}{2}\right)(-1,0,1) =0 \Leftrightarrow -x+z-\frac
 
 <img src="../img/derivadasn/normal_plane_trajectory_space.svg" alt="Normal plane to a trajectory in the space." width="400">
 
-<img src="/images/geogebra.png#left" /> **<a href="https://ggbm.at/Q2C7EfBn" target="_blank">Interactive Example</a>**
+<img src="/media/logo-geogebra.png#left" /> **<a href="https://ggbm.at/Q2C7EfBn" target="_blank">Interactive Example</a>**
 
 ## Funciones de varias variables
 
