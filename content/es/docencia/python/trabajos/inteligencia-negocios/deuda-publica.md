@@ -11,7 +11,7 @@ El objetivo de este trabajo es hacer un análisis del endeudamiento público por
 
 ## Conjunto de datos
 
-Datos del banco mundial: [Deuda pública países](../datos/deuda.csv)) y [PIB países](../datos/pib.csv).
+Datos del banco mundial: [Deuda pública países](../datos/deuda.csv) y [PIB países](../datos/pib.csv).
 
 ## Requisitos
 

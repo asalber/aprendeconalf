@@ -435,7 +435,7 @@ When the regression model is linear, the coefficient of determination can be com
 $$ r^2 =  \frac{s_{xy}^2}{s_x^2s_y^2}.$$
 {{% /alert %}}
 
-{{< spoiler text="Demostración" >}}
+{{< spoiler text="Proof" >}}
 When the fitted model is the regression line, the the residual variance is
 
 $$
@@ -618,31 +618,46 @@ $$\mbox{Bacteria} = e^{3.107+0.352\,\mbox{Hours}}, \mbox{ with } r^2=0.99.$$
 
 Thus, the exponential model fits much better than the linear model.
 
+## Regression risks
+
+### Lack of fit does not mean independence
+
+It is important to note that every regression model has its own coefficient of determination.
+
 {{% alert warning %}}
-It is important to note that every regression model has its own
-coefficient of determination. Thus, a coefficient of determination near zero means that there is no relation as set by the model, but _that does not mean that the variables are independent_, because there could be a different type of relation.
+ Thus, a coefficient of determination near zero means that there is no relation as set by the model, but _that does not mean that the variables are independent_, because there could be a different type of relation.
 {{% /alert %}}
 
 <div class="center">
-<img src="../img/regression/linear_regression_parabolic_relation.svg" alt="Linear regression on a cuadratic relation" width="400">
-<img src="../img/regression/parabolic_regression.svg" alt="Cuadratic regression on a cuadratic relation" width="400">
+<img src="../img/regression/linear_regression_parabolic_relation.svg" alt="Linear regression on a cuadratic relation" width="500">
+<img src="../img/regression/parabolic_regression.svg" alt="Cuadratic regression on a cuadratic relation" width="500">
 </div>
-
-## Outliers in regression
-
-Outliers in regression studies are points that clearly do not follow
-the tendency of the rest of points, even if the values of the pair are
-not outliers for every variable separately.
-
-<img src="../img/regression/scatterplot_with_outliers.svg" alt="Scatter plot with an outlier" width="500">
 
 ### Outliers influence in regression
 
-Outliers in regression studies can provoke drastic changes in the
-regression models.
+Outliers in regression studies are points that clearly do not follow the tendency of the rest of points, even if the values of the pair are not outliers for every variable separately.
+
+<img src="../img/regression/scatterplot_with_outliers.svg" alt="Scatter plot with an outlier" width="500">
+
+Outliers in regression studies can provoke drastic changes in the regression models.
 
 <div class="center">
-<img src="../img/regression/linear_regression_with_outliers.svg" alt="Linear regression with an outlier" width="400"> <img src="../img/regression/linear_regression_without_outliers.svg" alt="Linear regression without outliers" width="400">
+<img src="../img/regression/linear_regression_with_outliers.svg" alt="Linear regression with an outlier" width="500"> <img src="../img/regression/linear_regression_without_outliers.svg" alt="Linear regression without outliers" width="500">
 </div>
 
-<!-- TODO: Include simpson's paradox https://en.wikipedia.org/wiki/Simpson%27s_paradox />
+### The Simpson's paradox
+
+Sometimes a trend can disappears or even reverses when we split the sample into groups according to a qualitative variable that is related to the dependent variable.
+This is known as the _Simpson's paradox_.
+
+**Example**. The scatterplot below shows an inverse relation between the study hours and the score in an exam.
+
+<div class="center">
+<img src="../img/regression/simpson_paradox_1.svg" alt="Simpon's paradox. Inverse relation between study hours and the score in an exam." width="500">
+</div>
+
+But if we split the sample in two groups (good and bad students) we get different trends and now the relation is direct, which makes more sense.
+
+<div class="center">
+<img src="../img/regression/simpson_paradox_2.svg" alt="Simpon's paradox. Direct relation between study hours and the score in an exam."" width="500">
+</div>
