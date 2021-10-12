@@ -1,10 +1,10 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: Rúbricas
-subtitle: Una aplicación web para la evaluación mediante rúbricas.
-summary: Aplicación web para la evaluación mediante rúbricas.
-tags: [Rúbricas, Software, Shiny]
+title: Rubrics
+subtitle: A web application for assessment with rubrics.
+summary: A web app for assessment with rubrics.
+tags: [Rybrics, Software, Shiny]
 categories: [R]
 date: 2021-09-01
 type: project
@@ -43,23 +43,23 @@ slides: ""
 
 {{% toc %}}
 
-## ¿Qué es Rúbricas?
+## What is Rubrics?
 
-Rúbricas es una aplicación web basada en R y Shiny para la evaluación mediante rúbricas.
+Rubrics is a Shiny web application for assessment with rubrics.
 
-La aplicación permite:
+The application allows:
 
-1. Generar la rúbrica correspondiente a un examen o prueba de evaluación.
-2. Cargar la lista de alumnos a partir de un fichero csv y generar una plantilla de corrección.
-3. Cargar las correcciones desde la plantilla de corrección.
-4. Generar la lista de notas de los alumnos.
-5. Generar un resumen descriptivo de la distribución de notas.
-6. Generar un informe personalizado con la corrección de cada alumno.
+1. Create a rubric for an exam or test.
+2. Load the list of students from a csv file and generate a template for the assessment.
+3. Load the assessment from the template.
+4. Generate a list with the students grades.
+5. Generate a descriptive summary of the distribution of grades.
+6. Generate a personalized report with the assessment of each student.
 
-En el siguiente vídeo se puede ver una presentación más detallada de esta aplicación:
+The video below contains a more detailed presentation of this application (in Spanish):
 
 {{% youtube "RYCMFn2MDB8" %}}
 
-## ¿Cómo citar Rúbricas?
+## How to cite Rubrics?
 
-Anemone, Gloria., Sánchez-Alberca, Alfredo. (2021). Rúbricas (version 1.0) [software]. Obtenido de: https://aprendeconalf.es/es/proyecto/rubricas.
+Anemone, Gloria., Sánchez-Alberca, Alfredo. (2021). Rubrics (version 1.0) [software]. Obtained from: https://aprendeconalf.es/en/project/rubrics.
