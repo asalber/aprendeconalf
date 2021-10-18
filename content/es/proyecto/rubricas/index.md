@@ -41,6 +41,8 @@ url_video: "https://web.microsoftstream.com/video/3b12c5ca-3e91-4830-9895-1bda70
 slides: ""
 ---
 
+## [Acceso a la aplicación](http://nube.aprendeconalf.es/shiny/evaluacion-rubrica/)
+
 {{% toc %}}
 
 ## ¿Qué es Rúbricas?

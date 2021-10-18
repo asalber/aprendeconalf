@@ -41,6 +41,8 @@ url_video: "https://web.microsoftstream.com/video/3b12c5ca-3e91-4830-9895-1bda70
 slides: ""
 ---
 
+## [Application access](http://nube.aprendeconalf.es/shiny/assessment-rubric/)
+
 {{% toc %}}
 
 ## What is Rubrics?
