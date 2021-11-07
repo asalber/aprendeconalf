@@ -1,12 +1,12 @@
 ---
 title: Tipos de estudios estadísticos
-subtitle: Ejemplos implementados con R
+subtitle: Clasificación de los tipos de estudios estadísticos más comunes con ejemplos implementados con R
 tags: [Ejemplos]
 categories: [Estadística, R]
 date: 2021-07-21
 ---
 
-Acabo de publicar una [guía básica con los principales tipos de estudios estadísticos](https://aprendeconalf.es/docencia/r/estudios-estadisticos) y ejemplos realizados con el programa de análisis de datos R. 
+Acabo de publicar una [guía básica con los principales tipos de estudios estadísticos](https://aprendeconalf.es/docencia/estadistica/tutoriales/tipos-estudios-estadisticos) y ejemplos realizados con el programa de análisis de datos R. 
 
 <!--more-->
 
