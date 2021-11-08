@@ -17,7 +17,7 @@ Epidemiología viene Griego: Epi (sobre), demos (gente) y logos (estudio), es de
 
 <img src="img/detective.png" width=80% alt="Detective epidemiólogo">
 
-Debido a la epidemia provocada por el coronavirus, la Epidemia se ha convertido en una de las rama de la medicina que más interés despiertan.
+Debido a la epidemia provocada por el coronavirus, la Epidemiología se ha convertido en una de las ramas de la medicina que más interés despiertan.
 
 ![Fernando Simón](img/fernando-simon.jpg)
 
@@ -33,7 +33,7 @@ Sin embargo, antes de la COVID, la Epidemiología ya había servido en otros mom
 - 1983: Robert Gallo, Luc Montagnier y Françoise Barré-Sinoussi identifican el virus que causa el SIDA. Poco después se se observó que el riesgo de contraer el HIV aumentaba con ciertas prácticas sexuales y con el consumo de algunos tipos de drogas.
 - 2020: Y llegó la COVID...
 
-En estos tiempos de pandemia un montón de términos técnicos de la epidemiología se han convertido en lugares comunes gracias a los medios de comunicación.
+En estos tiempos de pandemia un montón de términos técnicos de la Epidemiología se han convertido en lugares comunes gracias a los medios de comunicación.
 
 ![Términos epidemiología](img/wordcloud.png)
 
@@ -478,11 +478,44 @@ VPN>0.5 & \Rightarrow & \mbox{Descartar la enfermedad}
 \end{array}
 $$
 
-## Aplicaciones al COVID-19
+## Curva ROC
+
+En los test diagnósticos basado en la medición de una variable cuantitativa (como por ejemplo los test de antígenos para la COVID) la sensibilidad y la especificidad dependen el umbral fijado para dar un positivo. 
+
+Para evaluar la fiabilidad de estos tests se suele utilizar la _curva ROC_.
+
+{{% alert def %}}
+**Definición: Curva ROC**  
+La curva ROC (Receiver Operating Characteristic) de un test diagnóstico es la curva que resulta de representar la razón de verdaderos positivos (sensibilidad) frente a la razón de falsos positivos (1-especificidad) para los diferentes umbrales de positivo del test.
+{{% /alert %}}
+
+![Curva ROC](img/curva-roc.png)
+
+### Interpretación de la curva ROC
+
+- El mejor test es el que que se sitúa en la esquina superior izquierda de el espacio (sensibilidad 1 y especificidad 1).
+- La diagonal representa un test con un diagnóstico aleatorio.
+- Para evaluar la fiabilidad de un test diagnóstico independientemente del umbral de positivos se suele medir el area bajo la curva ROC, también conocida como _AUC_ (_area under the curve_). Según del valor de la AUC, se tiene
+
+- 0.5: Diagnóstico aleatorio.
+- [0.5, 0.6): Test malo.
+- [0.6, 0.75): Test regular.
+- [0.75, 0.9): Test bueno.
+- [0.9, 0.97): Test muy bueno.
+- [0.97, 1): Test excelente.
+
+### Aplicaciones a la COVID
 
 - [Fiabilidad del diagnóstico por PCR](https://www.rcpjournals.org/content/clinmedicine/20/6/e209)
 - [Fiabilidad del diagnóstico por el test de antígenos](https://www.cdc.gov/mmwr/volumes/69/wr/mm695152a3.htm)
 - [Comparativa de test](https://academic.oup.com/ajcp/article/154/5/575/5898531)
+- [Test comerciales](https://www.dosfarma.com/salud/test-analisis/test-antigenos-covid/)
+
+Los test de antígenos son más rápidos que las PCR pero son menos fiables.
+
+Por un lado son menos sensibles que una prueba de PCR debido a que se se requiere una mayor cantidad de virus en las mucosas nasales o bucales para que se muestre un resultado positivo. Eso limita su efectividad cuando las personas llevan poco tiempo infectadas y el virus está empezando a reproducirse.
+
+Por otro lado también son menos específicos que la PCR, y por tanto, producen más falsos positivos.
 
 ## Referencias
 
