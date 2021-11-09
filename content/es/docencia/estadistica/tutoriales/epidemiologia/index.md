@@ -164,9 +164,13 @@ $$ R(E) = \frac{80}{1000} = 0.08$$
 
 - La prevalencia muestra el número de personas afectadas (carga de la enfermedad).
 - La incidencia muestra la evolución de la enfermedad y es más útil para detectar brotes y estudiar su causa.
-- La incidencia depende solo de la contagiosidad de la enfermedad, mientras que la prevalencia depende también de la duración de la enfermedad y de lo agresiva que sea.
+- La incidencia depende sobre todo de la contagiosidad de la enfermedad, mientras que la prevalencia depende también de la duración de la enfermedad y de lo agresiva que sea.
 
-<!-- $$ P(E) < R(E) $$ -->
+**Ejemplo** Una enfermedad crónica como la diabetes o la artrosis tiene una incidencia prácticamente constante al depender fundamentalmente de la edad y no ser contagiosas y una prevalencia alta ya que no existe cura para ellas y las personas tampoco mueren a causa de ellas sino que viven con ellas el resto de su vida.
+
+Por otro lado, una enfermedad como el ébola tiene una incidencia pequeña al no ser muy contagiosa y también una prevalencia pequeña al ser una enfermedad mortal ya que casi todas las personas que se contagian acaban muriendo.
+
+Finalmente, una enfermedad como la COVID tiene una incidencia muy alta al ser muy contagiosa y una prevalencia parecida a la incidencia ya que la enfermedad suele acabar en un periodo de dos semanas desde el contagio (salvo los casos que necesitan hospitalización).
 
 ### Algunas consideraciones en el caso de la COVID
 
@@ -493,9 +497,13 @@ La curva ROC (Receiver Operating Characteristic) de un test diagnóstico es la c
 
 ### Interpretación de la curva ROC
 
+- Cada punto de la curva corresponde a un umbral para el positivo.
 - El mejor test es el que que se sitúa en la esquina superior izquierda de el espacio (sensibilidad 1 y especificidad 1).
 - La diagonal representa un test con un diagnóstico aleatorio.
-- Para evaluar la fiabilidad de un test diagnóstico independientemente del umbral de positivos se suele medir el area bajo la curva ROC, también conocida como _AUC_ (_area under the curve_). Según del valor de la AUC, se tiene
+
+### Area debajo de la curva ROC (AUC)
+
+Para evaluar la fiabilidad de un test diagnóstico independientemente del umbral de positivos se suele medir el area bajo la curva ROC, también conocida como _AUC_ (_area under the curve_). Según del valor de la AUC, se tiene
 
 - 0.5: Diagnóstico aleatorio.
 - [0.5, 0.6): Test malo.
@@ -523,3 +531,4 @@ Por otro lado también son menos específicos que la PCR, y por tanto, producen 
 - [R Epidemic Consortium (RECON)](https://www.repidemicsconsortium.org/)
 - [Analysis of epidemiological data using R and Epicalc](https://cran.r-project.org/doc/contrib/Epicalc_Book.pdf)
 - [R resources about COVID-19](https://statsandr.com/blog/top-r-resources-on-covid-19-coronavirus/#coronavirus)
+- [Aplicación para el análisis de la fiabilidad de test diagnósticos](http://nube.aprendeconalf.es/shiny/diagnostic-test/)

@@ -1,4 +1,7 @@
 {
   "cSpell.language": "es-ES,en-GB",
-  "python.dataScience.jupyterServerURI": "local"
+  "python.dataScience.jupyterServerURI": "local",
+  "cSpell.words": [
+    "hospitalización"
+  ]
 }
