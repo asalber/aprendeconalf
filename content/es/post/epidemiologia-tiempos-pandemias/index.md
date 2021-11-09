@@ -13,3 +13,5 @@ En estos tiempos de pandemia un montón de términos técnicos de la Epidemiolog
 Por ello, y con motivo de la [Semana de la Ciencia y la Innovación de Madrid 2021](http://www.madrimasd.org/semanacienciaeinnovacion/), he preparado un tutorial para explicar al público en general los principales conceptos epidemiológicos usados en el control de enfermedades como la COVID e ilustrar su uso con ejemplos de aplicación. 
 
 Podéis acceder a él en el siguiente enlace: [Tutorial de Epidemiología](/docencia/estadistica/tutoriales/epidemiologia/#valores-predictivos-de-un-test)
+
+{{< youtube R_Z_atAXoXA >}}
