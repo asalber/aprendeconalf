@@ -63,8 +63,6 @@ Para usuarios de plataformas Windows existe un programa de instalación que incl
 
 [Descarga la última versión (R versión 3.6.2, RKWard versión 0.7.1b, rkTeaching versión 1.3.0)](https://drive.google.com/file/d/17eWedHkSI1f0pIjAra94HOwagchr-h7T/view?usp=sharing)
 
-[Descarga la versión anterior (R versión 3.2.3, RKWard versión 0.6.5, rkTeaching versión 1.3)](https://drive.google.com/file/d/0B5yGMNeKDyLdaFMyd2J5YzdZcVE/view?usp=sharing)
-
 Una vez descargado el fichero, sólo hay que ejecutarlo para descomprimirlo.
 Al ejecutarse aparecerá un cuadro de diálogo donde preguntará por la unidad y el directorio de instalación y es importante indicar que se instale en la carpeta raíz del disco duro C, es decir en la dirección C:\, tras esto se creará una carpeta rkward y dentro de ella la carpeta bin donde se encuentra el fichero `rkward.exe` que hay que ejecutar para arrancar RKWard.
 
