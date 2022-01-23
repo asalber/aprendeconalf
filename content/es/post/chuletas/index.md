@@ -16,6 +16,6 @@ Estas hojas contienen un resumen con las principales fórmulas utilizadas en Cá
 Las hojas de cálculo pueden descargarse desde los siguientes enlaces:
 
 - [Hoja de fórmulas de Cálculo](http://aprendeconalf.es/calculo/formulas/)
-- [Hoja de fórmulas de Estadística](http://aprendeconalf.es/estadistica/formulas/)
+- [Hoja de fórmulas de Estadística](https://aprendeconalf.es/docencia/estadistica/formulas/)
 
 Estaría muy agradecido si me informáis de cualquier error que detectéis en estas hojas.
