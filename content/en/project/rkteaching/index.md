@@ -78,21 +78,19 @@ To install the software on Mac OS systems, you must take the following steps:
 
 1. **Install R**. R can be downloaded from the following links: 
 
-- [R version 4.0.1](https://cran.r-project.org/bin/macosx/base/R-4.0.1.pkg) For MacOS 10.13 and higher.
-- 
-[R version 3.5.3](https://cran.r-project.org/bin/macosx/el-capitan/base/R-3.5.3.pkg). For oder MacOs versions.
+    - [R version 4.0.1](https://cran.r-project.org/bin/macosx/base/R-4.0.1.pkg) For MacOS 10.13 and higher.
+    - [R version 3.5.3](https://cran.r-project.org/bin/macosx/el-capitan/base/R-3.5.3.pkg). For older MacOs versions.
 
 1. **Install RKWard**. RKWard can be downloaded from the web <http://rkward.sourceforge.net>.
 
-You have to select the MacOs distribution corresponding to your R version:
+    You have to select the MacOs distribution corresponding to your R version:
 
-- [RKward version 0.7.2](https://download.kde.org/stable/rkward/0.7.2/mac/rkward-0.7.2-OSX-10.13.dmg)
+    - [RKward version 0.7.2](https://download.kde.org/stable/rkward/0.7.2/mac/rkward-0.7.2-OSX-10.13.dmg) (for R version 4.0.1).
 
-- [RKWard version 0.7.0](<https://download.kde.org/stable/rkward/0.7.0/mac/RKWard-binary-0.7.0b_OSX10.11_KF5-5.42.0_needs_CRAN_R-3.5.0.pkg>).
+    - [RKWard version 0.7.0](https://download.kde.org/stable/rkward/0.7.0/mac/RKWard-binary-0.7.0b_OSX10.11_KF5-5.42.0_needs_CRAN_R-3.5.0.pkg) (for R version 3.5.3).
 
-After downloading it follow [these instructions](https://rkward.kde.org/RKWard_on_Mac.html)
+    After downloading it follow the [installation instructions](https://rkward.kde.org/RKWard_on_Mac.html)
  
-    If there is some error during the installation process, check for the possible solutions (<http://rkward.sourceforge.net/wiki/RKWard_on_Mac#Troubleshooting>)
 
 1. **Install the packages that rkTeaching depends on**. The rkTeaching package depends on several packages that should be installed first.
 To install this packages you must run RKWard, open the R console and type the following commands:
@@ -108,7 +106,7 @@ To install this packages you must run RKWard, open the R console and type the fo
     install_github("rkward-community/rk.Teaching")
     ```
 
-    The following video tutorial shows the installation process.
+    The following video tutorial shows the installation process (only for RKWard version 0.7.0).
 
     {{< youtube SB1oER6HbEs >}}
 
