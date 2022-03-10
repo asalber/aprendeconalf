@@ -19,8 +19,17 @@ The table below shows the daily number of cigarretes smoked by mothers ($X$) and
 $$
 \begin{array}{lrrrrrrrrrrrr}
 \hline
-\mbox{Daily num cigarettes} & 10.00 & 14.00 & 8.00 & 11.00 & 7.00 & 6.00 & 2.00 & 5.00 & 9.00 & 9.00 & 4.00 & 6.00 \newline
-\mbox{Weight (kg)} & 2.55 & 2.44 & 2.68 & 2.65 & 2.71 & 2.85 & 3.45 & 2.93 & 2.67 & 2.59 & 3.02 & 2.72 \newline
+\mbox{Daily num cigarettes} & 10.00 & 14.00 & 8.00 & 11.00 & 7.00 & 6.00 \newline
+\mbox{Weight (kg)} & 2.55 & 2.44 & 2.68 & 2.65 & 2.71 & 2.85 \newline
+\hline
+\end{array}
+$$
+
+$$
+\begin{array}{lrrrrrrrrrrrr}
+\hline
+\mbox{Daily num cigarettes} & 2.00 & 5.00 & 9.00 & 9.00 & 4.00 & 6.00 \newline
+\mbox{Weight (kg)} & 3.45 & 2.93 & 2.67 & 2.59 & 3.02 & 2.72 \newline
 \hline
 \end{array}
 $$

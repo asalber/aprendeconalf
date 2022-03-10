@@ -44,7 +44,7 @@ Non-working students: $\sum x_in_i=570$, $\sum x_i^2n_i=3764$, $\sum (x_i-\bar x
 Working students: $\sum y_in_i=282$, $\sum y_i^2n_i=1826$, $\sum (y_i-\bar y)^3n_i=-1.31$ and $\sum (y_i-\bar y)^4n_i=2552.14$.
 
 {{< spoiler text="Solution" >}}
-1. 66.5% of non-working students passed and 59% of working students passed.
+1. 35.5% of non-working students passed and 41% of working students passed.
 2. Non-working students: $\bar x=5.7$, $s^2=5.15$, $s=2.2694$ and $cv=0.3981$.
 Working students: $\bar y=5.64$, $s^2=4.7104$, $s=2.1703$ and $cv=0.3848$.
 The sample of non-working students has a slightly higher relative dispersion with respect to the mean as the coefficient of variation is greater.

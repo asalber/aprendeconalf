@@ -81,7 +81,7 @@ Escribir un programa que almacene las matrices
 $$
 A = \left(
   \begin{array}{rrr}
-  1 & 2 & 3\\
+  1 & 2 & 3\newline
   4 & 5 & 6
   \end{array}
   \right)
@@ -89,8 +89,8 @@ A = \left(
   \quad
   B = \left(
   \begin{array}{rr}
-  -1 & 0\\
-  0 & 1\\
+  -1 & 0\newline
+  0 & 1\newline
   1 & 1
   \end{array}
   \right)
