@@ -1258,7 +1258,7 @@ library(car)
 leveneTest(notaC ~ grupo, data = df)
 ```
 
-    ## Levene's Test for Homogeneity of Variance (center = median)
+    ## Levene Test for Homogeneity of Variance (center = median)
     ##        Df F value Pr(>F)
     ## group   2  0.3186 0.7278
     ##       116
