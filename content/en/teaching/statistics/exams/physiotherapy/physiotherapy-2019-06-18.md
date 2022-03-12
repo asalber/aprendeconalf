@@ -42,17 +42,21 @@ Without prevention program: $\sum y_i=66$ injuries, $\sum y_i^2=362$ injuries$^2
 
 {{< spoiler text="Solution" >}}
 1. <img src="../img/des-fis-5-cumulative-frequencies-polygon.svg" title="Cumulative relative frequency polygon of spinal injuries" alt="Cumulative relative frequency polygon of spinal injuries" style="display: block; margin: auto;" width="600" />
-2. With prevention program: $Q_1=2$ injuries, $Q_3=4$ injuries, $IQR=2$ injuries.
-Without prevention program: $Q_1=3$ injuries, $Q_3=6$ injuries, $IQR=3$ injuries.
+
+2. With prevention program: $Q_1=2$ injuries, $Q_3=4$ injuries, $IQR=2$ injuries.  
+Without prevention program: $Q_1=3$ injuries, $Q_3=6$ injuries, $IQR=3$ injuries.  
 The sample not following the prevention program has more central spread since the interquartile range is greater.
-3. With prevention program: $\bar x=2.4$ injuries, $s^2=1.9733$ injuries$^2$, $s=1.4048$ injuries and $cv=0.5853$.
-Without prevention program: $\bar y=4.7143$ injuries, $s^2=3.6327$ injuries$^2$, $s=1.906$ injuries and $cv=0.4043$. 
+
+3. With prevention program: $\bar x=2.4$ injuries, $s^2=1.9733$ injuries$^2$, $s=1.4048$ injuries and $cv=0.5853$.  
+Without prevention program: $\bar y=4.7143$ injuries, $s^2=3.6327$ injuries$^2$, $s=1.906$ injuries and $cv=0.4043$.   
 The sample following the prevention program has a greater relative spread with respect to the mean since the coef. of variation is greater.
-4. With prevention program: $g_2=-0.6722$.
-Without prevention program: $g_2=0.1768$.
+
+4. With prevention program: $g_2=-0.6722$.  
+Without prevention program: $g_2=0.1768$.  
 Thus the sample not following the prevention program has a more normal kurtosis, since the coeff. of kurtosis is closer to 0.
-1. With prevention program: $z(2)=-0.2847$.
-Without prevention program: $z(4)=-0.3748$.
+
+5. With prevention program: $z(2)=-0.2847$.  
+Without prevention program: $z(4)=-0.3748$.  
 Thus 4 injuries in the sample not following the prevention program is relatively smaller, since its standard score is smaller.
 {{< /spoiler >}}
 
@@ -72,14 +76,14 @@ $$
 2. Use the best of the two previous models to predict the price in 2020.
 
 {{< spoiler text="Solution" >}}
-1. $\bar x=2017$ years, $s_x^2=2$ years$^2$.
-$\bar y=2.026$ €, $s_y^2=0.2882$ €$^2$.
-$\overline{\log(y)}=0.672$ log(€), $s_{\log(y)}^2=0.0673$ log(€)$^2$.
-$s_{xy}=0.744$ years$\cdot$€, $s_{x\log(y)}=0.3653$ years$\cdot\log(€)$
-Linear coef. determination: $r^2=0.9603$
-Exponential coef. determination: $r^2=0.9909$
+1. $\bar x=2017$ years, $s_x^2=2$ years$^2$.  
+$\bar y=2.026$ €, $s_y^2=0.2882$ €$^2$.  
+$\overline{\log(y)}=0.672$ log(€), $s_{\log(y)}^2=0.0673$ log(€)$^2$.  
+$s_{xy}=0.744$ years$\cdot$€, $s_{x\log(y)}=0.3653$ years$\cdot\log(€)$  
+Linear coef. determination: $r^2=0.9603$ 
+Exponential coef. determination: $r^2=0.9909$  
 Thus the exponential regression model is better to predict the price since the coef. of determination is greater.
-2. Exponential regression model: $y=e^{-367.6861+0.1826x}$.
+2. Exponential regression model: $y=e^{-367.6861+0.1826x}$.  
 Prediction: $y(2020)=3.3867$ €.
 {{< /spoiler >}}
 
