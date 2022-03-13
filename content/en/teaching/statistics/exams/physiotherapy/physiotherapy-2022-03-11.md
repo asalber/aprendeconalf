@@ -76,13 +76,16 @@ $\sum x_i^2=230$ meters$^2$, $\sum \log(x_i)^2=21.1414$ log(meters)$^2$, $\sum y
 $\sum x_iy_j=146$ meters$\cdot$persons, $\sum x_i\log(y_j)=43.8653$ meters$\cdot$log(persons), $\sum \log(x_i)y_j=42.8037$ log(meters)$\cdot$persons, $\sum \log(x_i)\log(y_j)=12.7804$ log(meters)$\cdot$log(persons).
 
 {{< spoiler text="Show solution" >}}
-1. $s_{xy}=3.16$ meters$\cdot$persons. That means that there is a direct linear relation between the meters that exceed pollution limits and the people affected by pneumonia.
+1. $\bar x = 4.4$ meters, $s_x^2=3.64$ meters$^2$.  
+$\bar y = 2.6$ persons, $s_y^2=3.24$ persons$^2$.  
+$s_{xy}=3.16$ meters$\cdot$persons. That means that there is a direct linear relation between the meters that exceed pollution limits and the people affected by pneumonia.
 
 2. $b_{yx}=0.8681$ persons/meter. Thus, the number of people affected by pneumonia increases $0.8681$ persons for every meter more that exceed the pollution limits.
 
 3. Linear coefficient of determination $r^2=0.8467$. Therefore, the linear regression model explains $84.67$ % of the variability of the number of people affected by pneumonia.
 
-4. Exponential regression model: $y=e^{-0.592 + 0.304x}$, and $y(5)=-3.552$ persons.
+4. $\overline{\log(y)}=0.7455$ log(persons), $s_{x\log(y)}=1.1065$ meters*log(persons).  
+Exponential regression model: $y=e^{-0.592 + 0.304x}$, and $y(5)=-3.552$ persons.
 
 5. Diagram $A$ because the relation is direct and very strong according to the linear coefficient of determination.
 {{< /spoiler >}}
