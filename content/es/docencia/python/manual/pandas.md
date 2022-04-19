@@ -102,7 +102,7 @@ El acceso a los elementos de un objeto del tipo Series puede ser a través de po
 Se realiza de forma similar a como se accede a los elementos de un array.
 
 - `s[i]` : Devuelve el elemento que ocupa la posición `i+1` en la serie `s`.
-- `s[nombres]`: Devuelve otra serie con los elementos con los nombres de la lista `nombres` en el índice.
+- `s[posiciones]`: Devuelve otra serie con los elementos que ocupan las posiciones de la lista `posiciones`.
 
 ### Acceso por índice
 
@@ -484,8 +484,6 @@ Para cambiar el nombre de las filas y las columnas de un DataFrame se utiliza el
 >>> import pandas as pd
 >>> df = pd.read_csv(
 'https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv')
->>> print(df.loc[2, 'colesterol']
-191
 >>> print(df.rename(columns={'nombre':'nombre y apellidos', 'altura':'estatura'}, index={0:1000, 1:1001, 2:1002}))
                     nombre y apellidos  edad sexo    peso  estatura    colesterol
 1000      José Luis Martínez Izquierdo    18    H    85.0      1.79         182.0
@@ -569,7 +567,7 @@ edad                   32
 
 ## Añadir columnas a un DataFrame
 
-El procedimiento para añadir una nueva columna a un DataFrame es similar al de añadir un nuevo par aun diccionario, pero pasando los valores de la columna en una lista o serie.
+El procedimiento para añadir una nueva columna a un DataFrame es similar al de añadir un nuevo par a un diccionario, pero pasando los valores de la columna en una lista o serie.
 
 - `d[nombre] = lista`: Añade al DataFrame `df` una nueva columna con el nombre `nombre` y los valores de la lista `lista`. La lista debe tener el mismo tamaño que el número de filas de `df`.
 

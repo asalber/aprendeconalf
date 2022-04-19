@@ -17,13 +17,13 @@ Escribir un programa que pregunte al usuario por las ventas de un rango de años
 
 ## Ejercicio 2
 
-Escribir una función que reciba un diccionario con las notas de los alumnos en curso en un examen y devuelva una serie con la nota mínima, la máxima, media y la desviación típica.
+Escribir una función que reciba un diccionario con las notas de los alumno de un curso y devuelva una serie con la nota mínima, la máxima, media y la desviación típica.
 
 <a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/pandas/ejercicio2.ipynb" class="btn btn-info">Solución</a>
 
 ## Ejercicio 3
 
-Escribir una función que reciba una diccionario con las notas de los alumnos en curso en un examen y devuelva una serie con las notas de los alumnos aprobados ordenadas de mayor a menor.
+Escribir una función que reciba un diccionario con las notas de los alumnos de un curso y devuelva una serie con las notas de los alumnos aprobados ordenadas de mayor a menor.
 
 <a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/pandas/ejercicio3.ipynb" class="btn btn-info">Solución</a>
 
