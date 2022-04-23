@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software | Aprende con Alf</title>
+    <link>/en/tag/software/</link>
+      <atom:link href="/en/tag/software/index.xml" rel="self" type="application/rss+xml" />
+    <description>Software</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Software</title>
+      <link>/en/tag/software/</link>
+    </image>
+    
+    <item>
+      <title>Rubrics</title>
+      <link>/en/project/rubrics/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>/en/project/rubrics/</guid>
+      <description>&lt;h2 id=&#34;application-accesshttpnubeaprendeconalfesshinyassessment-rubric&#34;&gt;
+&lt;a href=&#34;http://nube.aprendeconalf.es/shiny/assessment-rubric/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Application access&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#application-accesshttpnubeaprendeconalfesshinyassessment-rubric&#34;&gt;&lt;a href=&#34;http://nube.aprendeconalf.es/shiny/assessment-rubric/&#34;&gt;Application access&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#what-is-rubrics&#34;&gt;What is Rubrics?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#how-to-cite-rubrics&#34;&gt;How to cite Rubrics?&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id=&#34;what-is-rubrics&#34;&gt;What is Rubrics?&lt;/h2&gt;
+&lt;p&gt;Rubrics is a Shiny web application for assessment with rubrics.&lt;/p&gt;
+&lt;p&gt;The application allows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a rubric for an exam or test.&lt;/li&gt;
+&lt;li&gt;Load the list of students from a csv file and generate a template for the assessment.&lt;/li&gt;
+&lt;li&gt;Load the assessment from the template.&lt;/li&gt;
+&lt;li&gt;Generate a list with the students grades.&lt;/li&gt;
+&lt;li&gt;Generate a descriptive summary of the distribution of grades.&lt;/li&gt;
+&lt;li&gt;Generate a personalized report with the assessment of each student.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The video below contains a more detailed presentation of this application (in Spanish):&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RYCMFn2MDB8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;how-to-cite-rubrics&#34;&gt;How to cite Rubrics?&lt;/h2&gt;
+&lt;p&gt;Anemone, Gloria., Sánchez-Alberca, Alfredo. (2021). Rubrics (version 1.0) [software]. Obtained from: 
+&lt;a href=&#34;https://aprendeconalf.es/en/project/rubrics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://aprendeconalf.es/en/project/rubrics&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>rkTeaching</title>
+      <link>/en/project/rkteaching/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/en/project/rkteaching/</guid>
+      <description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#what-is-rkteaching&#34;&gt;What is rkTeaching?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#installation&#34;&gt;Installation&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#installation-on-windows&#34;&gt;Installation on Windows&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#installation-on-mac-os&#34;&gt;Installation on Mac OS&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#installation-on-linux&#34;&gt;Installation on Linux&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#statistical-procedures&#34;&gt;Statistical procedures&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#functionality&#34;&gt;Functionality&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#how-to-cite-rkteaching&#34;&gt;How to cite rkTeaching?&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id=&#34;what-is-rkteaching&#34;&gt;What is rkTeaching?&lt;/h2&gt;
+&lt;p&gt;rkTeaching is an 
+&lt;a href=&#34;http://www.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt; package that provides a plugin for the graphical user interface 
+&lt;a href=&#34;http://rkward.sourceforge.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RKWard&lt;/a&gt; adding new menus and dialog specially
+designed for teaching and learning Statistics.&lt;/p&gt;
+&lt;p&gt;This package has been developed and is maintained by Alfredo Sánchez Alberca 
+&lt;a href=&#34;mailto:asalber@ceu.es&#34;&gt;asalber@ceu.es&lt;/a&gt; in the Department of Applied Math and Statistics of the San Pablo CEU of Madrid.&lt;/p&gt;
+&lt;p&gt;If you find out some error or have a suggestion, please, let me know it by email or opening an 
+&lt;a href=&#34;https://github.com/rkward-community/rkTeaching/pulls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;issue on Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;img/rkward.png&#34; alt=&#34;RKWard&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;h3 id=&#34;installation-on-windows&#34;&gt;Installation on Windows&lt;/h3&gt;
+&lt;p&gt;For Windows users there is a bundle that include R, RKWard and rkTeaching.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://drive.google.com/file/d/17eWedHkSI1f0pIjAra94HOwagchr-h7T/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Download last version (R versión 3.6.2, RKWard versión 0.7.1b, rkTeaching versión 1.3.0)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Once the file is downloaded, all you have to do is to execute it.
+It will ask for the installation unit and directory.
+It is recommended to install it on the root of unit C, that ist C:.
+The installation creates a folder rkward into the installation directory. There, in the bin folder you have to execute the &lt;code&gt;rkward.exe&lt;/code&gt; file to start the program.&lt;/p&gt;
+&lt;p&gt;The following video tutorial shows the installation process (in Spanish).&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jsX4MaqWA4g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;installation-on-mac-os&#34;&gt;Installation on Mac OS&lt;/h3&gt;
+&lt;p&gt;To install the software on Mac OS systems, you must take the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install R&lt;/strong&gt;. R can be downloaded from the following links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://cran.r-project.org/bin/macosx/base/R-4.0.1.pkg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R version 4.0.1&lt;/a&gt; For MacOS 10.13 and higher.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://cran.r-project.org/bin/macosx/el-capitan/base/R-3.5.3.pkg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R version 3.5.3&lt;/a&gt;. For older MacOs versions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install RKWard&lt;/strong&gt;. RKWard can be downloaded from the web 
+&lt;a href=&#34;http://rkward.sourceforge.net&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://rkward.sourceforge.net&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You have to select the MacOs distribution corresponding to your R version:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://download.kde.org/stable/rkward/0.7.2/mac/rkward-0.7.2-OSX-10.13.dmg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RKward version 0.7.2&lt;/a&gt; (for R version 4.0.1).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://download.kde.org/stable/rkward/0.7.0/mac/RKWard-binary-0.7.0b_OSX10.11_KF5-5.42.0_needs_CRAN_R-3.5.0.pkg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RKWard version 0.7.0&lt;/a&gt; (for R version 3.5.3).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After downloading it follow the 
+&lt;a href=&#34;https://rkward.kde.org/RKWard_on_Mac.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;installation instructions&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install the packages that rkTeaching depends on&lt;/strong&gt;. The rkTeaching package depends on several packages that should be installed first.
+To install this packages you must run RKWard, open the R console and type the following commands:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;install.packages(c(&amp;quot;R2HTML&amp;quot;,&amp;quot;car&amp;quot;,&amp;quot;e1071&amp;quot;,&amp;quot;Hmisc&amp;quot;,&amp;quot;plyr&amp;quot;,&amp;quot;ggplot2&amp;quot;,&amp;quot;prob&amp;quot;,&amp;quot;ez&amp;quot;,&amp;quot;multcomp&amp;quot;, &amp;quot;remotes&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install rkTeaching&lt;/strong&gt;. To install the rkTeaching package you must type the following commands in the R console:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(remotes)
+install_github(&amp;quot;rkward-community/rk.Teaching&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following video tutorial shows the installation process (only for RKWard version 0.7.0).&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SB1oER6HbEs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;installation-on-linux&#34;&gt;Installation on Linux&lt;/h3&gt;
+&lt;p&gt;To install the software in Mac OS systems, you must take the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install R&lt;/strong&gt;. R can be downloaded from the web 
+&lt;a href=&#34;https://cran.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://cran.r-project.org/&lt;/a&gt;.
+You have to select the Linux distribution and follow the instructions there.
+It is required an R version 3.4 or higher.&lt;/p&gt;
+&lt;p&gt;With Debian based distributions like Ubuntu, you can install R from the command line typing the command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;sudo apt-get install rbase
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install RKWard&lt;/strong&gt;. RKWard can be downloaded from the web 
+&lt;a href=&#34;http://rkward.sourceforge.net&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://rkward.sourceforge.net&lt;/a&gt;.
+You have to select the Linux distribution and follow the instructions there.&lt;/p&gt;
+&lt;p&gt;With Debian based distributions like Ubuntu, you can install R from the command line typing the command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;sudo apt-get install rkward
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It is important to install versión 0.7 or higher.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install the packages that rkTeaching depends on&lt;/strong&gt;. The rkTeaching package depends on several packages that should be installed first.
+To install this packages you must run RKWard, open the R console and type the following commands:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;install.packages(c(&amp;quot;R2HTML&amp;quot;,&amp;quot;car&amp;quot;,&amp;quot;e1071&amp;quot;,&amp;quot;Hmisc&amp;quot;,&amp;quot;plyr&amp;quot;,&amp;quot;ggplot2&amp;quot;,&amp;quot;prob&amp;quot;,&amp;quot;ez&amp;quot;,&amp;quot;multcomp&amp;quot;, &amp;quot;remotes&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install rkTeaching&lt;/strong&gt;. To install the rkTeaching package you must type the following commands in the R console:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(remotes)
+install_github(&amp;quot;rkward-community/rk.Teaching&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following video tutorial shows the installation process (in Spanish).&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/vQa4umDJko8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;statistical-procedures&#34;&gt;Statistical procedures&lt;/h2&gt;
+&lt;p&gt;Once installed a new menu &lt;code&gt;Teaching&lt;/code&gt; will appear in RKWard with the following statistical procedures:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data manipulation:
+&lt;ul&gt;
+&lt;li&gt;Fiter data&lt;/li&gt;
+&lt;li&gt;Calculate variable&lt;/li&gt;
+&lt;li&gt;Recoding variable&lt;/li&gt;
+&lt;li&gt;Weight data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Frequency distributions:
+&lt;ul&gt;
+&lt;li&gt;Frequency tabulation&lt;/li&gt;
+&lt;li&gt;Bidimensional frequency tabulation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Plots:
+&lt;ul&gt;
+&lt;li&gt;Bar graph&lt;/li&gt;
+&lt;li&gt;Histogram&lt;/li&gt;
+&lt;li&gt;Pie graph&lt;/li&gt;
+&lt;li&gt;Box graph&lt;/li&gt;
+&lt;li&gt;Means graph&lt;/li&gt;
+&lt;li&gt;Interaction graph&lt;/li&gt;
+&lt;li&gt;Scatterplot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Descriptive statistics
+&lt;ul&gt;
+&lt;li&gt;Statistics&lt;/li&gt;
+&lt;li&gt;Detailed calculation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Regression:
+&lt;ul&gt;
+&lt;li&gt;Linear Regression&lt;/li&gt;
+&lt;li&gt;Non linear regression&lt;/li&gt;
+&lt;li&gt;Regression model comparison&lt;/li&gt;
+&lt;li&gt;Regression prediction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Parametric tests:
+&lt;ul&gt;
+&lt;li&gt;Means:
+&lt;ul&gt;
+&lt;li&gt;T test for one sample&lt;/li&gt;
+&lt;li&gt;T test for two independent samples&lt;/li&gt;
+&lt;li&gt;T test for two paired samples&lt;/li&gt;
+&lt;li&gt;ANOVA&lt;/li&gt;
+&lt;li&gt;Sample size calculation for mean estimation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Variances:
+&lt;ul&gt;
+&lt;li&gt;Fisher test for two samples&lt;/li&gt;
+&lt;li&gt;Levene test for multiple samples&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Proportions:
+&lt;ul&gt;
+&lt;li&gt;Test for one proportion&lt;/li&gt;
+&lt;li&gt;Test for two proportions&lt;/li&gt;
+&lt;li&gt;Sample size calculation for proportion estimation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Non parametric tests:
+&lt;ul&gt;
+&lt;li&gt;Normality tests: Shapiro-Wilk, Kolmogorov&lt;/li&gt;
+&lt;li&gt;U Mann-Whitney test&lt;/li&gt;
+&lt;li&gt;Wilcoxon test&lt;/li&gt;
+&lt;li&gt;Friedman test&lt;/li&gt;
+&lt;li&gt;Kruskal-Wallis test&lt;/li&gt;
+&lt;li&gt;Chi-square test&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Concordance
+&lt;ul&gt;
+&lt;li&gt;Intraclass correlation coefficient&lt;/li&gt;
+&lt;li&gt;Cohen&amp;rsquo;s kappa&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Probability:
+&lt;ul&gt;
+&lt;li&gt;Random games:
+&lt;ul&gt;
+&lt;li&gt;Coins&lt;/li&gt;
+&lt;li&gt;Dice&lt;/li&gt;
+&lt;li&gt;Cards&lt;/li&gt;
+&lt;li&gt;Urn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Build probability space&lt;/li&gt;
+&lt;li&gt;Combine probability spaces&lt;/li&gt;
+&lt;li&gt;Repeat probability space&lt;/li&gt;
+&lt;li&gt;Calculate probability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Probability distributions
+&lt;ul&gt;
+&lt;li&gt;Discrete:
+&lt;ul&gt;
+&lt;li&gt;Binomial&lt;/li&gt;
+&lt;li&gt;Geometric&lt;/li&gt;
+&lt;li&gt;Hypergeometric&lt;/li&gt;
+&lt;li&gt;Poisson&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Continous:
+&lt;ul&gt;
+&lt;li&gt;Uniform&lt;/li&gt;
+&lt;li&gt;Normal&lt;/li&gt;
+&lt;li&gt;Chi-square&lt;/li&gt;
+&lt;li&gt;Student&amp;rsquo;s T&lt;/li&gt;
+&lt;li&gt;Fisher&amp;rsquo;s F&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Simulations:
+&lt;ul&gt;
+&lt;li&gt;Law of rare events&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;functionality&#34;&gt;Functionality&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Menus and dialogs specially designed to easy the learning, ruling out non-common options to get an simplified and intuitive interface.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;All the dialogs have a wizard that guide the user step by step through the statistical procedure.
+&lt;img src=&#34;img/wizard.png&#34; alt=&#34;Wizard&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTML output tha presents the results of the analysis in a clear and concise way.
+&lt;img src=&#34;img/output.png&#34; alt=&#34;Output&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Charts based in the modern 
+&lt;a href=&#34;http://ggplot2.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ggplot2&lt;/a&gt; package.
+&lt;img src=&#34;img/graphics1.png&#34; alt=&#34;Charts&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Computation formulas and details available for some statistical procedures.
+&lt;img src=&#34;img/detailed_calculation.png&#34; alt=&#34;Computation details&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;rkTeaching is maintained by 
+&lt;a href=&#34;https://github.com/asalber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;asalber&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-cite-rkteaching&#34;&gt;How to cite rkTeaching?&lt;/h2&gt;
+&lt;p&gt;Sánchez-Alberca, A. (2020). rkTeaching (version 1.3) [software]. Get from: 
+&lt;a href=&#34;http://aprendeconalf.es/projects/rkteaching&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://aprendeconalf.es/projects/rkteaching&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

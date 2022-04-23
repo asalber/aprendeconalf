@@ -1,0 +1,1945 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alfredo Sánchez Alberca">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Vector functions of a single real variable  Definition - Vector function of a single real variable. A vector function of a single real variable or vector field of a scalar variable is a function that maps every scalar value $t\in D\subseteq \mathbb{R}$ into a vector $(x_1(t),\ldots,x_n(t))$ in $\mathbb{R}^n$:">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/en/teaching/calculus/manual/derivatives-n-variables/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#6f5499">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700%7CSource Sans Pro:400+400italic%7COpen Sans:400+400italic%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/en/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/en/teaching/calculus/manual/derivatives-n-variables/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@aprendeconalf">
+  <meta property="twitter:creator" content="@aprendeconalf">
+  
+  <meta property="og:site_name" content="Aprende con Alf">
+  <meta property="og:url" content="/en/teaching/calculus/manual/derivatives-n-variables/">
+  <meta property="og:title" content="Several variables differentiable calculus | Aprende con Alf">
+  <meta property="og:description" content="Vector functions of a single real variable  Definition - Vector function of a single real variable. A vector function of a single real variable or vector field of a scalar variable is a function that maps every scalar value $t\in D\subseteq \mathbb{R}$ into a vector $(x_1(t),\ldots,x_n(t))$ in $\mathbb{R}^n$:"><meta property="og:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png">
+  <meta property="twitter:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png"><meta property="og:locale" content="en-us">
+  
+    
+    <meta property="article:modified_time" content="2021-09-13T10:59:00&#43;02:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Several variables differentiable calculus | Aprende con Alf</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/en"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/en"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/en/teaching/calculus/"><span>Calculus</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/statistics/"><span>Statistics</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/R/"><span>R</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/excel/"><span>Excel</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/geogebra/"><span>Geogebra</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+ 
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/en/teaching/calculus/manual/">Calculus Manual</a>
+    <ul class="nav docs-sidenav">
+          <li class=""><a href="/en/teaching/calculus/manual/analytic-geometry/">Analytic Geometry</a></li>
+        
+          <li class=""><a href="/en/teaching/calculus/manual/derivatives-one-variable/">One variable differential calculus</a></li>
+        
+          <li class=""><a href="/en/teaching/calculus/manual/integrals/">Integral calculus</a></li>
+        
+          <li class=""><a href="/en/teaching/calculus/manual/ordinary-differential-equations/">Ordinary differential equations</a></li>
+        
+          <li class="active"><a href="/en/teaching/calculus/manual/derivatives-n-variables/">Several variables differentiable calculus</a></li>
+        </ul>
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#vector-functions-of-a-single-real-variable">Vector functions of a single real variable</a>
+      <ul>
+        <li><a href="#graphic-representation-of-vector-fields">Graphic representation of vector fields</a></li>
+      </ul>
+    </li>
+    <li><a href="#derivative-of-a-vector-field">Derivative of a vector field</a>
+      <ul>
+        <li><a href="#kinematics-curvilinear-motion">Kinematics: Curvilinear motion</a></li>
+        <li><a href="#tangent-line-to-a-trajectory">Tangent line to a trajectory</a></li>
+        <li><a href="#normal-line-to-a-trajectory-in-the-plane">Normal line to a trajectory in the plane</a></li>
+        <li><a href="#tangent-and-normal-lines-to-a-function">Tangent and normal lines to a function</a></li>
+        <li><a href="#tangent-line-to-a-trajectory-in-the-space">Tangent line to a trajectory in the space</a></li>
+        <li><a href="#normal-plane-to-a-trajectory-in-the-space">Normal plane to a trajectory in the space</a></li>
+      </ul>
+    </li>
+    <li><a href="#functions-of-several-variables">Functions of several variables</a>
+      <ul>
+        <li><a href="#graph-of-a-function-of-two-variables">Graph of a function of two variables</a></li>
+        <li><a href="#level-set-of-a-scalar-field">Level set of a scalar field</a></li>
+        <li><a href="#partial-functions">Partial functions</a></li>
+      </ul>
+    </li>
+    <li><a href="#partial-derivative-notion">Partial derivative notion</a>
+      <ul>
+        <li><a href="#variation-of-a-function-with-respect-to-a-variable">Variation of a function with respect to a variable</a></li>
+        <li><a href="#instantaneous-rate-of-change-of-a-scalar-field-with-respect-to-a-variable">Instantaneous rate of change of a scalar field with respect to a variable</a></li>
+        <li><a href="#geometric-interpretation-of-partial-derivatives">Geometric interpretation of partial derivatives</a></li>
+        <li><a href="#partial-derivative">Partial derivative</a></li>
+        <li><a href="#partial-derivatives-computation">Partial derivatives computation</a></li>
+      </ul>
+    </li>
+    <li><a href="#gradient">Gradient</a></li>
+    <li><a href="#composition-of-a-vectorial-field-with-a-scalar-field">Composition of a vectorial field with a scalar field</a>
+      <ul>
+        <li><a href="#multivariate-chain-rule">Multivariate chain rule</a></li>
+      </ul>
+    </li>
+    <li><a href="#tangent-plane-and-normal-line-to-a-surface">Tangent plane and normal line to a surface</a>
+      <ul>
+        <li><a href="#normal-and-tangent-line-to-curve-in-the-plane">Normal and tangent line to curve in the plane</a></li>
+        <li><a href="#normal-line-and-tangent-plane-to-a-surface-in-the-space">Normal line and tangent plane to a surface in the space</a></li>
+      </ul>
+    </li>
+    <li><a href="#directional-derivative">Directional derivative</a>
+      <ul>
+        <li><a href="#geometric-interpretation-of-the-directional-derivative">Geometric interpretation of the directional derivative</a></li>
+        <li><a href="#growth-of-scalar-field-along-the-gradient">Growth of scalar field along the gradient</a></li>
+      </ul>
+    </li>
+    <li><a href="#implicit-derivation">Implicit derivation</a></li>
+    <li><a href="#second-order-partial-derivatives">Second order partial derivatives</a></li>
+    <li><a href="#hessian-matrix-and-hessian">Hessian matrix and Hessian</a>
+      <ul>
+        <li><a href="#symmetry-of-second-partial-derivatives">Symmetry of second partial derivatives</a></li>
+      </ul>
+    </li>
+    <li><a href="#taylor-polynomials">Taylor polynomials</a>
+      <ul>
+        <li><a href="#linear-approximation-of-a-scalar-field">Linear approximation of a scalar field</a></li>
+        <li><a href="#linear-approximation-of-a-two-variable-function">Linear approximation of a two-variable function</a></li>
+        <li><a href="#quadratic-approximation-of-a-scalar-field">Quadratic approximation of a scalar field</a></li>
+        <li><a href="#quadratic-approximation-of-a-two-variable-function">Quadratic approximation of a two-variable function</a></li>
+      </ul>
+    </li>
+    <li><a href="#relative-extrema">Relative extrema</a>
+      <ul>
+        <li><a href="#critical-points">Critical points</a></li>
+        <li><a href="#saddle-points">Saddle points</a></li>
+        <li><a href="#analysis-of-the-relative-extrema">Analysis of the relative extrema</a></li>
+        <li><a href="#analysis-of-the-relative-extrema-of-a-scalar-field-in-mathbbr2">Analysis of the relative extrema of a scalar field in $\mathbb{R}^2$</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Several variables differentiable calculus</h1>
+
+          <div class="article-style">
+            <h2 id="vector-functions-of-a-single-real-variable">Vector functions of a single real variable</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Vector function of a single real variable</strong>. A <em>vector function of a single real variable</em> or <em>vector field of a scalar variable</em> is a function that maps every scalar value $t\in D\subseteq \mathbb{R}$ into a vector $(x_1(t),\ldots,x_n(t))$ in $\mathbb{R}^n$:</p>
+<p>$$
+\begin{array}{rccl}
+f: &amp; \mathbb{R} &amp; \longrightarrow &amp; \mathbb{R}^n\newline
+&amp; t &amp; \longrightarrow &amp; (x_1(t),\ldots, x_n(t))
+\end{array}
+$$</p>
+<p>where $x_i(t)$, $i=1,\ldots,n$, are real function of a single real variable known as <em>coordinate functions</em>.</p>
+  </div>
+</div>
+<p>The most common vector field of scalar variable are in the the real plane $\mathbb{R}^2$, where usually they are represented as</p>
+<p>$$f(t)=x(t)\mathbf{i}+y(t)\mathbf{j},$$</p>
+<p>and in the real space $\mathbb{R}^3$, where usually they are represented as</p>
+<p>$$f(t)=x(t)\mathbf{i}+y(t)\mathbf{j}+z(t)\mathbf{k},$$</p>
+<h3 id="graphic-representation-of-vector-fields">Graphic representation of vector fields</h3>
+<p>The graphic representation of a vector field in $\mathbb{R}^2$ is a trajectory in the real plane.</p>
+<img src="../img/derivativesn/trajectory_plane.svg" alt="Trajectory of a vector function in the plane." width="300">
+<p>The graphic representation of a vector field in $\mathbb{R}^3$ is a trajectory in the real space.</p>
+<img src="../img/derivativesn/trajectory_space.svg" alt="Trajectory of a vector function in the space." width="350">
+<h2 id="derivative-of-a-vector-field">Derivative of a vector field</h2>
+<p>The concept of derivative as the limit of the average rate of change of a function can be extended easily to vector fields.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Derivative of a vectorial field</strong>. A vectorial field $f(t)=(x_1(t),\ldots,x_n(t))$ is <em>differentiable</em> at a point $t=a$ if the limit</p>
+<p>$$\lim_{\Delta t\rightarrow 0} \frac{f(a+\Delta t)-f(a)}{\Delta t}.$$</p>
+<p>exists. In such a case, the value of the limit is known as the <em>derivative</em> of the vector field at $a$, and it is written $f&rsquo;(a)$.</p>
+  </div>
+</div>
+<p>Many properties of real functions of a single real variable can be extended to vector fields through its component functions. Thus, for instance, the derivative of a vector field can be computed from the derivatives of its component functions.</p>
+<div class="alert alert-theo">
+  <div>
+    <p><strong>Theorem</strong>. Given a vector field $f(t)=(x_1(t),\ldots,x_n(t))$, if $x_i(t)$ is differentiable at $t=a$ for all $i=1,\ldots,n$, then $f$ is differentiable at $a$ and its derivative is</p>
+<p>$$f&rsquo;(a)=(x_1&rsquo;(a),\ldots,x_n&rsquo;(a))$$</p>
+  </div>
+</div>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-3" role="button" aria-expanded="false" aria-controls="spoiler-3">
+      Proof
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-3">
+    <div class="card-body">
+      <p>The proof for a vectorial field in $\mathbb{R}^2$ is easy.</p>
+<p>$$\begin{aligned}
+f&rsquo;(a)&amp;=\lim_{\Delta t\rightarrow 0} \frac{f(a+\Delta t)-f(a)}{\Delta t} = \lim_{\Delta t\rightarrow 0} \frac{(x(a+\Delta t),y(a+\Delta t))-(x(a),y(a))}{\Delta t} =\newline
+&amp;=  \lim_{\Delta t\rightarrow 0} \left(\frac{x(a+\Delta t)-x(a)}{\Delta t},\frac{y(a+\Delta t)-y(a)}{\Delta t}\right) =\newline
+&amp;= \left(\lim_{\Delta t\rightarrow 0}\frac{x(a+\Delta t)-x(a)}{\Delta t},\lim_{\Delta t\rightarrow 0}\frac{y(a+\Delta t)-y(a)}{\Delta t}\right) =
+(x&rsquo;(a),y&rsquo;(a)).
+\end{aligned}
+$$</p>
+
+    </div>
+  </div>
+</div>
+<h3 id="kinematics-curvilinear-motion">Kinematics: Curvilinear motion</h3>
+<p>The notion of derivative as a velocity along a trajectory in the real line can be generalized to a trajectory in any euclidean space $\mathbb{R}^n$.</p>
+<p>In case of a two dimensional space $\mathbb{R}^2$, if $f(t)$ describes the position of a moving object in the real plane at any time $t$, taking as reference the coordinates origin $O$ and the unitary vectors ${\mathbf{i}=(1,0),\mathbf{j}=(0,1)}$, we can represent the position of the moving object $P$ at every moment $t$ with a vector $\vec{OP}=x(t)\mathbf{i}+y(t)\mathbf{j}$, where the coordinates</p>
+<p>$$
+\begin{cases}
+x=x(t)\newline
+y=y(t)
+\end{cases}
+\quad
+t\in \mbox{Dom}(f)
+$$</p>
+<p>are the <em>coordinate functions</em> of $f$.</p>
+<img src="../img/derivativesn/curvilinear_motion.svg" alt="Trajectory of a curvilinear motion in the plane." width="500">
+<div class="alert alert-int">
+  <div>
+    In this context the derivative of a trajectory $f&rsquo;(a)=(x_1&rsquo;(a),\ldots,x_n&rsquo;(a))$ is the <em>velocity</em> vector of the trajectory $f$ at moment $t=a$.
+  </div>
+</div>
+<p><strong>Example</strong>. Given the trajectory $f(t) = (\cos t,\sin t)$, $t\in \mathbb{R}$, whose image is the unit circumference centred in the coordinate origin, its coordinate functions are $x(t) = \cos t$, $y(t) = \sin t$, $t\in \mathbb{R}$, and its velocity is</p>
+<p>$$\mathbf{v}=f&rsquo;(t)=(x&rsquo;(t),y&rsquo;(t))=(-\sin t, \cos t).$$</p>
+<p>In the moment $t=\pi/4$, the object is in position $f(\pi/4) = (\cos(\pi/4),\sin(\pi/4)) =(\sqrt{2}/2,\sqrt{2}/2)$ and it is moving with a velocity $\mathbf{v}=f&rsquo;(\pi/4)=(-\sin(\pi/4),\cos(\pi/4))=(-\sqrt{2}/2,\sqrt{2}/2)$.</p>
+<img src="../img/derivativesn/circumference_trajectory.svg" alt="Trajectory of a vector function in the space." width="300">
+<p>Observe that the module of the velocity vector is always 1 as $\vert\mathbf{v}\vert=\sqrt{(-\sin t)^2+(\cos t)^2}=1$.</p>
+<h3 id="tangent-line-to-a-trajectory">Tangent line to a trajectory</h3>
+<h4 id="tangent-line-to-a-trajectory-in-the-plane">Tangent line to a trajectory in the plane</h4>
+<h5 id="vectorial-equation">Vectorial equation</h5>
+<p>Given a trajectory $f(t)$ in the real plane, the vectors that are parallel to the velocity $\mathbf{v}$ at a moment $a$ are called <em>tangent vectors</em> to the trajectory $f$ at the moment $a$, and the line passing through $P=f(a)$ directed by $\mathbf{v}$ is the tangent line to the graph of $f$ at the moment $a$.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Tangent line to a trajectory</strong>. Given a trajectory $f(t)$ in the real plane $\mathbb{R}^2$, the <em>tangent line</em> to to the graph of $f$ at $a$ is the line with equation</p>
+<p>$$
+\begin{aligned}
+l:(x,y) &amp;= f(a)+tf&rsquo;(a) = (x(a),y(a))+t(x&rsquo;(a),y&rsquo;(a))\newline
+&amp; = (x(a)+tx&rsquo;(a),y(a)+ty&rsquo;(a)).
+\end{aligned}
+$$</p>
+  </div>
+</div>
+<p><strong>Example</strong>. We have seen that for the trajectory $f(t) = (\cos t,\sin t)$, $t\in \mathbb{R}$, whose image is the unit circumference centred at the coordinate origin, the object position at the moment $t=\pi/4$ is $f(\pi/4)=(\sqrt{2}/2,\sqrt{2}/2)$ and its velocity $\mathbf{v}=(-\sqrt{2}/2,\sqrt{2}/2)$. Thus the equation of the tangent line to $f$ at that moment is</p>
+<p>$$
+\begin{aligned}
+l: (x,y) &amp; = f(\pi/4)+t\mathbf{v} =
+\left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)+t\left(\frac{-\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right) =\newline
+&amp; =\left(\frac{\sqrt{2}}{2}-t\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}+t\frac{\sqrt{2}}{2}\right).
+\end{aligned}
+$$</p>
+<h5 id="cartesian-and-point-slope-equations">Cartesian and point-slope equations</h5>
+<p>From the vectorial equation of the tangent to a trajectory $f(t)$ at the moment $t=a$ we can get the coordinate functions</p>
+<p>$$
+\begin{cases}
+x=x(a)+tx&rsquo;(a)\newline
+y=y(a)+ty&rsquo;(a)
+\end{cases}
+\quad t\in \mathbb{R},
+$$</p>
+<p>and solving for $t$ and equalling both equations we get the <em>Cartesian equation</em> of the tangent</p>
+<p>$$\frac{x-x(a)}{x&rsquo;(a)}=\frac{y-y(a)}{y&rsquo;(a)},$$</p>
+<p>if $x&rsquo;(a)\neq 0$ and $y&rsquo;(a)\neq 0$.</p>
+<p>From this equation it is easy to get the <em>point-slope equation</em> of the tangent</p>
+<p>$$y-y(a)=\frac{y&rsquo;(a)}{x&rsquo;(a)}(x-x(a)).$$</p>
+<p><strong>Example</strong>. Using the vectorial equation of the tangent of the previous example</p>
+<p>$$l: (x,y)=\left(\frac{\sqrt{2}}{2}-t\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}+t\frac{\sqrt{2}}{2}\right),$$</p>
+<p>its Cartesian equation is $$\frac{x-\sqrt{2}/2}{-\sqrt{2}/2} = \frac{y-\sqrt{2}/2}{\sqrt{2}/2}$$
+and the point-slope equation is</p>
+<p>$$y-\sqrt{2}/2 = \frac{-\sqrt{2}/2}{\sqrt{2}/2}(x-\sqrt{2}/2) \Rightarrow y=-x+\sqrt{2}.$$</p>
+<h3 id="normal-line-to-a-trajectory-in-the-plane">Normal line to a trajectory in the plane</h3>
+<p>We have seen that the tangent line to a trajectory $f(t)$ at $a$ is the line passing through the point $P=f(a)$ directed by the velocity vector $\mathbf{v}=f&rsquo;(a)=(x&rsquo;(a),y&rsquo;(a))$. If we take as direction vector a vector orthogonal to $\mathbf{v}$, we get another line that is known as <em>normal line</em> to the trajectory.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Normal line to a trajectory</strong>. Given a trajectory $f(t)$ in the real plane $\mathbb{R}^2$, the <em>normal line</em> to the graph of $f$ at moment $t=a$ is the line with equation</p>
+<p>$$l: (x,y)=(x(a),y(a))+t(y&rsquo;(a),-x&rsquo;(a)) = (x(a)+ty&rsquo;(a),y(a)-tx&rsquo;(a)).$$</p>
+  </div>
+</div>
+<p>The Cartesian equation is</p>
+<p>$$\frac{x-x(a)}{y&rsquo;(a)} = \frac{y-y(a)}{-x&rsquo;(a)},$$</p>
+<p>and the point-slope equation is</p>
+<p>$$y-y(a) = \frac{-x&rsquo;(a)}{y&rsquo;(a)}(x-x(a)).$$</p>
+<div class="alert alert-int">
+  <div>
+    The normal line is always perpendicular to the tangent line as their direction vectors are orthogonal.
+  </div>
+</div>
+<p><strong>Example</strong>. Considering again the trajectory of the unit circumference $f(t) = (\cos t,\sin t)$, $t\in \mathbb{R}$, the normal line to the graph of $f$ at moment $t=\pi/4$ is</p>
+<p>$$
+\begin{aligned}
+l: (x,y)&amp;=(\cos(\pi/2),\sin(\pi/2))+t(\cos(\pi/2),\sin(\pi/2)) =\newline
+&amp;= \left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)+t\left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)
+=\left(\frac{\sqrt{2}}{2}+t\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}+t\frac{\sqrt{2}}{2}\right),
+\end{aligned}
+$$</p>
+<p>the Cartesian equation is</p>
+<p>$$\frac{x-\sqrt{2}/2}{\sqrt{2}/2} = \frac{y-\sqrt{2}/2}{\sqrt{2}/2},$$
+and the point-slope equation is
+$$y-\sqrt{2}/2 = \frac{\sqrt{2}/2}{\sqrt{2}/2}(x-\sqrt{2}/2) \Rightarrow y=x.$$</p>
+<h3 id="tangent-and-normal-lines-to-a-function">Tangent and normal lines to a function</h3>
+<p>A particular case of tangent and normal lines to a trajectory are the tangent and normal lines to a function of one real variable. For every function $y=f(x)$, the trajectory that trace its graph is</p>
+<p>$$g(x) = (x,f(x))  \quad x\in \mathbb{R},$$</p>
+<p>and its velocity is</p>
+<p>$$g&rsquo;(x) = (1,f&rsquo;(x)),$$</p>
+<p>so that the tangent line to $g$ at the moment $a$ is</p>
+<p>$$\frac{x-a}{1} = \frac{y-f(a)}{f&rsquo;(a)} \Rightarrow y-f(a) = f&rsquo;(a)(x-a),$$</p>
+<p>and the normal line is</p>
+<p>$$\frac{x-a}{f&rsquo;(a)} = \frac{y-f(a)}{-1} \Rightarrow y-f(a) = \frac{-1}{f&rsquo;(a)}(x-a).$$</p>
+<p><strong>Example</strong>. Given the function $y=x^2$, the trajectory that traces its graph is $g(x)=(x,x^2)$ and its velocity is $g&rsquo;(x)=(1,2x)$. At the moment $x=1$ the trajectory passes through the point $(1,1)$ with a velocity $(1,2)$. Thus, the tangent line at that moment is</p>
+<p>$$\frac{x-1}{1} = \frac{y-1}{2} \Rightarrow y-1 = 2(x-1) \Rightarrow y = 2x-1,$$</p>
+<p>and the normal line is</p>
+<p>$$\frac{x-1}{2} = \frac{y-1}{-1} \Rightarrow y-1 = \frac{-1}{2}(x-1) \Rightarrow y = \frac{-x}{2}+\frac{3}{2}.$$</p>
+<h3 id="tangent-line-to-a-trajectory-in-the-space">Tangent line to a trajectory in the space</h3>
+<p>The concept of tangent line to a trajectory can be easily extended from the real plane to the three-dimensional space $\mathbb{R}^3$.</p>
+<p>If $f(t)=(x(t),y(t),z(t))$, $t\in \mathbb{R}$, is a trajectory in the real space $\mathbb{R}^3$, then at the moment $a$, the moving object that follows this trajectory will be at the position $P=(x(a),y(a),z(a))$ with a velocity $\mathbf{v}=f&rsquo;(t)=(x&rsquo;(t),y&rsquo;(t),z&rsquo;(t))$. Thus, the tangent line to $f$ at this moment have the following vectorial equation</p>
+<p>$$
+\begin{aligned}
+l&amp;: (x,y,z)=(x(a),y(a),z(a))+t(x&rsquo;(a),y&rsquo;(a),z&rsquo;(a)) =\newline
+&amp;= (x(a)+tx&rsquo;(a),y(a)+ty&rsquo;(a),z(a)+tz&rsquo;(a)),
+\end{aligned}
+$$</p>
+<p>and the Cartesian equations are
+$$\frac{x-x(a)}{x&rsquo;(a)}=\frac{y-y(a)}{y&rsquo;(a)}=\frac{z-z(a)}{z&rsquo;(a)},$$
+provided that $x&rsquo;(a)\neq 0$, $y&rsquo;(a)\neq 0$ y $z&rsquo;(a)\neq 0$.</p>
+<p><strong>Example</strong>. Given the trajectory $f(t)=(\cos t, \sin t, t)$, $t\in \mathbb{R}$ in the real space, at the moment $t=\pi/2$ the trajectory passes through the point</p>
+<p>$$f(\pi/2)=(\cos(\pi/2),\sin(\pi/2),\pi/2)=(0,1,\pi/2),$$</p>
+<p>with velocity</p>
+<p>$$\mathbf{v}=f&rsquo;(\pi/2)=(-\sin(\pi/2),\cos(\pi/2), 1)=(-1,0,1),$$</p>
+<p>and the tangent line to the graph of $f$ at that moment is</p>
+<p>$$l:(x,y,z)=(0,1,\pi/2)+t(-1,0,1) = (-t,1,t+\pi/2).$$</p>
+<img src="../img/derivativesn/tangent_trajectory_space.svg" alt="Tangent line to a trajectory in the space." width="400">
+<p><img src="/media/logo-geogebra.png#left" /> <strong><a href="https://ggbm.at/Q2C7EfBn" target="_blank">Interactive Example</a></strong></p>
+<h3 id="normal-plane-to-a-trajectory-in-the-space">Normal plane to a trajectory in the space</h3>
+<p>In the three-dimensional space $\mathbb{R}^3$, the normal line to a trajectory is not unique. There are an infinite number of normal lines and all of them are in the normal plane.</p>
+<p>If $f(t)=(x(t),y(t),z(t))$, $t\in \mathbb{R}$, is a trajectory in the real space $\mathbb{R}^3$, then at the moment $a$, the moving object that follows this trajectory will be at the position $P=(x(a),y(a),z(a))$ with a velocity $\mathbf{v}=f&rsquo;(t)=(x&rsquo;(t),y&rsquo;(t),z&rsquo;(t))$. Thus, using the velocity vector as normal vector the normal plane to $f$ at this moment have the following vectorial equation</p>
+<p>$$
+\begin{aligned}
+\Pi &amp;: (x-x(a),y-y(a),z-z(a))(x&rsquo;(a),y&rsquo;(a),z&rsquo;(a)) = 0\newline
+&amp;= x&rsquo;(a)(x-x(a))+y&rsquo;(a)(y-y(a))+z&rsquo;(a)(z-z(a))=0.
+\end{aligned}
+$$</p>
+<p><strong>Example</strong>. For the trajectory of the previous example $f(t)=(\cos t, \sin t, t)$, $t\in \mathbb{R}$, at the moment $t=\pi/2$ the trajectory passes through the point</p>
+<p>$$f(\pi/2)=(\cos(\pi/2),\sin(\pi/2),\pi/2)=(0,1,\pi/2),$$</p>
+<p>with velocity</p>
+<p>$$\mathbf{v}=f&rsquo;(\pi/2)=(-\sin(\pi/2),\cos(\pi/2), 1)=(-1,0,1),$$
+and normal plane to the graph of $f$ at that moment is</p>
+<p>$$\Pi:\left(x-0,y-1,z-\frac{\pi}{2}\right)(-1,0,1) =0 \Leftrightarrow -x+z-\frac{\pi}{2}=0.$$</p>
+<img src="../img/derivativesn/normal_plane_trajectory_space.svg" alt="Normal plane to a trajectory in the space." width="400">
+<p><img src="/media/logo-geogebra.png#left" /> <strong><a href="https://ggbm.at/Q2C7EfBn" target="_blank">Interactive Example</a></strong></p>
+<h2 id="functions-of-several-variables">Functions of several variables</h2>
+<p>A lot of problems in Geometry, Physics, Chemistry, Biology, etc. involve a variable that depend on two or more variables:</p>
+<ul>
+<li>The area of a triangle depends on two variables that are the base and height lengths.</li>
+<li>The volume of a perfect gas depends on two variables that are the pressure and the temperature.</li>
+<li>The way travelled by an object free falling depends on a lot of variables: the time, the area of the cross section of the object, the latitude and longitude of the object, the height above the sea level, the air pressure, the air temperature, the speed of wind, etc.</li>
+</ul>
+<p>These dependencies are expressed with functions of several variables.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Functions of several real variables</strong>. A <em>function of $n$ real variables</em> or a <em>scalar field</em> from a set $A_1\times \cdots \times A_n\subseteq \mathbb{R}^n$ in a set $B\subseteq \mathbb{R}$, is a relation that maps any tuple $(a_1,\ldots,a_n)\in A_1\times \cdots\times A_n$ into a unique element of $B$, denoted by $f(a_1,\ldots,a_n)$, that is knwon as the <em>image</em> of $(a_1,\ldots,a_n)$ by $f$.</p>
+<p>$$
+\begin{array}{lccc}
+f: &amp; A_1\times\cdots\times A_n &amp; \longrightarrow &amp; B\newline
+&amp;(a_1,\ldots,a_n) &amp; \longrightarrow &amp; f(a_1,\ldots,a_n)
+\end{array}
+$$</p>
+  </div>
+</div>
+<ul>
+<li>The area of a triangle is a real function of two real variables</li>
+</ul>
+<p>$$f(x,y)=\frac{xy}{2}.$$</p>
+<ul>
+<li>The volume of a perfect gas is a real function of two real variables</li>
+</ul>
+<p>$$v=f(t,p)=\frac{nRt}{p},\quad \mbox{with $n$ and $R$ constants.}$$</p>
+<h3 id="graph-of-a-function-of-two-variables">Graph of a function of two variables</h3>
+<p>The graph of a function of two variables $f(x,y)$ is a surface in the real space $\mathbb{R}^3$ where every point of the surface has coordinates $(x,y,z)$, with $z=f(x,y)$.</p>
+<img src="../img/derivativesn/paraboloid.svg" alt="Graph of a two-variables function" width="300">
+<p><strong>Example</strong>. The function $f(x,y)=\dfrac{xy}{2}$ that measures the area of a triangle of base $x$ and height $y$ has the graph below.</p>
+<img src="../img/derivativesn/area_triangle_graph.svg" alt="Graph of the function that measures the area of a triangle." width="400">
+<p>The function $\displaystyle f(x,y)=\frac{\sin(x^2+y^2)}{\sqrt{x^2+y^2}}$ has the peculiar graph below.</p>
+<img src="../img/derivativesn/water_drop_graph.svg" alt="Surface of a drop of water." width="400">
+<h3 id="level-set-of-a-scalar-field">Level set of a scalar field</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Level set</strong> Given a scalar field $f:\mathbb{R}^n\rightarrow \mathbb{R}$, the <em>level set</em> $c$ of $f$ is the set</p>
+<p>$$C_{f,c}={(x_1,\ldots,x_n): f(x_1,\ldots,x_n)=c},$$</p>
+<p>that is, a set where the function takes on the constant value $c$.</p>
+  </div>
+</div>
+<p><strong>Example</strong>. Given the scalar field $f(x,y)=x^2+y^2$ and the point $P=(1,1)$, the level set of $f$ that includes $P$ is</p>
+<p>$$C_{f,2} = {(x,y): f(x,y)=f(1,1)=2} = {(x,y): x^2+y^2=2},$$</p>
+<p>that is the circumference of radius $\sqrt{2}$ centred at the origin.</p>
+<p>Level sets are common in applications like topographic maps, where the level curves correspond to points with the same height above the sea level,</p>
+<img src="../img/derivativesn/mountain_level_curves.svg" alt="Level curves of a topograhic map." width="400">
+<p>and weather maps (<em>isobars</em>), where level curves correspond to points with the same atmospheric pressure.</p>
+<img src="../img/derivativesn/isobars.png" alt="Isobars of a weather map." width="400">
+<h3 id="partial-functions">Partial functions</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Partial function</strong>. Given a scalar field $f:\mathbb{R}^n\rightarrow \mathbb{R}$, an $i$-th <em>partial function</em> of $f$ is any function $f_i:\mathbb{R}\rightarrow \mathbb{R}$ that results of substituting all the variables of $f$ by constants, except the $i$-th variable, that is:</p>
+<p>$$f_i(x)=f(c_1,\ldots,c_{i-1},x,c_{i+1},\ldots,c_{n}),$$</p>
+<p>with $c_j$ $(j=1,\ldots, n,\ j\neq i)$ constants.</p>
+  </div>
+</div>
+<p><strong>Example</strong>. If we take the function that measures the area of a triangle</p>
+<p>$$f(x,y)=\frac{xy}{2},$$
+and set the value of the base to $x=c$, then we the area of the triangle depends only of the height, and $f$ becomes a function of one variable, that is the partial function</p>
+<p>$$f_1(y)=f(c,y)=\frac{cy}{2},\quad \mbox{with $c$ constant}.$$</p>
+<h2 id="partial-derivative-notion">Partial derivative notion</h2>
+<h3 id="variation-of-a-function-with-respect-to-a-variable">Variation of a function with respect to a variable</h3>
+<p>We can measure the variation of a scalar field with respect to each of its variables in the same way that we measured the variation of a one-variable function.</p>
+<p>Let $z=f(x,y)$ be a scalar field of $\mathbb{R}^2$. If we are at point $(x_0,y_0)$ and we increase the value of $x$ a quantity $\Delta x$, then we move in the direction of the $x$-axis from the point $(x_0,y_0)$ to the point $(x_0+\Delta x,y_0)$, and the variation of the function is
+$$\Delta z=f(x_0+\Delta x,y_0)-f (x_0,y_0).$$</p>
+<p>Thus, the rate of change of the function with respect to $x$ along the interval $[x_0,x_0+\Delta x]$ is given by the quotient</p>
+<p>$$\frac{\Delta z}{\Delta x}=\frac{f(x_0+\Delta x,y_0)-f(x_0,y_0)}{\Delta x}.$$</p>
+<h3 id="instantaneous-rate-of-change-of-a-scalar-field-with-respect-to-a-variable">Instantaneous rate of change of a scalar field with respect to a variable</h3>
+<p>If instead o measuring the rate of change in an interval, we measure the rate of change in a point, that is, when $\Delta x$ approaches 0, then we get the instantaneous rate of change that is the partial derivative with respect to $x$.</p>
+<p>$$\lim_{\Delta x\rightarrow 0}\frac{\Delta z}{\Delta x}=\lim_{\Delta x \rightarrow 0}\frac{f(x_0+\Delta x,y_0)-f(x_0,y_0)}{\Delta x}.$$</p>
+<p>The value of this limit, if exists, it is known as the <em>partial derivative</em> of $f$ with respect to the variable $x$ at the point $(x_0,y_0)$; it is written as
+$$\frac{\partial f}{\partial x}(x_0,y_0).$$</p>
+<p>This partial derivative measures the instantaneous rate of change of $f$ at the point $P=(x_0,y_0)$ when $P$ moves in the $x$-axis direction.</p>
+<h3 id="geometric-interpretation-of-partial-derivatives">Geometric interpretation of partial derivatives</h3>
+<p>Geometrically, a two-variable function $z=f(x,y)$ defines a surface. If we cut this surface with a plane of equation $y=y_0$ (that is, the plane where $y$ is the constant $y_0$) the intersection is a curve, and the partial derivative of $f$ with respect to to $x$ at $(x_0,y_0)$ is the slope of the tangent line to that curve at $x=x_0$.</p>
+<img src="../img/derivativesn/partial_tangent_surface.svg" alt="Geometric interpretation of the partial derivative." width="350">
+<p><img src="/media/logo-geogebra.png#left" /> <strong><a href="https://ggbm.at/K3xnQRY8" target="_blank">Interactive Example</a></strong></p>
+<h3 id="partial-derivative">Partial derivative</h3>
+<p>The concept of partial derivative can be extended easily from two-variable function to $n$-variables functions.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Partial derivative</strong>. Given a $n$-variables function $f(x_1,\ldots,x_n)$, $f$ is <em>partially differentiable</em> with respect to the variable $x_i$ at the point $a=(a_1,\ldots,a_n)$ if exists the limit</p>
+<p>$$\lim_{\Delta x_i\rightarrow 0} \frac{f(a_1,\ldots,a_{i-1},a_i+\Delta x_i,a_{i+1},\ldots,a_n)-f(a_1,\ldots,a_{i-1},a_i,a_{i+1},\ldots,a_n)} {h}.$$</p>
+<p>In such a case, the value of the limit is known as <em>partial derivative</em> of $f$ with respect to $x_i$ at $a$; it is denoted</p>
+<p>$$f&rsquo;_{x_i}(a)=\frac{\partial f}{\partial x_i}(a).$$</p>
+  </div>
+</div>
+<p><strong>Remark</strong>. The definition of derivative for one-variable functions is a particular case of this definition for $n=1$.</p>
+<h3 id="partial-derivatives-computation">Partial derivatives computation</h3>
+<p>When we measure the variation of $f$ with respect to a variable $x_i$ at the point $a=(a_1,\ldots,a_n)$, the other variables remain constant. Thus, if we can consider the $i$-th partial function
+$$f_i(x_i)=f(a_1,\ldots,a_{i-1},x_i,a_{i+1},\ldots,a_n),$$</p>
+<p>the partial derivative of $f$ with respect to $x_i$ can be computed differentiating this function:</p>
+<p>$$\frac{\partial f}{\partial x_i}(a)=f_i&rsquo;(a_i).$$</p>
+<div class="alert alert-warning">
+  <div>
+    To differentiate partially $f(x_1,\ldots,x_n)$ with respect to the variable $x_i$, you have to differentiate $f$ as a function of the variable $x_i$, considering the other variables as constants.
+  </div>
+</div>
+<p><strong>Example of a perfect gas</strong>. Consider the function that measures the volume of a perfect gas
+$$v(t,p)=\frac{nRt}{p},$$ where $t$ is the temperature, $p$ the pressure and $n$ and $R$ are constants.</p>
+<p>The instantaneous rate of change of the volume with respect to the pressure is the partial derivative of $v$ with respect to $p$. To compute this derivative we have to think in $t$ as a constant and differentiate $v$ as if the unique variable was $p$:</p>
+<p>$$\frac{\partial v}{\partial p}(t,p)=\frac{d}{dp}\left(\frac{nRt}{p}\right)_{\mbox{$t=$cst}}=\frac{-nRt}{p^2}.$$</p>
+<p>In the same way, the instantaneous rate of change of the volume with respect to the temperature is the partial derivative of $v$ with respect to $t$:</p>
+<p>$$\frac{\partial v}{\partial t}(t,p)=\frac{d}{dt}\left(\frac{nRt}{p}\right)_{\mbox{$p=$cst}}=\frac{nR}{p}.$$</p>
+<h2 id="gradient">Gradient</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Gradient</strong>. Given a scalar field $f(x_1,\ldots,x_n)$, the <em>gradient</em> of $f$, denoted by $\nabla f$, is a function that maps every point $a=(a_1,\ldots,a_n)$ to a vector with coordinates the partial derivatives of $f$ at $a$,</p>
+<p>$$\nabla f(a)=\left(\frac{\partial f}{\partial x_1}(a),\ldots,\frac{\partial f}{\partial x_n}(a)\right).$$</p>
+  </div>
+</div>
+<div class="alert alert-int">
+  <div>
+    Later we will show that the gradient in a point is a vector with the magnitude and direction of the maximum rate of change of the function in that point. Thus, $\nabla f(a)$ points to direction of maximum increase of $f$ at $a$, while $-\nabla f(a)$ points to the direction of maximum decrease of $f$ at $a$.
+  </div>
+</div>
+<p><strong>Example</strong>. After heating a surface, the temperature $t$ (in $^\circ$C) at each point $(x,y,z)$ (in m) of the surface is given by the function</p>
+<p>$$t(x,y,z)=\frac{x}{y}+z^2.$$</p>
+<p>In what direction will increase the temperature faster at point $(2,1,1)$ of the surface? What magnitude will the maximum increase of temperature have?</p>
+<p>The direction of maximum increase of the temperature is given by the gradient</p>
+<p>$$\nabla t(x,y,z)=\left(\frac{\partial t}{\partial x}(x,y,z),\frac{\partial t}{\partial y}(x,y,z),\frac{\partial t}{\partial z}(x,y,z)\right)=\left(\frac{1}{y},\frac{-x}{y^2},2z\right).$$</p>
+<p>At point $(2,1,1)$ de direction is given by the vector</p>
+<p>$$\nabla t(2,1,1)=\left(\frac{1}{1},\frac{-2}{1^2},2\cdot 1\right)=(1,-2,2),$$</p>
+<p>and its magnitude is</p>
+<p>$$|\nabla f(2,1,1)|=|\sqrt{1^2+(-2)^2+2^2}|=|\sqrt{9}|=3 \mbox{ $^\circ$C/m}.$$</p>
+<h2 id="composition-of-a-vectorial-field-with-a-scalar-field">Composition of a vectorial field with a scalar field</h2>
+<h3 id="multivariate-chain-rule">Multivariate chain rule</h3>
+<p>If $f:\mathbb{R}^n\rightarrow \mathbb{R}$ is a scalar field and $g:\mathbb{R}\rightarrow \mathbb{R}^n$ is a vectorial function, then it is possible to compound $g$ with $f$, so that $f\circ g:\mathbb{R}\rightarrow \mathbb{R}$ is a one-variable function.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Theorem - Chain rule</strong>. If $g(t)=(x_1(t),\ldots,x_n(t))$ is a vectorial function differentiable at $t$ and $f(x_1,\ldots,x_n)$ is a scalar field differentiable at the point $g(t)$, then $f\circ g(t)$ is differentiable at $t$ and</p>
+<p>$$(f\circ g)&rsquo;(t) = \nabla f(g(t))\cdot g&rsquo;(t)=\frac{\partial f}{\partial x_1}\frac{dx_1}{dt}+ \cdots + \frac{\partial f}{\partial x_n}\frac{dx_n}{dt}$$</p>
+  </div>
+</div>
+<p><strong>Example</strong>. Let us consider the scalar field $f(x,y)=x^2y$ and the vectorial function $g(t)=(\cos t,\sin t)$ $t\in [0,2\pi]$ in the real plane, then</p>
+<p>$$\nabla f(x,y) = (2xy, x^2) \quad  \mbox{and} \quad g&rsquo;(t) = (-\sin t, \cos t),$$</p>
+<p>and</p>
+<p>$$
+\begin{aligned}
+(f\circ g)&rsquo;(t) &amp;= \nabla f(g(t))\cdot g&rsquo;(t) = (2\cos t\sin t,\cos^2 t)\cdot (-\sin t,\cos t) =\newline
+&amp;= -2\cos t\sin^2 t+\cos^3 t.
+\end{aligned}
+$$</p>
+<p>We can get the same result differentiating the composed function directly</p>
+<p>$$(f\circ g)(t) = f(g(t)) = f(\cos t, \sin t) = \cos^2 t\sin t,$$</p>
+<p>and its derivative is</p>
+<p>$$(f\circ g)&rsquo;(t) = 2\cos t(-\sin t)\sin t+\cos^2 t \cos t = -2\cos t\sin^2 t+\cos^3 t.$$</p>
+<p>The chain rule for the composition of a vectorial function with a scalar field allow us to get the algebra of derivatives for one-variable functions easily:</p>
+<p>$$
+\begin{aligned}
+(u+v)&rsquo; &amp;= u&rsquo;+v&rsquo;\newline
+(uv)&rsquo; &amp;= u&rsquo;v+uv&rsquo;\newline
+\left(\frac{u}{v}\right)&rsquo; &amp;= \frac{u&rsquo;v-uv&rsquo;}{v^2}\newline
+(u\circ v)&rsquo; &amp;= u&rsquo;(v)v'
+\end{aligned}
+$$</p>
+<p>To infer the derivative of the sum of two functions $u$ and $v$, we can take the scalar field $f(x,y)=x+y$ and the vectorial function $g(t)=(u(t),v(t))$. Applying the chain rule we get</p>
+<p>$$(u+v)&rsquo;(t) = (f\circ g)&rsquo;(t) = \nabla f(g(t))\cdot g&rsquo;(t) = (1,1)\cdot (u&rsquo;,v&rsquo;) = u&rsquo;+v&rsquo;.$$</p>
+<p>To infer the derivative of the quotient of two functions $u$ and $v$, we can take the scalar field $f(x,y)=x/y$ and the vectorial function $g(t)=(u(t),v(t))$.</p>
+<p>$$\left(\frac{u}{v}\right)&rsquo;(t) = (f\circ g)&rsquo;(t) = \nabla f(g(t))\cdot g&rsquo;(t) = \left(\frac{1}{v},-\frac{u}{v^2}\right)\cdot (u&rsquo;,v&rsquo;) = \frac{u&rsquo;v-uv&rsquo;}{v^2}.$$</p>
+<h2 id="tangent-plane-and-normal-line-to-a-surface">Tangent plane and normal line to a surface</h2>
+<div class="alert alert-def">
+  <div>
+    <p>Let $C$ be the level set of a scalar field $f$ that includes a point $P$. If $\mathbf{v}$ is the velocity at $P$ of a trajectory following $C$, then</p>
+<p>$$\nabla f(P) \cdot \mathbf{v} = 0.$$</p>
+  </div>
+</div>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-17" role="button" aria-expanded="false" aria-controls="spoiler-17">
+      Proof
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-17">
+    <div class="card-body">
+      <p>If we take the trajectory $g(t)$ that follows the level set $C$ and passes through $P$ at time $t=t_0$, that is $P=g(t_0)$, so $\mathbf{v}=g&rsquo;(t_0)$, then</p>
+<p>$$(f\circ g)(t) = f(g(t)) = f(P),$$</p>
+<p>that is constant at any $t$. Thus, applying the chain rule we have</p>
+<p>$$(f\circ g)&rsquo;(t) = \nabla f(g(t))\cdot  g&rsquo;(t) = 0,$$</p>
+<p>and, particularly, at $t=t_0$, we have</p>
+<p>$$\nabla f(P)\cdot \mathbf{v} = 0.$$</p>
+
+    </div>
+  </div>
+</div>
+<p>That means that the gradient of $f$ at $P$ is normal to $C$ at $P$, provided that the gradient is not zero.</p>
+<h3 id="normal-and-tangent-line-to-curve-in-the-plane">Normal and tangent line to curve in the plane</h3>
+<div class="alert alert-tool">
+  <div>
+    <p><strong>Normal line to a curve in the plane</strong>. According to the previous result, the normal line to a curve with equation $f(x,y)=0$ at point $P=(x_0,y_0)$, has equation</p>
+<p>$$P+t\nabla f(P) = (x_0,y_0)+t\nabla f(x_0,y_0).$$</p>
+  </div>
+</div>
+<p><strong>Example</strong>. Given the scalar field $f(x,y)=x^2+y^2-25$, and the point $P=(3,4)$, the level set of $f$ that passes through $P$, that satisfies $f(x,y)=f(P)=0$, is the circle with radius 5 centred at the origin of coordinates. Thus, taking as a normal vector the gradient of $f$</p>
+<p>$$\nabla f(x,y) = (2x,2y),$$</p>
+<p>at the point $P=(3,4)$ is $\nabla f(3,4) = (6,8)$, and the normal line to the circle at $P$ is</p>
+<p>$$P+t\nabla f(P) = (3,4)+t(6,8) = (3+6t,4+8t),$$</p>
+<p>On the other hand, the tangent line to the circle at $P$ is</p>
+<p>$$((x,y)-P)\cdot \nabla f(P) = ((x,y)-(3,4))\cdot (6,8) = (x-3,y-4)\cdot(6,8) = 6x+8y=50.$$</p>
+<h3 id="normal-line-and-tangent-plane-to-a-surface-in-the-space">Normal line and tangent plane to a surface in the space</h3>
+<div class="alert alert-tool">
+  <div>
+    <p><strong>Normal line to a surface in the space</strong>. if we have a surface with equation $f(x,y,z)=0$, at the point $P=(x_0,y_0,z_0)$ the normal line has equation</p>
+<p>$$P+t\nabla f(P) = (x_0,y_0,z_0)+t\nabla f(x_0,y_0,z_0).$$</p>
+  </div>
+</div>
+<p><strong>Example</strong>. Given the scalar field $f(x,y,z)=x^2+y^2-z$, and the point $P=(1,1,2)$, the level set of $f$ that passes through $P$, that satisfies $f(x,y)=f(P)=0$, is the paraboloid $z=x^2+y^2$. Thus, taking as a normal vector the gradient of $f$</p>
+<p>$$\nabla f(x,y,z) = (2x,2y,-1),$$</p>
+<p>at the point $P=(1,1,2)$ is $\nabla f(1,1,2) = (2,2,-1)$, and the normal line to the paraboloid at $P$ is</p>
+<p>$$
+\begin{aligned}
+P+t\nabla f(P)&amp;= (1,1,2)+t\nabla f(1,1,2) = (1,1,2)+t(2,2,-1)\newline
+&amp;= (1+2t,1+2t,2-t).
+\end{aligned}
+$$</p>
+<p>On the other hand, the tangent plane to the paraboloid at $P$ is</p>
+<p>$$\begin{aligned}
+((x,y,z)-P)\cdot \nabla f(P) &amp;= ((x,y,z)-(1,1,2))(2,2,-1) = (x-1,y-1,z-2)(2,2,-1)=\newline
+&amp;= 2(x-1)+2(y-1)-(z-2) = 2x+2y-z-2= 0.
+\end{aligned}$$</p>
+<p>The graph of the paraboloid $f(x,y,z)=x^2+y^2-z=0$ and the normal line and the tangent plane to the graph of $f$ at the point $P=(1,1,2)$ are below.</p>
+ <img src="../img/derivativesn/tangent_plane_paraboloid.svg" alt="Geometric interpretation of the partial derivative." width="350">
+<p><img src="/media/logo-geogebra.png#left" /> <strong><a href="https://ggbm.at/wTh7KKd3" target="_blank">Interactive Example</a></strong></p>
+<h2 id="directional-derivative">Directional derivative</h2>
+<p>For a scalar field $f(x,y)$, we have seen that the partial derivative $\dfrac{\partial f}{\partial x}(x_0,y_0)$ is the instantaneous rate of change of $f$ with respect to $x$ at point $P=(x_0,y_0)$, that is, when we move along the $x$-axis.</p>
+<p>In the same way, $\dfrac{\partial f}{\partial y}(x_0,y_0)$ is the instantaneous rate of change of $f$ with respect to $y$ at the point $P=(x_0,y_0)$, that is, when we move along the $y$-axis.</p>
+<p>But, <em>what happens if we move along any other direction?</em></p>
+<p>The instantaneous rate of change of $f$ at the point $P=(x_0,y_0)$ along the direction of a unitary vector $u$ is known as <em>directional derivative</em>.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Directional derivative</strong>. Given a scalar field $f$ of $\mathbb{R}^n$, a point $P$ and a unitary vector $\mathbf{u}$ in that space, we say that $f$ is differentiable at $P$ along the direction of $\mathbf{u}$ if exists the limit</p>
+<p>$$f^\prime_{\mathbf{u}}(P) = \lim_{h\rightarrow 0}\frac{f(P+h\mathbf{u})-f(P)}{h}.$$</p>
+<p>In such a case, the value of the limit is known as <em>directional derivative</em> of $f$ at the point $P$ along the direction of $\mathbf{u}$.</p>
+  </div>
+</div>
+<div class="alert alert-theo">
+  <div>
+    <p><strong>Theorem - Directional derivative</strong> . Given a scalar field $f$ of $\mathbb{R}^n$, a point $P$ and a unitary vector $\mathbf{u}$ in that space, the directional derivative of $f$ at the point $P$  along the direction of $\mathbf{u}$ can be computed as the dot product of the gradient of $f$ at $P$ and the unitary vector $\mathbf{u}$:</p>
+<p>$$f^\prime_{\mathbf{u}}(P) = \nabla f(P)\cdot \mathbf{u}.$$</p>
+  </div>
+</div>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-22" role="button" aria-expanded="false" aria-controls="spoiler-22">
+      Proof
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-22">
+    <div class="card-body">
+      <p>If we consider a unitary vector $\mathbf{u}$, the trajectory that passes through $P$, following the direction of $\mathbf{u}$, has equation</p>
+<p>$$g(t)=P+t\mathbf{u},\ t\in\mathbb{R}.$$</p>
+<p>For $t=0$, this trajectory passes through the point $P=g(0)$ with velocity $\mathbf{u}=g&rsquo;(0)$.</p>
+<p>Thus, the directional derivative of $f$ at the point $P$ along the direction of $\mathbf{u}$ is</p>
+<p>$$(f\circ g)&rsquo;(0) = \nabla f(g(0))\cdot g&rsquo;(0) = \nabla f(P)\cdot \mathbf{u}.$$</p>
+
+    </div>
+  </div>
+</div>
+<div class="alert alert-warning">
+  <div>
+    The partial derivatives are the directional derivatives along the vectors of the canonical basis.
+  </div>
+</div>
+<p><strong>Example</strong>. Given the function $f(x,y) = x^2+y^2$, its gradient is</p>
+<p>$$\nabla f(x,y) = (2x,2y).$$</p>
+<p>The directional derivative of $f$ at the point $P=(1,1)$, along the unit vector $\mathbf{u}=(1/\sqrt{2},1/\sqrt{2})$ is</p>
+<p>$$f_{\mathbf{u}}&rsquo;(P) = \nabla f(P)\cdot \mathbf{u} = (2,2)\cdot(1/\sqrt{2},1/\sqrt{2}) = \frac{2}{\sqrt{2}}+\frac{2}{\sqrt{2}} = \frac{4}{\sqrt{2}}.$$</p>
+<p>To compute the directional derivative along a non-unitary vector $\mathbf{v}$, we have to use the unitary vector that results from normalizing $v$ with the transformation</p>
+<p>$$\mathbf{v&rsquo;}=\frac{\mathbf{v}}{|\mathbf{v}|}.$$</p>
+<h3 id="geometric-interpretation-of-the-directional-derivative">Geometric interpretation of the directional derivative</h3>
+<p>Geometrically, a two-variable function $z=f(x,y)$ defines a surface. If we cut this surface with a plane of equation $a(y-y_0)=b(x-x_0)$ (that is, the vertical plane that passes through the point $P=(x_0,y_0)$ with the direction of vector $\mathbf{u}=(a,b)$) the intersection is a curve, and the directional derivative of $f$ at $P$ along the direction of $\mathbf{u}$ is the slope of the tangent line to that curve at point $P$.</p>
+<p><img src="/media/logo-geogebra.png#left" /> <strong><a href="https://ggbm.at/Bx8nFMNc" target="_blank">Interactive Example</a></strong></p>
+<h3 id="growth-of-scalar-field-along-the-gradient">Growth of scalar field along the gradient</h3>
+<p>We have seen that for any vector $\mathbf{u}$</p>
+<p>$$f^\prime_{\mathbf{u}}(P) = \nabla f(P)\cdot \mathbf{u} = |\nabla f(P)|\cos \theta,$$</p>
+<p>where $\theta$ is the angle between $\mathbf{u}$ and the gradient $\nabla f(P)$.</p>
+<p>Taking into account that $-1\leq \cos\theta\leq 1$, for any vector $\mathbf{u}$ it is satisfied that</p>
+<p>$$-|\nabla f(P)|\leq f&rsquo;_{\mathbf{u}}(P)\leq |\nabla f(P)| .$$</p>
+<p>Furthermore, if $\mathbf{u}$ has the same direction and sense than the gradient, we have $f&rsquo;_{\mathbf{u}}(P)=\vert\nabla f(P)\vert\cos 0=\vert\nabla f(P)\vert$.
+Therefore, <em>the maximum increase of a scalar field at a point $P$ is along the direction of the gradient at that point</em>.</p>
+<p>In the same manner, if $\mathbf{u}$ has the same direction but opposite sense than the gradient, we have $f_{\mathbf{u}}&rsquo;(P)=\vert\nabla f(P)\vert\cos \pi=-\vert\nabla f(P)\vert$.
+Therefore, <em>the maximum decrease of a scalar field at a point $P$ is along the opposite direction of the gradient at that point</em>.</p>
+<h2 id="implicit-derivation">Implicit derivation</h2>
+<p>When we have a relation $f(x,y)=0$, sometimes we can consider $y$ as an <em>implicit function</em> of $x$, at least in a neighbourhood of a point $(x_0,y_0)$.</p>
+<p>The equation $x^2+y^2=25$, whose graph is the circle of radius 5 centred at the origin of coordinates, its not a function, because if we solve the equation for $y$, we have two images for some values of $x$,</p>
+<p>$$y=\pm \sqrt{25-x^2}$$</p>
+<p>However, near the point $(3,4)$ we can represent the relation as the function $y=\sqrt{25-x^2}$, and near the point $(3,-4)$ we can represent the relation as the function $y=-\sqrt{25-x^2}$.</p>
+<p>If an equation $f(x,y)=0$ defines $y$ as a implicit function of $x$, $y=h(x)$, in a neighbourhood of $(x_0,y_0)$, then we can compute de derivative of $y$, $h&rsquo;(x)$, even if we do not know the explicit formula for $h$.</p>
+<div class="alert alert-theo">
+  <div>
+    <p><strong>Theorem - Implicit derivation</strong>. Let $f(x,y):\mathbb{R}^2\longrightarrow \mathbb{R}$ a two-variable function and let $(x_0,y_0)$ be a point in $\mathbb{R}^2$ such that $f(x_0,y_0)=0$. If $f$ has partial derivatives continuous at $(x_0,y_0)$ and $\frac{\partial f}{\partial y}(x_0,y_0)\neq 0$, then there is an open interval $I\subset \mathbb{R}$ with $x_0\in I$ and a function $h(x): I\longrightarrow \mathbb{R}$ such that</p>
+<ol>
+<li>$y_0=h(x_0)$.</li>
+<li>$f(x,h(x))=0$ for all $x\in I$.</li>
+<li>$h$ is differentiable on $I$, and $y&rsquo;=h&rsquo;(x)=\frac{-\dfrac{\partial f}{\partial x}}{\dfrac{\partial f}{\partial y}}$</li>
+</ol>
+  </div>
+</div>
+<p><strong>Proof</strong>. To prove the last result, take the trajectory $g(x)=(x,h(x))$ on the interval $I$. Then</p>
+<p>$$(f\circ g)(x) = f(g(x)) = f(x,h(x))=0.$$</p>
+<p>Thus, using the chain rule we have</p>
+<p>$$
+\begin{aligned}
+(f\circ g)&rsquo;(x) &amp;= \nabla f(g(x))\cdot g&rsquo;(x) = \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}\right)\cdot (1,h&rsquo;(x)) = \newline
+&amp;= \frac{\partial f}{\partial x}+\frac{\partial f}{\partial y}h&rsquo;(x) = 0,
+\end{aligned}
+$$</p>
+<p>from where we can deduce</p>
+<p>$$y&rsquo;=h&rsquo;(x)=\frac{-\dfrac{\partial f}{\partial x}}{\dfrac{\partial f}{\partial y}}.$$</p>
+<p>This technique that allows us to compute $y&rsquo;$ in a neighbourhood of $x_0$ without the explicit formula of $y=h(x)$, it is known as <em>implicit derivation</em>.</p>
+<p><strong>Example</strong>. Consider the equation of the circle of radius 5 centred at the origin $x^2+y^2=25$. It can also be written as</p>
+<p>$$f(x,y) = x^2+y^2-25 = 0.$$
+Take the point $(3,4)$ that satisfies the equation, $f(3,4)=0$.</p>
+<p>As $f$ have partial derivatives $\frac{\partial f}{\partial x}=2x$ and $\frac{\partial f}{\partial y}=2y$, that are continuous at $(3,4)$, and $\frac{\partial f}{\partial y}(3,4)=8\neq 0$, then $y$ can be expressed as a function of $x$ in a neighbourhood of $(3,4)$ and its derivative is</p>
+<p>$$y&rsquo;=\frac{-\frac{\partial f}{\partial x}}{\frac{\partial f}{\partial y}} = \frac{-2x}{2y}=\frac{-x}{y} \quad \mbox{and} \quad y&rsquo;(3)=\frac{-3}{4}.$$</p>
+<p>In this particular case, that we know the explicit formula of $y=\sqrt{1-x^2}$, we can get the same result computing the derivative as usual</p>
+<p>$$y&rsquo; = \frac{1}{2\sqrt{1-x^2}}(-2x) = \frac{-x}{\sqrt{1-x^2}}.$$</p>
+<p>The implicit function theorem can be generalized to functions with several variables.</p>
+<div class="alert alert-theo">
+  <div>
+    <p><strong>Theorem - Implicit derivation</strong>. Let $f(x_1,\ldots,x_n,y):\mathbb{R}^{n+1}\longrightarrow \mathbb{R}$ a $n+1$-variables function and let $(a_1,\ldots, a_n,b)$ be a point in $\mathbb{R}^{n+1}$ such that $f(a_1,\ldots,a_n,b)=0$. If $f$ has partial derivatives continuous at $(a_1,\ldots,a_n,b)$ and $\frac{\partial f}{\partial y}(a_1,\ldots,a_n,b)\neq 0$, then there is a region $I\subset \mathbb{R}^n$ with $(x_1,\ldots,x_n)\in I$ and a function $h(x_1,\ldots, x_n): I\longrightarrow \mathbb{R}$ such that</p>
+<ol>
+<li>$b=h(a_1,\ldots,a_n)$.</li>
+<li>$f(x_1,\ldots,x_n,h(x_1,\ldots,x_n))=0$ for all $(x_1,\ldots,x_n)\in I$.</li>
+<li>$h$ is differentiable on $I$, and $\dfrac{\partial y}{\partial x_i}=\frac{-\dfrac{\partial f}{\partial x_i}}{\dfrac{\partial f}{\partial y}}$</li>
+</ol>
+  </div>
+</div>
+<h2 id="second-order-partial-derivatives">Second order partial derivatives</h2>
+<p>As the partial derivatives of a function are also functions of several variables we can differentiate partially each of them.</p>
+<p>If a function $f(x_1,\ldots,x_n)$ has a partial derivative $f^\prime_{x_i}(x_1,\ldots,x_n)$ with respect to the variable $x_i$ in a set $A$, then we can differentiate partially again $f_{x_i}^\prime$ with respect to the variable $x_j$. This second derivative, when exists, is known as <em>second order partial derivative</em> of $f$ with respect to the variables $x_i$ and $x_j$; it is written as</p>
+<p>$$\frac{\partial ^2 f}{\partial x_j \partial x_i}= \frac{\partial}{\partial x_j}\left(\frac{\partial f}{\partial x_i}\right).$$</p>
+<p>In the same way we can define higher order partial derivatives.</p>
+<p><strong>Example</strong>. The two-variables function
+$$f(x,y)=x^y$$
+has 4 second order partial derivatives:</p>
+<p>$$
+\begin{aligned}
+\frac{\partial^2 f}{\partial x^2}(x,y) &amp;=
+\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial x}(x,y)\right) =
+\frac{\partial}{\partial x}\left(yx^{y-1}\right) =
+y(y-1)x^{y-2},\newline
+\frac{\partial^2 f}{\partial y \partial x}(x,y) &amp;=
+\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}(x,y)\right) =
+\frac{\partial}{\partial y}\left(yx^{y-1}\right) =
+x^{y-1}+yx^{y-1}\log x,\newline
+\frac{\partial^2 f}{\partial x \partial y}(x,y) &amp;=
+\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}(x,y)\right) =
+\frac{\partial}{\partial x}\left(x^y\log x \right) =
+yx^{y-1}\log x+x^y\frac{1}{x},\newline
+\frac{\partial^2 f}{\partial y^2}(x,y) &amp;=
+\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial y}(x,y)\right) =
+\frac{\partial}{\partial y}\left(x^y\log x \right) =
+x^y(\log x)^2.
+\end{aligned}
+$$</p>
+<h2 id="hessian-matrix-and-hessian">Hessian matrix and Hessian</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Hessian matrix</strong>. Given a scalar field $f(x_1,\ldots,x_n)$, with second order partial derivatives at the point $a=(a_1,\ldots,a_n)$, the <em>Hessian matrix</em> of $f$ at $a$, denoted by $\nabla^2f(a)$, is the matrix</p>
+<p>$$
+\nabla^2f(a)=\left(
+\begin{array}{cccc}
+\dfrac{\partial^2 f}{\partial x_1^2}(a) &amp;
+\dfrac{\partial^2 f}{\partial x_1 \partial x_2}(a) &amp;
+\cdots &amp;
+\dfrac{\partial^2 f}{\partial x_1 \partial x_n}(a)\newline
+\dfrac{\partial^2 f}{\partial x_2 \partial x_1}(a) &amp;
+\dfrac{\partial^2 f}{\partial x_2^2}(a) &amp;
+\cdots &amp;
+\dfrac{\partial^2 f}{\partial x_2 \partial x_n}(a)\newline
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \newline
+\dfrac{\partial^2 f}{\partial x_n \partial x_1}(a) &amp;
+\dfrac{\partial^2 f}{\partial x_n \partial x_2}(a) &amp;
+\cdots &amp;
+\dfrac{\partial^2 f}{\partial x_n^2}(a)
+\end{array}
+\right)
+$$</p>
+<p>The determinant of this matrix is known as <em>Hessian</em> of $f$ at $a$; it is denoted $Hf(a)=\vert\nabla^2f(a)\vert$.</p>
+  </div>
+</div>
+<p><strong>Example</strong>. Consider again the two-variables function</p>
+<p>$$f(x,y)=x^y.$$</p>
+<p>Its Hessian matrix is</p>
+<p>$$
+\nabla^2f(x,y) =
+\left(
+\begin{array}{cc}
+\dfrac{\partial^2 f}{\partial x^2} &amp; \dfrac{\partial^2 f}{\partial x \partial y}\newline
+\dfrac{\partial^2 f}{\partial y \partial x} &amp; \dfrac{\partial^2 f}{\partial y^2}
+\end{array}
+\right) =
+\left(\begin{array}{cc}
+y(y-1)x^{y-2} &amp; x^{y-1}(y\log x+1) \newline
+x^{y-1}(y\log x+1) &amp; x^y(\log x)^2
+\end{array}
+\right).
+$$</p>
+<p>At point $(1,2)$ is</p>
+<p>$$
+\nabla^2 f(1,2) =
+\left(
+\begin{array}{cc}
+2(2-1)1^{2-2} &amp; 1^{2-1}(2\log 1+1) \newline
+1^{2-1}(2\log 1+1) &amp; 1^2(\log 1)^2
+\end{array}
+\right) =
+\left(
+\begin{array}{cc}
+2 &amp; 1 \newline
+1 &amp; 0
+\end{array}
+\right).
+$$</p>
+<p>And its Hessian is</p>
+<p>$$
+Hf(1,2)=\left|
+\begin{array}{cc}
+2 &amp; 1 \newline
+1 &amp; 0
+\end{array}
+\right|=
+2\cdot 0-1\cdot1= -1.
+$$</p>
+<h3 id="symmetry-of-second-partial-derivatives">Symmetry of second partial derivatives</h3>
+<p>In the previous example we can observe that the <em>mixed derivatives</em> of second order $\frac{\partial^2 f}{\partial y\partial x}$ and $\frac{\partial^2 f}{\partial x\partial y}$ are the same. This fact is due to the following result.</p>
+<div class="alert alert-theo">
+  <div>
+    <p><strong>Theorem - Symmetry of second partial derivatives</strong>. If $f(x_1,\ldots,x_n)$ is a scalar field with second order partial derivatives $\frac{\partial^2 f}{\partial x_i\partial x_j}$ and $\frac{\partial^2 f}{\partial x_j\partial x_i}$ continuous at a point $(a_1,\ldots,a_n)$, then</p>
+<p>$$\frac{\partial^2 f}{\partial x_i\partial x_j}(a_1,\ldots,a_n)=\frac{\partial^2 f}{\partial x_j\partial x_i}(a_1,\ldots,a_n).$$</p>
+  </div>
+</div>
+<p>This means that when computing a second partial derivative.</p>
+<p>As a consequence, if the function satisfies the requirements of the theorem for all the second order partial derivatives, the Hessian matrix is symmetric.</p>
+<h2 id="taylor-polynomials">Taylor polynomials</h2>
+<h3 id="linear-approximation-of-a-scalar-field">Linear approximation of a scalar field</h3>
+<p>In a previous chapter we saw how to approximate a one-variable function with a Taylor polynomial. This can be generalized to several-variables functions.</p>
+<p>If $P$ is a point in the domain of a scalar field $f$ and $\mathbf{v}$ is a vector, the first degree <em>Taylor formula</em> of $f$ around $P$ is</p>
+<p>$$f(P+\mathbf{v}) = f(P) + \nabla f(P)\cdot \mathbf{v} +R^1_{f,P}(\mathbf{v}),$$</p>
+<p>where</p>
+<p>$$P^1_{f,P}(\mathbf{v}) = f(P)+\nabla f(P)\mathbf{v}$$</p>
+<p>is the first degree <em>Taylor polynomial</em> of $f$ at $P$, and $R^1_{f,P}(\mathbf{v})$ is the <em>Taylor remainder</em> for the vector $\mathbf{v}$, that is the error in the approximation.</p>
+<p>The remainder satisfies</p>
+<p>$$\lim_{|\mathbf{v}|\rightarrow 0} \frac{R^1_{f,P}(\mathbf{v})}{|\mathbf{v}|} = 0$$</p>
+<div class="alert alert-warning">
+  <div>
+    The first degree Taylor polynomial for a function of two variables is the tangent plane to the graph of $f$ at $P$.
+  </div>
+</div>
+<h3 id="linear-approximation-of-a-two-variable-function">Linear approximation of a two-variable function</h3>
+<p>If $f$ is a scalar field of two variables $f(x,y)$ and $P=(x_0,y_0)$, as for any point $Q=(x,y)$ we can take the vector $\mathbf{v}=\vec{PQ}=(x-x_0,y-y_0)$, then the first degree Taylor polynomial of $f$ at $P$, can be written as</p>
+<p>$$
+\begin{aligned}
+P^1_{f,P}(x,y) &amp;= f(x_0,y_0)+\nabla f(x_0,y_0)(x-x_0,y-y_0) =\newline
+&amp;= f(x_0,y_0)+\frac{\partial f}{\partial x}(x_0,y_0)(x-x_0)+\frac{\partial f}{\partial y}(x_0,y_0)(y-y_0).
+\end{aligned}
+$$</p>
+<p><strong>Example</strong>. Given the scalar field $f(x,y)=\log(xy)$, its gradient is</p>
+<p>$$\nabla f(x,y) = \left(\frac{1}{x},\frac{1}{y}\right),$$</p>
+<p>and the first degree Taylor polynomial at the point $P=(1,1)$ is</p>
+<p>$$\begin{aligned}
+P^1_{f,P}(x,y) &amp;= f(1,1) +\nabla f(1,1)\cdot (x-1,y-1) = \newline
+&amp;= \log 1+(1,1)\cdot(x-1,y-1) = x-1+y-1 = x+y-2.
+\end{aligned}$$</p>
+<p>This polynomial approximates $f$ near the point $P$. For instance,</p>
+<p>$$f(1.01,1.01) \approx P^1_{f,P}(1.01,1.01) = 1.01+1.01-2 = 0.02.$$</p>
+<p>The graph of the scalar field $f(x,y)=\log(xy)$ and the first degree Taylor polynomial of $f$ at the point $P=(1,1)$ is below.</p>
+<img src="../img/derivativesn/first_degree_taylor_polynomial.svg" alt="First degree Taylor polynomial" width="350">
+<h3 id="quadratic-approximation-of-a-scalar-field">Quadratic approximation of a scalar field</h3>
+<p>If $P$ is a point in the domain of a scalar field $f$ and $\mathbf{v}$ is a vector, the second degree <em>Taylor formula</em> of $f$ around $P$ is</p>
+<p>$$f(P+\mathbf{v}) = f(P) + \nabla f(P)\cdot \mathbf{v} + \frac{1}{2}\left(\mathbf{v}\nabla^2f(P)\mathbf{v}\right) + R^2_{f,P}(\mathbf{v}),$$</p>
+<p>where</p>
+<p>$$P^2_{f,P}(\mathbf{v})f(P)+\nabla f(P)\mathbf{v}+\frac{1}{2}\left(\mathbf{v}\nabla^2f(P)\mathbf{v}\right)$$</p>
+<p>is the second degree <em>Taylor polynomial</em> of $f$ at the point $P$, and $R^2_{f,P}(\mathbf{v})$ is the <em>Taylor remainder</em> for the vector $\mathbf{v}$, that is the error in the approximation.</p>
+<p>The remainder satisfies</p>
+<p>$$\lim_{|\mathbf{v}\rightarrow 0|} \frac{R^2_{f,P}(\mathbf{v})}{|\mathbf{v}|^2} = 0.$$</p>
+<p>This means that the remainder is smaller than the square of the module of $\mathbf{v}$.</p>
+<h3 id="quadratic-approximation-of-a-two-variable-function">Quadratic approximation of a two-variable function</h3>
+<p>If $f$ is a scalar field of two variables $f(x,y)$ and $P=(x_0,y_0)$, then the second degree Taylor polynomial of $f$ at $P$, can be written as</p>
+<p>$$
+\begin{aligned}
+P^2_{f,P}(x,y) &amp;= f(x_0,y_0)+\nabla f(x_0,y_0)(x-x_0,y-y_0) + \newline &amp; +
+\frac{1}{2}(x-x_0,y-y_0)\nabla^2f(x_0,y_0)(x-x_0,y-y_0)= \newline
+&amp; = f(x_0,y_0)+\frac{\partial f}{\partial x}(x_0,y_0)(x-x_0)+\frac{\partial f}{\partial y}(x_0,y_0)(y-y_0)+ \newline &amp; +
+\frac{1}{2}(\frac{\partial^2 f}{\partial x^2}(x_0,y_0) (x-x_0)^2 + 2\frac{\partial^2 f}{\partial y\partial x}(x_0,y_0)(x-x_0)(y-y_0) + \newline &amp; + \frac{\partial^2 f}{\partial y^2}(x_0,y_0)(y-y_0^2))
+\end{aligned}
+$$</p>
+<p><strong>Example</strong>. Given the scalar field $f(x,y)=\log(xy)$, its gradient is</p>
+<p>$$\nabla f(x,y) = \left(\frac{1}{x},\frac{1}{y}\right),$$</p>
+<p>its Hessian matrix is</p>
+<p>$$Hf(x,y) = \left(
+\begin{array}{cc}
+\frac{-1}{x^2} &amp; 0\newline
+0 &amp; \frac{-1}{y^2}
+\end{array}
+\right)$$</p>
+<p>and the second degree Taylor polynomial of $f$ at the point $P=(1,1)$ is</p>
+<p>$$\begin{aligned}
+P^2_{f,P}(x,y) &amp;= f(1,1) +\nabla f(1,1)\cdot (x-1,y-1) +\newline
+&amp;+ \frac{1}{2}(x-1,y-1)\nabla^2f(1,1)\cdot(x-1,y-1)=\newline
+&amp;= \log 1+(1,1)\cdot(x-1,y-1) +\newline
+&amp;+ \frac{1}{2}(x-1,y-1)
+\left(
+\begin{array}{cc}
+-1 &amp; 0\newline
+0 &amp; -1
+\end{array}
+\right)
+\left(
+\begin{array}{c}
+x-1\newline
+y-1
+\end{array}
+\right)
+= \newline
+&amp;= x-1+y-1+\frac{-x^2-y^2+2x+2y-2}{2} =\newline
+&amp;= \frac{-x^2-y^2+4x+4y-6}{2}.
+\end{aligned}$$</p>
+<p>Thus,
+$$
+\begin{aligned}
+f(1.01,1.01) \approx P^1_{f,P}(1.01,1.01) &amp;= \frac{-1.01^2-1.01^2+4\cdot 1.01+4\cdot 1.01-6}{2} \newline
+&amp;= 0.0199.
+\end{aligned}
+$$</p>
+<p>The graph of the scalar field $f(x,y)=\log(xy)$ and the second degree Taylor polynomial of $f$ at the point $P=(1,1)$ is below.</p>
+<img src="../img/derivativesn/second_degree_taylor_polynomial.svg" alt="Second degree Taylor polynomial" width="350">
+<p><img src="/media/logo-geogebra.png#left" /> <strong><a href="https://ggbm.at/Ehnz3hGb" target="_blank">Interactive Example</a></strong></p>
+<h2 id="relative-extrema">Relative extrema</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Relative extrema</strong>.
+A scalar field $f$ in $\mathbb{R}^n$ has a <em>relative maximum</em> at a point $P$ if there is a value $\epsilon&gt;0$ such that</p>
+<p>$$f(P)\geq f(X)\ \forall X, |\vec{PX}|&lt;\epsilon.$$</p>
+<p>$f$ has a <em>relative minimum</em> at $f$ if there is a value $\epsilon&gt;0$ such that</p>
+<p>$$f(P)\leq f(X)\ \forall X, |\vec{PX}|&lt;\epsilon.$$</p>
+<p>Both relative maxima and minima are known as <em>relative extrema</em> of $f$.</p>
+  </div>
+</div>
+<h3 id="critical-points">Critical points</h3>
+<div class="alert alert-theo">
+  <div>
+    <p><strong>Theorem - Critical points</strong>. If a scalar field $f$ in $\mathbb{R}^n$ has a relative maximum or minimum at a point $P$, then $P$ is a <em>critical or stationary point</em> of $f$, that is, a point where the gradient vanishes</p>
+<p>$$\nabla f(P) = 0.$$</p>
+  </div>
+</div>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-31" role="button" aria-expanded="false" aria-controls="spoiler-31">
+      Proof
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-31">
+    <div class="card-body">
+      <p>Taking the trajectory that passes through $P$ with the direction of the gradient at that point $$g(t)=P+t\nabla f(P),$$ the function $h=(f\circ g)(t)$ does not decrease at $t=0$ since</p>
+<p>$$h&rsquo;(0)= (f\circ g)&rsquo;(0) = \nabla f(g(0))\cdot g&rsquo;(0) = \nabla f(P)\cdot \nabla f(P) = |\nabla f(P)|^2\geq 0,$$</p>
+<p>and it only vanishes if $\nabla f(P)=0$.</p>
+<p>Thus, if $\nabla f(P)\neq 0$, $f$ can not have a relative maximum at $P$ since following the trajectory of $g$ from $P$ there are points where $f$ has an image greater than the image at $P$. In the same way, following the trajectory of $g$ in the opposite direction there are points where $f$ has an image less than the image at $P$, so $f$ can not have relative minimum at $P$.</p>
+
+    </div>
+  </div>
+</div>
+<p><strong>Example</strong>. Given the scalar field $f(x,y)=x^2+y^2$, it is obvious that $f$ only has a relative minimum at $(0,0)$ since</p>
+<p>$$f(0,0)=0 \leq f(x,y)=x^2+y^2,\ \forall x,y\in \mathbb{R}.$$</p>
+<p>Is easy to check that $f$ has a critical point at $(0,0)$, that is $\nabla f(0,0) = 0$.</p>
+<img src="../img/derivativesn/paraboloid_minimum.svg" alt="Relative minimum of a two-variable function" width="300">
+<h3 id="saddle-points">Saddle points</h3>
+<p>Not all the critical points of a scalar field are points where the scalar field has relative extrema. If we take, for instance, the scalar field $f(x,y)=x^2-y^2$, its gradient is</p>
+<p>$$\nabla f(x,y) = (2x,-2y),$$</p>
+<p>that only vanishes at $(0,0)$. However, this point is not a relative maximum since the points $(x,0)$ in the $x$-axis have images $f(x,0)=x^2\geq
+0=f(0,0)$, nor a relative minimum since the points $(0,y)$ in the $y$-axis have images $f(0,y)=-y^2\leq
+0=f(0,0)$. This type of critical points that are not relative extrema are known as <em>saddle points</em>.</p>
+<img src="../img/derivativesn/saddle_point.svg" alt="Saddle point of a two-variable function" width="300">
+<h3 id="analysis-of-the-relative-extrema">Analysis of the relative extrema</h3>
+<p>From the second degree Taylor’s formula of a scalar field $f$ at a point $P$ we have</p>
+<p>$$f(P+\mathbf{v})-f(P)\approx \nabla f(P)\mathbf{v}+\frac{1}{2}\nabla^2f(P)\mathbf{v}\cdot\mathbf{v}.$$</p>
+<p>Thus, if $P$ is a critical point of $f$, as $\nabla f(P)=0$, we have</p>
+<p>$$f(P+\mathbf{v})-f(P)\approx \frac{1}{2}\nabla^2f(P)\mathbf{v}\cdot\mathbf{v}.$$</p>
+<p>Therefore, the sign of the $f(P+\mathbf{v})-f(P)$ is the sign of the second degree term $\nabla^2f(P)\mathbf{v}\cdot\mathbf{v}$.</p>
+<p>There are four possibilities:</p>
+<ul>
+<li>
+<p>Definite positive: $\nabla^2f(P)\mathbf{v}\cdot\mathbf{v}&gt;0$ $\forall \mathbf{v}\neq 0$.</p>
+</li>
+<li>
+<p>Definite negative: $\nabla^2f(P)\mathbf{v}\cdot\mathbf{v}&lt;0$ $\forall \mathbf{v}\neq 0$.</p>
+</li>
+<li>
+<p>Indefinite: $\nabla^2f(P)\mathbf{v}\cdot\mathbf{v}&gt;0$ for some $\mathbf{v}\neq 0$ and $\nabla^2f(P)\mathbf{u}\cdot\mathbf{u}&lt;0$ for some $\mathbf{u}\neq 0$.</p>
+</li>
+<li>
+<p>Semidefinite: In any other case.</p>
+</li>
+</ul>
+<p>Thus, depending on de sign of $\nabla^2 f(P)\mathbf{v}\cdot\mathbf{v}$, we have</p>
+<div class="alert alert-theo">
+  <div>
+    <p><strong>Theorem</strong>.
+Given a critical point $P$ of a scalar field $f$, it holds that</p>
+<ul>
+<li>If $\nabla^2f(P)$ is definite positive then $f$ has a relative minimum at $P$.</li>
+<li>If $\nabla^2f(P)$ is definite negative then $f$ has a relative maximum at $P$.</li>
+<li>If $\nabla^2f(P)$ is indefinite then $f$ has a saddle point at $P$.</li>
+</ul>
+<p>When $\nabla^2f(P)$ is semidefinite we can not draw any conclusion and we need higher order partial derivatives to classify the critical point.</p>
+  </div>
+</div>
+<h3 id="analysis-of-the-relative-extrema-of-a-scalar-field-in-mathbbr2">Analysis of the relative extrema of a scalar field in $\mathbb{R}^2$</h3>
+<p>In the particular case of a scalar field of two variables, we have</p>
+<div class="alert alert-theo">
+  <div>
+    <p><strong>Theorem</strong>.
+Given a critical point $P=(x_0,y_0)$ of a scalar field $f(x,y)$, it holds that</p>
+<ul>
+<li>If $Hf(P)&gt;0$ and $\dfrac{\partial^2 f}{\partial x^2}(x_0,y_0)&gt;0$ then $f$ has a relative minimum at $P$.</li>
+<li>If $Hf(P)&gt;0$ and $\dfrac{\partial^2 f}{\partial x^2}(x_0,y_0)&lt;0$ then $f$ has a relative maximum at $P$.</li>
+<li>IF $Hf(P)&lt;0$ then $f$ has a saddle point at $P$.</li>
+</ul>
+  </div>
+</div>
+<p><strong>Example</strong>. Given the scalar field $f(x,y)=\dfrac{x^3}{3}-\dfrac{y^3}{3}-x+y$, its gradient is</p>
+<p>$$\nabla f(x,y)= (x^2-1,-y^2+1),$$</p>
+<p>and it has critical points at $(1,1)$, $(1,-1)$, $(-1,1)$ and $(-1,-1)$.</p>
+<p>The hessian matrix is</p>
+<p>$$\nabla^2f(x,y) = \left(
+\begin{array}{cc}
+2x &amp; 0\newline
+0 &amp; -2y
+\end{array}
+\right)$$</p>
+<p>and the hessian is</p>
+<p>$$Hf(x,y) = -4xy.$$</p>
+<p>Thus, we have</p>
+<ul>
+<li>
+<p>Point $(1,1)$: $Hf(1,1)=-4&lt;0 \Rightarrow$ Saddle point.</p>
+</li>
+<li>
+<p>Point $(1,-1)$: $Hf(1,-1)=4&gt;0$ and $\frac{\partial^2}{\partial x^2}(1,-1)=2&gt;0 \Rightarrow$ Relative min.</p>
+</li>
+<li>
+<p>Point $(-1,1)$: $Hf(-1,1)=4&gt;0$ and $\frac{\partial^2}{\partial x^2}(-1,1)=-2&lt;0 \Rightarrow$ Relative max.</p>
+</li>
+<li>
+<p>Point $(-1,-1)$: $Hf(-1,-1)=-4&lt;0 \Rightarrow$ Saddle point.</p>
+</li>
+</ul>
+<p>The graph of the function $f(x,y)=\dfrac{x^3}{3}-\dfrac{y^3}{3}-x+y$ and their relative extrema and saddle points are shown below.</p>
+<img src="../img/derivativesn/extrema_analysis.svg" alt="Relative extrema and saddle points of a two-variable function" width="350">
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tag/partial-derivative/">Partial Derivative</a>
+  
+  <a class="badge badge-light" href="/en/tag/gradient/">Gradient</a>
+  
+  <a class="badge badge-light" href="/en/tag/tangent-line/">Tangent Line</a>
+  
+  <a class="badge badge-light" href="/en/tag/normal-line/">Normal Line</a>
+  
+  <a class="badge badge-light" href="/en/tag/tangent-plane/">Tangent Plane</a>
+  
+  <a class="badge badge-light" href="/en/tag/normal-plane/">Normal Plane</a>
+  
+  <a class="badge badge-light" href="/en/tag/hessian-matrix/">Hessian Matrix</a>
+  
+  <a class="badge badge-light" href="/en/tag/extrema/">Extrema</a>
+  
+</div>
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/en/teaching/calculus/manual/ordinary-differential-equations/" rel="next">Ordinary differential equations</a>
+  </div>
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Sep 13, 2021</p>
+
+          
+
+
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "aprendeconalf" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt="CC SA icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/en/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://aprendeconalf.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.f79ea001fad4564ac91850b0b5a8f31c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

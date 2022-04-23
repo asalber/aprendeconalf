@@ -1,0 +1,1455 @@
+<!DOCTYPE html><html lang="es-es" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alfredo Sánchez Alberca">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Matplotlib es una librería de Python especializada en la creación de gráficos en dos dimensiones.
+Permite crear y personalizar los tipos de gráficos más comunes, entre ellos:
+ Diagramas de barras Histograma Diagramas de sectores Diagramas de caja y bigotes Diagramas de violín Diagramas de dispersión o puntos Diagramas de lineas Diagramas de areas Diagramas de contorno Mapas de color  y combinaciones de todos ellos.">
+
+  
+  <link rel="alternate" hreflang="es-es" href="/docencia/python/manual/matplotlib/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#6f5499">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700%7CSource Sans Pro:400+400italic%7COpen Sans:400+400italic%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/docencia/python/manual/matplotlib/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@aprendeconalf">
+  <meta property="twitter:creator" content="@aprendeconalf">
+  
+  <meta property="og:site_name" content="Aprende con Alf">
+  <meta property="og:url" content="/docencia/python/manual/matplotlib/">
+  <meta property="og:title" content="La librería Matplotlib | Aprende con Alf">
+  <meta property="og:description" content="Matplotlib es una librería de Python especializada en la creación de gráficos en dos dimensiones.
+Permite crear y personalizar los tipos de gráficos más comunes, entre ellos:
+ Diagramas de barras Histograma Diagramas de sectores Diagramas de caja y bigotes Diagramas de violín Diagramas de dispersión o puntos Diagramas de lineas Diagramas de areas Diagramas de contorno Mapas de color  y combinaciones de todos ellos."><meta property="og:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png">
+  <meta property="twitter:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png"><meta property="og:locale" content="es-es">
+  
+    
+    <meta property="article:modified_time" content="2020-10-04T22:36:27&#43;02:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>La librería Matplotlib | Aprende con Alf</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Buscar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Buscar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Sobre mi</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Docencia</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/docencia/calculo/"><span>Cálculo</span></a>
+            
+              <a class="dropdown-item" href="/docencia/estadistica/"><span>Estadística</span></a>
+            
+              <a class="dropdown-item" href="/docencia/r/"><span>R</span></a>
+            
+              <a class="dropdown-item" href="/docencia/python/"><span>Python</span></a>
+            
+              <a class="dropdown-item" href="/docencia/spss/"><span>SPSS</span></a>
+            
+              <a class="dropdown-item" href="/docencia/geogebra/"><span>Geogebra</span></a>
+            
+              <a class="dropdown-item" href="/docencia/git/"><span>Git</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Proyectos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publicaciones</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contacto</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Buscar"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Claro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Oscuro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automático</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Buscar..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+ 
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/docencia/python/manual/">Manual de Python</a>
+    <ul class="nav docs-sidenav">
+          <li class=""><a href="/docencia/python/manual/introduccion-python/">Introducción a Python</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/tipos-datos-simples/">Tipos de Datos Primitivos Simples</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/entrada-salida/">Entrada y Salida por Terminal</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/condicionales/">Condicionales</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/bucles/">Bucles</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/listas/">Listas</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/tuplas/">Tuplas</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/diccionarios/">Diccionarios</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/funciones/">Funciones</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/programacion-funcional/">Programación funcional</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/comprension-colecciones/">Comprensión de Colecciones</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/ficheros/">Ficheros</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/excepciones/">Excepciones</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/objetos/">Programación Orientada a Objetos</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/modulos/">Módulos</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/datetime/">La librería Datetime</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/numpy/">La librería Numpy</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/pandas/">La librería Pandas</a></li>
+        
+          <li class="active"><a href="/docencia/python/manual/matplotlib/">La librería Matplotlib</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/depuracion/">Depuración de código</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/referencias/">Referencias</a></li>
+        
+          <li class=""><a href="/docencia/python/manual/book/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-datetime/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-depuracion/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-estructuras-control/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-excepciones/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-ficheros/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-funciones/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-introduccion/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-matplotlib/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-modulos/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-numpy/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-objetos/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-pandas/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-referencias/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-tipos-datos-estructurados/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/capitulo-tipos-datos/"></a></li>
+        
+          <li class=""><a href="/docencia/python/manual/title-page/">Manual de Python</a></li>
+        </ul>
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">En esta página</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#creación-de-gráficos-con-matplotlib">Creación de gráficos con matplotlib</a></li>
+    <li><a href="#diagramas-de-dispersión-o-puntos">Diagramas de dispersión o puntos</a></li>
+    <li><a href="#diagramas-de-líneas">Diagramas de líneas</a></li>
+    <li><a href="#diagramas-de-areas">Diagramas de areas</a></li>
+    <li><a href="#diagramas-de-barras-verticales">Diagramas de barras verticales</a></li>
+    <li><a href="#diagramas-de-barras-horizontales">Diagramas de barras horizontales</a></li>
+    <li><a href="#histogramas">Histogramas</a></li>
+    <li><a href="#diagramas-de-sectores">Diagramas de sectores</a></li>
+    <li><a href="#diagramas-de-caja-y-bigotes">Diagramas de caja y bigotes</a></li>
+    <li><a href="#diagramas-de-violín">Diagramas de violín</a></li>
+    <li><a href="#diagramas-de-contorno">Diagramas de contorno</a></li>
+    <li><a href="#mapas-de-color">Mapas de color</a></li>
+    <li><a href="#cambiar-el-aspecto-de-los-gráficos">Cambiar el aspecto de los gráficos</a></li>
+    <li><a href="#colores">Colores</a></li>
+    <li><a href="#marcadores">Marcadores</a></li>
+    <li><a href="#líneas">Líneas</a></li>
+    <li><a href="#títulos">Títulos</a></li>
+    <li><a href="#ejes">Ejes</a></li>
+    <li><a href="#leyenda">Leyenda</a></li>
+    <li><a href="#rejilla">Rejilla</a></li>
+    <li><a href="#múltiples-gráficos">Múltiples gráficos</a></li>
+    <li><a href="#integración-con-pandas">Integración con Pandas</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>La librería Matplotlib</h1>
+
+          <div class="article-style">
+            <p>
+<a href="https://matplotlib.org/" target="_blank" rel="noopener">Matplotlib</a> es una librería de Python especializada en la creación de gráficos en dos dimensiones.</p>
+<p><img src="../img/matplotlib-logo.png" alt="Gráfico con matplotlib"></p>
+<p>Permite crear y personalizar los tipos de gráficos más comunes, entre ellos:</p>
+<ul>
+<li>Diagramas de barras</li>
+<li>Histograma</li>
+<li>Diagramas de sectores</li>
+<li>Diagramas de caja y bigotes</li>
+<li>Diagramas de violín</li>
+<li>Diagramas de dispersión o puntos</li>
+<li>Diagramas de lineas</li>
+<li>Diagramas de areas</li>
+<li>Diagramas de contorno</li>
+<li>Mapas de color</li>
+</ul>
+<p>y combinaciones de todos ellos.</p>
+<p>En la siguiente 
+<a href="https://matplotlib.org/gallery/index.html" target="_blank" rel="noopener">galería de gráficos</a> pueden apreciarse todos los tipos de gráficos que pueden crearse con esta librería.</p>
+<h2 id="creación-de-gráficos-con-matplotlib">Creación de gráficos con matplotlib</h2>
+<p>Para crear un gráfico con matplotlib es habitual seguir los siguientes pasos:</p>
+<ol>
+<li>
+<p>Importar el módulo <code>pyplot</code>.</p>
+</li>
+<li>
+<p>Definir la figura que contendrá el gráfico, que es la region (ventana o página) donde se dibujará y los ejes sobre los que se dibujarán los datos. Para ello se utiliza la función <code>subplots()</code>.</p>
+</li>
+<li>
+<p>Dibujar los datos sobre los ejes. Para ello se utilizan distintas funciones dependiendo del tipo de gráfico que se quiera.</p>
+</li>
+<li>
+<p>Personalizar el gráfico. Para ello existen multitud de funciones que permiten añadir un título, una leyenda, una rejilla, cambiar colores o personalizar los ejes.</p>
+</li>
+<li>
+<p>Guardar el gráfico. Para ello se utiliza la función <code>savefig()</code>.</p>
+</li>
+<li>
+<p>Mostrar el gráfico. Para ello se utiliza la función <code>show()</code>.</p>
+</li>
+</ol>
+<pre><code class="language-python"># Importar el módulo pyplot con el alias plt
+import matplotlib.pyplot as plt
+# Crear la figura y los ejes
+fig, ax = plt.subplots()
+# Dibujar puntos
+ax.scatter(x = [1, 2, 3], y = [3, 2, 1])
+# Guardar el gráfico en formato png
+plt.savefig('diagrama-dispersion.png')
+# Mostrar el gráfico
+plt.show()
+</code></pre>
+<p><img src="../img/diagrama-dispersion.png" alt="Gráfico con matplotlib"></p>
+<h2 id="diagramas-de-dispersión-o-puntos">Diagramas de dispersión o puntos</h2>
+<ul>
+<li><code>scatter(x, y)</code>: Dibuja un diagrama de puntos con las coordenadas de la lista <code>x</code> en el eje X y las coordenadas de la lista <code>y</code> en el eje Y. 
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.scatter.html#matplotlib.pyplot.scatter" target="_blank" rel="noopener"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.scatter([1, 2, 3, 4], [1, 2, 0, 0.5])
+plt.show()
+</code></pre>
+<p><img src="../img/diagrama-puntos.png" alt="Gráfico con matplotlib"></p>
+<h2 id="diagramas-de-líneas">Diagramas de líneas</h2>
+<ul>
+<li><code>plot(x, y)</code>: Dibuja un polígono con los vértices dados por las coordenadas de la lista <code>x</code> en el eje X y las coordenadas de la lista <code>y</code> en el eje Y. 
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot" target="_blank" rel="noopener"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.plot([1, 2, 3, 4], [1, 2, 0, 0.5])
+plt.show()
+</code></pre>
+<p><img src="../img/diagrama-lineas.png" alt="Gráfico con matplotlib"></p>
+<h2 id="diagramas-de-areas">Diagramas de areas</h2>
+<ul>
+<li><code>fill_between(x, y)</code>: Dibuja el area bajo el polígono con los vértices dados por las coordenadas de la lista <code>x</code> en el eje X y las coordenadas de la lista <code>y</code> en el eje Y. 
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.fill_between.html#matplotlib.pyplot.fill_between" target="_blank" rel="noopener"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.fill_between([1, 2, 3, 4], [1, 2, 0, 0.5])
+plt.show()
+</code></pre>
+<p><img src="../img/diagrama-areas.png" alt="Gráfico con matplotlib"></p>
+<h2 id="diagramas-de-barras-verticales">Diagramas de barras verticales</h2>
+<ul>
+<li><code>bar(x, y)</code>: Dibuja un diagrama de barras verticales donde <code>x</code> es una lista con la posición de las barras en el eje X, e <code>y</code> es una lista con la altura de las barras en el eje Y. 
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.bar.html#matplotlib.pyplot.bar" target="_blank" rel="noopener"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.bar([1, 2, 3], [3, 2, 1])
+plt.show()
+</code></pre>
+<p><img src="../img/diagrama-barras.png" alt="Gráfico con matplotlib"></p>
+<h2 id="diagramas-de-barras-horizontales">Diagramas de barras horizontales</h2>
+<ul>
+<li><code>barh(x, y)</code>: Dibuja un diagrama de barras horizontales donde <code>x</code> es una lista con la posición de las barras en el eje Y, e <code>y</code> es una lista con la longitud de las barras en el eje X. 
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.barh.html#matplotlib.pyplot.barh" target="_blank" rel="noopener"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.barh([1, 2, 3], [3, 2, 1])
+plt.show()
+</code></pre>
+<p><img src="../img/diagrama-barras-horizontales.png" alt="Gráfico con matplotlib"></p>
+<h2 id="histogramas">Histogramas</h2>
+<ul>
+<li><code>hist(x, bins)</code>: Dibuja un histograma con las frecuencias resultantes de agrupar los datos de la lista <code>x</code> en las clases definidas por la lista <code>bins</code>. 
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html#matplotlib.pyplot.hist" target="_blank" rel="noopener"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+</ul>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+x = np.random.normal(5, 1.5, size=1000)
+ax.hist(x, np.arange(0, 11))
+plt.show()
+</code></pre>
+<p><img src="../img/histograma.png" alt="Gráfico con matplotlib"></p>
+<h2 id="diagramas-de-sectores">Diagramas de sectores</h2>
+<ul>
+<li><code>pie(x)</code>: Dibuja un diagrama de sectores con las frecuencias de la lista <code>x</code>. 
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.pie.html#matplotlib.pyplot.pie" target="_blank" rel="noopener"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.pie([5, 4, 3, 2, 1])
+plt.show()
+</code></pre>
+<p><img src="../img/diagrama-sectores.png" alt="Gráfico con matplotlib"></p>
+<h2 id="diagramas-de-caja-y-bigotes">Diagramas de caja y bigotes</h2>
+<ul>
+<li><code>boxplot(x)</code>: Dibuja un diagrama de caja y bigotes con los datos de la lista <code>x</code>. 
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.boxplot.html#matplotlib.pyplot.boxplot" target="_blank" rel="noopener"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.boxplot([1, 2, 1, 2, 3, 4, 3, 3, 5, 7])
+plt.show()
+</code></pre>
+<p><img src="../img/diagrama-caja.png" alt="Gráfico con matplotlib"></p>
+<h2 id="diagramas-de-violín">Diagramas de violín</h2>
+<ul>
+<li><code>violinplot(x)</code>: Dibuja un diagrama de violín con los datos de la lista <code>x</code>. 
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.violinplot.html#matplotlib.pyplot.violinplot" target="_blank" rel="noopener"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.violinplot([1, 2, 1, 2, 3, 4, 3, 3, 5, 7])
+plt.show()
+</code></pre>
+<p><img src="../img/diagrama-violin.png" alt="Gráfico con matplotlib"></p>
+<h2 id="diagramas-de-contorno">Diagramas de contorno</h2>
+<ul>
+<li><code>contourf(x, y, z)</code>: Dibuja un diagrama de contorno con las curvas de nivel de la superficie dada por los puntos con las coordenadas de las listas <code>x</code>, <code>y</code> y <code>z</code> en los ejes X, Y y Z respectivamente. 
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.contourf.html#matplotlib.pyplot.contourf" target="_blank" rel="noopener"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+x = np.linspace(-3.0, 3.0, 100)
+y = np.linspace(-3.0, 3.0, 100)
+x, y = np.meshgrid(x, y)
+z = np.sqrt(x**2 + 2*y**2)
+ax.contourf(x, y, z)
+plt.show()
+</code></pre>
+<p><img src="../img/diagrama-contorno.png" alt="Gráfico con matplotlib"></p>
+<h2 id="mapas-de-color">Mapas de color</h2>
+<ul>
+<li><code>imshow(x)</code>: Dibuja un mapa de color a partir de una matriz (array bidimensiona) <code>x</code>. 
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.imshow.html#matplotlib.pyplot.imshow" target="_blank" rel="noopener"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+x = np.random.random((16, 16))
+ax.imshow(x)
+plt.show()
+</code></pre>
+<p><img src="../img/mapa-calor.png" alt="Gráfico con matplotlib"></p>
+<ul>
+<li><code>hist2d(x, y)</code>: Dibuja un mapa de color que simula un histograma bidimensional, donde los colores de los cuadrados dependen de las frecuencias de las clases de la muestra dada por las listas <code>x</code> e <code>y</code>. 
+<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist2d.html#matplotlib.pyplot.hist2d" target="_blank" rel="noopener"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+x, y = np.random.multivariate_normal(mean=[0.0, 0.0], cov=[[1.0, 0.4], [0.4, 0.5]], size=1000).T
+ax.hist2d(x, y)
+plt.show()
+</code></pre>
+<p><img src="../img/histograma2D.png" alt="Gráfico con matplotlib"></p>
+<h2 id="cambiar-el-aspecto-de-los-gráficos">Cambiar el aspecto de los gráficos</h2>
+<p>Los gráficos creados con Matplotlib son personalizables y puede cambiarse el aspecto de casi todos sus elementos. Los elementos que suelen modificarse más a menudo son:</p>
+<ul>
+<li>Colores</li>
+<li>Marcadores de puntos</li>
+<li>Estilo de líneas</li>
+<li>Títulos</li>
+<li>Ejes</li>
+<li>Leyenda</li>
+<li>Rejilla</li>
+</ul>
+<h2 id="colores">Colores</h2>
+<p>Para cambiar el color de los objetos se utiliza el parámetro <code>color = nombre-color</code>, donde <code>nombre-color</code> es una cadena con el nombre del color de entre los 
+<a href="https://matplotlib.org/3.2.1/gallery/color/named_colors.html" target="_blank" rel="noopener">colores disponibles</a>.</p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+dias = ['L', 'M', 'X', 'J', 'V', 'S', 'D']
+temperaturas = {'Madrid':[28.5, 30.5, 31, 30, 28, 27.5, 30.5], 'Barcelona':[24.5, 25.5, 26.5, 25, 26.5, 24.5, 25]}
+ax.plot(dias, temperaturas['Madrid'], color = 'tab:purple')
+ax.plot(dias, temperaturas['Barcelona'], color = 'tab:green')
+plt.show()
+</code></pre>
+<p><img src="../img/lineas-colores.png" alt="Gráfico con matplotlib"></p>
+<h2 id="marcadores">Marcadores</h2>
+<p>Para cambiar la forma de los puntos marcadores se utiliza el parámetro <code>marker = nombre-marcador</code> donde <code>nombre-marcador</code> es una cadena con el nombre del marcador de entre los 
+<a href="https://matplotlib.org/3.2.1/api/markers_api.html" target="_blank" rel="noopener">marcadores disponibles</a></p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+dias = ['L', 'M', 'X', 'J', 'V', 'S', 'D']
+temperaturas = {'Madrid':[28.5, 30.5, 31, 30, 28, 27.5, 30.5], 'Barcelona':[24.5, 25.5, 26.5, 25, 26.5, 24.5, 25]}
+ax.plot(dias, temperaturas['Madrid'], marker = '^')
+ax.plot(dias, temperaturas['Barcelona'], marker = 'o')
+plt.show()
+</code></pre>
+<p><img src="../img/lineas-marcadores.png" alt="Gráfico con matplotlib"></p>
+<h2 id="líneas">Líneas</h2>
+<p>Para cambiar el estilo de las líneas se utiliza el parámetro <code>linestyle = nombre-estilo</code> donde <code>nombre-estilo</code> es una cadena con el nombre del estilo de entre los 
+<a href="https://matplotlib.org/3.2.1/gallery/lines_bars_and_markers/linestyles.html" target="_blank" rel="noopener">estilos disponibles</a></p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+dias = ['L', 'M', 'X', 'J', 'V', 'S', 'D']
+temperaturas = {'Madrid':[28.5, 30.5, 31, 30, 28, 27.5, 30.5], 'Barcelona':[24.5, 25.5, 26.5, 25, 26.5, 24.5, 25]}
+ax.plot(dias, temperaturas['Madrid'], linestyle = 'dashed')
+ax.plot(dias, temperaturas['Barcelona'], linestyle = 'dotted')
+plt.show()
+</code></pre>
+<p><img src="../img/lineas-estilo.png" alt="Gráfico con matplotlib"></p>
+<h2 id="títulos">Títulos</h2>
+<p>Para añadir un título principal al gráfico se utiliza el siguiente método:</p>
+<ul>
+<li><code>ax.set_title(titulo, loc=alineacion, fontdict=fuente)</code> : Añade un título con el contenido de la cadena <code>titulo</code> a los ejes <code>ax</code>. El parámetro <code>loc</code> indica la alineación del título, que puede ser <code>'left'</code> (izquierda), <code>'center'</code> (centro) o <code>'right'</code> (derecha), y el parámetro <code>fontdict</code> indica mediante un diccionario las características de la fuente (la el tamaño <code>fontisize</code>, el grosor <code>fontweight</code> o el color <code>color</code>).</li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+dias = ['L', 'M', 'X', 'J', 'V', 'S', 'D']
+temperaturas = {'Madrid':[28.5, 30.5, 31, 30, 28, 27.5, 30.5], 'Barcelona':[24.5, 25.5, 26.5, 25, 26.5, 24.5, 25]}
+ax.plot(dias, temperaturas['Madrid'])
+ax.plot(dias, temperaturas['Barcelona'])
+ax.set_title('Evolución de la temperatura diaria', loc = &quot;left&quot;, fontdict = {'fontsize':14, 'fontweight':'bold', 'color':'tab:blue'})
+plt.show()
+</code></pre>
+<p><img src="../img/titulo.png" alt="Gráfico con matplotlib"></p>
+<h2 id="ejes">Ejes</h2>
+<p>Para cambiar el aspecto de los ejes se suelen utilizar los siguientes métodos:</p>
+<ul>
+<li><code>ax.set_xlabel(titulo)</code> : Añade un título con el contenido de la cadena <code>titulo</code> al eje x de <code>ax</code>. Se puede personalizar la alineación y la fuente con los mismos parámetros que para el título principal.</li>
+<li><code>ax.set_ylabel(titulo)</code> : Añade un título con el contenido de la cadena <code>titulo</code> al eje y de <code>ax</code>. Se puede personalizar la alineación y la fuente con los mismos parámetros que para el título principal.</li>
+<li><code>ax.set_xlim([limite-inferior, limite-superior])</code> : Establece los límites que se muestran en el eje x de <code>ax</code>.</li>
+<li><code>ax.set_ylim([limite-inferior, limite-superior])</code> : Establece los límites que se muestran en el eje y de <code>ax</code>.</li>
+<li><code>ax.set_xticks(marcas)</code> : Dibuja marcas en el eje x de <code>ax</code> en las posiciones indicadas en la lista <code>marcas</code>.</li>
+<li><code>ax.set_yticks(marcas)</code> : Dibuja marcas en el eje y de <code>ax</code> en las posiciones indicadas en la lista <code>marcas</code>.</li>
+<li><code>ax.set_xscale(escala)</code> : Establece la escala del eje x de <code>ax</code>, donde el parámetro <code>escala</code> puede ser <code>'linear'</code> (lineal) o <code>'log'</code> (logarítmica).</li>
+<li><code>ax.set_yscale(escala)</code> : Establece la escala del eje y de <code>ax</code>, donde el parámetro <code>escala</code> puede ser <code>'linear'</code> (lineal) o <code>'log'</code> (logarítmica).</li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+dias = ['L', 'M', 'X', 'J', 'V', 'S', 'D']
+temperaturas = {'Madrid':[28.5, 30.5, 31, 30, 28, 27.5, 30.5], 'Barcelona':[24.5, 25.5, 26.5, 25, 26.5, 24.5, 25]}
+ax.plot(dias, temperaturas['Madrid'])
+ax.plot(dias, temperaturas['Barcelona'])
+ax.set_xlabel(&quot;Días&quot;, fontdict = {'fontsize':14, 'fontweight':'bold', 'color':'tab:blue'})
+ax.set_ylabel(&quot;Temperatura ºC&quot;)
+ax.set_ylim([20,35])
+ax.set_yticks(range(20, 35))
+plt.show()
+</code></pre>
+<p><img src="../img/ejes.png" alt="Gráfico con matplotlib"></p>
+<h2 id="leyenda">Leyenda</h2>
+<p>Para añadir una leyenda a un gráfico se utiliza el siguiente método:</p>
+<ul>
+<li><code>ax.legend(leyendas, loc = posición)</code> : Dibuja un leyenda en los ejes <code>ax</code> con los nombres indicados en la lista <code>leyendas</code>. El parámetro <code>loc</code> indica la posición en la que se dibuja la leyenda y puede ser <code>'upper left'</code> (arriba izquierda), <code>'upper center'</code> (arriba centro), <code>'upper right'</code> (arriba derecha), <code>'center left'</code> (centro izquierda), <code>'center'</code> (centro), <code>'center right'</code> (centro derecha), <code>'lower left'</code> (abajo izquierda), <code>'lower center'</code> (abajo centro), <code>'lower right'</code> (abajo derecha). Se puede omitir la lista <code>leyendas</code> si se indica la leyenda de cada serie en la función que la dibuja mediante el parámetro <code>label</code>.</li>
+</ul>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+dias = ['L', 'M', 'X', 'J', 'V', 'S', 'D']
+temperaturas = {'Madrid':[28.5, 30.5, 31, 30, 28, 27.5, 30.5], 'Barcelona':[24.5, 25.5, 26.5, 25, 26.5, 24.5, 25]}
+ax.plot(dias, temperaturas['Madrid'], label = 'Madrid')
+ax.plot(dias, temperaturas['Barcelona'], label = 'Barcelona')
+ax.legend(loc = 'upper right')
+plt.show()
+</code></pre>
+<p><img src="../img/leyenda.png" alt="Gráfico con matplotlib"></p>
+<h2 id="rejilla">Rejilla</h2>
+<p><code>ax.grid(axis=ejes, color=color, linestyle=estilo)</code> : Dibuja una rejilla en los ejes de <code>ax</code>. El parámetro <code>axis</code> indica los ejes sobre los que se dibuja la regilla y puede ser <code>'x'</code> (eje x), <code>'y'</code> (eje y) o <code>'both'</code> (ambos). Los parámetros <code>color</code> y <code>linestyle</code> establecen el color y el estilo de las líneas de la rejilla, y pueden tomar los mismos valores vistos en los apartados de colores y líneas.</p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+dias = ['L', 'M', 'X', 'J', 'V', 'S', 'D']
+temperaturas = {'Madrid':[28.5, 30.5, 31, 30, 28, 27.5, 30.5], 'Barcelona':[24.5, 25.5, 26.5, 25, 26.5, 24.5, 25]}
+ax.plot(dias, temperaturas['Madrid'])
+ax.plot(dias, temperaturas['Barcelona'])
+ax.grid(axis = 'y', color = 'gray', linestyle = 'dashed')
+plt.show()
+</code></pre>
+<p><img src="../img/rejilla.png" alt="Gráfico con matplotlib"></p>
+<h2 id="múltiples-gráficos">Múltiples gráficos</h2>
+<p>Es posible dibujar varios gráficos en distintos ejes en una misma figura organizados en forma de tabla. Para ello, cuando se inicializa la figura y los ejes, hay que pasarle a la función <code>subplots</code> el número de filas y columnas de la tabla que contendrá los gráficos. Con esto los distintos ejes se organizan en un array y se puede acceder a cada uno de ellos a través de sus índices. Si se quiere que los distintos ejes compartan los mismos límites para los ejes se pueden pasar los parámetros <code>sharex = True</code> para el eje x o <code>sharey = True</code> para el eje y.</p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+fig, ax = plt.subplots(2, 2, sharey = True)
+dias = ['L', 'M', 'X', 'J', 'V', 'S', 'D']
+temperaturas = {'Madrid':[28.5, 30.5, 31, 30, 28, 27.5, 30.5], 'Barcelona':[24.5, 25.5, 26.5, 25, 26.5, 24.5, 25]}
+ax[0, 0].plot(dias, temperaturas['Madrid'])
+ax[0, 1].plot(dias, temperaturas['Barcelona'], color = 'tab:orange')
+ax[1, 0].bar(dias, temperaturas['Madrid'])
+ax[1, 1].bar(dias, temperaturas['Barcelona'], color = 'tab:orange')
+plt.show()
+</code></pre>
+<p><img src="../img/multiples-graficos.png" alt="Gráfico con matplotlib"></p>
+<h2 id="integración-con-pandas">Integración con Pandas</h2>
+<p>Matplotlib se integra a la perfección con la librería Pandas, permitiendo dibujar gráficos a partir de los datos de las series y DataFrames de Pandas.</p>
+<ul>
+<li><code>df.plot(kind=tipo, x=columnax, y=columnay, ax=ejes)</code> : Dibuja un diagrama del tipo indicado por el parámetro <code>kind</code> en los ejes indicados en el parámetro <code>ax</code>, representando en el eje x la columna del parámetro <code>x</code> y en el eje y la columna del parámetro <code>y</code>. El parámetro <code>kind</code> puede tomar como argumentos <code>'line'</code> (lineas), <code>'scatter'</code> (puntos), <code>'bar'</code> (barras verticales), <code>'barh'</code> (barras horizontales), <code>'hist'</code> (histograma), <code>'box'</code> (cajas), <code>'density'</code> (densidad), <code>'area'</code> (area) o <code>'pie'</code> (sectores). Es posible pasar otros parámetros para indicar el color, el marcador o el estilo de línea como se vió en los apartados anteriores.</li>
+</ul>
+<pre><code class="language-python">import pandas as pd 
+import matplotlib.pyplot as plt
+df = pd.DataFrame({'Días':['L', 'M', 'X', 'J', 'V', 'S', 'D'], 
+                   'Madrid':[28.5, 30.5, 31, 30, 28, 27.5, 30.5], 
+                   'Barcelona':[24.5, 25.5, 26.5, 25, 26.5, 24.5, 25]})
+fig, ax = plt.subplots()
+df.plot(x = 'Días', y = 'Madrid', ax = ax)
+df.plot(x = 'Días', y = 'Barcelona', ax = ax)
+plt.show()
+</code></pre>
+<p><img src="../img/matplotlib-pandas.png" alt="Gráfico con matplotlib"></p>
+<p>Si no se indican los parámetros <code>x</code> e <code>y</code> se representa el índice de las filas en el eje x y una serie por cada columna del Dataframe. Las columnas no numéricas se ignoran.</p>
+<pre><code class="language-python">import pandas as pd 
+import matplotlib.pyplot as plt
+df = pd.DataFrame({'Días':['L', 'M', 'X', 'J', 'V', 'S', 'D'], 
+                   'Madrid':[28.5, 30.5, 31, 30, 28, 27.5, 30.5], 
+                   'Barcelona':[24.5, 25.5, 26.5, 25, 26.5, 24.5, 25]})
+df = df.set_index('Días')
+fig, ax = plt.subplots()
+df.plot(ax = ax)
+plt.show()
+</code></pre>
+<p><img src="../img/matplotlib-pandas2.png" alt="Gráfico con matplotlib"></p>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/matplotlib/">Matplotlib</a>
+  
+</div>
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Anterior</div>
+    <a href="/docencia/python/manual/pandas/" rel="next">La librería Pandas</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Siguiente</div>
+    <a href="/docencia/python/manual/depuracion/" rel="prev">Depuración de código</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Última actualización el Oct 4, 2020</p>
+
+          
+
+
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "aprendeconalf" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt="CC SA icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No se encontraron resultados","placeholder":"Buscar...","results":"resultados encontrados"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Proyectos",
+        'publication' : "Publicaciones",
+        'talk' : "Charlas",
+        'slides' : "Diapositivas"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://aprendeconalf.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.f79ea001fad4564ac91850b0b5a8f31c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

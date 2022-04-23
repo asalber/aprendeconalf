@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ordinary Differential Equation | Aprende con Alf</title>
+    <link>/en/tag/ordinary-differential-equation/</link>
+      <atom:link href="/en/tag/ordinary-differential-equation/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ordinary Differential Equation</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Ordinary Differential Equation</title>
+      <link>/en/tag/ordinary-differential-equation/</link>
+    </image>
+    
+    <item>
+      <title>Ordinary differential equations</title>
+      <link>/en/teaching/calculus/manual/ordinary-differential-equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/calculus/manual/ordinary-differential-equations/</guid>
+      <description>&lt;h2 id=&#34;ordinary-differential-equations&#34;&gt;Ordinary Differential Equations&lt;/h2&gt;
+&lt;p&gt;Often in Physics, Chemistry, Biology, Geometry, etc there arise equations that relate a function with its derivative, or successive derivatives.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Ordinary differential equation&lt;/strong&gt;. An &lt;em&gt;ordinary differential equation&lt;/em&gt; (O.D.E.) is a equation that relates an independent variable $x$, a function $y(x)$ that depends on $x$, and the successive derivatives of $y$, $y&amp;rsquo;,y&amp;rsquo;&amp;rsquo;,\ldots,y^{(n)}$; it can be written as&lt;/p&gt;
+&lt;p&gt;$$F(x, y, y&amp;rsquo;, y&amp;rsquo;&amp;rsquo;,\ldots, y^{(n)})=0.$$&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;order&lt;/em&gt; of a differential equation is the greatest order of the derivatives in the equation.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The equation $y&amp;rsquo;&amp;rsquo;&amp;rsquo;+sen(x)y&amp;rsquo;=2x$ is a differential equation of order 3.&lt;/p&gt;
+&lt;h3 id=&#34;deducing-a-differential-equation&#34;&gt;Deducing a differential equation&lt;/h3&gt;
+&lt;p&gt;To deduce a differential equation that explains a natural phenomenon is essential to understand what a derivative is and how to interpret it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Newton’s law of cooling states&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“The rate of change of the temperature of a body in a surrounding medium is proportional to the difference between the temperature of the body $T$ and the temperature of the medium $T_a$.”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The rate of change of the temperature is the derivative of temperature with respect to time $dT/dt$. Thus, Newton’s law of cooling can be explained by the differential equation&lt;/p&gt;
+&lt;p&gt;$$\frac{dT}{dt}=k(T-T_a),$$&lt;/p&gt;
+&lt;p&gt;where $k$ is a proportionality constant.&lt;/p&gt;
+&lt;h3 id=&#34;solution-of-an-ordinary-differential-equation&#34;&gt;Solution of an ordinary differential equation&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Solution of an ordinary differential equation&lt;/strong&gt;. Given an ordinary differential equation $F(x,y,y&amp;rsquo;,y&amp;rsquo;&amp;rsquo;,\ldots,y^{(n})=0$, the function $y=f(x)$ is a &lt;em&gt;solution of the ordinary differential equation&lt;/em&gt; if it satisfies the equation, that is, if&lt;/p&gt;
+&lt;p&gt;$$F(x,f(x), f&amp;rsquo;(x), f&amp;rsquo;&amp;rsquo;(x),\ldots, f^{(n}(x))=0.$$&lt;/p&gt;
+&lt;p&gt;The graph of a solution of the ordinary differential equation is known as &lt;em&gt;integral curve&lt;/em&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Solving an ordinary differential equations consists on finding all its solutions in a given domain. For that integral calculus is required.&lt;/p&gt;
+&lt;p&gt;The same manner than the indefinite integral is a family of antiderivatives, that differ in a constant term, after integrating an ordinary differential equation we get a family of solutions that differ in a constant. We can get particular solutions giving values to this constant.&lt;/p&gt;
+&lt;h3 id=&#34;general-solution-of-an-ordinary-differential-equation&#34;&gt;General solution of an ordinary differential equation&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - General solution of an ordinary differential equation&lt;/strong&gt;. Given an ordinary differential equation $F(x,y,y&amp;rsquo;,y&amp;rsquo;&amp;rsquo;,\ldots,y^{(n})=0$ of order $n$, the &lt;em&gt;general solution&lt;/em&gt; of the differential equation is a family of functions&lt;/p&gt;
+&lt;p&gt;$$y =f (x,C_1,\ldots,C_n),$$&lt;/p&gt;
+&lt;p&gt;depending on $n$ constants, such that for any value of $C_1,\ldots,C_n$ we get a solution of the differential equation.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;For every value of the constant we get &lt;em&gt;particular solution&lt;/em&gt; of the differential equation. Thus, when a differential equation can be solved, it has infinite solutions.&lt;/p&gt;
+&lt;p&gt;Geometrically, the general solution of a differential equation corresponds to a family of integral curves of the differential equation.&lt;/p&gt;
+&lt;p&gt;Often, it is common to impose conditions to the solutions of a differential equation to reduce the number of solutions. In many cases, these conditions allow to determine the values of the constants in the general solution to get a particular solution.&lt;/p&gt;
+&lt;h2 id=&#34;first-order-differential-equations&#34;&gt;First order differential equations&lt;/h2&gt;
+&lt;p&gt;In this chapter we are going to study first order differential equations&lt;/p&gt;
+&lt;p&gt;$$F(x,y,y&amp;rsquo;)=0.$$&lt;/p&gt;
+&lt;p&gt;The general solution of a first order differential equation is&lt;/p&gt;
+&lt;p&gt;$$y = f (x,C),$$&lt;/p&gt;
+&lt;p&gt;so to get a particular solution from the general one, it is enough to set the value of the constant $C$, and for that we only need to impose one initial condition.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Initial value problem&lt;/strong&gt;. The group consisting of a first order differential equation and an initial condition is known as &lt;em&gt;initial value problem&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+F(x,y,y&amp;rsquo;)=0, &amp;amp; \mbox{First order differential equation;} \newline
+y(x_0)=y_0, &amp;amp; \mbox{Initial condition.}
+\end{cases}
+$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Solving an initial value problem consists in finding a solution of the first order differential equation that satisfies the initial condition.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Recall the first order differential equation of the Newton’s law of cooling, $$\frac{dT}{dt}=k(T-T_a),$$
+where $T$ is the temperature of the body and $T_a$ is the temperature of the surrounding medium.&lt;/p&gt;
+&lt;p&gt;It is easy to check that the general solution of this equation is&lt;/p&gt;
+&lt;p&gt;$$T(t) = Ce^{kt}+T_a.$$&lt;/p&gt;
+&lt;p&gt;If we impose the initial condition that the temperature of the body at the initial instant is $5$ ºC, that is, $T(0)=5$, we have&lt;/p&gt;
+&lt;p&gt;$$T(0) = Ce^{k\cdot0}+T_a = C+T_a = 5,$$&lt;/p&gt;
+&lt;p&gt;from where we get $C=5-T_a$, and this give us the particular solution&lt;/p&gt;
+&lt;p&gt;$$T(t) = (5-T_a)e^{kt}+T_a.$$&lt;/p&gt;
+&lt;h3 id=&#34;integral-curve-of-an-initial-value-problem&#34;&gt;Integral curve of an initial value problem&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. If we assume in the previous example that the temperature of the surrounding medium is $T_a=0$ ºC and the cooling constant of the body is $k=1$, the general solution of the differential equation is
+$$T(t)=Ce^t,$$
+that is a family of integral curves. Among all of them, only the one that passes through the point $(0,5)$ corresponds to the particular solution of the previous initial value problem.&lt;/p&gt;
+&lt;img src=&#34;../img/ode/integral_curves.svg&#34; alt=&#34;Area of a positive function&#34; width=&#34;350&#34;&gt;
+&lt;h3 id=&#34;existence-and-uniqueness-of-solutions&#34;&gt;Existence and uniqueness of solutions&lt;/h3&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - Existence and uniqueness of solutions of a first order ODE&lt;/strong&gt;. Given an initial value problem&lt;/p&gt;
+&lt;p&gt;$$\begin{cases}
+y&amp;rsquo;=F(x,y);\newline
+y(x_0)=y_0;
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;if $F(x,y(x))$ is a function continuous on an open interval around the point $(x_0,y_0)$, then a solution of the initial value problem exists. If, in addition, $\frac{\partial F}{\partial y}$ is continuous in an open interval around $(x_0,y_0)$, the solution is unique.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Although this theorem guarantees the existence and uniqueness of a solution of a first order differential equation, it does not provide a method to compute it. In fact, there is not a general method to solve first order differential equations, but we will see how to solve some types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;#separable-differential-equations&#34;&gt;Separable differential equations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#homogeneous-differential-equations&#34;&gt;Homogeneous differential equations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#linear-differential-equations&#34;&gt;Linear differential equations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;separable-differential-equations&#34;&gt;Separable differential equations&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Separable differential equation&lt;/strong&gt;. A &lt;em&gt;separable differential equation&lt;/em&gt; is a first order differential equation that can be written as&lt;/p&gt;
+&lt;p&gt;$$y&amp;rsquo;g(y)=f(x),$$&lt;/p&gt;
+&lt;p&gt;or what is the same,&lt;/p&gt;
+&lt;p&gt;$$g(y)dy=f(x)dx,$$&lt;/p&gt;
+&lt;p&gt;so the different variables are on different sides of the equality (the variables are separated).&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;The general solution for a separable differential equation comes after integrating both sides of the equation&lt;/p&gt;
+&lt;p&gt;$$\int g(y)\,dy = \int f(x)\,dx+C.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The differential equation of the Newton’s law of cooling&lt;/p&gt;
+&lt;p&gt;$$\frac{dT}{dt}=k(T-T_a),$$&lt;/p&gt;
+&lt;p&gt;is a separable differential equation since it can be written as&lt;/p&gt;
+&lt;p&gt;$$\frac{1}{T-T_a}dT=k\,dt.$$&lt;/p&gt;
+&lt;p&gt;Integrating both sides of the equation we have&lt;/p&gt;
+&lt;p&gt;$$\int \frac{1}{T-T_a}\,dT=\int k\,dt\Leftrightarrow \log(T-T_a)=kt+C,$$&lt;/p&gt;
+&lt;p&gt;and solving for $T$ we get the general solution of the equation&lt;/p&gt;
+&lt;p&gt;$$T(t)=e^{kt+C}+T_a=e^Ce^{kt}+T_a=Ce^{kt}+T_a,$$&lt;/p&gt;
+&lt;p&gt;rewriting $C=e^C$ as an arbitrary constant.&lt;/p&gt;
+&lt;h2 id=&#34;homogeneous-differential-equations&#34;&gt;Homogeneous differential equations&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Homogeneous function&lt;/strong&gt;. A function $f(x,y)$ is &lt;em&gt;homogeneous&lt;/em&gt; of degree $n$, if it satisfies&lt;/p&gt;
+&lt;p&gt;$$f(kx,ky)= k^nf(x,y),$$&lt;/p&gt;
+&lt;p&gt;for any value $k\in \mathbb{R}$.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;In particular, a homogeneous function of degree $0$ always satisfies&lt;/p&gt;
+&lt;p&gt;$$f(kx,ky)=f(x,y).$$&lt;/p&gt;
+&lt;p&gt;Setting $k=1/x$ we have&lt;/p&gt;
+&lt;p&gt;$$f(x,y)=f\left(\frac{1}{x}x,\frac{1}{x}y\right)=f\left(1,\frac{y}{x}\right)=g\left(\frac{y}{x}\right).$$&lt;/p&gt;
+&lt;p&gt;This way, a homogeneous function of degree $0$ always can be written as a function of $u=y/x$:&lt;/p&gt;
+&lt;p&gt;$$f(x,y)=g\left(\frac{y}{x}\right)=g(u).$$&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Homogeneous differential equation&lt;/strong&gt;. A &lt;em&gt;homogeneous differential equation&lt;/em&gt; is a first order differential equation that can be written as&lt;/p&gt;
+&lt;p&gt;$$y&amp;rsquo;=f(x,y),$$&lt;/p&gt;
+&lt;p&gt;where $f(x,y)$ is a homogeneous function of degree $0$.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;We can solve a homogeneous differential equation by making the substitution&lt;/p&gt;
+&lt;p&gt;$$u=\frac{y}{x}\Leftrightarrow y=ux,$$&lt;/p&gt;
+&lt;p&gt;so the equation becomes&lt;/p&gt;
+&lt;p&gt;$$u&amp;rsquo;x+u=f(u),$$&lt;/p&gt;
+&lt;p&gt;that is a separable differential equation.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Once solved the separable differential equation, the substitution must be undone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Let us consider the following differential equation
+$$4x-3y+y&amp;rsquo;(2y-3x)=0.$$&lt;/p&gt;
+&lt;p&gt;Rewriting the equation in this way&lt;/p&gt;
+&lt;p&gt;$$y&amp;rsquo;=\frac{3y-4x}{2y-3x}$$&lt;/p&gt;
+&lt;p&gt;we can easily check that it is a homogeneous differential equation.&lt;/p&gt;
+&lt;p&gt;To solve this equation we have to do the substitution $y=ux$, and we get&lt;/p&gt;
+&lt;p&gt;$$u&amp;rsquo;x+u=\frac{3ux-4x}{2ux-3x}=\frac{3u-4}{2u-3}$$&lt;/p&gt;
+&lt;p&gt;that is a separable differential equation.&lt;/p&gt;
+&lt;p&gt;Separating the variables we have&lt;/p&gt;
+&lt;p&gt;$$u&amp;rsquo;x=\frac{3u-4}{2u-3}-u=\frac{-2u^2+6u-4}{2u-3}\Leftrightarrow \frac{2u-3}{-2u^2+6u-4}\,du=\frac{1}{x}\,dx.$$&lt;/p&gt;
+&lt;p&gt;Now, integrating both sides of the equation we have&lt;/p&gt;
+&lt;p&gt;$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{c}
+\displaystyle \int \frac{2u-3}{-2u^2+6u-4}\,du=\int \frac{1}{x}\,dx
+\Leftrightarrow -\frac{1}{2}\log|u^2-3u+2|=\log|x|+C \Leftrightarrow\newline
+\Leftrightarrow \log|u^2-3u+2|=-2\log|x|-2C,
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;then, applying the exponential function to both sides and simplifying we get the general solution&lt;/p&gt;
+&lt;p&gt;$$u^2-3u+2=e^{-2\log|x|-2C}=\frac{e^{-2C}}{e^{\log|x|^2}}=\frac{C}{x^2},$$&lt;/p&gt;
+&lt;p&gt;rewriting the constant $K=e^{-2C}$.&lt;/p&gt;
+&lt;p&gt;Finally, undoing the initial substitution $u=y/x$, we arrive at the general solution of the homogeneous differential equation&lt;/p&gt;
+&lt;p&gt;$$\left(\frac{y}{x}\right)^2-3\frac{y}{x}+2=\frac{K}{x^2}\Leftrightarrow y^2-3xy+2x^2=K.$$&lt;/p&gt;
+&lt;h3 id=&#34;linear-differential-equations&#34;&gt;Linear differential equations&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Linear differential equation&lt;/strong&gt; A &lt;em&gt;linear differential equation&lt;/em&gt; is a first order differential equation that can be written as&lt;/p&gt;
+&lt;p&gt;$$y&amp;rsquo;+g(x)y = h(x).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;To solve a linear differential equation we try to write the left side of the equation as the derivative of a product. For that we multiply both sides by the function $f(x)$, such that&lt;/p&gt;
+&lt;p&gt;$$f&amp;rsquo;(x)=g(x)f(x).$$&lt;/p&gt;
+&lt;p&gt;Thus, we get&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{c}
+y&amp;rsquo;f(x)+g(x)f(x)y=h(x)f(x)\newline
+\Updownarrow\newline
+y&amp;rsquo;f(x)+f&amp;rsquo;(x)y=h(x)f(x)\newline
+\Updownarrow\newline
+\dfrac{d}{dx}(yf(x))=h(x)f(x)
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;Integrating both sides of the previous equation we get the solution&lt;/p&gt;
+&lt;p&gt;$$yf(x)=\int h(x)f(x)\,dx+C.$$&lt;/p&gt;
+&lt;p&gt;On the other hand, the unique function that satisfies $f&amp;rsquo;(x)=g(x)f(x)$ is&lt;/p&gt;
+&lt;p&gt;$$f(x)=e^{\int g(x)\,dx},$$&lt;/p&gt;
+&lt;p&gt;so, substituting this function in the previous solution we arrive at the solution of the linear differential equation&lt;/p&gt;
+&lt;p&gt;$$ye^{\int g(x)\,dx}=\int h(x) e^{\int g(x)\,dx}\,dx+C,$$&lt;/p&gt;
+&lt;p&gt;or what is the same&lt;/p&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Solution of a linear differential equation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$y=e^{-\int g(x)\,dx}\left(\int h(x)e^{\int g(x)\,dx}\,dx+C\right).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. If in the differential equation of the Newton’s law of cooling the temperature of the surrounding medium is a function of time $T_a(t)$, then the differential equation&lt;/p&gt;
+&lt;p&gt;$$\frac{dT}{dt}=k(T-T_a(t)),$$&lt;/p&gt;
+&lt;p&gt;is a linear differential equation since it can be written as&lt;/p&gt;
+&lt;p&gt;$$T&amp;rsquo;-kT=-kT_a(t),$$&lt;/p&gt;
+&lt;p&gt;where the independent term is $-kT_a(t)$ and the coefficient of $T$ is $-k$.&lt;/p&gt;
+&lt;p&gt;Substituting in the formula of the general solution of a linear differential equation we have&lt;/p&gt;
+&lt;p&gt;$$y=e^{-\int -k\,dt}\left(\int -kT_a(t)e^{\int -k\,dt}\,dt+C\right)=
+e^{kt}\left(-\int kT_a(t)e^{-kt}\,dt+C\right).$$&lt;/p&gt;
+&lt;p&gt;In the particular case that $T_a(t)=t$, and the proportionality constant $k=1$, the general solution of the linear differential equation is&lt;/p&gt;
+&lt;p&gt;$$y=e^{t}\left(-\int te^{-kt}\,dt+C\right)=e^t(e^{-t}(t+1)+C)=Ce^t+t+1.$$&lt;/p&gt;
+&lt;p&gt;If, in addition, we know that the temperature of the body at time $t=0$ is $5$ ºC, that is, we have the initial condition $T(0)=5$, then we can compute the value of the constant $C$,&lt;/p&gt;
+&lt;p&gt;$$y(0)=Ce^0+0+1=5 \Leftrightarrow C+1=5 \Leftrightarrow C=4,$$
+and we get the particular solution&lt;/p&gt;
+&lt;p&gt;$$y(t)=4e^t+t+1.$$&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1537 @@
+<!DOCTYPE html><html lang="es-es" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alfredo Sánchez Alberca">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="El concepto de función ¿Qué es una función?  Definición - Función de una variable. Una función $f$ de un conjunto $A$ en otro $B$ es una relación que asocia cada elemento $a\in A$, con un único elemento de $B$ que se denota $f(a)$, y se llama imagen de $a$ mediante $f$.">
+
+  
+  <link rel="alternate" hreflang="es-es" href="/docencia/calculo/manual/funciones-elementales/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#6f5499">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700%7CSource Sans Pro:400+400italic%7COpen Sans:400+400italic%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/docencia/calculo/manual/funciones-elementales/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@aprendeconalf">
+  <meta property="twitter:creator" content="@aprendeconalf">
+  
+  <meta property="og:site_name" content="Aprende con Alf">
+  <meta property="og:url" content="/docencia/calculo/manual/funciones-elementales/">
+  <meta property="og:title" content="Funciones elementales | Aprende con Alf">
+  <meta property="og:description" content="El concepto de función ¿Qué es una función?  Definición - Función de una variable. Una función $f$ de un conjunto $A$ en otro $B$ es una relación que asocia cada elemento $a\in A$, con un único elemento de $B$ que se denota $f(a)$, y se llama imagen de $a$ mediante $f$."><meta property="og:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png">
+  <meta property="twitter:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png"><meta property="og:locale" content="es-es">
+  
+    
+    <meta property="article:modified_time" content="2020-09-25T00:29:35&#43;02:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Funciones elementales | Aprende con Alf</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Buscar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Buscar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Sobre mi</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Docencia</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/docencia/calculo/"><span>Cálculo</span></a>
+            
+              <a class="dropdown-item" href="/docencia/estadistica/"><span>Estadística</span></a>
+            
+              <a class="dropdown-item" href="/docencia/r/"><span>R</span></a>
+            
+              <a class="dropdown-item" href="/docencia/python/"><span>Python</span></a>
+            
+              <a class="dropdown-item" href="/docencia/spss/"><span>SPSS</span></a>
+            
+              <a class="dropdown-item" href="/docencia/geogebra/"><span>Geogebra</span></a>
+            
+              <a class="dropdown-item" href="/docencia/git/"><span>Git</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Proyectos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publicaciones</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contacto</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Buscar"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Claro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Oscuro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automático</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Buscar..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+ 
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/docencia/calculo/manual/">Manual de Cálculo</a>
+    <ul class="nav docs-sidenav">
+          <li class=""><a href="/docencia/calculo/manual/geometria-analitica/">Geometría Analítica</a></li>
+        
+          <li class="active"><a href="/docencia/calculo/manual/funciones-elementales/">Funciones elementales</a></li>
+        
+          <li class=""><a href="/docencia/calculo/manual/limites-continuidad/">Límites y continuidad</a></li>
+        
+          <li class=""><a href="/docencia/calculo/manual/derivadas-una-variable/">Cálculo diferencial en una variable</a></li>
+        
+          <li class=""><a href="/docencia/calculo/manual/integrales/">Cálculo integral</a></li>
+        
+          <li class=""><a href="/docencia/calculo/manual/ecuaciones-diferenciales-ordinarias/">Ecuaciones diferenciales ordinarias</a></li>
+        
+          <li class=""><a href="/docencia/calculo/manual/derivadas-n-variables/">Cálculo diferencial en varias variables</a></li>
+        </ul>
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">En esta página</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#el-concepto-de-función">El concepto de función</a>
+      <ul>
+        <li><a href="#qué-es-una-función">¿Qué es una función?</a></li>
+        <li><a href="#formas-de-representar-una-función">Formas de representar una función</a></li>
+      </ul>
+    </li>
+    <li><a href="#dominio-e-imagen-de-una-función">Dominio e imagen de una función</a>
+      <ul>
+        <li><a href="#dominio-de-una-función">Dominio de una función</a></li>
+        <li><a href="#imagen-de-una-función">Imagen de una función</a></li>
+      </ul>
+    </li>
+    <li><a href="#composición-e-inversa-de-una-función">Composición e inversa de una función</a>
+      <ul>
+        <li><a href="#composición-de-funciones">Composición de funciones</a></li>
+        <li><a href="#inversa-de-una-función">Inversa de una función</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#extremos-de-una-función">Extremos de una función</a></li>
+    <li><a href="#concavidad-de-una-función">Concavidad de una función</a></li>
+    <li><a href="#funciones-periódicas">Funciones periódicas</a></li>
+    <li><a href="#funciones-polinómicas">Funciones polinómicas</a>
+      <ul>
+        <li><a href="#propiedades-de-las-funciones-polinómicas">Propiedades de las funciones polinómicas</a></li>
+      </ul>
+    </li>
+    <li><a href="#funciones-racionales">Funciones racionales</a>
+      <ul>
+        <li><a href="#propiedades-de-las-funciones-racionales">Propiedades de las funciones racionales</a></li>
+      </ul>
+    </li>
+    <li><a href="#funciones-potenciales">Funciones potenciales</a>
+      <ul>
+        <li><a href="#propiedades-de-las-funciones-potenciales">Propiedades de las funciones potenciales</a></li>
+      </ul>
+    </li>
+    <li><a href="#funciones-exponenciales">Funciones exponenciales</a>
+      <ul>
+        <li><a href="#propiedades-de-las-funciones-exponenciales">Propiedades de las funciones exponenciales</a></li>
+      </ul>
+    </li>
+    <li><a href="#funciones-logarítmicas">Funciones logarítmicas</a>
+      <ul>
+        <li><a href="#propiedades-de-las-funciones-logarítmicas">Propiedades de las funciones logarítmicas</a></li>
+      </ul>
+    </li>
+    <li><a href="#funciones-trigonométricas">Funciones trigonométricas</a>
+      <ul>
+        <li><a href="#seno-de-un-ángulo">Seno de un ángulo</a></li>
+        <li><a href="#función-seno">Función seno</a></li>
+        <li><a href="#propiedades-de-la-función-seno">Propiedades de la función seno</a></li>
+        <li><a href="#coseno-de-un-ángulo">Coseno de un ángulo</a></li>
+        <li><a href="#función-coseno">Función coseno</a></li>
+        <li><a href="#propiedades-de-la-función-coseno">Propiedades de la función coseno</a></li>
+        <li><a href="#tangente-de-un-ángulo">Tangente de un ángulo</a></li>
+        <li><a href="#función-tangente">Función tangente</a></li>
+        <li><a href="#propiedades-de-la-función-tangente">Propiedades de la función tangente</a></li>
+        <li><a href="#función-arcoseno">Función arcoseno</a></li>
+        <li><a href="#propiedades-de-la-función-arcoseno">Propiedades de la función arcoseno</a></li>
+        <li><a href="#función-arcocoseno">Función arcocoseno</a></li>
+        <li><a href="#propiedades-de-la-función-arcoseno-1">Propiedades de la función arcoseno</a></li>
+        <li><a href="#función-arcotangente">Función arcotangente</a></li>
+        <li><a href="#propiedades-de-la-función-arcotangente">Propiedades de la función arcotangente</a></li>
+        <li><a href="#algunas-relaciones-trigonométricas">Algunas relaciones trigonométricas</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Funciones elementales</h1>
+
+          <div class="article-style">
+            <h2 id="el-concepto-de-función">El concepto de función</h2>
+<h3 id="qué-es-una-función">¿Qué es una función?</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función de una variable</strong>. Una <em>función</em> $f$ de un conjunto $A$ en otro $B$ es una <em>relación</em> que asocia cada elemento $a\in A$, con un <em>único</em> elemento de $B$ que se denota $f(a)$, y se llama <em>imagen</em> de $a$ mediante $f$.</p>
+<p>$$\begin{aligned}
+f:\,&amp;A\longrightarrow B\newline
+&amp;a\longrightarrow f(a)\end{aligned}$$</p>
+  </div>
+</div>
+<img src="../img/funciones_elementales/definicion_funcion.png" width="400px" alt="Correspondencia de una función" />
+<p>Cuando el conjunto inicial y final es el de los números reales $\mathbb{R}$, entonces se dice que $f:\mathbb{R}\rightarrow \mathbb{R}$ es una <em>función real de variable real</em>.</p>
+<h3 id="formas-de-representar-una-función">Formas de representar una función</h3>
+<h4 id="por-extensión">Por extensión</h4>
+<p>Representación en forma de tabla</p>
+<p>$$\begin{array}{|c|r|r|r|r|r|r|}
+\hline
+x &amp; -2 &amp; -1 &amp; 0 &amp; 1 &amp; 2 &amp; \cdots \newline
+\hline
+y &amp; 4  &amp; 1  &amp; 0 &amp; 1 &amp; 4 &amp; \cdots \newline
+\hline
+\end{array}$$</p>
+<p>Representación gráfica</p>
+<img src="../img/funciones_elementales/funcion_cuadrado.png" width="300px" alt="Función cudrado" />
+<h4 id="por-intensión">Por Intensión</h4>
+<p>Representación algebraica explícita</p>
+<p>$$y=x^2$$</p>
+<p>Representación algebraica implícita</p>
+<p>$$y-x^2=0$$</p>
+<p>Representación algebraica paramétrica</p>
+<p>$$\begin{cases}
+y=t^2\newline
+x=t
+\end{cases}$$</p>
+<h4 id="la-función-identidad">La función Identidad</h4>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función Identidad</strong>. Se llama <em>función identidad</em>, a toda función $Id: A\rightarrow A$ que asocia cada elemento de $A$ con sigo mismo, es decir,</p>
+<p>$$Id(x)=x.$$</p>
+  </div>
+</div>
+<img src="../img/funciones_elementales/funcion_identidad.png" width="300px" alt="Función identidad" />
+<h2 id="dominio-e-imagen-de-una-función">Dominio e imagen de una función</h2>
+<h3 id="dominio-de-una-función">Dominio de una función</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Dominio de una función</strong>. El <em>dominio</em> de una función $f$ es el conjunto de valores para los que la función está definida</p>
+<p>$$Dom(f)={x\in \mathbb{R}: f(x)\in \mathbb{R}}$$</p>
+  </div>
+</div>
+<p><strong>Ejemplo</strong>. Dada la función $$f(x)=\frac{1}{\sqrt{x^2-1}}$$</p>
+<img src="../img/funciones_elementales/ejemplo_dominio.png" width="450px" alt="Ejemplo de dominio de una función" />
+<p>Para determinar su dominio hay que eliminar los valores en los que no está definida la función. En este caso hay que eliminar los valores que hacen negativo el radicando de la raíz del denominador, es decir, los valores de $x$ tales que $x^2-1&lt;0$, que son los valores que cumplen $-1&lt;x&lt;1$, pero también hay que eliminar del dominio los valores que anulan el denominador, es decir, los valores de $x$ tales que $\sqrt{x^2-1}=0$, que son $x=-1$ y $x=1$. Por tanto, su dominio es</p>
+<p>$$\mbox{Dom}(f)=(-\infty,-1)\cup(1,\infty)$$</p>
+<h3 id="imagen-de-una-función">Imagen de una función</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Imagen de una función</strong>. La <em>imagen</em> de una función $f$ es el conjunto de valores que la función puede tomar</p>
+<p>$$Img(f)={y\in \mathbb{R}: y=f(x) \mbox{ para algún } x\in\mathbb{R}}$$</p>
+  </div>
+</div>
+<p><strong>Ejemplo</strong>. Dada la función $f(x)=x^2-2$</p>
+<img src="../img/funciones_elementales/ejemplo_imagen.png" width="400px" alt="Ejemplo de la imagen de una función" />
+<p>Su imagen es</p>
+<p>$$\mbox{Img}(f)=[-2,\infty)$$</p>
+<p>ya que la función cuadrática $x^2$ puede tomar cualquier valor de $0$ a $\infty$ (no toma nunca valores negativos), y al restarle 2, el mínimo valor que puede tomar la función $f$ es $-2$.</p>
+<h2 id="composición-e-inversa-de-una-función">Composición e inversa de una función</h2>
+<h3 id="composición-de-funciones">Composición de funciones</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Composición de funciones</strong>. Dadas dos funciones $g:A\rightarrow B$ y $f:B\rightarrow C$, se define la <em>función compuesta</em> $f\circ g$, (leído $g$ compuesto con $f$) como la función</p>
+<p>$$\begin{aligned}
+f\circ g:\,&amp; A\longrightarrow C\newline
+&amp; x\longrightarrow f(g(x))\end{aligned}$$</p>
+  </div>
+</div>
+<p>Para calcular la función compuesta $f\circ g(x)$, primero se aplica $g$ sobre $x$ y luego, se aplica $f$ sobre $g(x)$:</p>
+<p>$$x\stackrel{g}{\longrightarrow}g(x)\stackrel{f}{\longrightarrow}f(g(x))$$</p>
+<p><strong>Ejemplo</strong>. Si $g(x)=\sqrt x$ y $f(x)=\operatorname{sen} x$, entonces</p>
+<p>$$f\circ g(x)=f(g(x))=f(\sqrt x)=\operatorname{sen} \sqrt x.$$</p>
+<h3 id="inversa-de-una-función">Inversa de una función</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función inversa</strong>. Se llama <em>función inversa</em> de $f:A\rightarrow B$ a la función $f^{-1}:B\rightarrow A$ (cuando exista) que cumple</p>
+<p>$$f\circ f^{-1}=f^{-1}\circ f=Id(x)$$</p>
+  </div>
+</div>
+<p>La función inversa de $f$ deshace o revierte el efecto de $f$. Es decir, si $f:A\rightarrow B$ asocia un elemento $x\in A$ con otro $y\in B$, entonces $f^{-1}$ asocia el elemento $y$ con el $x$.</p>
+<img src="../img/funciones_elementales/funcion_inversa.png" width="200px" alt="Función inversa" />
+<p><strong>Ejemplo</strong>.
+La inversa de $f(x)=x^3$ es la función $f^{-1}(x)=\sqrt[3]{x}.$ Sin embargo, la inversa de la función $x^2$ no es $\sqrt{x}$ ya que la raíz tiene dos imágenes, una positiva y otra negativa, y por tanto no sería una función. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h1 id="crecimiento-de-una-función">Crecimiento de una función</h1>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función creciente y decreciente</strong>. Se dice que una función $f$ es <em>creciente</em> en un intervalo $I$, si para todo $x_1,x_2\in I$, con $x_1&lt;x_2$, se cumple $f(x_1)\leq f(x_2)$.</p>
+<p>Se dice que una función $f$ es <em>decreciente</em> en un intervalo $I$, si para todo $x_1,x_2\in I$, con $x_1&lt;x_2$, se cumple $f(x_1)\geq f(x_2)$.</p>
+  </div>
+</div>
+<img src="../img/funciones_elementales/funcion_creciente_decreciente.png" width="600px" alt="Gráficas de funciones creciente y decreciente" />
+<h2 id="extremos-de-una-función">Extremos de una función</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Máximo y mínimo relativo</strong>. Se dice que una función $f$ tiene un <em>máximo relativo</em> en $x_0$, si existe un $\delta&gt;0$ tal que para todo $x\in (x_0-\delta,x_0+\delta)$ se cumple $f(x_0)\geq f(x)$.</p>
+<p>Se dice que una función $f$ tiene un <em>mínimo relativo</em> en $x_0$, si existe un $\delta&gt;0$ tal que para todo $x\in (x_0-\delta,x_0+\delta)$ se cumple $f(x_0)\leq f(x)$.</p>
+  </div>
+</div>
+<img src="../img/funciones_elementales/maximo_minimo.png" width="700px" alt="Gráfica del máximo y mínimo de una función" />
+<h2 id="concavidad-de-una-función">Concavidad de una función</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función cóncava y convexa</strong>. Se dice que una función $f$ es <em>cóncava</em> en un intervalo $I$, si para todo $x_1,x_2\in I$, con $x_1&lt;x_2$, se cumple que el segmento que une los puntos $(x_1,f(x_1))$ y $(x_2,f(x_2))$ queda por encima de la gráfica de $f$.</p>
+<p>Se dice que una función $f$ es <em>convexa</em> en un intervalo $I$, si para todo $x_1,x_2\in I$, con $x_1&lt;x_2$, se cumple que el segmento que une
+los puntos $(x_1,f(x_1))$ y $(x_2,f(x_2))$ queda por debajo de la gráfica de $f$.</p>
+<p>Al punto donde cambia la concavidad de una función se le llama <em>punto de inflexión</em>.</p>
+  </div>
+</div>
+<img src="../img/funciones_elementales/funcion_concava_convexa.png" width="700px" alt="Gráfica de una función cóncava y otra convexa" />
+<h2 id="funciones-periódicas">Funciones periódicas</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función periódica y periodo</strong>. Se dice que una función $f$ es <em>periódica</em> si existe un valor $h&gt;0$ tal que</p>
+<p>$$f(x+h)=f(x)$$</p>
+<p>para todo $x\in \textrm{Dom}(f)$.</p>
+<p>Al menor valor de $h$ que verifica la igualdad anterior se le llama <em>periodo</em> de $f$, y a la diferencia entre el máximo y el mínimo de la función se le llama <em>amplitud</em> de $f$.</p>
+  </div>
+</div>
+<img src="../img/funciones_elementales/funcion_periodica.png" width="500px" alt="Función inversa" />
+<h2 id="funciones-polinómicas">Funciones polinómicas</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función polinómica</strong>. Una <em>función polinómica</em> es una función de la forma</p>
+<p>$$f(x)=a_0+a_1x+a_2x^2+\cdots+a_nx^n,$$</p>
+<p>donde $n$ es un entero no negativo que se llama <em>grado del polinomio</em>, y $a_0,\ldots,a_n$ son constantes reales ($a_n\neq 0$) que se llaman <em>coeficientes del polinomio</em>.</p>
+  </div>
+</div>
+<p><strong>Ejemplo</strong>.</p>
+<img src="../img/funciones_elementales/funcion_polinomica.png" width="500px" alt="Gráficas de funciones polinómcias" />
+<h3 id="propiedades-de-las-funciones-polinómicas">Propiedades de las funciones polinómicas</h3>
+<ul>
+<li>Su dominio es $\mathbb{R}$.</li>
+<li>Si el grado es impar, su imagen es $\mathbb{R}$.</li>
+<li>La función identidad $Id(x)=x$ es un polinomio de grado 1.</li>
+<li>Las funciones constantes $f(x)=c$ son polinomios de grado 0.</li>
+<li>Un polinomio de grado $n$ tiene a lo sumo $n$ raíces (puntos donde $f(x)=0$).</li>
+</ul>
+<h2 id="funciones-racionales">Funciones racionales</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función racional</strong>. Una <em>función racional</em> es una función de la forma</p>
+<p>$$f(x)=\frac{p(x)}{q(x)}$$</p>
+<p>donde $p(x)$ y $q(x)$ son funcione polinómicas con $q(x)\neq 0$.</p>
+  </div>
+</div>
+<p><strong>Ejemplo</strong>.</p>
+<img src="../img/funciones_elementales/funcion_racional.png" width="600px" alt="Gráficas de funciones racionales" />
+<h3 id="propiedades-de-las-funciones-racionales">Propiedades de las funciones racionales</h3>
+<ul>
+<li>Su dominio es $\mathbb{R}$ menos las raíces del polinomio del denominador. En estos puntos suele haber asíntotas verticales.</li>
+<li>La tendencia en $\infty$ y $-\infty$ depende del grado del numerador y del denominador.
+Si $f(x)=\dfrac{a_0+\cdots +a_nx^n}{b_0+\cdots+b_mx^m}$, entonces
+<ul>
+<li>Si $n&gt;m$ $\rightarrow$ $f(\pm\infty)=\pm\infty$.</li>
+<li>Si $n&lt;m$ $\rightarrow$ $f(\pm\infty)=0$.</li>
+<li>Si $n=m$ $\rightarrow$ $f(\pm\infty)=\dfrac{a_n}{b_m}$.</li>
+</ul>
+</li>
+<li>Los polinomios son casos particulares de funciones racionales.</li>
+<li>Pueden descomponerse en suma de fracciones simples.</li>
+</ul>
+<h2 id="funciones-potenciales">Funciones potenciales</h2>
+<div class="alert alert-def">
+  <div>
+    <strong>Definición - Función potencial</strong>. Una <em>función potencial</em> es una función de la forma $$f(x)=x^r,$$ donde $r$ es un número real.
+  </div>
+</div>
+<p><strong>Ejemplo</strong>.</p>
+<img src="../img/funciones_elementales/funcion_potencial.png" width="600px" alt="Gráficas de fuciones potenciales" />
+<h3 id="propiedades-de-las-funciones-potenciales">Propiedades de las funciones potenciales</h3>
+<ul>
+<li>Si el exponente es un número racional $n/m$, entonces $$x^{n/m}=\sqrt[m]{x^n}.$$ Estas funciones se llaman <em>irracionales</em>.
+En este caso,
+<ul>
+<li>si $m$ es impar el dominio es $\mathbb{R}$,</li>
+<li>si $m$ es par el dominio es $\mathbb{R}^+$.</li>
+</ul>
+</li>
+<li>Todas pasan por el punto $(1,1)$.</li>
+<li>El crecimiento depende del exponente. Si $x&gt;0$ entonces:
+<ul>
+<li>Exponente positivo $\Rightarrow$ función creciente.</li>
+<li>Exponente negativo $\Rightarrow$ función decreciente.<br>
+Además, si $f(x)=x^r$ y $g(x)=x^s$, entonces:</li>
+<li>Si $r&lt;s$ $\Rightarrow$ $f(x)&gt;g(x)$ si $0&lt;x&lt;1$ y $f(x)&lt;g(x)$ si $x&gt;1$.</li>
+<li>Si $r&gt;s$ $\Rightarrow$ $f(x)&lt;g(x)$ si $0&lt;x&lt;1$ y $f(x)&gt;g(x)$ si $x&gt;1$.</li>
+</ul>
+</li>
+<li>Los polinomios de la forma $f(x)=x^n$ son un caso particular de funciones potenciales.</li>
+</ul>
+<h2 id="funciones-exponenciales">Funciones exponenciales</h2>
+<div class="alert alert-def">
+  <div>
+    <strong>Definición - Función exponencial</strong>. Una <em>función exponencial</em> de base $a$ es una función de la forma $$f(x)=a^x,$$ donde $a$ es un valor real positivo distinto de 1.
+  </div>
+</div>
+<p><strong>Ejemplo</strong>.</p>
+<img src="../img/funciones_elementales/funcion_exponencial.png" width="350px" alt="Gráficas de fuciones exponenciales" />
+<h3 id="propiedades-de-las-funciones-exponenciales">Propiedades de las funciones exponenciales</h3>
+<ul>
+<li>Su dominio es $\mathbb{R}$.</li>
+<li>Su imagen es $\mathbb{R}^+$.</li>
+<li>Todas pasan por el punto $(0,1)$.</li>
+<li>El crecimiento depende de la base. Si $f(x)=a^x$ entonces
+<ul>
+<li>Si $0&lt;a&lt;1$ $\Rightarrow$ función decreciente.</li>
+<li>Si $a&gt;1$ $\Rightarrow$ función creciente.
+Además, si $f(x)=a^x$ y $g(x)=b^x$ con $a&lt;b$, entonces</li>
+<li>Si $x&lt;0$ $\Rightarrow$ $f(x)&gt;g(x)$.</li>
+<li>Si $x&gt;0$ $\Rightarrow$ $f(x)&lt;g(x)$.</li>
+</ul>
+</li>
+<li>Un caso particular sería $a=1$ que es una función constante.</li>
+</ul>
+<h2 id="funciones-logarítmicas">Funciones logarítmicas</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función logarítmica</strong>. Dada una función exponencial $f(x)=a^x$, se define la <em>función logarítmica</em> de base $a$ como la función inversa de $f$, y se denota</p>
+<p>$$f^{-1}(x)=\log_a x,$$</p>
+<p>donde $a$ es un valor real positivo distinto de 1.</p>
+  </div>
+</div>
+<p><strong>Ejemplo</strong>.</p>
+<img src="../img/funciones_elementales/funcion_logaritmica.png" width="550px" alt="Gráficas de fuciones logarítmicas" />
+<h3 id="propiedades-de-las-funciones-logarítmicas">Propiedades de las funciones logarítmicas</h3>
+<ul>
+<li>Por ser la inversa de la función exponencial, sus gráficas son simétricas respecto a la bisectriz del primer y tercer cuadrantes. Por tanto:
+<ul>
+<li>Su dominio es la imagen de la función exponencial, es decir $\mathbb{R}^+$.</li>
+<li>Su imagen es el dominio de la función exponencial, es decir $\mathbb{R}$.</li>
+</ul>
+</li>
+<li>Todas pasan por el punto $(1,0)$.</li>
+<li>El crecimiento depende de la base. Si $f(x)=\log_a x$ entonces
+<ul>
+<li>Si $0&lt;a&lt;1$ $\Rightarrow$ función decreciente.</li>
+<li>Si $a&gt;1$ $\Rightarrow$ función creciente.
+Además, si $f(x)=\log_a x$ y $g(x)=\log_b x$ con $a&lt;b$, entonces</li>
+<li>Si $0&lt;x&lt;1$ $\Rightarrow$ $f(x)&lt;g(x)$.</li>
+<li>Si $x&gt;1$ $\Rightarrow$ $f(x)&gt;g(x)$</li>
+</ul>
+</li>
+<li>No tiene sentido para $a=1$ por que sería una función constante.</li>
+</ul>
+<h2 id="funciones-trigonométricas">Funciones trigonométricas</h2>
+<p>Surgen en geometría al medir las relaciones entre los catetos de un triángulo rectángulo, que dependen del ángulo del cateto contiguo y la
+hipotenusa de dicho triángulo. No obstante, esta no es la única definición posible, sino que también pueden definirse a partir de la función exponencial compleja.</p>
+<ul>
+<li>Seno</li>
+<li>Coseno</li>
+<li>Tangente</li>
+<li>Arcoseno</li>
+<li>Arcocoseno</li>
+<li>Arcotangente</li>
+</ul>
+<h3 id="seno-de-un-ángulo">Seno de un ángulo</h3>
+<div class="alert alert-def">
+  <div>
+    <strong>Definición - Seno de un ángulo</strong>. Sea $\alpha$ cualquiera de los ángulos agudos de un triángulo rectángulo, se define el <em>seno</em> de $\alpha$, y se nota $\operatorname{sen} \alpha$, como el cociente entre el cateto opuesto y la hipotenusa.
+  </div>
+</div>
+<img src="../img/funciones_elementales/seno_triangulo.png" width="150px" alt="Definición del seno en un triángulo rectángulo" />
+<p>La definición se extiende fácilmente a ángulos de circunferencia con vértice en el origen y uno de sus lados el eje $OX$, como el cociente entre la ordenada de cualquier punto del otro lado y su distancia al vértice.</p>
+<img src="../img/funciones_elementales/seno_circunferencia.png" width="200px" alt="Definición del seno en la circunferencia" />
+<h3 id="función-seno">Función seno</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función seno</strong>. Se define la función <em>seno</em>,</p>
+<p>$$f(x)=\operatorname{sen} x$$</p>
+<p>como la función que asocia a cada ángulo $x$ (habitualmente medido en radianes) su seno.</p>
+  </div>
+</div>
+<img src="../img/funciones_elementales/funcion_seno.png" width="600px" alt="Gráfica de la función seno" />
+<h3 id="propiedades-de-la-función-seno">Propiedades de la función seno</h3>
+<ul>
+<li>Su dominio es $\mathbb{R}$.</li>
+<li>Su imagen es el intervalo $[-1,1]$.</li>
+<li>Es periódica, con periodo $2\pi$ y amplitud $2$</li>
+</ul>
+<p>$$\operatorname{sen} (x+2k\pi)= \operatorname{sen} x\quad \forall k\in \mathbb{Z}$$</p>
+<ul>
+<li>Algunos valores para recordar: $\operatorname{sen} 0=0$, $\operatorname{sen} \pi/6= 1/2$, $\operatorname{sen} \pi/4=\sqrt{2}/2$, $\operatorname{sen} \pi/3= \sqrt{3}/2$, $\operatorname{sen} \pi/2 =1$, $\operatorname{sen} \pi = 0$, $\operatorname{sen} 3\pi/2=-1$, $\operatorname{sen} 2\pi=0$.</li>
+<li>Es una función impar: $\operatorname{sen}(-x)=-\operatorname{sen} x$.</li>
+</ul>
+<h3 id="coseno-de-un-ángulo">Coseno de un ángulo</h3>
+<div class="alert alert-def">
+  <div>
+    <strong>Definición - Coseno de un ángulo</strong>. Sea $\alpha$ cualquiera de los ángulos agudos de un triángulo rectángulo, se define el <em>coseno</em> de $\alpha$, y se nota $\cos \alpha$, como el cociente entre el cateto contiguo y la hipotenusa.
+  </div>
+</div>
+<img src="../img/funciones_elementales/coseno_triangulo.png" width="150px" alt="Definición del coseno en un triángulo rectángulo" />
+<p>La definición se extiende fácilmente a ángulos de circunferencia con vértice en el origen y uno de sus lados el eje $OX$, como el cociente entre la abscisa de cualquier punto del otro lado y su distancia al vértice.</p>
+<img src="../img/funciones_elementales/coseno_circunferencia.png" width="200px" alt="Definición del coseno en la circunferencia" />
+<h3 id="función-coseno">Función coseno</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función coseno</strong>. Se define la función <em>coseno</em>,</p>
+<p>$$f(x)=\cos x$$</p>
+<p>como la función que asocia a cada ángulo $x$ (habitualmente medido en radianes) su coseno.</p>
+  </div>
+</div>
+<img src="../img/funciones_elementales/funcion_coseno.png" width="600px" alt="Gráfica de la función coseno" />
+<h3 id="propiedades-de-la-función-coseno">Propiedades de la función coseno</h3>
+<ul>
+<li>
+<p>Su dominio es $\mathbb{R}$.</p>
+</li>
+<li>
+<p>Su imagen es el intervalo $[-1,1]$.</p>
+</li>
+<li>
+<p>Es periódica, con periodo $2\pi$ y amplitud $2$</p>
+<p>$$\cos (x+2k\pi)= \cos x\quad \forall k\in \mathbb{Z}$$</p>
+</li>
+<li>
+<p>Algunos valores para recordar: $\cos 0=1$, $\cos \pi/6= \sqrt{3}/2$, $\cos \pi/4=\sqrt{2}/2$, $\cos \pi/3= \sqrt{2}/2$, $\cos \pi/2 =0$, $\cos \pi = -1$, $\cos 3\pi/2=0$, $\cos 2\pi=1$.</p>
+</li>
+<li>
+<p>Es una función par: $\cos(-x)=\cos x$.</p>
+</li>
+</ul>
+<h3 id="tangente-de-un-ángulo">Tangente de un ángulo</h3>
+<div class="alert alert-def">
+  <div>
+    <strong>Definición - Tangente de un ángulo</strong>. Sea $\alpha$ cualquiera de los ángulos agudos de un triángulo rectángulo, se define la <em>tangente</em> de $\alpha$, y se nota $\operatorname{tg} \alpha$, como el cociente entre el cateto opuesto y el cateto contiguo.
+  </div>
+</div>
+<img src="../img/funciones_elementales/tangente_triangulo.png" width="150px" alt="Definición de la tangente en un triángulo rectángulo" />
+<p>La definición se extiende fácilmente a ángulos de circunferencia con vértice en el origen y uno de sus lados el eje $OX$, como el cociente entre la ordenada y la abscisa de cualquier punto del otro lado.</p>
+<img src="../img/funciones_elementales/tangente_circunferencia.png" width="200px" alt="Definición de la tangente en la circunferencia" />
+<h3 id="función-tangente">Función tangente</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función tangente</strong>. Se define la función <em>tangente</em>,</p>
+<p>$$f(x)=\operatorname{tg} x=\frac{\operatorname{sen} x}{\cos x}$$</p>
+<p>como la función que asocia a cada ángulo $x$ (habitualmente medido en radianes) su tangente.</p>
+  </div>
+</div>
+<img src="../img/funciones_elementales/funcion_tangente.png" width="450px" alt="Gráfica de la función tangente" />
+<h3 id="propiedades-de-la-función-tangente">Propiedades de la función tangente</h3>
+<ul>
+<li>
+<p>Su dominio es $\mathbb{R}$ menos las raíces del coseno, es decir $\mathbb{R}-{2k\pi/2: k\in \mathbb{Z}}$.</p>
+</li>
+<li>
+<p>Su imagen es $\mathbb{R}$.</p>
+</li>
+<li>
+<p>Es periódica, con periodo $2\pi$</p>
+<p>$$\operatorname{tg} (x+2k\pi)= \operatorname{tg} x\quad \forall k\in \mathbb{Z}$$</p>
+</li>
+<li>
+<p>Algunos valores para recordar: $\operatorname{tg} 0=0$, $\operatorname{tg} \pi/6= 1/\sqrt{3}$, $\operatorname{tg} \pi/4=1$, $\operatorname{tg} \pi/3= \sqrt{3}$, $\operatorname{tg} \pi =0$, $\operatorname{tg} 2\pi=0$.</p>
+</li>
+</ul>
+<h3 id="función-arcoseno">Función arcoseno</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función arcoseno</strong>. Se define la función <em>arcoseno</em>,</p>
+<p>$$f(x)=\operatorname{arcsen} x$$</p>
+<p>como la función inversa de la función seno.</p>
+  </div>
+</div>
+<img src="../img/funciones_elementales/funcion_arcoseno.png" width="400px" alt="Gráfica de la función arcoseno" />
+<h3 id="propiedades-de-la-función-arcoseno">Propiedades de la función arcoseno</h3>
+<ul>
+<li>Por ser la inversa de la función seno, sus gráficas son simétricas respecto a la bisectriz del primer y tercer cuadrantes. Por tanto:
+<ul>
+<li>Su dominio es la imagen de la función seno, es decir $[-1,1]$.</li>
+<li>Su imagen es el dominio restringido de la función seno, es decir $[-\pi/2,\pi/2]$.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
+</ul>
+</li>
+<li>Es creciente en todo el dominio.</li>
+</ul>
+<h3 id="función-arcocoseno">Función arcocoseno</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función arcocoseno</strong>. Se define la función <em>arcocoseno</em>,</p>
+<p>$$f(x)=\operatorname{arccos} x$$</p>
+<p>como la función inversa de la función coseno.</p>
+  </div>
+</div>
+<img src="../img/funciones_elementales/funcion_arcocoseno.png" width="350px" alt="Gráfica de la función arcocoseno" />
+<h3 id="propiedades-de-la-función-arcoseno-1">Propiedades de la función arcoseno</h3>
+<ul>
+<li>Por ser la inversa de la función coseno, sus gráficas son simétricas respecto a la bisectriz del primer y tercer cuadrantes. Por tanto:
+<ul>
+<li>Su dominio es la imagen de la función coseno, es decir $[-1,1]$.</li>
+<li>Su imagen es el dominio restringido de la función coseno, es decir $[0,\pi]$. <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+</ul>
+</li>
+<li>Es decreciente en todo el dominio.</li>
+</ul>
+<h3 id="función-arcotangente">Función arcotangente</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función arcotangente</strong>. Se define la función <em>arcotangente</em>,</p>
+<p>$$f(x)=\operatorname{arctg} x$$</p>
+<p>como la función inversa de la función tangente.</p>
+  </div>
+</div>
+<img src="../img/funciones_elementales/funcion_arcotangente.png" width="400px" alt="Gráfica de la función arcotangente" />
+<h3 id="propiedades-de-la-función-arcotangente">Propiedades de la función arcotangente</h3>
+<ul>
+<li>Por ser la inversa de la función tangente, sus gráficas son simétricas respecto a la bisectriz del primer y tercer cuadrantes. Por tanto:
+<ul>
+<li>Su dominio es la imagen de la función tangente, es decir $\mathbb{R}$.</li>
+<li>Su imagen es el dominio restringido de la función tangente, es decir $(-\pi/2,\pi/2)$. <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></li>
+</ul>
+</li>
+<li>Es creciente en todo el dominio.</li>
+</ul>
+<h3 id="algunas-relaciones-trigonométricas">Algunas relaciones trigonométricas</h3>
+<ul>
+<li>$\operatorname{sen}^2 x+\cos^2 x=1$</li>
+<li>$\operatorname{sen}(x+y)=\operatorname{sen} x \cos y+\cos x \operatorname{sen} y$</li>
+<li>$\cos(x+y)=\cos x \cos y-\operatorname{sen} x \operatorname{sen} y$</li>
+<li>$\operatorname{tg} (x+y)= \dfrac{\operatorname{tg} x+\operatorname{tg} y}{1-\operatorname{tg} x \operatorname{tg} y}$</li>
+<li>$\operatorname{sen} x + \operatorname{sen} y = 2 \operatorname{sen} \dfrac{x+y}{2}\cos\dfrac{x-y}{2}$</li>
+<li>$\cos x + \cos y = 2 \cos \dfrac{x+y}{2}\cos\dfrac{x-y}{2}$</li>
+<li>$\cos x - \cos y = -2 \operatorname{sen} \dfrac{x+y}{2}\operatorname{sen}\dfrac{x-y}{2}$</li>
+</ul>
+<p><strong>Notas</strong></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Para que exista la inversa de la función cuadrática es necesario restringir el dominio a los reales positivos para que sea inyectiva. En tal caso, la inversa es $+\sqrt{x}$.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Para que exista la inversa de la función seno, es necesario restringir su dominio a $[-\pi/2,\pi/2]$ para que sea inyectiva.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Para que exista la inversa de la función coseno, es necesario restringir su dominio a $[0,\pi]$ para que sea inyectiva.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Para que exista la inversa de la función tangente, es necesario restringir su dominio a $(\pi/2,\pi/2)$ para que sea inyectiva.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/funcion/">Función</a>
+  
+</div>
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Anterior</div>
+    <a href="/docencia/calculo/manual/geometria-analitica/" rel="next">Geometría Analítica</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Siguiente</div>
+    <a href="/docencia/calculo/manual/limites-continuidad/" rel="prev">Límites y continuidad</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Última actualización el Sep 25, 2020</p>
+
+          
+
+
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "aprendeconalf" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt="CC SA icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No se encontraron resultados","placeholder":"Buscar...","results":"resultados encontrados"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Proyectos",
+        'publication' : "Publicaciones",
+        'talk' : "Charlas",
+        'slides' : "Diapositivas"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://aprendeconalf.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.f79ea001fad4564ac91850b0b5a8f31c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

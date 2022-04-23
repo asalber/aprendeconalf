@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probability | Aprende con Alf</title>
+    <link>/en/tag/probability/</link>
+      <atom:link href="/en/tag/probability/index.xml" rel="self" type="application/rss+xml" />
+    <description>Probability</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Probability</title>
+      <link>/en/tag/probability/</link>
+    </image>
+    
+    <item>
+      <title>Problems of Probability</title>
+      <link>/en/teaching/statistics/problems/probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/problems/probability/</guid>
+      <description>&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise 1&lt;/h2&gt;
+&lt;p&gt;Construct the sample space of the following random experiments:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pick a random person and record the gender and whether she or he is smoker or not.&lt;/li&gt;
+&lt;li&gt;Pick a random person and record the blood type and whether she or he is smoker or not.&lt;/li&gt;
+&lt;li&gt;Pick a random person and record the gender, the blood type and whether she or he is smoker or not.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise 2&lt;/h2&gt;
+&lt;p&gt;There are two boxes with balls of different colors. The first box contains 3 white balls and 2 black balls, and the second one contains 2 blue balls, 1 red ball and 1 green ball. Construct the sample space of the following random experiments:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pick a random ball from every box.&lt;/li&gt;
+&lt;li&gt;Pick two random balls from every box.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise 3&lt;/h2&gt;
+&lt;p&gt;The Morgan’s laws state that given two events $A$ and $B$ from the same sample space, $\overline{A\cup B}=\bar A \cap \bar B$ and $\overline{A\cap B}=\bar A \cup \bar B$. Proof both statements graphically using Venn diagrams.&lt;/p&gt;
+&lt;h2 id=&#34;exercise-4&#34;&gt;Exercise 4&lt;/h2&gt;
+&lt;p&gt;Compute the probability of the following events of the random experiment consisting in tossing 3 coins:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Get exactly 1 head.&lt;/li&gt;
+&lt;li&gt;Get exactly 2 tails.&lt;/li&gt;
+&lt;li&gt;Get two or more heads.&lt;/li&gt;
+&lt;li&gt;Get some tails.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(\mbox{1 head})=0.375$.&lt;/li&gt;
+&lt;li&gt;$P(\mbox{2 tails})=0.375$.&lt;/li&gt;
+&lt;li&gt;$P(\mbox{2 or more heads})=0.5$.&lt;/li&gt;
+&lt;li&gt;$P(\mbox{some tails})=0.875$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-5&#34;&gt;Exercise 5&lt;/h2&gt;
+&lt;p&gt;In a laboratory there are 4 flasks with sulfuric acid and 2 with nitric acid, and in another laboratory there are 1 flask with sulfuric acid and 3 with nitric acid. A random experiment consist in picking two flask, one from every laboratory. Compute the probability of the following events:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The two picked flasks are of sulfuric acid.&lt;/li&gt;
+&lt;li&gt;The two picked flasks are of nitric acid.&lt;/li&gt;
+&lt;li&gt;The two picked flasks contains different acids.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Compute again the above probabilities if the flask picked in the first laboratory is put in the second laboratory before picking the flask from it.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(\mbox{Two flasks of sulfuric acid})=4/24$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\mbox{Two flasks of nitric acid})=6/24$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\mbox{One flask  of each})=14/24$.&lt;br/&gt;
+Putting the first flask in the second laboratory:&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\mbox{Two flasks of sulfuric acid})=8/30$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\mbox{Two flasks of nitric acid})=8/30$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\mbox{One flask  of each})=14/30$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-6&#34;&gt;Exercise 6&lt;/h2&gt;
+&lt;p&gt;Let $A$ and $B$ two be events of a same sample space, such that $P(A)=3/8$, $P(B)=1/2$, $P(A\cap B)=1/4$. Compute the following probabilities:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(A\cup B)$.&lt;/li&gt;
+&lt;li&gt;$P(\bar A)$ y $P(\bar B)$.&lt;/li&gt;
+&lt;li&gt;$P(\bar A\cap \bar B)$.&lt;/li&gt;
+&lt;li&gt;$P(A\cap \bar B)$.&lt;/li&gt;
+&lt;li&gt;$P(A\vert B)$.&lt;/li&gt;
+&lt;li&gt;$P(A\vert \bar B)$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(A\cup B)=5/8$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\bar A)=5/8$ and $P(\bar B)=1/2$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\bar A\cap \bar B)=3/8$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(A\cap \bar B)=1/8$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(A\vert B)=1/2$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(A\vert \bar B)=1/4$.&lt;br/&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-7&#34;&gt;Exercise 7&lt;/h2&gt;
+&lt;p&gt;In a hospital the probability of getting hepatitis in a blood transfusion from a unit of blood is $0.01$. A patient gets two units of blood while staying at the hospital. What is the probability of getting hepatitis?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      $P(\mbox{Hepatitis})=0.0199$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-8&#34;&gt;Exercise 8&lt;/h2&gt;
+&lt;p&gt;Let $A$ and $B$ be two events of a same sample space, such that $P(A)=0.6$ and $P(A\cup B)=0.9.$ Compute $P(B)$ under the following assumptions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$A$ and $B$ are incompatible.&lt;/li&gt;
+&lt;li&gt;$A$ and $B$ are independent.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(B)=0.3$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(B)=0.75$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-9&#34;&gt;Exercise 9&lt;/h2&gt;
+&lt;p&gt;A study about smoking has found that 40% of smokers have a smoker father, 25% have a smoker mother and 52% have al least one of the parents smoker. We pick a random person from this population. Answer the following questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is the probability of having a smoker mother if the father smokes?&lt;/li&gt;
+&lt;li&gt;What is the probability of having a smoker mother if the father does not smoke?&lt;/li&gt;
+&lt;li&gt;Are independent the events having a smoker father and having a smoker mother?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Naming $SF$ tho the event of having a smoker father and $SM$ to the event of having a smoker mother,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(SM/SF)=0.325$.&lt;/li&gt;
+&lt;li&gt;$P(SM/\bar SF)=0.2$.&lt;/li&gt;
+&lt;li&gt;The events aren&amp;rsquo;t independent.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-10&#34;&gt;Exercise 10&lt;/h2&gt;
+&lt;p&gt;The probability that an injury $A$ is repeated is $4/5$, the probability that another injury $B$ is repeated is $1/2$, and the probability that both injuries are repeated is $1/3$. Compute the probability of the following events:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Only injury $B$ is repeated.&lt;/li&gt;
+&lt;li&gt;At least one injury is repeated.&lt;/li&gt;
+&lt;li&gt;Injury $B$ is repeated if injury $A$ has been repeated.&lt;/li&gt;
+&lt;li&gt;Injury $B$ is repeated if injury $A$ has not been repeated.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(B\cap\overline A)=1/6$.&lt;/li&gt;
+&lt;li&gt;$P(A\cup B)=29/30$.&lt;/li&gt;
+&lt;li&gt;$P(B\vert A)=5/12$.&lt;/li&gt;
+&lt;li&gt;$P(B\vert \overline A)=5/6$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-11&#34;&gt;Exercise 11&lt;/h2&gt;
+&lt;p&gt;In a digestive clinic, from every 1000 patients that arrive with stomach pain, 700 have gastritis, 200 have an ulcer and 100 have cancer. After analyzing the gastric symptoms, it is known that the probability of vomiting is $0.3$ in case of gastritis, $0.6$ in case of ulcer and $0.9$ in case of cancer. What is the diagnosis for a new patient with stomach pain that suffers from vomiting?&lt;/p&gt;
+&lt;p&gt;Note: Assume that the only diseases are gastritis, ulcer and cancer and that are incompatible among them.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Let $G$, $U$ and $C$ be the events of having gastritis, ulcer and cander respectively, and let $V$ be the event of vomiting, $P(G/V)=0.5$, $P(U/V)=0.286$ and $P(C/V)=0.214$, so, the diagnosis is gastritis.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-12&#34;&gt;Exercise 12&lt;/h2&gt;
+&lt;p&gt;A severe pain without effusion in a particular zone of the knee joint is a symptom of sprained lateral collateral ligament (SLCL). If the sprains in that ligament are classified into grade 1, when there is only distension (60% of cases), grade 2 when there is a partial tearing (30% of cases) and grade 3 when there is a complete tearing (10% of cases). Taking into account that the symptom appears in 80% of cases of grade 1 sprains, 90% of cases of grade 2 and 100% of cases of grade 3, answer the following questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If a person has SLCL what is the probability that he or she present severe pain without effusion?&lt;/li&gt;
+&lt;li&gt;What is the diagnosis for a person with severe pain without effusion?&lt;/li&gt;
+&lt;li&gt;From a total of 10000 people with severe pain without effusion, how many are expected to have a grade 1 sprain? How many are expected to have a grade 2 sprain? And a grade 3 sprain?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-8&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-8&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-8&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Naming $S$ to the event of presenting severe pain without effusion, and $G1$, $G2$ and $G3$ to the events of having a SLCL of grade 1, 2 and 3 respectively,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(S)=0.85$.&lt;/li&gt;
+&lt;li&gt;$P(G1\vert S)=0.5647$, $P(G2\vert S)=0.3176$ and $P(G3\vert S)=0.1176$, so the diagnosis is a SLCL of grade 1.&lt;/li&gt;
+&lt;li&gt;$5647.0588$ will have a grade 1 sprain, $3176.4706$ will have a grade 2 sprain and $1176.4706$ will have a grade 3 sprain.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-13&#34;&gt;Exercise 13&lt;/h2&gt;
+&lt;p&gt;A physiotherapist uses two techniques $A$ and $B$ to cure an injury. It is known that the injury is 3 times more frequent in people over 30 than in people under 30. It is also known that in people over 30 technique $A$ works in 30% of cases and technique $B$ in 60%, while in people under 30 technique $A$ works in 50% of cases and technique $B$ in 70%. If both techniques are applied with the same probability, no matter the age,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is the probability that a random person under 30 is cured? And for a people over 30?&lt;/li&gt;
+&lt;li&gt;What is the probability that a random person is cured?&lt;/li&gt;
+&lt;li&gt;If after applying a technique to a person over 30, the person does not cure, what is the probability that the technique applied was $A$?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-9&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-9&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-9&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Naming $J$ to the event of being under 30, $C$ to the event of being cured, and $A$ and $B$ to the events of applying techniques $A$ and $B$ respectively,&lt;br&gt;
+$P(C\vert J)=0.45.$ and $P(C\vert \bar J)=0.6$. &lt;br /&gt;
+$P(C)=0.5625$.&lt;br&gt;
+$P(A/\bar J\cap \bar C)=0.625$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problems Diagnostic Tests</title>
+      <link>/en/teaching/statistics/problems/diagnostic_tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/problems/diagnostic_tests/</guid>
+      <description>&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise 1&lt;/h2&gt;
+&lt;p&gt;A test was applied to a sample of people in order to evaluate its effectiveness; the results are as follows:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{l|cc}
+&amp;amp; \mbox{Test }+ &amp;amp; \mbox{Test }- \newline
+\hline
+\mbox{Sick} &amp;amp; 2020 &amp;amp; 140 \newline&lt;/p&gt;
+&lt;p&gt;\mbox{Healthy} &amp;amp; 80 &amp;amp; 7760 \newline
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;Calculate for this test:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The sensitivity and the specificity.&lt;/li&gt;
+&lt;li&gt;The positive and negative predictive value.&lt;/li&gt;
+&lt;li&gt;The probability of a correct diagnosis.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Naming $S$ and $H$ to the events of being sick and healthy respectively,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sensitivity $P(+\vert S)=0.9352$ and specificity $P(-\vert H)=0.9898$.&lt;/li&gt;
+&lt;li&gt;PPV $P(S\vert +)=0.9619$ and NPV $P(H\vert -)=0.9823$.&lt;/li&gt;
+&lt;li&gt;$P((S\cap +)\cup (H\cap -)) = P(S\cap +) + P(H\cap -) = 0.978$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise 2&lt;/h2&gt;
+&lt;p&gt;We know, from a research study, that 10% of people over 50 suffer a particular type or arthritis. We have developed a new method to detect the disease and after clinical trials we observe that if we apply the method to people with arthritis we get a positive result in 85% of cases, while if we apply the method to people without arthritis, we get a positive result in 4% of cases. Answer the following questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is the probability of getting a positive result after applying the method to a random person?&lt;/li&gt;
+&lt;li&gt;If the result of applying the method to one person has been positive, what is the probability of having arthritis?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Naming $A$ to the event of having arthritis,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(+)=0.121$.&lt;/li&gt;
+&lt;li&gt;$P(A\vert +) = 0.7025$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise 3&lt;/h2&gt;
+&lt;p&gt;We have two different test $A$ and $B$ to diagnose a disease. Test $A$ have a sensitivity of 98% and a specificity of 80%, while test $B$ have a sensitivity of 75% and a specificity of 99%.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Which test is better to confirm the disease?&lt;/li&gt;
+&lt;li&gt;Which test is better to rule out the disease?&lt;/li&gt;
+&lt;li&gt;Often a test is used to discard the presence of the disease in a large amount of people apparently healthy. This type of test is known as &lt;em&gt;screening test&lt;/em&gt;. Which test will work better as a screening test? What are the predictive values of this test if the prevalence of the disease is 0.01? And if the prevalence of de disease is 0.2?&lt;/li&gt;
+&lt;li&gt;The positive predictive value of a screening test used to be not too high. How can we combine the tests $A$ and $B$ to have a higher confidence in the diagnosis of the disease? Calculate the post-test probability of having the disease with the combination of both thest, if the outcome of both test is positive for a prevalence of 0.01.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;Test $B$ cause it has a greater specificity.&lt;/li&gt;
+&lt;li&gt;Test $A$ cause it has a greater sensitivity.&lt;/li&gt;
+&lt;li&gt;Test $A$ will perform better as a screening test.&lt;br&gt;
+For a prevalence of $0.01$ the PPV is $P(D\vert +)=0.0472$ and the NPV is $P(\bar D\vert -)=0.9997$.&lt;br&gt;
+For a prevalence of $0.2$ the PPV is $P(D\vert +)=0.5506$ and the NPV is $P(\bar D\vert -)=0.9938$.&lt;/li&gt;
+&lt;li&gt;First applying test $A$ to everybody and then applying test $B$ to positive cases of test $A$.&lt;br&gt;
+$P(D\vert +_A\cap +_B)=0.7878$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

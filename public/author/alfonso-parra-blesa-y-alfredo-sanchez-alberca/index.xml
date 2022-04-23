@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alfonso Parra Blesa y Alfredo Sánchez Alberca | Aprende con Alf</title>
+    <link>/author/alfonso-parra-blesa-y-alfredo-sanchez-alberca/</link>
+      <atom:link href="/author/alfonso-parra-blesa-y-alfredo-sanchez-alberca/index.xml" rel="self" type="application/rss+xml" />
+    <description>Alfonso Parra Blesa y Alfredo Sánchez Alberca</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Alfonso Parra Blesa y Alfredo Sánchez Alberca</title>
+      <link>/author/alfonso-parra-blesa-y-alfredo-sanchez-alberca/</link>
+    </image>
+    
+    <item>
+      <title>Análisis estadístico inferencial y descriptivo de las capas retinianas; glaucoma versus no glaucoma</title>
+      <link>/publication/analisis-2018-2/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/analisis-2018-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clasificación por estadios del glaucoma primario de ángulo abierto usando valores normalizados del anillo BMO</title>
+      <link>/publication/clasificacion-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/clasificacion-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

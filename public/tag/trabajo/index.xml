@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trabajo | Aprende con Alf</title>
+    <link>/tag/trabajo/</link>
+      <atom:link href="/tag/trabajo/index.xml" rel="self" type="application/rss+xml" />
+    <description>Trabajo</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language><lastBuildDate>Thu, 01 Jan 1970 01:33:40 +0100</lastBuildDate>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Trabajo</title>
+      <link>/tag/trabajo/</link>
+    </image>
+    
+    <item>
+      <title>Airbnb Madrid</title>
+      <link>/docencia/python/trabajos/inteligencia-negocios/madrid-airbnb1/</link>
+      <pubDate>Thu, 01 Jan 1970 01:33:40 +0100</pubDate>
+      <guid>/docencia/python/trabajos/inteligencia-negocios/madrid-airbnb1/</guid>
+      <description>&lt;p&gt;El objetivo de este trabajo es comprobar si se está utilizando la plataforma Airbnb por parte de empresas, en lugar de particulares, para alquiler turístico en el centro de Madrid.&lt;/p&gt;
+&lt;h3 id=&#34;conjunto-de-datos&#34;&gt;Conjunto de datos&lt;/h3&gt;
+&lt;p&gt;Datos abiertos de Inside Airbnb: &lt;a href=&#34;../datos/madrid-airbnb-listings-small.csv&#34;&gt;Fichero alojamientos Madrid detallado&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;requisitos-obligatorios&#34;&gt;Requisitos obligatorios&lt;/h3&gt;
+&lt;p&gt;Sin usar Pandas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Extraer del fichero de alojamientos una lista con todos los alojamientos, donde cada alojamiento sea un diccionario que contenga el identificador del alojamiento, el identificador del anfitrión, el distrito, el precio y las plazas.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba la lista de alojamientos y devuelva el número de alojamientos en cada distrito.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba la lista de alojamientos y un número de ocupantes y devuelva la lista de alojamientos con un número de plazas mayor o igual que el número de ocupantes.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba la lista de alojamientos un distrito, y devuelva los 10 alojamientos más baratos del distrito.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba la lista de alojamientos y devuelva un diccionario con los anfitriones y el número de alojamientos que posee cada uno.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Usando Pandas:&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Preprocesar el fichero de alojamientos para crear un data frame con las variables id, host_id, listing_url, room_type, neighbourhood_group_cleansed, price, cleaning_fee, accommodates, minimum_nights, minimum_cost, review_scores_rating, latitude, longitude, is_location_exact. Eliminar del data frame cualquier fila incompleta. Añadir al data frame nuevas variables con el coste mínimo por noche y por persona (que incluya los gastos de limpieza).&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba una lista de distritos y devuelva un diccionario con los tipos de alojamiento en ese distrito y el porcentaje de alojamientos de ese tipo.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba una lista de distritos y devuelva un diccionario con el número de alojamientos que cada anfitrión ofrece en esos distrito, ordenado de más a menos alojamientos.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba devuelva un diccionario con el número medio de alojamientos por anfitrión de cada distrito.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba una lista de distritos y dibuje un diagrama de sectores con los porcentajes de tipos de alojamientos en esos distritos.&lt;/li&gt;
+&lt;li&gt;Crear una función que dibuje un diagrama de barras con el número de alojamientos por distritos.&lt;/li&gt;
+&lt;li&gt;Crear una función que dibuje un diagrama de barras con los porcentajes acumulados de tipos de alojamientos por distritos.&lt;/li&gt;
+&lt;li&gt;Crear una función reciba una lista de distritos y una lista de tipos de alojamientos, y dibuje un diagrama de sectores con la distribución del número de alojamientos de ese tipo por anfitrión.&lt;/li&gt;
+&lt;li&gt;Crear una función que dibuje un diagrama de barras con los precios medios por persona y día de cada distrito.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba una lista de distritos y dibuje un gráfico de dispersión con el coste mínimo por noche y persona y la puntuación en esos distritos.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba una lista de distritos y dibuje dos histogramas con la distribución de precios por persona y día, uno para los alojamientos con título en inglés y otro para los alojamientos con títulos en español. Si la distribución es muy asimétrica, aplicar una transformación logarítmica. ¿Hay diferencias entre los precios de los alojamientos en inglés y el español? Nota: Para identificar el idioma puede usare el módulo langdetect.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;solución&#34;&gt;Solución&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/trabajos/inteligencia-negocios/soluciones/madrid-airbnb1.ipynb&#34; class=&#34;btn btn-info&#34; target=&#34;_blank&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Abrir con &lt;a href=&#34;https://repl.it/@asalber/madrid-airbnb1py&#34;&gt;&lt;img src=&#34;/media/logo-replit.png#left&#34; alt=&#34;Abrir con repl.it&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Deuda Pública</title>
+      <link>/docencia/python/trabajos/inteligencia-negocios/deuda-publica/</link>
+      <pubDate>Thu, 01 Jan 1970 01:33:40 +0100</pubDate>
+      <guid>/docencia/python/trabajos/inteligencia-negocios/deuda-publica/</guid>
+      <description>&lt;p&gt;El objetivo de este trabajo es hacer un análisis del endeudamiento público por países.&lt;/p&gt;
+&lt;h2 id=&#34;conjunto-de-datos&#34;&gt;Conjunto de datos&lt;/h2&gt;
+&lt;p&gt;Datos del banco mundial: 
+&lt;a href=&#34;../datos/deuda.csv&#34;&gt;Deuda pública países&lt;/a&gt; y 
+&lt;a href=&#34;../datos/pib.csv&#34;&gt;PIB países&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;requisitos&#34;&gt;Requisitos&lt;/h2&gt;
+&lt;p&gt;Sin usar la librería Pandas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Crear una función que reciba un país y un tipo de deuda y devuelva un diccionario con todos los periodos y la cantidad de deuda en esos periodos de ese país y tipo de deuda.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un país y un tipo de deuda y devuelva un diccionario con el mínimo y el máximo de deuda de ese tipo para ese país.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un país y un año, y devuelva un diccionario con la deuda interna y la deuda externa de ese país en ese año.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un país y un año, y devuelva un diccionario con la deuda en moneda local y la deuda en moneda extranjera de ese país en ese año.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Usando Pandas:&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Preprocesar el fichero de deuda pública para obtener un data frame con el país, el tipo de deuda, la fecha y la cantidad de deuda.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un país y una fecha y devuelva un diccionario con la deuda total interna, externa, en moneda local, en moneda extranjera, a corto plazo y a largo plazo, de ese país en esa fecha.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un tipo de deuda y una fecha, y devuelva un diccionario con la deuda de ese tipo de todos los países en esa fecha.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un país y una fecha y dibuje un diagrama de sectores con la deuda interna y la deuda externa de ese país en esa fecha.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un país y una fecha, y dibuje un diagrama de barras con las cantidades de los distintos tipos de deudas de ese país en esa fecha.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba una lista de países y un tipo de deuda y dibuje un diagrama de líneas con la evolución de ese tipo de deuda de esos países (una línea por país).&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un país y una lista de tipos de deuda y dibuje un diagrama de líneas con la evolución de esos tipos de deuda de ese país (una línea por tipo de deuda).&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba una lista de países y una lista de tipos de deuda, y dibuje un diagrama de cajas con las deudas de esos tipos de esos países (una caja por país y tipo de deuda).&lt;/li&gt;
+&lt;li&gt;Preprocesar el fichero del PIB crear un data frame con el país, la fecha y el PIB.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un país y dibuje la evolución de la deuda pública total como porcentaje del PIB.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un país devuelva un diccionario con los años y si el endeudamiento en esa fecha era insostenible. Se considera un endeudamiento insostenible si durante los tres años anteriores el porcentaje de deuda pública con respecto al PIB es superior al 20%.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;solución&#34;&gt;Solución&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/trabajos/inteligencia-negocios/soluciones/deuda-publica.ipynb&#34; class=&#34;btn btn-info&#34; target=&#34;_blank&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Abrir con &lt;a href=&#34;https://repl.it/@asalber/deudapy&#34;&gt;&lt;img src=&#34;/media/logo-replit.png#left&#34; alt=&#34;Abrir con repl.it&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Contratos menores de Madrid</title>
+      <link>/docencia/python/trabajos/inteligencia-negocios/contratos-menores-madrid/</link>
+      <pubDate>Thu, 01 Jan 1970 01:33:39 +0100</pubDate>
+      <guid>/docencia/python/trabajos/inteligencia-negocios/contratos-menores-madrid/</guid>
+      <description>&lt;p&gt;El objetivo de este trabajo es hacer un análisis de los contratos menores del Ayuntamiento de Madrid desde 2015 para hacer una comparativa por años y ver qué empresas han resultado más beneficiadas.&lt;/p&gt;
+&lt;h3 id=&#34;conjunto-de-datos&#34;&gt;Conjunto de datos&lt;/h3&gt;
+&lt;p&gt;Datos abiertos del Ayuntamiento de Madrid: 
+&lt;a href=&#34;../datos/contratos-menores-madrid.csv&#34;&gt;Contratos menores&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Deben usarse los datos desde 2015.&lt;/p&gt;
+&lt;h3 id=&#34;requisitos-obligatorios&#34;&gt;Requisitos obligatorios&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Crear una función que reciba una empresa y una lista de años y devuelva un diccionario con el número de contratos y el total facturado por la empresa esos años.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba una sección y una lista de años y devuelva un diccionario con el número de contratos y el total facturado a la sección esos años.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba una empresa, una sección y una lista de años y devuelva un diccionario con el número de contratos y el total facturado por la empresa a la sección esos años.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba una rango de años y un número entero n e imprima la lista de las n empresas que más han facturado durante esos años ordenadas de mayor a menor facturación y genere un gráfico con esa información.&lt;/li&gt;
+&lt;li&gt;Crear una función reciba una rango de años y un número entero n y genere un gráfico con la evolución anual del total facturado por las n empresas que más han facturado.&lt;/li&gt;
+&lt;li&gt;Crear una función reciba una rango de años y genere un gráfico con la evolución anual del total facturado a las secciones.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;solución&#34;&gt;Solución&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/trabajos/inteligencia-negocios/soluciones/contratos-menores-madrid.ipynb&#34; class=&#34;btn btn-info&#34; target=&#34;_blank&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Abrir con &lt;a href=&#34;https://repl.it/@asalber/contratos-menores-madrid&#34;&gt;&lt;img src=&#34;/media/logo-replit.png#left&#34; alt=&#34;Abrir con repl.it&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Emisiones de Madrid</title>
+      <link>/docencia/python/trabajos/inteligencia-negocios/emisiones-madrid/</link>
+      <pubDate>Thu, 01 Jan 1970 01:33:39 +0100</pubDate>
+      <guid>/docencia/python/trabajos/inteligencia-negocios/emisiones-madrid/</guid>
+      <description>&lt;p&gt;El objetivo de este trabajo es comprobar si las restricciones de tráfico establecidas en Madrid Central han servido para reducir significativamente las emisiones de gases contaminantes.&lt;/p&gt;
+&lt;h3 id=&#34;conjunto-de-datos&#34;&gt;Conjunto de datos&lt;/h3&gt;
+&lt;p&gt;Datos abiertos del Ayuntamiento de Madrid: 
+&lt;a href=&#34;../datos/emisiones-madrid.csv&#34;&gt;Calidad del aire. Datos diarios años 2001 a 2019&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;requisitos&#34;&gt;Requisitos&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Crear una función que reciba una estación de medición y una magnitud y devuelva una lista con todas las mediciones de la magnitud en la estación.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un mes y una estación de medición y devuelva un diccionario con las medias de las magnitudes medidas por la estación durante ese mes.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un mes y una magnitud y devuelva un diccionario con las medias de las estaciones de medición de la magnitud durante ese mes.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un rango de fechas y una estación de medición y genere un gráfico con la evolución diaria de las magnitudes de esa estación en las fechas indicadas.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un rango de fechas y una magnitud y genere un gráfico con la evolución diaria de la magnitud para cada estación de medición en las fechas indicadas.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba una magnitud y genere un gráfico con las medias mensuales para cada estación de medición.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba un mes y una magnitud y devuelva un diccionario con las medias de la magnitud dentro de Madrid Central y fuera de ella.&lt;/li&gt;
+&lt;li&gt;Crear una función que reciba una magnitud y genere un gráfico con las medias mensuales dentro de Madrid Central y fuera de ella.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;solución&#34;&gt;Solución&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/trabajos/inteligencia-negocios/soluciones/emisiones-madrid.ipynb&#34; class=&#34;btn btn-info&#34; target=&#34;_blank&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Abrir con &lt;a href=&#34;https://repl.it/@asalber/emisiones-madrid&#34;&gt;&lt;img src=&#34;/media/logo-replit.png#left&#34; alt=&#34;Abrir con repl.it&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

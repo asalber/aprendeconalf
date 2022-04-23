@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Libro | Aprende con Alf</title>
+    <link>/tag/libro/</link>
+      <atom:link href="/tag/libro/index.xml" rel="self" type="application/rss+xml" />
+    <description>Libro</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Libro</title>
+      <link>/tag/libro/</link>
+    </image>
+    
+    <item>
+      <title>Libro de Bioestadística Aplicada con SPSS</title>
+      <link>/docencia/spss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/spss/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;images/libro_bioestadistica_spss.jpg&#34; alt=&#34;Libro Bioestadística Aplicada con SPSS&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;
+&lt;p&gt;El análisis de datos en cualquier Ciencia Experimental o de la Salud es imprescindible para la compresión de los fenómenos biológicos, físicos o químicos.
+Las nuevas tecnologías han hecho posible el desarrollo de programas capaces de recopilar, organizar y analizar enormes cantidades de datos con poco esfuerzo. SPSS es uno de los programas de análisis estadísticos más utilizados, sobre todo en el ámbito de las ciencias biosanitarias.
+Este libro presenta las principales técnicas Estadísticas, tanto de Estadística Descriptiva como de Inferencia Estadística, aplicadas con SPSS a multitud de ejemplos del ámbito de las Ciencias de la Salud, desarrollados paso a paso.&lt;/p&gt;
+&lt;h2 id=&#34;tabla-de-contenidos&#34;&gt;Tabla de contenidos&lt;/h2&gt;
+&lt;p&gt;1 Introducción a SPSS&lt;br&gt;
+1.1 Introducción&lt;br&gt;
+1.2 Funciones básicas&lt;br&gt;
+1.2.1 Arranque&lt;br&gt;
+1.2.2 Introducción de datos&lt;br&gt;
+1.2.3 Guardar datos&lt;br&gt;
+1.2.4 Recuperar datos&lt;br&gt;
+1.2.5 Modificación de datos&lt;br&gt;
+1.2.6 Transformación y generación de datos&lt;br&gt;
+1.2.7 Recodificación de datos&lt;br&gt;
+1.2.8 Impresión&lt;br&gt;
+1.2.9 Salir del programa&lt;br&gt;
+1.2.10 Ayuda&lt;br&gt;
+1.3 Ejercicios resueltos&lt;br&gt;
+2 Distribuciones de Frecuencias y Gráficas&lt;br&gt;
+2.1 Fundamentos teóricos&lt;br&gt;
+2.1.1 Cálculo de frecuencias&lt;br&gt;
+2.1.2 Representaciones gráficas&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de barras y polígono de frecuencias&lt;/li&gt;
+&lt;li&gt;Histogramas&lt;/li&gt;
+&lt;li&gt;Diagrama de sectores&lt;/li&gt;
+&lt;li&gt;Diagrama de caja y datos atípicos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2.2 Ejercicios resueltos&lt;br&gt;
+2.3 Ejercicios propuestos&lt;br&gt;
+3 Estadísticos Muestrales&lt;br&gt;
+3.1 Fundamentos teóricos&lt;br&gt;
+3.1.1 Medidas de posición&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Media aritmética&lt;/li&gt;
+&lt;li&gt;Mediana&lt;/li&gt;
+&lt;li&gt;Moda&lt;/li&gt;
+&lt;li&gt;Cuantiles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3.1.2 Medidas de dispersión&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rango o Recorrido&lt;/li&gt;
+&lt;li&gt;Rango intercuartílico&lt;/li&gt;
+&lt;li&gt;Varianza&lt;/li&gt;
+&lt;li&gt;Desviación típic&lt;/li&gt;
+&lt;li&gt;Coeficiente de variación de Pearson&lt;/li&gt;
+&lt;li&gt;Medidas de forma&lt;/li&gt;
+&lt;li&gt;Coeficiente de asimetría de Fisher&lt;/li&gt;
+&lt;li&gt;Coeficiente de apuntamiento o curtosis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3.1.4 Estadísticos por grupos&lt;br&gt;
+3.2 Ejercicios resueltos&lt;br&gt;
+3.3 Ejercicios propuestos&lt;br&gt;
+4 Regresión Lineal Simple y Correlación&lt;br&gt;
+4.1 Fundamentos teóricos&lt;br&gt;
+4.1.1 Regresión&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rectas de regresión&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4.1.2 Correlación&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Varianza residual&lt;/li&gt;
+&lt;li&gt;Coeficiente de determinación&lt;/li&gt;
+&lt;li&gt;Coeficiente de determinación lineal&lt;/li&gt;
+&lt;li&gt;Coeficiente de correlación&lt;/li&gt;
+&lt;li&gt;Fiabilidad de las predicciones&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4.2 Ejercicios resueltos&lt;br&gt;
+4.3 Ejercicios propuestos&lt;br&gt;
+5 Regresión No Lineal&lt;br&gt;
+5.1 Fundamentos teóricos&lt;br&gt;
+5.2 Ejercicios resueltos&lt;br&gt;
+5.3 Ejercicios propuestos&lt;br&gt;
+6 Variables Aleatorias Discretas&lt;br&gt;
+6.1 Fundamentos teóricos&lt;br&gt;
+6.1.1 Variables aleatorias&lt;br&gt;
+6.1.2 Variables aleatorias discretas&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Función de probabilidad&lt;/li&gt;
+&lt;li&gt;Función de distribución&lt;/li&gt;
+&lt;li&gt;Estadísticos poblacionales&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;6.1.3 Variable Binomial&lt;br&gt;
+6.1.4 Variable de Poisson&lt;br&gt;
+6.2 Ejercicios resueltos&lt;br&gt;
+6.3 Ejercicios propuestos&lt;br&gt;
+7 Variables Aleatorias Continuas&lt;br&gt;
+7.1 Fundamentos teóricos&lt;br&gt;
+7.1.1 Variables aleatorias&lt;br&gt;
+7.1.2 Variables aleatorias continuas&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Función de densidad&lt;/li&gt;
+&lt;li&gt;Función de distribución&lt;/li&gt;
+&lt;li&gt;Estadísticos poblacionales&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;7.1.3 Distribución Uniforme Continua&lt;br&gt;
+7.1.4 Distribución Normal&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Distribución Chi-cuadrado&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;7.1.5 Distribución T de Student&lt;br&gt;
+7.1.6 Distribución F de Fisher-Snedecor&lt;br&gt;
+7.2 Ejercicios resueltos&lt;br&gt;
+7.3 Ejercicios propuestos&lt;br&gt;
+8 Intervalos de Confianza para Medias y Proporciones&lt;br&gt;
+8.1 Fundamentos teóricos&lt;br&gt;
+8.1.1 Inferencia estadística y estimación de parámetros&lt;br&gt;
+8.1.2 Intervalos de confianza&lt;br&gt;
+8.1.3 Intervalos de confianza para la media&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Intervalo de confianza para la media de una población normal con varianza conocida en muestras de cualquier tamaño&lt;/li&gt;
+&lt;li&gt;Intervalo de confianza para la media de una población normal con varianza desconocida en muestras de cualquier tamaño&lt;/li&gt;
+&lt;li&gt;Intervalo de confianza para la media de una población no normal, varianza conocida y muestras grandes&lt;/li&gt;
+&lt;li&gt;Intervalo de confianza para la media de una población no normal, varianza desconocida y muestras grandes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;8.1.4 Intervalos de confianza para una proporción poblacional&lt;br&gt;
+8.2 Ejercicios resueltos&lt;br&gt;
+8.3 Ejercicios propuestos&lt;br&gt;
+9 Intervalos de Confianza para Comparar Poblaciones&lt;br&gt;
+9.1 Fundamentos teóricos&lt;br&gt;
+9.1.1 Inferencia estadística aplicada a la comparación de poblaciones&lt;br&gt;
+9.1.2 Intervalos de confianza para la diferencia de medias de poblaciones independientes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Intervalo de confianza para la diferencia de medias en poblaciones normales, con varianzas poblacionales conocidas, independientemente del tamaño de la muestra&lt;/li&gt;
+&lt;li&gt;Intervalo de confianza para la diferencia de medias en poblaciones normales, con varianzas poblacionales desconocidas, independientemente del tamaño de la muestra&lt;/li&gt;
+&lt;li&gt;Intervalo de confianza para la diferencia de medias en poblaciones no normales y muestras grandes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;9.1.3 Intervalos de confianza para la media de la diferencia en poblaciones emparejadas&lt;br&gt;
+9.1.4 Intervalos de confianza para la diferencia de proporciones&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Intervalo de confianza para la razón de dos varianzas de poblaciones normales&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;9.2 Ejercicios resueltos&lt;br&gt;
+9.3 Ejercicios propuestos&lt;br&gt;
+10 Contraste de Hipótesis&lt;br&gt;
+10.1 Fundamentos teóricos&lt;br&gt;
+10.1.1Inferencia estadística y contrastes de hipótesis&lt;br&gt;
+10.1.2 Tipos de contrastes de hipótesis&lt;br&gt;
+10.1.3 Elementos de un contraste&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hipótesis nula e hipótesis alternativa&lt;/li&gt;
+&lt;li&gt;Errores en un contraste. Nivel de significación y potencia&lt;/li&gt;
+&lt;li&gt;Estadístico del contraste y regiones de aceptación y rechazo&lt;/li&gt;
+&lt;li&gt;El p-valor de un contraste&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;10.1.4 Contrastes para la media de una población&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contraste para la media de una población normal con varianza conocida&lt;/li&gt;
+&lt;li&gt;Contraste para la media de una población normal con varianza desconocida&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;10.1.5 Contrastes para una proporción de una población&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contraste para la proporción en muestras grandes y distribuciones simétricas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;10.1.6Contrastes para la varianza de una población&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contraste para la varianza de una población normal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;10.1.7 Contrastes para la comparación de medias poblacionales&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contraste para la comparación de medias de poblaciones normales con varianzas conocidas&lt;/li&gt;
+&lt;li&gt;Contraste para la comparación de medias de poblaciones normales con varianzas desconocidas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;10.1.8 Contrastes para la comparación de proporciones poblacionales&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contraste para la comparación de proporciones en muestras grandes y distribuciones simétricas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;10.1.9Contrastes para la comparación de varianzas poblacionales&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contraste para la comparación de varianzas de poblaciones normales&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;10.2 Ejercicios resueltos&lt;br&gt;
+10.3 Ejercicios propuestos&lt;br&gt;
+11 Análisis de la Varianza de un Factor&lt;br&gt;
+11.1 Fundamentos teóricos&lt;br&gt;
+11.1.1 El contraste de ANOVA&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tabla de ANOVA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;11.1.2 Test de comparaciones múltiples y por parejas&lt;br&gt;
+11.2 Ejercicios resueltos&lt;br&gt;
+11.3 Ejercicios propuestos&lt;br&gt;
+12 Contrastes de Hipótesis No Paramétricos&lt;br&gt;
+12.1 Fundamentos teóricos&lt;br&gt;
+12.1.1 Contrastes no paramétricos más habituales&lt;br&gt;
+12.1.2 Aleatoriedad de una muestra: Contraste de rachas&lt;br&gt;
+12.1.3 Contrastes de normalidad&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Estadísticos de asimetría y curtosis&lt;/li&gt;
+&lt;li&gt;Contraste de Kolmogorov-Smirnov y corrección de Lilliefors&lt;/li&gt;
+&lt;li&gt;Contraste de Shapiro-Wilk&lt;/li&gt;
+&lt;li&gt;Gráficos Q-Q y P-P de comparación con la distribución normal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;12.1.4 Contraste de la U de Mann-Whitney para la comparación de dos poblaciones independientes&lt;br&gt;
+12.1.5 Contraste de Wilcoxon para la comparación de dos poblaciones emparejadas&lt;br&gt;
+12.1.6 Contraste de Kruskal-Wallis para la comparación de varias poblaciones independientes&lt;br&gt;
+12.1.7 Contraste de Friedman para la comparación de medidas repetidas&lt;br&gt;
+12.1.8 Contraste de Levene para la comparación de varianzas&lt;br&gt;
+12.1.9 El coeficiente de correlación de Spearman&lt;br&gt;
+12.2 Ejercicios resueltos&lt;br&gt;
+12.3 Ejercicios propuestos&lt;br&gt;
+13 Contrastes Basados en el Estadístico Chi-cuadrado&lt;br&gt;
+13.1 Fundamentos teóricos&lt;br&gt;
+13.1.1 Contraste Chi-cuadrado de Pearson para ajuste de distribuciones&lt;br&gt;
+13.1.2 Contraste Chi-cuadrado en tablas de contingencia&lt;br&gt;
+13.1.3 Contraste exacto de Fisher&lt;br&gt;
+13.1.4 Contraste de McNemar para datos emparejados&lt;br&gt;
+13.2 Ejercicios Resueltos&lt;br&gt;
+13.3 Ejercicios propuestos&lt;br&gt;
+14 Análisis de Concordancia&lt;br&gt;
+14.1 Fundamentos teóricos&lt;br&gt;
+14.1.1 Introducción&lt;br&gt;
+14.1.2 Concordancia entre dos variables cuantitativas: Coeficiente de correlación intraclase&lt;br&gt;
+14.1.3 Concordancia entre dos variables cualitativas: Kappa de Cohen&lt;br&gt;
+14.1.4 Concordancia entre dos variables cualitativas ordinales: Kappa ponderado&lt;br&gt;
+14.2 Ejercicios resueltos&lt;br&gt;
+14.3 Ejercicios propuestos&lt;/p&gt;
+&lt;h2 id=&#34;autores&#34;&gt;Autores&lt;/h2&gt;
+&lt;p&gt;Santiago Angulo Díaz Parreño&lt;br&gt;
+José Miguel Cárdenas Rebollo&lt;br&gt;
+Anselomo Romero Limón&lt;br&gt;
+Alfredo Sánchez Alberca&lt;/p&gt;
+&lt;p&gt;Los autores son profesores del Departamento de Matemática Aplicada y Estadística de la Universidad CEU San Pablo.
+Imparten las asignaturas de Matemáticas y Estadística en las facultades de Farmacia y Medicina.
+Son miembros de la Unidad de Bioestadística de esta universidad en la que han realizado multitud de trabajos de investigación aplicados a las Ciencias de la Salud.&lt;/p&gt;
+&lt;h2 id=&#34;capítulo-de-muestra&#34;&gt;Capítulo de muestra&lt;/h2&gt;
+&lt;p&gt;Descarga el siguiente capítulo de muestra para tener una idea del contenido del libro.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;capitulo_regresion.pdf&#34;&gt;Regresión Lineal Simple y Correlación&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;dónde-adquirirlo&#34;&gt;¿Dónde adquirirlo?&lt;/h2&gt;
+&lt;p&gt;El libro puede adquirirse en la página web de 
+&lt;a href=&#34;https://www.ceuediciones.es/catalogo/libros/medicina/bioestadistica-aplicada-con-spss/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CEU Ediciones&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

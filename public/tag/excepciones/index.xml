@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Excepciones | Aprende con Alf</title>
+    <link>/tag/excepciones/</link>
+      <atom:link href="/tag/excepciones/index.xml" rel="self" type="application/rss+xml" />
+    <description>Excepciones</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Excepciones</title>
+      <link>/tag/excepciones/</link>
+    </image>
+    
+    <item>
+      <title>Excepciones</title>
+      <link>/docencia/python/manual/excepciones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/manual/excepciones/</guid>
+      <description>&lt;h2 id=&#34;control-de-errores-mediante-excepciones&#34;&gt;Control de errores mediante excepciones&lt;/h2&gt;
+&lt;p&gt;Python utiliza un objeto especial llamado &lt;strong&gt;excepción&lt;/strong&gt; para controlar cualquier error que pueda ocurrir durante la ejecución de un programa.&lt;/p&gt;
+&lt;p&gt;Cuando ocurre un error durante la ejecución de un programa, Python crea una excepción. Si no se controla esta excepción la ejecución del programa se detiene y se muestra el error (&lt;em&gt;traceback&lt;/em&gt;).&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; print(1 / 0)  # Error al intentar dividir por 0.
+Traceback (most recent call last):
+  File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 1, in &amp;lt;module&amp;gt;
+ZeroDivisionError: division by zero
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;tipos-de-excepciones&#34;&gt;Tipos de excepciones&lt;/h3&gt;
+&lt;p&gt;Los principales excepciones definidas en Python son:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;TypeError&lt;/code&gt; : Ocurre cuando se aplica una operación o función a un dato del tipo inapropiado.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ZeroDivisionError&lt;/code&gt; : Ocurre cuando se itenta dividir por cero.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;OverflowError&lt;/code&gt; : Ocurre cuando un cálculo excede el límite para un tipo de dato numérico.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;IndexError&lt;/code&gt; : Ocurre cuando se intenta acceder a una secuencia con un índice que no existe.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KeyError&lt;/code&gt; : Ocurre cuando se intenta acceder a un diccionario con una clave que no existe.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FileNotFoundError&lt;/code&gt; : Ocurre cuando se intenta acceder a un fichero que no existe en la ruta indicada.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ImportError&lt;/code&gt; : Ocurre cuando falla la importación de un módulo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Consultar la documentaciónde Python para ver la 
+&lt;a href=&#34;https://docs.python.org/3/library/exceptions.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lista de exepciones predefinidas&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;control-de-excepciones&#34;&gt;Control de excepciones&lt;/h3&gt;
+&lt;h4 id=&#34;try---except---else&#34;&gt;&lt;code&gt;try - except - else&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;Para evitar la interrución de la ejecución del programa cuando se produce un error, es posible controlar la exepción que se genera con la siguiente instrucción:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;try:&lt;/code&gt;&lt;br&gt;
+     &lt;em&gt;bloque código 1&lt;/em&gt;&lt;br&gt;
+&lt;code&gt;except&lt;/code&gt; &lt;em&gt;excepción&lt;/em&gt;&lt;code&gt;:&lt;/code&gt;&lt;br&gt;
+     &lt;em&gt;bloque código 2&lt;/em&gt;&lt;br&gt;
+&lt;code&gt;else:&lt;/code&gt;&lt;br&gt;
+     &lt;em&gt;bloque código 3&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Esta instrucción ejecuta el primer bloque de código y si se produce un error que genera una excepción del tipo &lt;em&gt;excepción&lt;/em&gt; entonces ejecuta el segundo bloque de código, mientras que si no se produce ningún error, se ejecuta el tercer bloque de código.&lt;/p&gt;
+&lt;h3 id=&#34;control-de-excepciones-1&#34;&gt;Control de excepciones&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def division(a, b):
+...     try:
+...         result = a / b
+...     except ZeroDivisionError:
+...         print(&#39;¡No se puede dividir por cero!&#39;)
+...     else:
+...         print(result)
+...
+&amp;gt;&amp;gt;&amp;gt; division(1, 0)
+¡No se puede dividir por cero!
+&amp;gt;&amp;gt;&amp;gt; division(1, 2)
+0.5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; try:
+...     f = open(&#39;fichero.txt&#39;)  # El fichero no existe
+... except FileNotFoundError:
+...     print(&#39;¡El fichero no existe!&#39;)
+... else:
+...     print(f.read())
+¡El fichero no existe!
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

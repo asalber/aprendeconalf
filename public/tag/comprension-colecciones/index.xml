@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Comprensión Colecciones | Aprende con Alf</title>
+    <link>/tag/comprension-colecciones/</link>
+      <atom:link href="/tag/comprension-colecciones/index.xml" rel="self" type="application/rss+xml" />
+    <description>Comprensión Colecciones</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Comprensión Colecciones</title>
+      <link>/tag/comprension-colecciones/</link>
+    </image>
+    
+    <item>
+      <title>Comprensión de Colecciones</title>
+      <link>/docencia/python/manual/comprension-colecciones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/manual/comprension-colecciones/</guid>
+      <description>&lt;h2 id=&#34;comprensión-de-colecciones&#34;&gt;Comprensión de colecciones&lt;/h2&gt;
+&lt;p&gt;En muchas aplicaciones es habitual aplicar una función o realizar una operación con los elementos de una colección (lista, tupla o diccionario) y obtener una nueva colección de elementos transformados. Aunque esto se puede hacer recorriendo la secuencia con un bucle iterativo, y en programación funcional mediante la función &lt;code&gt;map&lt;/code&gt;, Python incorpora un mecanismo muy potente que permite esto mismo de manera más simple.&lt;/p&gt;
+&lt;h3 id=&#34;comprensión-de-listas&#34;&gt;Comprensión de listas&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[&lt;em&gt;expresion&lt;/em&gt; &lt;code&gt;for&lt;/code&gt; &lt;em&gt;variable&lt;/em&gt; &lt;code&gt;in&lt;/code&gt; &lt;em&gt;lista&lt;/em&gt; &lt;code&gt;if&lt;/code&gt; &lt;em&gt;condicion&lt;/em&gt;]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Esta instrucción genera la lista cuyos elementos son el resultado de evaluar la expresión &lt;em&gt;expresion&lt;/em&gt;, para cada valor que toma la variable &lt;em&gt;variable&lt;/em&gt;, donde &lt;em&gt;variable&lt;/em&gt; toma todos los valores de la lista &lt;em&gt;lista&lt;/em&gt; que cumplen la condición &lt;em&gt;condición&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; [x ** 2 for x in range(10)]
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+&amp;gt;&amp;gt;&amp;gt; [x for x in range(10) if x % 2 == 0]
+[0, 2, 4, 6, 8]
+&amp;gt;&amp;gt;&amp;gt; [x ** 2 for x in range(10) if x % 2 == 0]
+[0, 4, 16, 36, 64]
+&amp;gt;&amp;gt;&amp;gt; notas = {&#39;Carmen&#39;:5, &#39;Antonio&#39;:4, &#39;Juan&#39;:8, &#39;Mónica&#39;:9, &#39;María&#39;: 6, &#39;Pablo&#39;:3}
+&amp;gt;&amp;gt;&amp;gt; [nombre for (nombre, nota) in notas.items() if nota &amp;gt;= 5]
+[&#39;Carmen&#39;, &#39;Juan&#39;, &#39;Mónica&#39;, &#39;María&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;comprensión-de-diccionarios&#34;&gt;Comprensión de diccionarios&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;{&lt;em&gt;expresion-clave&lt;/em&gt;&lt;code&gt;:&lt;/code&gt;&lt;em&gt;expresion-valor&lt;/em&gt; &lt;code&gt;for&lt;/code&gt; &lt;em&gt;variables&lt;/em&gt; &lt;code&gt;in&lt;/code&gt; &lt;em&gt;lista&lt;/em&gt; &lt;code&gt;if&lt;/code&gt; &lt;em&gt;condicion&lt;/em&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Esta instrucción genera el diccionario formado por los pares cuyas claves son el resultado de evaluar la expresión &lt;em&gt;expresion-clave&lt;/em&gt; y cuyos valores son el resultado de evaluar la expresión &lt;em&gt;expresion-valor&lt;/em&gt;, para cada valor que toma la variable &lt;em&gt;variable&lt;/em&gt;, donde &lt;em&gt;variable&lt;/em&gt; toma todos los valores de la lista &lt;em&gt;lista&lt;/em&gt; que cumplen la condición &lt;em&gt;condición&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; {palabra:len(palabra) for palabra in [&#39;I&#39;, &#39;love&#39;, &#39;Python&#39;]}
+{&#39;I&#39;: 1, &#39;love&#39;: 4, &#39;Python&#39;: 6}
+&amp;gt;&amp;gt;&amp;gt; notas = {&#39;Carmen&#39;:5, &#39;Antonio&#39;:4, &#39;Juan&#39;:8, &#39;Mónica&#39;:9, &#39;María&#39;: 6, &#39;Pablo&#39;:3}
+&amp;gt;&amp;gt;&amp;gt; {nombre: nota +1 for (nombre, nota) in notas.items() if nota &amp;gt;= 5])
+{&#39;Carmen&#39;: 6, &#39;Juan&#39;: 9, &#39;Mónica&#39;: 10, &#39;María&#39;: 7}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

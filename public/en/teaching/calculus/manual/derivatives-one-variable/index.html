@@ -1,0 +1,1429 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alfredo Sánchez Alberca">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Concept of derivative Increment  Definition - Increment of a variable. An increment of a variable $x$ is a change in the value of the variable; it is denoted $\Delta x$.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/en/teaching/calculus/manual/derivatives-one-variable/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#6f5499">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700%7CSource Sans Pro:400+400italic%7COpen Sans:400+400italic%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/en/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/en/teaching/calculus/manual/derivatives-one-variable/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@aprendeconalf">
+  <meta property="twitter:creator" content="@aprendeconalf">
+  
+  <meta property="og:site_name" content="Aprende con Alf">
+  <meta property="og:url" content="/en/teaching/calculus/manual/derivatives-one-variable/">
+  <meta property="og:title" content="One variable differential calculus | Aprende con Alf">
+  <meta property="og:description" content="Concept of derivative Increment  Definition - Increment of a variable. An increment of a variable $x$ is a change in the value of the variable; it is denoted $\Delta x$."><meta property="og:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png">
+  <meta property="twitter:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png"><meta property="og:locale" content="en-us">
+  
+    
+    <meta property="article:modified_time" content="2020-11-25T10:04:11&#43;01:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>One variable differential calculus | Aprende con Alf</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/en"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/en"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/en/teaching/calculus/"><span>Calculus</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/statistics/"><span>Statistics</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/R/"><span>R</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/excel/"><span>Excel</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/geogebra/"><span>Geogebra</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+ 
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/en/teaching/calculus/manual/">Calculus Manual</a>
+    <ul class="nav docs-sidenav">
+          <li class=""><a href="/en/teaching/calculus/manual/analytic-geometry/">Analytic Geometry</a></li>
+        
+          <li class="active"><a href="/en/teaching/calculus/manual/derivatives-one-variable/">One variable differential calculus</a></li>
+        
+          <li class=""><a href="/en/teaching/calculus/manual/integrals/">Integral calculus</a></li>
+        
+          <li class=""><a href="/en/teaching/calculus/manual/ordinary-differential-equations/">Ordinary differential equations</a></li>
+        
+          <li class=""><a href="/en/teaching/calculus/manual/derivatives-n-variables/">Several variables differentiable calculus</a></li>
+        </ul>
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#concept-of-derivative">Concept of derivative</a>
+      <ul>
+        <li><a href="#increment">Increment</a></li>
+        <li><a href="#average-rate-of-change">Average rate of change</a></li>
+        <li><a href="#geometric-interpretation-of-the-average-rate-of-change">Geometric interpretation of the average rate of change</a></li>
+        <li><a href="#instantaneous-rate-of-change">Instantaneous rate of change</a></li>
+        <li><a href="#interpretation-of-the-derivative">Interpretation of the derivative</a></li>
+        <li><a href="#geometric-interpretation-of-the-derivative">Geometric interpretation of the derivative</a></li>
+        <li><a href="#kinematic-applications-linear-motion">Kinematic applications: Linear motion</a></li>
+        <li><a href="#kinematic-interpretation-of-the-average-rate-of-change">Kinematic interpretation of the average rate of change</a></li>
+        <li><a href="#kinematic-interpretation-of-the-derivative">Kinematic interpretation of the derivative</a></li>
+      </ul>
+    </li>
+    <li><a href="#algebra-of-derivatives">Algebra of derivatives</a>
+      <ul>
+        <li><a href="#properties-of-the-derivative">Properties of the derivative</a></li>
+        <li><a href="#derivative-of-a-composite-function">Derivative of a composite function</a></li>
+        <li><a href="#derivative-of-the-inverse-of-a-function">Derivative of the inverse of a function</a></li>
+      </ul>
+    </li>
+    <li><a href="#analysis-of-functions">Analysis of functions</a>
+      <ul>
+        <li><a href="#analysis-of-functions-increase-and-decrease">Analysis of functions: increase and decrease</a></li>
+        <li><a href="#analysis-of-functions-relative-extrema">Analysis of functions: relative extrema</a></li>
+        <li><a href="#analysis-of-functions-concavity">Analysis of functions: concavity</a></li>
+      </ul>
+    </li>
+    <li><a href="#function-approximation">Function approximation</a>
+      <ul>
+        <li><a href="#approximating-a-function-with-the-derivative">Approximating a function with the derivative</a></li>
+        <li><a href="#approximating-a-function-by-a-polynomial">Approximating a function by a polynomial</a></li>
+        <li><a href="#approximating-a-function-by-a-polynomial-of-order-0">Approximating a function by a polynomial of order 0</a></li>
+        <li><a href="#approximating-a-function-by-a-polynomial-of-order-1">Approximating a function by a polynomial of order 1</a></li>
+        <li><a href="#approximating-a-function-by-a-polynomial-of-order-2">Approximating a function by a polynomial of order 2</a></li>
+        <li><a href="#approximating-a-function-by-a-polynomial-of-order-n">Approximating a function by a polynomial of order $n$</a></li>
+        <li><a href="#taylor-polynomial-of-order-n">Taylor polynomial of order $n$</a></li>
+        <li><a href="#maclaurin-polynomial-of-order-n">Maclaurin polynomial of order $n$</a></li>
+        <li><a href="#maclaurin-polynomials-of-elementary-functions">Maclaurin polynomials of elementary functions</a></li>
+        <li><a href="#taylor-remainder-and-taylor-formula">Taylor remainder and Taylor formula</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>One variable differential calculus</h1>
+
+          <div class="article-style">
+            <h2 id="concept-of-derivative">Concept of derivative</h2>
+<h3 id="increment">Increment</h3>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Increment of a variable</strong>.  An <em>increment of a variable</em> $x$ is a change in the value of the variable; it is denoted $\Delta x$. The increment of a variable $x$ along an interval $[a,b]$ is given by  $$\Delta x = b-a.$$
+  </div>
+</div>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Increment of a function</strong>. The <em>increment of a function</em> $y=f(x)$ along an interval $[a,b]\subseteq Dom(f)$ is given by $$\Delta y = f(b)-f(a).$$
+  </div>
+</div>
+<p><strong>Example</strong>. The increment of $x$ along the interval $[2,5]$ is $\Delta x=5-2=3$, and the increment of the function $y=x^2$ along the same interval is $\Delta y=5^2-2^2=21$.</p>
+<h3 id="average-rate-of-change">Average rate of change</h3>
+<p>The study of a function $y=f(x)$ requires to understand how the function changes, that is, how the dependent variable $y$ changes when we change the independent variable $x$.</p>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Average rate of change</strong>. The <em>average rate of change</em> of a function $y=f(x)$ in an interval $[a,a+\Delta x]\subseteq Dom(f)$, is the quotient between the increment of $y$ and the increment of $x$ in that interval; it is denoted by $$\mbox{ARC}\;f[a,a+\Delta x]=\frac{\Delta y}{\Delta x}=\frac{f(a+\Delta x)-f(a)}{\Delta x}.$$
+  </div>
+</div>
+<p><strong>Example - Area of a square</strong>. Let $y=x^2$ be the function that measures the area of a metallic square of side length $x$.</p>
+<p>If at any given time the side of the square is $a$, and we heat the square uniformly increasing the side by dilatation a quantity $\Delta x$, how much will increase the area of the square?</p>
+<p>$$
+\Delta y = f(a+\Delta x)-f(a)=(a+\Delta x)^2-a^2=
+a^2+2a\Delta x+\Delta x^2-a^2=2a\Delta x+\Delta x^2.
+$$</p>
+<p>What is the average rate of change in the interval $[a,a+\Delta x]$? $$\mbox{ARC}\;f[a,a+\Delta x]=\frac{\Delta y}{\Delta x}=\frac{2a\Delta x+\Delta x^2}{\Delta x}=2a+\Delta x.$$</p>
+<img src="../img/derivatives1/square_area_variation.svg" alt="Variation of the area of a square" width="300">
+<h3 id="geometric-interpretation-of-the-average-rate-of-change">Geometric interpretation of the average rate of change</h3>
+<p>The average rate of change of a function $y=f(x)$ in an interval $[a,a+\Delta x]$ is the slope of the <em>secant</em> line to the graph of $f$ through the points $(a,f(a))$ and $(a+\Delta x,f(a+\Delta x))$.</p>
+<img src="../img/derivatives1/secant_line.svg" alt="Secant line to a function" width="500">
+<h3 id="instantaneous-rate-of-change">Instantaneous rate of change</h3>
+<p>Often it is interesting to study the rate of change of a function, not in an interval, but in a point.</p>
+<p>Knowing the tendency of change of a function in an instant can be used to predict the value of the function in nearby instants.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Instantaneous rate of change and derivative</strong>.  The <em>instantaneous rate of change</em> of a function $f$ in a point $a$, is the limit of the average rate of change of $f$ in the interval $[a,a+\Delta x]$, when $\Delta x$ approaches 0; it is denoted by</p>
+<p>$$
+\begin{aligned}
+\textrm{IRC}\;f (a) &amp;= \lim_{\Delta x\rightarrow 0} \textrm{ARC}\; f[a,a+\Delta x]=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}=\newline
+&amp;= \lim_{\Delta x\rightarrow 0}\frac{f(a+\Delta x)-f(a)}{\Delta x}.
+\end{aligned}
+$$</p>
+<p>When this limit exists, the function $f$ is said to be <em>differentiable</em> at the point $a$, and its value is called the <em>derivative</em> of $f$ at $a$, and it is denoted $f&rsquo;(a)$ (Lagrange’s notation) or $\frac{df}{dx}(a)$ (Leibniz’s notation).</p>
+  </div>
+</div>
+<p><strong>Example - Area of a square</strong>. Let us take again the function $y=x^2$ that measures the area of a metallic square of side $x$.</p>
+<p>If at any given time the side of the square is $a$, and we heat the square uniformly increasing the side, what is the tendency of change of the area in that moment?</p>
+<p>$$\begin{aligned}
+\textrm{IRC}\;f(a)&amp;=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x} = \lim_{\Delta x\rightarrow 0}\frac{f(a+\Delta x)-f(a)}{\Delta x} =\newline
+&amp;= \lim_{\Delta x\rightarrow 0}\frac{2a\Delta x+\Delta x^2}{\Delta x}=\lim_{\Delta x\rightarrow 0} 2a+\Delta x= 2a.
+\end{aligned}
+$$</p>
+<p>Thus, $$f&rsquo;(a)=\frac{df}{dx}(a)=2a,$$ indicating that the area of the square tends to increase the double of the side.</p>
+<h3 id="interpretation-of-the-derivative">Interpretation of the derivative</h3>
+<div class="alert alert-int">
+  <div>
+    <p>The derivative of a function $f&rsquo;(a)$ shows the growth rate of $f$ at point $a$:</p>
+<ul>
+<li>$f&rsquo;(a)&gt;0$ indicates an increasing tendency ($y$ increases as $x$ increases).</li>
+<li>$f&rsquo;(a)&lt;0$ indicates a decreasing tendency ($y$ decreases as $x$ increases).</li>
+</ul>
+  </div>
+</div>
+<p><strong>Example</strong>. A derivative $f&rsquo;(a)=3$ indicates that $y$ tends to increase triple of $x$ at point $a$. A derivative $f&rsquo;(a)=-0.5$ indicates that $y$ tends to decrease half of $x$ at point $a$.</p>
+<h3 id="geometric-interpretation-of-the-derivative">Geometric interpretation of the derivative</h3>
+<p>We have seen that the average rate of change of a function $y=f(x)$ in an interval $[a,a+\Delta x]$ is the slope of the secant line, but when $\Delta x$ approaches $0$, the secant line becomes the tangent line.</p>
+<p>The instantaneous rate of change or derivative of a function $y=f(x)$ at $x=a$ is the slope of the <em>tangent line</em> to the graph of $f$ at point $(a,f(a))$. Thus, the equation of the tangent line to the graph of $f$ at the point $(a,f(a))$ is $$y-f(a) = f&rsquo;(a)(x-a) \Leftrightarrow y = f(a)+f&rsquo;(a)(x-a)$$</p>
+<img src="../img/derivatives1/tangent_line.svg" alt="Tangent line to a function" width="450">
+<h3 id="kinematic-applications-linear-motion">Kinematic applications: Linear motion</h3>
+<p>Assume that the function $y=f(t)$ describes the position of an object moving in the real line at time $t$. Taking as reference the coordinates origin $O$ and the unitary vector $\mathbf{i}=(1)$, we can represent the position of the moving object $P$ at every moment $t$ with a vector $\vec{OP}=x\mathbf{i}$ where $x=f(t)$.</p>
+<img src="../img/derivatives1/linear_motion.svg" alt="Linear motion" width="500">
+<p><strong>Remark</strong>. It also makes sense when $f$ measures other magnitudes as the temperature of a body, the concentration of a gas, or the quantity of substance in a chemical reaction at every moment $t$.</p>
+<h3 id="kinematic-interpretation-of-the-average-rate-of-change">Kinematic interpretation of the average rate of change</h3>
+<p>In this context, if we take the instants $t=t_0$ and $t=t_0+\Delta t$, both in $\mbox{Dom}(f)$, the vector $$\mathbf{v}_m=\frac{f(t_0+\Delta t)-f(t_0)}{\Delta t}$$ is known as the <em>average velocity</em> of the trajectory $f$ in the interval $[t_0, t_0+\Delta t]$.</p>
+<p><strong>Example</strong>. A vehicle makes a trip from Madrid to Barcelona. Let $f(t)$ be the function that determine the position of the vehicle at every moment $t$. If the vehicle departs from Madrid (km 0) at 8:00 and arrives at Barcelona (km 600) at 14:00, then the average velocity of the vehicle in the path is $$\mathbf{v}_m=\frac{f(14)-f(8)}{14-8}=\frac{600-0}{6} = 100 km/h.$$</p>
+<h3 id="kinematic-interpretation-of-the-derivative">Kinematic interpretation of the derivative</h3>
+<p>In the same context of the linear motion, the derivative of the function $f(t)$ at the moment $t_0$ is the vector</p>
+<p>$$\mathbf{v}=f&rsquo;(t_0)=\lim_{\Delta t\rightarrow 0}\frac{f(t_0+\Delta t)-f(t_0)}{\Delta t},$$</p>
+<p>that is known, as long as the limit exists, as the <em>instantaneous velocity</em> or simply <em>velocity</em> of the trajectory $f$ at moment $t_0$.</p>
+<p>That is, the derivative of the object position with respect to time is a vector field that is called <em>velocity along the trajectory $f$</em>.</p>
+<p><strong>Example</strong>. Following with the previous example, what indicates the speedometer at any instant is the modulus of the instantaneous velocity vector at that moment.</p>
+<h2 id="algebra-of-derivatives">Algebra of derivatives</h2>
+<h3 id="properties-of-the-derivative">Properties of the derivative</h3>
+<p>If $y=c$, is a constant function, then $y&rsquo;=0$ at any point.</p>
+<p>If $y=x$, is the identity function, then $y&rsquo;=1$ at any point.</p>
+<p>If $u=f(x)$ and $v=g(x)$ are two differentiable functions, then</p>
+<ul>
+<li>$(u+v)&rsquo;=u&rsquo;+v'$</li>
+<li>$(u-v)&rsquo;=u&rsquo;-v'$</li>
+<li>$(u\cdot v)&rsquo;=u&rsquo;\cdot v+ u\cdot v'$</li>
+<li>$\left(\dfrac{u}{v}\right)&rsquo;=\dfrac{u&rsquo;\cdot v-u\cdot v&rsquo;}{v^2}$</li>
+</ul>
+<h3 id="derivative-of-a-composite-function">Derivative of a composite function</h3>
+<div class="alert alert-def">
+  <div>
+    <strong>Theorem - Chain rule</strong>. If the function $y=f\circ g$ is the composition of two functions $y=f(z)$ and $z=g(x)$, then $$(f\circ g)&rsquo;(x)=f&rsquo;(g(x))g&rsquo;(x).$$
+  </div>
+</div>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-6" role="button" aria-expanded="false" aria-controls="spoiler-6">
+      Proof
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-6">
+    <div class="card-body">
+      It is easy to proof this fact using the Leibniz notation $$\frac{dy}{dx}=\frac{dy}{dz}\frac{dz}{dx}=f&rsquo;(z)g&rsquo;(x)=f&rsquo;(g(x))g&rsquo;(x).$$
+    </div>
+  </div>
+</div>
+<p><strong>Example</strong>. If $f(z)=\sin z$ and $g(x)=x^2$, then $f\circ g(x)=\sin(x^2)$. Applying the chain rule the derivative of the composite function is
+$$(f\circ g)&rsquo;(x)=f&rsquo;(g(x))g&rsquo;(x) = \cos(g(x)) 2x = \cos(x^2)2x.$$</p>
+<p>On the other hand, $g\circ f(z)= (\sin z)^2$, and applying the chain rule again, its derivative is
+$$(g\circ f)&rsquo;(z)=g&rsquo;(f(z))f&rsquo;(z) = 2f(z)\cos z = 2\sin z\cos z.$$</p>
+<h3 id="derivative-of-the-inverse-of-a-function">Derivative of the inverse of a function</h3>
+<div class="alert alert-def">
+  <div>
+    <strong>Theorem - Derivative of the inverse function</strong>.  Given a function $y=f(x)$ with inverse $x=f^{-1}(y)$, then $$\left(f^{-1}\right)&rsquo;(y)=\frac{1}{f&rsquo;(x)}=\frac{1}{f&rsquo;(f^{-1}(y))},$$
+provided that $f$ is differentiable at $f^{-1}(y)$ and $f&rsquo;(f^{-1}(y))\neq 0$.
+  </div>
+</div>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-8" role="button" aria-expanded="false" aria-controls="spoiler-8">
+      Proof
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-8">
+    <div class="card-body">
+      It is easy to prove this equality using the Leibniz notation $$\frac{dx}{dy}=\frac{1}{dy/dx}=\frac{1}{f&rsquo;(x)}=\frac{1}{f&rsquo;(f^{-1}(y))}$$
+    </div>
+  </div>
+</div>
+<p><strong>Example</strong>. The inverse of the exponential function $y=f(x)=e^x$ is the natural logarithm $x=f^{-1}(y)=\ln y$, so we can compute the derivative of the natural logarithm using the previous theorem and we get $$\left(f^{-1}\right)&rsquo;(y)=\frac{1}{f&rsquo;(x)}=\frac{1}{e^x}=\frac{1}{e^{\ln y}}=\frac{1}{y}.$$</p>
+<p>Sometimes it is easier to apply the chain rule to compute the derivative of the inverse of a function. In this example, as $\ln x$ is the inverse of $e^x$, we know that $e^{\ln x}=x$, so differentiating both sides and applying the chain rule to the left side we get $$(e^{\ln x})&rsquo;=x&rsquo; \Leftrightarrow e^{\ln x}(\ln(x))&rsquo; = 1 \Leftrightarrow (\ln(x))&rsquo;=\frac{1}{e^{\ln x}}=\frac{1}{x}.$$</p>
+<h2 id="analysis-of-functions">Analysis of functions</h2>
+<h3 id="analysis-of-functions-increase-and-decrease">Analysis of functions: increase and decrease</h3>
+<p>The main application of derivatives is to determine the variation (increase or decrease) of functions. For that we use the sign of the first derivative.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Theorem</strong>. Let $f(x)$ be a function with first derivative in an interval $I\subseteq \mathbb{R}$.</p>
+<ul>
+<li>If $\forall x\in I\ f&rsquo;(x)&gt; 0$ then $f$ is increasing on $I$.</li>
+<li>If $\forall x\in I\ f&rsquo;(x)&lt; 0$ then $f$ is decreasing on $I$.</li>
+</ul>
+  </div>
+</div>
+<p>If $f&rsquo;(x_0)=0$ then $x_0$ is known as a <em>critical point</em> or  <em>stationary point</em>. At this point the function can be increasing, decreasing or neither increasing nor decreasing.</p>
+<p><strong>Example</strong> The function $f(x)=x^2$ has derivative $f&rsquo;(x)=2x$; it is decreasing on $\mathbb{R}^-$ as $f&rsquo;(x)&lt; 0$ $\forall x\in \mathbb{R}^-$  and increasing on $\mathbb{R}^+$ as $f&rsquo;(x)&gt; 0$ $\forall x\in \mathbb{R}^+$.
+It has a critical point at $x=0$, as $f&rsquo;(0)=0$; at this point the function is neither increasing nor decreasing.</p>
+<div class="alert alert-warning">
+  <div>
+    A function can be increasing or decreasing on an interval and not have first derivative.
+  </div>
+</div>
+<p><strong>Example</strong>. Let us analyze the increase and decrease of the function $f(x)=x^4-2x^2+1$. Its first derivative is $f&rsquo;(x)=4x^3-4x$.</p>
+<img src="../img/derivatives1/increase_analysis.svg" alt="Inrease or decrease analysis of a function" width="550">
+<h3 id="analysis-of-functions-relative-extrema">Analysis of functions: relative extrema</h3>
+<p>As a consequence of the previous result we can also use the first derivative to determine the relative extrema of a function.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Theorem - First derivative test</strong>. Let $f(x)$ be a function with first derivative in an interval $I\subseteq \mathbb{R}$ and let $x_0\in I$ be a critical point of $f$ ($f&rsquo;(x_0)=0$).</p>
+<ul>
+<li>If $f&rsquo;(x)&gt;0$ on an open interval extending left from $x_0$ and $f&rsquo;(x)&lt;0$ on an open interval extending right from $x_0$, then $f$ has a <em>relative maximum</em> at $x_0$.</li>
+<li>If $f&rsquo;(x)&lt;0$ on an open interval extending left from $x_0$ and $f&rsquo;(x)&gt;0$ on an open interval extending right from $x_0$, then $f$ has a <em>relative minimum</em> at $x_0$.</li>
+<li>If $f&rsquo;(x)$ has the same sign on both an open interval extending left from $x_0$ and an open interval extending right from $x_0$, then $f$ has an <em>inflection point</em> at $x_0$.</li>
+</ul>
+  </div>
+</div>
+<div class="alert alert-warning">
+  <div>
+    A vanishing derivative is a necessary but not sufficient condition for the function to have a relative extrema at a point.
+  </div>
+</div>
+<p><strong>Example</strong>. The function $f(x)=x^3$ has derivative $f&rsquo;(x)=3x^2$; it has a critical point at $x=0$. However it does not have a relative extrema at that point, but an inflection point.</p>
+<p><strong>Example</strong>. Consider again the function $f(x)=x^4-2x^2+1$ and let us analyze its relative extrema now. Its first derivative is $f&rsquo;(x)=4x^3-4x$.</p>
+<img src="../img/derivatives1/extrema_analysis.svg" alt="Extrema analysis of a function" width="550">
+<h3 id="analysis-of-functions-concavity">Analysis of functions: concavity</h3>
+<p>The concavity of a function can be determined by de second derivative.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Theorem</strong>. Let $f(x)$ be a function with second derivative in an interval $I\subseteq \mathbb{R}$.</p>
+<ul>
+<li>If $\forall x\in I\ f&rsquo;&rsquo;(x)&gt; 0$ then $f$ is concave up (convex) on $I$.</li>
+<li>If $\forall x\in I\ f&rsquo;&rsquo;(x)&lt; 0$ then $f$ is concave down (concave) on $I$.</li>
+</ul>
+  </div>
+</div>
+<p><strong>Example</strong>. The function $f(x)=x^2$ has second derivative $f&rsquo;&rsquo;(x)=2&gt;0$ $\forall x\in \mathbb{R}$, so it is concave up in all $\mathbb{R}$.</p>
+<div class="alert alert-warning">
+  <div>
+    A function can be concave up or down and not have second derivative.
+  </div>
+</div>
+<p><strong>Example</strong>. Let us analyze the concavity of the same function of previous examples $f(x)=x^4-2x^2+1$. Its second derivative is $f&rsquo;&rsquo;(x)=12x^2-4$.</p>
+<img src="../img/derivatives1/concavity_analysis.svg" alt="Concavity analysis of a function" width="550">
+<h2 id="function-approximation">Function approximation</h2>
+<h3 id="approximating-a-function-with-the-derivative">Approximating a function with the derivative</h3>
+<p>The tangent line to the graph of a function $f(x)$ at $x=a$ can be used to approximate $f$ in a neighbourhood of $a$.</p>
+<p>Thus, the increment of a function $f(x)$ in an interval $[a,a+\Delta x]$ can be approximated multiplying the derivative of $f$ at $a$ by the increment of $x$ $$\Delta y \approx f&rsquo;(a)\Delta x$$</p>
+<img src="../img/derivatives1/tangent_line_approximation.gif" alt="Approximation of a function with the tangent line" width="700">
+<p><strong>Example - Area of a square</strong>. In the previous example of the function $y=x^2$ that measures the area of a metallic square of side $x$, if the side of the square is $a$ and we increment it by a quantity $\Delta x$, then the increment on the area will be approximately $$\Delta y \approx f&rsquo;(a)\Delta x = 2a\Delta x.$$
+In the figure below we can see that the error of this approximation is $\Delta x^2$, which is smaller than $\Delta x$ when $\Delta x$ approaches to 0.</p>
+<img src="../img/derivatives1/square_area_variation_approximation.svg" alt="Approximation of the variation of a square area" width="300">
+<h3 id="approximating-a-function-by-a-polynomial">Approximating a function by a polynomial</h3>
+<p>Another useful application of the derivative is the approximation of functions by polynomials.</p>
+<p>Polynomials are functions easy to calculate (sums and products) with very good properties:</p>
+<ul>
+<li>Defined in all the real numbers.</li>
+<li>Continuous.</li>
+<li>Differentiable of all orders with continuous derivatives.</li>
+</ul>
+<p><strong>Goal</strong> Approximate a function $f(x)$ by a polynomial $p(x)$ near a point $x=a$.</p>
+<h3 id="approximating-a-function-by-a-polynomial-of-order-0">Approximating a function by a polynomial of order 0</h3>
+<p>A polynomial of degree 0 has equation
+$$p(x) = c_0,$$
+where $c_0$ is a constant.</p>
+<p>As the polynomial should coincide with the function at $a$, it must satisfy
+$$p(a) = c_0 = f(a).$$</p>
+<p>Therefore, the polynomial of degree 0 that best approximate $f$ near $a$ is
+$$p(x) = f(a).$$</p>
+<img src="../img/derivatives1/approximation_polynomial_0.gif" alt="Approximation of a function by a polynomial of order 0" width="550">
+<h3 id="approximating-a-function-by-a-polynomial-of-order-1">Approximating a function by a polynomial of order 1</h3>
+<p>A polynomial of order 1 has equation
+$$p(x) = c_0+c_1x,$$ but it can also be written as $$p(x) = c_0+c_1(x-a).$$</p>
+<p>Among all the polynomials of degree 1, the one that best approximates $f(x)$ near $a$ is that which meets the following conditions</p>
+<ol>
+<li>$p$ and $f$ coincide at $a$: $p(a) = f(a)$,</li>
+<li>$p$ and $f$ have the same rate of change at $a$: $p&rsquo;(a) = f&rsquo;(a)$.</li>
+</ol>
+<p>The last condition guarantees that $p$ and $f$ have approximately the same tendency, but it requires the function $f$ to be differentiable at $a$.</p>
+<p>Imposing the previous conditions we have</p>
+<ol>
+<li>$p(x)=c_0+c_1(x-a) \Rightarrow p(a)=c_0+c_1(a-a)=c_0=f(a)$,</li>
+<li>$p&rsquo;(x)=c_1 \Rightarrow p&rsquo;(a)=c_1=f&rsquo;(a)$.</li>
+</ol>
+<p>Therefore, the polynomial of degree 1 that best approximates $f$ near $a$ is
+$$p(x) = f(a)+f &lsquo;(a)(x-a),$$
+which turns out to be the tangent line to $f$ at $(a,f(a))$.</p>
+<img src="../img/derivatives1/approximation_polynomial_1.gif" alt="Approximation of a function by a polynomial of order 1" width="650">
+<h3 id="approximating-a-function-by-a-polynomial-of-order-2">Approximating a function by a polynomial of order 2</h3>
+<p>A polynomial of order 2 is a parabola with equation $$p(x) = c_0+c_1x+c_2x^2,$$ but it can also be written as
+$$p(x) = c_0+c_1(x-a)+c_2(x-a)^2.$$</p>
+<p>Among all the polynomials of degree 2, the one that best approximate $f(x)$ near $a$ is that which meets the following conditions</p>
+<ol>
+<li>$p$ and $f$ coincide at $a$: $p(a) = f(a)$,</li>
+<li>$p$ and $f$ have the same rate of change at $a$: $p&rsquo;(a) = f&rsquo;(a)$.</li>
+<li>$p$ and $f$ have the same concavity at $a$: $p&rsquo;&rsquo;(a)=f&rsquo;&rsquo;(a)$.</li>
+</ol>
+<p>The last condition requires the function $f$ to be differentiable twice at $a$.</p>
+<p>Imposing the previous conditions we have</p>
+<ol>
+<li>$p(x)=c_0+c_1(x-a) \Rightarrow p(a)=c_0+c_1(a-a)=c_0=f(a)$,</li>
+<li>$p&rsquo;(x)=c_1 \Rightarrow p&rsquo;(a)=c_1=f&rsquo;(a)$.</li>
+<li>$p&rsquo;&rsquo;(x)=2c_2 \Rightarrow p&rsquo;&rsquo;(a)=2c_2=f&rsquo;&rsquo;(a) \Rightarrow c_2=\frac{f&rsquo;&rsquo;(a)}{2}$.</li>
+</ol>
+<p>Therefore, the polynomial of degree 2 that best approximates $f$ near $a$ is
+$$p(x) = f(a)+f&rsquo;(a)(x-a)+\frac{f&rsquo;&rsquo;(a)}{2}(x-a)^2.$$</p>
+<img src="../img/derivatives1/approximation_polynomial_2.gif" alt="Approximation of a function by a polynomial of order 2" width="750">
+<h3 id="approximating-a-function-by-a-polynomial-of-order-n">Approximating a function by a polynomial of order $n$</h3>
+<p>A polynomial of order $n$ has equation
+$$p(x) = c_0+c_1x+c_2x^2+\cdots +c_nx^n,$$ but it can also be written as $$p(x) = c_0+c_1(x-a)+c_2(x-a)^2+\cdots +c_n(x-a)^n.$$</p>
+<p>Among all the polynomials of degree $n$, the one that best approximate $f(x)$ near $a$ is that which meets the following $n+1$ conditions:</p>
+<ol>
+<li>$p(a) = f(a)$,</li>
+<li>$p&rsquo;(a) = f&rsquo;(a)$,</li>
+<li>$p&rsquo;&rsquo;(a)=f&rsquo;&rsquo;(a)$,</li>
+<li>$\cdots$</li>
+<li>$p^{(n)}(a)=f^{(n)}(a)$.</li>
+</ol>
+<p>The successive derivatives of $p$ are</p>
+<p>$$
+\begin{aligned}
+p(x) &amp;= c_0+c_1(x-a)+c_2(x-a)^2+\cdots +c_n(x-a)^n,\newline
+p&rsquo;(x)&amp; = c_1+2c_2(x-a)+\cdots +nc_n(x-a)^{n-1},\newline
+p&rsquo;&rsquo;(x)&amp; = 2c_2+\cdots +n(n-1)c_n(x-a)^{n-2},\newline
+\vdots
+\newline
+p^{(n)}(x)&amp;= n(n-1)(n-2)\cdots 1 c_n=n!c_n.
+\end{aligned}
+$$</p>
+<p>Imposing the previous conditions we have</p>
+<ol>
+<li>$p(a) = c_0+c_1(a-a)+c_2(a-a)^2+\cdots +c_n(a-a)^n=c_0=f(a)$,</li>
+<li>$p&rsquo;(a) = c_1+2c_2(a-a)+\cdots +nc_n(a-a)^{n-1}=c_1=f&rsquo;(a)$,</li>
+<li>$p&rsquo;&rsquo;(a) = 2c_2+\cdots +n(n-1)c_n(a-a)^{n-2}=2c_2=f&rsquo;&rsquo;(a)\Rightarrow c_2=f&rsquo;&rsquo;(a)/2$,</li>
+<li>$\cdots$</li>
+<li>$p^{(n)}(a)=n!c_n=f^{(n)}(a)=c_n=\frac{f^{(n)}(a)}{n!}$.</li>
+</ol>
+<h3 id="taylor-polynomial-of-order-n">Taylor polynomial of order $n$</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Taylor polynomial</strong>. Given a function $f(x)$ differentiable $n$ times at $x=a$, the <em>Taylor polynomial</em> of order $n$ of $f$ at $a$ is the polynomial with equation</p>
+<p>$$
+\begin{aligned}
+p_{f,a}^n(x) &amp;= f(a) + f&rsquo;(a)(x-a) + \frac{f&rsquo;&rsquo;(a)}{2}(x-a)^2 + \cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n = \newline
+&amp;= \sum_{i=0}^{n}\frac{f^{(i)}(a)}{i!}(x-a)^i.
+\end{aligned}
+$$</p>
+  </div>
+</div>
+<div class="alert alert-int">
+  <div>
+    The Taylor polynomial of order $n$ of $f$ at $a$ is the $n$th degree polynomial that best approximates $f$ near $a$, as is the only one that meets the previous conditions.
+  </div>
+</div>
+<p><strong>Example</strong>. Let us approximate the function $f(x)=\log x$ near the value $1$ by a polynomial of order $3$.</p>
+<p>The equation of the Taylor polynomial of order $3$ of $f$ at $a=1$ is $$p_{f,1}^3(x)=f(1)+f&rsquo;(1)(x-1)+\frac{f&rsquo;&rsquo;(1)}{2}(x-1)^2+\frac{f&rsquo;&rsquo;&rsquo;(1)}{3!}(x-1)^3.$$ The derivatives of $f$ at $1$ up to order $3$ are</p>
+<p>$$
+\begin{array}{lll}
+f(x)=\log x &amp; \quad &amp; f(1)=\log 1 =0,\newline
+f&rsquo;(x)=1/x &amp; &amp; f&rsquo;(1)=1/1=1,\newline
+f&rsquo;&rsquo;(x)=-1/x^2 &amp; &amp; f&rsquo;&rsquo;(1)=-1/1^2=-1,\newline
+f&rsquo;&rsquo;&rsquo;(x)=2/x^3 &amp; &amp; f&rsquo;&rsquo;&rsquo;(1)=2/1^3=2.
+\end{array}
+$$</p>
+<p>And substituting into the polynomial equation we get $$p_{f,1}^3(x)=0+1(x-1)+\frac{-1}{2}(x-1)^2+\frac{2}{3!}(x-1)^3= \frac{2}{3}x^3-\frac{3}{2}x^2+3x-\frac{11}{6}.$$</p>
+<img src="../img/derivatives1/taylor_polynomials_logarithm.gif" alt="Taylor polynomials of the logarithm function" width="650">
+<h3 id="maclaurin-polynomial-of-order-n">Maclaurin polynomial of order $n$</h3>
+<p>The Taylor polynomial equation has a simpler form when the polynomial is calculated at $0$. This special case of Taylor polynomial at $0$ is known as the <em>Maclaurin polynomial</em>.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Maclaurin polynomial</strong>. Given a function $f(x)$ differentiable $n$ times at $0$, the <em>Maclaurin polynomial</em> of order $n$ of $f$ is the polynomial with equation</p>
+<p>$$
+\begin{aligned}
+p_{f,0}^n(x)&amp;=f(0)+f&rsquo;(0)x+\frac{f&rsquo;&rsquo;(0)}{2}x^2+\cdots +\frac{f^{(n)}(0)}{n!}x^n = \newline
+&amp;=\sum_{i=0}^{n}\frac{f^{(i)}(0)}{i!}x^i.
+\end{aligned}
+$$</p>
+  </div>
+</div>
+<p><strong>Example</strong>. Let us approximate the function $f(x)=\sin x$ near the value $0$ by a polynomial of order $3$.</p>
+<p>The Maclaurin polynomial equation of order $3$ of $f$ is $$p_{f,0}^3(x)=f(0)+f&rsquo;(0)x+\frac{f&rsquo;&rsquo;(0)}{2}x^2+\frac{f&rsquo;&rsquo;&rsquo;(0)}{3!}x^3.$$
+The derivatives of $f$ at $0$ up to order $3$ are</p>
+<p>$$\begin{array}{lll}
+f(x)=\sin x &amp; \quad &amp; f(0)=\sin 0 =0,\newline
+f&rsquo;(x)=\cos x &amp; &amp; f&rsquo;(0)=\cos 0=1,\newline
+f&rsquo;&rsquo;(x)=-\sin x &amp; &amp; f&rsquo;&rsquo;(0)=-\sin 0=0,\newline
+f&rsquo;&rsquo;&rsquo;(x)=-\cos x &amp; &amp; f&rsquo;&rsquo;&rsquo;(0)=-\cos 0=-1.
+\end{array}
+$$</p>
+<p>And substituting into the polynomial equation we get
+$$p_{f,0}^3(x)=0+1\cdot x+\frac{0}{2}x^2+\frac{-1}{3!}x^3= x-\frac{x^3}{6}.$$</p>
+<img src="../img/derivatives1/maclaurin_polynomials_sine.gif" alt="Macalurin polynomials of the sine function" width="650">
+<h3 id="maclaurin-polynomials-of-elementary-functions">Maclaurin polynomials of elementary functions</h3>
+<p>$$
+\renewcommand{\arraystretch}{2.5}
+\begin{array}{cc}
+\hline
+f(x) &amp; p_{f,0}^n(x) \newline
+\hline
+\sin x &amp; \displaystyle x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots + (-1)^k\frac{x^{2k-1}}{(2k-1)!} \mbox{ if $n=2k$ or $n=2k-1$}\newline
+\cos x &amp;  \displaystyle 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots + (-1)^k\frac{x^{2k}}{(2k)!} \mbox{ if $n=2k$ or $n=2k+1$}\newline
+\arctan x &amp;  \displaystyle x - \frac{x^3}{3} + \frac{x^5}{5} - \cdots + (-1)^k\frac{x^{2k-1}}{(2k-1)} \mbox{ if $n=2k$ or $n=2k-1$}\newline
+e^x &amp; \displaystyle 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots + \frac{x^n}{n!}\newline
+\log(1+x) &amp; \displaystyle x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1}\frac{x^n}{n}\newline
+\hline
+\end{array}
+$$</p>
+<h3 id="taylor-remainder-and-taylor-formula">Taylor remainder and Taylor formula</h3>
+<p>Taylor polynomials allow to approximate a function in a neighborhood of a value $a$, but most of the times there is an error in the approximation.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Taylor remainder</strong>. Given a function $f(x)$ and its Taylor polynomial of order $n$ at $a$, $p_{f,a}^n(x)$, the <em>Taylor remainder</em> of order $n$ of $f$ at $a$ is the difference between the function and the polynomial,</p>
+<p>$$r_{f,a}^n(x)=f(x)-p_{f,a}^n(x).$$</p>
+  </div>
+</div>
+<p>The Taylor remainder measures the error int the approximation of $f(x)$ by the Taylor polynomial and allow us to express the function as the Taylor polynomial plus the Taylor remainder</p>
+<p>$$f(x)=p_{f,a}^n(x) + r_{f,a}^n(x).$$</p>
+<p>This expression is known as the <em>Taylor formula</em> of order $n$ or $f$ at $a$.</p>
+<p>It can be proved that</p>
+<p>$$\lim_{h\rightarrow 0}\frac{r_{f,a}^n(a+h)}{h^n}=0,$$</p>
+<p>which means that the remainder $r_{f,a}^n(a+h)$ is much smaller than $h^n$.</p>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tag/derivative/">Derivative</a>
+  
+  <a class="badge badge-light" href="/en/tag/tangent-line/">Tangent Line</a>
+  
+</div>
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/en/teaching/calculus/manual/analytic-geometry/" rel="next">Analytic Geometry</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/en/teaching/calculus/manual/integrals/" rel="prev">Integral calculus</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Nov 25, 2020</p>
+
+          
+
+
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "aprendeconalf" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt="CC SA icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/en/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://aprendeconalf.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.f79ea001fad4564ac91850b0b5a8f31c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

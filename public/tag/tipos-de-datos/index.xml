@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tipos de Datos | Aprende con Alf</title>
+    <link>/tag/tipos-de-datos/</link>
+      <atom:link href="/tag/tipos-de-datos/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tipos de Datos</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Tipos de Datos</title>
+      <link>/tag/tipos-de-datos/</link>
+    </image>
+    
+    <item>
+      <title>Ejercicios de Tipos de Datos Simples</title>
+      <link>/docencia/python/ejercicios/tipos-datos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/ejercicios/tipos-datos/</guid>
+      <description>&lt;!-- Datacamp light
+&lt;script async type=&#34;text/javascript&#34; src=&#34;https://cdn.datacamp.com/dcl-react-dev.js.gz&#34;&gt;&lt;/script&gt;  
+--&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que muestre por pantalla la cadena &lt;code&gt;¡Hola Mundo!&lt;/code&gt;.&lt;/p&gt;
+&lt;!-- &lt;div&gt;&lt;button class=&#34;resolution&#34;&gt;Resolver&lt;/button&gt;&lt;/div&gt;
+&lt;div data-datacamp-exercise data-lang=&#34;python&#34; id=&#34;solution&#34; style=&#34;display: none&#34;&gt;
+
+  &lt;code data-type=&#34;sample-code&#34;&gt;
+    # Mostrar por pantalla la cadena &#34;¡Hola mundo!&#34;
+
+  &lt;/code&gt;
+
+  &lt;code data-type=&#34;solution&#34;&gt;
+  # Mostrar por pantalla la cadena &#34;¡Hola mundo!&#34;
+  print(&#34;¡Hola mundo!&#34;)
+  &lt;/code&gt;
+  
+  &lt;code data-type=&#34;sct&#34;&gt;
+
+  Ex().multi(
+    check_function(&#34;print&#34;),
+    has_output(&#34;¡Hola mundo!&#34;, pattern = False)
+  )
+  success_msg(&#34;¡Correcto!&#34;)
+  &lt;/code&gt;
+  
+  &lt;div data-type=&#34;hint&#34;&gt;
+    Usa la función &lt;code&gt;print&lt;/code&gt; para mostrar cadenas por pantalla.
+  &lt;/div&gt;
+&lt;/div&gt; --&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio1.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que almacene la cadena &lt;code&gt;¡Hola Mundo!&lt;/code&gt; en una variable y luego muestre por pantalla el contenido de la variable.&lt;/p&gt;
+&lt;!-- &lt;div&gt;&lt;button class=&#34;resolution&#34;&gt;Resolver&lt;/button&gt;&lt;/div&gt;
+&lt;div data-datacamp-exercise data-lang=&#34;python&#34; id=&#34;solution&#34; style=&#34;display: none&#34;&gt;
+
+  &lt;code data-type=&#34;sample-code&#34;&gt;
+    # Guardar la cadena &#34;¡Hola mundo!&#34; en la variable a
+
+    # Mostrar por pantalla contenido de la variable a
+
+  &lt;/code&gt;
+
+  &lt;code data-type=&#34;solution&#34;&gt;
+    # Guardar la cadena &#34;¡Hola mundo!&#34; en la variable a
+    a = &#34;¡Hola mundo!&#34;
+
+    # Mostrar por pantalla contenido de la variable a  
+    print(a)
+    &lt;/code&gt;
+  
+  &lt;code data-type=&#34;sct&#34;&gt;
+    Ex().multi(
+      check_object(&#34;a&#34;).has_equal_value(),
+      check_function(&#34;print&#34;),
+      has_output(&#34;¡Hola mundo!&#34;, pattern = False)
+    )
+    success_msg(&#34;¡Correcto!&#34;)
+  &lt;/code&gt;
+  
+  &lt;div data-type=&#34;hint&#34;&gt;
+    Usa el símbolo `=` para asignar un valor a una variable y la función &lt;code&gt;print&lt;/code&gt; para mostrar el contenido de la variable por pantalla.
+  &lt;/div&gt;
+&lt;/div&gt; --&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio2.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte el nombre del usuario en la consola y después de que el usuario lo introduzca muestre por pantalla la cadena &lt;code&gt;¡Hola &amp;lt;nombre&amp;gt;!&lt;/code&gt;, donde &lt;code&gt;&amp;lt;nombre&amp;gt;&lt;/code&gt; es el nombre que el usuario haya introducido.&lt;/p&gt;
+&lt;!-- &lt;div&gt;&lt;button class=&#34;resolution&#34;&gt;Resolver&lt;/button&gt;&lt;/div&gt;
+&lt;div data-datacamp-exercise data-lang=&#34;python&#34; id=&#34;solution&#34; style=&#34;display: none&#34;&gt;
+
+&lt;code data-type=&#34;pre-exercise-code&#34;&gt;
+    import sys
+    from io import StringIO
+    sys.stdin = StringIO(&#34;input\n&#34;)
+    del sys
+&lt;/code&gt;
+
+  &lt;code data-type=&#34;sample-code&#34;&gt;
+    # Preguntar el nombre del usuario y guardarlo en la variable nombre
+
+    # Mostrar por pantalla el saludo con el nombre
+
+  &lt;/code&gt;
+
+  &lt;code data-type=&#34;solution&#34;&gt;
+    # Preguntar el nombre del usuario y guardarlo en la variable nombre
+    nombre = input(&#34;¿Cómo te llamas?&#34;)
+    # Mostrar por pantalla el saludo con el nombre
+    print(&#34;Hola &#34; + nombre + &#34;!&#34;)
+  &lt;/code&gt;
+  
+  &lt;code data-type=&#34;sct&#34;&gt;
+    Ex().multi(
+      check_function(&#34;input&#34;),
+      check_object(&#34;nombre&#34;),
+      check_function(&#34;print&#34;),
+      has_output(&#34;¡Hola \w+!&#34;)
+    )
+    success_msg(&#34;¡Correcto!&#34;)
+  &lt;/code&gt;
+  
+  &lt;div data-type=&#34;hint&#34;&gt;
+    Usa la función &lt;code&gt;input&lt;/code&gt; para leer una cadena desde la terminal, el símbolo `=` para asignar la cadena a la variable y la función &lt;code&gt;print&lt;/code&gt; para mostrar el saludo por pantalla.
+  &lt;/div&gt;
+&lt;/div&gt; --&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio3.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que muestre por pantalla el resultado de la siguiente operación aritmética $\left(\frac{3+2}{2\cdot 5}\right)^2$.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio4.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-5&#34;&gt;Ejercicio 5&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte al usuario por el número de horas trabajadas y el coste por hora.
+Después debe mostrar por pantalla la paga que le corresponde.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio5.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-6&#34;&gt;Ejercicio 6&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que lea un entero positivo, $n$, introducido por el usuario y después muestre en pantalla la suma de todos los enteros desde 1 hasta $n$.
+La suma de los $n$ primeros enteros positivos puede ser calculada de la siguiente forma:&lt;/p&gt;
+&lt;p&gt;$$ \mbox{suma} = \frac{n(n+1)}{2} $$&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio6.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-7&#34;&gt;Ejercicio 7&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el índice de masa corporal y lo almacene en una variable, y muestre por pantalla la frase &lt;code&gt;Tu índice de masa corporal es &amp;lt;imc&amp;gt;&lt;/code&gt; donde &lt;code&gt;&amp;lt;imc&amp;gt;&lt;/code&gt; es el índice de masa corporal calculado redondeado con dos decimales.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio7.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-8&#34;&gt;Ejercicio 8&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pida al usuario dos números enteros y muestre por pantalla la &lt;code&gt;&amp;lt;n&amp;gt; entre &amp;lt;m&amp;gt; da un cociente &amp;lt;c&amp;gt; y un resto &amp;lt;r&amp;gt;&lt;/code&gt; donde &lt;code&gt;&amp;lt;n&amp;gt;&lt;/code&gt; y &lt;code&gt;&amp;lt;m&amp;gt;&lt;/code&gt; son los números introducidos por el usuario, y &lt;code&gt;&amp;lt;c&amp;gt;&lt;/code&gt; y &lt;code&gt;&amp;lt;r&amp;gt;&lt;/code&gt; son el cociente y el resto de la división entera respectivamente.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio8.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-9&#34;&gt;Ejercicio 9&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte al usuario una cantidad a invertir, el interés anual y el número de años, y muestre por pantalla el capital obtenido en la inversión.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio9.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-10&#34;&gt;Ejercicio 10&lt;/h2&gt;
+&lt;p&gt;Una juguetería tiene mucho éxito en dos de sus productos: payasos y muñecas.
+Suele hacer venta por correo y la empresa de logística les cobra por peso de cada paquete así que deben calcular el peso de los payasos y muñecas que saldrán en cada paquete a demanda. Cada payaso pesa 112 g y cada muñeca 75 g.
+Escribir un programa que lea el número de payasos y muñecas vendidos en el último pedido y calcule el peso total del paquete que será enviado.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio10.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-11&#34;&gt;Ejercicio 11&lt;/h2&gt;
+&lt;p&gt;Imagina que acabas de abrir una nueva cuenta de ahorros que te ofrece el 4% de interés al año. Estos ahorros debido a intereses, que no se cobran hasta finales de año, se te añaden al balance final de tu cuenta de ahorros.
+Escribir un programa que comience leyendo la cantidad de dinero depositada en la cuenta de ahorros, introducida por el usuario. Después el programa debe calcular y mostrar por pantalla la cantidad de ahorros tras el primer, segundo y tercer años.
+Redondear cada cantidad a dos decimales.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio11.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-12&#34;&gt;Ejercicio 12&lt;/h2&gt;
+&lt;p&gt;Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%.
+Escribir un programa que comience leyendo el número de barras vendidas que no son del día. Después el programa debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste final total.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio12.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ejercicios de Tipos de Datos Simples</title>
+      <link>/docencia/r/ejercicios/tipos-datos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/r/ejercicios/tipos-datos/</guid>
+      <description>&lt;!-- Datacamp light
+&lt;script async type=&#34;text/javascript&#34; src=&#34;https://cdn.datacamp.com/dcl-react-dev.js.gz&#34;&gt;&lt;/script&gt;  
+--&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que muestre por pantalla la cadena &lt;code&gt;¡Hola Mundo!&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/r/ejercicios/soluciones/tipos-datos/ejercicio1.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;!-- ## Ejercicio 2
+
+Escribir un programa que almacene la cadena `¡Hola Mundo!` en una variable y luego muestre por pantalla el contenido de la variable.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio2.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 3
+
+Escribir un programa que pregunte el nombre del usuario en la consola y después de que el usuario lo introduzca muestre por pantalla la cadena `¡Hola &lt;nombre&gt;!`, donde `&lt;nombre&gt;` es el nombre que el usuario haya introducido.
+
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio3.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+
+## Ejercicio 4
+
+Escribir un programa que muestre por pantalla el resultado de la siguiente operación aritmética $\left(\frac{3+2}{2\cdot 5}\right)^2$.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio4.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 5
+
+Escribir un programa que pregunte al usuario por el número de horas trabajadas y el coste por hora.
+Después debe mostrar por pantalla la paga que le corresponde.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio5.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 6
+
+Escribir un programa que lea un entero positivo, $n$, introducido por el usuario y después muestre en pantalla la suma de todos los enteros desde 1 hasta $n$.
+La suma de los $n$ primeros enteros positivos puede ser calculada de la siguiente forma:
+
+$$ \mbox{suma} = \frac{n(n+1)}{2} $$
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio6.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 7
+
+Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el índice de masa corporal y lo almacene en una variable, y muestre por pantalla la frase `Tu índice de masa corporal es &lt;imc&gt;` donde `&lt;imc&gt;` es el índice de masa corporal calculado redondeado con dos decimales.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio7.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 8
+
+Escribir un programa que pida al usuario dos números enteros y muestre por pantalla la `&lt;n&gt; entre &lt;m&gt; da un cociente &lt;c&gt; y un resto &lt;r&gt;` donde `&lt;n&gt;` y `&lt;m&gt;` son los números introducidos por el usuario, y `&lt;c&gt;` y `&lt;r&gt;` son el cociente y el resto de la división entera respectivamente.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio8.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 9
+
+Escribir un programa que pregunte al usuario una cantidad a invertir, el interés anual y el número de años, y muestre por pantalla el capital obtenido en la inversión.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio9.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 10
+
+Una juguetería tiene mucho éxito en dos de sus productos: payasos y muñecas.
+Suele hacer venta por correo y la empresa de logística les cobra por peso de cada paquete así que deben calcular el peso de los payasos y muñecas que saldrán en cada paquete a demanda. Cada payaso pesa 112 g y cada muñeca 75 g.
+Escribir un programa que lea el número de payasos y muñecas vendidos en el último pedido y calcule el peso total del paquete que será enviado.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio10.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 11
+
+Imagina que acabas de abrir una nueva cuenta de ahorros que te ofrece el 4% de interés al año. Estos ahorros debido a intereses, que no se cobran hasta finales de año, se te añaden al balance final de tu cuenta de ahorros.
+Escribir un programa que comience leyendo la cantidad de dinero depositada en la cuenta de ahorros, introducida por el usuario. Después el programa debe calcular y mostrar por pantalla la cantidad de ahorros tras el primer, segundo y tercer años.
+Redondear cada cantidad a dos decimales.  
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio11.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 12
+
+Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%.
+Escribir un programa que comience leyendo el número de barras vendidas que no son del día. Después el programa debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste final total.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio12.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt; --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ejercicios de Cadenas</title>
+      <link>/docencia/python/ejercicios/cadenas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/ejercicios/cadenas/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte el nombre del usuario en la consola y un número entero e imprima por pantalla en líneas distintas el nombre del usuario tantas veces como el número introducido.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/cadenas/ejercicio1.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte el nombre completo del usuario en la consola y después muestre por pantalla el nombre completo del usuario tres veces, una con todas las letras minúsculas, otra con todas las letras mayúsculas y otra solo con la primera letra del nombre y de los apellidos en mayúscula. El usuario puede introducir su nombre combinando mayúsculas y minúsculas como quiera.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/cadenas/ejercicio2.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte el nombre del usuario en la consola y después de que el usuario lo introduzca muestre por pantalla &lt;code&gt;&amp;lt;NOMBRE&amp;gt; tiene &amp;lt;n&amp;gt; letras&lt;/code&gt;, donde &lt;code&gt;&amp;lt;NOMBRE&amp;gt;&lt;/code&gt; es el nombre de usuario en mayúsculas y &lt;code&gt;&amp;lt;n&amp;gt;&lt;/code&gt; es el número de letras que tienen el nombre.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/cadenas/ejercicio3.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;Los teléfonos de una empresa tienen el siguiente formato &lt;code&gt;prefijo-número-extension&lt;/code&gt; donde el prefijo es el código del país &lt;code&gt;+34&lt;/code&gt;, y la extensión tiene dos dígitos (por ejemplo &lt;code&gt;+34-913724710-56&lt;/code&gt;). Escribir un programa que pregunte por un número de teléfono con este formato y muestre por pantalla el número de teléfono sin el prefijo y la extensión.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/cadenas/ejercicio4.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-5&#34;&gt;Ejercicio 5&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pida al usuario que introduzca una frase en la consola y muestre por pantalla la frase invertida.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/cadenas/ejercicio5.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-6&#34;&gt;Ejercicio 6&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pida al usuario que introduzca una frase en la consola y una vocal, y después muestre por pantalla la misma frase pero con la vocal introducida en mayúscula.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/cadenas/ejercicio6.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-7&#34;&gt;Ejercicio 7&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte el correo electrónico del usuario en la consola y muestre por pantalla otro correo electrónico con el mismo nombre (la parte delante de la arroba &lt;code&gt;@&lt;/code&gt;) pero con dominio &lt;code&gt;ceu.es&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/cadenas/ejercicio7.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-8&#34;&gt;Ejercicio 8&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte por consola el precio de un producto en euros con dos decimales y muestre por pantalla el número de euros y el número de céntimos del precio introducido.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/cadenas/ejercicio8.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-9&#34;&gt;Ejercicio 9&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte al usuario la fecha de su nacimiento en formato &lt;code&gt;dd/mm/aaaa&lt;/code&gt; y muestra por pantalla, el día, el mes y el año. Adaptar el programa anterior para que también funcione cuando el día o el mes se introduzcan con un solo carácter.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/cadenas/ejercicio9.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-10&#34;&gt;Ejercicio 10&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte por consola por los productos de una cesta de la compra, separados por comas, y muestre por pantalla cada uno de los productos en una línea distinta.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/cadenas/ejercicio10.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-11&#34;&gt;Ejercicio 11&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte el nombre el un producto, su precio y un número de unidades y muestre por pantalla una cadena con el nombre del producto seguido de su precio unitario con 6 dígitos enteros y 2 decimales, el número de unidades con tres dígitos y el coste total con 8 dígitos enteros y 2 decimales.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/cadenas/ejercicio11.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tipos de Datos Primitivos Simples</title>
+      <link>/docencia/python/manual/tipos-datos-simples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/manual/tipos-datos-simples/</guid>
+      <description>&lt;h2 id=&#34;tipos-de-datos-primitivos-simples&#34;&gt;Tipos de datos primitivos simples&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Números&lt;/strong&gt; (numbers): Secuencia de dígitos (pueden incluir el - para negativos y el . para decimales) que representan números.&lt;br&gt;
+&lt;strong&gt;Ejemplo&lt;/strong&gt;. 0, -1, 3.1415.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cadenas&lt;/strong&gt; (strings): Secuencia de caracteres alfanuméricos que representan texto. Se escriben entre comillas simples o dobles.&lt;br&gt;
+&lt;strong&gt;Ejemplo&lt;/strong&gt;. &amp;lsquo;Hola&amp;rsquo;, &amp;ldquo;Adiós&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Booleanos&lt;/strong&gt; (boolean): Contiene únicamente dos elementos &lt;code&gt;True&lt;/code&gt; y &lt;code&gt;False&lt;/code&gt; que representan los valores lógicos verdadero y falso respectivamente.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Estos datos son inmutables, es decir, su valor es constante y no puede cambiar.&lt;/p&gt;
+&lt;h2 id=&#34;tipos-de-datos-primitivos-compuestos-contenedores&#34;&gt;Tipos de datos primitivos compuestos (contenedores)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Listas&lt;/strong&gt; (lists): Colecciones de objetos que representan secuencias ordenadas de objetos de distintos tipos. Se representan con corchetes y los elementos se separan por comas.&lt;br&gt;
+&lt;strong&gt;Ejemplo&lt;/strong&gt;. [1, &amp;ldquo;dos&amp;rdquo;, [3, 4], True].&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tuplas&lt;/strong&gt; (tuples). Colecciones de objetos que representan secuencias ordenadas de objetos de distintos tipos. A diferencia de las listas son inmutables, es decir, que no cambian durante la ejecución. Se representan mediante paréntesis y los elementos se separan por comas.&lt;br&gt;
+&lt;strong&gt;Ejemplo&lt;/strong&gt;. (1, &amp;lsquo;dos&amp;rsquo;, 3)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diccionarios&lt;/strong&gt; (dictionaries): Colecciones de objetos con una clave asociada. Se representan con llaves, los pares separados por comas y cada par contiene una clave y un objeto asociado separados por dos puntos.&lt;br&gt;
+&lt;strong&gt;Ejemplo&lt;/strong&gt;. {&amp;lsquo;pi&amp;rsquo;:3.1416, &amp;rsquo;e&amp;rsquo;:2.718}.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;clase-de-un-dato-type&#34;&gt;Clase de un dato (&lt;code&gt;type()&lt;/code&gt;)&lt;/h2&gt;
+&lt;p&gt;La clase a la que pertenece un dato se obtiene con el comando &lt;code&gt;type()&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; type(1)
+&amp;lt;class &#39;int&#39;&amp;gt;
+&amp;gt;&amp;gt;&amp;gt; type(&amp;quot;Hola&amp;quot;)
+&amp;lt;class &#39;str&#39;&amp;gt;
+&amp;gt;&amp;gt;&amp;gt; type([1, &amp;quot;dos&amp;quot;, [3, 4], True])
+&amp;lt;class &#39;list&#39;&amp;gt;
+&amp;gt;&amp;gt;&amp;gt;type({&#39;pi&#39;:3.1416, &#39;e&#39;:2.718})
+&amp;lt;class &#39;dict&#39;&amp;gt;
+&amp;gt;&amp;gt;&amp;gt;type((1, &#39;dos&#39;, 3))
+&amp;lt;class &#39;tuple&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;números-clases-int-y-float&#34;&gt;Números (clases &lt;code&gt;int&lt;/code&gt; y &lt;code&gt;float&lt;/code&gt;)&lt;/h2&gt;
+&lt;p&gt;Secuencia de dígitos (pueden incluir el - para negativos y el . para decimales) que representan números.
+Pueden ser enteros (&lt;code&gt;int&lt;/code&gt;) o reales (&lt;code&gt;float&lt;/code&gt;).&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; type(1)
+&amp;lt;class &#39;int&#39;&amp;gt;
+&amp;gt;&amp;gt;&amp;gt; type(-2)
+&amp;lt;class &#39;int&#39;&amp;gt;
+&amp;gt;&amp;gt;&amp;gt; type(2.3)
+&amp;lt;class &#39;float&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;operadores-aritméticos&#34;&gt;Operadores aritméticos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Operadores aritméticos: &lt;code&gt;+&lt;/code&gt; (suma), &lt;code&gt;-&lt;/code&gt; (resta), &lt;code&gt;*&lt;/code&gt; (producto), &lt;code&gt;/&lt;/code&gt; (cociente), &lt;code&gt;//&lt;/code&gt; (cociente división entera), &lt;code&gt;%&lt;/code&gt; (resto división entera), &lt;code&gt;**&lt;/code&gt; (potencia).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Orden de prioridad de evaluación:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Funciones predefinidas&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Potencias&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Productos y cocientes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Sumas y restas&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Se puede saltar el orden de evaluación utilizando paréntesis &lt;code&gt;( )&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; 2+3
+5
+&amp;gt;&amp;gt;&amp;gt; 5*-2
+-10
+&amp;gt;&amp;gt;&amp;gt; 5/2
+2.5
+&amp;gt;&amp;gt;&amp;gt; 5//2
+2
+&amp;gt;&amp;gt;&amp;gt; (2+3)**2
+25
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;operadores-lógicos-con-números&#34;&gt;Operadores lógicos con números&lt;/h3&gt;
+&lt;p&gt;Devuelven un valor lógico o booleano.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Operadores lógicos: &lt;code&gt;==&lt;/code&gt; (igual que), &lt;code&gt;&amp;gt;&lt;/code&gt; (mayor que), &lt;code&gt;&amp;lt;&lt;/code&gt; (menor que), &lt;code&gt;&amp;gt;=&lt;/code&gt; (mayor o igual que), &lt;code&gt;&amp;lt;=&lt;/code&gt; (menor o igual que), &lt;code&gt;!=&lt;/code&gt; (distinto de).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; 3==3
+True
+&amp;gt;&amp;gt;&amp;gt; 3.1&amp;lt;=3
+False
+&amp;gt;&amp;gt;&amp;gt; -1!=1
+True
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;cadenas-clase-str&#34;&gt;Cadenas (clase &lt;code&gt;str&lt;/code&gt;)&lt;/h2&gt;
+&lt;p&gt;Secuencia de caracteres alfanuméricos que representan texto. Se escriben entre comillas sencillas &amp;rsquo; o dobles &amp;ldquo;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&#39;Python&#39;
+&amp;quot;123&amp;quot;
+&#39;True&#39;
+# Cadena vacía
+&#39;&#39;
+# Cadena con un espacio en blanco
+&#39; &#39;
+# Cambio de línea
+&#39;\n&#39;
+# Tabulador
+&#39;\t&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;acceso-a-los-elementos-de-una-cadena&#34;&gt;Acceso a los elementos de una cadena&lt;/h3&gt;
+&lt;p&gt;Cada carácter tiene asociado un índice que permite acceder a él.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Cadena&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;code&gt;P&lt;/code&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;code&gt;y&lt;/code&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;code&gt;t&lt;/code&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;code&gt;h&lt;/code&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;code&gt;o&lt;/code&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;code&gt;n&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Índice positivo&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Índice negativo&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;c[i]&lt;/code&gt; devuelve el carácter de la cadena &lt;code&gt;c&lt;/code&gt; con el índice &lt;code&gt;i&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;i class=&#34;fa fa-exclamation-triangle&#34; style=&#34;color:red;&#34;&gt;&lt;/i&gt; &lt;em&gt;El índice del primer carácter de la cadena es 0.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;También se pueden utilizar índices negativos para recorrer la cadena del final al principio.&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa fa-exclamation-triangle&#34; style=&#34;color:red;&#34;&gt;&lt;/i&gt; &lt;em&gt;El índice del último carácter de la cadena es -1.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39;[0]
+&#39;P&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39;[1]
+&#39;y&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39;[-1]
+&#39;n&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39;[6]
+Traceback (most recent call last):
+  File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 1, in &amp;lt;module&amp;gt;
+IndexError: string index out of range
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;subcadenas&#34;&gt;Subcadenas&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;c[i:j:k]&lt;/code&gt; : Devuelve la subcadena de &lt;code&gt;c&lt;/code&gt; desde el carácter con el índice &lt;code&gt;i&lt;/code&gt; hasta el carácter anterior al índice &lt;code&gt;j&lt;/code&gt;, tomando caracteres cada &lt;code&gt;k&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39;[1:4]
+&#39;yth&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39;[1:1]
+&#39;&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39;[2:]
+&#39;thon&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39;[:-2]
+&#39;Pyth&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39;[:]
+&#39;Python&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39;[0:6:2]
+&#39;Pto&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;operaciones-con-cadenas&#34;&gt;Operaciones con cadenas&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;c1 + c2&lt;/code&gt; : Devuelve la cadena resultado de concatenar las cadenas &lt;code&gt;c1&lt;/code&gt; y &lt;code&gt;c2&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c * n&lt;/code&gt; : Devuelve la cadena resultado de concatenar &lt;code&gt;n&lt;/code&gt; copias de la cadena &lt;code&gt;c&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c1 in c2&lt;/code&gt; : Devuelve &lt;code&gt;True&lt;/code&gt; si &lt;code&gt;c1&lt;/code&gt; es una cadena concenida en &lt;code&gt;c2&lt;/code&gt; y &lt;code&gt;False&lt;/code&gt; en caso contrario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c1 not in c2&lt;/code&gt; : Devuelve &lt;code&gt;True&lt;/code&gt; si &lt;code&gt;c1&lt;/code&gt; es una cadena no concenida en &lt;code&gt;c2&lt;/code&gt; y &lt;code&gt;False&lt;/code&gt; en caso contrario.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &#39;Me gusta &#39; + &#39;Python&#39;
+&#39;Me gusta Python&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39; * 3
+&#39;PythonPythonPython&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;y&#39; in &#39;Python&#39;
+True
+&amp;gt;&amp;gt;&amp;gt; &#39;tho&#39; in &#39;Python&#39;
+True
+&amp;gt;&amp;gt;&amp;gt; &#39;to&#39; not in &#39;Python&#39;
+True
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;operaciones-de-comparación-de-cadenas&#34;&gt;Operaciones de comparación de cadenas&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;c1 == c2&lt;/code&gt; : Devuelve &lt;code&gt;True&lt;/code&gt; si la cadena &lt;code&gt;c1&lt;/code&gt; es igual que la cadena &lt;code&gt;c2&lt;/code&gt; y &lt;code&gt;False&lt;/code&gt; en caso contrario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c1 &amp;gt; c2&lt;/code&gt; : Devuelve &lt;code&gt;True&lt;/code&gt; si la cadena &lt;code&gt;c1&lt;/code&gt; sucede a la cadena &lt;code&gt;c2&lt;/code&gt; y &lt;code&gt;False&lt;/code&gt; en caso contrario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c1 &amp;lt; c2&lt;/code&gt; : Devuelve &lt;code&gt;True&lt;/code&gt; si la cadena &lt;code&gt;c1&lt;/code&gt; antecede a la cadena &lt;code&gt;c2&lt;/code&gt; y &lt;code&gt;False&lt;/code&gt; en caso contrario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c1 &amp;gt;= c2&lt;/code&gt; : Devuelve &lt;code&gt;True&lt;/code&gt; si la cadena &lt;code&gt;c1&lt;/code&gt; sucede o es igual a la cadena &lt;code&gt;c2&lt;/code&gt; y &lt;code&gt;False&lt;/code&gt; en caso contrario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c1 &amp;lt;= c2&lt;/code&gt; : Devuelve &lt;code&gt;True&lt;/code&gt; si la cadena &lt;code&gt;c1&lt;/code&gt; antecede o es igual a la cadena &lt;code&gt;c2&lt;/code&gt; y &lt;code&gt;False&lt;/code&gt; en caso contrario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c1 != c2&lt;/code&gt; : Devuelve &lt;code&gt;True&lt;/code&gt; si la cadena &lt;code&gt;c1&lt;/code&gt; es distinta de la cadena &lt;code&gt;c2&lt;/code&gt; y &lt;code&gt;False&lt;/code&gt; en caso contrario.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;i class=&#34;fa fa-exclamation-triangle&#34; style=&#34;color:red;&#34;&gt;&lt;/i&gt; &lt;em&gt;Utilizan el orden establecido en el 
+&lt;a href=&#34;https://www.codigosascii.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;código ASCII&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39; == &#39;python&#39;
+False
+&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39; &amp;lt; &#39;python&#39;
+True
+&amp;gt;&amp;gt;&amp;gt; &#39;a&#39; &amp;gt; &#39;Z&#39;
+True
+&amp;gt;&amp;gt;&amp;gt; &#39;A&#39; &amp;gt;= &#39;Z&#39;
+False
+&amp;gt;&amp;gt;&amp;gt; &#39;&#39; &amp;lt; &#39;Python&#39;
+True
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;funciones-de-cadenas&#34;&gt;Funciones de cadenas&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;len(c)&lt;/code&gt; : Devuelve el número de caracteres de la cadena &lt;code&gt;c&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;min(c)&lt;/code&gt; : Devuelve el carácter menor de la cadena &lt;code&gt;c&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;max(c)&lt;/code&gt; : Devuelve el carácter mayor de la cadena &lt;code&gt;c&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c.upper()&lt;/code&gt; : Devuelve la cadena con los mismos caracteres que la cadena &lt;code&gt;c&lt;/code&gt; pero en mayúsculas.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c.lower()&lt;/code&gt; : Devuelve la cadena con los mismos caracteres que la cadena &lt;code&gt;c&lt;/code&gt; pero en minúsculas.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c.title()&lt;/code&gt; : Devuelve la cadena con los mismos caracteres que la cadena &lt;code&gt;c&lt;/code&gt; con el primer carácter en mayúsculas y el resto en minúsculas.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c.split(delimitador)&lt;/code&gt; : Devuelve la lista formada por las subcadenas que resultan de partir la cadena &lt;code&gt;c&lt;/code&gt; usando como delimitador la cadena &lt;code&gt;delimitador&lt;/code&gt;.
+Si no se especifica el delimitador utiliza por defecto el espacio en blanco.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- TODO: Incluir más funciones de cadenas como replace --&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; len(&#39;Python&#39;)
+6
+&amp;gt;&amp;gt;&amp;gt; min(&#39;Python&#39;)
+&#39;P&#39;
+&amp;gt;&amp;gt;&amp;gt; max(&#39;Python&#39;)
+&#39;y&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Python&#39;.upper()
+&#39;PYTHON&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;A,B,C&#39;.split(&#39;,&#39;)
+[&#39;A&#39;, &#39;B&#39;, &#39;C&#39;]
+&amp;gt;&amp;gt;&amp;gt; &#39;I love Python&#39;.split()
+[&#39;I&#39;, &#39;love&#39;, &#39;Python&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;cadenas-formateadas-format&#34;&gt;Cadenas formateadas (&lt;code&gt;format()&lt;/code&gt;)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;c.format(valores)&lt;/code&gt;: Devuelve la cadena &lt;code&gt;c&lt;/code&gt; tras sustituir los valores de la secuencia &lt;code&gt;valores&lt;/code&gt; en los marcadores de posición de &lt;code&gt;c&lt;/code&gt;. Los marcadores de posición se indican mediante llaves &lt;code&gt;{}&lt;/code&gt; en la cadena &lt;code&gt;c&lt;/code&gt;, y el reemplazo de los valores se puede realizar por posición, indicando en número de orden del valor dentro de las llaves, o por nombre, indicando el nombre del valor, siempre y cuando los valores se pasen con el formato &lt;code&gt;nombre = valor&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &#39;Un {} vale {} {}&#39;.format(&#39;€&#39;, 1.12, &#39;$&#39;)
+&#39;Un € vale 1.12 $&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Un {2} vale {1} {0}&#39;.format(&#39;€&#39;, 1.12, &#39;$&#39;)
+&#39;Un $ vale 1.12 €&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Un {moneda1} vale {cambio} {moneda2}&#39;.format(moneda1 = &#39;€&#39;, cambio = 1.12, moneda2 = &#39;$&#39;)
+&#39;Un € vale 1.12 $&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Los marcadores de posición, a parte de indicar la posición de los valores de reemplazo, pueden indicar también el formato de estos. Para ello se utiliza la siguiente sintaxis:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;{:n}&lt;/code&gt; : Alinea el valor a la izquierda rellenando con espacios por la derecha hasta los &lt;code&gt;n&lt;/code&gt; caracteres.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{:&amp;gt;n}&lt;/code&gt; : Alinea el valor a la derecha rellenando con espacios por la izquierda hasta los &lt;code&gt;n&lt;/code&gt; caracteres.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{:^n}&lt;/code&gt; : Alinea el valor en el centro rellenando con espacios por la izquierda y por la derecha hasta los &lt;code&gt;n&lt;/code&gt; caracteres.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{:nd}&lt;/code&gt; : Formatea el valor como un número entero con &lt;code&gt;n&lt;/code&gt; caracteres rellenando con espacios blancos por la izquierda.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{:n.mf}&lt;/code&gt; : Formatea el valor como un número real con un tamaño de &lt;code&gt;n&lt;/code&gt; caracteres (incluído el separador de decimales) y &lt;code&gt;m&lt;/code&gt; cifras decimales, rellenando con espacios blancos por la izquierda.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &#39;Hoy es {:^10}, mañana {:10} y pasado {:&amp;gt;10}&#39;.format(&#39;lunes&#39;, &#39;martes&#39;, &#39;miércoles&#39;)
+&#39;Hoy es   lunes   , mañana martes     y pasado  miércoles&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Cantidad {:5d}&#39;.format(12)&#39;
+&#39;Cantidad    12&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;Pi vale {:8.4f}&#39;.format(3.141592)
+&#39;Pi vale   3.1416&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;datos-lógicos-o-booleanos-clase-bool&#34;&gt;Datos lógicos o booleanos (clase &lt;code&gt;bool&lt;/code&gt;)&lt;/h2&gt;
+&lt;p&gt;Contiene únicamente dos elementos &lt;code&gt;True&lt;/code&gt; y &lt;code&gt;False&lt;/code&gt; que representan los valores lógicos verdadero y falso respectivamente.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;False&lt;/code&gt; tiene asociado el valor 0 y &lt;code&gt;True&lt;/code&gt; tiene asociado el valor 1.&lt;/p&gt;
+&lt;h3 id=&#34;operaciones-con-valores-lógicos&#34;&gt;Operaciones con valores lógicos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Operadores lógicos:  &lt;code&gt;==&lt;/code&gt; (igual que), &lt;code&gt;&amp;gt;&lt;/code&gt; (mayor), &lt;code&gt;&amp;lt;&lt;/code&gt; (menor), &lt;code&gt;&amp;gt;=&lt;/code&gt; (mayor o igual que), &lt;code&gt;&amp;lt;=&lt;/code&gt; (menor o igual que), &lt;code&gt;!=&lt;/code&gt; (distinto de).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;not b&lt;/code&gt; (negación) : Devuelve &lt;code&gt;True&lt;/code&gt; si el dato booleano &lt;code&gt;b&lt;/code&gt; es &lt;code&gt;False&lt;/code&gt; , y &lt;code&gt;False&lt;/code&gt; en caso contrario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b1 and b2&lt;/code&gt; : Devuelve &lt;code&gt;True&lt;/code&gt; si los datos booleanos &lt;code&gt;b1&lt;/code&gt; y &lt;code&gt;b2&lt;/code&gt; son &lt;code&gt;True&lt;/code&gt;, y &lt;code&gt;False&lt;/code&gt; en caso contrario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b1 or b2&lt;/code&gt; : Devuelve &lt;code&gt;True&lt;/code&gt; si alguno de los datos booleanos &lt;code&gt;b1&lt;/code&gt; o &lt;code&gt;b2&lt;/code&gt; son &lt;code&gt;True&lt;/code&gt;, y &lt;code&gt;False&lt;/code&gt; en caso contrario.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tabla-de-verdad&#34;&gt;Tabla de verdad&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;code&gt;x&lt;/code&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;code&gt;y&lt;/code&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;code&gt;not x&lt;/code&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;code&gt;x and y&lt;/code&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;code&gt;x or y&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;False&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;False&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;True&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;False&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;False&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;False&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;True&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;True&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;False&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;True&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;True&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;False&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;False&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;False&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;True&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;True&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;True&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;False&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;True&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;True&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; not True
+False
+&amp;gt;&amp;gt;&amp;gt; False or True
+True
+&amp;gt;&amp;gt;&amp;gt; True and False
+False
+&amp;gt;&amp;gt;&amp;gt; True and True
+True
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;conversión-de-datos-primitivos-simples&#34;&gt;Conversión de datos primitivos simples&lt;/h2&gt;
+&lt;p&gt;Las siguientes funciones convierten un dato de un tipo en otro, siempre y cuando la conversión sea posible.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;int()&lt;/code&gt; convierte a entero.&lt;br&gt;
+&lt;strong&gt;Ejemplo&lt;/strong&gt;. &lt;code&gt;int(&#39;12&#39;)&lt;/code&gt; &lt;i class=&#34;fa fa-arrow-right&#34;&gt;&lt;/i&gt; &lt;code&gt;12&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;int(True)&lt;/code&gt; &lt;i class=&#34;fa fa-arrow-right&#34;&gt;&lt;/i&gt; &lt;code&gt;1&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;int(&#39;c&#39;)&lt;/code&gt; &lt;i class=&#34;fa fa-arrow-right&#34;&gt;&lt;/i&gt; Error&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;float()&lt;/code&gt; convierte a real.&lt;br&gt;
+&lt;strong&gt;Ejemplo&lt;/strong&gt;. &lt;code&gt;float(&#39;3.14&#39;)&lt;/code&gt; &lt;i class=&#34;fa fa-arrow-right&#34;&gt;&lt;/i&gt; &lt;code&gt;3.14&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;float(True)&lt;/code&gt; &lt;i class=&#34;fa fa-arrow-right&#34;&gt;&lt;/i&gt; &lt;code&gt;1.0&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;float(&#39;III&#39;)&lt;/code&gt; &lt;i class=&#34;fa fa-arrow-right&#34;&gt;&lt;/i&gt; Error&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;str()&lt;/code&gt; convierte a cadena.&lt;br&gt;
+&lt;strong&gt;Ejemplo&lt;/strong&gt;. &lt;code&gt;str(3.14)&lt;/code&gt; &lt;i class=&#34;fa fa-arrow-right&#34;&gt;&lt;/i&gt; &lt;code&gt;&#39;3.14&#39;&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;str(True)&lt;/code&gt; &lt;i class=&#34;fa fa-arrow-right&#34;&gt;&lt;/i&gt; &lt;code&gt;&#39;True&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bool()&lt;/code&gt; convierte a lógico.&lt;br&gt;
+&lt;strong&gt;Ejemplo&lt;/strong&gt;. &lt;code&gt;bool(&#39;0&#39;)&lt;/code&gt; &lt;i class=&#34;fa fa-arrow-right&#34;&gt;&lt;/i&gt; &lt;code&gt;False&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;bool(&#39;3.14&#39;)&lt;/code&gt; &lt;i class=&#34;fa fa-arrow-right&#34;&gt;&lt;/i&gt; &lt;code&gt;True&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;bool(&#39;&#39;)&lt;/code&gt; &lt;i class=&#34;fa fa-arrow-right&#34;&gt;&lt;/i&gt; &lt;code&gt;False&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;bool(&#39;Hola&#39;)&lt;/code&gt; &lt;i class=&#34;fa fa-arrow-right&#34;&gt;&lt;/i&gt; &lt;code&gt;True&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;variables&#34;&gt;Variables&lt;/h2&gt;
+&lt;p&gt;Una variable es un identificador ligado a algún valor.&lt;/p&gt;
+&lt;p&gt;Reglas para nombrarlas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Comienzan siempre por una letra, seguida de otras letras o números.&lt;/li&gt;
+&lt;li&gt;No se pueden utilizarse palabras reservadas del lenguaje.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A diferencia de otros lenguajes no tienen asociado un tipo y no es necesario declararlas antes de usarlas (tipado dinámico).&lt;/p&gt;
+&lt;p&gt;Para asignar un valor a una variable se utiliza el operador &lt;code&gt;=&lt;/code&gt; y para borrar una variable se utiliza la instrucción &lt;code&gt;del&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;lenguaje = &#39;Python&#39;
+x = 3.14
+y = 3 + 2
+# Asignación múltiple
+a1, a2 = 1, 2
+# Intercambio de valores
+a, b = b, a
+# Incremento (equivale a x = x + 2)
+x += 2
+# Decremento (equivale a x = x - 1)
+x -= 1
+# Valor no definido
+x = None
+del x
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

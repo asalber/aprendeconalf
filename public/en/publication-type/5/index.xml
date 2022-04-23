@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5 | Aprende con Alf</title>
+    <link>/en/publication-type/5/</link>
+      <atom:link href="/en/publication-type/5/index.xml" rel="self" type="application/rss+xml" />
+    <description>5</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>5</title>
+      <link>/en/publication-type/5/</link>
+    </image>
+    
+    <item>
+      <title>Bioestadística Aplicada con SPSS</title>
+      <link>/en/publication/bioestadistica-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/en/publication/bioestadistica-2014/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

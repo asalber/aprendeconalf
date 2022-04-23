@@ -1,0 +1,1132 @@
+<!DOCTYPE html><html lang="es-es" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alfredo Sánchez Alberca">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Grado: Inteligencia de los Negocios
+Fecha: 24 de marzo de 2022
+Ejercicio 1 Escriba un programa que permita practicar una variante simplificada de la prueba de cálculo mental La calculadora humana del concurso televisivo Saber y ganar.">
+
+  
+  <link rel="alternate" hreflang="es-es" href="/docencia/python/examenes/inteligencia-negocios/examen-python-2022-03-24/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#6f5499">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700%7CSource Sans Pro:400+400italic%7COpen Sans:400+400italic%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/docencia/python/examenes/inteligencia-negocios/examen-python-2022-03-24/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@aprendeconalf">
+  <meta property="twitter:creator" content="@aprendeconalf">
+  
+  <meta property="og:site_name" content="Aprende con Alf">
+  <meta property="og:url" content="/docencia/python/examenes/inteligencia-negocios/examen-python-2022-03-24/">
+  <meta property="og:title" content="Examen de Inteligencia de los Negocios 2022-03-24 | Aprende con Alf">
+  <meta property="og:description" content="Grado: Inteligencia de los Negocios
+Fecha: 24 de marzo de 2022
+Ejercicio 1 Escriba un programa que permita practicar una variante simplificada de la prueba de cálculo mental La calculadora humana del concurso televisivo Saber y ganar."><meta property="og:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png">
+  <meta property="twitter:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png"><meta property="og:locale" content="es-es">
+  
+    
+      <meta property="article:published_time" content="2022-03-24T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2022-03-30T00:22:10&#43;02:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Examen de Inteligencia de los Negocios 2022-03-24 | Aprende con Alf</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Buscar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Buscar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Sobre mi</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Docencia</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/docencia/calculo/"><span>Cálculo</span></a>
+            
+              <a class="dropdown-item" href="/docencia/estadistica/"><span>Estadística</span></a>
+            
+              <a class="dropdown-item" href="/docencia/r/"><span>R</span></a>
+            
+              <a class="dropdown-item" href="/docencia/python/"><span>Python</span></a>
+            
+              <a class="dropdown-item" href="/docencia/spss/"><span>SPSS</span></a>
+            
+              <a class="dropdown-item" href="/docencia/geogebra/"><span>Geogebra</span></a>
+            
+              <a class="dropdown-item" href="/docencia/git/"><span>Git</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Proyectos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publicaciones</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contacto</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Buscar"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Claro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Oscuro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automático</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Buscar..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+ 
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/docencia/python/examenes/inteligencia-negocios/">Exámenes de Programación con Python de Inteligencia de los Negocios</a>
+    <ul class="nav docs-sidenav">
+          <li class="active"><a href="/docencia/python/examenes/inteligencia-negocios/examen-python-2022-03-24/">Examen de Inteligencia de los Negocios 2022-03-24</a></li>
+        
+          <li class=""><a href="/docencia/python/examenes/inteligencia-negocios/examen-python-2021-06-05/">Examen de Inteligencia de los Negocios 2021-06-05</a></li>
+        
+          <li class=""><a href="/docencia/python/examenes/inteligencia-negocios/examen-python-2021-05-26/">Examen de Inteligencia de los Negocios 2021-05-26</a></li>
+        
+          <li class=""><a href="/docencia/python/examenes/inteligencia-negocios/examen-python-2021-03-25/">Examen de Inteligencia de los Negocios 2021-03-25</a></li>
+        
+          <li class=""><a href="/docencia/python/examenes/inteligencia-negocios/examen-python-2020-06-19/">Examen de Inteligencia de los Negocios 2020-06-19</a></li>
+        
+          <li class=""><a href="/docencia/python/examenes/inteligencia-negocios/examen-python-2020-05-27/">Examen de Inteligencia de los Negocios 2020-05-27</a></li>
+        
+          <li class=""><a href="/docencia/python/examenes/inteligencia-negocios/examen-python-2019-06-18/">Examen de Inteligencia de los Negocios 2019-06-18</a></li>
+        
+          <li class=""><a href="/docencia/python/examenes/inteligencia-negocios/examen-python-2019-05-27/">Examen de Inteligencia de los Negocios 2019-05-27</a></li>
+        
+          <li class=""><a href="/docencia/python/examenes/inteligencia-negocios/examen-python-2019-03-27/">Examen de Inteligencia de los Negocios 2019-03-27</a></li>
+        </ul>
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">En esta página</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ejercicio-1">Ejercicio 1</a></li>
+    <li><a href="#ejercicio-2">Ejercicio 2</a></li>
+    <li><a href="#ejercicio-3">Ejercicio 3</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Examen de Inteligencia de los Negocios 2022-03-24</h1>
+
+          <div class="article-style">
+            <p>Grado: Inteligencia de los Negocios<br>
+Fecha: 24 de marzo de 2022</p>
+<h2 id="ejercicio-1">Ejercicio 1</h2>
+<p>Escriba un programa que permita practicar una variante simplificada de la prueba de cálculo mental <em>La calculadora humana</em> del concurso televisivo Saber y ganar. El usuario debe ir sumando todos los números de la lista de uno en uno hasta que se equivoque o termine la lista, en cuyo caso ganará.</p>
+<p>Ejemplo usando la lista [50, 4, 28, 33, 12]:</p>
+<pre><code class="language-sh">SUMAR Y GANAR 
+Vaya sumando todos los números que le iré diciendo. Empezamos por 0. 
+Más 50: 50 
+Más 4: 54 
+Más 28: 72 
+Te has equivocado, pero has acertado 2 veces seguidas.
+
+
+SUMAR Y GANAR 
+Vaya sumando todos los números que le iré diciendo. Empezamos por 0. 
+Más 50: 50 
+Más 4: 54 
+Más 28: 82
+Más 33: 115
+Más 12: 127
+Enhorabuena, GANASTE.
+</code></pre>
+<p><a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-03-24/ejercicio1.ipynb" class="btn btn-info" target="_blank">Solución</a></p>
+<h2 id="ejercicio-2">Ejercicio 2</h2>
+<p>Escribir un programa que calcule a partir de una fecha de un año no bisiesto el número de días que han transcurrido en ese año y el número de meses lunares completos que abarcan. Se recuerda que un mes lunar dura aproximadamente 29,53 días.</p>
+<p>El programa debe usar diccionarios para acceder al número de días de cada mes.</p>
+<p>Ejemplo:</p>
+<pre><code class="language-sh">CALENDARIO LUNAR 
+Este programa convierte una fecha de un año NO bisiesto a un calendario lunar. 
+Indique el día: 1 
+Indique el mes: henero 
+El mes henero no existe. 
+
+CALENDARIO LUNAR 
+Este programa convierte una fecha de un año NO bisiesto a un calendario lunar 
+Indique el día: -5 
+Indique el mes: marzo 
+El día -5 de marzo no existe.
+
+CALENDARIO LUNAR 
+Este programa convierte una fecha de un año NO bisiesto a un calendario lunar 
+Indique el día: 29 
+Indique el mes: febrero 
+El día 29 de febrero no existe. 
+
+CALENDARIO LUNAR 
+Este programa convierte una fecha de un año NO bisiesto a un calendario lunar 
+Indique el día: 1 
+Indique el mes: febrero 
+El día 1 de febrero es el día 32 del año. 
+Habrán pasado 1.08 meses lunares.
+</code></pre>
+<p><a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-03-24/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a></p>
+<h2 id="ejercicio-3">Ejercicio 3</h2>
+<p>Un cine tiene una sala rectangular con 5 filas y 4 columnas de butacas.  Escribir un programa que permita gestionar la reserva de butacas con los siguientes requisitos:</p>
+<ul>
+<li>El programa mostrará una matriz con el carácter X para las butacas libres y O para las ocupadas y preguntará por la fila y columna de la butaca a reservar.</li>
+<li>Si el usuario introduce una fila o una columna no válidas, se le avisará y se le volverá a preguntar.</li>
+<li>Si la fila y la columna introducida corresponde a una butaca ocupada, se avisará al usuario y se le volverá a preguntar.</li>
+<li>Si la butaca está libre se reservará y se volverá a preguntar al usuario si quiere hacer más reservas.</li>
+<li>El programa terminará cuando el usuario no quiera hacer más reservas.</li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="language-sh">RESERVA DE BUCATAS 
+XXXXX  
+XXXXX  
+XXXXX  
+XXXXX  
+Introduce la fila que quieres: 2  
+Introduce la columna que quieres: 3  
+Reserva realizada.  
+¿Desea realizar otra reserva? (S/N): S
+
+RESERVA DE BUCATAS 
+XXXXX  
+XXOXX  
+XXXXX  
+XXXXX  
+Introduce la fila que quieres: 5  
+Introduce la columna que quieres: 1  
+La fila y columna elegidas no son válidas.  
+¿Desea realizar otra reserva? (S/N): S
+
+RESERVA DE BUCATAS  
+XXXXX  
+XXOXX  
+XXXXX  
+XXXXX  
+Introduce la fila que quieres: 2  
+Introduce la columna que quieres: 3  
+La butaca elegida está ocupada.  
+¿Desea realizar otra reserva? 
+(S/N): S
+
+RESERVA DE BUCATAS  
+XXXXX  
+XXOXX  
+XXXXX  
+XXXXX  
+Introduce la fila que quieres: 1  
+Introduce la columna que quieres: 2  
+Reserva realizada.  
+¿Desea realizar otra reserva? (S/N): N  
+¡Gracias! 
+</code></pre>
+<p><a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-03-24/ejercicio3.ipynb" class="btn btn-info" target="_blank">Solución</a></p>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/examen/">Examen</a>
+  
+</div>
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Siguiente</div>
+    <a href="/docencia/python/examenes/inteligencia-negocios/examen-python-2021-06-05/" rel="prev">Examen de Inteligencia de los Negocios 2021-06-05</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Última actualización el Mar 30, 2022</p>
+
+          
+
+
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "aprendeconalf" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt="CC SA icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No se encontraron resultados","placeholder":"Buscar...","results":"resultados encontrados"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Proyectos",
+        'publication' : "Publicaciones",
+        'talk' : "Charlas",
+        'slides' : "Diapositivas"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://aprendeconalf.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.f79ea001fad4564ac91850b0b5a8f31c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

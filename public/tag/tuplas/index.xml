@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tuplas | Aprende con Alf</title>
+    <link>/tag/tuplas/</link>
+      <atom:link href="/tag/tuplas/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tuplas</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Tuplas</title>
+      <link>/tag/tuplas/</link>
+    </image>
+    
+    <item>
+      <title>Ejercicios de Listas y Tuplas</title>
+      <link>/docencia/python/ejercicios/listas-tuplas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/ejercicios/listas-tuplas/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que almacene las asignaturas de un curso (por ejemplo Matemáticas, Física, Química, Historia y Lengua) en una lista y la muestre por pantalla.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio1.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que almacene las asignaturas de un curso (por ejemplo Matemáticas, Física, Química, Historia y Lengua) en una lista y la muestre por pantalla el mensaje &lt;code&gt;Yo estudio &amp;lt;asignatura&amp;gt;&lt;/code&gt;, donde &lt;code&gt;&amp;lt;asignatura&amp;gt;&lt;/code&gt; es cada una de las asignaturas de la lista.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio2.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que almacene las asignaturas de un curso (por ejemplo Matemáticas, Física, Química, Historia y Lengua) en una lista, pregunte al usuario la nota que ha sacado en cada asignatura, y después las muestre por pantalla con el mensaje &lt;code&gt;En &amp;lt;asignatura&amp;gt; has sacado &amp;lt;nota&amp;gt;&lt;/code&gt; donde &lt;code&gt;&amp;lt;asignatura&amp;gt;&lt;/code&gt; es cada una des las asignaturas de la lista y &lt;code&gt;&amp;lt;nota&amp;gt;&lt;/code&gt; cada una de las correspondientes notas introducidas por el usuario.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio3.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte al usuario los números ganadores de la lotería primitiva, los almacene en una lista y los muestre por pantalla ordenados de menor a mayor.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio4.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-5&#34;&gt;Ejercicio 5&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que almacene en una lista los números del 1 al 10 y los muestre por pantalla en orden inverso separados por comas.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio5.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-6&#34;&gt;Ejercicio 6&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que almacene las asignaturas de un curso (por ejemplo Matemáticas, Física, Química, Historia y Lengua) en una lista, pregunte al usuario la nota que ha sacado en cada asignatura y elimine de la lista las asignaturas aprobadas. Al final el programa debe mostrar por pantalla las asignaturas que el usuario tiene que repetir.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio6.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-7&#34;&gt;Ejercicio 7&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que almacene el abecedario en una lista, elimine de la lista las letras que ocupen posiciones múltiplos de 3, y muestre por pantalla la lista resultante.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio7.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-8&#34;&gt;Ejercicio 8&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pida al usuario una palabra y muestre por pantalla si es un palíndromo.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio8.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-9&#34;&gt;Ejercicio 9&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pida al usuario una palabra y muestre por pantalla el número de veces que contiene cada vocal.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio9.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-10&#34;&gt;Ejercicio 10&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que almacene en una lista los siguientes precios, 50, 75, 46, 22, 80, 65, 8, y muestre por pantalla el menor y el mayor de los precios.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio10.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-11&#34;&gt;Ejercicio 11&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que almacene los vectores (1,2,3) y (-1,0,2) en dos listas y muestre por pantalla su producto escalar.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio11.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-12&#34;&gt;Ejercicio 12&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que almacene las matrices
+$$
+A = \left(
+\begin{array}{rrr}
+1 &amp;amp; 2 &amp;amp; 3\newline
+4 &amp;amp; 5 &amp;amp; 6
+\end{array}
+\right)
+\quad  y
+\quad
+B = \left(
+\begin{array}{rr}
+-1 &amp;amp; 0\newline
+0 &amp;amp; 1\newline
+1 &amp;amp; 1
+\end{array}
+\right)
+$$&lt;/p&gt;
+&lt;p&gt;en una lista y muestre por pantalla su producto.&lt;br&gt;
+Nota: Para representar matrices mediante listas usar listas anidadas, representando cada vector fila en una lista.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio12.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-13&#34;&gt;Ejercicio 13&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte por una muestra de números, separados por comas, los guarde en una lista y muestre por pantalla su media y desviación típica.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/listas-tuplas/ejercicio13.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tuplas</title>
+      <link>/docencia/python/manual/tuplas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/manual/tuplas/</guid>
+      <description>&lt;h2 id=&#34;tuplas&#34;&gt;Tuplas&lt;/h2&gt;
+&lt;p&gt;Una &lt;strong&gt;tupla&lt;/strong&gt; es una secuencias ordenadas de objetos de distintos tipos.&lt;/p&gt;
+&lt;p&gt;Se construyen poniendo los elementos entre corchetes &lt;code&gt;(&lt;/code&gt;  &lt;code&gt;)&lt;/code&gt; separados por comas.&lt;/p&gt;
+&lt;p&gt;Se caracterizan por:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tienen orden.&lt;/li&gt;
+&lt;li&gt;Pueden contener elementos de distintos tipos.&lt;/li&gt;
+&lt;li&gt;Son inmutables, es decir, no pueden alterarse durante la ejecución de un programa.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Se usan habitualmente para representar colecciones de datos una determinada estructura semántica, como por ejemplo un vector o una matriz.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Tupla vacía
+type(())
+&amp;lt;class &#39;tuple&#39;&amp;gt;
+# Tupla con elementos de distintos tipos
+(1, &amp;quot;dos&amp;quot;, True)
+# Vector
+(1, 2, 3)
+# Matriz
+((1, 2, 3), (4, 5, 6))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;creación-de-tuplas-mediante-la-función-tuple&#34;&gt;Creación de tuplas mediante la función &lt;code&gt;tuple()&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Otra forma de crear tuplas es mediante la función &lt;code&gt;tuple()&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tuple(c)&lt;/code&gt; : Crea una tupla con los elementos de la secuencia o colección &lt;code&gt;c&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Se pueden indicar los elementos separados por comas, mediante una cadena, o mediante una colección de elementos iterable.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; tuple()
+()
+&amp;gt;&amp;gt;&amp;gt; tuple(1, 2, 3)
+(1, 2, 3)
+&amp;gt;&amp;gt;&amp;gt; tuple(&amp;quot;Python&amp;quot;)
+(&#39;P&#39;, &#39;y&#39;, &#39;t&#39;, &#39;h&#39;, &#39;o&#39;, &#39;n&#39;)
+&amp;gt;&amp;gt;&amp;gt; tuple([1, 2, 3])
+(1, 2, 3)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;operaciones-con-tuplas&#34;&gt;Operaciones con tuplas&lt;/h3&gt;
+&lt;p&gt;El acceso a los elementos de una tupla se realiza del mismo modo que en las listas.
+También se pueden obtener subtuplas de la misma manera que las sublistas.&lt;/p&gt;
+&lt;p&gt;Las operaciones de listas que no modifican la lista también son aplicables a las tuplas.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; a = (1, 2, 3)
+&amp;gt;&amp;gt;&amp;gt; a[1]
+2
+&amp;gt;&amp;gt;&amp;gt; len(a)
+3
+&amp;gt;&amp;gt;&amp;gt; a.index(3)
+2
+&amp;gt;&amp;gt;&amp;gt; 0 in a
+False
+&amp;gt;&amp;gt;&amp;gt; b = ((1, 2, 3), (4, 5, 6))
+&amp;gt;&amp;gt;&amp;gt; b[1]
+(4, 5, 6)
+&amp;gt;&amp;gt;&amp;gt; b[1][2]
+6
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

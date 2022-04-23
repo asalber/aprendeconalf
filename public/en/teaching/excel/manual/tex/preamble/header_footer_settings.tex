@@ -1,0 +1,79 @@
+% Autor: Alfredo Sánchez Alberca (email:asalber@ceu.es)
+
+% Fuente 
+\setkomafont{pageheadfoot}{%
+	\normalfont\sffamily\bfseries\slshape
+	}
+\setkomafont{pagefoot}{%
+	\normalfont\sffamily
+	}
+\setkomafont{pagenumber}{%
+	\normalfont\rmfamily
+	}
+
+% Anchura del encabezado
+%\setheadwidth[0pt]{textwithmarginpar}
+\setheadwidth[0pt]{text}
+
+% Grosor de la línea horizontal del encabezado
+\setheadsepline{0pt}
+
+% Anchura del pie
+\setfootwidth[0pt]{text}
+% Grosor de la línea horizontal del pie
+\setfootsepline[text]{0pt}
+
+% Cálculos para la línea vertical del pie
+\newlength{\myLenghthFootAbstand}
+\setlength{\myLenghthFootAbstand}{\paperheight-1in-\topmargin- \headheight-\headsep-\textheight-\footskip}
+\newlength{\myLenghthTemp}
+\setlength{\myLenghthTemp}{\myLenghthFootAbstand+\baselineskip}
+
+% Contenido del encabezado y pie
+% Se usa el paquete scrpage2 cargado en preambulo/paquetes_KOMA-Script.tex
+% Limpiar las cabeceras y los pies
+\clearscrheadfoot
+
+% Cabeceras
+\ohead{
+\textcolor{color1}{\headmark}
+}
+
+% Pies de página
+% Números pares a la izquierda
+\lefoot
+[% scrplain style (begin)
+\setlength{\unitlength}{\myLenghthFootAbstand}
+\begin{picture}(0,0)
+\color{color1}
+\put(0,-1){\makebox(0,0)[lb]{\rule{.8cm}{\myLenghthTemp}}}
+\put(0.4cm,0){\makebox(0,0)[c]{\textcolor{white}{\pagemark}}}
+\end{picture}
+]% scrplain style (end)
+%
+{% scrheadings style (begin)
+\setlength{\unitlength}{\myLenghthFootAbstand}
+\begin{picture}(0,0)
+\color{color1}
+\put(0,-1){\makebox(0,0)[lb]{\rule{.8cm}{\myLenghthTemp}}}
+\put(-0.4cm,0){\makebox(0,0)[c]{\textcolor{white}{\pagemark}}}
+\end{picture}
+}% scrheadings style (end)
+
+% Números impares a la derecha
+\rofoot[
+\setlength{\unitlength}{\myLenghthFootAbstand}
+\begin{picture}(0,0)
+\color{color1}
+\put(0,-1){\makebox(0,0)[rb]{\rule{0.8cm}{\myLenghthTemp}}}
+\put(0.4cm,0){\makebox(0,0)[c]{\textcolor{white}{\pagemark}}}
+\end{picture}
+]
+{
+\setlength{\unitlength}{\myLenghthFootAbstand}
+\begin{picture}(0,0)
+\color{color1}
+\put(0,-1){\makebox(0,0)[rb]{\rule{0.8cm}{\myLenghthTemp}}}
+\put(0.4cm,0){\makebox(0,0)[c]{\textcolor{white}{\pagemark}}}
+\end{picture}
+}

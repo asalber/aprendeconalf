@@ -1,0 +1,1251 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alfredo Sánchez Alberca">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Ordinary Differential Equations Often in Physics, Chemistry, Biology, Geometry, etc there arise equations that relate a function with its derivative, or successive derivatives.
+ Definition - Ordinary differential equation. An ordinary differential equation (O.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/en/teaching/calculus/manual/ordinary-differential-equations/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#6f5499">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700%7CSource Sans Pro:400+400italic%7COpen Sans:400+400italic%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/en/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/en/teaching/calculus/manual/ordinary-differential-equations/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@aprendeconalf">
+  <meta property="twitter:creator" content="@aprendeconalf">
+  
+  <meta property="og:site_name" content="Aprende con Alf">
+  <meta property="og:url" content="/en/teaching/calculus/manual/ordinary-differential-equations/">
+  <meta property="og:title" content="Ordinary differential equations | Aprende con Alf">
+  <meta property="og:description" content="Ordinary Differential Equations Often in Physics, Chemistry, Biology, Geometry, etc there arise equations that relate a function with its derivative, or successive derivatives.
+ Definition - Ordinary differential equation. An ordinary differential equation (O."><meta property="og:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png">
+  <meta property="twitter:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png"><meta property="og:locale" content="en-us">
+  
+    
+    <meta property="article:modified_time" content="2020-09-25T00:29:35&#43;02:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Ordinary differential equations | Aprende con Alf</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/en"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/en"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/en/teaching/calculus/"><span>Calculus</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/statistics/"><span>Statistics</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/R/"><span>R</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/excel/"><span>Excel</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/geogebra/"><span>Geogebra</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+ 
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/en/teaching/calculus/manual/">Calculus Manual</a>
+    <ul class="nav docs-sidenav">
+          <li class=""><a href="/en/teaching/calculus/manual/analytic-geometry/">Analytic Geometry</a></li>
+        
+          <li class=""><a href="/en/teaching/calculus/manual/derivatives-one-variable/">One variable differential calculus</a></li>
+        
+          <li class=""><a href="/en/teaching/calculus/manual/integrals/">Integral calculus</a></li>
+        
+          <li class="active"><a href="/en/teaching/calculus/manual/ordinary-differential-equations/">Ordinary differential equations</a></li>
+        
+          <li class=""><a href="/en/teaching/calculus/manual/derivatives-n-variables/">Several variables differentiable calculus</a></li>
+        </ul>
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ordinary-differential-equations">Ordinary Differential Equations</a>
+      <ul>
+        <li><a href="#deducing-a-differential-equation">Deducing a differential equation</a></li>
+        <li><a href="#solution-of-an-ordinary-differential-equation">Solution of an ordinary differential equation</a></li>
+        <li><a href="#general-solution-of-an-ordinary-differential-equation">General solution of an ordinary differential equation</a></li>
+      </ul>
+    </li>
+    <li><a href="#first-order-differential-equations">First order differential equations</a>
+      <ul>
+        <li><a href="#integral-curve-of-an-initial-value-problem">Integral curve of an initial value problem</a></li>
+        <li><a href="#existence-and-uniqueness-of-solutions">Existence and uniqueness of solutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#separable-differential-equations">Separable differential equations</a></li>
+    <li><a href="#homogeneous-differential-equations">Homogeneous differential equations</a>
+      <ul>
+        <li><a href="#linear-differential-equations">Linear differential equations</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Ordinary differential equations</h1>
+
+          <div class="article-style">
+            <h2 id="ordinary-differential-equations">Ordinary Differential Equations</h2>
+<p>Often in Physics, Chemistry, Biology, Geometry, etc there arise equations that relate a function with its derivative, or successive derivatives.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Ordinary differential equation</strong>. An <em>ordinary differential equation</em> (O.D.E.) is a equation that relates an independent variable $x$, a function $y(x)$ that depends on $x$, and the successive derivatives of $y$, $y&rsquo;,y&rsquo;&rsquo;,\ldots,y^{(n)}$; it can be written as</p>
+<p>$$F(x, y, y&rsquo;, y&rsquo;&rsquo;,\ldots, y^{(n)})=0.$$</p>
+<p>The <em>order</em> of a differential equation is the greatest order of the derivatives in the equation.</p>
+  </div>
+</div>
+<p><strong>Example</strong>. The equation $y&rsquo;&rsquo;&rsquo;+sen(x)y&rsquo;=2x$ is a differential equation of order 3.</p>
+<h3 id="deducing-a-differential-equation">Deducing a differential equation</h3>
+<p>To deduce a differential equation that explains a natural phenomenon is essential to understand what a derivative is and how to interpret it.</p>
+<p><strong>Example</strong>. Newton’s law of cooling states</p>
+<blockquote>
+<p><em>“The rate of change of the temperature of a body in a surrounding medium is proportional to the difference between the temperature of the body $T$ and the temperature of the medium $T_a$.”</em></p>
+</blockquote>
+<p>The rate of change of the temperature is the derivative of temperature with respect to time $dT/dt$. Thus, Newton’s law of cooling can be explained by the differential equation</p>
+<p>$$\frac{dT}{dt}=k(T-T_a),$$</p>
+<p>where $k$ is a proportionality constant.</p>
+<h3 id="solution-of-an-ordinary-differential-equation">Solution of an ordinary differential equation</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Solution of an ordinary differential equation</strong>. Given an ordinary differential equation $F(x,y,y&rsquo;,y&rsquo;&rsquo;,\ldots,y^{(n})=0$, the function $y=f(x)$ is a <em>solution of the ordinary differential equation</em> if it satisfies the equation, that is, if</p>
+<p>$$F(x,f(x), f&rsquo;(x), f&rsquo;&rsquo;(x),\ldots, f^{(n}(x))=0.$$</p>
+<p>The graph of a solution of the ordinary differential equation is known as <em>integral curve</em>.</p>
+  </div>
+</div>
+<p>Solving an ordinary differential equations consists on finding all its solutions in a given domain. For that integral calculus is required.</p>
+<p>The same manner than the indefinite integral is a family of antiderivatives, that differ in a constant term, after integrating an ordinary differential equation we get a family of solutions that differ in a constant. We can get particular solutions giving values to this constant.</p>
+<h3 id="general-solution-of-an-ordinary-differential-equation">General solution of an ordinary differential equation</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - General solution of an ordinary differential equation</strong>. Given an ordinary differential equation $F(x,y,y&rsquo;,y&rsquo;&rsquo;,\ldots,y^{(n})=0$ of order $n$, the <em>general solution</em> of the differential equation is a family of functions</p>
+<p>$$y =f (x,C_1,\ldots,C_n),$$</p>
+<p>depending on $n$ constants, such that for any value of $C_1,\ldots,C_n$ we get a solution of the differential equation.</p>
+  </div>
+</div>
+<p>For every value of the constant we get <em>particular solution</em> of the differential equation. Thus, when a differential equation can be solved, it has infinite solutions.</p>
+<p>Geometrically, the general solution of a differential equation corresponds to a family of integral curves of the differential equation.</p>
+<p>Often, it is common to impose conditions to the solutions of a differential equation to reduce the number of solutions. In many cases, these conditions allow to determine the values of the constants in the general solution to get a particular solution.</p>
+<h2 id="first-order-differential-equations">First order differential equations</h2>
+<p>In this chapter we are going to study first order differential equations</p>
+<p>$$F(x,y,y&rsquo;)=0.$$</p>
+<p>The general solution of a first order differential equation is</p>
+<p>$$y = f (x,C),$$</p>
+<p>so to get a particular solution from the general one, it is enough to set the value of the constant $C$, and for that we only need to impose one initial condition.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Initial value problem</strong>. The group consisting of a first order differential equation and an initial condition is known as <em>initial value problem</em>:</p>
+<p>$$
+\begin{cases}
+F(x,y,y&rsquo;)=0, &amp; \mbox{First order differential equation;} \newline
+y(x_0)=y_0, &amp; \mbox{Initial condition.}
+\end{cases}
+$$</p>
+  </div>
+</div>
+<p>Solving an initial value problem consists in finding a solution of the first order differential equation that satisfies the initial condition.</p>
+<p><strong>Example</strong>. Recall the first order differential equation of the Newton’s law of cooling, $$\frac{dT}{dt}=k(T-T_a),$$
+where $T$ is the temperature of the body and $T_a$ is the temperature of the surrounding medium.</p>
+<p>It is easy to check that the general solution of this equation is</p>
+<p>$$T(t) = Ce^{kt}+T_a.$$</p>
+<p>If we impose the initial condition that the temperature of the body at the initial instant is $5$ ºC, that is, $T(0)=5$, we have</p>
+<p>$$T(0) = Ce^{k\cdot0}+T_a = C+T_a = 5,$$</p>
+<p>from where we get $C=5-T_a$, and this give us the particular solution</p>
+<p>$$T(t) = (5-T_a)e^{kt}+T_a.$$</p>
+<h3 id="integral-curve-of-an-initial-value-problem">Integral curve of an initial value problem</h3>
+<p><strong>Example</strong>. If we assume in the previous example that the temperature of the surrounding medium is $T_a=0$ ºC and the cooling constant of the body is $k=1$, the general solution of the differential equation is
+$$T(t)=Ce^t,$$
+that is a family of integral curves. Among all of them, only the one that passes through the point $(0,5)$ corresponds to the particular solution of the previous initial value problem.</p>
+<img src="../img/ode/integral_curves.svg" alt="Area of a positive function" width="350">
+<h3 id="existence-and-uniqueness-of-solutions">Existence and uniqueness of solutions</h3>
+<div class="alert alert-theo">
+  <div>
+    <p><strong>Theorem - Existence and uniqueness of solutions of a first order ODE</strong>. Given an initial value problem</p>
+<p>$$\begin{cases}
+y&rsquo;=F(x,y);\newline
+y(x_0)=y_0;
+\end{cases}
+$$</p>
+<p>if $F(x,y(x))$ is a function continuous on an open interval around the point $(x_0,y_0)$, then a solution of the initial value problem exists. If, in addition, $\frac{\partial F}{\partial y}$ is continuous in an open interval around $(x_0,y_0)$, the solution is unique.</p>
+  </div>
+</div>
+<p>Although this theorem guarantees the existence and uniqueness of a solution of a first order differential equation, it does not provide a method to compute it. In fact, there is not a general method to solve first order differential equations, but we will see how to solve some types:</p>
+<ul>
+<li>
+<a href="#separable-differential-equations">Separable differential equations</a></li>
+<li>
+<a href="#homogeneous-differential-equations">Homogeneous differential equations</a></li>
+<li>
+<a href="#linear-differential-equations">Linear differential equations</a></li>
+</ul>
+<h2 id="separable-differential-equations">Separable differential equations</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Separable differential equation</strong>. A <em>separable differential equation</em> is a first order differential equation that can be written as</p>
+<p>$$y&rsquo;g(y)=f(x),$$</p>
+<p>or what is the same,</p>
+<p>$$g(y)dy=f(x)dx,$$</p>
+<p>so the different variables are on different sides of the equality (the variables are separated).</p>
+  </div>
+</div>
+<div class="alert alert-tool">
+  <div>
+    <p>The general solution for a separable differential equation comes after integrating both sides of the equation</p>
+<p>$$\int g(y)\,dy = \int f(x)\,dx+C.$$</p>
+  </div>
+</div>
+<p><strong>Example</strong>. The differential equation of the Newton’s law of cooling</p>
+<p>$$\frac{dT}{dt}=k(T-T_a),$$</p>
+<p>is a separable differential equation since it can be written as</p>
+<p>$$\frac{1}{T-T_a}dT=k\,dt.$$</p>
+<p>Integrating both sides of the equation we have</p>
+<p>$$\int \frac{1}{T-T_a}\,dT=\int k\,dt\Leftrightarrow \log(T-T_a)=kt+C,$$</p>
+<p>and solving for $T$ we get the general solution of the equation</p>
+<p>$$T(t)=e^{kt+C}+T_a=e^Ce^{kt}+T_a=Ce^{kt}+T_a,$$</p>
+<p>rewriting $C=e^C$ as an arbitrary constant.</p>
+<h2 id="homogeneous-differential-equations">Homogeneous differential equations</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Homogeneous function</strong>. A function $f(x,y)$ is <em>homogeneous</em> of degree $n$, if it satisfies</p>
+<p>$$f(kx,ky)= k^nf(x,y),$$</p>
+<p>for any value $k\in \mathbb{R}$.</p>
+  </div>
+</div>
+<p>In particular, a homogeneous function of degree $0$ always satisfies</p>
+<p>$$f(kx,ky)=f(x,y).$$</p>
+<p>Setting $k=1/x$ we have</p>
+<p>$$f(x,y)=f\left(\frac{1}{x}x,\frac{1}{x}y\right)=f\left(1,\frac{y}{x}\right)=g\left(\frac{y}{x}\right).$$</p>
+<p>This way, a homogeneous function of degree $0$ always can be written as a function of $u=y/x$:</p>
+<p>$$f(x,y)=g\left(\frac{y}{x}\right)=g(u).$$</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Homogeneous differential equation</strong>. A <em>homogeneous differential equation</em> is a first order differential equation that can be written as</p>
+<p>$$y&rsquo;=f(x,y),$$</p>
+<p>where $f(x,y)$ is a homogeneous function of degree $0$.</p>
+  </div>
+</div>
+<div class="alert alert-tool">
+  <div>
+    <p>We can solve a homogeneous differential equation by making the substitution</p>
+<p>$$u=\frac{y}{x}\Leftrightarrow y=ux,$$</p>
+<p>so the equation becomes</p>
+<p>$$u&rsquo;x+u=f(u),$$</p>
+<p>that is a separable differential equation.</p>
+  </div>
+</div>
+<p>Once solved the separable differential equation, the substitution must be undone.</p>
+<p><strong>Example</strong>. Let us consider the following differential equation
+$$4x-3y+y&rsquo;(2y-3x)=0.$$</p>
+<p>Rewriting the equation in this way</p>
+<p>$$y&rsquo;=\frac{3y-4x}{2y-3x}$$</p>
+<p>we can easily check that it is a homogeneous differential equation.</p>
+<p>To solve this equation we have to do the substitution $y=ux$, and we get</p>
+<p>$$u&rsquo;x+u=\frac{3ux-4x}{2ux-3x}=\frac{3u-4}{2u-3}$$</p>
+<p>that is a separable differential equation.</p>
+<p>Separating the variables we have</p>
+<p>$$u&rsquo;x=\frac{3u-4}{2u-3}-u=\frac{-2u^2+6u-4}{2u-3}\Leftrightarrow \frac{2u-3}{-2u^2+6u-4}\,du=\frac{1}{x}\,dx.$$</p>
+<p>Now, integrating both sides of the equation we have</p>
+<p>$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{c}
+\displaystyle \int \frac{2u-3}{-2u^2+6u-4}\,du=\int \frac{1}{x}\,dx
+\Leftrightarrow -\frac{1}{2}\log|u^2-3u+2|=\log|x|+C \Leftrightarrow\newline
+\Leftrightarrow \log|u^2-3u+2|=-2\log|x|-2C,
+\end{array}
+$$</p>
+<p>then, applying the exponential function to both sides and simplifying we get the general solution</p>
+<p>$$u^2-3u+2=e^{-2\log|x|-2C}=\frac{e^{-2C}}{e^{\log|x|^2}}=\frac{C}{x^2},$$</p>
+<p>rewriting the constant $K=e^{-2C}$.</p>
+<p>Finally, undoing the initial substitution $u=y/x$, we arrive at the general solution of the homogeneous differential equation</p>
+<p>$$\left(\frac{y}{x}\right)^2-3\frac{y}{x}+2=\frac{K}{x^2}\Leftrightarrow y^2-3xy+2x^2=K.$$</p>
+<h3 id="linear-differential-equations">Linear differential equations</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Linear differential equation</strong> A <em>linear differential equation</em> is a first order differential equation that can be written as</p>
+<p>$$y&rsquo;+g(x)y = h(x).$$</p>
+  </div>
+</div>
+<p>To solve a linear differential equation we try to write the left side of the equation as the derivative of a product. For that we multiply both sides by the function $f(x)$, such that</p>
+<p>$$f&rsquo;(x)=g(x)f(x).$$</p>
+<p>Thus, we get</p>
+<p>$$
+\begin{array}{c}
+y&rsquo;f(x)+g(x)f(x)y=h(x)f(x)\newline
+\Updownarrow\newline
+y&rsquo;f(x)+f&rsquo;(x)y=h(x)f(x)\newline
+\Updownarrow\newline
+\dfrac{d}{dx}(yf(x))=h(x)f(x)
+\end{array}
+$$</p>
+<p>Integrating both sides of the previous equation we get the solution</p>
+<p>$$yf(x)=\int h(x)f(x)\,dx+C.$$</p>
+<p>On the other hand, the unique function that satisfies $f&rsquo;(x)=g(x)f(x)$ is</p>
+<p>$$f(x)=e^{\int g(x)\,dx},$$</p>
+<p>so, substituting this function in the previous solution we arrive at the solution of the linear differential equation</p>
+<p>$$ye^{\int g(x)\,dx}=\int h(x) e^{\int g(x)\,dx}\,dx+C,$$</p>
+<p>or what is the same</p>
+<div class="alert alert-tool">
+  <div>
+    <p><strong>Solution of a linear differential equation</strong>.</p>
+<p>$$y=e^{-\int g(x)\,dx}\left(\int h(x)e^{\int g(x)\,dx}\,dx+C\right).$$</p>
+  </div>
+</div>
+<p><strong>Example</strong>. If in the differential equation of the Newton’s law of cooling the temperature of the surrounding medium is a function of time $T_a(t)$, then the differential equation</p>
+<p>$$\frac{dT}{dt}=k(T-T_a(t)),$$</p>
+<p>is a linear differential equation since it can be written as</p>
+<p>$$T&rsquo;-kT=-kT_a(t),$$</p>
+<p>where the independent term is $-kT_a(t)$ and the coefficient of $T$ is $-k$.</p>
+<p>Substituting in the formula of the general solution of a linear differential equation we have</p>
+<p>$$y=e^{-\int -k\,dt}\left(\int -kT_a(t)e^{\int -k\,dt}\,dt+C\right)=
+e^{kt}\left(-\int kT_a(t)e^{-kt}\,dt+C\right).$$</p>
+<p>In the particular case that $T_a(t)=t$, and the proportionality constant $k=1$, the general solution of the linear differential equation is</p>
+<p>$$y=e^{t}\left(-\int te^{-kt}\,dt+C\right)=e^t(e^{-t}(t+1)+C)=Ce^t+t+1.$$</p>
+<p>If, in addition, we know that the temperature of the body at time $t=0$ is $5$ ºC, that is, we have the initial condition $T(0)=5$, then we can compute the value of the constant $C$,</p>
+<p>$$y(0)=Ce^0+0+1=5 \Leftrightarrow C+1=5 \Leftrightarrow C=4,$$
+and we get the particular solution</p>
+<p>$$y(t)=4e^t+t+1.$$</p>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tag/ordinary-differential-equation/">Ordinary Differential Equation</a>
+  
+</div>
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/en/teaching/calculus/manual/integrals/" rel="next">Integral calculus</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/en/teaching/calculus/manual/derivatives-n-variables/" rel="prev">Several variables differentiable calculus</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Sep 25, 2020</p>
+
+          
+
+
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "aprendeconalf" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt="CC SA icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/en/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://aprendeconalf.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.f79ea001fad4564ac91850b0b5a8f31c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

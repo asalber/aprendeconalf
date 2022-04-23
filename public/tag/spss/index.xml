@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SPSS | Aprende con Alf</title>
+    <link>/tag/spss/</link>
+      <atom:link href="/tag/spss/index.xml" rel="self" type="application/rss+xml" />
+    <description>SPSS</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language><lastBuildDate>Thu, 10 Jul 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>SPSS</title>
+      <link>/tag/spss/</link>
+    </image>
+    
+    <item>
+      <title>Nuevo libro de Bioestadística Aplicada con SPSS</title>
+      <link>/post/libro-bioestadistica/</link>
+      <pubDate>Thu, 10 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/post/libro-bioestadistica/</guid>
+      <description>&lt;p&gt;Acaba de publicase un nuevo libro práctico para el análisis de datos con SPSS aplicado principalmente a las ciencias de la Salud.&lt;/p&gt;
+&lt;p&gt;El análisis de datos en cualquier Ciencia Experimental o de la Salud es imprescindible para la compresión de los fenómenos biológicos, físicos o químicos.
+Las nuevas tecnologías han hecho posible el desarrollo de programas capaces de recopilar, organizar y analizar enormes cantidades de datos con poco esfuerzo.&lt;/p&gt;
+&lt;p&gt;SPSS es uno de los programas de análisis estadísticos más utilizados, sobre todo en el ámbito de las ciencias biosanitarias.
+Este libro presenta las principales técnicas Estadísticas, tanto de Estadística Descriptiva como de Inferencia Estadística, aplicadas con SPSS a multitud de ejemplos del ámbito de las Ciencias de la Salud, desarrollados paso a paso.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;/es/docencia/spss&#34;&gt;Más información&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

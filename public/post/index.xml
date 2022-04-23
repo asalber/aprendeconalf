@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog | Aprende con Alf</title>
+    <link>/post/</link>
+      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Blog</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Blog</title>
+      <link>/post/</link>
+    </image>
+    
+    <item>
+      <title>Epidemiología para tiempos de pandemia</title>
+      <link>/post/epidemiologia-tiempos-pandemias/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>/post/epidemiologia-tiempos-pandemias/</guid>
+      <description>&lt;p&gt;Debido a la epidemia provocada por el coronavirus, la Epidemiología se ha convertido en una de las ramas de la medicina que más interés despiertan.&lt;/p&gt;
+&lt;p&gt;En estos tiempos de pandemia un montón de términos técnicos de la Epidemiología se han convertido en lugares comunes gracias a los medios de comunicación. Sin embargo, muchos de estos términos se utilizan de manera errónea, incluso por los propios medios de comunicación, y generan confusión para la población no experta.&lt;/p&gt;
+&lt;p&gt;Por ello, y con motivo de la 
+&lt;a href=&#34;http://www.madrimasd.org/semanacienciaeinnovacion/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Semana de la Ciencia y la Innovación de Madrid 2021&lt;/a&gt;, he preparado un tutorial para explicar al público en general los principales conceptos epidemiológicos usados en el control de enfermedades como la COVID e ilustrar su uso con ejemplos de aplicación.&lt;/p&gt;
+&lt;p&gt;Podéis acceder a él en el siguiente enlace: 
+&lt;a href=&#34;/docencia/estadistica/tutoriales/epidemiologia/#valores-predictivos-de-un-test&#34;&gt;Tutorial de Epidemiología&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/R_Z_atAXoXA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Tipos de estudios estadísticos</title>
+      <link>/post/estudios-estadisticos-r/</link>
+      <pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>/post/estudios-estadisticos-r/</guid>
+      <description>&lt;p&gt;Acabo de publicar una 
+&lt;a href=&#34;https://aprendeconalf.es/docencia/r/estudios-estadisticos/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;guía básica con los principales tipos de estudios estadísticos&lt;/a&gt; y ejemplos realizados con el programa de análisis de datos R.&lt;/p&gt;
+&lt;p&gt;Una de las preguntas más recurrentes de suelen hacerme mis compañeros cuando están realizando un estudio de investigación es &lt;em&gt;¿qué tipo de estudio estadístico tengo que aplicar?&lt;/em&gt;. Con esta guía pretendo ayudar a encontrar la respuesta a todos aquellos que se hagan esta pregunta.&lt;/p&gt;
+&lt;p&gt;En esta guía no se abordan todos los tipos de estudios estadísticos que existen, pero si lo más habituales, dependiendo del objetivo perseguido, el número de variables que intervienen y el tipo de estas variables. Para facilitar la comprensión de cada tipo de estudio se muestra un ejemplo sencillo implementado con R.&lt;/p&gt;
+&lt;p&gt;Espero que os sea útil.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Curso de Git</title>
+      <link>/post/curso-git/</link>
+      <pubDate>Fri, 01 Mar 2019 10:21:50 +0000</pubDate>
+      <guid>/post/curso-git/</guid>
+      <description>&lt;p&gt;&lt;em&gt;¿Conoces Git?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Si no lo conoces deberías, porque no importa a lo que te dediques, una vez aprendas a usarlo no podrás vivir sin él.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git&lt;/a&gt; es el sistema de control de versiones más usado en el mundo.
+Pero, &lt;em&gt;¿qué es un sistema de control de versiones?&lt;/em&gt;
+Pues es una aplicación que permite gestionar los cambios que se realizan sobre los elementos de un proyecto o repositorio, guardando así versiones del mismo en todas sus fases de desarrollo. No importa el contenido de tu carpeta o repositorio, ya sean documentos, hojas de cálculo, fotos, páginas web o código en un lenguaje de programación, con git podrás tener un control absoluto sobre los cambios en tu repositorio: qué cambios se hicieron, cuándo, quién los hizo, e incluso podrás volver a versiones anteriores del repositorio.&lt;/p&gt;
+&lt;p&gt;Recientemente he dado un curso de programación y he tenido que preparar un mini curso de Git que pongo a vuestra disposición. Podéis acceder al curso en los siguientes enlaces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;/docencia/git/manual/&#34;&gt;Manual de Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;/docencia/git/ejercicios/&#34;&gt;Ejercicios de Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Espero que os sean muy útiles.&lt;/p&gt;
+&lt;p&gt;Como siempre, agradezco que aviséis de cualquier error que encontréis.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hojas de fórmulas de Estadística y Cálculo</title>
+      <link>/post/chuletas/</link>
+      <pubDate>Thu, 02 Nov 2017 10:21:50 +0000</pubDate>
+      <guid>/post/chuletas/</guid>
+      <description>&lt;p&gt;A partir de ahora están disponibles varias hojas de fórmulas de cálculo y Estadística.&lt;/p&gt;
+&lt;p&gt;Estas hojas contienen un resumen con las principales fórmulas utilizadas en Cálculo y Estadística.&lt;/p&gt;
+&lt;p&gt;Las hojas de cálculo pueden descargarse desde los siguientes enlaces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://aprendeconalf.es/docencia/calculo/formulas/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hoja de fórmulas de Cálculo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://aprendeconalf.es/docencia/estadistica/formulas/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hoja de fórmulas de Estadística&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Estaría muy agradecido si me informáis de cualquier error que detectéis en estas hojas.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Manual de supervivencia para grados</title>
+      <link>/post/manual-supervivencia-grados/</link>
+      <pubDate>Mon, 24 Apr 2017 09:21:50 +0200</pubDate>
+      <guid>/post/manual-supervivencia-grados/</guid>
+      <description>&lt;p&gt;En este artículo ofrezco varios consejos o buenas prácticas para ayudar a estudiantes de grado, especialmente durante su primer año, para sacarle el máximo partido a las clases, rentabilizar mejor su trabajo y culminar su proceso de aprendizaje con éxito.&lt;/p&gt;
+&lt;p&gt;Los consejos que aquí aparecen se dan desde la experiencia de bastantes años de docencia, y teniendo en cuenta sobre todo, que el autor también fue y sigue siendo alumno.&lt;/p&gt;
+&lt;p&gt;La mayoría de estos consejos pueden parecer obvios pero muchos estudiantes los ignoran o fracasan al intentar ponerlos en práctica.&lt;/p&gt;
+&lt;h2 id=&#34;motivación&#34;&gt;Motivación&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;img/mountainclimbing.svg&#34; alt=&#34;Escalar montaña&#34;&gt;&lt;/p&gt;
+&lt;p&gt;La primera condición para lograr el éxito, no sólo en una titulación, sino en cualquier proyecto que se emprenda a lo largo de la vida, es la &lt;em&gt;motivación&lt;/em&gt;.
+Sin motivación, lo más fácil es que a las primeras dificultades o inconvenientes que aparezcan tiremos la toalla, y debemos tener presente que seguro habrá dificultades.
+Conviene tener siempre presente las razones por las que se emprende el camino, y visualizar la meta.
+Es decir, caminar con un ojo puesto en el horizonte para saber hacia dónde nos dirigimos, y con el otro puesto en el camino para no tropezar.&lt;/p&gt;
+&lt;p&gt;Es cierto que a veces se acaba en una carrera por imposición (de los padres, del mercado laboral, etc.), pero incluso en estos casos hay que ser positivos y pensar que lo que se aprenda sin duda nos hará mejores y seguramente nos servirá en un futuro.
+Además, en el peor de los casos hay que pensar que ¡cuanto antes se pase el trago mejor!, por lo que conviene poner toda la carne en el asador.&lt;/p&gt;
+&lt;p&gt;Una grado supone mucho esfuerzo y sacrificio, pero debemos pensar que la mayor parte de las personas que comienza una grado lo acaba con éxito, muchas de ellas menos inteligentes que tú, que han pasado por las mismas dificultades y al final han superado los obstáculos. Si conoces a alguna, su consejo puede serte muy útil.&lt;/p&gt;
+&lt;h2 id=&#34;toma-la-iniciativa&#34;&gt;Toma la iniciativa&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;img/proactive.jpg&#34; alt=&#34;Toma la iniciativa&#34;&gt;&lt;/p&gt;
+&lt;p&gt;En el proceso de aprendizaje, la alumna no es el objeto al cual hay que dotar de una serie de conocimientos y capacidades, sino el propio sujeto de su formación.
+La alumna está acostumbrada a seguir el rumbo que marca la profesora, los padres, la tutora, pero realmente es ella quien, una vez motivada, debe llevar la iniciativa en el proceso de aprendizaje, pues lo que está en juego es su formación y desarrollo integral.
+Este convencimiento debe llevar a la alumna a ir incluso por delante de sus docentes, preparando anticipadamente los capítulos del curso, trabajando ejercicios no propuestos, ampliando la documentación sobre los temas de clase, etc.
+De esta manera, la alumna no sólo aprenderá más, más rápido y mejor, sino que al mismo tiempo se estará preparando para su futuro profesional, en el que en muchas ocasiones no contará con nadie que le dirija o le aconseje sobre los problemas que se le presenten en su trabajo.&lt;/p&gt;
+&lt;h3 id=&#34;qué-supone-tomar-la-iniciativa&#34;&gt;¿Qué supone tomar la iniciativa?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Explorar la materia por uno mismo.&lt;/li&gt;
+&lt;li&gt;Preparar anticipadamente las clases.&lt;/li&gt;
+&lt;li&gt;Intentar resolver los problemas sin ayuda.&lt;/li&gt;
+&lt;li&gt;Ampliar la información dada en clase con otras fuentes.&lt;/li&gt;
+&lt;li&gt;Intentar aplicar lo aprendido a tu propia vida o en otros contextos.&lt;/li&gt;
+&lt;li&gt;Dar rienda suelta a tu curiosidad y creatividad.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;la-profesora-es-tu-aliada&#34;&gt;La profesora es tu aliada&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;img/teacher.jpg&#34; alt=&#34;Profesora aliada&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A menudo solemos pensar desgraciadamente que una profesora la tiene tomada con nosotras, que su objetivo es hacernos la vida imposible.
+En otras ocasiones, la vemos más como una juez que al final del curso emitirá el veredicto (aprobado o suspenso).
+Sin embargo, a pesar de la desagradable tarea de evaluar, el principal objetivo de una profesora es enseñar.
+Es cierto que a veces puede haber roces personales entre profesora y alumna, al igual que puede haberlos en una familia o entre personas cualesquiera que mantienen algún tipo de relación, pero en la inmensa mayoría de los casos, las acciones de una profesora, con mayor o menor motivación, mayor o menor éxito, tienen como único fin el aprendizaje de sus alumnas.
+Así que &lt;em&gt;¡cambia el chip!&lt;/em&gt;, piensa en tu profesora como en una aliada, no como una enemiga.&lt;/p&gt;
+&lt;h2 id=&#34;saca-el-máximo-partido-a-tus-clases&#34;&gt;Saca el máximo partido a tus clases&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;img/classes.jpg&#34; alt=&#34;Take advantage of classes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Las clases presenciales no son la única forma de aprender, pero sí una de las más efectivas, aunque para ello es necesario saber aprovecharlas.
+Asistir a clase sólo por el hecho de firmar la lista de asistencia o de que la profesora me vea, sin otro interés, prácticamente no sirve de nada, y puede llegar a ser incluso contraproducente.
+Así pues, si asistes a una clase, olvida otras asignaturas o asuntos y trata de poner los cinco sentidos en el tema que se trata en la clase.&lt;/p&gt;
+&lt;p&gt;Por otro lado, también necesitas hacer un uso adecuado de cada tipo de clase.
+Cuando se trata de una clase magistral, donde se da una introducción a un nuevo tema, es importante quedarse con las ideas principales y su estructura, y no preocuparse demasiado por los detalles y por anotar absolutamente cada palabra de la profesora.&lt;/p&gt;
+&lt;p&gt;Un seminario, por contra, trata de profundizar en un tema concreto.
+Por tanto, es buena idea acudir con una preparación previa del tema a tratar.
+De este modo, la clase será sin duda mucho más provechosa ya que rápidamente se aterrizará sobre las dudas o los aspectos menos claros.&lt;/p&gt;
+&lt;p&gt;Finalmente, si se trata de una clase de ejercicios, resulta imprescindible haberlos intentado previamente para identificar las principales dificultades o los &lt;em&gt;callejones sin salida&lt;/em&gt;.
+De esta forma, una vez en clase, podremos detenernos justo en esos puntos y aprender realmente lo que nos faltaba por conocer o lo que estábamos haciendo mal.
+Si nos limitamos a copiar de la pizarra las resoluciones de los ejercicios, sin haberlos intentado previamente, lo más seguro es que no identifiquemos el conocimiento clave, o la técnica necesaria para resolver cada tipo de ejercicio, y que posteriormente no sepamos aplicarlas en ejercicios similares.&lt;/p&gt;
+&lt;p&gt;Cuando la materia lo permite también puedes pedirle al profesor que invierta la clase.&lt;/p&gt;
+&lt;h3 id=&#34;qué-es-una-clase-invertida&#34;&gt;¿Qué es una clase invertida?&lt;/h3&gt;
+&lt;p&gt;La clase invertida trata de darle la vuelta a la metodología clásica de enseñanza en la que la alumna se enfrenta por primera vez a los contenidos teóricos de la materia fuera de la clase, habitualmente leyendo libros o visualizado videos, y el tiempo de clase se dedica al trabajo más duro de asimilación del conocimiento por medio de resolución de dudas, resolución de problemas o debates.&lt;/p&gt;
+&lt;h2 id=&#34;pregunta-sin-miedo&#34;&gt;Pregunta sin miedo&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;img/ask.png&#34; alt=&#34;Pregunta sin miedo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;En relación con el punto anterior, para un mejor aprovechamiento de las clases es imprescindible la interacción alumna-profesora o alumna-alumna.
+La profesora, por muy avispada que sea, la mayoría de las veces no sabrá si una alumna no comprende un concepto o se ha perdido en un desarrollo.
+Sólo si la alumna pregunta o muestra signos de no haber comprendido una explicación, la profesora podrá repetirla o poner más ejemplos para su comprensión.
+El miedo al ridículo suele ser el principal inconveniente a la hora de preguntar, sobre todo de las alumnas de primer curso.
+Debemos aprender a vencer la timidez y el miedo al ridículo, porque en la mayoría de los casos nuestras dudas seguro que son generalizadas en la clase, e incluso cuando no lo sean, debemos convencernos de que &lt;em&gt;la pregunta más estúpida es aquélla que no se hace&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;La retroalimentación es un aspecto esencial para asegurar un progreso sólido en cualquier proceso de aprendizaje.&lt;/p&gt;
+&lt;h2 id=&#34;aprovecha-las-tutorías&#34;&gt;Aprovecha las tutorías&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;img/tutorials.jpg&#34; alt=&#34;Aprovecha las tutorías&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Una de las principales ventajas de los centros privados como este es la facilidad para acceder a las profesoras.
+Si tenemos claro que la profesora es nuestra aliada no deberíamos dudar en utilizar las tutorías cada vez que se presente algún problema.&lt;/p&gt;
+&lt;p&gt;Cada alumna debe tener asignada una tutora cuya función es informarle y asesorarle sobre cualquier duda de tipo académico que pueda tener durante el curso, desde la matrícula, hasta los exámenes. Si no conoces cual es tu tutora, pregúntalo en secretaría y concierta una entrevista con ella cuanto antes para presentaros mutuamente.
+Cada vez que tengas un problema o surja un incidente que no sepas cómo resolver acude a ella.
+Incluso en el caso de que no haya ningún tipo de incidente deberías visitar a tu tutora regularmente (sobre todo después de las evaluaciones) para revisar juntas la marcha del curso.
+Piensa que cuanto más conozca una tutora sobre ti y sobre tu trayectoria en la universidad, mejor podrá ayudarte.&lt;/p&gt;
+&lt;p&gt;Por otro lado, cada profesora que te imparta una asignatura tiene asignadas unas horas para tutorías.
+Las tutorías suelen realizarse en el despacho de la profesora en la hora fijada para las mismas.&lt;/p&gt;
+&lt;p&gt;Utiliza las tutorías para:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pedir consejo a la profesora sobre cómo estudiar un determinado tema.&lt;/li&gt;
+&lt;li&gt;Resolver dudas o aclarar conceptos que no has entendido bien (especialmente si has faltado a alguna clase).&lt;/li&gt;
+&lt;li&gt;Pedir ayuda si no eres capaz de resolver algún ejercicio.&lt;/li&gt;
+&lt;li&gt;Revisar tus exámenes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pero también debes tener en cuenta que:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Las tutorías no son clases particulares.
+Esto quiere decir que no están pensadas para repetir una clase dada al grupo, ni para hacer ejercicios con la alumna.
+A una tutoría hay que acudir con un problema concreto o para resolver una duda concreta, lo que supone que la alumna se ha documentado sobre la cuestión y ha habido un trabajo previo por su parte.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Respeta el horario de las tutorías.
+La mayor parte de las profesoras promueven el uso de las tutorías porque además son una forma de interactuar con la alumna para conocerse mejor y ver su evolución.
+Sin embargo, las profesoras suelen tener otras ocupaciones además de la docencia por lo que, en la medida de lo posible, intenta no acudir a una tutoría fuera de su horario para no interrumpir su trabajo.
+Si no puedes acudir a una tutoría en la hora establecida, pide cita a la profesora.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;documéntate-lee-y-escribe&#34;&gt;Documéntate, lee y escribe&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;img/read.png&#34; alt=&#34;Leer&#34;&gt;  &lt;img src=&#34;img/write.jpg&#34; alt=&#34;Escribir&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Otras de las claves para el éxito es disponer de una buena documentación que complemente lo visto en clase.
+Muchas alumnas tienden a creer que la única información importante a tener en cuenta es la provista por la profesora.
+Incluso si sólo se piensa en superar los exámenes esto es un error, ya que la información que puede ofrecer una profesora en clase es limitada, incompleta, y a veces errónea (desgraciadamente las profesoras también se equivocan).
+Por tanto, una buena documentación te puede ayudar no sólo a contrastar lo visto en clase con otras fuentes, sino a comprender mejor lo explicado, y a ampliarlo viendo nuevos ejemplos, descubriendo nuevas aplicaciones, etc.&lt;/p&gt;
+&lt;p&gt;Para cada asignatura deberías tener dos o tres libros de referencia durante el curso.
+En las guías docentes aparece la bibliografía recomendada por las profesoras de la asignatura.
+Empieza por mirar los libros básicos (la mayoría estarán disponibles en la biblioteca de la universidad), pero no te conformes con eso.
+Es posible que haya un libro muy bueno sobre una materia pero con el que te cueste comprender las cosas, de modo que no te sirva de mucho.
+&lt;em&gt;¡Cada una debe buscar su libro!&lt;/em&gt; Por eso es importante que busques aquellos libros que te permitan comprender la materia y con los que te sientas cómoda.
+Si no encuentras ninguno que te satisfaga entre los propuestos en la bibliografía de la asignatura, pregúntale a la profesora por otros libros o busca más información en Internet.
+Sobre todo nunca compres un libro antes de haberlo mirado en profundidad.&lt;/p&gt;
+&lt;p&gt;Una vez se disponga de una documentación apropiada, debe realizarse una lectura comprensiva de la misma.
+Esto muchas veces exige leer varias veces el texto, acudir al diccionario cuando no se conozca alguna palabra, subrayar las ideas claves y anotar el texto complementando la información con alguna aclaración o ejemplo.
+Nunca se debe aprender de memoria algo si no se llega a comprender perfectamente.&lt;/p&gt;
+&lt;p&gt;Por otro lado, es muy importante, a la hora de estructurar y asentar las ideas adquiridas sobre un tema, escribir sobre él.
+Está más que comprobado que escribir sobre un tema ayuda a pensar mejor y a razonar con más rigor.
+Un recurso muy utilizado es el desarrollo de esquemas o resúmenes que ayuden a sintetizar los conceptos más importantes en pocas páginas, y que además pueden servir para un repaso posterior del tema.
+También puede ser muy útil hacer pequeñas presentaciones de cada tema.
+Además, debe tenerse en cuenta que la mayoría de las pruebas de evaluación son escritas, por lo que es importante el entrenamiento en la escritura.&lt;/p&gt;
+&lt;h2 id=&#34;trabaja-en-grupo&#34;&gt;Trabaja en grupo&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;img/groups.jpg&#34; alt=&#34;Trabaja en grupo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;El trabajo en grupo es importante, no sólo desde el punto de vista del aprendizaje, sino porque además ayuda a desarrollar los hábitos sociales.
+En la mayoría de las ocupaciones profesionales es natural trabajar en equipo, pues la resolución de determinadas tareas o problemas se simplifica cuando se trabaja cooperativamente.
+En la enseñanza ocurre algo parecido, pues el aprendizaje colaborativo suele ser más rápido y mejor (y más divertido).
+De esta manera, el trabajo en grupo es útil en muchos aspectos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ayuda a desarrollar habilidades sociales.&lt;/li&gt;
+&lt;li&gt;Refuerza la motivación de la alumna al sentirse miembro de un equipo.&lt;/li&gt;
+&lt;li&gt;Enriquece el aprendizaje con la aportación de otros puntos de vista.&lt;/li&gt;
+&lt;li&gt;Ayuda a desarrolla la capacidad crítica de la alumna.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pero aprender a trabajar en grupo no es fácil.
+Un grupo maduro es aquél en el que hay plena participación de sus miembros a la hora de tomar decisiones y de repartir tareas, y donde cada miembro asume su responsabilidad en la parte del trabajo que le corresponda, apoyándose en los demás cuando sea necesario.
+Adquirir las habilidades de trabajo en grupo lleva tiempo y sobre todo práctica, por eso cuanto antes empieces mejor.
+Si la profesora no organiza grupos de trabajo, crea junto a tus compañeras tus propios grupos de estudio o trabajo.&lt;/p&gt;
+&lt;h2 id=&#34;organízate&#34;&gt;Organízate&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;img/agenda.jpg&#34; alt=&#34;Organízate&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Muchas veces el fracaso no es debido a una falta de motivación o de trabajo, sino a una mala planificación.
+Es esencial hacer una buena planificación al comienzo del curso que contemple no sólo los horarios de clases, prácticas o las fechas de exámenes, sino también la organización del tiempo de trabajo fuera de la universidad.
+Lo más importante de esta planificación es que sea realista, es decir que si sólo disponemos de un par de horas para trabajar en casa, no contemos con más, pero tampoco con menos, y que hagamos un reparto razonable de las mismas, asignando más tiempo a las materias más complejas o que requieran más trabajo.
+Una buena pista del tiempo de trabajo que requiere cada asignatura es su número de créditos ECTS.
+Es recomendable revisar dicha planificación con la tutora.
+Una vez realizada la planificación, lo más importante es ser fiel a la misma, teniéndola presente en todo momento a lo largo del curso.&lt;/p&gt;
+&lt;h2 id=&#34;revisa-regularmente-la-marcha-del-curso&#34;&gt;Revisa regularmente la marcha del curso&lt;/h2&gt;
+&lt;p&gt;Dentro de la planificación del curso deben establecerse varias fechas, convenientemente espaciadas, para hacer una revisión parcial del camino recorrido y lo que queda por recorrer.
+Estas revisiones tienen por objeto hacer una pequeña autoevaluación sobre el proceso de aprendizaje, hasta qué punto se están cumpliendo los objetivos fijados y si estamos siendo fieles a las pautas marcadas por este manual de supervivencia.
+De este modo podremos identificar las principales dificultades en el aprendizaje y aquello en lo que estamos fallando, para corregir el rumbo a tiempo.
+En el peor de los casos, incluso si al final del curso no logramos superar alguna asignatura, es muy importante hacer una revisión final tratando de identificar las causas para &lt;em&gt;aprender de los errores&lt;/em&gt; y que no se vuelvan a repetir en futuros cursos.
+No te desanimes y piensa que aunque no hayas superado la asignatura, seguro que no has perdido por completo el año. Se positiva y piensa en todo aquello que has aprendido y que sin duda te aportará experiencia para tu vida.&lt;/p&gt;
+&lt;h2 id=&#34;revisa-regularmente-estos-consejos&#34;&gt;Revisa regularmente estos consejos&lt;/h2&gt;
+&lt;p&gt;Por último, no te olvides de revisar y refrescar estos consejos.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Liberada la versión 1.3.0 del paquete rkTeaching</title>
+      <link>/post/rkteaching-version1.3/</link>
+      <pubDate>Mon, 30 May 2016 00:00:00 +0000</pubDate>
+      <guid>/post/rkteaching-version1.3/</guid>
+      <description>&lt;p&gt;Ya está disponible la nueva versión 1.3.0 del paquete de R rk.Teaching para el aprendizaje de Estadística.
+Esta versión está actualizada para la versión 3.2.3 de R y la versión 0.6.5 de RKWard.&lt;/p&gt;
+&lt;p&gt;Se trata de una versión de transición hacia una actualización mayor que llegará en breve y que incorporará la internacionalización del paquete.&lt;/p&gt;
+&lt;p&gt;Si quieres instalarlo visita la página de 
+&lt;a href=&#34;/es/proyecto/rkteaching&#34;&gt;rkTeaching&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>rkTeaching en BEIO</title>
+      <link>/post/articulo-rkteaching-beio/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>/post/articulo-rkteaching-beio/</guid>
+      <description>&lt;p&gt;El último numero del 
+&lt;a href=&#34;http://www.seio.es/BEIO/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Boletín de Estadística e Investigación Operativa (BEIO)&lt;/a&gt; que publica la Sociedad de Estadística e Investigación Operativa contiene un artículo sobre RKTeaching y su uso en la docencia de Estadística.&lt;/p&gt;
+&lt;p&gt;Recomiendo su lectura especialmente a aquellos docentes de Estadística que usen R o quieran pasar a utilizar R en sus clases sin que suponga un trauma para sus alumnos.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;/docs/articulo-rkteachig-beio.pdf&#34;&gt;Descarga el artículo&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3ª edición del Curso Práctico de Bioestadística con R</title>
+      <link>/post/curso-bioestadistica-miriadax-3ed/</link>
+      <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/post/curso-bioestadistica-miriadax-3ed/</guid>
+      <description>&lt;p&gt;Ya está aquí la tercera edición del Curso Práctico de Bioestadística con R ofrecido por la plataforma MiriadaX, que se desarrollará del 8 de enero al 16 de febrero de 2015.&lt;/p&gt;
+&lt;p&gt;Si te perdiste las dos primeras ediciones no dudes en apuntarte a esta tercera edición que, al igual que todos los cursos de MiriadaX, son es gratuíta.&lt;/p&gt;
+&lt;p&gt;Sólo tienes que registrarte en la página web de MiriadaX y matricularte en el curso en la dirección: 
+&lt;a href=&#34;https://www.miriadax.net/web/curso-practico-bioestadistica-r-3edicion&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.miriadax.net/web/curso-practico-bioestadistica-r-3edicion&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BTFOsbzInZo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;¡No lo dejes para más tarte! &amp;lsquo;Apúntate ya, y díselo a tus conocidos!&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Manual de Cálculo en una y varias variables</title>
+      <link>/post/apuntes-calculo/</link>
+      <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>/post/apuntes-calculo/</guid>
+      <description>&lt;p&gt;En la sección de cálculo ya está disponible el manual de cálculo en una y varias variables. En este manual se introducen los principales conceptos de cálculo de manera sencilla y progresiva con multitud de ejemplos aplicados.&lt;/p&gt;
+&lt;p&gt;El manual está pensado para alumnos de primeros cursos de grado, especialmente en disciplinas aplicadas, e incluye varios capítulos entre los que cabe destacar los capítulos de derivadas de funciones de una y de varias variables, aunque también incluye integrales y ecuaciones diferenciales de primer grado. Existen también varios capítulos más elementales con conceptos básicos de geometría analítica, funciones elementales y límites y continuidad.&lt;/p&gt;
+&lt;p&gt;El manual incluye multitud de ejemplos aplicados y también ejemplos interactivos con el programa Geogebra.&lt;/p&gt;
+&lt;p&gt;Espero que os sea útil.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Liberada la versión 1.2.0 del paquete rkTeaching</title>
+      <link>/post/rkteaching-version1.2/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>/post/rkteaching-version1.2/</guid>
+      <description>&lt;p&gt;Ya está disponible la nueva versión 1.2.0 del paquete de R rkTeaching para el aprendizaje de Estadística.
+La principal novedad de esta nueva versión es la inclusión de un nuevo menú para el cálculo de probabilidades.&lt;/p&gt;
+&lt;p&gt;Este nuevo menú permite construir los espacios muestrales y probabilísticos de distintos juegos de azar (lanzamiento de dados, lanzamiento de monedas, extracción de naipes de una baraja y extracción de objetos de urnas), así como la simulación de los respectivos experimentos aleatorios.
+Este menú también permite la construcción de espacios probabilísticos definidos por el usuario a partir de las frecuencias de los sucesos elementales, la combinación de espacios probabilísticos correspondientes a experimentos aleatorios independientes, la construcción de espacios probabilísticos asociados a la repetición de experimentos aleatorios y por supuesto el cálculo de probabilidades dentro de un espacio probabilístico.&lt;/p&gt;
+&lt;p&gt;¿A qué esperas para probarlo? Visita la página de 
+&lt;a href=&#34;/es/proyecto/rkteaching&#34;&gt;rkTeaching&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nuevo libro de Bioestadística Aplicada con SPSS</title>
+      <link>/post/libro-bioestadistica/</link>
+      <pubDate>Thu, 10 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/post/libro-bioestadistica/</guid>
+      <description>&lt;p&gt;Acaba de publicase un nuevo libro práctico para el análisis de datos con SPSS aplicado principalmente a las ciencias de la Salud.&lt;/p&gt;
+&lt;p&gt;El análisis de datos en cualquier Ciencia Experimental o de la Salud es imprescindible para la compresión de los fenómenos biológicos, físicos o químicos.
+Las nuevas tecnologías han hecho posible el desarrollo de programas capaces de recopilar, organizar y analizar enormes cantidades de datos con poco esfuerzo.&lt;/p&gt;
+&lt;p&gt;SPSS es uno de los programas de análisis estadísticos más utilizados, sobre todo en el ámbito de las ciencias biosanitarias.
+Este libro presenta las principales técnicas Estadísticas, tanto de Estadística Descriptiva como de Inferencia Estadística, aplicadas con SPSS a multitud de ejemplos del ámbito de las Ciencias de la Salud, desarrollados paso a paso.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;/es/docencia/spss&#34;&gt;Más información&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2ª edición del Curso Práctico de Bioestadística con R</title>
+      <link>/post/curso-bioestadistica-miriadax/</link>
+      <pubDate>Mon, 12 May 2014 00:00:00 +0000</pubDate>
+      <guid>/post/curso-bioestadistica-miriadax/</guid>
+      <description>&lt;p&gt;Tras el éxito de la primera edición del Curso Práctico de Bioestadística con R ofrecido por la plataforma MiriadaX, el próximo 19 de mayo comienza la segunda edición.&lt;/p&gt;
+&lt;p&gt;Si te perdiste la primera edición no dudes en apuntarte a esta segunda edición que como la primera es gratuíta.&lt;/p&gt;
+&lt;p&gt;Sólo tienes que registrarte en la página web de MiriadaX y matricularte en el curso en la dirección: 
+&lt;a href=&#34;https://www.miriadax.net/web/curso-practico-bioestadistica-r-2edicion&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.miriadax.net/web/curso-practico-bioestadistica-r-2edicion&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BTFOsbzInZo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;¡Que corra la voz!&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>rkTeaching: La Estadística al alcance de cualquiera</title>
+      <link>/post/rkteaching/</link>
+      <pubDate>Thu, 10 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>/post/rkteaching/</guid>
+      <description>&lt;p&gt;&lt;em&gt;¿Necesitas ayuda con el analizar datos en tus estudios o trabajo?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;No te preocupes, porque la Estadística ahora está al alcance de cualquiera con el paquete &lt;strong&gt;rkTeachig&lt;/strong&gt;, un paquete de R que he desarrollado para facilitar el aprendizaje de Estadística.&lt;/p&gt;
+&lt;p&gt;RKTeaching es software libre, y por tanto es gratuito.
+Además está diseñado para poder realizar los procedimientos estadísticos más habituales sin necesidad de conocer el lenguaje R ya que dispone de menús y cuadros de diálogos especialmente diseñados para facilitar la aplicación de estos procedimientos.&lt;/p&gt;
+&lt;p&gt;Si estás interesado en sus características, no lo dudes, visita la página de rkTeaching(/es/proyecto/rkteaching)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;rkward.png&#34; alt=&#34;Salida RKTeaching&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Comenzando a aprender con Alf</title>
+      <link>/post/inicio-blog/</link>
+      <pubDate>Fri, 31 May 2013 00:00:00 +0000</pubDate>
+      <guid>/post/inicio-blog/</guid>
+      <description>&lt;p&gt;Esta es la entrada inaugural del blog Aprende con Alf.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;Si he logrado ver más lejos, ha sido porque he subido a hombros de gigantes&amp;rdquo;&lt;/em&gt; (Isaac Newton)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Durante mis años de docencia he aprendido un montón de cosas, no sólo de Matemáticas, gracias a una multitud de personas que han compartido sus conocimientos y trabajo mediante una licencia libre.
+Creo que ya es hora de que yo también aporte mi granito de arena al mundo y en particular a la comunidad de personas interesadas en aprender Matemáticas.&lt;/p&gt;
+&lt;p&gt;Por tal motivo, me he decidido a crear este blog y ofrecer en abierto (bajo licencia creative common) nuevos materiales y aportaciones frutos de mi trabajo y experiencia como profesor de Matemáticas.&lt;/p&gt;
+&lt;p&gt;Es la colaboración y el conocimiento libre lo que dignifica el nombre de la Ciencia y la hace avanzar a pasos de gigante.&lt;/p&gt;
+&lt;p&gt;En este blog podrás encontrar comentarios sobre los principales materiales de Estadística, Cálculo, Inteligencia Artificial y otras materias relacionadas con las Matemáticas que estarán disponibles en la web 
+&lt;a href=&#34;http://aprendeconalf.es&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Aprende con Alf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Cualquier sugerencia o comentario, siempre que sea constructivo, es bienvenido.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;img/alf_extraterrestre.jpg&#34; alt=&#34;Alf extraterrestre&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

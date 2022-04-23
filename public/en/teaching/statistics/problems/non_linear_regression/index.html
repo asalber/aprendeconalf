@@ -1,0 +1,1337 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alfredo Sánchez Alberca">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Exercise 1 A dietary center is testing a new diet in sample of 12 persons. The data below are the number of days of diet and the weight loss (in kg) until them for every person.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/en/teaching/statistics/problems/non_linear_regression/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#6f5499">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700%7CSource Sans Pro:400+400italic%7COpen Sans:400+400italic%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/en/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/en/teaching/statistics/problems/non_linear_regression/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@aprendeconalf">
+  <meta property="twitter:creator" content="@aprendeconalf">
+  
+  <meta property="og:site_name" content="Aprende con Alf">
+  <meta property="og:url" content="/en/teaching/statistics/problems/non_linear_regression/">
+  <meta property="og:title" content="Problems of Non Linear Regression | Aprende con Alf">
+  <meta property="og:description" content="Exercise 1 A dietary center is testing a new diet in sample of 12 persons. The data below are the number of days of diet and the weight loss (in kg) until them for every person."><meta property="og:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png">
+  <meta property="twitter:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png"><meta property="og:locale" content="en-us">
+  
+    
+    <meta property="article:modified_time" content="2020-10-01T14:27:50&#43;02:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Problems of Non Linear Regression | Aprende con Alf</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/en"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/en"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/en/teaching/calculus/"><span>Calculus</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/statistics/"><span>Statistics</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/R/"><span>R</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/excel/"><span>Excel</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/geogebra/"><span>Geogebra</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+ 
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/en/teaching/statistics/problems/">Statistics Problems</a>
+    <ul class="nav docs-sidenav">
+          <li class=""><a href="/en/teaching/statistics/problems/frequency_charts/">Frequency Tables and Charts</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/problems/statistics/">Descriptive Statistics</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/problems/linear_regression/">Linear Regression</a></li>
+        
+          <li class="active"><a href="/en/teaching/statistics/problems/non_linear_regression/">Non Linear Regression</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/problems/probability/">Probability</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/problems/diagnostic_tests/">Diagnostic Tests</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/problems/discrete_random_variables/">Discrete Random Variables</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/problems/continuous_random_variables/">Continuous Random Variables</a></li>
+        </ul>
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#exercise-1">Exercise 1</a></li>
+    <li><a href="#exercise-2">Exercise 2</a></li>
+    <li><a href="#exercise-3">Exercise 3</a></li>
+    <li><a href="#exercise-4">Exercise 4</a></li>
+    <li><a href="#exercise-5">Exercise 5</a></li>
+    <li><a href="#exercise-6">Exercise 6</a></li>
+    <li><a href="#exercise-7">Exercise 7</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Problems of Non Linear Regression</h1>
+
+          <div class="article-style">
+            <h2 id="exercise-1">Exercise 1</h2>
+<p>A dietary center is testing a new diet in sample of 12 persons. The data below are the number of days of diet and the weight loss (in kg) until them for every person.</p>
+<pre><code>(33,3.9)  (51,5.9)  (30,3.2)  (55,6)  (38,4.9)  (62,6.2)  (35,4.5)  (60,6.1)  (44,5.6)  (69,6.2)  (47,5.8)  (40,5.3) 
+</code></pre>
+<ol>
+<li>Draw the scatter plot. According to the point cloud, what type of regression model explains better the relation between the weight loss and the days of diet?</li>
+<li>Construct the linear regression model and the logarithmic regression model of the weight loss on the number of days of diet.</li>
+<li>Use the best model to predict the weight that will lose a person after 40 and 100 days of diet. Are these predictions reliable?</li>
+</ol>
+<p>Use the following sums ($X$=days of diet and $Y$=weight loss):
+$\sum x_i=564$ days, $\sum \log(x_i)=45.8086$ $\log(\mbox{days})$, $\sum y_j=63.6$ kg, $\sum x_i^2=28234$ days$^2$, $\sum \log(x_i)^2=175.6603$ $\log(\mbox{days})^2$, $\sum y_j^2=347.7$ kg$^2$, $\sum x_iy_j=3108.5$ days$\cdot$kg, $\sum \log(x_i)y_j=245.4738$ $\log(\mbox{days})\cdot$kg.</p>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-0" role="button" aria-expanded="false" aria-controls="spoiler-0">
+      Solution
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-0">
+    <div class="card-body">
+      <ol>
+<li></li>
+<li>Linear model<br/>
+$\bar x=47$ days, $s_x^2=143.8333$ days$^2$.<br/>
+$\bar y=5.3$ kg, $s_y^2=0.885$ kg$^2$.<br/>
+$s_{xy}=9.9417$ days$\cdot$kg.<br/>
+Regression line of weight loss on days of diet: $y=2.0514 + 0.0691x$.<br/>
+$r^2=0.7765$.<br/></li>
+</ol>
+<p>Logartihmic model<br/>
+$\overline{\log(x)}=3.8174$ log(days), $s_{\log(x)}^2=0.0659$ log(days)$^2$.<br/>
+$s_{\log(x)y}=0.224$ log(days)$\cdot$kg.<br/>
+Logartihmic model of weight loss on days of diet: $y=-7.6678 + 3.397\log(x)$.<br/>
+$r^2=0.8599$.<br/>
+3. $y(40)=4.8635$ kg and $y(100)=7.9761$ kg. The predictions are reliable because the coefficient of determination is close to 1, but the last one is less reiable as 100 is far from the observed range of values in the sample.
+    </div>
+  </div>
+</div>
+<h2 id="exercise-2">Exercise 2</h2>
+<p>The concentration of a drug in blood, in mg/dl, depends on time, in hours, according to the data below.</p>
+<p>$$
+\begin{array}{lrrrrrrr}
+\hline
+\mbox{Time} &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8\newline
+\mbox{Drug concentration} &amp; 25 &amp; 36 &amp; 48 &amp; 64 &amp; 86 &amp; 114 &amp; 168\newline
+\hline
+\end{array}
+$$</p>
+<ol>
+<li>Construct the linear regression model of drug concentration on time.</li>
+<li>Construct the exponential regression model of drug concentration on time.</li>
+<li>Use the best regression model to predict the drug concentration after $4.8$ hours? Is this prediction reliable? Justify your answer.</li>
+</ol>
+<p>Use the following sums ($C$=Drug concentration and $T$=time): $\sum t_i=35$ h, $\sum \log(t_i)=10.6046$ $\log(\mbox{h})$, $\sum c_j=541$ mg/dl, $\sum \log(c_j)= 29.147$ $\log(\mbox{mg/dl})$, $\sum t_i^2=203$ h$^2$, $\sum \log(t_i)^2=17.5206$ $\log(\mbox{h})^2$, $\sum c_j^2=56937$ (mg/dl)$^2$, $\sum \log(c_j)^2=124.0131$ $\log(\mbox{mg/dl})^2$, $\sum t_ic_j=3328$ h$\cdot$mg/dl, $\sum t_i\log(c_j)=154.3387$ h$\cdot\log(\mbox{mg/dl})$, $\sum \log(t_i)c_j=951.6961$ $\log(\mbox{h})\cdot$mg/dl, $\sum\log(t_i)\log(c_j)=46.08046$ $\log(\mbox{h})\cdot\log(\mbox{mg/dl})$.</p>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-1" role="button" aria-expanded="false" aria-controls="spoiler-1">
+      Solution
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-1">
+    <div class="card-body">
+      <ol>
+<li>$\bar x=5$ hours, $s_x^2=4$ hours$^2$.<br/>
+$\bar y=77.2857$ mg/dl, $s_y^2=2160.7755$ (mg/dl)$^2$.<br/>
+$s_{xy}=89$ hours$\cdot$mg/dl.<br/>
+Regression line of drug concentration on time: $y=-33.9643 + 22.25x$.<br/>
+$r^2=0.9165$.<br/></li>
+<li></li>
+</ol>
+<p>$\overline{\log(y)}=4.1639$ log(mg/dl), $s_{\log(y)}^2=0.3785$ log(mg/dl)$^2$.<br/>
+$s_{x\log(y)}=1.2291$ hours$\cdot$log(mg/dl).<br/>
+Exponential model of drug concentration on time: $y=e^{2.6275 + 0.3073x}$.<br/>
+$r^2=0.9979$.<br/>
+3. $y(4.8)=60.4853$ mg/dl.
+    </div>
+  </div>
+</div>
+<h2 id="exercise-3">Exercise 3</h2>
+<p>A researcher is studying the relation between the obesity and the response to pain. The obesity is measured as the percentage over the ideal weight, and the response to pain as the nociceptive flexion pain threshold. The results of the study appears in the table below.</p>
+<p>$$
+\begin{array}{lrrrrrrrrrr}
+\hline
+\mbox{Obesity} &amp; 89 &amp; 90 &amp; 77 &amp; 30 &amp; 51 &amp; 75 &amp; 62 &amp; 45 &amp; 90 &amp; 20\newline
+\mbox{Pain threshold} &amp; 10 &amp; 12 &amp; 11.5 &amp; 4.5 &amp; 5.5 &amp; 7 &amp; 9 &amp; 8 &amp; 15 &amp; 3\newline
+\hline
+\end{array}
+$$</p>
+<ol>
+<li>According to the scatter plot, what model explains better the relation of the response to pain on the obesity?</li>
+<li>According to the best regression model, what is the response to pain expected for a person with an obesity of 50%? Is this prection reliable?</li>
+<li>According to the best regression model, what is the expected obesity for a person with a pain threshold of 10? Is this prediction reliable?</li>
+</ol>
+<p>Use the following sums ($X$=Obesity and $Y$=Pain threshold):
+$\sum x_i=629$, $\sum \log(x_i)=40.4121$, $\sum y_j=92.2$, $\sum \log(y_j)=21.339$, $\sum x_i^2=45445$, $\sum \log(x_i)^2=165.6795$, $\sum y_j^2=960.14$, $\sum \log(y_j)^2=47.6231$, $\sum x_iy_j=6537.7$, $\sum x_i\log(y_j)=1443.1275$, $\sum \log(x_i)y_j=387.5728$, $\sum \log(x_i)\log(y_j)=88.3696$.</p>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-2" role="button" aria-expanded="false" aria-controls="spoiler-2">
+      Solution
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-2">
+    <div class="card-body">
+      <ol>
+<li></li>
+<li>Linear model<br/>
+$\bar x=62.9$, $s_x^2=588.09$.<br/>
+$\bar y=9.22$, $s_y^2=11.0056$.<br/>
+$s_{xy}=82.0356$.<br/>
+Regression line of pain threshold on obesity: $y=1.3232 + 0.1255x$.<br/>
+$r^2=0.8422$.</li>
+</ol>
+<p>Logartihmic model<br/>
+$\overline{\log(x)}=4.0412$, $s_{\log(x)}^2=0.2366$.<br/>
+$s_{\log(x)y}=1.4973$.<br/>
+Logartihmic model of pain threshold on obesity: $y=-16.3578 + 6.3293\log(x)$.<br/>
+$r^2=0.8611$.<br/>
+$y(50)=8.4023$.<br/>
+3.</p>
+<p>Exponential model of obesity on pain threshold: $x=e^{2.7868 + 0.1361y}$.<br/>
+$x(10)=63.2648$.</p>
+
+    </div>
+  </div>
+</div>
+<h2 id="exercise-4">Exercise 4</h2>
+<p>A blood bank keeps plasma at a temperature of 0ºF.
+When it is required for a blood transfusion, it is heated in an oven at a constant temperature of 120ºF.
+In an experiment it has been measured the temperature of plasma at different times during the heating.
+The results are in the table below.</p>
+<p>$$
+\begin{array}{lrrrrrrrr}
+\hline
+\mbox{Time (min)}	&amp; 5 &amp; 8 &amp; 15 &amp; 25 &amp; 30 &amp; 37 &amp; 45 &amp; 60\newline
+\mbox{Temperature (ºF)} &amp; 25 &amp; 50 &amp; 86 &amp; 102 &amp; 110 &amp; 114 &amp; 118 &amp; 120\newline
+\hline
+\end{array}
+$$</p>
+<ol>
+<li>Plot the scatter plot.
+Which type of regression model do you think explains better relationship between temperature and time?</li>
+<li>Which transformation should we apply to the variables to have a linear relationship?</li>
+<li>Compute the logarithmic regression of the temperature on time.</li>
+<li>According to the logarithmic model, what will the temperature of the plasma be after 15 minutes of heating?
+Is this prediction reliable? Justify your answer.</li>
+</ol>
+<p>Use the following sums ($X$=Time and $Y$=Temperature):
+$\sum x_i=225$ min, $\sum \log(x_i)=24.5289$ log(min), $\sum y_j=725$ ºF, $\sum \log(y_j)=35.2051$ log(ºF), $\sum x_i^2=8833$ min², $\sum \log(x_i)^2=80.4703$ log²(min), $\sum y_j^2=74345$ ºF², $\sum \log(y_j)^2=157.1023$ log²(ºF), $\sum x_iy_j=24393$ min⋅ºF, $\sum x_i\log(y_j)=1048.0142$ min⋅log(ºF), $\sum \log(x_i)y_j=2431.7096$ log(min)⋅ºF, $\sum \log(x_i)\log(y_j)=111.1165$ log(min)log(ºF).</p>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-3" role="button" aria-expanded="false" aria-controls="spoiler-3">
+      Solution
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-3">
+    <div class="card-body">
+      <ol>
+<li></li>
+<li>
+<p>Apply a logarithmic transformation to time $z=\log(x)$.</p>
+</li>
+<li>
+<p>$\bar z=28.125$ log(min), $s_z^2=0.6577$ log²(min).<br/>
+$\bar y=90.625$ ºF, $s_y^2=1080.2344$ ºF².<br/>
+$s_{zy}=26.0969$ log(min)ºF.<br/>
+Logarithmic model of temperature on time: $y=-31.0325 + 39.6781\log(x)$.<br/></p>
+</li>
+<li>
+<p>$y(15)=76.4176$ ºF.<br/>
+$r^2=0.9586$, that is close to 1, so the prediction is reliable.</p>
+</li>
+</ol>
+
+    </div>
+  </div>
+</div>
+<h2 id="exercise-5">Exercise 5</h2>
+<p>The activity of a radioactive substance depends on time according to the data in the table below.</p>
+<p>$$
+\begin{array}{lrrrrrrrr}
+\hline
+t\mbox{ (hours)} &amp; 0 &amp; 10 &amp; 20 &amp; 30 &amp; 40 &amp; 50 &amp; 60 &amp; 70 \newline
+A\mbox{ ($10^7$ disintegrations/s)} &amp; 25.9 &amp; 8.16 &amp; 2.57 &amp; 0.81 &amp; 0.25 &amp; 0.08 &amp; 0.03 &amp; 0.01\newline
+\hline
+\end{array}
+$$</p>
+<ol>
+<li>Represent graphically the data of radioactivity as a function of time.
+Which type of regression model explains better the relationship between radioactivity and time?</li>
+<li>Represent graphically the data of radioactivity as a function of time in a semi-logarithmic paper.</li>
+<li>Compute the regression line of the logarithm of radioactivity on time.</li>
+<li>Taking into account that radioactivity decay follows the formula
+\newline[
+A(t) = A_0 e^{-\lambda t}
+\newline]
+where $A_0$ is the number of disintegrations at the begining and $\lambda$ is a disintegration constant, different for each radioactive substance, use the slope of the previous regression line to compute the disintegration constant for the substance.</li>
+</ol>
+<p>Use the following sums ($X$=Time and $Y$=Radioactivity):
+$\sum x_i=280$ hours, $\sum y_j=37.81$ 10⁷ disintegrations/s, $\sum \log(y_j)=-5.9371$ log(10⁷ disintegrations/s), $\sum x_i^2=14000$ hours², $\sum y_j^2=744.7265$ 10⁷ disintegrations/s², $\sum \log(y_j)^2=57.7369$ log²(10⁷ disintegrations/s), $\sum x_iy_j=173.8$ hours⋅10⁷ disintegrations/s, $\sum x_i\log(y_j)=-680.9447$ hours⋅log(10⁷ disintegrations/s).</p>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-4" role="button" aria-expanded="false" aria-controls="spoiler-4">
+      Solution
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-4">
+    <div class="card-body">
+      <ol>
+<li></li>
+<li></li>
+<li>
+<p>$\bar x=35$ hours, $s_x^2=525$ hours².<br/>
+$\bar z=-0.7421$ log(10⁷ disintegrations/s), $s_z^2=6.6664$ log(10⁷ disintegrations/s)^2.<br/>
+$s_{xz}=-59.1434$ hours⋅log(10⁷ disintegrations/s)<br/>
+Regression line of logarithm of radioactivity on time: $z=3.2008 + -0.1127x$.<br/></p>
+</li>
+<li>
+<p>$\lambda=0.1127$.</p>
+</li>
+</ol>
+
+    </div>
+  </div>
+</div>
+<h2 id="exercise-6">Exercise 6</h2>
+<p>For oscillations of small amplitude, the oscillation period $T$ of a pendulum is given by the formula
+\newline[
+T = 2\pi\sqrt{\frac{L}{g}}
+\newline]
+where $L$ is the length of the pendulum and $g$ is the gravitational constant. In order to check if the previous formula is satisfied, an experiment has been conducted where it has been measured the oscillation period for different lengths of the pendulum.The measurements are shown in the table below.</p>
+<p>$$
+\begin{array}{lrrrrr}
+\hline
+L\text{ (cm)} &amp; 52.5 &amp; 68.0 &amp; 99.0 &amp; 116.0 &amp; 146.0 \newline
+P\text{ (seg)} &amp; 1.449 &amp; 1.639 &amp; 1.999 &amp; 2.153 &amp; 2.408\newline
+\hline
+\end{array}
+$$</p>
+<ol>
+<li>Represent graphically the data of the period versus the length of the pendulum.<br>
+Does a linear model fit well to the points cloud?</li>
+<li>Represent graphically the data of the period versus the length in a logarithmic paper.
+Which type of model fits better to the points cloud?</li>
+<li>Compute the regression line of the logarithm of period on the logarithm of length.</li>
+<li>Taking in to account the independent term of the previous regression line, compute the value of $g$.</li>
+</ol>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-5" role="button" aria-expanded="false" aria-controls="spoiler-5">
+      Solution
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-5">
+    <div class="card-body">
+      <ol>
+<li></li>
+<li>The model that best fits the points cloud is linear.</li>
+<li>Let $X$ be the logarithm of length and $Y$ to the logarithm of period,</li>
+</ol>
+<p>$\bar x=4.5025$ log(cm), $s_x^2=0.1353$ log(cm)².<br/>
+$\bar y=0.6407$ log(s), $s_y^2=0.0339$ log(s)².<br/>
+$s_{xy}=0.0677$ log(cm)log(s)<br>
+Regression line of Y on X: $y=-1.6132 + 0.5006x$.<br/>
+4. $g=994.4579 cm/s².
+    </div>
+  </div>
+</div>
+<h2 id="exercise-7">Exercise 7</h2>
+<p>A study tries to determine the relationship between two substances $X$ and $Y$ in blood.
+The concentrations of these substances have been measured in seven individuals (in $\mu$g/dl) and the results are shown in the table below.</p>
+<p>$$
+\begin{array}{rrrrrrrr}
+\hline
+X &amp; 2.1 &amp; 4.9 &amp; 9.8 &amp; 11.7 &amp; 5.9 &amp; 8.4 &amp; 9.2 \newline
+Y &amp; 1.3 &amp; 1.5 &amp; 1.7 &amp; 1.8 &amp; 1.5 &amp; 1.7 &amp; 1.7 \newline
+\hline
+\end{array}
+$$</p>
+<ol>
+<li>Are $Y$ and $X$ linearly related?</li>
+<li>Are $Y$ and $X$ potentially related?</li>
+<li>Use the best of the previous regression models to predict the concentration in blood of $Y$ for $x=8$ $\mu$gr/dl.Is this prediction reliable. Justify your answer.</li>
+</ol>
+<p>Use the following sums:
+$\sum x_i=52$ μg/dl, $\sum \log(x_i)=13.1955$ log(μg/dl), $\sum y_j=11.2$ μg/dl, $\sum \log(y_j)=3.253$ log(μg/dl), $\sum x_i^2=451.36$ (μg/dl)², $\sum \log(x_i)^2=26.9397$ log(μg/dl)², $\sum y_j^2=18.1$ (μg/dl)², $\sum \log(y_j)^2=1.5878$ log(μg/dl)², $\sum x_iy_j=86.57$ (μg/dl)², $\sum x_i\log(y_j)=26.3463$ μg/dl⋅log(μg/dl), $\sum \log(x_i)y_j=21.7087$ log(μg/dl)⋅μg/dl, $\sum \log(x_i)\log(y_j)=6.5224$ log(μg/dl)².</p>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-6" role="button" aria-expanded="false" aria-controls="spoiler-6">
+      Solution
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-6">
+    <div class="card-body">
+      <ol>
+<li></li>
+</ol>
+<p>$\bar x=7.4286$ μg/dl, $s_x^2=9.2963$ (μg/dl)².<br/>
+$\bar z=-0.7421$ μg/dl, $s_z^2=6.6664$ (μg/dl)².<br/>
+$s_{xz}=-0.4147$ (μg/dl)²<br>
+Linear relation: $r^2=0.9696$, that is close to 1, so there is a strong linear relation.<br>
+2. Naming $u=\log(x)$ and $v=\log(y)$,</p>
+<p>$\bar u=1.8851$ log(μg/dl), $s_u^2=0.295$ log(μg/dl)².<br/>
+$\bar v=0.4647$ log(μg/dl), $s_v^2=0.0109$ log(μg/dl)².<br/>
+$s_{uv}=0.0558$ (μg/dl)²<br>
+Potential relation: $r^2=0.9688$, that is close to 1, so there is a strong potential relation, although the linear relation is a little bit stronger.<br>
+3. Regression line of $Y$ on $X$: $y=1.2153 + 0.0518x$.<br/>
+$y(8)=1.6296$ μg/dl. The prediction is reliable since the linear coefficient of determination is close to 1.</p>
+
+    </div>
+  </div>
+</div>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tag/regression/">Regression</a>
+  
+  <a class="badge badge-light" href="/en/tag/non-linear-regression/">Non-linear Regression</a>
+  
+</div>
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/en/teaching/statistics/problems/linear_regression/" rel="next">Problems of Linear Regression</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/en/teaching/statistics/problems/probability/" rel="prev">Problems of Probability</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Oct 1, 2020</p>
+
+          
+
+
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "aprendeconalf" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt="CC SA icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/en/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://aprendeconalf.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.f79ea001fad4564ac91850b0b5a8f31c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

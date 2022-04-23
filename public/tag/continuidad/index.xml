@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Continuidad | Aprende con Alf</title>
+    <link>/tag/continuidad/</link>
+      <atom:link href="/tag/continuidad/index.xml" rel="self" type="application/rss+xml" />
+    <description>Continuidad</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Continuidad</title>
+      <link>/tag/continuidad/</link>
+    </image>
+    
+    <item>
+      <title>Límites y continuidad</title>
+      <link>/docencia/calculo/manual/limites-continuidad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/calculo/manual/limites-continuidad/</guid>
+      <description>&lt;h2 id=&#34;el-concepto-de-límite&#34;&gt;El concepto de límite&lt;/h2&gt;
+&lt;h3 id=&#34;aproximación-al-concepto-de-límite&#34;&gt;Aproximación al concepto de límite&lt;/h3&gt;
+&lt;p&gt;El concepto de límite está ligado al de tendencia.&lt;/p&gt;
+&lt;p&gt;Decimos que $x$ &lt;em&gt;tiende&lt;/em&gt; a un valor $a$, y lo escribimos $x\rightarrow a$, si se pueden tomar valores de $x$ tan próximos a $a$ como se quiera, pero sin llegar a valer $a$.&lt;/p&gt;
+&lt;p&gt;Si la aproximación es por defecto (con valores menores que $a$) se dice que $x$ tiende a $a$ por la izquierda, y se escribe $x\rightarrow a^-$, y si es por exceso (con valores mayores que $a$) se dice que $x$ tiende a $a$ por la derecha, y se escribe $x\rightarrow a^+$.&lt;/p&gt;
+&lt;p&gt;Cuando la variable $x$ de una función $f$ tiende a un valor $a$, cabe preguntarse si sus imágenes mediante $f$ tienden a otro valor concreto:&lt;/p&gt;
+&lt;p&gt;Si $f(x)$ tiende a un valor $l$ cuando $x$ tiende a $a$, se dice que $l$ es el &lt;em&gt;límite&lt;/em&gt; de $f(x)$ cuando $x\rightarrow a$, y se escribe&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow a}f(x)=l.$$&lt;/p&gt;
+&lt;h3 id=&#34;límites-laterales&#34;&gt;Límites laterales&lt;/h3&gt;
+&lt;p&gt;Si $f(x)$ tiende a $l$ cuando $x$ tiende a $a$ por la izquierda, entonces se dice que $l$ es el &lt;em&gt;límite por la izquierda&lt;/em&gt; de $f(x)$ cuando $x\rightarrow a^-$, y se escribe&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow a^-}f(x)=l.$$&lt;/p&gt;
+&lt;p&gt;Si $f(x)$ tiende a $l$ cuando $x$ se aproxima a $a$ por exceso, entonces se dice que $l$ es el &lt;em&gt;límite por la derecha&lt;/em&gt; de $f(x)$ cuando $x\rightarrow a^-$, y se escribe&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow a^+}f(x)=l.$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Consideremos la función $f(x)=x^2$ y veamos que pasa cuando $x\rightarrow 2$:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{c}
+\underbrace{\begin{array}{ccc}
+\textrm{Aproximación por defecto} &amp;amp; \qquad &amp;amp; \textrm{Aproximación por exceso}\newline
+\begin{array}{|l|l|}
+\hline
+x       &amp;amp; f(x)=x^2   \newline
+\hline\hline
+1.9    &amp;amp; 3.61       \newline
+\hline
+1.99   &amp;amp; 3.9601     \newline
+\hline
+1.999  &amp;amp; 3.996001   \newline
+\hline
+1.9999 &amp;amp; 3.99960001 \newline
+\hline
+\end{array}
+&amp;amp; &amp;amp;
+\begin{array}{|l|l|}
+\hline
+x       &amp;amp; f(x)=x^2   \newline
+\hline\hline
+2.1    &amp;amp; 4.41       \newline
+\hline
+2.01   &amp;amp; 4.0401    \newline
+\hline
+2.001  &amp;amp; 4.004001   \newline
+\hline
+2.0001 &amp;amp; 4.00040001 \newline
+\hline
+\end{array}\newline
+\Downarrow &amp;amp; &amp;amp; \Downarrow\newline
+\lim_{x\rightarrow 2^-}x^2=4
+&amp;amp; &amp;amp;
+\lim_{x\rightarrow 2^+}x^2=4
+\end{array}}\newline
+\Downarrow\newline
+\lim_{x\rightarrow 2}x^2=4
+\end{array}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;límites-que-no-existen-i&#34;&gt;Límites que no existen (I)&lt;/h3&gt;
+&lt;p&gt;Si la función no está definida entorno a un punto, entonces no existe el límite en dicho punto&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Consideremos la función $f(x)=\dfrac{1}{\sqrt{x^2-1}}$ y veamos que pasa cuando $x\rightarrow 0$:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{c}
+\underbrace{\begin{array}{ccc}
+\textrm{Por la izquierda} &amp;amp; \qquad &amp;amp; \textrm{Por la derecha }\newline
+\begin{array}{|l|l|}
+\hline
+x      &amp;amp; f(x)   \newline
+\hline\hline
+-0.1   &amp;amp; \textrm{No exite}      \newline
+\hline
+-0.01   &amp;amp; \textrm{No existe}     \newline
+\hline
+-0.001  &amp;amp; \textrm{No existe}   \newline
+\hline
+\end{array}
+&amp;amp; &amp;amp;
+\begin{array}{|l|l|}
+\hline
+x      &amp;amp; f(x)   \newline
+\hline\hline
+0.1    &amp;amp;  \textrm{No existe}      \newline
+\hline
+0.01   &amp;amp; \textrm{No existe}    \newline
+\hline
+0.001  &amp;amp; \textrm{No existe}   \newline
+\hline
+\end{array}\newline
+\Downarrow &amp;amp; &amp;amp; \Downarrow\newline
+\displaystyle \textrm{No existe } \lim_{x\rightarrow 0^-}\frac{1}{\sqrt{x^2-1}}
+&amp;amp; &amp;amp;
+\displaystyle \textrm{No existe } \lim_{x\rightarrow 0^+}\frac{1}{\sqrt{x^2-1}}
+\end{array}}\newline
+\Downarrow\newline
+\displaystyle \textrm{No existe }\lim_{x\rightarrow 0}\frac{1}{\sqrt{x^2-1}}
+\end{array}$$&lt;/p&gt;
+&lt;img src=&#34;../img/limites_continuidad/limite_no_existe_1.png&#34; width=&#34;300px&#34; alt=&#34;Gráfica de una función que no tiene límite&#34; /&gt;
+&lt;h3 id=&#34;límites-que-no-existen-ii&#34;&gt;Límites que no existen (II)&lt;/h3&gt;
+&lt;p&gt;Cuando los límites laterales no coinciden entonces no existe el límite&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Consideremos la función $f(x)=\dfrac{\lvert x\rvert}{x}$ y veamos que pasa cuando $x\rightarrow 0$:&lt;/p&gt;
+&lt;p&gt;$$\begin{array}{c}
+\underbrace{\begin{array}{ccc}
+\textrm{Por la izquierda} &amp;amp; \qquad &amp;amp; \textrm{Por la derecha }\newline
+\begin{array}{|l|l|}
+\hline
+x      &amp;amp; f(x)   \newline
+\hline\hline
+-0.1   &amp;amp; -1       \newline
+\hline
+-0.01   &amp;amp; -1     \newline
+\hline
+-0.001  &amp;amp; -1   \newline
+\hline
+\end{array}
+&amp;amp; &amp;amp;
+\begin{array}{|l|l|}
+\hline
+x      &amp;amp; f(x)   \newline
+\hline\hline
+0.1    &amp;amp; 1       \newline
+\hline
+0.01   &amp;amp; 1    \newline
+\hline
+0.001  &amp;amp; 1   \newline
+\hline
+\end{array}\newline
+\Downarrow &amp;amp; &amp;amp; \Downarrow\newline
+\displaystyle \lim_{x\rightarrow 0^-}\frac{|x|}{x}=-1
+&amp;amp;\neq &amp;amp;
+\displaystyle \lim_{x\rightarrow 0^+}\frac{|x|}{x}=1
+\end{array}}\newline
+\Downarrow\newline
+\displaystyle \textrm{No existe }\lim_{x\rightarrow 0}\frac{|x|}{x}
+\end{array}
+$$&lt;/p&gt;
+&lt;img src=&#34;../img/limites_continuidad/limite_no_existe_2.png&#34; width=&#34;300px&#34; alt=&#34;Gráfica de una función que no tiene límite&#34; /&gt;
+&lt;h3 id=&#34;límites-que-no-existen-iii&#34;&gt;Límites que no existen (III)&lt;/h3&gt;
+&lt;p&gt;A veces, cuando $x\rightarrow a$ los valores de $f(x)$ crecen o decrecen infinitamente y entonces no existe el límite. En este caso se dice que la función &lt;em&gt;diverge&lt;/em&gt; y se escribe&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow a}f(x)=\pm \infty$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Veamos la tendencia de la función $f(x)=\dfrac{1}{x^2}$ cuando $x\rightarrow 0$:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{c}
+\underbrace{\begin{array}{ccc}
+\textrm{Por la izquierda} &amp;amp; \qquad &amp;amp; \textrm{Por la derecha }\newline
+\begin{array}{|l|r|}
+\hline
+x      &amp;amp; f(x)   \newline
+\hline\hline
+-0.1   &amp;amp; 100       \newline
+\hline
+-0.01   &amp;amp; 10000     \newline
+\hline
+-0.001  &amp;amp; 1000000   \newline
+\hline
+\end{array}
+&amp;amp; &amp;amp;
+\begin{array}{|l|r|}
+\hline
+x      &amp;amp; f(x)   \newline
+\hline\hline
+0.1    &amp;amp; 100       \newline
+\hline
+0.01   &amp;amp; 10000    \newline
+\hline
+0.001  &amp;amp; 1000000   \newline
+\hline
+\end{array}\newline
+\Downarrow &amp;amp; &amp;amp; \Downarrow\newline
+\displaystyle \lim_{x\rightarrow 0^-}\frac{1}{x^2}=+\infty
+&amp;amp; &amp;amp;
+\displaystyle \lim_{x\rightarrow 0^+}\frac{1}{x^2}=+\infty
+\end{array}}\newline
+\Downarrow\newline
+\displaystyle \textrm{No existe }\lim_{x\rightarrow 0}\frac{1}{x^2}=\infty
+\end{array}
+$$&lt;/p&gt;
+&lt;img src=&#34;../img/limites_continuidad/limite_no_existe_3.png&#34; width=&#34;300px&#34; alt=&#34;Gráfica de una función que no tiene límite&#34; /&gt;
+&lt;h3 id=&#34;límites-que-no-existen-iv&#34;&gt;Límites que no existen (IV)&lt;/h3&gt;
+&lt;p&gt;A veces, el límite de un función en un punto puede no existir porque la función oscila rápidamente al acercarnos a dicho punto.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Consideremos la función $f(x)=\operatorname{sen} \dfrac{1}{x}$ y veamos que pasa cuando $x\rightarrow 0$:&lt;/p&gt;
+&lt;p&gt;$$\begin{array}{ccc}
+\textrm{Por la izquierda} &amp;amp; \qquad &amp;amp; \textrm{Por la derecha }\newline
+\begin{array}{|l|l|}
+\hline
+x      &amp;amp; f(x)   \newline
+\hline\hline
+-0.1   &amp;amp; -0.1736       \newline
+\hline
+-0.01   &amp;amp; -0.9848     \newline
+\hline
+-0.005 &amp;amp; 0.3420 \newline
+\hline
+-0.001  &amp;amp; 0.9848  \newline
+\hline
+-0.0005  &amp;amp; 0.3420\newline
+\hline
+-0.0001 &amp;amp; 0.9848 \newline
+\hline
+\end{array}
+&amp;amp; &amp;amp;
+\begin{array}{|l|l|}
+\hline
+x      &amp;amp; f(x)   \newline
+\hline\hline
+0.1   &amp;amp; 0.1736       \newline
+\hline
+0.01   &amp;amp; 0.9848     \newline
+\hline
+0.005 &amp;amp; -0.3420 \newline
+\hline
+0.001  &amp;amp; -0.9848  \newline
+\hline
+0.0005  &amp;amp; -0.3420\newline
+\hline
+0.0001 &amp;amp; -0.9848 \newline
+\hline
+\end{array}\newline
+\Downarrow &amp;amp; &amp;amp; \Downarrow\newline
+\displaystyle \textrm{No existe }\lim_{x\rightarrow 0^-}\operatorname{sen} \frac{1}{x}
+&amp;amp; &amp;amp;
+\displaystyle \textrm{No existe }\lim_{x\rightarrow 0^+}\operatorname{sen} \frac{1}{x}
+\end{array}
+$$&lt;/p&gt;
+&lt;img src=&#34;../img/limites_continuidad/limite_no_existe_4.png&#34; width=&#34;300px&#34; alt=&#34;Gráfica de una función que no tiene límitee&#34; /&gt;
+&lt;h3 id=&#34;límites-en-el-infinito&#34;&gt;Límites en el infinito&lt;/h3&gt;
+&lt;p&gt;Si $f(x)$ tiende a $l$ cuando $x$ crece infinitamente, entonces se dice que $l$ es el &lt;em&gt;límite en el infinito&lt;/em&gt; de $f(x)$ cuando $x\rightarrow +\infty$, y se escribe&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow +\infty}f(x)=l.$$&lt;/p&gt;
+&lt;p&gt;Si $f(x)$ tiende a $l$ cuando $x$ decrece infinitamente, entonces se dice que $l$ es el &lt;em&gt;límite en el infinito&lt;/em&gt; de $f(x)$ cuando $x\rightarrow -\infty$, y se escribe&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow -\infty}f(x)=l.$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Estudiemos la tendencia de $f(x)=\dfrac{1}{x}$ cuando $x\rightarrow \pm\infty$:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{ccc}
+x\rightarrow +\infty &amp;amp; \qquad &amp;amp; x\rightarrow -\infty\newline
+\begin{array}{|r|l|}
+\hline
+x      &amp;amp; f(x)=1/x   \newline
+\hline\hline
+1000    &amp;amp; 0.001       \newline
+\hline
+10000   &amp;amp; 0.0001     \newline
+\hline
+100000  &amp;amp; 0.00001   \newline
+\hline
+\end{array}
+&amp;amp; &amp;amp;
+\begin{array}{|r|l|}
+\hline
+x      &amp;amp; f(x)=1/x   \newline
+\hline\hline
+-1000    &amp;amp; -0.001       \newline
+\hline
+-10000   &amp;amp; -0.0001     \newline
+\hline
+-100000  &amp;amp; -0.00001   \newline
+\hline
+\end{array}\newline
+\Downarrow &amp;amp; &amp;amp; \Downarrow\newline
+\lim_{x\rightarrow +\infty}\frac{1}{x}=0
+&amp;amp; &amp;amp;
+\lim_{x\rightarrow -\infty}\frac{1}{x}=0
+\end{array}
+$$&lt;/p&gt;
+&lt;img src=&#34;../img/limites_continuidad/limite_infinito.png&#34; width=&#34;300px&#34; alt=&#34;Gráfica de una función con límite en el infinito&#34; /&gt;
+&lt;h3 id=&#34;definición-de-límite&#34;&gt;Definición de límite&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Límite de una función en un punto&lt;/strong&gt; Se dice que el límite de la función $f$ cuando $x\rightarrow a$ es $l$, y se escribe&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow a} f(x) = l$$&lt;/p&gt;
+&lt;p&gt;si para cualquier valor $\varepsilon&amp;gt;0$ existe un número $\delta&amp;gt;0$ tal que, $|f(x)-l|&amp;lt;\varepsilon$ siempre que $0&amp;lt;|x-a|&amp;lt;\delta$.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;img src=&#34;../img/limites_continuidad/definicion_limite.png&#34; width=&#34;300px&#34; alt=&#34;Explicación gráfica de la definición de límite&#34; /&gt;
+&lt;h3 id=&#34;definición-de-límite-en-el-infinito&#34;&gt;Definición de límite en el infinito&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Límite de una función en el infinito&lt;/strong&gt; Se dice que el límite de la función $f$ cuando $x\rightarrow +\infty$ es $l$, y se escribe&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow +\infty} f(x) =l$$&lt;/p&gt;
+&lt;p&gt;si para cualquier valor $\varepsilon&amp;gt;0$ existe un número $\delta&amp;gt;0$ tal que, $\lvert f(x)-l\rvert &amp;lt;\varepsilon$ siempre que $x&amp;gt;\delta$.&lt;/p&gt;
+&lt;p&gt;Se dice que el límite de la función $f$ cuando $x\rightarrow -\infty$ es $l$, y se escribe&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow -\infty} f(x) =l$$&lt;/p&gt;
+&lt;p&gt;si para cualquier valor $\varepsilon&amp;gt;0$ existe un número $\delta&amp;lt;0$ tal que, $\lvert f(x)-l\rvert &amp;lt;\varepsilon$ siempre que $x&amp;lt;\delta$.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;álgebra-de-límites&#34;&gt;Álgebra de límites&lt;/h2&gt;
+&lt;p&gt;Dadas dos funciones $f(x)$ y $g(x)$, tales que existe $$\lim_{x\rightarrow a}f(x)$$ y $$\lim_{x\rightarrow a}g(x)$$, entonces se cumple que&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$$ \lim_{x\rightarrow a}c f(x)=c\lim_{x\rightarrow a}f(x)$$, siendo $c$ constante.&lt;/li&gt;
+&lt;li&gt;$$ \lim_{x\rightarrow a}(f(x)\pm g(x))=\lim_{x\rightarrow a}f(x)\pm \lim_{x\rightarrow a}g(x).$$&lt;/li&gt;
+&lt;li&gt;$$ \lim_{x\rightarrow a}(f(x)\cdot g(x))=\lim_{x\rightarrow a}f(x)\cdot \lim_{x\rightarrow a}g(x).$$&lt;/li&gt;
+&lt;li&gt;$$ \lim_{x\rightarrow a}\frac{f(x)}{g(x)}=\frac{\displaystyle \lim_{x\rightarrow a}f(x)}{\displaystyle \lim_{x\rightarrow a}g(x)}$$ si $$\lim_{x\rightarrow a}g(x)\neq 0.$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;límites-de-las-funciones-elementales&#34;&gt;Límites de las funciones elementales&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Funciones polinómicas&lt;/strong&gt;. Si $f$ es un polinomio, entonces existe el límite de $f$ en cualquier punto $a\in \mathbb{R}$ y $\lim_{x\rightarrow a}f(x)=f(a)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Funciones racionales&lt;/strong&gt;. Si $f(x)=\dfrac{p(x)}{q(x)}$ con $p(x)$ y $q(x)$ dos polinomios, entonces existe el límite de $f$ en cualquier punto $a\in \mathbb{R}$ que no sea una raíz de $q(x)$, y $\lim_{x\rightarrow a}f(x)=f(a)$. Si $a$ es una raíz de $q(x)$ entonces el límite puede existir o no.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Funciones potenciales&lt;/strong&gt;. Si $f(x)=x^r$ con $r\in \mathbb{R}$, entonces existe el límite de $f$ en cualquier punto $a$ tal que exista un intervalo $(a-\delta,a+\delta)\subset \textrm{Dom}(f)$ para algún $\delta &amp;gt;0$, y en ese caso, $\lim_{x\rightarrow a}f(x)=f(a)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Funciones exponenciales&lt;/strong&gt;. Si $f(x)=c^x$ con $c\in \mathbb{R}$ entonces existe el límite de $f$ en cualquier punto $a\in \mathbb{R}$ y$\lim_{x\rightarrow a}f(x)=f(a)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Funciones logarítmicas&lt;/strong&gt;. Si $f(x)=\log_cx$ con $c\in \mathbb{R}$, entonces existe el límite de $f$ en cualquier punto $a\in \mathbb{R}^+$ y $\lim_{x\rightarrow a}f(x)=f(a)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Funciones trigonométricas&lt;/strong&gt;. Si $f(x)$ es una función trigonométrica, entonces existe el límite de $f$ en cualquier punto $a\in \textrm{Dom}(f)$ y $\lim_{x\rightarrow a}f(x)=f(a)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;indeterminaciones-y-su-resolución&#34;&gt;Indeterminaciones y su resolución&lt;/h2&gt;
+&lt;h3 id=&#34;tipos-de-indeterminaciones&#34;&gt;Tipos de indeterminaciones&lt;/h3&gt;
+&lt;p&gt;Al calcular límites pueden aparecer las siguientes indeterminaciones:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Tipo cociente&lt;/strong&gt;. Si $\lim_{x\rightarrow a} f(x)=0$ y $\lim_{x\rightarrow a} g(x)=0$, entonces $\dfrac{f(x)}{g(x)}$ presenta una indeterminación del tipo $\dfrac{0}{0}$ cuando $x\rightarrow a$.&lt;/p&gt;
+&lt;p&gt;Si $\lim_{x\rightarrow a} f(x)=\pm\infty$ y $\lim_{x\rightarrow a} g(x)=\pm\infty$, entonces $\dfrac{f(x)}{g(x)}$ presenta una indeterminación del tipo $\pm\dfrac{\infty}{\infty}$ cuando $x\rightarrow a$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Tipo producto&lt;/strong&gt;. Si $\lim_{x\rightarrow a} f(x)=0$ y $\lim_{x\rightarrow a} g(x)=\pm\infty$, entonces $f(x)\cdot g(x)$ presenta una indeterminación del tipo $0\cdot \pm\infty$ cuando $x\rightarrow a$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Tipo potencia&lt;/strong&gt;. Si $\lim_{x\rightarrow a} f(x)=1$ y $\lim_{x\rightarrow a} g(x)=\infty$, entonces $f(x)^{g(x)}$ presenta una indeterminación del tipo $1^\infty$ cuando $x\rightarrow a$.&lt;/p&gt;
+&lt;p&gt;Si $\lim_{x\rightarrow a} f(x)=0$ y $\lim_{x\rightarrow a} g(x)=0$, entonces $f(x)^{g(x)}$ presenta una indeterminación del tipo $0^0$ cuando $x\rightarrow a$.&lt;/p&gt;
+&lt;p&gt;Si $\lim_{x\rightarrow a} f(x)=\infty$ y $\lim_{x\rightarrow a} g(x)=0$, entonces $f(x)^{g(x)}$ presenta una indeterminación del tipo $\infty^0$ cuando $x\rightarrow a$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Tipo diferencia&lt;/strong&gt;. Si $\lim_{x\rightarrow a} f(x)=\infty$ y $\lim_{x\rightarrow a} g(x)=\infty$, entonces $f(x)-g(x)$ presenta una indeterminación del tipo $\infty-\infty$ cuando $x\rightarrow a$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;resolución-de-una-indeterminación-de-tipo-cociente&#34;&gt;Resolución de una indeterminación de tipo cociente&lt;/h3&gt;
+&lt;p&gt;Existen diferentes técnicas para resolver una indeterminación del tipo $\dfrac{0}{0}$ o $\dfrac{\infty}{\infty}$:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Factorización de polinomios en funciones racionales.&lt;/li&gt;
+&lt;li&gt;División por el términos de mayor orden en funciones racionales.&lt;/li&gt;
+&lt;li&gt;Infinitésimos equivalentes.&lt;/li&gt;
+&lt;li&gt;Regla de L’Hôpital.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;factorización-de-polinomios-en-funciones-racionales&#34;&gt;Factorización de polinomios en funciones racionales&lt;/h4&gt;
+&lt;p&gt;Si $f(x)=\dfrac{p(x)}{q(x)}$ es una función racional que presenta una indeterminación de tipo cociente cuando $x\rightarrow a$, y $a$ es una
+raíz de $p(x)$ y $q(x)$, se puede resolver la indeterminación factorizando los polinomios y simplificando.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La función $f(x)=\dfrac{x^3-3x+2}{x^4-4x+3}\rightarrow \dfrac{0}{0}$ cuando $x\rightarrow 1$.&lt;/p&gt;
+&lt;p&gt;Para resolver la indeterminación factorizamos los polinomios&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+x^3-3x+2 &amp;amp;= (x+2)(x-1)^2,\newline
+x^4-4x+3 &amp;amp;= (x^2+2x+3)(x-1)^2.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;Como el factor $(x-1)^2$ es común, podemos simplificar la función en el cálculo del límite:&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{x\rightarrow 1}\frac{x^3-3x+2}{x^4-4x+3} = \lim_{x\rightarrow 1}\frac{(x+2)(x-1)^2}{(x^2+2x+3)(x-1)^2} = \lim_{x\rightarrow 1}\frac{(x+2)}{(x^2+2x+3)} =\frac{3}{6}=0.5.
+$$
+&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h4 id=&#34;división-por-el-término-de-mayor-orden-en-funciones-racionales&#34;&gt;División por el término de mayor orden en funciones racionales&lt;/h4&gt;
+&lt;p&gt;Si $f(x)=\dfrac{p(x)}{q(x)}$ es una función racional que presenta una indeterminación de tipo cociente cuando $x\rightarrow \pm\infty$, entonces se puede resolver dividendo $p(x)$ y $q(x)$ por el término de mayor grado de ambos polinomios.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La función $f(x)=\dfrac{x^3-3x+2}{x^4-4x+3}\rightarrow \dfrac{\infty}{\infty}$ cuando $x\rightarrow \infty$.&lt;/p&gt;
+&lt;p&gt;Para resolver la indeterminación dividimos numerador y denominador por $x^4$ que es el término de mayor grado:&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{x\rightarrow \infty}\frac{x^3-3x+2}{x^4-4x+3} = \lim_{x\rightarrow \infty}\frac{\frac{x^3-3x+2}{x^4}}{\frac{x^4-4x+3}{x^4}} = \lim_{x\rightarrow \infty}\frac{\frac{1}{x}-\frac{3}{x^3}+\frac{2}{x^4}}{1-\frac{4}{x^3}+\frac{3}{x^4}} =\frac{0}{1}=0
+$$&lt;/p&gt;
+&lt;p&gt;En general, si $f(x)=\dfrac{a_0+a_1x+\cdots a_nx^n}{b_0+b_1x+\cdots b_mx^m}$, entonces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Si $n&amp;gt;m$ entonces $\lim_{x\rightarrow \pm \infty}f(x)=\pm\infty$.&lt;/li&gt;
+&lt;li&gt;Si $n&amp;lt;m$ entonces $\lim_{x\rightarrow \pm \infty}f(x)=0$.&lt;/li&gt;
+&lt;li&gt;Si $n=m$ entonces $\lim_{x\rightarrow \pm \infty}f(x)=\dfrac{a_n}{b_m}$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;infinitésimos-equivalentes&#34;&gt;Infinitésimos equivalentes&lt;/h4&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Infinitésimos equivalentes&lt;/strong&gt;. Si $f(x)\rightarrow 0$ y $g(x)\rightarrow 0$ cuando $x\rightarrow a$, entonces se dice que $f$ y $g$ son &lt;em&gt;infinitésimos equivalentes&lt;/em&gt; cuando $x\rightarrow a$ si se cumple&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow a}\frac{f(x)}{g(x)}=1.$$&lt;/p&gt;
+&lt;p&gt;En tal caso se escribe $f(x)\approx g(x)$ cuando $x\rightarrow a$.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Si $f(x)\approx g(x)$ cuando $x\rightarrow a$ entonces $f(x)$ y $g(x)$ son magnitudes equivalentes cuando $x\rightarrow a$.&lt;/p&gt;
+&lt;p&gt;Infinitésimos equivalentes cuando $x\rightarrow 0$:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{c}
+\operatorname{sen} x \approx x \approx \operatorname{tg} x\newline
+1-\cos x \approx \dfrac{x^2}{2}\newline
+\operatorname{arctg} x \approx x\newline
+e^x-1 \approx x\newline
+\log(1+x) \approx x\newline
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;A veces se puede resolver una indeterminación cuando $x\rightarrow a$ sustituyendo cualquier subexpresión de la función por un infinitésimo
+equivalente cuando $x\rightarrow a$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La función $f(x)=\dfrac{\operatorname{sen} x(1- \cos x)}{x^3}\rightarrow \dfrac{0}{0}$ cuando $x\rightarrow 0$.&lt;/p&gt;
+&lt;p&gt;Como $\operatorname{sen} x \approx x$ y $1-\cos x\approx \dfrac{x^2}{2}$ cuando $x\rightarrow 0$, para resolver la indeterminación sustituimos $\operatorname{sen} x$ por $x$ y $1-\cos x$ por $\dfrac{x^2}{2}$:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\lim_{x\rightarrow 0}\frac{\operatorname{sen} x(1- \cos x)}{x^3}&amp;amp;=
+\lim_{x\rightarrow 0}\dfrac{x\frac{x^2}{2}}{x^3} =
+\lim_{x\rightarrow 0}\dfrac{\frac{x^3}{2}}{x^3} = \lim_{x\rightarrow 0}\dfrac{1}{2} =0.5.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h4 id=&#34;regla-de-lhôpital&#34;&gt;Regla de L&amp;rsquo;Hôpital&lt;/h4&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Teorema - Regla de L’Hôpital&lt;/strong&gt;. Si $\dfrac{f(x)}{g(x)}\rightarrow \dfrac{0}{0}$ o $\dfrac{\infty}{\infty}$ cuando $x\rightarrow a$, entonces si existe el límite de $\dfrac{f&amp;rsquo;(x)}{g&amp;rsquo;(x)}$ cuando $x\rightarrow a$ se cumple&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow a}\frac{f(x)}{g(x)}=\lim_{x\rightarrow a}\frac{f&amp;rsquo;(x)}{g&amp;rsquo;(x)}.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Para que exista $\lim_{x\rightarrow a}\dfrac{f&amp;rsquo;(x)}{g&amp;rsquo;(x)}$ es necesario que que $f$ y $g$ sean derivables en un entorno de $a$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Sea $f(x)=\dfrac{\log(x^2-1)}{x+2}\rightarrow \dfrac{\infty}{\infty}$ cuando $x\rightarrow \infty$.&lt;/p&gt;
+&lt;p&gt;Para resolver la indeterminación aplicamos la regla de L’Hôpital:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\lim_{x\rightarrow \infty}\frac{\log(x^2-1)}{x+2} &amp;amp;= \lim_{x\rightarrow
+\infty}\frac{\left(\log(x^2-1)\right)&amp;rsquo;}{\left(x+2\right)&amp;rsquo;}= \lim_{x\rightarrow \infty}\frac{\frac{2x}{x^2-1}}{1}=\newline
+&amp;amp;=\lim_{x\rightarrow \infty}\frac{2x}{x^2-1}= \lim_{x\rightarrow \infty}\frac{\left(2x\right)&amp;rsquo;}{\left(x^2-1\right)&amp;rsquo;}=
+\lim_{x\rightarrow \infty}\frac{2}{2x}=0.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;resolución-de-una-indeterminación-de-tipo-producto&#34;&gt;Resolución de una indeterminación de tipo producto&lt;/h3&gt;
+&lt;p&gt;Si $f(x)\rightarrow 0$ y $g(x)\rightarrow \pm\infty$ cuando $x\rightarrow a$, entonces la indeterminación $f(x)\cdot g(x)\rightarrow 0\cdot \pm\infty$ puede convertirse en una de tipo cociente mediante la transformación:&lt;/p&gt;
+&lt;p&gt;$$f(x)\cdot g(x) = \frac{f(x)}{1/g(x)}\rightarrow \frac{0}{0}.$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Sea $f(x)=x^2e^{1/x^2}\rightarrow 0\cdot\infty$ cuando $x\rightarrow 0$.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\lim_{x\rightarrow 0}x^2e^{1/x^2} &amp;amp;= \lim_{x\rightarrow 0}\frac{e^{1/x^2}}{1/x^2}\rightarrow \frac{\infty}{\infty}
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;Aplicando ahora la regla de L´Hôpital tenemos:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\lim_{x\rightarrow 0}\frac{e^{1/x^2}}{1/x^2} &amp;amp;= \lim_{x\rightarrow
+0}\frac{\left(e^{1/x^2}\right)&amp;rsquo;}{\left(1/x^2\right)&amp;rsquo;} = \lim_{x\rightarrow
+0}\frac{e^{1/x^2}\frac{-2}{x^3}}{\frac{-2}{x^3}} = \lim_{x\rightarrow 0}e^{1/x^2}=\infty.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;resolución-de-una-indeterminación-de-tipo-potencia&#34;&gt;Resolución de una indeterminación de tipo potencia&lt;/h3&gt;
+&lt;p&gt;Si $f(x)^{g(x)}$ presenta una indeterminación de tipo potencia cuando $x\rightarrow a$, entonces la indeterminación puede convertirse en una de tipo producto mediante la transformación:&lt;/p&gt;
+&lt;p&gt;$$\exp\left(\log f(x)^{g(x)}\right) = \exp\left(g(x)\cdot \log f(x)\right).$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Sea $f(x)=\left(1+\dfrac{1}{x}\right)^{x} \rightarrow 1^\infty$ cuando $x\rightarrow 0$.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\lim_{x\rightarrow 0}\left(1+\dfrac{1}{x}\right)^{x} &amp;amp;= \lim_{x\rightarrow
+0}\exp\left(\log\left(1+\frac{1}{x}\right)^{x}\right) = \exp\left(\lim_{x\rightarrow
+0}x\log\left(1+\frac{1}{x}\right)\right) =\newline
+&amp;amp;= \exp\left(\lim_{x\rightarrow 0}\frac{\log\left(1+\frac{1}{x}\right)}{1/x}\right)
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;Aplicando ahora la regla de L´Hôpital tenemos:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\exp\left(\lim_{x\rightarrow 0}\frac{\left(\log\left(1+\frac{1}{x}\right)\right)&amp;rsquo;}{\left(1/x\right)&amp;rsquo;}\right) &amp;amp;=
+\exp\left(\lim_{x\rightarrow 0}\frac{\frac{1}{1+1/x}\frac{-1}{x^2}}{\frac{-1}{x^2}}\right) =
+\exp\left(\lim_{x\rightarrow 0}\frac{1}{1+\frac{1}{x}}\right)=\exp(1)=e.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;resolución-de-una-indeterminación-de-tipo-diferencia&#34;&gt;Resolución de una indeterminación de tipo diferencia&lt;/h3&gt;
+&lt;p&gt;Si $f(x)\rightarrow \infty$ y $g(x)\rightarrow \infty$ cuando $x\rightarrow a$, entonces la indeterminación $f(x)-g(x)$ puede convertirse en una de tipo cociente mediante la transformación:&lt;/p&gt;
+&lt;p&gt;$$f(x)-g(x)=\frac{\frac{1}{g(x)}-\frac{1}{f(x)}}{\frac{1}{f(x)g(x)}}\rightarrow \frac{0}{0}.$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Sea $f(x)=\dfrac{1}{\operatorname{sen} x}-\dfrac{1}{x} \rightarrow \infty-\infty$ cuando $x\rightarrow 0$.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\lim_{x\rightarrow 0} \frac{1}{\operatorname{sen} x}-\frac{1}{x} &amp;amp;=
+\lim_{x\rightarrow 0} \frac{x-\operatorname{sen} x}{x\operatorname{sen} x} \rightarrow \frac{0}{0}.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;Aplicando ahora la regla de L´Hôpital tenemos:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\lim_{x\rightarrow 0} \frac{x-\operatorname{sen} x}{x\operatorname{sen} x} &amp;amp; =
+\lim_{x\rightarrow 0} \frac{\left(x-\operatorname{sen} x\right)&amp;rsquo;}{\left(x\operatorname{sen} x\right)&amp;rsquo;}=
+\lim_{x\rightarrow 0} \frac{1-\cos x}{\operatorname{sen} x +x\cos x} = \newline
+&amp;amp;= \lim_{x\rightarrow 0} \frac{\left(1-\cos x\right)&amp;rsquo;}{\left(\operatorname{sen} x +x\cos x\right)&amp;rsquo;} =
+\lim_{x\rightarrow 0} \frac{\operatorname{sen} x}{\cos x +\cos x-x\operatorname{sen} x}=\newline
+&amp;amp;= \frac{0}{2}=0.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h2 id=&#34;asíntotas-de-una-función&#34;&gt;Asíntotas de una función&lt;/h2&gt;
+&lt;p&gt;Una asíntota de una función es una recta a la que tiende la función en el infinito, es decir, que la distancia entre la recta y la función es cada vez menor.&lt;/p&gt;
+&lt;p&gt;Existen tres tipos de asíntotas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Asíntota vertial&lt;/strong&gt;: $x=a$,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Asíntota horizontal&lt;/strong&gt;: $y=a$,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Asíntota oblicua&lt;/strong&gt;: $y=a+bx$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;asíntotas-verticales&#34;&gt;Asíntotas verticales&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Asíntota vertical&lt;/strong&gt;. Se dice que una recta $x=a$ es una &lt;em&gt;asíntota vertical&lt;/em&gt; de una función $f$ si se cumple&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow a^-}f(x)=\pm \infty \quad \textrm{o} \quad \lim_{x\rightarrow a^-}f(x)=\pm \infty$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Las asíntotas verticales deben buscarse en los puntos donde no está definida la función, pero si lo está en las proximidades.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La recta $x=2$ es una asíntota vertical de $f(x)=\dfrac{x+1}{x-2}$ ya que&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow 2^-}\frac{x+1}{x-2} =-\infty, \mbox{ y } \lim_{x\rightarrow 2^+}\frac{x+1}{x-2} =\infty.$$&lt;/p&gt;
+&lt;img src=&#34;../img/limites_continuidad/asintota_vertical.png&#34; width=&#34;350px&#34; alt=&#34;Gráfica de una asíntota vertical&#34; /&gt;
+&lt;h3 id=&#34;asíntotas-horizontales&#34;&gt;Asíntotas horizontales&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Asíntota horizontal&lt;/strong&gt;. Se dice que una recta $y=a$ es una &lt;em&gt;asíntota horizontal&lt;/em&gt; de una función $f$ si se cumple&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow +\infty}f(x)=a \quad \textrm{o} \quad \lim_{x\rightarrow \infty}f(x)=a$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La recta $y=1$ es una asíntota horizontal de $f(x)=\dfrac{x+1}{x-2}$ ya que&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\lim_{x\rightarrow -\infty}\frac{x+1}{x-2}&amp;amp;= \lim_{x\rightarrow -\infty}1+\frac{3}{x-2} = 1, \textrm{ y}\newline
+\lim_{x\rightarrow +\infty}\frac{x+1}{x-2}&amp;amp;= \lim_{x\rightarrow +\infty}1+\frac{3}{x-2} = 1.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;img src=&#34;../img/limites_continuidad/asintota_horizontal.png&#34; width=&#34;350px&#34; alt=&#34;Gráfica de una asíntota horizontal&#34; /&gt;
+&lt;h3 id=&#34;asíntotas-oblicuas&#34;&gt;Asíntotas oblicuas&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Asíntota oblicua&lt;/strong&gt;. Se dice que una recta $y=a+bx$ es una &lt;em&gt;asíntota oblicua&lt;/em&gt; de una función $f$ si se cumple&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow \pm\infty}\frac{f(x)}{x}=b \quad \textrm{y} \quad \lim_{x\rightarrow \pm\infty}f(x)-bx=a.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La recta $y=x+1$ es una asíntota oblicua de $f(x)=\dfrac{x^2}{x-1}$ ya que&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\lim_{x\rightarrow \pm\infty}\frac{\frac{x^2}{x-1}}{x}&amp;amp;=
+\lim_{x\rightarrow \pm\infty}\frac{x^2}{x^2-x} = 1, \textrm{ y}\newline
+\lim_{x\rightarrow \pm\infty}\frac{x^2}{x-1}-x &amp;amp;=
+\lim_{x\rightarrow \pm\infty}1+\frac{x}{x-1} = 1
+\end{aligned}
+$$&lt;/p&gt;
+&lt;img src=&#34;../img/limites_continuidad/asintota_oblicua.png&#34; width=&#34;350px&#34; alt=&#34;Gráfica de una asíntota vertical&#34; /&gt;
+&lt;h2 id=&#34;continuidad&#34;&gt;Continuidad&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Función continua en un punto&lt;/strong&gt;. Se dice que una función $f$ es &lt;em&gt;continua&lt;/em&gt; en el punto $a$ si&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow a}f(x)=f(a).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;De esta definición se deducen tres condiciones necesarias para la continuidad:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$f(a)\in \operatorname{Dom}(f)$.&lt;/li&gt;
+&lt;li&gt;Existe $ \lim_{x\rightarrow a}f(x)$.&lt;/li&gt;
+&lt;li&gt;$ \lim_{x\rightarrow a}f(x)=f(a)$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Si se rompe alguna de estas condiciones, se dice que la función presenta una discontinuidad en $a$.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definición - Función continua en un intervalo&lt;/strong&gt;. Se dice que una función $f$ es &lt;em&gt;continua&lt;/em&gt; en un intervalo si lo es en cada uno de los puntos del intervalo.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;La gráfica de una función continua en un intervalo puede dibujarse sin levantar el lápiz.&lt;/p&gt;
+&lt;h2 id=&#34;tipos-de-discontinuidades&#34;&gt;Tipos de discontinuidades&lt;/h2&gt;
+&lt;p&gt;Dependiendo de la condición de continuidad que se rompa, existen distintos tipos de discontinuidades:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Discontinuidad evitable.&lt;/li&gt;
+&lt;li&gt;Discontinuidad de 1ª especie de salto finito.&lt;/li&gt;
+&lt;li&gt;Discontinuidad de 1ª especie de salto infinito.&lt;/li&gt;
+&lt;li&gt;Discontinuidad de 2ª especie.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;discontinuidad-evitable&#34;&gt;Discontinuidad evitable&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definición - Discontinuidad evitable&lt;/strong&gt;. Se dice que una función $f$ tiene una &lt;em&gt;discontinuidad evitable&lt;/em&gt; en el punto $a$ si existe el límite de $f(x)$ cuando $x\rightarrow a$ pero $\displaystyle \lim_{x\rightarrow a}f(x)\neq f(a)$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La función $f(x)=\dfrac{x^2-1}{x-1}$ tiene una discontinuidad evitable en $x=1$ ya que la función no está definida en $x=1$ pero&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow 2}\frac{x^2-1}{x-1} = \lim_{x\rightarrow 2}x+1=2.$$&lt;/p&gt;
+&lt;img src=&#34;../img/limites_continuidad/discontinuidad_evitable.png&#34; width=&#34;300px&#34; alt=&#34;Gráfica de una discontinuidad evitable&#34; /&gt;
+&lt;h3 id=&#34;discontinuidad-de-1ª-especie-de-salto-finito&#34;&gt;Discontinuidad de 1ª especie de salto finito&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Discontinuidad de 1ª especie de salto finito&lt;/strong&gt;. Se dice que una función $f$ tiene una &lt;em&gt;discontinuidad de 1ª especie de salto finito&lt;/em&gt; en el punto $a$ si existen los límites laterales de $f(x)$ cuando $x\rightarrow a$ pero&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow a^-}f(x)\neq \lim_{x\rightarrow a^+}f(x).$$&lt;/p&gt;
+&lt;p&gt;A la diferencia entre ambos límite se le lama &lt;em&gt;salto&lt;/em&gt; de la discontinuidad.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La función $f(x)=\dfrac{\lvert x\rvert}{x}$ tiene una discontinuidad de 1ª especie de salto finito en $x=0$ ya que&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\lim_{x\rightarrow 0^-}\frac{|x|}{x}&amp;amp;= -1\newline
+\lim_{x\rightarrow 0^+}\frac{|x|}{x}&amp;amp;= 1
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;Salto $= 1-(-1)=2$.&lt;/p&gt;
+&lt;img src=&#34;../img/limites_continuidad/discontinuidad_salto_finito.png&#34; width=&#34;350px&#34; alt=&#34;Gráfica de una discontinuidad de salto finito&#34; /&gt;
+&lt;h3 id=&#34;discontinuidad-de-1ª-especie-de-salto-infinito&#34;&gt;Discontinuidad de 1ª especie de salto infinito&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Discontinuidad de 1ª especie de salto infinito&lt;/strong&gt;. Se dice que una función $f$ tiene una &lt;em&gt;discontinuidad de 1ª especie de salto infinito&lt;/em&gt; en el punto $a$ si&lt;/p&gt;
+&lt;p&gt;$$\lim_{x\rightarrow a^-}f(x)=\pm\infty \quad \textrm{o} \quad \lim_{x\rightarrow a^+}f(x)=\pm\infty.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Si $f$ tienen una discontinuidad de 1ª especie de salto infinito en un punto $a$, entonces $f$ tienen una asíntota vertical $x=a$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La función $f(x)=e^{1/x}$ tiene una discontinuidad de 1ª especie de salto infinito en $x=0$ ya que&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\lim_{x\rightarrow 0^-}e^{1/x}&amp;amp;= 0\newline
+\lim_{x\rightarrow 0^+}e^{1/x}&amp;amp;= \infty
+\end{aligned}
+$$&lt;/p&gt;
+&lt;img src=&#34;../img/limites_continuidad/discontinuidad_salto_infinito.png&#34; width=&#34;300px&#34; alt=&#34;Gráfica de una discontinuidad de salto infinito&#34; /&gt;
+&lt;h3 id=&#34;discontinuidad-de-2ª-especie&#34;&gt;Discontinuidad de 2ª especie&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definición - Discontinuidad de 2ª especie&lt;/strong&gt;. Se dice que una función $f$ tiene una &lt;em&gt;discontinuidad de 2ª especie&lt;/em&gt; en el punto $a$ si no existe alguno de los límites laterales y tampoco se trata de una discontinuidad de 1ª especie de salto infinito.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Normalmente la discontinuidades de 2ª especie se dan en puntos donde la función no definida en sus proximidades.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La función $f(x)=\dfrac{1}{\sqrt{x^2-1}}$ tiene una discontinuidad de 2ª especie en $x=1$ ya que&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+&amp;amp; \lim_{x\rightarrow 1^-}\frac{1}{\sqrt{x^2-1}} \textrm{ no existe}  \newline
+&amp;amp; \lim_{x\rightarrow 1^+}\frac{1}{\sqrt{x^2-1}}=\infty
+\end{aligned}
+$$&lt;/p&gt;
+&lt;img src=&#34;../img/limites_continuidad/discontinuidad_2_especie.png&#34; width=&#34;300px&#34; alt=&#34;Gráfica de una discontinuidad de 2ª especie&#34; /&gt;
+&lt;p&gt;&lt;strong&gt;Notas&lt;/strong&gt;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Se pude simplificar porque aunque $x\rightarrow 1$, $x\neq 1$ y por tanto el denominador no se anula.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

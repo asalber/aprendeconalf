@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Aprende con Alf</title>
+    <link>/publication-type/2/</link>
+      <atom:link href="/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>2</title>
+      <link>/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>Clinical-Evolutionary Staging System of Primary Open-Angle Glaucoma Using Optical Coherence Tomography</title>
+      <link>/publication/clinical-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/clinical-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Una nueva taxonomía de colecciones y de funciones de similitud para su comparación</title>
+      <link>/publication/nueva-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/nueva-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Innovación en la docencia de Estadística con R y rk.Teaching</title>
+      <link>/publication/innovacion-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/innovacion-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bringing R to non-expert users with the package RKTeaching</title>
+      <link>/publication/bringing-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/bringing-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards a Semantic Catalog of Similarity Measures</title>
+      <link>/publication/towards-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/towards-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evolution of neuroendocrine cell population and peptidergic innervation, assessed by discriminant analysis, during postnatal development of the rat prostate</title>
+      <link>/publication/evolution-2007/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/evolution-2007/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1689 @@
+<!DOCTYPE html><html lang="es-es" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alfredo Sánchez Alberca">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="El concepto de límite Aproximación al concepto de límite El concepto de límite está ligado al de tendencia.
+Decimos que $x$ tiende a un valor $a$, y lo escribimos $x\rightarrow a$, si se pueden tomar valores de $x$ tan próximos a $a$ como se quiera, pero sin llegar a valer $a$.">
+
+  
+  <link rel="alternate" hreflang="es-es" href="/docencia/calculo/manual/limites-continuidad/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#6f5499">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700%7CSource Sans Pro:400+400italic%7COpen Sans:400+400italic%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/docencia/calculo/manual/limites-continuidad/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@aprendeconalf">
+  <meta property="twitter:creator" content="@aprendeconalf">
+  
+  <meta property="og:site_name" content="Aprende con Alf">
+  <meta property="og:url" content="/docencia/calculo/manual/limites-continuidad/">
+  <meta property="og:title" content="Límites y continuidad | Aprende con Alf">
+  <meta property="og:description" content="El concepto de límite Aproximación al concepto de límite El concepto de límite está ligado al de tendencia.
+Decimos que $x$ tiende a un valor $a$, y lo escribimos $x\rightarrow a$, si se pueden tomar valores de $x$ tan próximos a $a$ como se quiera, pero sin llegar a valer $a$."><meta property="og:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png">
+  <meta property="twitter:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png"><meta property="og:locale" content="es-es">
+  
+    
+    <meta property="article:modified_time" content="2020-09-15T23:48:20&#43;02:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Límites y continuidad | Aprende con Alf</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Buscar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Buscar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Sobre mi</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Docencia</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/docencia/calculo/"><span>Cálculo</span></a>
+            
+              <a class="dropdown-item" href="/docencia/estadistica/"><span>Estadística</span></a>
+            
+              <a class="dropdown-item" href="/docencia/r/"><span>R</span></a>
+            
+              <a class="dropdown-item" href="/docencia/python/"><span>Python</span></a>
+            
+              <a class="dropdown-item" href="/docencia/spss/"><span>SPSS</span></a>
+            
+              <a class="dropdown-item" href="/docencia/geogebra/"><span>Geogebra</span></a>
+            
+              <a class="dropdown-item" href="/docencia/git/"><span>Git</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Proyectos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publicaciones</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contacto</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Buscar"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Claro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Oscuro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automático</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Buscar..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+ 
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/docencia/calculo/manual/">Manual de Cálculo</a>
+    <ul class="nav docs-sidenav">
+          <li class=""><a href="/docencia/calculo/manual/geometria-analitica/">Geometría Analítica</a></li>
+        
+          <li class=""><a href="/docencia/calculo/manual/funciones-elementales/">Funciones elementales</a></li>
+        
+          <li class="active"><a href="/docencia/calculo/manual/limites-continuidad/">Límites y continuidad</a></li>
+        
+          <li class=""><a href="/docencia/calculo/manual/derivadas-una-variable/">Cálculo diferencial en una variable</a></li>
+        
+          <li class=""><a href="/docencia/calculo/manual/integrales/">Cálculo integral</a></li>
+        
+          <li class=""><a href="/docencia/calculo/manual/ecuaciones-diferenciales-ordinarias/">Ecuaciones diferenciales ordinarias</a></li>
+        
+          <li class=""><a href="/docencia/calculo/manual/derivadas-n-variables/">Cálculo diferencial en varias variables</a></li>
+        </ul>
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">En esta página</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#el-concepto-de-límite">El concepto de límite</a>
+      <ul>
+        <li><a href="#aproximación-al-concepto-de-límite">Aproximación al concepto de límite</a></li>
+        <li><a href="#límites-laterales">Límites laterales</a></li>
+        <li><a href="#límites-que-no-existen-i">Límites que no existen (I)</a></li>
+        <li><a href="#límites-que-no-existen-ii">Límites que no existen (II)</a></li>
+        <li><a href="#límites-que-no-existen-iii">Límites que no existen (III)</a></li>
+        <li><a href="#límites-que-no-existen-iv">Límites que no existen (IV)</a></li>
+        <li><a href="#límites-en-el-infinito">Límites en el infinito</a></li>
+        <li><a href="#definición-de-límite">Definición de límite</a></li>
+        <li><a href="#definición-de-límite-en-el-infinito">Definición de límite en el infinito</a></li>
+      </ul>
+    </li>
+    <li><a href="#álgebra-de-límites">Álgebra de límites</a>
+      <ul>
+        <li><a href="#límites-de-las-funciones-elementales">Límites de las funciones elementales</a></li>
+      </ul>
+    </li>
+    <li><a href="#indeterminaciones-y-su-resolución">Indeterminaciones y su resolución</a>
+      <ul>
+        <li><a href="#tipos-de-indeterminaciones">Tipos de indeterminaciones</a></li>
+        <li><a href="#resolución-de-una-indeterminación-de-tipo-cociente">Resolución de una indeterminación de tipo cociente</a></li>
+        <li><a href="#resolución-de-una-indeterminación-de-tipo-producto">Resolución de una indeterminación de tipo producto</a></li>
+        <li><a href="#resolución-de-una-indeterminación-de-tipo-potencia">Resolución de una indeterminación de tipo potencia</a></li>
+        <li><a href="#resolución-de-una-indeterminación-de-tipo-diferencia">Resolución de una indeterminación de tipo diferencia</a></li>
+      </ul>
+    </li>
+    <li><a href="#asíntotas-de-una-función">Asíntotas de una función</a>
+      <ul>
+        <li><a href="#asíntotas-verticales">Asíntotas verticales</a></li>
+        <li><a href="#asíntotas-horizontales">Asíntotas horizontales</a></li>
+        <li><a href="#asíntotas-oblicuas">Asíntotas oblicuas</a></li>
+      </ul>
+    </li>
+    <li><a href="#continuidad">Continuidad</a></li>
+    <li><a href="#tipos-de-discontinuidades">Tipos de discontinuidades</a>
+      <ul>
+        <li><a href="#discontinuidad-evitable">Discontinuidad evitable</a></li>
+        <li><a href="#discontinuidad-de-1ª-especie-de-salto-finito">Discontinuidad de 1ª especie de salto finito</a></li>
+        <li><a href="#discontinuidad-de-1ª-especie-de-salto-infinito">Discontinuidad de 1ª especie de salto infinito</a></li>
+        <li><a href="#discontinuidad-de-2ª-especie">Discontinuidad de 2ª especie</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Límites y continuidad</h1>
+
+          <div class="article-style">
+            <h2 id="el-concepto-de-límite">El concepto de límite</h2>
+<h3 id="aproximación-al-concepto-de-límite">Aproximación al concepto de límite</h3>
+<p>El concepto de límite está ligado al de tendencia.</p>
+<p>Decimos que $x$ <em>tiende</em> a un valor $a$, y lo escribimos $x\rightarrow a$, si se pueden tomar valores de $x$ tan próximos a $a$ como se quiera, pero sin llegar a valer $a$.</p>
+<p>Si la aproximación es por defecto (con valores menores que $a$) se dice que $x$ tiende a $a$ por la izquierda, y se escribe $x\rightarrow a^-$, y si es por exceso (con valores mayores que $a$) se dice que $x$ tiende a $a$ por la derecha, y se escribe $x\rightarrow a^+$.</p>
+<p>Cuando la variable $x$ de una función $f$ tiende a un valor $a$, cabe preguntarse si sus imágenes mediante $f$ tienden a otro valor concreto:</p>
+<p>Si $f(x)$ tiende a un valor $l$ cuando $x$ tiende a $a$, se dice que $l$ es el <em>límite</em> de $f(x)$ cuando $x\rightarrow a$, y se escribe</p>
+<p>$$\lim_{x\rightarrow a}f(x)=l.$$</p>
+<h3 id="límites-laterales">Límites laterales</h3>
+<p>Si $f(x)$ tiende a $l$ cuando $x$ tiende a $a$ por la izquierda, entonces se dice que $l$ es el <em>límite por la izquierda</em> de $f(x)$ cuando $x\rightarrow a^-$, y se escribe</p>
+<p>$$\lim_{x\rightarrow a^-}f(x)=l.$$</p>
+<p>Si $f(x)$ tiende a $l$ cuando $x$ se aproxima a $a$ por exceso, entonces se dice que $l$ es el <em>límite por la derecha</em> de $f(x)$ cuando $x\rightarrow a^-$, y se escribe</p>
+<p>$$\lim_{x\rightarrow a^+}f(x)=l.$$</p>
+<p><strong>Ejemplo</strong>. Consideremos la función $f(x)=x^2$ y veamos que pasa cuando $x\rightarrow 2$:</p>
+<p>$$
+\begin{array}{c}
+\underbrace{\begin{array}{ccc}
+\textrm{Aproximación por defecto} &amp; \qquad &amp; \textrm{Aproximación por exceso}\newline
+\begin{array}{|l|l|}
+\hline
+x       &amp; f(x)=x^2   \newline
+\hline\hline
+1.9    &amp; 3.61       \newline
+\hline
+1.99   &amp; 3.9601     \newline
+\hline
+1.999  &amp; 3.996001   \newline
+\hline
+1.9999 &amp; 3.99960001 \newline
+\hline
+\end{array}
+&amp; &amp;
+\begin{array}{|l|l|}
+\hline
+x       &amp; f(x)=x^2   \newline
+\hline\hline
+2.1    &amp; 4.41       \newline
+\hline
+2.01   &amp; 4.0401    \newline
+\hline
+2.001  &amp; 4.004001   \newline
+\hline
+2.0001 &amp; 4.00040001 \newline
+\hline
+\end{array}\newline
+\Downarrow &amp; &amp; \Downarrow\newline
+\lim_{x\rightarrow 2^-}x^2=4
+&amp; &amp;
+\lim_{x\rightarrow 2^+}x^2=4
+\end{array}}\newline
+\Downarrow\newline
+\lim_{x\rightarrow 2}x^2=4
+\end{array}
+$$</p>
+<h3 id="límites-que-no-existen-i">Límites que no existen (I)</h3>
+<p>Si la función no está definida entorno a un punto, entonces no existe el límite en dicho punto</p>
+<p><strong>Ejemplo</strong>. Consideremos la función $f(x)=\dfrac{1}{\sqrt{x^2-1}}$ y veamos que pasa cuando $x\rightarrow 0$:</p>
+<p>$$
+\begin{array}{c}
+\underbrace{\begin{array}{ccc}
+\textrm{Por la izquierda} &amp; \qquad &amp; \textrm{Por la derecha }\newline
+\begin{array}{|l|l|}
+\hline
+x      &amp; f(x)   \newline
+\hline\hline
+-0.1   &amp; \textrm{No exite}      \newline
+\hline
+-0.01   &amp; \textrm{No existe}     \newline
+\hline
+-0.001  &amp; \textrm{No existe}   \newline
+\hline
+\end{array}
+&amp; &amp;
+\begin{array}{|l|l|}
+\hline
+x      &amp; f(x)   \newline
+\hline\hline
+0.1    &amp;  \textrm{No existe}      \newline
+\hline
+0.01   &amp; \textrm{No existe}    \newline
+\hline
+0.001  &amp; \textrm{No existe}   \newline
+\hline
+\end{array}\newline
+\Downarrow &amp; &amp; \Downarrow\newline
+\displaystyle \textrm{No existe } \lim_{x\rightarrow 0^-}\frac{1}{\sqrt{x^2-1}}
+&amp; &amp;
+\displaystyle \textrm{No existe } \lim_{x\rightarrow 0^+}\frac{1}{\sqrt{x^2-1}}
+\end{array}}\newline
+\Downarrow\newline
+\displaystyle \textrm{No existe }\lim_{x\rightarrow 0}\frac{1}{\sqrt{x^2-1}}
+\end{array}$$</p>
+<img src="../img/limites_continuidad/limite_no_existe_1.png" width="300px" alt="Gráfica de una función que no tiene límite" />
+<h3 id="límites-que-no-existen-ii">Límites que no existen (II)</h3>
+<p>Cuando los límites laterales no coinciden entonces no existe el límite</p>
+<p><strong>Ejemplo</strong>. Consideremos la función $f(x)=\dfrac{\lvert x\rvert}{x}$ y veamos que pasa cuando $x\rightarrow 0$:</p>
+<p>$$\begin{array}{c}
+\underbrace{\begin{array}{ccc}
+\textrm{Por la izquierda} &amp; \qquad &amp; \textrm{Por la derecha }\newline
+\begin{array}{|l|l|}
+\hline
+x      &amp; f(x)   \newline
+\hline\hline
+-0.1   &amp; -1       \newline
+\hline
+-0.01   &amp; -1     \newline
+\hline
+-0.001  &amp; -1   \newline
+\hline
+\end{array}
+&amp; &amp;
+\begin{array}{|l|l|}
+\hline
+x      &amp; f(x)   \newline
+\hline\hline
+0.1    &amp; 1       \newline
+\hline
+0.01   &amp; 1    \newline
+\hline
+0.001  &amp; 1   \newline
+\hline
+\end{array}\newline
+\Downarrow &amp; &amp; \Downarrow\newline
+\displaystyle \lim_{x\rightarrow 0^-}\frac{|x|}{x}=-1
+&amp;\neq &amp;
+\displaystyle \lim_{x\rightarrow 0^+}\frac{|x|}{x}=1
+\end{array}}\newline
+\Downarrow\newline
+\displaystyle \textrm{No existe }\lim_{x\rightarrow 0}\frac{|x|}{x}
+\end{array}
+$$</p>
+<img src="../img/limites_continuidad/limite_no_existe_2.png" width="300px" alt="Gráfica de una función que no tiene límite" />
+<h3 id="límites-que-no-existen-iii">Límites que no existen (III)</h3>
+<p>A veces, cuando $x\rightarrow a$ los valores de $f(x)$ crecen o decrecen infinitamente y entonces no existe el límite. En este caso se dice que la función <em>diverge</em> y se escribe</p>
+<p>$$\lim_{x\rightarrow a}f(x)=\pm \infty$$</p>
+<p><strong>Ejemplo</strong>. Veamos la tendencia de la función $f(x)=\dfrac{1}{x^2}$ cuando $x\rightarrow 0$:</p>
+<p>$$
+\begin{array}{c}
+\underbrace{\begin{array}{ccc}
+\textrm{Por la izquierda} &amp; \qquad &amp; \textrm{Por la derecha }\newline
+\begin{array}{|l|r|}
+\hline
+x      &amp; f(x)   \newline
+\hline\hline
+-0.1   &amp; 100       \newline
+\hline
+-0.01   &amp; 10000     \newline
+\hline
+-0.001  &amp; 1000000   \newline
+\hline
+\end{array}
+&amp; &amp;
+\begin{array}{|l|r|}
+\hline
+x      &amp; f(x)   \newline
+\hline\hline
+0.1    &amp; 100       \newline
+\hline
+0.01   &amp; 10000    \newline
+\hline
+0.001  &amp; 1000000   \newline
+\hline
+\end{array}\newline
+\Downarrow &amp; &amp; \Downarrow\newline
+\displaystyle \lim_{x\rightarrow 0^-}\frac{1}{x^2}=+\infty
+&amp; &amp;
+\displaystyle \lim_{x\rightarrow 0^+}\frac{1}{x^2}=+\infty
+\end{array}}\newline
+\Downarrow\newline
+\displaystyle \textrm{No existe }\lim_{x\rightarrow 0}\frac{1}{x^2}=\infty
+\end{array}
+$$</p>
+<img src="../img/limites_continuidad/limite_no_existe_3.png" width="300px" alt="Gráfica de una función que no tiene límite" />
+<h3 id="límites-que-no-existen-iv">Límites que no existen (IV)</h3>
+<p>A veces, el límite de un función en un punto puede no existir porque la función oscila rápidamente al acercarnos a dicho punto.</p>
+<p><strong>Ejemplo</strong>. Consideremos la función $f(x)=\operatorname{sen} \dfrac{1}{x}$ y veamos que pasa cuando $x\rightarrow 0$:</p>
+<p>$$\begin{array}{ccc}
+\textrm{Por la izquierda} &amp; \qquad &amp; \textrm{Por la derecha }\newline
+\begin{array}{|l|l|}
+\hline
+x      &amp; f(x)   \newline
+\hline\hline
+-0.1   &amp; -0.1736       \newline
+\hline
+-0.01   &amp; -0.9848     \newline
+\hline
+-0.005 &amp; 0.3420 \newline
+\hline
+-0.001  &amp; 0.9848  \newline
+\hline
+-0.0005  &amp; 0.3420\newline
+\hline
+-0.0001 &amp; 0.9848 \newline
+\hline
+\end{array}
+&amp; &amp;
+\begin{array}{|l|l|}
+\hline
+x      &amp; f(x)   \newline
+\hline\hline
+0.1   &amp; 0.1736       \newline
+\hline
+0.01   &amp; 0.9848     \newline
+\hline
+0.005 &amp; -0.3420 \newline
+\hline
+0.001  &amp; -0.9848  \newline
+\hline
+0.0005  &amp; -0.3420\newline
+\hline
+0.0001 &amp; -0.9848 \newline
+\hline
+\end{array}\newline
+\Downarrow &amp; &amp; \Downarrow\newline
+\displaystyle \textrm{No existe }\lim_{x\rightarrow 0^-}\operatorname{sen} \frac{1}{x}
+&amp; &amp;
+\displaystyle \textrm{No existe }\lim_{x\rightarrow 0^+}\operatorname{sen} \frac{1}{x}
+\end{array}
+$$</p>
+<img src="../img/limites_continuidad/limite_no_existe_4.png" width="300px" alt="Gráfica de una función que no tiene límitee" />
+<h3 id="límites-en-el-infinito">Límites en el infinito</h3>
+<p>Si $f(x)$ tiende a $l$ cuando $x$ crece infinitamente, entonces se dice que $l$ es el <em>límite en el infinito</em> de $f(x)$ cuando $x\rightarrow +\infty$, y se escribe</p>
+<p>$$\lim_{x\rightarrow +\infty}f(x)=l.$$</p>
+<p>Si $f(x)$ tiende a $l$ cuando $x$ decrece infinitamente, entonces se dice que $l$ es el <em>límite en el infinito</em> de $f(x)$ cuando $x\rightarrow -\infty$, y se escribe</p>
+<p>$$\lim_{x\rightarrow -\infty}f(x)=l.$$</p>
+<p><strong>Ejemplo</strong>. Estudiemos la tendencia de $f(x)=\dfrac{1}{x}$ cuando $x\rightarrow \pm\infty$:</p>
+<p>$$
+\begin{array}{ccc}
+x\rightarrow +\infty &amp; \qquad &amp; x\rightarrow -\infty\newline
+\begin{array}{|r|l|}
+\hline
+x      &amp; f(x)=1/x   \newline
+\hline\hline
+1000    &amp; 0.001       \newline
+\hline
+10000   &amp; 0.0001     \newline
+\hline
+100000  &amp; 0.00001   \newline
+\hline
+\end{array}
+&amp; &amp;
+\begin{array}{|r|l|}
+\hline
+x      &amp; f(x)=1/x   \newline
+\hline\hline
+-1000    &amp; -0.001       \newline
+\hline
+-10000   &amp; -0.0001     \newline
+\hline
+-100000  &amp; -0.00001   \newline
+\hline
+\end{array}\newline
+\Downarrow &amp; &amp; \Downarrow\newline
+\lim_{x\rightarrow +\infty}\frac{1}{x}=0
+&amp; &amp;
+\lim_{x\rightarrow -\infty}\frac{1}{x}=0
+\end{array}
+$$</p>
+<img src="../img/limites_continuidad/limite_infinito.png" width="300px" alt="Gráfica de una función con límite en el infinito" />
+<h3 id="definición-de-límite">Definición de límite</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Límite de una función en un punto</strong> Se dice que el límite de la función $f$ cuando $x\rightarrow a$ es $l$, y se escribe</p>
+<p>$$\lim_{x\rightarrow a} f(x) = l$$</p>
+<p>si para cualquier valor $\varepsilon&gt;0$ existe un número $\delta&gt;0$ tal que, $|f(x)-l|&lt;\varepsilon$ siempre que $0&lt;|x-a|&lt;\delta$.</p>
+  </div>
+</div>
+<img src="../img/limites_continuidad/definicion_limite.png" width="300px" alt="Explicación gráfica de la definición de límite" />
+<h3 id="definición-de-límite-en-el-infinito">Definición de límite en el infinito</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Límite de una función en el infinito</strong> Se dice que el límite de la función $f$ cuando $x\rightarrow +\infty$ es $l$, y se escribe</p>
+<p>$$\lim_{x\rightarrow +\infty} f(x) =l$$</p>
+<p>si para cualquier valor $\varepsilon&gt;0$ existe un número $\delta&gt;0$ tal que, $\lvert f(x)-l\rvert &lt;\varepsilon$ siempre que $x&gt;\delta$.</p>
+<p>Se dice que el límite de la función $f$ cuando $x\rightarrow -\infty$ es $l$, y se escribe</p>
+<p>$$\lim_{x\rightarrow -\infty} f(x) =l$$</p>
+<p>si para cualquier valor $\varepsilon&gt;0$ existe un número $\delta&lt;0$ tal que, $\lvert f(x)-l\rvert &lt;\varepsilon$ siempre que $x&lt;\delta$.</p>
+  </div>
+</div>
+<h2 id="álgebra-de-límites">Álgebra de límites</h2>
+<p>Dadas dos funciones $f(x)$ y $g(x)$, tales que existe $$\lim_{x\rightarrow a}f(x)$$ y $$\lim_{x\rightarrow a}g(x)$$, entonces se cumple que</p>
+<ol>
+<li>$$ \lim_{x\rightarrow a}c f(x)=c\lim_{x\rightarrow a}f(x)$$, siendo $c$ constante.</li>
+<li>$$ \lim_{x\rightarrow a}(f(x)\pm g(x))=\lim_{x\rightarrow a}f(x)\pm \lim_{x\rightarrow a}g(x).$$</li>
+<li>$$ \lim_{x\rightarrow a}(f(x)\cdot g(x))=\lim_{x\rightarrow a}f(x)\cdot \lim_{x\rightarrow a}g(x).$$</li>
+<li>$$ \lim_{x\rightarrow a}\frac{f(x)}{g(x)}=\frac{\displaystyle \lim_{x\rightarrow a}f(x)}{\displaystyle \lim_{x\rightarrow a}g(x)}$$ si $$\lim_{x\rightarrow a}g(x)\neq 0.$$</li>
+</ol>
+<h3 id="límites-de-las-funciones-elementales">Límites de las funciones elementales</h3>
+<ul>
+<li>
+<p><strong>Funciones polinómicas</strong>. Si $f$ es un polinomio, entonces existe el límite de $f$ en cualquier punto $a\in \mathbb{R}$ y $\lim_{x\rightarrow a}f(x)=f(a)$.</p>
+</li>
+<li>
+<p><strong>Funciones racionales</strong>. Si $f(x)=\dfrac{p(x)}{q(x)}$ con $p(x)$ y $q(x)$ dos polinomios, entonces existe el límite de $f$ en cualquier punto $a\in \mathbb{R}$ que no sea una raíz de $q(x)$, y $\lim_{x\rightarrow a}f(x)=f(a)$. Si $a$ es una raíz de $q(x)$ entonces el límite puede existir o no.</p>
+</li>
+<li>
+<p><strong>Funciones potenciales</strong>. Si $f(x)=x^r$ con $r\in \mathbb{R}$, entonces existe el límite de $f$ en cualquier punto $a$ tal que exista un intervalo $(a-\delta,a+\delta)\subset \textrm{Dom}(f)$ para algún $\delta &gt;0$, y en ese caso, $\lim_{x\rightarrow a}f(x)=f(a)$.</p>
+</li>
+<li>
+<p><strong>Funciones exponenciales</strong>. Si $f(x)=c^x$ con $c\in \mathbb{R}$ entonces existe el límite de $f$ en cualquier punto $a\in \mathbb{R}$ y$\lim_{x\rightarrow a}f(x)=f(a)$.</p>
+</li>
+<li>
+<p><strong>Funciones logarítmicas</strong>. Si $f(x)=\log_cx$ con $c\in \mathbb{R}$, entonces existe el límite de $f$ en cualquier punto $a\in \mathbb{R}^+$ y $\lim_{x\rightarrow a}f(x)=f(a)$.</p>
+</li>
+<li>
+<p><strong>Funciones trigonométricas</strong>. Si $f(x)$ es una función trigonométrica, entonces existe el límite de $f$ en cualquier punto $a\in \textrm{Dom}(f)$ y $\lim_{x\rightarrow a}f(x)=f(a)$.</p>
+</li>
+</ul>
+<h2 id="indeterminaciones-y-su-resolución">Indeterminaciones y su resolución</h2>
+<h3 id="tipos-de-indeterminaciones">Tipos de indeterminaciones</h3>
+<p>Al calcular límites pueden aparecer las siguientes indeterminaciones:</p>
+<ul>
+<li>
+<p><strong>Tipo cociente</strong>. Si $\lim_{x\rightarrow a} f(x)=0$ y $\lim_{x\rightarrow a} g(x)=0$, entonces $\dfrac{f(x)}{g(x)}$ presenta una indeterminación del tipo $\dfrac{0}{0}$ cuando $x\rightarrow a$.</p>
+<p>Si $\lim_{x\rightarrow a} f(x)=\pm\infty$ y $\lim_{x\rightarrow a} g(x)=\pm\infty$, entonces $\dfrac{f(x)}{g(x)}$ presenta una indeterminación del tipo $\pm\dfrac{\infty}{\infty}$ cuando $x\rightarrow a$.</p>
+</li>
+<li>
+<p><strong>Tipo producto</strong>. Si $\lim_{x\rightarrow a} f(x)=0$ y $\lim_{x\rightarrow a} g(x)=\pm\infty$, entonces $f(x)\cdot g(x)$ presenta una indeterminación del tipo $0\cdot \pm\infty$ cuando $x\rightarrow a$.</p>
+</li>
+<li>
+<p><strong>Tipo potencia</strong>. Si $\lim_{x\rightarrow a} f(x)=1$ y $\lim_{x\rightarrow a} g(x)=\infty$, entonces $f(x)^{g(x)}$ presenta una indeterminación del tipo $1^\infty$ cuando $x\rightarrow a$.</p>
+<p>Si $\lim_{x\rightarrow a} f(x)=0$ y $\lim_{x\rightarrow a} g(x)=0$, entonces $f(x)^{g(x)}$ presenta una indeterminación del tipo $0^0$ cuando $x\rightarrow a$.</p>
+<p>Si $\lim_{x\rightarrow a} f(x)=\infty$ y $\lim_{x\rightarrow a} g(x)=0$, entonces $f(x)^{g(x)}$ presenta una indeterminación del tipo $\infty^0$ cuando $x\rightarrow a$.</p>
+</li>
+<li>
+<p><strong>Tipo diferencia</strong>. Si $\lim_{x\rightarrow a} f(x)=\infty$ y $\lim_{x\rightarrow a} g(x)=\infty$, entonces $f(x)-g(x)$ presenta una indeterminación del tipo $\infty-\infty$ cuando $x\rightarrow a$.</p>
+</li>
+</ul>
+<h3 id="resolución-de-una-indeterminación-de-tipo-cociente">Resolución de una indeterminación de tipo cociente</h3>
+<p>Existen diferentes técnicas para resolver una indeterminación del tipo $\dfrac{0}{0}$ o $\dfrac{\infty}{\infty}$:</p>
+<ul>
+<li>Factorización de polinomios en funciones racionales.</li>
+<li>División por el términos de mayor orden en funciones racionales.</li>
+<li>Infinitésimos equivalentes.</li>
+<li>Regla de L’Hôpital.</li>
+</ul>
+<h4 id="factorización-de-polinomios-en-funciones-racionales">Factorización de polinomios en funciones racionales</h4>
+<p>Si $f(x)=\dfrac{p(x)}{q(x)}$ es una función racional que presenta una indeterminación de tipo cociente cuando $x\rightarrow a$, y $a$ es una
+raíz de $p(x)$ y $q(x)$, se puede resolver la indeterminación factorizando los polinomios y simplificando.</p>
+<p><strong>Ejemplo</strong>. La función $f(x)=\dfrac{x^3-3x+2}{x^4-4x+3}\rightarrow \dfrac{0}{0}$ cuando $x\rightarrow 1$.</p>
+<p>Para resolver la indeterminación factorizamos los polinomios</p>
+<p>$$
+\begin{aligned}
+x^3-3x+2 &amp;= (x+2)(x-1)^2,\newline
+x^4-4x+3 &amp;= (x^2+2x+3)(x-1)^2.
+\end{aligned}
+$$</p>
+<p>Como el factor $(x-1)^2$ es común, podemos simplificar la función en el cálculo del límite:</p>
+<p>$$
+\lim_{x\rightarrow 1}\frac{x^3-3x+2}{x^4-4x+3} = \lim_{x\rightarrow 1}\frac{(x+2)(x-1)^2}{(x^2+2x+3)(x-1)^2} = \lim_{x\rightarrow 1}\frac{(x+2)}{(x^2+2x+3)} =\frac{3}{6}=0.5.
+$$
+<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h4 id="división-por-el-término-de-mayor-orden-en-funciones-racionales">División por el término de mayor orden en funciones racionales</h4>
+<p>Si $f(x)=\dfrac{p(x)}{q(x)}$ es una función racional que presenta una indeterminación de tipo cociente cuando $x\rightarrow \pm\infty$, entonces se puede resolver dividendo $p(x)$ y $q(x)$ por el término de mayor grado de ambos polinomios.</p>
+<p><strong>Ejemplo</strong>. La función $f(x)=\dfrac{x^3-3x+2}{x^4-4x+3}\rightarrow \dfrac{\infty}{\infty}$ cuando $x\rightarrow \infty$.</p>
+<p>Para resolver la indeterminación dividimos numerador y denominador por $x^4$ que es el término de mayor grado:</p>
+<p>$$
+\lim_{x\rightarrow \infty}\frac{x^3-3x+2}{x^4-4x+3} = \lim_{x\rightarrow \infty}\frac{\frac{x^3-3x+2}{x^4}}{\frac{x^4-4x+3}{x^4}} = \lim_{x\rightarrow \infty}\frac{\frac{1}{x}-\frac{3}{x^3}+\frac{2}{x^4}}{1-\frac{4}{x^3}+\frac{3}{x^4}} =\frac{0}{1}=0
+$$</p>
+<p>En general, si $f(x)=\dfrac{a_0+a_1x+\cdots a_nx^n}{b_0+b_1x+\cdots b_mx^m}$, entonces:</p>
+<ul>
+<li>Si $n&gt;m$ entonces $\lim_{x\rightarrow \pm \infty}f(x)=\pm\infty$.</li>
+<li>Si $n&lt;m$ entonces $\lim_{x\rightarrow \pm \infty}f(x)=0$.</li>
+<li>Si $n=m$ entonces $\lim_{x\rightarrow \pm \infty}f(x)=\dfrac{a_n}{b_m}$.</li>
+</ul>
+<h4 id="infinitésimos-equivalentes">Infinitésimos equivalentes</h4>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Infinitésimos equivalentes</strong>. Si $f(x)\rightarrow 0$ y $g(x)\rightarrow 0$ cuando $x\rightarrow a$, entonces se dice que $f$ y $g$ son <em>infinitésimos equivalentes</em> cuando $x\rightarrow a$ si se cumple</p>
+<p>$$\lim_{x\rightarrow a}\frac{f(x)}{g(x)}=1.$$</p>
+<p>En tal caso se escribe $f(x)\approx g(x)$ cuando $x\rightarrow a$.</p>
+  </div>
+</div>
+<p>Si $f(x)\approx g(x)$ cuando $x\rightarrow a$ entonces $f(x)$ y $g(x)$ son magnitudes equivalentes cuando $x\rightarrow a$.</p>
+<p>Infinitésimos equivalentes cuando $x\rightarrow 0$:</p>
+<p>$$
+\begin{array}{c}
+\operatorname{sen} x \approx x \approx \operatorname{tg} x\newline
+1-\cos x \approx \dfrac{x^2}{2}\newline
+\operatorname{arctg} x \approx x\newline
+e^x-1 \approx x\newline
+\log(1+x) \approx x\newline
+\end{array}
+$$</p>
+<p>A veces se puede resolver una indeterminación cuando $x\rightarrow a$ sustituyendo cualquier subexpresión de la función por un infinitésimo
+equivalente cuando $x\rightarrow a$.</p>
+<p><strong>Ejemplo</strong>. La función $f(x)=\dfrac{\operatorname{sen} x(1- \cos x)}{x^3}\rightarrow \dfrac{0}{0}$ cuando $x\rightarrow 0$.</p>
+<p>Como $\operatorname{sen} x \approx x$ y $1-\cos x\approx \dfrac{x^2}{2}$ cuando $x\rightarrow 0$, para resolver la indeterminación sustituimos $\operatorname{sen} x$ por $x$ y $1-\cos x$ por $\dfrac{x^2}{2}$:</p>
+<p>$$
+\begin{aligned}
+\lim_{x\rightarrow 0}\frac{\operatorname{sen} x(1- \cos x)}{x^3}&amp;=
+\lim_{x\rightarrow 0}\dfrac{x\frac{x^2}{2}}{x^3} =
+\lim_{x\rightarrow 0}\dfrac{\frac{x^3}{2}}{x^3} = \lim_{x\rightarrow 0}\dfrac{1}{2} =0.5.
+\end{aligned}
+$$</p>
+<h4 id="regla-de-lhôpital">Regla de L&rsquo;Hôpital</h4>
+<div class="alert alert-theo">
+  <div>
+    <p><strong>Teorema - Regla de L’Hôpital</strong>. Si $\dfrac{f(x)}{g(x)}\rightarrow \dfrac{0}{0}$ o $\dfrac{\infty}{\infty}$ cuando $x\rightarrow a$, entonces si existe el límite de $\dfrac{f&rsquo;(x)}{g&rsquo;(x)}$ cuando $x\rightarrow a$ se cumple</p>
+<p>$$\lim_{x\rightarrow a}\frac{f(x)}{g(x)}=\lim_{x\rightarrow a}\frac{f&rsquo;(x)}{g&rsquo;(x)}.$$</p>
+  </div>
+</div>
+<div class="alert alert-warning">
+  <div>
+    Para que exista $\lim_{x\rightarrow a}\dfrac{f&rsquo;(x)}{g&rsquo;(x)}$ es necesario que que $f$ y $g$ sean derivables en un entorno de $a$.
+  </div>
+</div>
+<p><strong>Ejemplo</strong>. Sea $f(x)=\dfrac{\log(x^2-1)}{x+2}\rightarrow \dfrac{\infty}{\infty}$ cuando $x\rightarrow \infty$.</p>
+<p>Para resolver la indeterminación aplicamos la regla de L’Hôpital:</p>
+<p>$$
+\begin{aligned}
+\lim_{x\rightarrow \infty}\frac{\log(x^2-1)}{x+2} &amp;= \lim_{x\rightarrow
+\infty}\frac{\left(\log(x^2-1)\right)&rsquo;}{\left(x+2\right)&rsquo;}= \lim_{x\rightarrow \infty}\frac{\frac{2x}{x^2-1}}{1}=\newline
+&amp;=\lim_{x\rightarrow \infty}\frac{2x}{x^2-1}= \lim_{x\rightarrow \infty}\frac{\left(2x\right)&rsquo;}{\left(x^2-1\right)&rsquo;}=
+\lim_{x\rightarrow \infty}\frac{2}{2x}=0.
+\end{aligned}
+$$</p>
+<h3 id="resolución-de-una-indeterminación-de-tipo-producto">Resolución de una indeterminación de tipo producto</h3>
+<p>Si $f(x)\rightarrow 0$ y $g(x)\rightarrow \pm\infty$ cuando $x\rightarrow a$, entonces la indeterminación $f(x)\cdot g(x)\rightarrow 0\cdot \pm\infty$ puede convertirse en una de tipo cociente mediante la transformación:</p>
+<p>$$f(x)\cdot g(x) = \frac{f(x)}{1/g(x)}\rightarrow \frac{0}{0}.$$</p>
+<p><strong>Ejemplo</strong>. Sea $f(x)=x^2e^{1/x^2}\rightarrow 0\cdot\infty$ cuando $x\rightarrow 0$.</p>
+<p>$$
+\begin{aligned}
+\lim_{x\rightarrow 0}x^2e^{1/x^2} &amp;= \lim_{x\rightarrow 0}\frac{e^{1/x^2}}{1/x^2}\rightarrow \frac{\infty}{\infty}
+\end{aligned}
+$$</p>
+<p>Aplicando ahora la regla de L´Hôpital tenemos:</p>
+<p>$$
+\begin{aligned}
+\lim_{x\rightarrow 0}\frac{e^{1/x^2}}{1/x^2} &amp;= \lim_{x\rightarrow
+0}\frac{\left(e^{1/x^2}\right)&rsquo;}{\left(1/x^2\right)&rsquo;} = \lim_{x\rightarrow
+0}\frac{e^{1/x^2}\frac{-2}{x^3}}{\frac{-2}{x^3}} = \lim_{x\rightarrow 0}e^{1/x^2}=\infty.
+\end{aligned}
+$$</p>
+<h3 id="resolución-de-una-indeterminación-de-tipo-potencia">Resolución de una indeterminación de tipo potencia</h3>
+<p>Si $f(x)^{g(x)}$ presenta una indeterminación de tipo potencia cuando $x\rightarrow a$, entonces la indeterminación puede convertirse en una de tipo producto mediante la transformación:</p>
+<p>$$\exp\left(\log f(x)^{g(x)}\right) = \exp\left(g(x)\cdot \log f(x)\right).$$</p>
+<p><strong>Ejemplo</strong>. Sea $f(x)=\left(1+\dfrac{1}{x}\right)^{x} \rightarrow 1^\infty$ cuando $x\rightarrow 0$.</p>
+<p>$$
+\begin{aligned}
+\lim_{x\rightarrow 0}\left(1+\dfrac{1}{x}\right)^{x} &amp;= \lim_{x\rightarrow
+0}\exp\left(\log\left(1+\frac{1}{x}\right)^{x}\right) = \exp\left(\lim_{x\rightarrow
+0}x\log\left(1+\frac{1}{x}\right)\right) =\newline
+&amp;= \exp\left(\lim_{x\rightarrow 0}\frac{\log\left(1+\frac{1}{x}\right)}{1/x}\right)
+\end{aligned}
+$$</p>
+<p>Aplicando ahora la regla de L´Hôpital tenemos:</p>
+<p>$$
+\begin{aligned}
+\exp\left(\lim_{x\rightarrow 0}\frac{\left(\log\left(1+\frac{1}{x}\right)\right)&rsquo;}{\left(1/x\right)&rsquo;}\right) &amp;=
+\exp\left(\lim_{x\rightarrow 0}\frac{\frac{1}{1+1/x}\frac{-1}{x^2}}{\frac{-1}{x^2}}\right) =
+\exp\left(\lim_{x\rightarrow 0}\frac{1}{1+\frac{1}{x}}\right)=\exp(1)=e.
+\end{aligned}
+$$</p>
+<h3 id="resolución-de-una-indeterminación-de-tipo-diferencia">Resolución de una indeterminación de tipo diferencia</h3>
+<p>Si $f(x)\rightarrow \infty$ y $g(x)\rightarrow \infty$ cuando $x\rightarrow a$, entonces la indeterminación $f(x)-g(x)$ puede convertirse en una de tipo cociente mediante la transformación:</p>
+<p>$$f(x)-g(x)=\frac{\frac{1}{g(x)}-\frac{1}{f(x)}}{\frac{1}{f(x)g(x)}}\rightarrow \frac{0}{0}.$$</p>
+<p><strong>Ejemplo</strong>. Sea $f(x)=\dfrac{1}{\operatorname{sen} x}-\dfrac{1}{x} \rightarrow \infty-\infty$ cuando $x\rightarrow 0$.</p>
+<p>$$
+\begin{aligned}
+\lim_{x\rightarrow 0} \frac{1}{\operatorname{sen} x}-\frac{1}{x} &amp;=
+\lim_{x\rightarrow 0} \frac{x-\operatorname{sen} x}{x\operatorname{sen} x} \rightarrow \frac{0}{0}.
+\end{aligned}
+$$</p>
+<p>Aplicando ahora la regla de L´Hôpital tenemos:</p>
+<p>$$
+\begin{aligned}
+\lim_{x\rightarrow 0} \frac{x-\operatorname{sen} x}{x\operatorname{sen} x} &amp; =
+\lim_{x\rightarrow 0} \frac{\left(x-\operatorname{sen} x\right)&rsquo;}{\left(x\operatorname{sen} x\right)&rsquo;}=
+\lim_{x\rightarrow 0} \frac{1-\cos x}{\operatorname{sen} x +x\cos x} = \newline
+&amp;= \lim_{x\rightarrow 0} \frac{\left(1-\cos x\right)&rsquo;}{\left(\operatorname{sen} x +x\cos x\right)&rsquo;} =
+\lim_{x\rightarrow 0} \frac{\operatorname{sen} x}{\cos x +\cos x-x\operatorname{sen} x}=\newline
+&amp;= \frac{0}{2}=0.
+\end{aligned}
+$$</p>
+<h2 id="asíntotas-de-una-función">Asíntotas de una función</h2>
+<p>Una asíntota de una función es una recta a la que tiende la función en el infinito, es decir, que la distancia entre la recta y la función es cada vez menor.</p>
+<p>Existen tres tipos de asíntotas:</p>
+<ul>
+<li><strong>Asíntota vertial</strong>: $x=a$,</li>
+<li><strong>Asíntota horizontal</strong>: $y=a$,</li>
+<li><strong>Asíntota oblicua</strong>: $y=a+bx$.</li>
+</ul>
+<h3 id="asíntotas-verticales">Asíntotas verticales</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Asíntota vertical</strong>. Se dice que una recta $x=a$ es una <em>asíntota vertical</em> de una función $f$ si se cumple</p>
+<p>$$\lim_{x\rightarrow a^-}f(x)=\pm \infty \quad \textrm{o} \quad \lim_{x\rightarrow a^-}f(x)=\pm \infty$$</p>
+  </div>
+</div>
+<p>Las asíntotas verticales deben buscarse en los puntos donde no está definida la función, pero si lo está en las proximidades.</p>
+<p><strong>Ejemplo</strong>. La recta $x=2$ es una asíntota vertical de $f(x)=\dfrac{x+1}{x-2}$ ya que</p>
+<p>$$\lim_{x\rightarrow 2^-}\frac{x+1}{x-2} =-\infty, \mbox{ y } \lim_{x\rightarrow 2^+}\frac{x+1}{x-2} =\infty.$$</p>
+<img src="../img/limites_continuidad/asintota_vertical.png" width="350px" alt="Gráfica de una asíntota vertical" />
+<h3 id="asíntotas-horizontales">Asíntotas horizontales</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Asíntota horizontal</strong>. Se dice que una recta $y=a$ es una <em>asíntota horizontal</em> de una función $f$ si se cumple</p>
+<p>$$\lim_{x\rightarrow +\infty}f(x)=a \quad \textrm{o} \quad \lim_{x\rightarrow \infty}f(x)=a$$</p>
+  </div>
+</div>
+<p><strong>Ejemplo</strong>. La recta $y=1$ es una asíntota horizontal de $f(x)=\dfrac{x+1}{x-2}$ ya que</p>
+<p>$$
+\begin{aligned}
+\lim_{x\rightarrow -\infty}\frac{x+1}{x-2}&amp;= \lim_{x\rightarrow -\infty}1+\frac{3}{x-2} = 1, \textrm{ y}\newline
+\lim_{x\rightarrow +\infty}\frac{x+1}{x-2}&amp;= \lim_{x\rightarrow +\infty}1+\frac{3}{x-2} = 1.
+\end{aligned}
+$$</p>
+<img src="../img/limites_continuidad/asintota_horizontal.png" width="350px" alt="Gráfica de una asíntota horizontal" />
+<h3 id="asíntotas-oblicuas">Asíntotas oblicuas</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Asíntota oblicua</strong>. Se dice que una recta $y=a+bx$ es una <em>asíntota oblicua</em> de una función $f$ si se cumple</p>
+<p>$$\lim_{x\rightarrow \pm\infty}\frac{f(x)}{x}=b \quad \textrm{y} \quad \lim_{x\rightarrow \pm\infty}f(x)-bx=a.$$</p>
+  </div>
+</div>
+<p><strong>Ejemplo</strong>. La recta $y=x+1$ es una asíntota oblicua de $f(x)=\dfrac{x^2}{x-1}$ ya que</p>
+<p>$$
+\begin{aligned}
+\lim_{x\rightarrow \pm\infty}\frac{\frac{x^2}{x-1}}{x}&amp;=
+\lim_{x\rightarrow \pm\infty}\frac{x^2}{x^2-x} = 1, \textrm{ y}\newline
+\lim_{x\rightarrow \pm\infty}\frac{x^2}{x-1}-x &amp;=
+\lim_{x\rightarrow \pm\infty}1+\frac{x}{x-1} = 1
+\end{aligned}
+$$</p>
+<img src="../img/limites_continuidad/asintota_oblicua.png" width="350px" alt="Gráfica de una asíntota vertical" />
+<h2 id="continuidad">Continuidad</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Función continua en un punto</strong>. Se dice que una función $f$ es <em>continua</em> en el punto $a$ si</p>
+<p>$$\lim_{x\rightarrow a}f(x)=f(a).$$</p>
+  </div>
+</div>
+<p>De esta definición se deducen tres condiciones necesarias para la continuidad:</p>
+<ol>
+<li>$f(a)\in \operatorname{Dom}(f)$.</li>
+<li>Existe $ \lim_{x\rightarrow a}f(x)$.</li>
+<li>$ \lim_{x\rightarrow a}f(x)=f(a)$.</li>
+</ol>
+<p>Si se rompe alguna de estas condiciones, se dice que la función presenta una discontinuidad en $a$.</p>
+<div class="alert alert-def">
+  <div>
+    <strong>Definición - Función continua en un intervalo</strong>. Se dice que una función $f$ es <em>continua</em> en un intervalo si lo es en cada uno de los puntos del intervalo.
+  </div>
+</div>
+<p>La gráfica de una función continua en un intervalo puede dibujarse sin levantar el lápiz.</p>
+<h2 id="tipos-de-discontinuidades">Tipos de discontinuidades</h2>
+<p>Dependiendo de la condición de continuidad que se rompa, existen distintos tipos de discontinuidades:</p>
+<ul>
+<li>Discontinuidad evitable.</li>
+<li>Discontinuidad de 1ª especie de salto finito.</li>
+<li>Discontinuidad de 1ª especie de salto infinito.</li>
+<li>Discontinuidad de 2ª especie.</li>
+</ul>
+<h3 id="discontinuidad-evitable">Discontinuidad evitable</h3>
+<div class="alert alert-def">
+  <div>
+    <strong>Definición - Discontinuidad evitable</strong>. Se dice que una función $f$ tiene una <em>discontinuidad evitable</em> en el punto $a$ si existe el límite de $f(x)$ cuando $x\rightarrow a$ pero $\displaystyle \lim_{x\rightarrow a}f(x)\neq f(a)$.
+  </div>
+</div>
+<p><strong>Ejemplo</strong>. La función $f(x)=\dfrac{x^2-1}{x-1}$ tiene una discontinuidad evitable en $x=1$ ya que la función no está definida en $x=1$ pero</p>
+<p>$$\lim_{x\rightarrow 2}\frac{x^2-1}{x-1} = \lim_{x\rightarrow 2}x+1=2.$$</p>
+<img src="../img/limites_continuidad/discontinuidad_evitable.png" width="300px" alt="Gráfica de una discontinuidad evitable" />
+<h3 id="discontinuidad-de-1ª-especie-de-salto-finito">Discontinuidad de 1ª especie de salto finito</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Discontinuidad de 1ª especie de salto finito</strong>. Se dice que una función $f$ tiene una <em>discontinuidad de 1ª especie de salto finito</em> en el punto $a$ si existen los límites laterales de $f(x)$ cuando $x\rightarrow a$ pero</p>
+<p>$$\lim_{x\rightarrow a^-}f(x)\neq \lim_{x\rightarrow a^+}f(x).$$</p>
+<p>A la diferencia entre ambos límite se le lama <em>salto</em> de la discontinuidad.</p>
+  </div>
+</div>
+<p><strong>Ejemplo</strong>. La función $f(x)=\dfrac{\lvert x\rvert}{x}$ tiene una discontinuidad de 1ª especie de salto finito en $x=0$ ya que</p>
+<p>$$
+\begin{aligned}
+\lim_{x\rightarrow 0^-}\frac{|x|}{x}&amp;= -1\newline
+\lim_{x\rightarrow 0^+}\frac{|x|}{x}&amp;= 1
+\end{aligned}
+$$</p>
+<p>Salto $= 1-(-1)=2$.</p>
+<img src="../img/limites_continuidad/discontinuidad_salto_finito.png" width="350px" alt="Gráfica de una discontinuidad de salto finito" />
+<h3 id="discontinuidad-de-1ª-especie-de-salto-infinito">Discontinuidad de 1ª especie de salto infinito</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definición - Discontinuidad de 1ª especie de salto infinito</strong>. Se dice que una función $f$ tiene una <em>discontinuidad de 1ª especie de salto infinito</em> en el punto $a$ si</p>
+<p>$$\lim_{x\rightarrow a^-}f(x)=\pm\infty \quad \textrm{o} \quad \lim_{x\rightarrow a^+}f(x)=\pm\infty.$$</p>
+  </div>
+</div>
+<p>Si $f$ tienen una discontinuidad de 1ª especie de salto infinito en un punto $a$, entonces $f$ tienen una asíntota vertical $x=a$.</p>
+<p><strong>Ejemplo</strong>. La función $f(x)=e^{1/x}$ tiene una discontinuidad de 1ª especie de salto infinito en $x=0$ ya que</p>
+<p>$$
+\begin{aligned}
+\lim_{x\rightarrow 0^-}e^{1/x}&amp;= 0\newline
+\lim_{x\rightarrow 0^+}e^{1/x}&amp;= \infty
+\end{aligned}
+$$</p>
+<img src="../img/limites_continuidad/discontinuidad_salto_infinito.png" width="300px" alt="Gráfica de una discontinuidad de salto infinito" />
+<h3 id="discontinuidad-de-2ª-especie">Discontinuidad de 2ª especie</h3>
+<div class="alert alert-def">
+  <div>
+    <strong>Definición - Discontinuidad de 2ª especie</strong>. Se dice que una función $f$ tiene una <em>discontinuidad de 2ª especie</em> en el punto $a$ si no existe alguno de los límites laterales y tampoco se trata de una discontinuidad de 1ª especie de salto infinito.
+  </div>
+</div>
+<p>Normalmente la discontinuidades de 2ª especie se dan en puntos donde la función no definida en sus proximidades.</p>
+<p><strong>Ejemplo</strong>. La función $f(x)=\dfrac{1}{\sqrt{x^2-1}}$ tiene una discontinuidad de 2ª especie en $x=1$ ya que</p>
+<p>$$
+\begin{aligned}
+&amp; \lim_{x\rightarrow 1^-}\frac{1}{\sqrt{x^2-1}} \textrm{ no existe}  \newline
+&amp; \lim_{x\rightarrow 1^+}\frac{1}{\sqrt{x^2-1}}=\infty
+\end{aligned}
+$$</p>
+<img src="../img/limites_continuidad/discontinuidad_2_especie.png" width="300px" alt="Gráfica de una discontinuidad de 2ª especie" />
+<p><strong>Notas</strong></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Se pude simplificar porque aunque $x\rightarrow 1$, $x\neq 1$ y por tanto el denominador no se anula.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/limite/">Límite</a>
+  
+  <a class="badge badge-light" href="/tag/asintota/">Asíntota</a>
+  
+  <a class="badge badge-light" href="/tag/continuidad/">Continuidad</a>
+  
+</div>
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Anterior</div>
+    <a href="/docencia/calculo/manual/funciones-elementales/" rel="next">Funciones elementales</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Siguiente</div>
+    <a href="/docencia/calculo/manual/derivadas-una-variable/" rel="prev">Cálculo diferencial en una variable</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Última actualización el Sep 15, 2020</p>
+
+          
+
+
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "aprendeconalf" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt="CC SA icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No se encontraron resultados","placeholder":"Buscar...","results":"resultados encontrados"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Proyectos",
+        'publication' : "Publicaciones",
+        'talk' : "Charlas",
+        'slides' : "Diapositivas"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://aprendeconalf.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.f79ea001fad4564ac91850b0b5a8f31c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

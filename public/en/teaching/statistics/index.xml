@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics | Aprende con Alf</title>
+    <link>/en/teaching/statistics/</link>
+      <atom:link href="/en/teaching/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Statistics</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Statistics</title>
+      <link>/en/teaching/statistics/</link>
+    </image>
+    
+    <item>
+      <title>Statistics Cheat Sheets</title>
+      <link>/en/teaching/statistics/cheatsheets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/cheatsheets/</guid>
+      <description>&lt;h2 id=&#34;statistics-formulas&#34;&gt;Statistics formulas&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/asalber/statistics-cheatsheet/raw/master/statistics-formulas-cheatsheet.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Statistics and Probability formulas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/asalber/statistics-cheatsheet/raw/master/statistics-formulas-excel.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Excel formulas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/asalber/statistics-manual/raw/master/tables/normal_distribution/standard_normal_table.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Standard normal probability distribution table&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

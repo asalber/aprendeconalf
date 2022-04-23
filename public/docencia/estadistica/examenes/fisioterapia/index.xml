@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exámenes de Estadística de Fisioterapia | Aprende con Alf</title>
+    <link>/docencia/estadistica/examenes/fisioterapia/</link>
+      <atom:link href="/docencia/estadistica/examenes/fisioterapia/index.xml" rel="self" type="application/rss+xml" />
+    <description>Exámenes de Estadística de Fisioterapia</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Exámenes de Estadística de Fisioterapia</title>
+      <link>/docencia/estadistica/examenes/fisioterapia/</link>
+    </image>
+    
+    <item>
+      <title>Examen de Fisioterapia 2018-06-18</title>
+      <link>/docencia/estadistica/examenes/fisioterapia/fisioterapia-2018-06-18/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/docencia/estadistica/examenes/fisioterapia/fisioterapia-2018-06-18/</guid>
+      <description>&lt;p&gt;Grados: Fisioterapia&lt;br&gt;
+Fecha: 18 de junio de 2019&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;En un estudio sobre la efectividad de un programa de prevención de riesgos laborales en oficios que requieren estar sentados muchas horas, se tomó una muestra aleatoria de individuos entre 40 y 50 años que pasaban más de 5 horas sentados y se observó si habían seguido las recomendaciones del programa de prevención o no y el número de lesiones vertebrales transcurridos 10 años.
+Los resultados obtenidos aparecen en la siguiente tabla.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrrrrrrrrrr}
+\hline
+\mbox{Con programa de prevención} &amp;amp; 1 &amp;amp; 3 &amp;amp; 2 &amp;amp; 4 &amp;amp; 4 &amp;amp; 0 &amp;amp; 2 &amp;amp; 4 &amp;amp; 2 &amp;amp; 2 &amp;amp; 5 &amp;amp; 2 &amp;amp; 3 &amp;amp; 2 &amp;amp; 0 \newline
+\mbox{Sin programa de prevención} &amp;amp; 6 &amp;amp; 3 &amp;amp; 1 &amp;amp; 3 &amp;amp; 7 &amp;amp; 6 &amp;amp; 5 &amp;amp; 5 &amp;amp; 9 &amp;amp; 5 &amp;amp; 5 &amp;amp; 4 &amp;amp; 4 &amp;amp; 3 &amp;amp;  \newline
+\hline
+\end{array}$$&lt;/p&gt;
+&lt;p&gt;Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Dibujar el polígono de frecuencias relativas acumuladas de la muestra global.&lt;/li&gt;
+&lt;li&gt;Según el rango intercuartílico, ¿en qué muestra hay una mayor dispersión central del número de lesiones vertebrales, en la de los que siguieron el programa de prevención o en la de los que no?&lt;/li&gt;
+&lt;li&gt;¿En qué muestra hay una mayor dispersión relativa del número de lesiones vertebrales, en la de los que siguieron el programa de prevención o en la de los que no?&lt;/li&gt;
+&lt;li&gt;¿Qué muestra tienen un apuntamiento más normal del número de lesiones vertebrales, la de los que siguieron el programa de prevención o en la de los que no?&lt;/li&gt;
+&lt;li&gt;¿Qué número de lesiones vertebrales es relativamente mayor, 2 lesiones siguiendo el programa de prevención o 4 sin seguirlo?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Usar las siguientes sumas para los cálculos:&lt;br&gt;
+Siguiendo el programa de prevención: $\sum x_i=36$ lesiones, $\sum x_i^2=116$ lesiones$^2$, $\sum (x_i-\bar x)^3=-0.48$ lesiones$^3$ y $\sum (x_i-\bar x)^4=135.97$ lesiones$^4$.&lt;br&gt;
+No siguiendo el programa de prevención: $\sum y_i=66$ lesiones, $\sum y_i^2=362$ lesiones$^2$, $\sum (y_i-\bar y)^3=27.92$ lesiones$^3$ y $\sum (y_i-\bar y)^4=586.9$ lesiones$^4$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;
+&lt;img src=&#34;../img/des-fis-5-poligono-frecuencias-relativas-acumuladas-lesiones-vertebrales.svg&#34; title=&#34;Cumulative relative frequency polygon of spinal injuries&#34; alt=&#34;Cumulative relative frequency polygon of spinal injuries&#34; style=&#34;display: block; margin: auto;&#34; width=&#34;600&#34; /&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Con programa de prevención: $C_1=2$ lesiones, $C_3=4$ lesiones, $RI=2$ lesiones.&lt;br&gt;
+Sin programa de prevención: $C_1=3$ lesiones, $C_3=6$ lesiones, $RI=3$ lesiones.&lt;br&gt;
+La muestra que no siguió el programa de prevención tiene una dispersión central mayor ya que su rango intercuartílico es mayor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Con programa de prevención: $\bar x=2.4$ lesiones, $s^2=1.9733$ lesiones$^2$, $s=1.4048$ lesiones and $cv=0.5853$.&lt;br&gt;
+Sin programa de prevención: $\bar y=4.7143$ lesiones, $s^2=3.6327$ lesiones$^2$, $s=1.906$ lesiones and $cv=0.4043$.&lt;br&gt;
+La muestra que siguió el programa de prevención tiene una dispersión relativa con respecto a la media mayor ya que su coeficiente de variación es mayor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Con programa de prevención: $g_2=-0.6722$.&lt;br&gt;
+Sin programa de prevención: $g_2=0.1768$.&lt;br&gt;
+Así pues, la muestra que no siguió el programa de prevención tiene un apuntamiento más normal ya que el coeficiente de apuntamiento está más próximo a 0.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Con programa de prevención: $z(2)=-0.2847$.&lt;br&gt;
+Sin programa de prevención: $z(4)=-0.3748$.&lt;br&gt;
+Así pues, 4 lesiones sin seguir el programa de prevención es relativamente menor que 2 lesiones siguiendo el programa ya que su puntuación típica es menor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;El precio de cierto relajante muscular evolucionó entre 2015 y 2019
+como indica la siguiente tabla:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrr}
+\hline
+\mbox{Año} &amp;amp; 2015 &amp;amp; 2016 &amp;amp; 2017 &amp;amp; 2018 &amp;amp; 2019 \newline
+\mbox{Precio (€)} &amp;amp; 1.40 &amp;amp; 1.60 &amp;amp; 1.92 &amp;amp; 2.30 &amp;amp; 2.91 \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;¿Qué modelo de regresión es mejor para predecir el precio del función del año, el lineal o el exponencial?&lt;/li&gt;
+&lt;li&gt;Utilizar el mejor de los dos modelos anteriores para predecir el precio del medicamento en 2020.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$\bar x=2017$ años, $s_x^2=2$ años$^2$.&lt;br&gt;
+$\bar y=2.026$ €, $s_y^2=0.2882$ €$^2$.&lt;br&gt;
+$\overline{\log(y)}=0.672$ log(€), $s_{\log(y)}^2=0.0673$ log(€)$^2$.&lt;br&gt;
+$s_{xy}=0.744$ años$\cdot$€, $s_{x\log(y)}=0.3653$ años$\cdot\log(€)$.&lt;br&gt;
+Coeficiente de determinación lineal: $r^2=0.9603$.&lt;br&gt;
+Coeficiente de determinación exponencial: $r^2=0.9909$.&lt;br&gt;
+Así pues, el modelo de regresión exponencial es mejor para predecir el precio ya que su coeficiente de determinación es mayor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modelo de regresión exponencial: $y=e^{-367.6861+0.1826x}$.&lt;br&gt;
+Predicción: $y(2020)=3.3867$ €.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;En un problema de regresión lineal entre dos variables $X$ e $Y$ se conoce $\bar x = 3$, $s_x^2=2$, $s_y^2=10.8$ y la ecuación de la recta de regresión de $Y$ sobre $X$ es $y=90.9-2.3x$.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular la media de $Y$.&lt;/li&gt;
+&lt;li&gt;Calcular e interpretar el coeficiente de correlación lineal.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar y = 84$.&lt;/li&gt;
+&lt;li&gt;$r=-0.9898$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;En un estudio sobre la efectividad de un programa de prevención de riesgos laborales en oficios que requieren estar sentados muchas horas, se tomó una muestra aleatoria 500 de individuos entre 40 y 50 años sin lesiones vertebrales que pasaban más de 5 horas sentados.
+La mitad de los individuos siguieron un programa de prevención de riesgos laborales mientras que los demás no.
+Transcurridos 5 años el número de personas que desarrollaron alguna lesión vertebral en el grupo de los que siguieron el programa de prevención fue de 12, mientras que en el otro grupo fue de 32.
+En los siguientes 5 años hubo otras 21 personas que desarrollaron alguna lesión vertebral en el grupo de los que siguieron el programa de prevención, mientras que en el otro grupo fue de 48.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular la incidencia acumulada de lesiones vertebrales en la muestra total a los 5 y a los 10 años.&lt;/li&gt;
+&lt;li&gt;Calcular el riesgo absoluto de desarrollar alguna lesión vertebral a los 10 años en el grupo de los que siguieron el programa de prevención y en el de los que no.&lt;/li&gt;
+&lt;li&gt;Calcular el riesgo relativo de desarrollar alguna lesión vertebral a los 10 años de los que siguieron el programa de prevención de riesgos con respecto a los que no e interpretarlo.&lt;/li&gt;
+&lt;li&gt;Calcular el odds ratio de desarrollar alguna lesión vertebral a los 10 años de los que siguieron el programa de prevención de riesgos con respecto a los que no e interpretarlo.&lt;/li&gt;
+&lt;li&gt;¿Cuál de las dos medidas anteriores, riesgo relativo u odds ratio, tiene más sentido en este estudio?
+Justificar la respuesta.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Sea $E$ el evento consistente en sufrir una lesión vertebral.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Incidencia acumulada después de 5 años: $R(E)=0.088$.&lt;br&gt;
+Incidencia acumulada después de 10 años: $R(E)=0.226$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Riesgo en el grupo tratamiento: $R_T(E)=0.132$.&lt;br&gt;
+Riesgo en el grupo control: $R_C(E)=0.32$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$RR(D)=0.4125$. Por tanto, el riesgo de sufrir una lesión vertebral es menos de la mitad si se sigue el programa de prevención.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$OR(D)=0.3232$. Por tanto, el odd de sufrir una lesión vertebral es menos de un tercio si se sigue el programa de prevención.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Puesto que se trata de un estudio prospectivo se puede estimar la prevalencia de $D$ y ambos estadísticos son válidos, pero el riesgo relativo es más fácil de interpretar.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-5&#34;&gt;Ejercicio 5&lt;/h2&gt;
+&lt;p&gt;En la siguiente tabla se muestran los resultados de un estudio para evaluar la utilidad de una tira reactiva para el diagnóstico de infección urinaria:&lt;/p&gt;
+&lt;p&gt;$$\begin{array}{ccc}
+\hline
+\mbox{Resultado} &amp;amp; \mbox{Con infección} &amp;amp; \mbox{Sin infección}\newline
+\mbox{Positivo} &amp;amp; 60 &amp;amp; 80\newline
+\mbox{Negativo} &amp;amp; 10 &amp;amp; 200\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular la sensibilidad y la especificidad del test.&lt;/li&gt;
+&lt;li&gt;Calcular los valores predictivos positivo y negativo del test.
+¿El test es mejor para confirmar la enfermedad o para descartarla?&lt;/li&gt;
+&lt;li&gt;Si a partir de un estudio de prevalencia efectuado previamente conociéramos que la verdadera prevalencia de la infección urinaria en la población es del 2%, ¿cómo se verían afectados los valores predictivos?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Sea $E$ el suceso consistente en tener la infección urinaria y $+$ y $-$ los sucesos correspondientes a obtener un resultado positivo y negativo respectivamente en el test.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sensibilidad = $0.8571$ y Especificidad = $0.7143$.&lt;/li&gt;
+&lt;li&gt;$VPP=0.4286$ y $VPN=0.9524$. Puesto que $VPP&amp;lt;VPN$ el test es mejor para descartar la enfermedad.&lt;/li&gt;
+&lt;li&gt;$VPP=0.0577$ y $VPN=0.9959$. El valor predictivo positivo decrece mucho mientras el valor predictivo negativo aumenta un poco.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-6&#34;&gt;Ejercicio 6&lt;/h2&gt;
+&lt;p&gt;El tiempo de recuperación tras un tipo de lesión sigue una distribución normal con varianza 64 días. Se sabe además que el 10% de las personas con esta lesión tardan en curarse más de 80 días.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;¿Cuál es el tiempo esperado de curación para esta lesión?&lt;/li&gt;
+&lt;li&gt;¿Qué porcentaje de individuos tardará en curarse entre 60 y 75 días?&lt;/li&gt;
+&lt;li&gt;Si se toma una muestra aleatoria de 12 individuos con esta lesión, ¿cuál es la probabilidad de que haya entre 9 y 11 individuos, ambos incluidos, que tarden menos de 80 días en curarse?&lt;/li&gt;
+&lt;li&gt;Si se toma una muestra aleatoria de 500 individuos con esta lesión, ¿cuál es la probabilidad de haya menos de 4 por encima del percentil 99 del tiempo de curación?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Sea $X$ el tiempo requerido para recuperarse de la lesión.
+Entonces $X\sim N(\mu, 8)$.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$\mu=69.7476$ días.&lt;/li&gt;
+&lt;li&gt;$P(60&amp;lt;X&amp;lt;75) = 0.6327$.&lt;/li&gt;
+&lt;li&gt;Sea $Y$ el número de individuos con la lesión que requieren más de 80 días para recuperarse en una muestra aleatoria de 12 individuos. Entonces $Y\sim B(12, 0.9)$ y $P(9\leq Y\leq 11)=0.6919$.&lt;/li&gt;
+&lt;li&gt;Sea $Z$ be el número de individuos con la lesión que requieren un tiempo de recuperación por encima del percentil 99 en una muestra aleatoria de 500 individuos. Entonces $Z\sim B(500, 0.01)\approx P(5)$ y $P(Z\leq 4)=0.265$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examen de Fisioterapia 2018-05-31</title>
+      <link>/docencia/estadistica/examenes/fisioterapia/fisioterapia-2018-05-31/</link>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
+      <guid>/docencia/estadistica/examenes/fisioterapia/fisioterapia-2018-05-31/</guid>
+      <description>&lt;p&gt;Grados: Fisioterapia&lt;br&gt;
+Fecha: 31 de mayo de 2018&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Las edades de una muestra de pacientes que acuden a una clínica de fisioterapia son las siguientes:&lt;/p&gt;
+&lt;p&gt;25, 30, 44, 44, 51, 51, 53, 56, 57, 58, 58, 58, 59, 59, 61, 63, 63, 63, 66, 68, 70, 71, 72, 74, 82, 85&lt;/p&gt;
+&lt;p&gt;Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular los cuartiles.&lt;/li&gt;
+&lt;li&gt;Dibujar el diagrama de cajas e identificar los datos atípicos (no agrupar los datos en intervalos).&lt;/li&gt;
+&lt;li&gt;Considerando los grupos de los menores y mayores de 65 años, ¿en cuál de ellos es más representativa la media?&lt;/li&gt;
+&lt;li&gt;¿Qué distribución es menos simétrica, la de los menores o la de los mayores de 65 años?&lt;/li&gt;
+&lt;li&gt;¿Qué edad es relativamente mayor con respecto a su grupo, 50 años en el grupo de los menores o 75 en el de los mayores?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Usar las siguientes sumas para los cálculos.&lt;br&gt;
+Menores de 65: $\sum x_i=953$ años, $\sum x_i^2=52475$ años$^2$, $\sum (x_i-\bar x)^3=-30846.51$ años$^3$ y $\sum (x_i-\bar x)^4=939658.83$ años$^4$.&lt;br&gt;
+Mayores de 65: $\sum x_i=588$ años, $\sum x_i^2=43530$ años$^2$, $\sum (x_i-\bar x)^3=1485$ años$^3$ y $\sum (x_i-\bar x)^4=26983.5$ años$^4$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$C_1=53$ años, $C_2=59$ años and $C_3=68$ años.&lt;/li&gt;
+&lt;li&gt;Existen dos datos atípicos: 25 y 30.&lt;br&gt;
+&lt;img src=&#34;../img/des-fis-1-diagrama-caja-edades.svg&#34; title=&#34;Diagrama de caja de edades&#34; alt=&#34;Diagrama de caja de edades de pacientes&#34; width=&#34;600&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Sea $X$ la edad de los pacientes menores de 65 años e $Y$ la de los mayores.&lt;br&gt;
+$\bar x=52.9444$ años, $s_x^2=112.1636$ años$^2$, $s_x=10.5907$ años y $cv_x=0.2$.&lt;br&gt;
+$\bar y=73.5$ años, $s_y^2=39$ años$^2$, $s_y=6.245$ años y $cv_y=0.085$.&lt;br&gt;
+La media es más representativa en los pacientes mayores de 65 ya que el coeficiente de variación es menor.&lt;/li&gt;
+&lt;li&gt;$g_{1x}=-1.4426$ y $g_{1y}=0.7621$, de manera que la distribución menos simétrica es la de los menores de 65 años.&lt;/li&gt;
+&lt;li&gt;Las puntuaciones típicas son $z_x(50)=-0.278$ y $z_y(72)=-0.2402$, de manera que una edad de 50 años es relativamente menor en el grupo de los menores de 65 años.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;La siguiente tabla recoge el número de lesiones en un equipo durante una temporada y el número medio de minutos diarios de calentamiento que hacen sus jugadores.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrrrrr}
+\hline
+\mbox{Tiempo calentamiento} &amp;amp; 15 &amp;amp; 35 &amp;amp; 22 &amp;amp; 28 &amp;amp; 21 &amp;amp; 18 &amp;amp; 25 &amp;amp; 30 &amp;amp; 23 &amp;amp; 20 \newline
+\mbox{Lesiones} &amp;amp; 42 &amp;amp; 2 &amp;amp; 16 &amp;amp; 6 &amp;amp; 17 &amp;amp; 29 &amp;amp; 10 &amp;amp; 3 &amp;amp; 12 &amp;amp; 20 \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Dibujar el diagrama de dispersión.&lt;/li&gt;
+&lt;li&gt;¿Qué modelo de regresión es más apropiado para predecir el número de lesiones en función del tiempo de calentamiento, el logarítmico o el exponencial? Utilizar dicho modelo para predecir el número de lesiones esperado para 20 minutos de calentamiento diarios.&lt;/li&gt;
+&lt;li&gt;¿Qué modelo de regresión es más apropiado para predecir el tiempo de calentamiento en función del número de lesiones, el logarítmico o el exponencial? Utilizar dicho modelo para predecir el mínimo tiempo de calentamiento diario necesario para no tener más de 10 lesiones en la temporada.&lt;/li&gt;
+&lt;li&gt;¿Son fiables estas predicciones? ¿Cuál de ellas es más fiable?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Usar las siguientes sumas para los cálculos (X=tiempo de calentamiento e Y=número de lesiones):
+$\sum x_i=237$, $\sum \log(x_i)=31.3728$, $\sum y_j=157$, $\sum \log(y_j)=24.0775$,&lt;br&gt;
+$\sum x_i^2=5937$, $\sum \log(x_i)^2=98.9906$, $\sum y_j^2=3843$, $\sum \log(y_j)^2=66.3721$,&lt;br&gt;
+$\sum x_iy_j=3115$, $\sum x_i\log(y_j)=519.1907$, $\sum \log(x_i)y_j=465.8093$, $\sum \log(x_i)\log(y_j)=73.3995$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;
+&lt;img src=&#34;../img/des-fis-5-poligono-frecuencias-relativas-acumuladas-lesiones-vertebrales.svg&#34; title=&#34;Diagrama de dispersión de lesiones vs tiempo de calentamiento&#34; alt=&#34;Diagrama de dispersión de lesiones vs tiempo de calentamiento&#34; width=&#34;600&#34; /&gt;  
+&lt;/li&gt;
+&lt;li&gt;$\bar x=23.7$ min, $s_x^2=32.01$ min$^2$.&lt;br&gt;
+$\overline{\log(x)}=3.1373$ log(min), $s_{\log(x)}^2=0.0565$ log(min)$^2$.&lt;br&gt;
+$\bar y=15.7$ lesiones, $s_y^2=137.81$ lesiones$^2$.&lt;br&gt;
+$\overline{\log(y)}=2.4078$ log(lesiones), $s_{\log(y)}^2=0.8399$ log(lesiones)$^2$.&lt;br&gt;
+$s_{x\log(y)}=-5.1446$, $s_{\log(x)y}=-2.6744$&lt;br&gt;
+Coeficiente de determinanción exponencial: $r^2=0.9844$&lt;br&gt;
+Coeficiente de determinación logarítmico: $r^2=0.9185$&lt;br&gt;
+Por tanto, el modelo de regresión exponencial es mejor para predecir el número de lesiones en función del tiempo de
+calentamiento.&lt;br&gt;
+Modelo de regresión exponencial: $y=e^{6.2168+-0.1607x}$.&lt;br&gt;
+Predicción: $y(20)=20.1341$ lesiones.&lt;/li&gt;
+&lt;li&gt;El modelo logarítmico es mejor para predecir el tiempo de calentamiento en función del número de lesiones.&lt;br&gt;
+Modelo de regresión logarítmico: $x=164.1851+-47.3292\log(y)$.&lt;br&gt;
+Predicción: $x(10)=55.2056$ min.&lt;/li&gt;
+&lt;li&gt;De acuerdo al coeficiente de determinación ambas predicciones son muy fiables pero la última lo es menos ya que es para un valor que no está incluido en el rango de valores de la muestra.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;Se recurre a cierta técnica con ultrasonidos en el proceso de diagnosis de una enfermedad.
+Su sensibilidad es del 91% y su especificidad del 98%.
+Sabiendo que la prevalencia de dicha enfermedad es del 20%, se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Si a un individuo se le aplica la técnica y el resultado es positivo, ¿cuál es la probabilidad de que sufra esta enfermedad?&lt;/li&gt;
+&lt;li&gt;Si el resultado fuese negativo, ¿cuál sería la probabilidad de que no tuviera la enfermedad?&lt;/li&gt;
+&lt;li&gt;¿La técnica es más fiable para confirmar la enfermedad o para descartarla? Justificar la respuesta.&lt;/li&gt;
+&lt;li&gt;Calcular la probabilidad de obtener un diagnóstico acertado con esta técnica.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Sea $E​$ el suceso consistente en tener la enfermedad y $+​$ y $-​$ los sucesos correspondientes a obtener un resultado positivo y negativo respectivamente en el test.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$VPP=0.9192$.&lt;/li&gt;
+&lt;li&gt;$VPN=0.9776$.&lt;/li&gt;
+&lt;li&gt;Es más fiable para descartar la enfermedad ya que el valor predictivo negativo es mayor que el valor predictivo positivo.&lt;/li&gt;
+&lt;li&gt;$P(E\cap +)+P(\overline E\cap -) = 0.966$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;Se sabe que la longitud del fémur de un feto a las 25 semanas de embarazo sigue una distribución normal de media 44 mm y desviación típica 2 mm.
+Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular la probabilidad de que, tomando un feto de 25 semanas al azar, el fémur mida más de 46 mm.&lt;/li&gt;
+&lt;li&gt;Calcular la probabilidad de que, tomando un feto de 25 semanas al azar, el fémur mida entre 46 y 49 mm.&lt;/li&gt;
+&lt;li&gt;Determina un intervalo $(a,b)$ centrado en la media, que contenga el 80% de los valores de la longitud del fémur de fetos de 25 semanas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Sea $X\sim N(44,2)$ la longitud del fémur de un feto a las 25 semanas de embarazo.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(X&amp;gt;46)=0.1587$.&lt;/li&gt;
+&lt;li&gt;$P(46&amp;lt;X&amp;lt;49)=0.1524$.&lt;/li&gt;
+&lt;li&gt;El intervalo centrado en $44$ que contiene 80% de las longitudes del fémur de fetos de 25 semanas es $(41.4369,46.5631)$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-5&#34;&gt;Ejercicio 5&lt;/h2&gt;
+&lt;p&gt;La probabilidad de que una lesión $A$ se reproduzca es $4/5$, la de que se reproduzca otra lesión $B$ es $1/2$, y la de que ninguna se reproduzca $1/20$.
+Hallar la probabilidad de que:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Al menos una se reproduzca.&lt;/li&gt;
+&lt;li&gt;Sólo se reproduzca la lesión $B$.&lt;/li&gt;
+&lt;li&gt;Se reproduzca la lesión $B$ si se ha reproducido la $A$.&lt;/li&gt;
+&lt;li&gt;Se reproduzca la lesión $B$ si no se reproduce la lesión $A$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(A\cup B)=19/20$.&lt;/li&gt;
+&lt;li&gt;$P(B\cap\overline{A})=3/20$.&lt;/li&gt;
+&lt;li&gt;$P(B/A)=7/16$.&lt;/li&gt;
+&lt;li&gt;$P(B/\overline{A})=3/4$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-6&#34;&gt;Ejercicio 6&lt;/h2&gt;
+&lt;p&gt;Una clínica de fisioterapia abre 6 horas al día y se sabe que el número medio de pacientes por día que llegan a la clínica es 12.
+Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular la probabilidad de que lleguen más de 4 pacientes en 1 horas.&lt;/li&gt;
+&lt;li&gt;Si la clínica tiene 4 fisioterapeutas y cada uno puede atender a un paciente por hora, ¿cuál es la probabilidad de que un día cualquiera haya alguna hora en la que algún paciente no pueda ser atendido? ¿Cuántos empleados debería haber para asegurarse de que esta probabilidad es menor del 10%?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;Sea $X$ el número de pacientes que llegan en 1 horas. $X\sim P(2)$ y $P(X&amp;gt;4)=0.0527$.&lt;/li&gt;
+&lt;li&gt;Sea $Y$ el número de horas en un día en las que algún paciente no puede ser atendido. $Y\sim B(6, 0.0527)$ y $P(Y&amp;gt;0)=0.2771$.&lt;br&gt;
+Se necesitan 5 empleados para que esta probabilidad sea menor del 10%, ya que $P(X&amp;gt;5)=0.0527$ y $P(Y&amp;gt;0)=0.0954$, siendo ahora $Y\sim B(6, 0.0166)$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examen de Fisioterapia 2018-04-09</title>
+      <link>/docencia/estadistica/examenes/fisioterapia/fisioterapia-2018-04-09/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/docencia/estadistica/examenes/fisioterapia/fisioterapia-2018-04-09/</guid>
+      <description>&lt;p&gt;Grados: Fisioterapia&lt;br&gt;
+Fecha: 9 de abril de 2018&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;En un estudio se ha medido el arco de rotación de la cabeza en personas que trabajan habitualmente con ordenador y en personas que no.
+Los resultados aparecen en el siguiente histograma.&lt;/p&gt;
+&lt;img src=&#34;../img/histograma_arco_rotacion-1.svg&#34; title=&#34;plot of chunk histograma_arco_rotacion&#34; alt=&#34;plot of chunk histograma_arco_rotacion&#34; /&gt;
+&lt;p&gt;Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Dibujar el polígono de frecuencias relativas acumuladas del arco de rotación de la cabeza en personas que trabajan con ordenador.&lt;/li&gt;
+&lt;li&gt;Si se considera que una persona con un arco de rotación menor o igual de 115 grados tiene movilidad reducida, ¿qué porcentaje personas que trabajan con ordenador tienen movilidad reducida?&lt;/li&gt;
+&lt;li&gt;¿En qué distribución es más representativa la media del arco de rotación de la cabeza, en la de las personas que trabajan con ordenador o en las que no?&lt;/li&gt;
+&lt;li&gt;Calcular la media global del arco de rotación de la cabeza.&lt;/li&gt;
+&lt;li&gt;¿Qué distribución es más asimétrica, la de las personas que trabajan con ordenador o la de las que no?&lt;/li&gt;
+&lt;li&gt;¿Qué valor del arco de rotación de la cabeza es relativamente mayor, 150 grados en las personas que trabajan con ordenador o 170 grados en las que no?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Usar las siguientes sumas para los cálculos.
+Con ordenador: $\sum x_i=3970$ grados, $\sum x_i^2=534750$ grados², $\sum (x_i-\bar x)^3=103662.2222$ grados³ y $\sum (x_i-\bar x)^4=7903715.5556$ grados⁴.&lt;br&gt;
+Sin ordenador: $\sum x_i=4230$ grados, $\sum x_i^2=645900$ grados², $\sum (x_i-\bar x)^3=-42359.6939$ grados³ y $\sum (x_i-\bar x)^4=4101700.5284$ grados⁴.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$F(115)=0.1667 \rightarrow 16.67$% de los que trabajan con ordenador tienen movilidad reducida.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Con ordenador: $\bar x=132.3333$ grados, $s_x^2=312.8889$ grados², $s_x=17.6887$ grados y $cv_x=0.1337$&lt;br&gt;
+Sin ordenador: $\bar x=151.0714$ grados, $s_x^2=245.2806$ grados², $s_x=15.6614$ grados y $cv_x=0.1037$&lt;br&gt;
+La media de los que trabajan sin ordenador es más representativa que la de los que trabajan con ordenador ya que su coeficiente de variación es menor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\bar x=141.3793$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Con ordenador $g_1=0.6243$ y sin ordenador $g_1=-0.3938$. Por tanto, la distribución de los que trabajan con ordenador es más asimétrica.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Puntuaciones típicas: $z(150)=0.9988$ y $z(170)=1.2086$. Por tanto, un arco de rotación de 150 grados en los que trabajan con ordenador es relativamente menor que un arco de rotación de 170 en los que trabajan sin ordenador.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;La concentración de un fármaco en sangre $C$, medida en mg/dl, viene dada en función del tiempo $t$, en horas, según se recoge en la siguiente tabla:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrr}
+\hline
+\mbox{Tiempo} &amp;amp; 2 &amp;amp; 3 &amp;amp; 4 &amp;amp; 5 &amp;amp; 6 &amp;amp; 7 &amp;amp; 8\newline
+\mbox{Concentración} &amp;amp; 25 &amp;amp; 36 &amp;amp; 48 &amp;amp; 64 &amp;amp; 86 &amp;amp; 114 &amp;amp; 168\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;¿Qué modelo de regresión te parece más fiable para predecir la concentración que habría a las $4.8$ horas, el lineal o el exponencial?&lt;/li&gt;
+&lt;li&gt;Realiza dicha predicción con el mejor modelo de los dos anteriores.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- 3. Según el modelo logarítmico, ¿cuántas horas deben transcurrir para que la concentración sea de 100 mg/dl? --&gt;
+&lt;p&gt;Usar las siguientes sumas para los cálculos:&lt;br&gt;
+$\sum x_i=35$, $\sum \log(x_i)=10.6046$, $\sum y_j=541$, $\sum \log(y_j)=29.147$,&lt;br&gt;
+$\sum x_i^2=203$, $\sum \log(x_i)^2=17.5205$, $\sum y_j^2=56937$, $\sum \log(y_j)^2=124.0131$,&lt;br&gt;
+$\sum x_iy_j=3328$, $\sum x_i\log(y_j)=154.3387$, $\sum \log(x_i)y_j=951.6961$, $\sum \log(x_i)\log(y_j)=46.0805$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;Modelo lineal de Concentración sobre Tiempo:&lt;br&gt;
+$\bar x=5$ horas, $s_x^2=4$ horas² .&lt;br&gt;
+$\bar y=77.2857$ mg/dl, $s_y^2=2160.7755$ (mg/dl)².&lt;br&gt;
+$s_{xy}=89$ horas⋅mg/dl.&lt;br&gt;
+Coeficiente de determinación lineal de Concentración sobre Tiempo $r^2=0.9165$.&lt;br&gt;
+Modelo exponencial de Concentración sobre tiempo:&lt;br&gt;
+$\overline{\log(y)}=4.1639$ log(mg/dl), $s_{\log(y)}^2=0.3785$ log(mg/dl)².&lt;br&gt;
+$s_{x\log(y)}=1.2291$ horas⋅log(mg/dl).&lt;br&gt;
+Coeficiente de determinación exponencial de Concentración sobre Tiempo $r^2=0.9979$.&lt;br&gt;
+Por tanto, el modelo exponencial explica mejor la relación entre la concentración y el tiempo ya que su coeficiente de determinación es mayor.&lt;/li&gt;
+&lt;li&gt;Modelo exponencial de Concentración sobre Tiempo: $y=e^{2.6275 + 0.3073x}$.&lt;br&gt;
+$y(4.8)=60.4853$ mg/dl.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

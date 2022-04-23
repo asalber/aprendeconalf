@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Area | Aprende con Alf</title>
+    <link>/tag/area/</link>
+      <atom:link href="/tag/area/index.xml" rel="self" type="application/rss+xml" />
+    <description>Area</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Area</title>
+      <link>/tag/area/</link>
+    </image>
+    
+    <item>
+      <title>Cálculo integral</title>
+      <link>/docencia/calculo/manual/integrales/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/calculo/manual/integrales/</guid>
+      <description>&lt;h2 id=&#34;primitiva-de-una-función&#34;&gt;Primitiva de una función&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definición - Primitiva de una función&lt;/strong&gt;. Se dice que la función $F(X)$ es una &lt;em&gt;función primitiva&lt;/em&gt; de $f(x)$ si se verifica que $F&amp;rsquo;(x)=f(x)$ $\forall x \in \textrm{Dom}(f)$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La función $F(x)=x^2$ es una primitiva de la función $f(x)=2x$ ya que $F&amp;rsquo;(x)=2x$ para todo $\mathbb{R}$.&lt;/p&gt;
+&lt;p&gt;El cálculo de primitivas puede verse con un proceso inverso al cálculo de derivadas, y es por eso también se suele llamar &lt;em&gt;antiderivada&lt;/em&gt; a la primitiva de una función.&lt;/p&gt;
+&lt;h3 id=&#34;integral-indefinida-de-una-función&#34;&gt;Integral indefinida de una función&lt;/h3&gt;
+&lt;p&gt;Si $F(x)$ es una función primitiva de $f(x)$ también lo será toda función de la forma $F(x)+C$, $\forall C \in \mathbb{R}$, de manera que si una función tiene primitiva, tiene infinitas primitivas que se obtienen añadiendo una constante a cualquiera de ellas.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Integral indefinida&lt;/strong&gt;. Se llama &lt;em&gt;función integral indefinida&lt;/em&gt; de la función $f$ al conjunto de todas sus funciones primitivas y se representa como&lt;/p&gt;
+&lt;p&gt;$$\int{f(x)}\,dx=F(x)+C$$&lt;/p&gt;
+&lt;p&gt;siendo $F(x)$ una función primitiva de $f(x)$ y $C$ una constante arbitraria.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La integral indefinida de $f(x)=2x$ es&lt;/p&gt;
+&lt;p&gt;$$\int 2x\, dx = x^2+C.$$&lt;/p&gt;
+&lt;h3 id=&#34;interpretación-de-la-integral&#34;&gt;Interpretación de la integral&lt;/h3&gt;
+&lt;p&gt;En temas anteriores se vio que la derivada de una función es la tasa de variación instantánea, de manera que si conocemos la tasa de variación instantánea de una función en cada instante, podemos averiguar la variación real de la función.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. ¿Cuál sera el espacio recorrido por un objeto en caída libre?&lt;/p&gt;
+&lt;p&gt;Cuando soltamos cualquier objeto desde una altura, la única fuerza que actúa sobre el es la gravedad, con una aceleración aproximada de $9.8$ m/s$^2$, esto quiere decir que la velocidad varía de forma constante y por tanto la velocidad del objeto en cada instante $t$ sera:&lt;/p&gt;
+&lt;p&gt;$$v(t) = 9.8t  \mbox{ m/s}.$$&lt;/p&gt;
+&lt;p&gt;Puesto que la velocidad en cada instante es la tasa de variación instantánea del espacio recorrido por el objeto, su primitiva nos dará el espacio recorrido por el objeto en cada instante:&lt;/p&gt;
+&lt;p&gt;$$e(t) = \int 9.8t\, dt = 9,8\frac{t^2}{2}.$$&lt;/p&gt;
+&lt;p&gt;Así, por ejemplo, a los 2 segundos, el espacio recorrido será $e(2) = 9.8\frac{2^2}{2} = 19.6$ m.&lt;/p&gt;
+&lt;h3 id=&#34;linealidad-de-la-integral&#34;&gt;Linealidad de la integral&lt;/h3&gt;
+&lt;p&gt;Dadas dos funciones $f$ y $g$ que admiten primitiva, y una constante $k \in \mathbb{R}$ se verifica que&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$\int{(f(x)+g(x))}\,dx=\int{f(x)}\,dx+\int{g(x)}\,dx$,&lt;/li&gt;
+&lt;li&gt;$\int{kf(x)}\,dx=k\int{f(x)}\,dx$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;integrales-inmediatas&#34;&gt;Integrales inmediatas&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int a\,dx=ax+C$, con $a$ constante.&lt;/li&gt;
+&lt;li&gt;$\int x^n\,dx=\dfrac{x^{n+1}}{n+1}+C$ si $n\neq -1$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{1}{x}\, dx=\ln\lvert x\rvert+C$.&lt;/li&gt;
+&lt;li&gt;$\int e^x\,dx=e^x+C$.&lt;/li&gt;
+&lt;li&gt;$\int a^x\,dx=\dfrac{a^x}{\ln a}+C$.&lt;/li&gt;
+&lt;li&gt;$\int \operatorname{sen} x\, dx=-\cos x+C$.&lt;/li&gt;
+&lt;li&gt;$\int \cos x\, dx=\operatorname{sen} x+C$.&lt;/li&gt;
+&lt;li&gt;$\int \operatorname{tg} x\, dx=\ln\lvert\operatorname{sec} x\rvert+C$.&lt;/li&gt;
+&lt;li&gt;$\int \operatorname{sec} x\, dx = \ln\lvert\operatorname{sec} x + \operatorname{tg} x\rvert+C$.&lt;/li&gt;
+&lt;li&gt;$\int \operatorname{cosec} x\, dx= \ln\lvert\operatorname{cosec} x-\operatorname{cotg} x\rvert+C$.&lt;/li&gt;
+&lt;li&gt;$\int \operatorname{cotg} x\, dx= \ln\lvert\operatorname{sen} x\rvert+C$.&lt;/li&gt;
+&lt;li&gt;$\int \operatorname{sec}^2 x\, dx= \operatorname{tg} x+ C$.&lt;/li&gt;
+&lt;li&gt;$\int \operatorname{cosec}^2 x\, dx= -\operatorname{cotg} x+ C$.&lt;/li&gt;
+&lt;li&gt;$\int \operatorname{sec} x \operatorname{tg} x\, dx= \operatorname{sec} x+ C$.&lt;/li&gt;
+&lt;li&gt;$\int \operatorname{cosec} x \operatorname{cotg} x\, dx = -\operatorname{cosec} x +C$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{dx}{\sqrt{a^2-x^2}}=\operatorname{arcsen}\dfrac{x}{a}+C$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{dx}{a^2+x^2}=\dfrac{1}{a}\operatorname{arctg}\dfrac{x}{a}+C$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{dx}{x\sqrt{x^2-a^2}}=\dfrac{1}{a}\operatorname{sec}^{-1}\dfrac{x}{a}+C$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{dx}{a^2-x^2}=\dfrac{1}{2a}\ln\lvert\dfrac{x+a}{x-a}\rvert+C$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;técnicas-de-integración&#34;&gt;Técnicas de integración&lt;/h2&gt;
+&lt;p&gt;Desgraciadamente, y a diferencia del cálculo de derivadas, no existe un procedimiento infalible que permita calcular la primitiva de una función siempre que exista. Existen no obstante, diferentes técnicas para integrar algunos tipos de funciones. Las técnicas más habituales son:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integración por partes&lt;/li&gt;
+&lt;li&gt;Integración por reducción&lt;/li&gt;
+&lt;li&gt;Integración por cambio de variable&lt;/li&gt;
+&lt;li&gt;Integración de funciones racionales&lt;/li&gt;
+&lt;li&gt;Integración de funciones trigonométricas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;integración-por-partes&#34;&gt;Integración por partes&lt;/h3&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Teorema - Integración por partes&lt;/strong&gt;. Dadas $f$ y $g$, dos funciones derivables de $x$,&lt;/p&gt;
+&lt;p&gt;$$\int{f&amp;rsquo;(x)g(x)}\,dx=f(x)g(x)-\int{g&amp;rsquo;(x)f(x)}\,dx,$$&lt;/p&gt;
+&lt;p&gt;o con notación diferencial, si $u$ y $v$ son funciones derivables de $x$&lt;/p&gt;
+&lt;p&gt;$$\int{u}\,dv=uv-\int{v}\,du.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Demostración
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;De la regla de la derivada del producto se tiene&lt;/p&gt;
+&lt;p&gt;$$ (uv)&amp;rsquo; = u&amp;rsquo;v + uv&amp;rsquo; $$&lt;/p&gt;
+&lt;p&gt;y calculando la integral a ambos lados se llega a&lt;/p&gt;
+&lt;p&gt;$$
+\begin{gathered}
+\int (uv)&amp;rsquo; \, dx = \int u&amp;rsquo;v \, dx + \int uv&amp;rsquo;\, dx \Rightarrow\newline
+uv = \int v\,du + \int u\, dv \Rightarrow\newline
+\int{u}\,dv=uv-\int{v}\,du.
+\end{gathered}
+$$&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Al emplear el método de integración por partes se debe realizar la elección de $u$ y $dv$ de tal forma que las integrales que haya que realizar sean lo más sencillas posibles.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Para integrar $\int{x \operatorname{sen} x}\,dx$ se deberá elegir $u=x$ y $dv=\operatorname{sen} x\, dx$, con lo que $du=dx$ y $v=-\cos x$, resultando&lt;/p&gt;
+&lt;p&gt;$$\int{x \operatorname{sen} x}\,dx=-x\cos x-\int (-\cos x)\,dx = -x\cos x +\operatorname{sen} x.$$&lt;/p&gt;
+&lt;p&gt;Si hubiésemos elegido $u=\operatorname{sen} x$ y $dv=x\,dx$, la cosa se complica.&lt;/p&gt;
+&lt;h3 id=&#34;integración-por-reducción&#34;&gt;Integración por reducción&lt;/h3&gt;
+&lt;p&gt;Las fórmulas de reducción permiten simplificar el cálculo cuando hay que aplicar la integración por partes varias veces consecutivas.&lt;/p&gt;
+&lt;p&gt;Si se tiene que calcular una integral indefinida $I_n$ que depende de un número natural $n$, las fórmulas de reducción nos permitirán expresar $I_{n}$ en función de $I_{n-1}$, es decir se obtendrá una relación recurrente del tipo&lt;/p&gt;
+&lt;p&gt;$$I_n=f(I_{n-1},x,n)$$&lt;/p&gt;
+&lt;p&gt;con lo que calculando una integral se pueden obtener fácilmente las demás.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Si se desea calcular $I_{n}=\int{x^{n}e^{x}}\,dx$, aplicando la integración por partes se debe elegir $u=x^{n}$ y $dv=e^{x}\,dx$, con lo que $du=nx^{n-1}\,dx$ y $v=e^{x}$, obteniéndose&lt;/p&gt;
+&lt;p&gt;$$\ I_{n}=\int{x^{n}e^{x}}\,dx=x^{n}e^{x}-n\int{x^{n-1}e^{x}}\,dx=x^{n}e^{x}-nI_{n-1}.$$&lt;/p&gt;
+&lt;p&gt;Así, por ejemplo, para $n=3$ se tiene&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int x^3 e^x\, dx &amp;amp;= I_3 = x^3e^x-3I_2 = x^3e^x-3(x^2e^x-2I_1) = x^3e^x-3(x^2e^x-(xe^x-I_0) =\newline
+&amp;amp;= x^3e^x-3(x^2e^x-(xe^x-e^x) = e^x(x^3-3x^2+6x-6).
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;integración-por-cambio-de-variable&#34;&gt;Integración por cambio de variable&lt;/h3&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;La regla de la cadena establece que la derivada de una función compuesta $f(g(x))$ es $$f(g(x))&amp;rsquo; = f&amp;rsquo;(g(x))g&amp;rsquo;(x),$$ de manera que es posible integrar esta última expresión haciendo un cambio de variable $u=g(x)$ de manera que $du=g&amp;rsquo;(x)dx$:&lt;/p&gt;
+&lt;p&gt;$$\int f&amp;rsquo;(g(x))g&amp;rsquo;(x)\, dx = \int f&amp;rsquo;(u)\, du = f(u)+C = f(g(x))+C.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Para calcular la integral $\int{\dfrac{1}{x\log x}}\, dx$ puede hacerse el cambio de variable $u=\log x$ con lo que $du=\frac{1}{x}dx$ y sustituyendo queda&lt;/p&gt;
+&lt;p&gt;$$\int \frac{dx}{x\log x}=\int \frac{1}{\log x}\frac{1}{x}\,dx = \int \frac{1}{u}\,du = \log |u|+ C,$$&lt;/p&gt;
+&lt;p&gt;y deshaciendo el cambio tenemos&lt;/p&gt;
+&lt;p&gt;$$\int \frac{1}{x\log x}\,dx= \log |\log x| + C.$$&lt;/p&gt;
+&lt;h3 id=&#34;integración-de-funciones-racionales&#34;&gt;Integración de funciones racionales&lt;/h3&gt;
+&lt;h4 id=&#34;descomposición-en-fracciones-simples&#34;&gt;Descomposición en fracciones simples&lt;/h4&gt;
+&lt;p&gt;Toda función racional se puede escribir como suma de un polinomio (que tiene primitiva inmediata) más una función racional propia, es decir, una función racional en la que el grado del numerador sea menor que el grado del denominador. A su vez, toda función racional propia puede expresarse como suma de fracciones simples de los tipos siguientes:&lt;/p&gt;
+&lt;p&gt;$$\begin{array}{cl}
+\dfrac{A}{(x-a)}&amp;amp; \textrm{: con raíces reales simples del denominador.}\newline
+\dfrac{A}{(x-a)^{n}}&amp;amp; \textrm{: con raíces reales múltiples del denominador.}\newline
+\dfrac{Ax+B}{x^2+cx+d}&amp;amp; \textrm{: con raíces complejas simples del denominador.}\newline
+\dfrac{Ax+B}{(x^2+cx+d)^n} &amp;amp; \textrm{: con raíces complejas múltiples del denominador.}
+\end{array}$$&lt;/p&gt;
+&lt;p&gt;con $n&amp;gt;1$.&lt;/p&gt;
+&lt;h4 id=&#34;primitivas-de-fracciones-simples&#34;&gt;Primitivas de fracciones simples&lt;/h4&gt;
+&lt;p&gt;Usando la linealidad de la integral, basta calcular la primitiva de cada una de estas fracciones simples para calcular la primitiva de la función racional:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \frac{A}{x-a}\,dx &amp;amp;= A\log|x-a|+C,\newline
+\int \frac{A}{(x-a)^n}\,dx &amp;amp;= \frac{-A}{(n-1)(x-a)^{n-1}}+C \textrm{ si $n\neq 1$}.\newline
+\int \frac{Ax+B}{x^2+cx+d} &amp;amp;= \frac{A}{2}\log|x^2+cx+d|+\frac{2B-Ac}{\sqrt{4d-c^2}}\operatorname{arctg} \frac{2x+c}{\sqrt{4d-c^2}}+C.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo - Raíces reales&lt;/strong&gt;. Consideremos la función $f(x)=\dfrac{x^2+3x-5}{x^3-3x+2}$. Su denominador se puede factorizar como $x^3-3x+2=(x-1)^2(x+2)$ por lo que tiene una raíz simple -2 y una raíz múltiple 1.&lt;/p&gt;
+&lt;p&gt;La descomposición en fracciones simples es:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\frac{x^2+3x-5}{x^3-3x+2}&amp;amp;=\frac{A}{x-1}+\frac{B}{(x-1)^2}+\frac{C}{x+2} = \newline &amp;amp;= \frac{A(x-1)(x+2)+ B(x+2)+C(x-1)^2}{(x-1)^2(x+2)} = \newline &amp;amp;= \frac{(A+C)x^2+(A+B-2C)x+(-2A+2B+C)}{(x-1)^2(x+2)}
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;e igualando los numeradores tenemos $A=16/9$, $B=-1/3$ y $C=-7/9$, de modo que&lt;/p&gt;
+&lt;p&gt;$$\frac{x^2+3x-5}{x^3-3x+2}= \frac{16/9}{x-1}+\frac{-1/3}{(x-1)^2}+\frac{-7/9}{x+2}.$$&lt;/p&gt;
+&lt;p&gt;Finalmente, integrando tenemos&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \frac{x^2+3x-5}{x^3-3x+2}\, dx &amp;amp;= \int \frac{16/9}{x-1}\,dx+\int \frac{-1/3}{(x-1)^2}\,dx+\int \frac{-7/9}{x+2}\,dx = \newline &amp;amp;=
+\frac{16}{9}\int\frac{1}{x-1}\,dx-\frac{1}{3}\int(x-1)^{-2}\,dx- \frac{7}{9}\int \frac{1}{x+2}\,dx = \newline
+&amp;amp;= \frac{16}{9}\ln|x-1|+\frac{1}{3(x-1)}-\frac{7}{9}\ln|x+2|+C.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo - Raíces imaginarias&lt;/strong&gt;. Consideremos la función $f(x)=\dfrac{x+1}{x^2-4x+8}$.&lt;/p&gt;
+&lt;p&gt;En este caso el denominador no tiene raíces reales, pero puede
+escribirse de la forma $$x^2-4x+8 = (x-2)^2+4$$ Integrando, tenemos&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \dfrac{x+1}{x^2-4x+8}\, dx &amp;amp;= \int \dfrac{x-2+3}{(x-2)^2+4}\,dx = \newline
+&amp;amp;= \int \dfrac{x-2}{(x-2)^2+4}\,dx + \int \dfrac{3}{(x-2)^2+4}\,dx = \newline
+&amp;amp;= \frac{1}{2}\ln|(x-2)^2+4| + \dfrac{3}{2}\operatorname{arctg}\left(\frac{x-2}{2}\right)+C.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;integración-de-funciones-trigonométricas&#34;&gt;Integración de funciones trigonométricas&lt;/h3&gt;
+&lt;h4 id=&#34;función-sinn-xcosm-x-con-n-o-m-impares&#34;&gt;Función $\sin^n x\cos^m x$ con $n$ o $m$ impares&lt;/h4&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    Si $f(x)=\sin^n x\cos^m x$ con $n$ o $m$ impares, entonces para integrar esta función se hace el cambio $\operatorname{sen} x = t$ o $\cos x =t$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$\int \operatorname{sen}^2 x\cos^3 x\, dx = \int \operatorname{sen}^2 x\cos^2 x\cos x\, dx = \int \operatorname{sen}^2 x(1-\operatorname{sen}^2 x)\cos x\, dx,$$&lt;/p&gt;
+&lt;p&gt;y haciendo el cambio $t=\operatorname{sen} x$, de modo que $dt = \cos x dx$, se tiene&lt;/p&gt;
+&lt;p&gt;$$\int \operatorname{sen}^2 x(1-\operatorname{sen}^2 x)\cos x\, dx = \int t^2(1-t^2)\, dt = \int t^2-t^4\, dt = \frac{t^3}{3}-\frac{t^5}{5}+C,$$&lt;/p&gt;
+&lt;p&gt;y deshaciendo el cambio anterior se obtiene&lt;/p&gt;
+&lt;p&gt;$$\int \operatorname{sen}^2 x\cos^3 x\, dx = \frac{\operatorname{sen}^3 x}{3}-\frac{\sin^5 x}{5}+C.$$&lt;/p&gt;
+&lt;h4 id=&#34;función-sinn-xcosm-x-con-n-y-m-pares&#34;&gt;Función $\sin^n x\cos^m x$ con $n$ y $m$ pares&lt;/h4&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;Si $f(x)=\operatorname{sen}^n x\cos^m x$ con $n$ y $m$ pares, entonces se suelen utilizar las siguientes igualdades para facilitar el cálculo de la integral:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\operatorname{sen}^2 x &amp;amp;= \frac{1}{2}(1-\cos 2x)\newline
+\cos^2 x &amp;amp;= \frac{1}{2}(1+\cos 2x)\newline
+\operatorname{sen} x\cos x &amp;amp;= \frac{1}{2}\operatorname{sen} 2x
+\end{aligned}
+$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \operatorname{sen}^2 x\cos^4 x\, dx &amp;amp;= \int (\operatorname{sen} x\cos x)^2\cos^2 x\, dx = \int \left(\frac{1}{2}\operatorname{sen}
+2x\right)^2\frac{1}{2}(1+\cos 2x)\,dx =\newline
+&amp;amp;= \frac{1}{8}\int \operatorname{sen}^2 2x\,dx+\frac{1}{8}\int \sin^2 2x \cos 2x\,dx,
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;siendo la primera integral es de este mismo tipo y la segunda del anterior&lt;/p&gt;
+&lt;p&gt;$$\int \operatorname{sen}^2 x\cos^4 x\, dx = \frac{1}{32}x-\frac{1}{32}\operatorname{sen} 2x)+\frac{1}{24}\operatorname{sen}^3 2x.$$&lt;/p&gt;
+&lt;h4 id=&#34;productos-de-senos-y-cosenos&#34;&gt;Productos de senos y cosenos&lt;/h4&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;Las igualdades&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\operatorname{sen} x\cos y &amp;amp;= \frac{1}{2}(\operatorname{sen}(x-y)+\operatorname{sen}(x+y))\newline
+\operatorname{sen} x\operatorname{sen} y &amp;amp;= \frac{1}{2}(\cos(x-y)-\cos(x+y))\newline
+\cos x\cos y &amp;amp;= \frac{1}{2}(\cos(x-y)+\cos(x+y))
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;transforman los productos en sumas, simplificando su integración.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \operatorname{sen} x\cos 2x\, dx &amp;amp;= \int \frac{1}{2}(\operatorname{sen}(x-2x)+\operatorname{sen}(x+2x))\,dx = \newline
+&amp;amp;= \frac{1}{2}\int \operatorname{sen} (-x)\,dx +\frac{1}{2}\int \operatorname{sen} 3x\,dx = \newline
+&amp;amp;= \frac{1}{2}\cos(-x)- \frac{1}{6}\cos 3x +C.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h4 id=&#34;funciones-racionales-de-senos-y-cosenos&#34;&gt;Funciones racionales de senos y cosenos&lt;/h4&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;Si $f(x,y)$ es una función racional entonces la función $f(\operatorname{sen} x,\cos x)$ puede convertirse en una función racional en $t$ mediante los cambios&lt;/p&gt;
+&lt;p&gt;$$\operatorname{tg} \frac{x}{2}=t \quad \operatorname{sen} x=\frac{2t}{1+t^2} \quad \cos x = \frac{1-t^2}{1+t^2} \quad dx = \frac{2}{1+t^2}dt.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$\int \frac{1}{\operatorname{sen} x}\,dx = \int \frac{1}{\frac{2t}{1+t^2}}\frac{2}{1+t^2}\,dt = \int \frac{1}{t}\,dt = \log|t|+C =
+\log|\operatorname{tg}\frac{x}{2}|+C.$$&lt;/p&gt;
+&lt;h2 id=&#34;integral-definida&#34;&gt;Integral definida&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Integral definida&lt;/strong&gt;. Sea $f(x)$ una función continua en el intervalo $[a, b]$. Si se divide este intervalo en $n$ subintervalos de igual amplitud $\Delta x$ y se elige un punto cualquiera $x_i$ de cada subintervalo, la &lt;em&gt;integral definida&lt;/em&gt; de $f$ desde $a$ hasta $b$ se define como el límite&lt;/p&gt;
+&lt;p&gt;$$\int_a^b f(x)\,dx = \lim_{n\rightarrow \infty}\sum_{i=1}^n f(x_i)\Delta x.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;img src=&#34;../img/integrales/riemann_sums.gif&#34; alt=&#34;Sumas de Riemann&#34; width=&#34;350&#34;&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Teorema - Primer teorema fundamental de Cálculo&lt;/strong&gt;.  Si $f(x)$ es una función continua en el intervalo $[a,b]$ y $F(x)$ es la primitiva de $f$ en $[a,b]$, entonces&lt;/p&gt;
+&lt;p&gt;$$\int_a^b f(x)\,dx = F(b)-F(a)$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Dada la función $f(x)=x^2$, se tiene&lt;/p&gt;
+&lt;p&gt;$$\int_1^2 x^2\,dx = \left[\frac{x^3}{3}\right]_1^2 = \frac{2^3}{3}-\frac{1^3}{3} = \frac{7}{3}.$$&lt;/p&gt;
+&lt;h3 id=&#34;propiedades-de-la-integral-definida&#34;&gt;Propiedades de la integral definida&lt;/h3&gt;
+&lt;p&gt;Dadas dos funciones $f$ y $g$ integrables en $[a,b]$ y $k \in \mathbb{R}$ se cumplen las siguientes propiedades&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int_a^b(f(x)+g(x))\,dx=\int_a^bf(x)\,dx+\int_a^bg(x)\,dx$ (linealidad)&lt;/li&gt;
+&lt;li&gt;$\int_a^b{kf(x)}\,dx=k\int_a^b{f(x)}\,dx$ (linealidad)&lt;/li&gt;
+&lt;li&gt;$\int_a^b{f(x)\,dx} \leq \int_a^b{g(x)\,dx}$ si $f(x)\leq g(x)\ \forall x \in [a,b]$ (monotonía)&lt;/li&gt;
+&lt;li&gt;$\int_a^b{f(x)\,dx} = \int_a^c{f(x)\,dx}+\int_c^b{f(x)\,dx}$ para cualquier $c\in(a,b)$ (aditividad)&lt;/li&gt;
+&lt;li&gt;$\int_a^b f(x)\,dx = -\int_b^a f(x)\,dx$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cálculo-de-áreas&#34;&gt;Cálculo de áreas&lt;/h2&gt;
+&lt;h3 id=&#34;área-delimitada-por-una-función-positiva-y-el-eje-de-abscisas&#34;&gt;Área delimitada por una función positiva y el eje de abscisas&lt;/h3&gt;
+&lt;p&gt;Si $f$ es una función integrable en un intervalo $[a,b]$ y $f(x)\geq 0\ \forall x\in[a,b]$, entonces la integral definida&lt;/p&gt;
+&lt;p&gt;$$\int_a^b f(x)\,dx$$&lt;/p&gt;
+&lt;p&gt;mide le área que queda entre la el gráfico de la función $f$ y el eje de abscisas en el intervalo $[a,b]$.&lt;/p&gt;
+&lt;img src=&#34;../img/integrales/area_positive_function.svg&#34; width=&#34;300px&#34; alt=&#34;Area delimitada por el gráfico de una función positiva entre la función y el eje X en un intervalo&#34; /&gt;
+&lt;h3 id=&#34;área-delimitada-por-una-función-negativa-y-el-eje-de-abscisas&#34;&gt;Área delimitada por una función negativa y el eje de abscisas&lt;/h3&gt;
+&lt;p&gt;Si $f$ es una función integrable en un intervalo $[a,b]$ y $f(x)\leq 0\ \forall x\in[a,b]$, entonces el área que queda entre el gráfico de la función $f$ y el eje de abscisas en el intervalo $[a,b]$ es&lt;/p&gt;
+&lt;p&gt;$$-\int_a^b f(x)\,dx.$$&lt;/p&gt;
+&lt;img src=&#34;../img/integrales/area_negative_function.svg&#34; width=&#34;300px&#34; alt=&#34;Area delimitada por el gráfico de una función negativa entre la función y el eje X en un intervalo&#34; /&gt;
+&lt;h3 id=&#34;área-delimitada-por-una-función-y-el-eje-de-abscisas&#34;&gt;Área delimitada por una función y el eje de abscisas&lt;/h3&gt;
+&lt;p&gt;En general, si $f(x)$ es una función integrable en el intervalo $[a,b]$, no importa el signo de $f$ en $[a,b]$, el area entre el gráfico de la función $f$ y el eje de abscisas en el intervalo $[a,b]$ es&lt;/p&gt;
+&lt;p&gt;$$\int_a^b \vert f(x)\vert\,dx.$$&lt;/p&gt;
+&lt;img src=&#34;../img/integrales/area_function.svg&#34; alt=&#34;Area delimitada por el gráfico de una función y el eje X en un intervalo&#34; width=&#34;350&#34;&gt;
+&lt;h3 id=&#34;área-delimitada-por-dos-funciones&#34;&gt;Área delimitada por dos funciones&lt;/h3&gt;
+&lt;p&gt;Si $f$ y $g$ son dos funciones integrables en el intervalo $[a,b]$, entonces el área limitada por los gráficos de $f$ y $g$ en el intervalo $[a,b]$ es&lt;/p&gt;
+&lt;p&gt;$$\int_{a}^{b}{\vert f(x)- g(x)\vert\,dx}.$$&lt;/p&gt;
+&lt;img src=&#34;../img/integrales/area_between_functions.svg&#34; width=&#34;400px&#34; alt=&#34;Area delimitada por el gráfico de dos funciones en un intervalo&#34; /&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

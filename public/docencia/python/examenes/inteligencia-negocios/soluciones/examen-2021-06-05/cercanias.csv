@@ -1,0 +1,29 @@
+id,linea,estaciones
+10T0001C1,C1,Principe Pio-Aeropuerto
+10T0002C1,C1,Aeropuerto-Principe Pio
+10T0003C10,C10,Villalba-Aeropuerto
+10T0004C10,C10,Aeropuerto-Villalba
+10T0005C2,C2,Guadalajara-Chamartin
+10T0006C2,C2,Chamartin-Guadalajara
+10T0007C3,C3,Chamartin-Aranjuez
+10T0008C3,C3,Aranjuez-Chamartin 
+10T0009C3a,C3a,Chamartin-El Escorial
+10T0010C3a,C3a,El Escorial-Chamartin
+10T0011C4,C4a,Chamartin-Parla
+10T0012C4,C4a,Parla-Chamartin
+10T0013C4a,C4a,Alcobendas-Parla
+10T0014C4a,C4a,Parla-Alcobendas
+10T0015C4b,C4b,Colmenar Viejo-Parla
+10T0016C4b,C4b,Parla-Colmenar Viejo
+10T0017C5,C5,Mostoles el Soto-Humanes
+10T0018C5,C5,Humanes-Mostoles el Soto
+10T0019C7,C7,Alcala de Henares-Principe Pio
+10T0020C7,C7,Principe Pio-Alcala de Henares
+10T0021C8,C8,Atocha-Cercedilla
+10T0022C8,C8,Cercedilla-Atocha
+10T0023C3a,C3a,Atocha-El Escorial
+10T0024C3a,C3a,El Escorial-Atocha
+10T0025C9,C9,Cercedilla-Cotos
+10T0026C9,C9,Cotos-Cercedilla
+10T0027C3a,C3a,Atocha-El Escorial
+10T0028C3a,C3a,El Escorial-Atocha

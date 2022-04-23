@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programación Funcional | Aprende con Alf</title>
+    <link>/tag/programacion-funcional/</link>
+      <atom:link href="/tag/programacion-funcional/index.xml" rel="self" type="application/rss+xml" />
+    <description>Programación Funcional</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Programación Funcional</title>
+      <link>/tag/programacion-funcional/</link>
+    </image>
+    
+    <item>
+      <title>Ejercicios de Programación Funcional</title>
+      <link>/docencia/python/ejercicios/programacion-funcional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/ejercicios/programacion-funcional/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Escribir una función que aplique un descuento a un precio y otra que aplique el IVA a un precio. Escribir una tercera función que reciba un diccionario con los precios y porcentajes de una cesta de la compra, y una de las funciones anteriores, y utilice la función pasada para aplicar los descuentos o el IVA a los productos de la cesta y devolver el precio final de la cesta.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/programacion-funcional/ejercicio1.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;Escribir una función que simule una calculadora científica que permita calcular el seno, coseno, tangente, exponencial y logaritmo neperiano. La función preguntará al usuario el valor y la función a aplicar, y mostrará por pantalla una tabla con los enteros de 1 al valor introducido y el resultado de aplicar la función a esos enteros.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/programacion-funcional/ejercicio2.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;Escribir una función que reciba otra función y una lista, y devuelva otra lista con el resultado de aplicar la función dada a cada uno de los elementos de la lista.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/programacion-funcional/ejercicio3.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;Escribir una función que reciba otra función booleana y una lista, y devuelva otra lista con los elementos de la lista que devuelvan &lt;code&gt;True&lt;/code&gt; al aplicarles la función booleana.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/programacion-funcional/ejercicio4.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-5&#34;&gt;Ejercicio 5&lt;/h2&gt;
+&lt;p&gt;Escribir una función que reciba una frase y devuelva un diccionario con las palabras que contiene y su longitud.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/programacion-funcional/ejercicio5.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-6&#34;&gt;Ejercicio 6&lt;/h2&gt;
+&lt;p&gt;Escribir una función reciba una lista de notas y devuelva la lista de calificaciones correspondientes a esas notas.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/programacion-funcional/ejercicio6.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-7&#34;&gt;Ejercicio 7&lt;/h2&gt;
+&lt;p&gt;Escribir una función reciba un diccionario con las asignaturas y las notas de un alumno y devuelva otro diccionario con las asignaturas en mayúsculas y las calificaciones correspondientes a las notas.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/programacion-funcional/ejercicio7.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-8&#34;&gt;Ejercicio 8&lt;/h2&gt;
+&lt;p&gt;Escribir una función reciba un diccionario con las asignaturas y las notas de un alumno y devuelva otro diccionario con las asignaturas en mayúsculas y las calificaciones correspondientes a las notas aprobadas.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/programacion-funcional/ejercicio8.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-9&#34;&gt;Ejercicio 9&lt;/h2&gt;
+&lt;p&gt;Escribir una función que calcule el módulo de un vector.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/programacion-funcional/ejercicio9.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-10&#34;&gt;Ejercicio 10&lt;/h2&gt;
+&lt;p&gt;Una inmobiliaria de una ciudad maneja una lista de inmuebles como la siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;[{&#39;año&#39;: 2000, &#39;metros&#39;: 100, &#39;habitaciones&#39;: 3, &#39;garaje&#39;: True, &#39;zona&#39;: &#39;A&#39;},
+{&#39;año&#39;: 2012, &#39;metros&#39;: 60, &#39;habitaciones&#39;: 2, &#39;garaje&#39;: True, &#39;zona&#39;: &#39;B&#39;},
+{&#39;año&#39;: 1980, &#39;metros&#39;: 120, &#39;habitaciones&#39;: 4, &#39;garaje&#39;: False, &#39;zona&#39;: &#39;A&#39;},
+{&#39;año&#39;: 2005, &#39;metros&#39;: 75, &#39;habitaciones&#39;: 3, &#39;garaje&#39;: True, &#39;zona&#39;: &#39;B&#39;},
+{&#39;año&#39;: 2015, &#39;metros&#39;: 90, &#39;habitaciones&#39;: 2, &#39;garaje&#39;: False, &#39;zona&#39;: &#39;A&#39;}]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Construir una función que permita hacer búsqueda de inmuebles en función de un presupuesto dado. La función recibirá como entrada la lista de inmuebles y un precio, y devolverá otra lista con los inmuebles cuyo precio sea menor o igual que el dado. Los inmuebles de la lista que se devuelva deben incorporar un nuevo par a cada diccionario con el precio del inmueble, donde el precio de un inmueble se calcula con las siguiente fórmula en función de la zona:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zona A: precio = (metros * 1000 + habitaciones * 5000 + garaje * 15000) * (1-antiguedad/100)&lt;/li&gt;
+&lt;li&gt;Zona B: precio = (metros * 1000 + habitaciones * 5000 + garaje * 15000) * (1-antiguedad/100) * 1.5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/programacion-funcional/ejercicio10.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-11&#34;&gt;Ejercicio 11&lt;/h2&gt;
+&lt;p&gt;Escribir una función que reciba una muestra de números y devuelva los valores atípicos, es decir, los valores cuya puntuación típica sea mayor que 3 o menor que -3.
+Nota: La puntuación típica de un valor se obtiene restando la media y dividiendo por la desviación típica de la muestra.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/programacion-funcional/ejercicio11.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Programación funcional</title>
+      <link>/docencia/python/manual/programacion-funcional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/manual/programacion-funcional/</guid>
+      <description>&lt;h2 id=&#34;programación-funcional&#34;&gt;Programación funcional&lt;/h2&gt;
+&lt;p&gt;En Python las funciones son objetos de primera clase, es decir, que pueden pasarse como argumentos de una función, al igual que el resto de los tipos de datos.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def aplica(funcion, argumento):
+...     return funcion(argumento)
+...
+&amp;gt;&amp;gt;&amp;gt; def cuadrado(n):
+...     return n*n
+...
+&amp;gt;&amp;gt;&amp;gt; def cubo(n):
+...     return n**3
+...
+&amp;gt;&amp;gt;&amp;gt; aplica(cuadrado, 5)
+25
+&amp;gt;&amp;gt;&amp;gt; aplica(cubo, 5)
+125
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;funciones-anónimas-lambda&#34;&gt;Funciones anónimas (&lt;code&gt;lambda&lt;/code&gt;)&lt;/h3&gt;
+&lt;p&gt;Existe un tipo especial de funciones que no tienen nombre asociado y se conocen como &lt;strong&gt;funciones anónimas&lt;/strong&gt; o &lt;strong&gt;funciones lambda&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;La sintaxis para definir una función anónima es&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;lambda &amp;lt;parámetros&amp;gt; : &amp;lt;expresión&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Estas funciones se suelen asociar a una variable o parámetro desde la que hacer la llamada.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; area = lambda base, altura : base * altura
+&amp;gt;&amp;gt;&amp;gt; area(4, 5)
+10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;aplicar-una-función-a-todos-los-elementos-de-una-colección-iterable-map&#34;&gt;Aplicar una función a todos los elementos de una colección iterable (&lt;code&gt;map&lt;/code&gt;)&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;map(f, c)&lt;/code&gt; : Devuelve una objeto iterable con los resultados de aplicar la función &lt;code&gt;f&lt;/code&gt; a los elementos de la colección &lt;code&gt;c&lt;/code&gt;. Si la función &lt;code&gt;f&lt;/code&gt; requiere &lt;code&gt;n&lt;/code&gt; argumentos entonces deben pasarse &lt;code&gt;n&lt;/code&gt; colecciones con los argumentos. Para convertir el objeto en una lista, tupla o diccionario hay que aplicar explícitamente las funciones &lt;code&gt;list()&lt;/code&gt;, &lt;code&gt;tuple()&lt;/code&gt; o &lt;code&gt;dic()&lt;/code&gt; respectivamente.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def cuadrado(n):
+...     return n * n
+...
+&amp;gt;&amp;gt;&amp;gt; list(map(cuadrado, [1, 2, 3])
+[1, 4, 9]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def rectangulo(a, b):
+...     return a * b
+...
+&amp;gt;&amp;gt;&amp;gt; tuple(map(rectangulo, (1, 2, 3), (4, 5, 6)))
+(4, 10, 18)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;filtrar-los-elementos-de-una-colección-iterable-filter&#34;&gt;Filtrar los elementos de una colección iterable (filter)&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;filter(f, c)&lt;/code&gt; : Devuelve una objeto iterable con los elementos de la colección &lt;code&gt;c&lt;/code&gt; que devuelven &lt;code&gt;True&lt;/code&gt; al aplicarles la función &lt;code&gt;f&lt;/code&gt;. Para convertir el objeto en una lista, tupla o diccionario hay que aplicar explícitamente las funciones &lt;code&gt;list()&lt;/code&gt;, &lt;code&gt;tuple()&lt;/code&gt; o &lt;code&gt;dic()&lt;/code&gt; respectivamente.&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa fa-exclamation-triangle&#34; style=&#34;color:red;&#34;&gt;&lt;/i&gt; &lt;code&gt;f&lt;/code&gt; debe ser una función que recibe un argumento y devuelve un valor booleano.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def par(n):
+...     return n % 2 == 0
+...
+&amp;gt;&amp;gt;&amp;gt; list(filter(par, range(10))
+[0, 2, 4, 6, 8]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;combinar-los-elementos-de-varias-colecciones-iterables-zip&#34;&gt;Combinar los elementos de varias colecciones iterables (&lt;code&gt;zip&lt;/code&gt;)&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;zip(c1, c2, ...)&lt;/code&gt; : Devuelve un objeto iterable cuyos elementos son tuplas formadas por los elementos que ocupan la misma posición en las colecciones &lt;code&gt;c1&lt;/code&gt;, &lt;code&gt;c2&lt;/code&gt;, etc. El número de elementos de las tuplas es el número de colecciones que se pasen. Para convertir el objeto en una lista, tupla o diccionario hay que aplicar explícitamente las funciones &lt;code&gt;list()&lt;/code&gt;, &lt;code&gt;tuple()&lt;/code&gt; o &lt;code&gt;dic()&lt;/code&gt; respectivamente.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; asignaturas = [&#39;Matemáticas&#39;, &#39;Física&#39;, &#39;Química&#39;, &#39;Economía&#39;]
+&amp;gt;&amp;gt;&amp;gt; notas = [6.0, 3.5, 7.5, 8.0]
+&amp;gt;&amp;gt;&amp;gt; list(zip(asignaturas, notas))
+[(&#39;Matemáticas&#39;, 6.0), (&#39;Física&#39;, 3.5), (&#39;Química&#39;, 7.5), (&#39;Economía&#39;, 8.0)]
+&amp;gt;&amp;gt;&amp;gt; dict(zip(asignaturas, notas[:3]))
+{&#39;Matemáticas&#39;: 6.0, &#39;Física&#39;: 3.5, &#39;Química&#39;: 7.5}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;operar-todos-los-elementos-de-una-colección-iterable-reduce&#34;&gt;Operar todos los elementos de una colección iterable (&lt;code&gt;reduce&lt;/code&gt;)&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;reduce(f, l)&lt;/code&gt; : Aplicar la función &lt;code&gt;f&lt;/code&gt; a los dos primeros elementos de la secuencia &lt;code&gt;l&lt;/code&gt;. Con el valor obtenido vuelve a aplicar la función &lt;code&gt;f&lt;/code&gt; a ese valor y el siguiente de la secuencia, y así hasta que no quedan más elementos en la lista. Devuelve el valor resultado de la última aplicación de la función &lt;code&gt;f&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La función &lt;code&gt;reduce&lt;/code&gt; está definida en el módulo &lt;code&gt;functools&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; from functools import reduce
+&amp;gt;&amp;gt;&amp;gt; def producto(n, m):
+...     return n * m
+...
+&amp;gt;&amp;gt;&amp;gt; reduce(producto, range(1, 5))
+24
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

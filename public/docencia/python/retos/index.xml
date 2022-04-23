@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Retos de Programación con Python | Aprende con Alf</title>
+    <link>/docencia/python/retos/</link>
+      <atom:link href="/docencia/python/retos/index.xml" rel="self" type="application/rss+xml" />
+    <description>Retos de Programación con Python</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Retos de Programación con Python</title>
+      <link>/docencia/python/retos/</link>
+    </image>
+    
+    <item>
+      <title>Ajedrez</title>
+      <link>/docencia/python/retos/ajedrez/</link>
+      <pubDate>Thu, 01 Jan 1970 01:33:39 +0100</pubDate>
+      <guid>/docencia/python/retos/ajedrez/</guid>
+      <description>&lt;h2 id=&#34;tarea-1&#34;&gt;Tarea 1&lt;/h2&gt;
+&lt;p&gt;La primera tarea consiste en escribir un programa que guarde en un fichero la secuencia de tableros de una partida de ajedrez. Partiremos del tablero inicial donde las filas del tablero están separadas por cambios de línea y las columnas por tabuladores.&lt;/p&gt;
+&lt;p&gt;El programa debe guardar el tablero inicial en un fichero con el nombre que elija el usuario. Después debe preguntar al usuario si quiere hacer un movimiento o terminar la partida. Cada vez que el usuario quiera hacer un nuevo movimiento debe preguntar la fila y la columna de la pieza que quiere mover y la fila y la columna a la que la quiere mover. Tras ello añadirá el tablero resultante al final del fichero anterior.&lt;/p&gt;
+&lt;p&gt;El fichero 
+&lt;a href=&#34;doc/partida-ajedrez.txt&#34;&gt;partida-ajedrez.txt&lt;/a&gt; contiene un ejemplo con el fichero resultante de una partida con 3 movimientos.&lt;/p&gt;
+&lt;h2 id=&#34;tarea-2&#34;&gt;Tarea 2&lt;/h2&gt;
+&lt;p&gt;Una vez generado el fichero con los tableros sucesivos de una partida de ajedrez, el programa preguntará por un movimiento y mostrará por pantalla el tablero correspondiente ese movimiento.
+Por ejemplo, utilizando el fichero 
+&lt;a href=&#34;doc/partida-ajedrez.txt&#34;&gt;partida-ajedrez.txt&lt;/a&gt;, si el usuario introduce el movimiento 2, debería mostrar por pantalla el siguiente tablero:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;♜	♞	♝	♛	♚	♝	♞	♜
+♟	♟	♟		♟	♟	♟	♟
+							
+			♟				
+						♙	
+							
+♙	♙	♙	♙	♙	♙		♙
+♖	♘	♗	♕	♔	♗	♘	♖
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;solución&#34;&gt;Solución&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/retos/soluciones/ajedrez.ipynb&#34; class=&#34;btn btn-info&#34; target=&#34;_blank&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Estrellas regulares</title>
+      <link>/docencia/python/retos/estrellas-regulares/</link>
+      <pubDate>Thu, 01 Jan 1970 01:33:39 +0100</pubDate>
+      <guid>/docencia/python/retos/estrellas-regulares/</guid>
+      <description>&lt;h2 id=&#34;tarea&#34;&gt;Tarea&lt;/h2&gt;
+&lt;p&gt;El reto consiste en programar una función que dibuje estrellas como la que aparece a continuación con un número de puntas dado.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/estrella.png&#34; alt=&#34;Estrella&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Para ello hay que utilizar el módulo de Python 
+&lt;a href=&#34;https://docs.python.org/3/library/turtle.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Turtle&lt;/a&gt; que permite realizar trazos sencillos en una ventana gráfica.&lt;/p&gt;
+&lt;p&gt;En el siguiente video hay una introducción básica al módulo Turtle.&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/cX9efszLbJw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;Y también dispones de una 
+&lt;a href=&#34;doc/PythonTurtle-cheatsheet.pdf&#34;&gt;hoja de resumen con las principales funciones de Turtle&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;solución&#34;&gt;Solución&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/retos/soluciones/dibujo-estrellas-turtle.ipynb&#34; class=&#34;btn btn-info&#34; target=&#34;_blank&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Laberinto</title>
+      <link>/docencia/python/retos/laberinto/</link>
+      <pubDate>Thu, 01 Jan 1970 01:33:39 +0100</pubDate>
+      <guid>/docencia/python/retos/laberinto/</guid>
+      <description>&lt;h2 id=&#34;tarea-1&#34;&gt;Tarea 1&lt;/h2&gt;
+&lt;p&gt;La primera tarea consiste en construir un laberinto como el de la siguiente figura.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/laberinto.png&#34; alt=&#34;Laberinto&#34;&gt;&lt;/p&gt;
+&lt;p&gt;El laberinto se representará como una una lista de listas, donde cada lista es una fila del laberinto y cada casilla se representará con un espacio &amp;rsquo; &amp;rsquo; si hay paso o con la letra &amp;lsquo;X&amp;rsquo; si hay un muro, tal y como se muestra a continuación:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;laberinto = [
+    [&#39; &#39;, &#39;X&#39;, &#39;X&#39;, &#39;X&#39;, &#39;X&#39;], 
+    [&#39; &#39;, &#39;X&#39;, &#39; &#39;, &#39; &#39;, &#39; &#39;],
+    [&#39; &#39;, &#39;X&#39;, &#39; &#39;, &#39;X&#39;, &#39; &#39;], 
+    [&#39; &#39;, &#39; &#39;, &#39; &#39;, &#39;X&#39;, &#39; &#39;], 
+    [&#39;X&#39;, &#39;X&#39;, &#39;X&#39;, &#39;X&#39;, &#39;S&#39;]
+    ]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El laberinto se debe crear a partir de una tupla con las coordenadas de las casillas donde hay muro, como la siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;muro = ((0,1), (0,2), (0,3), (0,4), (1,1), (2,1), (2,3), (3,3), (4,0), (4,1), (4,2), (4,3))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tarea-2&#34;&gt;Tarea 2&lt;/h2&gt;
+&lt;p&gt;La segunda tarea a resolver consiste en construir un programa para recorrer el laberinto desde la entrada a la salida. La entrada siempre está en la esquina superior izquierda y la salida en la esquina inferior derecha.&lt;/p&gt;
+&lt;p&gt;El programa debe devolver una lista con la secuencia de movimientos para ir de la entrada a la salida del laberinto, tal y como se muestra a continuación:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;[&#39;Abajo&#39;, &#39;Abajo&#39;, &#39;Abajo&#39;, &#39;Abajo&#39;, &#39;Derecha&#39;, &#39;Derecha&#39;, &#39;Arriba&#39;, &#39;Arriba&#39;, &#39;Derecha&#39;, &#39;Derecha&#39;, &#39;Abajo&#39;, &#39;Abajo&#39;, &#39;Abajo&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;solución&#34;&gt;Solución&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/retos/soluciones/laberinto.ipynb&#34; class=&#34;btn btn-info&#34; target=&#34;_blank&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

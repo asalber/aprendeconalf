@@ -1,0 +1,2356 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics Problems | Aprende con Alf</title>
+    <link>/en/teaching/statistics/problems/</link>
+      <atom:link href="/en/teaching/statistics/problems/index.xml" rel="self" type="application/rss+xml" />
+    <description>Statistics Problems</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Statistics Problems</title>
+      <link>/en/teaching/statistics/problems/</link>
+    </image>
+    
+    <item>
+      <title>Problems of Frequency Tables and Charts</title>
+      <link>/en/teaching/statistics/problems/frequency_charts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/problems/frequency_charts/</guid>
+      <description>&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise 1&lt;/h2&gt;
+&lt;p&gt;Classify the following variables&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Daily hours of exercise.&lt;/li&gt;
+&lt;li&gt;Nationality.&lt;/li&gt;
+&lt;li&gt;Blood pressure.&lt;/li&gt;
+&lt;li&gt;Severity of illness.&lt;/li&gt;
+&lt;li&gt;Number of sport injuries in a year.&lt;/li&gt;
+&lt;li&gt;Daily calorie intake.&lt;/li&gt;
+&lt;li&gt;Size of clothing.&lt;/li&gt;
+&lt;li&gt;Subjects passed in a course.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;Quantitative continuous.&lt;/li&gt;
+&lt;li&gt;Qualitative nominal.&lt;/li&gt;
+&lt;li&gt;Quantitative continuous.&lt;/li&gt;
+&lt;li&gt;Qualitative ordinal.&lt;/li&gt;
+&lt;li&gt;Quantitative discrete.&lt;/li&gt;
+&lt;li&gt;Quantitative continuous.&lt;/li&gt;
+&lt;li&gt;Qualitative ordinal.&lt;/li&gt;
+&lt;li&gt;Quantitative discrete.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise 2&lt;/h2&gt;
+&lt;p&gt;The number of injuries suffered by the members of a soccer team in a league were&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0 1 2 1 3 0 1 0 1 2 0 1 1 1 2 0 1 3 2 1 2 1 0 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Compute:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Construct the frequency distribution table of the sample.&lt;/li&gt;
+&lt;li&gt;Draw the bar chart of the sample and the polygon.&lt;/li&gt;
+&lt;li&gt;Draw the cumulative frequency bar chart and polygon.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Injuries&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;$n_i$&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;$f_i$&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;$N_i$&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;$F_i$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.2500&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.2500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;11&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.4583&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;17&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.7083&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;5&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.2083&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;22&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.9167&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.0833&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;24&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1.0000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise 3&lt;/h2&gt;
+&lt;p&gt;A survey about the daily number of medicines consumed by people over 70 shows the following results:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;3 1 2 2 0 1 4 2 3 5 1 3 2 3 1 4 2 4 3 2 3 5 0 1 2 0 2 3 0 1 1 5 3 4 2 3 0 1 2 3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;Construct the frequency distribution table of the sample.&lt;/li&gt;
+&lt;li&gt;Draw the bar chart of the sample and the polygon.&lt;/li&gt;
+&lt;li&gt;Draw the cumulative relative frequency bar chart and polygon.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-4&#34;&gt;Exercise 4&lt;/h2&gt;
+&lt;p&gt;In a survey about the dependency of older people, 23 persons over 75 years were asked about the help they need in daily life. The answers were&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;B D A B C C B C D E A B C E A B C D B B A A B
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where the meanings of letters are:&lt;/p&gt;
+&lt;p&gt;A No help.
+B Help climbing stairs.
+C Help climbing stairs and getting up from a chair or bed.
+D Help climbing stairs, getting up and dressing.
+E Help for almost everything.&lt;/p&gt;
+&lt;p&gt;Construct the frequency distribution table and a suitable chart.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Help&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;$n_i$&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;$f_i$&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;$N_i$&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;$F_i$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;A&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;5&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.2174&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;5&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.2174&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;8&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.3478&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;13&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.5652&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;C&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;5&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.2174&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;18&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.7826&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;D&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.1304&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;21&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.9130&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;E&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.0870&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;23&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1.0000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;img src=&#34;../img/help_daily_life_piechart-1.svg&#34; title=&#34;plot of chunk help_daily_life_piechart&#34; alt=&#34;plot of chunk help_daily_life_piechart&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-5&#34;&gt;Exercise 5&lt;/h2&gt;
+&lt;p&gt;The number of people treated in the emergency service of a hospital every day of November was&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;15 23 12 10 28 7 12 17 20 21 18 13 11 12 26 30 6 16 19 22 14 17 21 28 9 16 13 11 16 20
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;Construct the frequency distribution table of the sample.&lt;/li&gt;
+&lt;li&gt;Draw a suitable chart for the frequency distribution.&lt;/li&gt;
+&lt;li&gt;Draw a suitable chart for the cumulative frequency distribution.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-6&#34;&gt;Exercise 6&lt;/h2&gt;
+&lt;p&gt;The following frequency distribution table represents the distribution of time (in min) required by people attended in a medical dispensary.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{|c|c|c|c|c|}
+\hline \mbox{Time} &amp;amp; n_{i} &amp;amp; f_{i} &amp;amp; N_{i} &amp;amp; F_{i}\newline
+\hline
+\left[ 0,5\right) &amp;amp; 2 &amp;amp;  &amp;amp;  &amp;amp;  \newline
+\hline
+\left[ 5,10\right) &amp;amp;  &amp;amp;  &amp;amp; 8 &amp;amp;  \newline
+\hline
+\left[ 10,15\right) &amp;amp;  &amp;amp; &amp;amp;  &amp;amp; 0.7 \newline
+\hline
+\left[ 15,20\right) &amp;amp; 6 &amp;amp;  &amp;amp;  &amp;amp;\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Complete the table.&lt;/li&gt;
+&lt;li&gt;Draw the ogive.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-7&#34;&gt;Exercise 7&lt;/h2&gt;
+&lt;p&gt;The following table represents the frequency distribution of the yearly uses of a health insurance in a sample of clients of a insurance company.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;uses&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;clients&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;4&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;5&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;7&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Draw the box plot. Study the symmetry of the distribution.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../img/boxplot_uses_health_insurance-1.svg&#34; title=&#34;plot of chunk boxplot_uses_health_insurance&#34; alt=&#34;plot of chunk boxplot_uses_health_insurance&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-8&#34;&gt;Exercise 8&lt;/h2&gt;
+&lt;p&gt;The box plots below correspond to the age of a sample of people by marital status.&lt;/p&gt;
+&lt;img src=&#34;../img/ages_marital_status_boxplot-1.svg&#34; title=&#34;plot of chunk ages_marital_status_boxplot&#34; alt=&#34;plot of chunk ages_marital_status_boxplot&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+&lt;ol&gt;
+&lt;li&gt;Which group has higher ages?&lt;/li&gt;
+&lt;li&gt;Which group has lower central dispersion?&lt;/li&gt;
+&lt;li&gt;Which groups have outliers?&lt;/li&gt;
+&lt;li&gt;At which group is the age distribution more asymmetric?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;Widowers.&lt;/li&gt;
+&lt;li&gt;Divorced.&lt;/li&gt;
+&lt;li&gt;Widowers and divorced.&lt;/li&gt;
+&lt;li&gt;Divorced.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problems of Descriptive Statistics</title>
+      <link>/en/teaching/statistics/problems/statistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/problems/statistics/</guid>
+      <description>&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise 1&lt;/h2&gt;
+&lt;p&gt;The number of injuries suffered by the members of a soccer team in a league were&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0 1 2 1 3 0 1 0 1 2 0 1 1 1 2 0 1 3 2 1 2 1 0 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Calculate the following statistics and interpret them.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Mean.&lt;/li&gt;
+&lt;li&gt;Median.&lt;/li&gt;
+&lt;li&gt;Mode.&lt;/li&gt;
+&lt;li&gt;Quartiles.&lt;/li&gt;
+&lt;li&gt;Percentile 32.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar x=1.125$ injuries.&lt;/li&gt;
+&lt;li&gt;$Me=1$ injury.&lt;/li&gt;
+&lt;li&gt;$Mo=1$ injury.&lt;/li&gt;
+&lt;li&gt;$Q_1=1$ injury, $Q_2=1$ injury and $Q_3=2$ injuries.&lt;/li&gt;
+&lt;li&gt;$P_{32}=1$ injury.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise 2&lt;/h2&gt;
+&lt;p&gt;The chart below shows the cumulative distribution of the time (in min) required by 66 students to do an exam.&lt;/p&gt;
+&lt;img src=&#34;../img/time_exam-1.svg&#34; title=&#34;plot of chunk time_exam&#34; alt=&#34;plot of chunk time_exam&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+&lt;ol&gt;
+&lt;li&gt;At what time have half of the students finished? And 90% of students?&lt;/li&gt;
+&lt;li&gt;What percentage of students have finished after 100 minutes?&lt;/li&gt;
+&lt;li&gt;What is the time that best represent the time required by students in the sample to finish the exam? Is this value representative or not?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$Me=94.62$ min. $P_{90}=132$ min.&lt;/li&gt;
+&lt;li&gt;$57.08%$ of students.&lt;/li&gt;
+&lt;li&gt;$\bar x=85.9091$ min, $s=37.5268$ min and $cv=0.4368$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise 3&lt;/h2&gt;
+&lt;p&gt;In a study about children&amp;rsquo;s growth, two samples were drawn, one for newborn babies and the other for one year old infants. The heights in cm of children in each of the samples were&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Newborn children: 51 50 51 53 49 50 53 50 47 50 
+One year old children: 62 65 69 71 65 66 68 69
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In which group is the mean more representative? Justify your answer.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Newborn children: $\bar x=50.4$ min, $s_x=1.6852$ min and $cv_x=0.0334$.&lt;br&gt;
+One year old children:  $\bar y=66.875$ min, $s_y=2.7128$ min and $cv_y=0.0406$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-4&#34;&gt;Exercise 4&lt;/h2&gt;
+&lt;p&gt;To determine the accuracy of a method for measuring hematocrit in blood, the measurement was repeated 8 times on the same blood sample. The results of hematocrit in plasma, in percentage, were&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;42.2 42.1 41.9 41.8 42 42.1 41.9 42
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What do you think about the accuracy of the method?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      $\bar x=42$ min, $s=0.1225$ min and $cv=0.0029$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-5&#34;&gt;Exercise 5&lt;/h2&gt;
+&lt;p&gt;The histogram below shows the frequency distribution of the body mass index (BMI) of a group of people by gender.&lt;/p&gt;
+&lt;img src=&#34;../img/bmi_gender-1.svg&#34; title=&#34;plot of chunk bmi_gender&#34; alt=&#34;plot of chunk bmi_gender&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+&lt;ol&gt;
+&lt;li&gt;Draw the pie chart for the gender.&lt;/li&gt;
+&lt;li&gt;In which group is more representative the mean of the BMI?&lt;/li&gt;
+&lt;li&gt;Calculate the mean for the whole sample.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums
+Females: $\sum x_i=1160$ kg/m$^2$ $\sum x_i^2=29050$ kg$^2$/m$^4$
+Males: $\sum x_i=1002.5$ kg/m$^2$ $\sum x_i^2=22781.25$ kg$^2$/m$^4$&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Females: $\bar x=24.1667$ min, $s_x=4.6022$ min and $cv_x=0.1904$.&lt;br&gt;
+Males:  $\bar y=22.2778$ min, $s_y=3.1545$ min and $cv_y=0.1416$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\bar z=23.2527$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-6&#34;&gt;Exercise 6&lt;/h2&gt;
+&lt;p&gt;The following table represents the frequency distribution of ages at which a group of people suffered a heart attack.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;age&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;persons&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;[40,50)&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;[50,60)&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;[60,70)&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;[70,80)&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;19&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;[80,90)&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Could we assume that the sample comes from a normal population?&lt;/p&gt;
+&lt;p&gt;Use the following sums: $\sum x_i=4275$ years, $\sum(x_i-\bar x)^2=7461.5385$ years$^2$, $\sum (x_i-\bar x)^3=-18248.5207$ years$^3$, $\sum (x_i-\bar x)^4=2099635.8671$ years$^4$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      $g_1=-0.2283$ and $g_2=-0.5487$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-7&#34;&gt;Exercise 7&lt;/h2&gt;
+&lt;p&gt;To compare two rehabilitation treatments $A$ and $B$ for an injury, every treatment was applied to a different group of people. The number of days required to cure the injury in each group is shown in the
+following table:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Days&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;A&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;B&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;20-40&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;5&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;40-60&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;20&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;60-80&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;18&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;20&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;80-100&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;7&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol&gt;
+&lt;li&gt;In which treatment is more representative the mean?&lt;/li&gt;
+&lt;li&gt;In which treatment the distribution of days is more skew?&lt;/li&gt;
+&lt;li&gt;In which treatment the distribution is more peaked?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums:
+$A$: $\sum x_i=3040$ days, $\sum (x_i-\bar x)^2=14568$ days$^2$, $\sum (x_i-\bar x)^3=17011.2$ days$^3$, $\sum (x_i-\bar x)^4=9989602.56$ days$^4$
+$B$: $\sum y_j=3020$ days, $\sum (y_j-\bar y)^2=16992$ days$^2$, $\sum (y_j-\bar y)^3=-42393.6$ days$^3$, $\sum (y_j-\bar y)^4=12551516.16$ days$^4$&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$A$: $\bar a=60.8$ days, $s_a=17.0693$ days and $cv_a=0.2807$.&lt;br&gt;
+$B$: $\bar b=60.4$ days, $s_b=18.4347$ days and $cv_b=0.3052$.&lt;/li&gt;
+&lt;li&gt;$g_{1a}=0.0684$ and $g_{1b}=-0.1353$.&lt;/li&gt;
+&lt;li&gt;$g_{2a}=-0.6465$ and $g_{2b}=-0.8264$, so the distribution of treatment $A$ is more peaked than the one of treatment $B$ as $g_{2a} &amp;gt; g_{2b}$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-8&#34;&gt;Exercise 8&lt;/h2&gt;
+&lt;p&gt;The systolic blood pressure (in mmHg) of a sample of persons is&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;135 128 137 110 154 142 121 127 114 103
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;Calculate the central tendency statistics.&lt;/li&gt;
+&lt;li&gt;How is the relative dispersion with respect to the mean?&lt;/li&gt;
+&lt;li&gt;How is the skewness of the sample distribution?&lt;/li&gt;
+&lt;li&gt;How is the kurtosis of the sample distribution?&lt;/li&gt;
+&lt;li&gt;If we know that the method used for measuring the blood pressure is biased, and, in order to get the right values, we have to apply the linear transformation $y=1.2x-5$, what are the statistics values of parts (a) to (d) for the new, corrected distribution?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums: $\sum x_i=1271$ mmHg, $\sum (x_i-\bar x)^2=2188.9$ mmHg$^2$, $\sum (x_i-\bar x)^3=2764.32$ mmHg$^3$, $\sum (x_i-\bar x)^4=1040079.937$ mmHg$^4$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar x=127.1$ mmHg, $Me=127.5$ mmHg, $Mo$ all the values.&lt;/li&gt;
+&lt;li&gt;$s=14.7949$ mmHg and $cv=0.1164$.&lt;/li&gt;
+&lt;li&gt;$g_1=0.0854$.&lt;/li&gt;
+&lt;li&gt;$g_2=-0.8292$.&lt;/li&gt;
+&lt;li&gt;$\bar x=147.52$ mmHg, $Me=148$ mmHg, $Mo=157$ mmHg, $s=17.7539$ mmHg, $cv=0.1203$, $g_1=0.0854$ and $g_2=-0.8292$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-9&#34;&gt;Exercise 9&lt;/h2&gt;
+&lt;p&gt;The table below contains the frequency of pregnancies, abortions and births of a sample of 999 women in a city.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Num&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Pregnancies&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Abortions&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Births&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;61&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;751&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;67&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;64&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;183&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;80&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;328&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;51&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;400&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;301&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;10&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;4&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;122&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;90&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;5&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;81&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;62&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;29&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;7&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;11&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;8&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol&gt;
+&lt;li&gt;How many birth outliers are in the sample?&lt;/li&gt;
+&lt;li&gt;Which variable has lower spread with respect to the mean?&lt;/li&gt;
+&lt;li&gt;Which value is relatively higher, 7 pregnancies or 4 abortions? Justify your answer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums:
+Pregnancies: $\sum x_i=2783$, $\sum x_i^2=9773$.
+Abortions: $\sum y_j=333$, $\sum y_j^2=559$.
+Births: $\sum z_k=2450$, $\sum z_k^2=7370$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-8&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-8&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-8&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$129$ outliers.&lt;/li&gt;
+&lt;li&gt;Pregnancies: $\bar x=2.7858$, $s_x=1.422$ and $cv_x=0.5105$.&lt;br&gt;
+Abortions: $\bar y=0.3333$, $s_y=0.6697$ and $cv_y=2.009$.&lt;br&gt;
+Births: $\bar z=2.4525$, $s_z=1.1674$ and $cv_z=0.476$.&lt;/li&gt;
+&lt;li&gt;Standard score of $7$ pregnancies is $2.9635$, and standard score of $4$ abortions is $5.4754$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problems of Linear Regression</title>
+      <link>/en/teaching/statistics/problems/linear_regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/problems/linear_regression/</guid>
+      <description>&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise 1&lt;/h2&gt;
+&lt;p&gt;Give some examples of:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Non related variables.&lt;/li&gt;
+&lt;li&gt;Variables that are increasingly related.&lt;/li&gt;
+&lt;li&gt;Variables that are decreasingly related.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;The daily averge temperature and the daily number of births in a city.&lt;/li&gt;
+&lt;li&gt;The hours preparing an exam and the score.&lt;/li&gt;
+&lt;li&gt;The weight of a person and the time require to run 100 meters.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise 2&lt;/h2&gt;
+&lt;p&gt;In a study about the effect of different doses of a medicament, 2 patients got 2 mg and took 5 days to cure, 4 patients got 2 mg and took 6 days to cure, 2 patients got 3 mg ant took 3 days to cure, 4 patients got 3 mg and took 5 days to cure, 1 patient got 3 mg and took 6 days to cure, 5 patients got 4 mg and took 3 days to cure and 2 patients got 4 mg and took 5 days to cure.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Construct the joint frequency table.&lt;/li&gt;
+&lt;li&gt;Get the marginal frequency distributions and compute the main statistics for each variable.&lt;/li&gt;
+&lt;li&gt;Compute the covariance and interpret it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$$
+\begin{array}{c|c|c|c}
+\hline
+\mbox{dose/days} &amp;amp; 3 &amp;amp; 5 &amp;amp; 6\newline
+\hline
+2 &amp;amp; 0 &amp;amp; 2 &amp;amp; 4\newline
+\hline
+3 &amp;amp; 2 &amp;amp; 4 &amp;amp; 1\newline
+\hline
+4 &amp;amp; 5 &amp;amp; 2 &amp;amp; 0\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dose: $\bar x=3.05$ mg, $s_x^2=0.6475$ mg$^2$, $s_x=0.8047$ mg.&lt;br/&gt;
+Days: $\bar y=4.55$ days, $s_y^2=1.4475$ days$^2$, $s_y=1.2031$ days.&lt;br/&gt;
+3. $s_{xy}=-0.6775$ mg$\cdot$days.&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise 3&lt;/h2&gt;
+&lt;p&gt;The table below shows the two-dimensional frequency distribution of a sample of 80 persons in a study about the relation between the blood cholesterol ($X$) in mg/dl and the high blood pressure ($Y$).&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{|c||c|c|c||c|}
+\hline
+X\setminus Y &amp;amp; [110,130) &amp;amp; [130,150) &amp;amp; [150,170) &amp;amp; n_x \newline
+\hline\hline
+[170,190)   &amp;amp;           &amp;amp;     4     &amp;amp;           &amp;amp; 12\newline
+\hline
+[190,210)   &amp;amp;    10     &amp;amp;    12     &amp;amp;     4     &amp;amp;   \newline
+\hline
+[210,230)   &amp;amp;     7     &amp;amp;           &amp;amp;     8     &amp;amp;   \newline
+\hline
+[230,250)   &amp;amp;     1     &amp;amp;           &amp;amp;           &amp;amp; 18\newline
+\hline\hline
+n_y          &amp;amp;           &amp;amp;    30     &amp;amp;    24    &amp;amp;    \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Complete the table.&lt;/li&gt;
+&lt;li&gt;Construct the linear regression model of cholesterol on pressure.&lt;/li&gt;
+&lt;li&gt;Use the linear model to calculate the expected cholesterol for a person with pressure 160 mmHg.&lt;/li&gt;
+&lt;li&gt;According to the linear model, what is the expected pressure for a person with cholesterol 270 mg/dl?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums: $\sum x_i=16960$ mg/dl, $\sum y_j=11160$ mmHg, $\sum x_i^2=3627200$ (mg/dl)$^2$, $\sum  y_j^2=1576800$ mmHg$^2$ y $\sum x_iy_j=2378800$ mg/dl$\cdot$mmHg.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$\bar x=212$ mg/dl, $s_x^2=396$ (mg/dl)$^2$.&lt;br/&gt;
+$\bar y=139.5$ mmHg, $s_y^2=249.75$ mmHg$^2$.&lt;br/&gt;
+$s_{xy}=161$ mg/dl$\cdot$mmHg.&lt;br/&gt;
+Regression line of cholesterol on blood pressure: $x=122.0721 + 0.6446y$.&lt;br/&gt;
+3. $x(160)=225.2152$ mg/dl.&lt;br/&gt;
+4.&lt;/p&gt;
+&lt;p&gt;Regression line of blood pressure on cholesterol: $y=53.3081 + 0.4066x$.&lt;br/&gt;
+$y(270)=163.0808$ mmHg.&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-4&#34;&gt;Exercise 4&lt;/h2&gt;
+&lt;p&gt;A research study has been conducted to determine the loss of activity of a drug. The table below shows the results of the experiment.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrr}
+\hline
+\mbox{Time (in years)} &amp;amp; 1 &amp;amp; 2 &amp;amp; 3 &amp;amp; 4 &amp;amp; 5 \newline
+\mbox{Activity (%)} &amp;amp; 96 &amp;amp; 84 &amp;amp; 70 &amp;amp; 58 &amp;amp; 52 \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Construct the linear regression model of activity on time.&lt;/li&gt;
+&lt;li&gt;According to the linear model, when will the activity be 80%? When will the drug have lost all activity?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar x=3$ years, $s_x^2=2$ years$^2$.&lt;br/&gt;
+$\bar y=72$ %, $s_y^2=264$ %$^2$.&lt;br/&gt;
+$s_{xy}=-22.8$ years$\cdot$%.&lt;br/&gt;
+Regression line of activity on time: $y=106.2 + -11.4x$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Regression line of time on activity: $x=9.2182 + -0.0864y$.&lt;br/&gt;
+$x(80)=2.3091$ years and $x(0)=9.2182$ years.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-5&#34;&gt;Exercise 5&lt;/h2&gt;
+&lt;p&gt;A basketball team is testing a new stretching program to reduce the injuries during the league. The data below show the daily number of minutes doing stretching exercises and the number of injuries along the league.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrrr}
+\hline
+\mbox{Stretching minutes} &amp;amp; 0 &amp;amp; 30 &amp;amp; 10 &amp;amp; 15 &amp;amp; 5 &amp;amp; 25 &amp;amp; 35 &amp;amp; 40\newline
+\mbox{Injuries} &amp;amp; 4 &amp;amp; 1 &amp;amp; 2 &amp;amp; 2 &amp;amp; 3 &amp;amp; 1 &amp;amp; 0 &amp;amp; 1\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Construct the regression line of the number of injuries on the time of stretching.&lt;/li&gt;
+&lt;li&gt;How much is the reduction of injuries for every minute of stretching?&lt;/li&gt;
+&lt;li&gt;How many minutes of stretching are require for having no injuries? Is reliable this prediction?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($X$=Number of minutes stretching, and $Y$=Number of injuries): $\sum x_i =160$ min, $\sum y_j=14$ injuries, $\sum x_i^2=4700$ min$^2$, $\sum y_j^2=36$ injuries$^2$ and $\sum x_iy_j=160$ min$\cdot$injuries.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar x=20$ min, $s_x^2=187.5$ min$^2$.&lt;br/&gt;
+$\bar y=1.75$ injuries, $s_y^2=1.4375$ injuries$^2$.&lt;br/&gt;
+$s_{xy}=-15$ min$\cdot$injuries.&lt;br/&gt;
+Regression line of injuries on time of stetching: $y=3.35 + -0.08x$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$0.08$ injuries/min.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Regression line of time of stretching on injuries: $x=38.2609 + -10.4348y$.&lt;br/&gt;
+$x(0)=38.2609$ min.&lt;br/&gt;
+$r^2=0.8348$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-6&#34;&gt;Exercise 6&lt;/h2&gt;
+&lt;p&gt;For two variables $X$ and $Y$ we have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The regression line of $Y$ on $X$ is $y-x-2=0$.&lt;/li&gt;
+&lt;li&gt;The regression line of $X$ on $Y$ is $y-4x+22=0$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Calculate:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The means $\bar x$ and $\bar y$.&lt;/li&gt;
+&lt;li&gt;The correlation coefficient.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar x=8$ and $\bar y=10$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$r=0.5$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-7&#34;&gt;Exercise 7&lt;/h2&gt;
+&lt;p&gt;The means of two variables $X$ and $Y$ are $\bar x=2$ and $\bar y=1$, and the correlation coefficient is 0.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Predict the value of $Y$ for $x=10$.&lt;/li&gt;
+&lt;li&gt;Predict the value of $X$ for $y=5$.&lt;/li&gt;
+&lt;li&gt;Plot both regression lines.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$y(10)=1$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$x(5)=2$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-8&#34;&gt;Exercise 8&lt;/h2&gt;
+&lt;p&gt;A study to determine the relation between the age and the physical strength gave the scatter plot below.
+&lt;img src=&#34;../img/age_physical_strength_scatterplot-1.svg&#34; title=&#34;plot of chunk age_physical_strength_scatterplot&#34; alt=&#34;plot of chunk age_physical_strength_scatterplot&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calculate the linear coefficient of determination for the whole sample.&lt;/li&gt;
+&lt;li&gt;Calculate the linear coefficient of determination for the sample of people younger than 25 years old.&lt;/li&gt;
+&lt;li&gt;Calculate the linear coefficient of determination for the sample of people older than 25 years old.&lt;/li&gt;
+&lt;li&gt;For which age group the relation between age and strength is stronger?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($X$=Age and $Y=$Weight lifted).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Whole sample: $\sum x_i=431$ years, $\sum y_j=769$ Kg, $\sum x_i^2=13173$ years$^2$, $\sum y_j^2=39675$ Kg$^2$ and $\sum x_iy_j=21792$ years$\cdot$Kg.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Young people: $\sum x_i=123$ years, $\sum y_j=294$ Kg, $\sum x_i^2=2339$ years$^2$, $\sum y_j^2=14418$ Kg$^2$ and $\sum x_iy_j=5766$ years$\cdot$Kg.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Old people: $\sum x_i=308$ years, $\sum y_j=475$ Kg, $\sum x_i^2=10834$ years$^2$, $\sum y_j^2=25257$ Kg$^2$ and $\sum x_iy_j=16026$ years$\cdot$Kg.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar x=26.9375$ years, $s_x^2=97.6836$ years$^2$.&lt;br/&gt;
+$\bar y=48.0625$ kg, $s_y^2=169.6836$ kg$^2$.&lt;br/&gt;
+$s_{xy}=67.3164$ years$\cdot$kg.&lt;br/&gt;
+$r^2=0.2734$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$\bar x=17.5714$ years, $s_x^2=25.3878$ years$^2$.&lt;br/&gt;
+$\bar y=42$ kg, $s_y^2=295.7143$ kg$^2$.&lt;br/&gt;
+$s_{xy}=85.7143$ years$\cdot$kg.&lt;br/&gt;
+$r^2=0.9786$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$\bar x=34.2222$ years, $s_x^2=32.6173$ years$^2$.&lt;br/&gt;
+$\bar y=52.7778$ kg, $s_y^2=20.8395$ kg$^2$.&lt;br/&gt;
+$s_{xy}=-25.5062$ years$\cdot$kg.&lt;br/&gt;
+$r^2=0.9571$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;The linear relation between the age and the physical strength is a little bit stronger in the group of young people.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problems of Non Linear Regression</title>
+      <link>/en/teaching/statistics/problems/non_linear_regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/problems/non_linear_regression/</guid>
+      <description>&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise 1&lt;/h2&gt;
+&lt;p&gt;A dietary center is testing a new diet in sample of 12 persons. The data below are the number of days of diet and the weight loss (in kg) until them for every person.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;(33,3.9)  (51,5.9)  (30,3.2)  (55,6)  (38,4.9)  (62,6.2)  (35,4.5)  (60,6.1)  (44,5.6)  (69,6.2)  (47,5.8)  (40,5.3) 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;Draw the scatter plot. According to the point cloud, what type of regression model explains better the relation between the weight loss and the days of diet?&lt;/li&gt;
+&lt;li&gt;Construct the linear regression model and the logarithmic regression model of the weight loss on the number of days of diet.&lt;/li&gt;
+&lt;li&gt;Use the best model to predict the weight that will lose a person after 40 and 100 days of diet. Are these predictions reliable?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($X$=days of diet and $Y$=weight loss):
+$\sum x_i=564$ days, $\sum \log(x_i)=45.8086$ $\log(\mbox{days})$, $\sum y_j=63.6$ kg, $\sum x_i^2=28234$ days$^2$, $\sum \log(x_i)^2=175.6603$ $\log(\mbox{days})^2$, $\sum y_j^2=347.7$ kg$^2$, $\sum x_iy_j=3108.5$ days$\cdot$kg, $\sum \log(x_i)y_j=245.4738$ $\log(\mbox{days})\cdot$kg.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;Linear model&lt;br/&gt;
+$\bar x=47$ days, $s_x^2=143.8333$ days$^2$.&lt;br/&gt;
+$\bar y=5.3$ kg, $s_y^2=0.885$ kg$^2$.&lt;br/&gt;
+$s_{xy}=9.9417$ days$\cdot$kg.&lt;br/&gt;
+Regression line of weight loss on days of diet: $y=2.0514 + 0.0691x$.&lt;br/&gt;
+$r^2=0.7765$.&lt;br/&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Logartihmic model&lt;br/&gt;
+$\overline{\log(x)}=3.8174$ log(days), $s_{\log(x)}^2=0.0659$ log(days)$^2$.&lt;br/&gt;
+$s_{\log(x)y}=0.224$ log(days)$\cdot$kg.&lt;br/&gt;
+Logartihmic model of weight loss on days of diet: $y=-7.6678 + 3.397\log(x)$.&lt;br/&gt;
+$r^2=0.8599$.&lt;br/&gt;
+3. $y(40)=4.8635$ kg and $y(100)=7.9761$ kg. The predictions are reliable because the coefficient of determination is close to 1, but the last one is less reiable as 100 is far from the observed range of values in the sample.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise 2&lt;/h2&gt;
+&lt;p&gt;The concentration of a drug in blood, in mg/dl, depends on time, in hours, according to the data below.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrr}
+\hline
+\mbox{Time} &amp;amp; 2 &amp;amp; 3 &amp;amp; 4 &amp;amp; 5 &amp;amp; 6 &amp;amp; 7 &amp;amp; 8\newline
+\mbox{Drug concentration} &amp;amp; 25 &amp;amp; 36 &amp;amp; 48 &amp;amp; 64 &amp;amp; 86 &amp;amp; 114 &amp;amp; 168\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Construct the linear regression model of drug concentration on time.&lt;/li&gt;
+&lt;li&gt;Construct the exponential regression model of drug concentration on time.&lt;/li&gt;
+&lt;li&gt;Use the best regression model to predict the drug concentration after $4.8$ hours? Is this prediction reliable? Justify your answer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($C$=Drug concentration and $T$=time): $\sum t_i=35$ h, $\sum \log(t_i)=10.6046$ $\log(\mbox{h})$, $\sum c_j=541$ mg/dl, $\sum \log(c_j)= 29.147$ $\log(\mbox{mg/dl})$, $\sum t_i^2=203$ h$^2$, $\sum \log(t_i)^2=17.5206$ $\log(\mbox{h})^2$, $\sum c_j^2=56937$ (mg/dl)$^2$, $\sum \log(c_j)^2=124.0131$ $\log(\mbox{mg/dl})^2$, $\sum t_ic_j=3328$ h$\cdot$mg/dl, $\sum t_i\log(c_j)=154.3387$ h$\cdot\log(\mbox{mg/dl})$, $\sum \log(t_i)c_j=951.6961$ $\log(\mbox{h})\cdot$mg/dl, $\sum\log(t_i)\log(c_j)=46.08046$ $\log(\mbox{h})\cdot\log(\mbox{mg/dl})$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar x=5$ hours, $s_x^2=4$ hours$^2$.&lt;br/&gt;
+$\bar y=77.2857$ mg/dl, $s_y^2=2160.7755$ (mg/dl)$^2$.&lt;br/&gt;
+$s_{xy}=89$ hours$\cdot$mg/dl.&lt;br/&gt;
+Regression line of drug concentration on time: $y=-33.9643 + 22.25x$.&lt;br/&gt;
+$r^2=0.9165$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$\overline{\log(y)}=4.1639$ log(mg/dl), $s_{\log(y)}^2=0.3785$ log(mg/dl)$^2$.&lt;br/&gt;
+$s_{x\log(y)}=1.2291$ hours$\cdot$log(mg/dl).&lt;br/&gt;
+Exponential model of drug concentration on time: $y=e^{2.6275 + 0.3073x}$.&lt;br/&gt;
+$r^2=0.9979$.&lt;br/&gt;
+3. $y(4.8)=60.4853$ mg/dl.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise 3&lt;/h2&gt;
+&lt;p&gt;A researcher is studying the relation between the obesity and the response to pain. The obesity is measured as the percentage over the ideal weight, and the response to pain as the nociceptive flexion pain threshold. The results of the study appears in the table below.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrrrrr}
+\hline
+\mbox{Obesity} &amp;amp; 89 &amp;amp; 90 &amp;amp; 77 &amp;amp; 30 &amp;amp; 51 &amp;amp; 75 &amp;amp; 62 &amp;amp; 45 &amp;amp; 90 &amp;amp; 20\newline
+\mbox{Pain threshold} &amp;amp; 10 &amp;amp; 12 &amp;amp; 11.5 &amp;amp; 4.5 &amp;amp; 5.5 &amp;amp; 7 &amp;amp; 9 &amp;amp; 8 &amp;amp; 15 &amp;amp; 3\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;According to the scatter plot, what model explains better the relation of the response to pain on the obesity?&lt;/li&gt;
+&lt;li&gt;According to the best regression model, what is the response to pain expected for a person with an obesity of 50%? Is this prection reliable?&lt;/li&gt;
+&lt;li&gt;According to the best regression model, what is the expected obesity for a person with a pain threshold of 10? Is this prediction reliable?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($X$=Obesity and $Y$=Pain threshold):
+$\sum x_i=629$, $\sum \log(x_i)=40.4121$, $\sum y_j=92.2$, $\sum \log(y_j)=21.339$, $\sum x_i^2=45445$, $\sum \log(x_i)^2=165.6795$, $\sum y_j^2=960.14$, $\sum \log(y_j)^2=47.6231$, $\sum x_iy_j=6537.7$, $\sum x_i\log(y_j)=1443.1275$, $\sum \log(x_i)y_j=387.5728$, $\sum \log(x_i)\log(y_j)=88.3696$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;Linear model&lt;br/&gt;
+$\bar x=62.9$, $s_x^2=588.09$.&lt;br/&gt;
+$\bar y=9.22$, $s_y^2=11.0056$.&lt;br/&gt;
+$s_{xy}=82.0356$.&lt;br/&gt;
+Regression line of pain threshold on obesity: $y=1.3232 + 0.1255x$.&lt;br/&gt;
+$r^2=0.8422$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Logartihmic model&lt;br/&gt;
+$\overline{\log(x)}=4.0412$, $s_{\log(x)}^2=0.2366$.&lt;br/&gt;
+$s_{\log(x)y}=1.4973$.&lt;br/&gt;
+Logartihmic model of pain threshold on obesity: $y=-16.3578 + 6.3293\log(x)$.&lt;br/&gt;
+$r^2=0.8611$.&lt;br/&gt;
+$y(50)=8.4023$.&lt;br/&gt;
+3.&lt;/p&gt;
+&lt;p&gt;Exponential model of obesity on pain threshold: $x=e^{2.7868 + 0.1361y}$.&lt;br/&gt;
+$x(10)=63.2648$.&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-4&#34;&gt;Exercise 4&lt;/h2&gt;
+&lt;p&gt;A blood bank keeps plasma at a temperature of 0ºF.
+When it is required for a blood transfusion, it is heated in an oven at a constant temperature of 120ºF.
+In an experiment it has been measured the temperature of plasma at different times during the heating.
+The results are in the table below.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrrr}
+\hline
+\mbox{Time (min)}	&amp;amp; 5 &amp;amp; 8 &amp;amp; 15 &amp;amp; 25 &amp;amp; 30 &amp;amp; 37 &amp;amp; 45 &amp;amp; 60\newline
+\mbox{Temperature (ºF)} &amp;amp; 25 &amp;amp; 50 &amp;amp; 86 &amp;amp; 102 &amp;amp; 110 &amp;amp; 114 &amp;amp; 118 &amp;amp; 120\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Plot the scatter plot.
+Which type of regression model do you think explains better relationship between temperature and time?&lt;/li&gt;
+&lt;li&gt;Which transformation should we apply to the variables to have a linear relationship?&lt;/li&gt;
+&lt;li&gt;Compute the logarithmic regression of the temperature on time.&lt;/li&gt;
+&lt;li&gt;According to the logarithmic model, what will the temperature of the plasma be after 15 minutes of heating?
+Is this prediction reliable? Justify your answer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($X$=Time and $Y$=Temperature):
+$\sum x_i=225$ min, $\sum \log(x_i)=24.5289$ log(min), $\sum y_j=725$ ºF, $\sum \log(y_j)=35.2051$ log(ºF), $\sum x_i^2=8833$ min², $\sum \log(x_i)^2=80.4703$ log²(min), $\sum y_j^2=74345$ ºF², $\sum \log(y_j)^2=157.1023$ log²(ºF), $\sum x_iy_j=24393$ min⋅ºF, $\sum x_i\log(y_j)=1048.0142$ min⋅log(ºF), $\sum \log(x_i)y_j=2431.7096$ log(min)⋅ºF, $\sum \log(x_i)\log(y_j)=111.1165$ log(min)log(ºF).&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Apply a logarithmic transformation to time $z=\log(x)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\bar z=28.125$ log(min), $s_z^2=0.6577$ log²(min).&lt;br/&gt;
+$\bar y=90.625$ ºF, $s_y^2=1080.2344$ ºF².&lt;br/&gt;
+$s_{zy}=26.0969$ log(min)ºF.&lt;br/&gt;
+Logarithmic model of temperature on time: $y=-31.0325 + 39.6781\log(x)$.&lt;br/&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$y(15)=76.4176$ ºF.&lt;br/&gt;
+$r^2=0.9586$, that is close to 1, so the prediction is reliable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-5&#34;&gt;Exercise 5&lt;/h2&gt;
+&lt;p&gt;The activity of a radioactive substance depends on time according to the data in the table below.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrrr}
+\hline
+t\mbox{ (hours)} &amp;amp; 0 &amp;amp; 10 &amp;amp; 20 &amp;amp; 30 &amp;amp; 40 &amp;amp; 50 &amp;amp; 60 &amp;amp; 70 \newline
+A\mbox{ ($10^7$ disintegrations/s)} &amp;amp; 25.9 &amp;amp; 8.16 &amp;amp; 2.57 &amp;amp; 0.81 &amp;amp; 0.25 &amp;amp; 0.08 &amp;amp; 0.03 &amp;amp; 0.01\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Represent graphically the data of radioactivity as a function of time.
+Which type of regression model explains better the relationship between radioactivity and time?&lt;/li&gt;
+&lt;li&gt;Represent graphically the data of radioactivity as a function of time in a semi-logarithmic paper.&lt;/li&gt;
+&lt;li&gt;Compute the regression line of the logarithm of radioactivity on time.&lt;/li&gt;
+&lt;li&gt;Taking into account that radioactivity decay follows the formula
+\newline[
+A(t) = A_0 e^{-\lambda t}
+\newline]
+where $A_0$ is the number of disintegrations at the begining and $\lambda$ is a disintegration constant, different for each radioactive substance, use the slope of the previous regression line to compute the disintegration constant for the substance.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($X$=Time and $Y$=Radioactivity):
+$\sum x_i=280$ hours, $\sum y_j=37.81$ 10⁷ disintegrations/s, $\sum \log(y_j)=-5.9371$ log(10⁷ disintegrations/s), $\sum x_i^2=14000$ hours², $\sum y_j^2=744.7265$ 10⁷ disintegrations/s², $\sum \log(y_j)^2=57.7369$ log²(10⁷ disintegrations/s), $\sum x_iy_j=173.8$ hours⋅10⁷ disintegrations/s, $\sum x_i\log(y_j)=-680.9447$ hours⋅log(10⁷ disintegrations/s).&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\bar x=35$ hours, $s_x^2=525$ hours².&lt;br/&gt;
+$\bar z=-0.7421$ log(10⁷ disintegrations/s), $s_z^2=6.6664$ log(10⁷ disintegrations/s)^2.&lt;br/&gt;
+$s_{xz}=-59.1434$ hours⋅log(10⁷ disintegrations/s)&lt;br/&gt;
+Regression line of logarithm of radioactivity on time: $z=3.2008 + -0.1127x$.&lt;br/&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\lambda=0.1127$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-6&#34;&gt;Exercise 6&lt;/h2&gt;
+&lt;p&gt;For oscillations of small amplitude, the oscillation period $T$ of a pendulum is given by the formula
+\newline[
+T = 2\pi\sqrt{\frac{L}{g}}
+\newline]
+where $L$ is the length of the pendulum and $g$ is the gravitational constant. In order to check if the previous formula is satisfied, an experiment has been conducted where it has been measured the oscillation period for different lengths of the pendulum.The measurements are shown in the table below.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrr}
+\hline
+L\text{ (cm)} &amp;amp; 52.5 &amp;amp; 68.0 &amp;amp; 99.0 &amp;amp; 116.0 &amp;amp; 146.0 \newline
+P\text{ (seg)} &amp;amp; 1.449 &amp;amp; 1.639 &amp;amp; 1.999 &amp;amp; 2.153 &amp;amp; 2.408\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Represent graphically the data of the period versus the length of the pendulum.&lt;br&gt;
+Does a linear model fit well to the points cloud?&lt;/li&gt;
+&lt;li&gt;Represent graphically the data of the period versus the length in a logarithmic paper.
+Which type of model fits better to the points cloud?&lt;/li&gt;
+&lt;li&gt;Compute the regression line of the logarithm of period on the logarithm of length.&lt;/li&gt;
+&lt;li&gt;Taking in to account the independent term of the previous regression line, compute the value of $g$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;The model that best fits the points cloud is linear.&lt;/li&gt;
+&lt;li&gt;Let $X$ be the logarithm of length and $Y$ to the logarithm of period,&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$\bar x=4.5025$ log(cm), $s_x^2=0.1353$ log(cm)².&lt;br/&gt;
+$\bar y=0.6407$ log(s), $s_y^2=0.0339$ log(s)².&lt;br/&gt;
+$s_{xy}=0.0677$ log(cm)log(s)&lt;br&gt;
+Regression line of Y on X: $y=-1.6132 + 0.5006x$.&lt;br/&gt;
+4. $g=994.4579 cm/s².
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-7&#34;&gt;Exercise 7&lt;/h2&gt;
+&lt;p&gt;A study tries to determine the relationship between two substances $X$ and $Y$ in blood.
+The concentrations of these substances have been measured in seven individuals (in $\mu$g/dl) and the results are shown in the table below.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{rrrrrrrr}
+\hline
+X &amp;amp; 2.1 &amp;amp; 4.9 &amp;amp; 9.8 &amp;amp; 11.7 &amp;amp; 5.9 &amp;amp; 8.4 &amp;amp; 9.2 \newline
+Y &amp;amp; 1.3 &amp;amp; 1.5 &amp;amp; 1.7 &amp;amp; 1.8 &amp;amp; 1.5 &amp;amp; 1.7 &amp;amp; 1.7 \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Are $Y$ and $X$ linearly related?&lt;/li&gt;
+&lt;li&gt;Are $Y$ and $X$ potentially related?&lt;/li&gt;
+&lt;li&gt;Use the best of the previous regression models to predict the concentration in blood of $Y$ for $x=8$ $\mu$gr/dl.Is this prediction reliable. Justify your answer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums:
+$\sum x_i=52$ μg/dl, $\sum \log(x_i)=13.1955$ log(μg/dl), $\sum y_j=11.2$ μg/dl, $\sum \log(y_j)=3.253$ log(μg/dl), $\sum x_i^2=451.36$ (μg/dl)², $\sum \log(x_i)^2=26.9397$ log(μg/dl)², $\sum y_j^2=18.1$ (μg/dl)², $\sum \log(y_j)^2=1.5878$ log(μg/dl)², $\sum x_iy_j=86.57$ (μg/dl)², $\sum x_i\log(y_j)=26.3463$ μg/dl⋅log(μg/dl), $\sum \log(x_i)y_j=21.7087$ log(μg/dl)⋅μg/dl, $\sum \log(x_i)\log(y_j)=6.5224$ log(μg/dl)².&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$\bar x=7.4286$ μg/dl, $s_x^2=9.2963$ (μg/dl)².&lt;br/&gt;
+$\bar z=-0.7421$ μg/dl, $s_z^2=6.6664$ (μg/dl)².&lt;br/&gt;
+$s_{xz}=-0.4147$ (μg/dl)²&lt;br&gt;
+Linear relation: $r^2=0.9696$, that is close to 1, so there is a strong linear relation.&lt;br&gt;
+2. Naming $u=\log(x)$ and $v=\log(y)$,&lt;/p&gt;
+&lt;p&gt;$\bar u=1.8851$ log(μg/dl), $s_u^2=0.295$ log(μg/dl)².&lt;br/&gt;
+$\bar v=0.4647$ log(μg/dl), $s_v^2=0.0109$ log(μg/dl)².&lt;br/&gt;
+$s_{uv}=0.0558$ (μg/dl)²&lt;br&gt;
+Potential relation: $r^2=0.9688$, that is close to 1, so there is a strong potential relation, although the linear relation is a little bit stronger.&lt;br&gt;
+3. Regression line of $Y$ on $X$: $y=1.2153 + 0.0518x$.&lt;br/&gt;
+$y(8)=1.6296$ μg/dl. The prediction is reliable since the linear coefficient of determination is close to 1.&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problems of Probability</title>
+      <link>/en/teaching/statistics/problems/probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/problems/probability/</guid>
+      <description>&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise 1&lt;/h2&gt;
+&lt;p&gt;Construct the sample space of the following random experiments:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pick a random person and record the gender and whether she or he is smoker or not.&lt;/li&gt;
+&lt;li&gt;Pick a random person and record the blood type and whether she or he is smoker or not.&lt;/li&gt;
+&lt;li&gt;Pick a random person and record the gender, the blood type and whether she or he is smoker or not.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise 2&lt;/h2&gt;
+&lt;p&gt;There are two boxes with balls of different colors. The first box contains 3 white balls and 2 black balls, and the second one contains 2 blue balls, 1 red ball and 1 green ball. Construct the sample space of the following random experiments:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pick a random ball from every box.&lt;/li&gt;
+&lt;li&gt;Pick two random balls from every box.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise 3&lt;/h2&gt;
+&lt;p&gt;The Morgan’s laws state that given two events $A$ and $B$ from the same sample space, $\overline{A\cup B}=\bar A \cap \bar B$ and $\overline{A\cap B}=\bar A \cup \bar B$. Proof both statements graphically using Venn diagrams.&lt;/p&gt;
+&lt;h2 id=&#34;exercise-4&#34;&gt;Exercise 4&lt;/h2&gt;
+&lt;p&gt;Compute the probability of the following events of the random experiment consisting in tossing 3 coins:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Get exactly 1 head.&lt;/li&gt;
+&lt;li&gt;Get exactly 2 tails.&lt;/li&gt;
+&lt;li&gt;Get two or more heads.&lt;/li&gt;
+&lt;li&gt;Get some tails.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(\mbox{1 head})=0.375$.&lt;/li&gt;
+&lt;li&gt;$P(\mbox{2 tails})=0.375$.&lt;/li&gt;
+&lt;li&gt;$P(\mbox{2 or more heads})=0.5$.&lt;/li&gt;
+&lt;li&gt;$P(\mbox{some tails})=0.875$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-5&#34;&gt;Exercise 5&lt;/h2&gt;
+&lt;p&gt;In a laboratory there are 4 flasks with sulfuric acid and 2 with nitric acid, and in another laboratory there are 1 flask with sulfuric acid and 3 with nitric acid. A random experiment consist in picking two flask, one from every laboratory. Compute the probability of the following events:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The two picked flasks are of sulfuric acid.&lt;/li&gt;
+&lt;li&gt;The two picked flasks are of nitric acid.&lt;/li&gt;
+&lt;li&gt;The two picked flasks contains different acids.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Compute again the above probabilities if the flask picked in the first laboratory is put in the second laboratory before picking the flask from it.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(\mbox{Two flasks of sulfuric acid})=4/24$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\mbox{Two flasks of nitric acid})=6/24$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\mbox{One flask  of each})=14/24$.&lt;br/&gt;
+Putting the first flask in the second laboratory:&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\mbox{Two flasks of sulfuric acid})=8/30$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\mbox{Two flasks of nitric acid})=8/30$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\mbox{One flask  of each})=14/30$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-6&#34;&gt;Exercise 6&lt;/h2&gt;
+&lt;p&gt;Let $A$ and $B$ two be events of a same sample space, such that $P(A)=3/8$, $P(B)=1/2$, $P(A\cap B)=1/4$. Compute the following probabilities:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(A\cup B)$.&lt;/li&gt;
+&lt;li&gt;$P(\bar A)$ y $P(\bar B)$.&lt;/li&gt;
+&lt;li&gt;$P(\bar A\cap \bar B)$.&lt;/li&gt;
+&lt;li&gt;$P(A\cap \bar B)$.&lt;/li&gt;
+&lt;li&gt;$P(A\vert B)$.&lt;/li&gt;
+&lt;li&gt;$P(A\vert \bar B)$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(A\cup B)=5/8$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\bar A)=5/8$ and $P(\bar B)=1/2$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(\bar A\cap \bar B)=3/8$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(A\cap \bar B)=1/8$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(A\vert B)=1/2$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(A\vert \bar B)=1/4$.&lt;br/&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-7&#34;&gt;Exercise 7&lt;/h2&gt;
+&lt;p&gt;In a hospital the probability of getting hepatitis in a blood transfusion from a unit of blood is $0.01$. A patient gets two units of blood while staying at the hospital. What is the probability of getting hepatitis?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      $P(\mbox{Hepatitis})=0.0199$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-8&#34;&gt;Exercise 8&lt;/h2&gt;
+&lt;p&gt;Let $A$ and $B$ be two events of a same sample space, such that $P(A)=0.6$ and $P(A\cup B)=0.9.$ Compute $P(B)$ under the following assumptions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$A$ and $B$ are incompatible.&lt;/li&gt;
+&lt;li&gt;$A$ and $B$ are independent.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(B)=0.3$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$P(B)=0.75$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-9&#34;&gt;Exercise 9&lt;/h2&gt;
+&lt;p&gt;A study about smoking has found that 40% of smokers have a smoker father, 25% have a smoker mother and 52% have al least one of the parents smoker. We pick a random person from this population. Answer the following questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is the probability of having a smoker mother if the father smokes?&lt;/li&gt;
+&lt;li&gt;What is the probability of having a smoker mother if the father does not smoke?&lt;/li&gt;
+&lt;li&gt;Are independent the events having a smoker father and having a smoker mother?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Naming $SF$ tho the event of having a smoker father and $SM$ to the event of having a smoker mother,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(SM/SF)=0.325$.&lt;/li&gt;
+&lt;li&gt;$P(SM/\bar SF)=0.2$.&lt;/li&gt;
+&lt;li&gt;The events aren&amp;rsquo;t independent.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-10&#34;&gt;Exercise 10&lt;/h2&gt;
+&lt;p&gt;The probability that an injury $A$ is repeated is $4/5$, the probability that another injury $B$ is repeated is $1/2$, and the probability that both injuries are repeated is $1/3$. Compute the probability of the following events:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Only injury $B$ is repeated.&lt;/li&gt;
+&lt;li&gt;At least one injury is repeated.&lt;/li&gt;
+&lt;li&gt;Injury $B$ is repeated if injury $A$ has been repeated.&lt;/li&gt;
+&lt;li&gt;Injury $B$ is repeated if injury $A$ has not been repeated.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(B\cap\overline A)=1/6$.&lt;/li&gt;
+&lt;li&gt;$P(A\cup B)=29/30$.&lt;/li&gt;
+&lt;li&gt;$P(B\vert A)=5/12$.&lt;/li&gt;
+&lt;li&gt;$P(B\vert \overline A)=5/6$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-11&#34;&gt;Exercise 11&lt;/h2&gt;
+&lt;p&gt;In a digestive clinic, from every 1000 patients that arrive with stomach pain, 700 have gastritis, 200 have an ulcer and 100 have cancer. After analyzing the gastric symptoms, it is known that the probability of vomiting is $0.3$ in case of gastritis, $0.6$ in case of ulcer and $0.9$ in case of cancer. What is the diagnosis for a new patient with stomach pain that suffers from vomiting?&lt;/p&gt;
+&lt;p&gt;Note: Assume that the only diseases are gastritis, ulcer and cancer and that are incompatible among them.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Let $G$, $U$ and $C$ be the events of having gastritis, ulcer and cander respectively, and let $V$ be the event of vomiting, $P(G/V)=0.5$, $P(U/V)=0.286$ and $P(C/V)=0.214$, so, the diagnosis is gastritis.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-12&#34;&gt;Exercise 12&lt;/h2&gt;
+&lt;p&gt;A severe pain without effusion in a particular zone of the knee joint is a symptom of sprained lateral collateral ligament (SLCL). If the sprains in that ligament are classified into grade 1, when there is only distension (60% of cases), grade 2 when there is a partial tearing (30% of cases) and grade 3 when there is a complete tearing (10% of cases). Taking into account that the symptom appears in 80% of cases of grade 1 sprains, 90% of cases of grade 2 and 100% of cases of grade 3, answer the following questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If a person has SLCL what is the probability that he or she present severe pain without effusion?&lt;/li&gt;
+&lt;li&gt;What is the diagnosis for a person with severe pain without effusion?&lt;/li&gt;
+&lt;li&gt;From a total of 10000 people with severe pain without effusion, how many are expected to have a grade 1 sprain? How many are expected to have a grade 2 sprain? And a grade 3 sprain?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-8&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-8&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-8&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Naming $S$ to the event of presenting severe pain without effusion, and $G1$, $G2$ and $G3$ to the events of having a SLCL of grade 1, 2 and 3 respectively,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(S)=0.85$.&lt;/li&gt;
+&lt;li&gt;$P(G1\vert S)=0.5647$, $P(G2\vert S)=0.3176$ and $P(G3\vert S)=0.1176$, so the diagnosis is a SLCL of grade 1.&lt;/li&gt;
+&lt;li&gt;$5647.0588$ will have a grade 1 sprain, $3176.4706$ will have a grade 2 sprain and $1176.4706$ will have a grade 3 sprain.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-13&#34;&gt;Exercise 13&lt;/h2&gt;
+&lt;p&gt;A physiotherapist uses two techniques $A$ and $B$ to cure an injury. It is known that the injury is 3 times more frequent in people over 30 than in people under 30. It is also known that in people over 30 technique $A$ works in 30% of cases and technique $B$ in 60%, while in people under 30 technique $A$ works in 50% of cases and technique $B$ in 70%. If both techniques are applied with the same probability, no matter the age,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is the probability that a random person under 30 is cured? And for a people over 30?&lt;/li&gt;
+&lt;li&gt;What is the probability that a random person is cured?&lt;/li&gt;
+&lt;li&gt;If after applying a technique to a person over 30, the person does not cure, what is the probability that the technique applied was $A$?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-9&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-9&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-9&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Naming $J$ to the event of being under 30, $C$ to the event of being cured, and $A$ and $B$ to the events of applying techniques $A$ and $B$ respectively,&lt;br&gt;
+$P(C\vert J)=0.45.$ and $P(C\vert \bar J)=0.6$. &lt;br /&gt;
+$P(C)=0.5625$.&lt;br&gt;
+$P(A/\bar J\cap \bar C)=0.625$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problems Diagnostic Tests</title>
+      <link>/en/teaching/statistics/problems/diagnostic_tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/problems/diagnostic_tests/</guid>
+      <description>&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise 1&lt;/h2&gt;
+&lt;p&gt;A test was applied to a sample of people in order to evaluate its effectiveness; the results are as follows:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{l|cc}
+&amp;amp; \mbox{Test }+ &amp;amp; \mbox{Test }- \newline
+\hline
+\mbox{Sick} &amp;amp; 2020 &amp;amp; 140 \newline&lt;/p&gt;
+&lt;p&gt;\mbox{Healthy} &amp;amp; 80 &amp;amp; 7760 \newline
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;Calculate for this test:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The sensitivity and the specificity.&lt;/li&gt;
+&lt;li&gt;The positive and negative predictive value.&lt;/li&gt;
+&lt;li&gt;The probability of a correct diagnosis.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Naming $S$ and $H$ to the events of being sick and healthy respectively,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sensitivity $P(+\vert S)=0.9352$ and specificity $P(-\vert H)=0.9898$.&lt;/li&gt;
+&lt;li&gt;PPV $P(S\vert +)=0.9619$ and NPV $P(H\vert -)=0.9823$.&lt;/li&gt;
+&lt;li&gt;$P((S\cap +)\cup (H\cap -)) = P(S\cap +) + P(H\cap -) = 0.978$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise 2&lt;/h2&gt;
+&lt;p&gt;We know, from a research study, that 10% of people over 50 suffer a particular type or arthritis. We have developed a new method to detect the disease and after clinical trials we observe that if we apply the method to people with arthritis we get a positive result in 85% of cases, while if we apply the method to people without arthritis, we get a positive result in 4% of cases. Answer the following questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is the probability of getting a positive result after applying the method to a random person?&lt;/li&gt;
+&lt;li&gt;If the result of applying the method to one person has been positive, what is the probability of having arthritis?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Naming $A$ to the event of having arthritis,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(+)=0.121$.&lt;/li&gt;
+&lt;li&gt;$P(A\vert +) = 0.7025$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise 3&lt;/h2&gt;
+&lt;p&gt;We have two different test $A$ and $B$ to diagnose a disease. Test $A$ have a sensitivity of 98% and a specificity of 80%, while test $B$ have a sensitivity of 75% and a specificity of 99%.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Which test is better to confirm the disease?&lt;/li&gt;
+&lt;li&gt;Which test is better to rule out the disease?&lt;/li&gt;
+&lt;li&gt;Often a test is used to discard the presence of the disease in a large amount of people apparently healthy. This type of test is known as &lt;em&gt;screening test&lt;/em&gt;. Which test will work better as a screening test? What are the predictive values of this test if the prevalence of the disease is 0.01? And if the prevalence of de disease is 0.2?&lt;/li&gt;
+&lt;li&gt;The positive predictive value of a screening test used to be not too high. How can we combine the tests $A$ and $B$ to have a higher confidence in the diagnosis of the disease? Calculate the post-test probability of having the disease with the combination of both thest, if the outcome of both test is positive for a prevalence of 0.01.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;Test $B$ cause it has a greater specificity.&lt;/li&gt;
+&lt;li&gt;Test $A$ cause it has a greater sensitivity.&lt;/li&gt;
+&lt;li&gt;Test $A$ will perform better as a screening test.&lt;br&gt;
+For a prevalence of $0.01$ the PPV is $P(D\vert +)=0.0472$ and the NPV is $P(\bar D\vert -)=0.9997$.&lt;br&gt;
+For a prevalence of $0.2$ the PPV is $P(D\vert +)=0.5506$ and the NPV is $P(\bar D\vert -)=0.9938$.&lt;/li&gt;
+&lt;li&gt;First applying test $A$ to everybody and then applying test $B$ to positive cases of test $A$.&lt;br&gt;
+$P(D\vert +_A\cap +_B)=0.7878$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problems of Discrete Random Variables</title>
+      <link>/en/teaching/statistics/problems/discrete_random_variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/problems/discrete_random_variables/</guid>
+      <description>&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise 1&lt;/h2&gt;
+&lt;p&gt;Let $X$ be a discrete random variable with the following probability distribution&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{|c|c|c|c|c|c|}
+\hline
+X &amp;amp; 4 &amp;amp; 5 &amp;amp; 6 &amp;amp; 7 &amp;amp; 8 \newline
+\hline
+f(x) &amp;amp; 0.15 &amp;amp; 0.35 &amp;amp; 0.10 &amp;amp; 0.25 &amp;amp; 0.15 \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calculate and represent graphically the distribution function.&lt;/li&gt;
+&lt;li&gt;Calculate the following probabilities
+a.  $P(X&amp;lt;7.5)$.
+b.  $P(X&amp;gt;8)$.
+c.  $P(4\leq X\leq 6.5)$.
+d.  $P(5&amp;lt;X&amp;lt;6)$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$$
+F(x)=
+\begin{cases}
+0 &amp;amp; \text{if $x&amp;lt;4$,}\newline
+0.15 &amp;amp; \text{if $4\leq x&amp;lt;5$,}\newline
+0.5 &amp;amp; \text{if $5\leq x&amp;lt;6$,}\newline
+0.6 &amp;amp; \text{if $6\leq x&amp;lt;7$,}\newline
+0.85 &amp;amp; \text{if $7\leq x&amp;lt;8$,}\newline
+1 &amp;amp; \text{if $8\leq x$.}
+\end{cases}
+$$&lt;/li&gt;
+&lt;li&gt;$P(X&amp;lt;7.5)=0.85$, $P(X&amp;gt;8)=0$, $P(4\leq x\leq 6.5)=0.6$ and $P(5&amp;lt;X&amp;lt;6)=0$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise 2&lt;/h2&gt;
+&lt;p&gt;Let $X$ be a discrete random variable with the following probability distribution&lt;/p&gt;
+&lt;p&gt;$$
+F(x)=
+\begin{cases}
+0 &amp;amp; \text{if $x&amp;lt;1$,} \newline
+1/5 &amp;amp; \text{if $1\leq x&amp;lt; 4$,} \newline
+3/4 &amp;amp; \text{if $4\leq x&amp;lt;6$,} \newline
+1 &amp;amp; \text{if $6\leq x$.}
+\end{cases}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calculate the probability function.&lt;/li&gt;
+&lt;li&gt;Calculate the following probabilities
+a.  $P(X=6)$.
+b.  $P(X=5)$.
+c.  $P(2&amp;lt;X&amp;lt;5.5)$.
+d.  $P(0\leq X&amp;lt;4)$.&lt;/li&gt;
+&lt;li&gt;Calculate the mean.&lt;/li&gt;
+&lt;li&gt;Calculate the standard deviation.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$$
+\begin{array}{|c|c|c|c|c|c|}
+\hline
+X &amp;amp; 1 &amp;amp; 4 &amp;amp; 6 \newline
+\hline
+f(x) &amp;amp; 0.2 &amp;amp; 0.55 &amp;amp; 0.25 \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$P(X=6)= 0.25$, $P(X=5)=0$, $P(2&amp;lt;X&amp;lt;5.5)=0.55$ and $P(0\leq X&amp;lt;4)=0.2$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\mu=3.9$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\sigma=1.6703$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise 3&lt;/h2&gt;
+&lt;p&gt;An experiment consist in injecting a virus to three rats and checking if they survive or not. It is known that the probability of surviving is $0.5$ for the first rat, $0.4$ for the second and $0.3$ for the third.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calculate the probability function of the variable $X$ that measures the number of surviving rats.&lt;/li&gt;
+&lt;li&gt;Calculate the distribution function.&lt;/li&gt;
+&lt;li&gt;Calculate $P(X\leq 1)$, $P(X\geq 2)$ and $P(X=1.5)$.&lt;/li&gt;
+&lt;li&gt;Calculate the mean and the standard deviation. Is representative the mean?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$$
+\begin{array}{|c|c|c|c|c|}
+\hline
+X &amp;amp; 0 &amp;amp; 1 &amp;amp; 2 &amp;amp; 3 \newline
+\hline
+f(x) &amp;amp; 0.21 &amp;amp; 0.44 &amp;amp; 0.29 &amp;amp; 0.06\newline
+\hline
+\end{array}
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;2.$$
+F(x)=
+\begin{cases}
+0 &amp;amp; \text{si $x&amp;lt;0$,}\newline
+0.21 &amp;amp; \text{si $0\leq x&amp;lt;1$,}\newline
+0.65 &amp;amp; \text{si $1\leq x&amp;lt;2$,}\newline
+0.94 &amp;amp; \text{si $2\leq x&amp;lt;3$,}\newline
+1 &amp;amp; \text{si $3\leq x$.}
+\end{cases}
+$$&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;$P(X\leq 1)=0.65$, $P(X\geq 2)=0.35$ and $P(X=1.5)=0$.&lt;/li&gt;
+&lt;li&gt;$\mu=1.2$ rats, $\sigma^2=0.7$ rats$^2$ y $\sigma=0.84$ rats.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-4&#34;&gt;Exercise 4&lt;/h2&gt;
+&lt;p&gt;The chance of being cured with certain treatment is 0.85. If we apply the treatment to 6 patients,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is the probability that half of them get cured?&lt;/li&gt;
+&lt;li&gt;What is the probability that a least 4 of them get cured?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Let $X$ be the number of cured patients,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(X=3) = 0.0415$.&lt;/li&gt;
+&lt;li&gt;$P(X\geq 4)= 0.9527$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-5&#34;&gt;Exercise 5&lt;/h2&gt;
+&lt;p&gt;Ten persons came into contact with a person infected with tuberculosis. The probability of being infected after contacting a person with tuberculosis is 0.1.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is the probability that nobody is infected?&lt;/li&gt;
+&lt;li&gt;What is the probability that at least 2 persons are infected?&lt;/li&gt;
+&lt;li&gt;What is the expected number of infected persons?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Let $X$ be the number of persons infected,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(X=0) = 0.3487$.&lt;/li&gt;
+&lt;li&gt;$P(X\geq 2)= 0.2639$.&lt;/li&gt;
+&lt;li&gt;$\mu=1$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-6&#34;&gt;Exercise 6&lt;/h2&gt;
+&lt;p&gt;The probability of suffering an adverse reaction to a vaccine is 0.001. If 2000 persons are vaccinated, what is the probability of suffering some adverse reaction?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Let $X$ be the number of adverse reactions, $P(X\geq 1)=0.8648$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-7&#34;&gt;Exercise 7&lt;/h2&gt;
+&lt;p&gt;The average number of calls per minute received by a telephone switchboard is 120.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is the probability of receiving less than 4 calls in 2 seconds?&lt;/li&gt;
+&lt;li&gt;What is the probability of receiving at least 3 calls in 3 seconds?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;Let $X$ be the number of calls in 2 seconds, $P(X&amp;lt;4)=0.4335$.&lt;/li&gt;
+&lt;li&gt;Let $Y$ be the number of calls in 3 seconds, $P(X\geq 3)= 0.938$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-8&#34;&gt;Exercise 8&lt;/h2&gt;
+&lt;p&gt;A test contains 10 questions with 3 possible options each. For every question you get a point if you give the right answer and lose half a point if the answer is wrong. A student knows the right answer for 3 of the 10 questions and answers the rest randomly. What is the probability of passing the exam?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Let $X$ be the number of correct answers in questions randomly answered, $P(X\geq 4)=0.1733$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-9&#34;&gt;Exercise 9&lt;/h2&gt;
+&lt;p&gt;It has been observed experimentally that 1 of every 20 trillions of cells exposed to radiation mutates becoming carcinogenic. We know that the human body has approximately 1 trillion of cells by kilogram ot tissue. Calculate the probability that a 60 kg person exposed to radiation develops cancer. If the radiation affects 3 persons weighing 60 kg, what is the probability that a least one of them develops cancer?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-8&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-8&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-8&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Let $X$ be the number of cells mutated, $P(X&amp;gt;0)=0.9502$.&lt;br&gt;
+Let $Y$ be the of persons developing cancer, $P(Y\geq 1) = 0.9999$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-10&#34;&gt;Exercise 10&lt;/h2&gt;
+&lt;p&gt;A diagnostic test for a disease returns 1% of positive outcomes, and the positivie and negative predictive values are 0.95 and 0.98 respectively.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calculate the prevalence of the disease.&lt;/li&gt;
+&lt;li&gt;Calculate the sensitivity and the specificity of the test.&lt;/li&gt;
+&lt;li&gt;If the test is applied to 12 sick persons, what is the probability of getting at least a wrong diagnosis?&lt;/li&gt;
+&lt;li&gt;If the test is applied to 12 persons, what is the probability of getting a right diagnosis for all of them?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-9&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-9&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-9&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(D)=0.0293$.&lt;/li&gt;
+&lt;li&gt;Sensitivity $P(+\vert D)=0.3242$ and specificity $P(-\vert \bar D)=0.9995$.&lt;/li&gt;
+&lt;li&gt;Let $X$ be the number of wrong diagnosis in 12 sick persons, $P(X\geq 1)=1$.&lt;/li&gt;
+&lt;li&gt;Let $Y$ be the number of right diagnosis in 12 persons, $P(X=12)=0.7818$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-11&#34;&gt;Exercise 11&lt;/h2&gt;
+&lt;p&gt;In a study about a parasite that attacks the kidney of rats it is known that the average number of parasites per kidney is 3.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calculate the probability that a rat has more than 3 parasites.&lt;/li&gt;
+&lt;li&gt;Calculate the probability of having at least 9 rats infected in a sample of 10 rats.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-10&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-10&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-10&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;Let $X$ be the number of parasites in a rat, $P(X&amp;gt;3)=0.8488$.&lt;/li&gt;
+&lt;li&gt;Let $Y$ be the number of rats with parasites in a sample of 10 rats, $P(Y\geq 9)=0.9997$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-12&#34;&gt;Exercise 12&lt;/h2&gt;
+&lt;p&gt;In a physiotherapy course there are 60% of females and 40% of males.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If 6 random students have to go to a hospital for making practices, what is the probability of going more males than females?&lt;/li&gt;
+&lt;li&gt;In 5 samples of 6 students, what is the probability of having some sample without males?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-11&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-11&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-11&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;Let $X$ be the number of females in a group of 6 students, $P(X&amp;lt;2)=0.1792$.&lt;/li&gt;
+&lt;li&gt;Let $Y$ be the number of groups of 6 students without males in a sample of 5 groups, $P(Y&amp;gt;0) =0.2125$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problems of Continuous Random Variables</title>
+      <link>/en/teaching/statistics/problems/continuous_random_variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/problems/continuous_random_variables/</guid>
+      <description>&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise 1&lt;/h2&gt;
+&lt;p&gt;Given the continuous random variable $X$ with the following probability density function chart,
+&lt;img src=&#34;img/vac-3-1.svg&#34; title=&#34;plot of chunk vac-3&#34; alt=&#34;plot of chunk vac-3&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Check that $f(x)$ is a probability density function.&lt;/li&gt;
+&lt;li&gt;Calculate the following probabilities
+a.  $P(X&amp;lt;1)$
+b.  $P(X&amp;gt;0)$
+c.  $P(X=1/4)$
+d.  $P(1/2\leq X\leq 3/2)$&lt;/li&gt;
+&lt;li&gt;Calculate the distribution function.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(X&amp;lt;1)=0.5$, $P(X&amp;gt;0)=1$, $P(X=1/4)=0$ and $P(1/2\leq X\leq 3/2)=0.875$.&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise 2&lt;/h2&gt;
+&lt;p&gt;A worker can arrive to the workplace at any moment between 6 and 7 in the morning with the same likelihood.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Compute and plot the probability density function of the variable that measures the arrival time.&lt;/li&gt;
+&lt;li&gt;compute and plot the distribution function.&lt;/li&gt;
+&lt;li&gt;Compute the probability of arriving before quarter past six and after half past six.&lt;/li&gt;
+&lt;li&gt;What is the expected arrival time?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$P(X&amp;lt;6.25)=0.25$ and $P(X&amp;gt;6.5)=0.5$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\mu=6.5$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise 3&lt;/h2&gt;
+&lt;p&gt;Let $Z$ be a random variable following a standard normal distribution model. Calculate the following probabilities using the table of the distribution function:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(Z&amp;lt;1.24)$&lt;/li&gt;
+&lt;li&gt;$P(Z&amp;gt;-0.68)$&lt;/li&gt;
+&lt;li&gt;$P(-1.35\leq Z\leq 0.44)$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(Z&amp;lt;1.24)=0.8925$.&lt;/li&gt;
+&lt;li&gt;$P(Z&amp;gt;-0.68)=0.7517$.&lt;/li&gt;
+&lt;li&gt;$P(-1.35\leq Z\leq 0.44)=0.5815$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-4&#34;&gt;Exercise 4&lt;/h2&gt;
+&lt;p&gt;Let $Z$ be a random variable following a standard normal distribution model. Determine the value of $x$ in the following cases using the table of the distribution function:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$P(Z&amp;lt;x)=0.6406$.&lt;/li&gt;
+&lt;li&gt;$P(Z&amp;gt;x)=0.0606$.&lt;/li&gt;
+&lt;li&gt;$P(0\leq Z\leq x)=0.4783$.&lt;/li&gt;
+&lt;li&gt;$P(-1.5\leq Z\leq x)=0.2313$.&lt;/li&gt;
+&lt;li&gt;$P(-x\leq Z\leq x)=0.5467$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$x=0.3601$.&lt;/li&gt;
+&lt;li&gt;$x=1.5498$.&lt;/li&gt;
+&lt;li&gt;$x=2.0198$.&lt;/li&gt;
+&lt;li&gt;$x=-0.5299$.&lt;/li&gt;
+&lt;li&gt;$x=0.7499$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-5&#34;&gt;Exercise 5&lt;/h2&gt;
+&lt;p&gt;Let $X$ be a random variable following a normal distribution model $N(10,2)$.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calculate $P(X\leq 10)$.&lt;/li&gt;
+&lt;li&gt;Calculate $P(8\leq X\leq 14)$.&lt;/li&gt;
+&lt;li&gt;Calculate the interquartile range.&lt;/li&gt;
+&lt;li&gt;Calculate the third decile.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(X\leq 10)=0.5$.&lt;/li&gt;
+&lt;li&gt;$P(8\leq X\leq 14)=0.8186$.&lt;/li&gt;
+&lt;li&gt;$IQR=2.698$.&lt;/li&gt;
+&lt;li&gt;$D_3=8.9512$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-6&#34;&gt;Exercise 6&lt;/h2&gt;
+&lt;p&gt;It is known that the glucose level in blood of diabetic persons follows a normal distribution model with mean 106 mg/100 ml and standard deviation 8 mg/100 ml.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calculate the probability of a random diabetic person having a glucose level less than 120 mg/100 ml.&lt;/li&gt;
+&lt;li&gt;What percentage of persons have a glucose level between 90 and 120 mg/100 ml?&lt;/li&gt;
+&lt;li&gt;Calculate and interpret the first quartile of the glucose level.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(X\leq 120)=0.9599$.&lt;/li&gt;
+&lt;li&gt;$P(90\leq X\leq 120)=0.9372 \Rightarrow 93.72%$.&lt;/li&gt;
+&lt;li&gt;$Q_1=100.6041$ mg/100 ml.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-7&#34;&gt;Exercise 7&lt;/h2&gt;
+&lt;p&gt;It is known that the cholesterol level in males 30 years old follows a normal distribution with mean 220 mg/dl and standard deviation 30 mg/dl. If there are 20000 males 30 years old in the population,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;how many of them have a cholesterol level between 210 and 240 mg/dl?&lt;/li&gt;
+&lt;li&gt;If a cholesterol level greater than 250 mg/dl can provoke a thrombosis, how many of them are at risk of thrombosis?&lt;/li&gt;
+&lt;li&gt;Calculate the cholesterol level above which 20% of the males are?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(210\leq X\leq 240)=0.3781 \Rightarrow 7561.3$ persons.&lt;/li&gt;
+&lt;li&gt;$P(X&amp;gt; 250)=0.1587 \Rightarrow 3173.1$ persons.&lt;/li&gt;
+&lt;li&gt;$P_{80}=245.2486$ mg/dl.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-8&#34;&gt;Exercise 8&lt;/h2&gt;
+&lt;p&gt;In an exam done by 100 students, the average grade is 4.2 and only 32 students pass. Assuming that the grade follows a normal distribution model, how many students got a grade greater than 7?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      $P(X&amp;gt;7)=0.0508 \Rightarrow 5.1$ students.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-9&#34;&gt;Exercise 9&lt;/h2&gt;
+&lt;p&gt;In a population with 40000 persons, 2276 have between 0.8 and 0.84 milligrams of bilirubin per deciliter of blood, and 11508 have more than 0.84. Assuming that the level of bilirubin in blood follows a normal distribution model,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calculate the mean and the standard deviation.&lt;/li&gt;
+&lt;li&gt;How many persons have more than 1 mg of bilirubin per dl of blood?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-8&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-8&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-8&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\mu=0.7001$ mg/dl and $s=0.2497$ mg/dl.&lt;/li&gt;
+&lt;li&gt;$P(X&amp;gt;1)=0.1149 \Rightarrow 11.5$ persons.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-10&#34;&gt;Exercise 10&lt;/h2&gt;
+&lt;p&gt;It is known that the blood pressure of people in a population with 20000 persons follows a normal distribution model with mean 13 mm Hg and interquartile range 4 mm Hg.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;How many persons have a blood pressure above 16 mm Hg?&lt;/li&gt;
+&lt;li&gt;How much have to decrease the blood pressure of a person with 16 mm Hg in order to be below the 40% of people with lowest blood pressure?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-9&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-9&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-9&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$P(X&amp;gt;16)=0.1587 \Rightarrow 3174$ persons.&lt;/li&gt;
+&lt;li&gt;$D_4 = 12.25$ mm Hg, so, must decrease a least $3.75$ mm Hg.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-11&#34;&gt;Exercise 11&lt;/h2&gt;
+&lt;p&gt;A study tries to determine the effect of a low fat diet in the lifetime of rats. The rats where divided into two groups, one with a normal diet and another with a low fat diet. It is assumed that the lifetimes of both groups are normally distributed with the same variance but different mean. If 20% of rats with normal diet lived more than 12 months, 5% less than 8 months, and 85% of rats with low fat diet lived more than 11 months,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;what is the mean and the standard deviation of the lifetime of rats following a low fat diet?&lt;/li&gt;
+&lt;li&gt;If 40% of the rats were under a normal diet, and 60% of rats under a low fat diet, what is the probability that a random rat die before 9 months?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-10&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-10&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-10&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Naming $X_1$ and $X_2$ to the lifetime of rats with a normal diet and a low fat diet respectively,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$\mu_2=12.6673$ months and $s=1.6087$ months.&lt;/li&gt;
+&lt;li&gt;$P(X&amp;lt;9)=0.068$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-12&#34;&gt;Exercise 12&lt;/h2&gt;
+&lt;p&gt;A diagnostic test to determine doping of athletes returns a positive outcome when the concentration of a substance in blood is greater than 4 $\mu$g/ml. If the distribution of the substance concentration in doped athletes follows a normal distribution model with mean 4.5 $\mu$g/ml and standard deviation 0.2 $\mu$g/ml, and in non-doped athletes is normally distributed with mean 3 $\mu$g/ml and standard deviation 0.3 $\mu$g/ml,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;what is the sensitivity and specificity of the test?&lt;/li&gt;
+&lt;li&gt;If there is a 10% of doped athletes in a competition, what is the positive predicted value?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-11&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-11&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-11&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Naming $D$ to the event of being doped, $X$ to the concentration in doped athletes and $Y$ to the concentration in non-doped athletes,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sensitivity $P(+\vert D) = P(X&amp;gt;4)=0.9938$ and specificity $P(-\vert \bar D)=P(Y&amp;lt;4)=0.9996$&lt;/li&gt;
+&lt;li&gt;PPV $P(D\vert +) = 0.9961$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-13&#34;&gt;Exercise 13&lt;/h2&gt;
+&lt;p&gt;According to the central limit theorem, for big samples ($n\geq 30$) the sample mean $\bar x$ follows a normal distribution model $N(\mu,\sigma/\sqrt{n})$, where $\mu$ is the population mean and $\sigma$ the population standard deviation.&lt;/p&gt;
+&lt;p&gt;It is known that in a population the sural triceps elongation follows has mean 60 cm and standard deviation 15 cm. If you draw a sample of 30 individuals from this population, what is the probability of having a sample mean greater than 62 cm? If a sample is atypical if its mean is below the 5th percentile, is atypical a sample of 60 individuals with $\bar x=57$?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-12&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-12&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-12&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      $P(\bar x&amp;gt;62) = 0.2326$.&lt;br&gt;
+$P_{5}=56.8148$, so, the sample is non-atypical.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-14&#34;&gt;Exercise 14&lt;/h2&gt;
+&lt;p&gt;The curing time of a knee injury in soccer players follows a normal distribution model with mean 50 days and standard deviation 10 days. If there is a final match in 65 days, what is the probability that a player that has just injured his knee will miss the final? If the semifinal match is in 40 days, and 4 players has just injured the knee, what is the probability that some of them can play the semifinal?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-13&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-13&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-13&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Let $X$ be the curing time, $P(X&amp;gt;65)=0.0668$.&lt;br&gt;
+Let $Y$ be the number of injured players that could play the semifinal, $P(Y\geq 1)=0.4989$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

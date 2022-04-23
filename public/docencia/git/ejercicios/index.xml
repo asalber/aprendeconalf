@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ejercicios de Git | Aprende con Alf</title>
+    <link>/docencia/git/ejercicios/</link>
+      <atom:link href="/docencia/git/ejercicios/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ejercicios de Git</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Ejercicios de Git</title>
+      <link>/docencia/git/ejercicios/</link>
+    </image>
+    
+    <item>
+      <title>Ejercicios de creación y actualización de repositorios</title>
+      <link>/docencia/git/ejercicios/creacion-actualizacion-repositorios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/git/ejercicios/creacion-actualizacion-repositorios/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Configurar Git definiendo el nombre del usuario, el correo electrónico y activar el coloreado de la salida. Mostrar la configuración final.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; git config --global user.name &amp;quot;Your-Full-Name&amp;quot;
+&amp;gt; git config --global user.email &amp;quot;your-email-address&amp;quot;
+&amp;gt; git config --global color.ui auto
+&amp;gt; git config --list
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/creacion-actualizacion-repositorios/ejercicio1.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;Crear un repositorio nuevo con el nombre &lt;code&gt;libro&lt;/code&gt; y mostrar su contenido.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; mkdir libro
+&amp;gt; cd libro
+&amp;gt; git init
+&amp;gt; ls -la
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/creacion-actualizacion-repositorios/ejercicio2.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Comprobar el estado del repositorio.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Crear un fichero &lt;code&gt;indice.txt&lt;/code&gt; con el siguiente contenido:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Capítulo 1: Introducción a Git&lt;br&gt;
+Capítulo 2: Flujo de trabajo básico&lt;br&gt;
+Capítulo 3: Repositorios remotos&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Comprobar de nuevo el estado del repositorio.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Añadir el fichero a la zona de intercambio temporal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Volver a comprobar una vez más el estado del repositorio.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; git status
+&amp;gt; cat &amp;gt; indice.txt
+Capítulo 1: Introducción a Git
+Capítulo 2: Flujo de trabajo básico
+Capítulo 3: Repositorios remotos
+Ctrl+D
+&amp;gt; git status
+&amp;gt; git add indice.txt
+&amp;gt; git status
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/creacion-actualizacion-repositorios/ejercicio3.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;Realizar un commit de los últimos cambios con el mensaje &amp;ldquo;Añadido índice del libro.&amp;rdquo; y ver el estado del repositorio.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; git commit -m &amp;quot;Añadido índice del libro.&amp;quot;
+&amp;gt; git status
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/creacion-actualizacion-repositorios/ejercicio4.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-5&#34;&gt;Ejercicio 5&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Cambiar el fichero &lt;code&gt;indice.txt&lt;/code&gt; para que contenga lo siguiente:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Capítulo 1: Introducción a Git&lt;br&gt;
+Capítulo 2: Flujo de trabajo básico&lt;br&gt;
+Capítulo 3: Gestión de ramas&lt;br&gt;
+Capítulo 4: Repositorios remotos&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mostrar los cambios con respecto a la última versión guardada en el repositorio.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hacer un commit de los cambios con el mensaje &amp;ldquo;Añadido capítulo 3 sobre gestión de ramas&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-8&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-8&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-8&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; cat &amp;gt; indice.txt
+Capítulo 1: Introducción a Git
+Capítulo 2: Flujo de trabajo básico
+Capítulo 3: Gestión de ramas
+Capítulo 4: Repositorios remotos
+Ctrl+D
+&amp;gt; git diff
+&amp;gt; git add indice.txt
+&amp;gt; git commit -m &amp;quot;Añadido capítulo 3 sobre gestión de ramas&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-9&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-9&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-9&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/creacion-actualizacion-repositorios/ejercicio5.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-6&#34;&gt;Ejercicio 6&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Mostrar los cambios de la última versión del repositorio con respecto a la anterior.&lt;/li&gt;
+&lt;li&gt;Cambiar el mensaje del último commit por &amp;ldquo;Añadido capítulo 3 sobre gestión de ramas al índice.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Volver a mostrar los últimos cambios del repositorio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-10&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-10&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-10&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; git show
+&amp;gt; git commit --amend -m &amp;quot;Añadido capítulo 3 sobre gestión de ramas al índice.&amp;quot;
+git show
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-11&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-11&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-11&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/creacion-actualizacion-repositorios/ejercicio6.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ejercicios de manejo del historial de cambios</title>
+      <link>/docencia/git/ejercicios/historial-cambios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/git/ejercicios/historial-cambios/</guid>
+      <description>&lt;p&gt;&lt;i class=&#34;fas fa-exclamation-triangle&#34; style=&#34;color:red&#34;&gt;&lt;/i&gt; Para hacer estos ejercicios es necesario haber hecho antes los  
+&lt;a href=&#34;/git/ejercicios/creacion-actualizacion-repositorios.html&#34;&gt;ejercicios de creación y actualización de repositorios&lt;/a&gt; o bien hacer un clon del repositorio remoto 
+&lt;a href=&#34;https://github.com/asalber/libro-git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/asalber/libro-git&lt;/a&gt; mediante la siguiente secuencia de comandos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; git clone https://github.com/asalber/libro-git.git
+&amp;gt; cd libro-git
+&amp;gt; git reset --hard 8c808
+&amp;gt; git remote remove origin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Mostrar el historial de cambios del repositorio.&lt;/li&gt;
+&lt;li&gt;Crear la carpeta &lt;code&gt;capitulos&lt;/code&gt; y crear dentro de ella el fichero &lt;code&gt;capitulo1.txt&lt;/code&gt; con el siguiente texto.
+&lt;blockquote&gt;
+&lt;p&gt;Git es un sistema de control de versiones ideado por Linus Torvalds.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal.&lt;/li&gt;
+&lt;li&gt;Hacer un commit de los cambios con el mensaje &amp;ldquo;Añadido capítulo 1.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Volver a mostrar el historial de cambios del repositorio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; git log
+&amp;gt; mkdir capitulos
+&amp;gt; cat &amp;gt; capitulos/capitulo1.txt
+Git es un sistema de control de versiones ideado por Linus Torvalds.
+Ctrl+D
+&amp;gt; git add .
+&amp;gt; git commit -m &amp;quot;Añadido capítulo 1.&amp;quot;
+&amp;gt; git log
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/historial-cambios/ejercicio1.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Crear el fichero &lt;code&gt;capitulo2.txt&lt;/code&gt; en la carpeta &lt;code&gt;capitulos&lt;/code&gt; con el siguiente texto.
+&lt;blockquote&gt;
+&lt;p&gt;El flujo de trabajo básico con Git consiste en:
+1- Hacer cambios en el repositorio.
+2- Añadir los cambios a la zona de intercambio temporal.
+3- Hacer un commit de los cambios.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal.&lt;/li&gt;
+&lt;li&gt;Hacer un commit de los cambios con el mensaje &amp;ldquo;Añadido capítulo 2.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Mostrar las diferencias entre la última versión y dos versiones anteriores.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; cat &amp;gt; capitulos/capitulo2.txt
+El flujo de trabajo básico con Git consiste en:
+1- Hacer cambios en el repositorio.
+2- Añadir los cambios a la zona de intercambio temporal.
+3- Hacer un commit de los cambios.
+Ctrl+D
+&amp;gt; git add .
+&amp;gt; git commit -m &amp;quot;Añadido capítulo 2.&amp;quot;
+&amp;gt; git diff HEAD~2..HEAD
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/historial-cambios/ejercicio2.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Crear el fichero &lt;code&gt;capitulo3.txt&lt;/code&gt; en la carpeta &lt;code&gt;capitulos&lt;/code&gt; con el siguiente texto.
+&lt;blockquote&gt;
+&lt;p&gt;Git permite la creación de ramas lo que permite tener distintas versiones del mismo proyecto y trabajar de manera simultanea en ellas.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal.&lt;/li&gt;
+&lt;li&gt;Hacer un commit de los cambios con el mensaje &amp;ldquo;Añadido capítulo 3.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Mostrar las diferencias entre la primera y la última versión del repositorio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; cat &amp;gt; capitulos/capitulo3.txt
+Git permite la creación de ramas lo que permite tener distintas versiones del mismo proyecto y trabajar de manera simultanea en ellas.
+Ctrl+D
+&amp;gt; git add .
+&amp;gt; git commit -m &amp;quot;Añadido capítulo 3.&amp;quot;
+&amp;gt; git log
+&amp;gt; git diff &amp;amp;lt;codigo hash de la primera version&amp;gt;..HEAD
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/historial-cambios/ejercicio3.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Añadir al final del fichero &lt;code&gt;indice.txt&lt;/code&gt; la siguiente línea:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Capítulo 5: Conceptos avanzados&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Añadir los cambios a la zona de intercambio temporal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hacer un commit de los cambios con el mensaje &amp;ldquo;Añadido capítulo 5 al índice.&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mostrar quién ha hecho cambios sobre el fichero &lt;code&gt;indice.txt&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; echo &amp;quot;Capítulo 5: Conceptos avanzados&amp;quot; &amp;gt;&amp;gt; indice.txt
+&amp;gt; git add .
+&amp;gt; git commit -m &amp;quot;Añadido capítulo 5 al índice.&amp;quot;
+&amp;gt; git annotate indice.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/creacion-actualizacion-repositorios/ejercicio4.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ejercicios de deshacer cambios</title>
+      <link>/docencia/git/ejercicios/deshacer-cambios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/git/ejercicios/deshacer-cambios/</guid>
+      <description>&lt;p&gt;&lt;i class=&#34;fas fa-exclamation-triangle&#34; style=&#34;color:red&#34;&gt;&lt;/i&gt; Para hacer estos ejercicios es necesario haber hecho antes los 
+&lt;a href=&#34;/git/ejercicios/historial-cambios.html&#34;&gt;ejercicios sobre historial de cambios&lt;/a&gt; o bien hacer un clon del repositorio remoto 
+&lt;a href=&#34;https://github.com/asalber/libro-git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/asalber/libro-git&lt;/a&gt; mediante la siguiente secuencia de comandos:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; git clone https://github.com/asalber/libro-git.git
+&amp;gt; cd libro-git
+&amp;gt; git reset --hard 48ed8
+&amp;gt; git remote remove origin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Eliminar la última línea del fichero &lt;code&gt;indice.txt&lt;/code&gt; y guardarlo.&lt;/li&gt;
+&lt;li&gt;Comprobar el estado del repositorio.&lt;/li&gt;
+&lt;li&gt;Deshacer los cambios realizados en el fichero &lt;code&gt;indice.txt&lt;/code&gt; para volver a la versión anterior del fichero.&lt;/li&gt;
+&lt;li&gt;Volver a comprobar el estado del repositorio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; nano indice.txt
+# Eliminar la última línea y guardar el fichero.
+&amp;gt; git status
+&amp;gt; git checkout -- indice.txt
+&amp;gt; git status
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/deshacer-cambios/ejercicio1.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Eliminar la última línea del fichero &lt;code&gt;indice.txt&lt;/code&gt; y guardarlo.&lt;/li&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal.&lt;/li&gt;
+&lt;li&gt;Comprobar de nuevo el estado del repositorio.&lt;/li&gt;
+&lt;li&gt;Quitar los cambios de la zona de intercambio temporal, pero mantenerlos en el directorio de trabajo.&lt;/li&gt;
+&lt;li&gt;Comprobar de nuevo el estado del repositorio.&lt;/li&gt;
+&lt;li&gt;Deshacer los cambios realizados en el fichero &lt;code&gt;indice.txt&lt;/code&gt; para volver a la versión anterior del fichero.&lt;/li&gt;
+&lt;li&gt;Volver a comprobar el estado del repositorio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; nano indice.txt
+# Eliminar la última línea y guardar el fichero.
+&amp;gt; git add .
+&amp;gt; git status
+&amp;gt; git reset indice.txt
+&amp;gt; git status
+&amp;gt; git checkout -- indice.txt
+&amp;gt; git status
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/deshacer-cambios/ejercicio2.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Eliminar la última línea del fichero &lt;code&gt;indice.txt&lt;/code&gt; y guardarlo.&lt;/li&gt;
+&lt;li&gt;Eliminar el fichero &lt;code&gt;capitulos/capitulo3.txt&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Añadir un fichero nuevo &lt;code&gt;captitulos/capitulo4.txt&lt;/code&gt; vacío.&lt;/li&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal.&lt;/li&gt;
+&lt;li&gt;Comprobar de nuevo el estado del repositorio.&lt;/li&gt;
+&lt;li&gt;Quitar los cambios de la zona de intercambio temporal, pero mantenerlos en el directorio de trabajo.&lt;/li&gt;
+&lt;li&gt;Comprobar de nuevo el estado del repositorio.&lt;/li&gt;
+&lt;li&gt;Deshacer los cambios realizados para volver a la versión del repositorio.&lt;/li&gt;
+&lt;li&gt;Volver a comprobar el estado del repositorio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; nano indice.txt
+# Eliminar la última línea y guardar el fichero.
+&amp;gt; rm capitulos/capitulo3.txt
+&amp;gt; touch capitulos/capitulo4.txt
+&amp;gt; git add .
+&amp;gt; git status
+&amp;gt; git reset
+&amp;gt; git status
+&amp;gt; git checkout -- .
+&amp;gt; git status
+&amp;gt; git clean -f
+&amp;gt; git status
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/deshacer-cambios/ejercicio3.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Eliminar la última línea del fichero &lt;code&gt;indice.txt&lt;/code&gt; y guardarlo.&lt;/li&gt;
+&lt;li&gt;Eliminar el fichero &lt;code&gt;capitulos/capitulo3.txt&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje &amp;ldquo;Borrado accidental.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Comprobar el historial del repositorio.&lt;/li&gt;
+&lt;li&gt;Deshacer el último commit pero mantener los cambios anteriores en el directorio de trabajo y la zona de intercambio temporal.&lt;/li&gt;
+&lt;li&gt;Comprobar el historial y el estado del repositorio.&lt;/li&gt;
+&lt;li&gt;Volver a hacer el commit con el mismo mensaje de antes.&lt;/li&gt;
+&lt;li&gt;Deshacer el último commit y los cambios anteriores del directorio de trabajo volviendo a la versión anterior del repositorio.&lt;/li&gt;
+&lt;li&gt;Comprobar de nuevo el historial y el estado del repositorio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; nano indice.txt
+# Eliminar la última línea y guardar el fichero.
+&amp;gt; rm capitulos/capitulo3.txt
+&amp;gt; git commit -a &amp;quot;Borrado accidental.&amp;quot;
+&amp;gt; git status
+&amp;gt; git log
+&amp;gt; git reset --soft HEAD~1
+&amp;gt; git status
+&amp;gt; git commit -m &amp;quot;Borrado accidental.&amp;quot;
+&amp;gt; git status
+&amp;gt; git log
+&amp;gt; git reset --hard HEAD~1
+&amp;gt; git log
+&amp;gt; git status
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/deshacer-cambios/ejercicio4.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ejercicios de gestión de ramas</title>
+      <link>/docencia/git/ejercicios/ramas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/git/ejercicios/ramas/</guid>
+      <description>&lt;p&gt;&lt;i class=&#34;fas fa-exclamation-triangle&#34; style=&#34;color:red&#34;&gt;&lt;/i&gt; Para hacer estos ejercicios es necesario haber hecho antes los 
+&lt;a href=&#34;/git/ejercicios/historial-cambios.html&#34;&gt;ejercicios sobre historial de cambios&lt;/a&gt; o bien hacer un clon del repositorio remoto 
+&lt;a href=&#34;https://github.com/asalber/libro-git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/asalber/libro-git&lt;/a&gt; mediante la siguiente secuencia de comandos:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; git clone https://github.com/asalber/libro-git.git
+&amp;gt; cd libro-git
+&amp;gt; git reset --hard 48ed8
+&amp;gt; git remote remove origin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Crear una nueva rama &lt;code&gt;bibliografia&lt;/code&gt; y mostrar las ramas del repositorio.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; git branch bibliografia
+&amp;gt; git branch -av
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/ramas/ejercicio1.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Crear el fichero &lt;code&gt;capitulos/capitulo4.txt&lt;/code&gt; y añadir el texto siguiente&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;En este capítulo veremos cómo usar GitHub para alojar repositorios en remoto.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal.&lt;/li&gt;
+&lt;li&gt;Hacer un commit con el mensaje &amp;ldquo;Añadido capítulo 4.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Mostrar la historia del repositorio incluyendo todas las ramas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; cat &amp;gt; capitulos/capitulo4.txt
+En este capítulo veremos cómo usar GitHub para alojar repositorios en remoto.
+Ctrl+D
+&amp;gt; git add .
+&amp;gt; git commit -m &amp;quot;Añadido capítulo 4.&amp;quot;
+&amp;gt; git log --graph --all --oneline
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/ramas/ejercicio2.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Cambiar a la rama &lt;code&gt;bibliografia&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Crear el fichero &lt;code&gt;bibliografia.txt&lt;/code&gt; y añadir la siguiente referencia&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Chacon, S. and Straub, B. Pro Git. Apress.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal.&lt;/li&gt;
+&lt;li&gt;Hacer un commit con el mensaje &amp;ldquo;Añadida primera referencia bibliográfica.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Mostrar la historia del repositorio incluyendo todas las ramas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; git checkout bibliografia
+&amp;gt; cat &amp;gt; bibliografia.txt
+- Chacon, S. and Straub, B. Pro Git. Apress.
+Ctrl+D
+&amp;gt; git add .
+&amp;gt; git commit -m &amp;quot;Añadida primera referencia bibliográfica.&amp;quot;
+&amp;gt; git log --graph --all --oneline
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/ramas/ejercicio3.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Fusionar la rama &lt;code&gt;bibliografia&lt;/code&gt; con la rama &lt;code&gt;master&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Mostrar la historia del repositorio incluyendo todas las ramas.&lt;/li&gt;
+&lt;li&gt;Eliminar la rama &lt;code&gt;bibliografia&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Mostrar de nuevo la historia del repositorio incluyendo todas las ramas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; git checkout master
+&amp;gt; git merge bibliografia
+&amp;gt; git log --graph --all --oneline
+&amp;gt; git branch -d bibliografia
+&amp;gt; git log --graph --all --oneline
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/ramas/ejercicio4.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-5&#34;&gt;Ejercicio 5&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Crear la rama &lt;code&gt;bibliografia&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Cambiar a la rama &lt;code&gt;bibliografia&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Cambiar el fichero &lt;code&gt;bibliografia.txt&lt;/code&gt; para que contenga las siguientes referencias:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Scott Chacon and Ben Straub. Pro Git. Apress.&lt;/li&gt;
+&lt;li&gt;Ryan Hodson. Ry&amp;rsquo;s Git Tutorial. Smashwords (2014)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje &amp;ldquo;Añadida nueva referencia bibliográfica.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Cambiar a la rama &lt;code&gt;master&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Cambiar el fichero &lt;code&gt;bibliografia.txt&lt;/code&gt; para que contenga las siguientes referencias:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Chacon, S. and Straub, B. Pro Git. Apress.&lt;/li&gt;
+&lt;li&gt;Loeliger, J. and McCullough, M. Version control with Git. O&amp;rsquo;Reilly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje &amp;ldquo;Añadida nueva referencia bibliográfica.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Fusionar la rama &lt;code&gt;bibliografia&lt;/code&gt; con la rama &lt;code&gt;master&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Resolver el conflicto dejando el fichero &lt;code&gt;bibliografia.txt&lt;/code&gt; con las referencias:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Chacon, S. and Straub, B. Pro Git. Apress.&lt;/li&gt;
+&lt;li&gt;Loeliger, J. and McCullough, M. Version control with Git. O&amp;rsquo;Reilly.&lt;/li&gt;
+&lt;li&gt;Hodson, R. Ry&amp;rsquo;s Git Tutorial. Smashwords (2014)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje &amp;ldquo;Resuelto conflicto de bibliografía.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Mostrar la historia del repositorio incluyendo todas las ramas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-8&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-8&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-8&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; git branch bibliografia
+&amp;gt; git checkout bibliografia
+&amp;gt; cat &amp;gt; bibliografia.txt
+- Scott Chacon and Ben Straub. Pro Git. Apress.
+- Ryan Hodson. Ry&#39;s Git Tutorial. Smashwords (2014)
+Ctrl+D
+&amp;gt; git commit -a -m &amp;quot;Añadida nueva referencia bibliográfica.&amp;quot;
+&amp;gt; git checkout master
+&amp;gt; cat &amp;gt; bibliografia.txt
+- Chacon, S. and Straub, B. Pro Git. Apress.
+- Loeliger, J. and McCullough, M. Version control with Git. O&#39;Reilly.
+Ctrl+D
+&amp;gt; git commit -a -m &amp;quot;Añadida nueva referencia bibliográfica.&amp;quot;
+&amp;gt; git merge bibliografia
+&amp;gt; git nano bibliografia
+# Hacer los cambios indicados en el fichero
+&amp;gt; git commit -a -m &amp;quot;Solucionado conflicto bibliografía.&amp;quot;
+&amp;gt; git log --graph --all --oneline
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-9&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-9&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-9&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/ramas/ejercicio5.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ejercicios de repositorios remotos</title>
+      <link>/docencia/git/ejercicios/repositorios-remotos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/git/ejercicios/repositorios-remotos/</guid>
+      <description>&lt;p&gt;&lt;i class=&#34;fas fa-exclamation-triangle&#34; style=&#34;color:red&#34;&gt;&lt;/i&gt; Para hacer estos ejercicios es necesario haber hecho antes los 
+&lt;a href=&#34;/git/ejercicios/ramas.html&#34;&gt;ejercicios sobre ramas&lt;/a&gt; o bien hacer un clon del repositorio remoto 
+&lt;a href=&#34;https://github.com/asalber/libro-git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/asalber/libro-git&lt;/a&gt; mediante la siguiente secuencia de comandos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt; git clone https://github.com/asalber/libro-git.git
+&amp;gt; cd libro-git
+&amp;gt; git reset --hard cb1e4
+&amp;gt; git remote remove origin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Crear un nuevo repositorio público en GitHub con el nombre &lt;code&gt;libro-git&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Añadirlo al repositorio local del libro.&lt;/li&gt;
+&lt;li&gt;Mostrar todos los repositorios remotos configurados.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;# Crear el repositorio en GitHub y copiar su url con protocolo https.
+&amp;gt; git remote add github url
+&amp;gt; git remote -v
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/repositorios-remotos/ejercicio1.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Añadir los cambios del repositorio local al repositorio remoto de GitHub.&lt;/li&gt;
+&lt;li&gt;Acceder a GitHub y comprobar que se han subido los cambios mostrando el historial de versiones.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;&amp;gt;git push github master
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/repositorios-remotos/ejercicio2.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Colaborar en el repositorio remoto &lt;code&gt;libro-git&lt;/code&gt; de otro usuario.&lt;/li&gt;
+&lt;li&gt;Clonar su repositorio &lt;code&gt;libro-git&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Añadir el fichero &lt;code&gt;autores.txt&lt;/code&gt; que contenga el nombre del usuario y su correo electrónico.&lt;/li&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal.&lt;/li&gt;
+&lt;li&gt;Hacer un commit con el mensaje &amp;ldquo;Añadido autor.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Subir los cambios al repositorio remoto.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;# Entrar en GigHub en el proyecto libro-git del que seamos colaboradores y copiar la url.
+&amp;gt; git clone url
+&amp;gt; cat &amp;gt; autores.txt
+# Escribir el nombre del autor y su correo.
+Ctrl+D
+&amp;gt; git add .
+&amp;gt; git commit -m &amp;quot;Añadido autor.&amp;quot;
+&amp;gt; git push origin master.
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/repositorios-remotos/ejercicio3.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Hacer una bifurcación del repositorio remoto &lt;code&gt;asalber/libro-git&lt;/code&gt; en GitHub.&lt;/li&gt;
+&lt;li&gt;Clonar el repositorio creado en la cuenta de GitHub del usuario.&lt;/li&gt;
+&lt;li&gt;Crear una nueva rama &lt;code&gt;autoria&lt;/code&gt; y activarla.&lt;/li&gt;
+&lt;li&gt;Añadir el nombre del usuario y su correo al fichero &lt;code&gt;autores.txt&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Añadir los cambios a la zona de intercambio temporal.&lt;/li&gt;
+&lt;li&gt;Hacer un commit con el mensaje &amp;ldquo;Añadido nuevo autor.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Subir los cambios de la rama &lt;code&gt;autoria&lt;/code&gt; al repositorio remoto en GitHub.&lt;/li&gt;
+&lt;li&gt;Hacer un Pull Request de los cambios en la rama &lt;code&gt;autoria&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;# Hacer el fork del repositorio asalber/libro-git en GitHub y copiar la url del repositorio creado en la cuenta de GitHub del usuario.
+&amp;gt; git clone url
+&amp;gt; git checkout -b autoria
+# Editar con nano el fichero autores.txt y añadir el nombre y el correo electrónico del usuario en una nueva línea.
+&amp;gt; git commit -am &amp;quot;Añadido nuevo autor.&amp;quot;
+&amp;gt; git push origin autoria
+# Ir al repositorio remoto en GitHub y hacer clic en el botón Compare &amp;amp; Pull Request y después completar la solicitud haciendo clic en el botón Create Pull Request.
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;img src=&#34;../soluciones/repositorios-remotos/ejercicio4.gif&#34; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

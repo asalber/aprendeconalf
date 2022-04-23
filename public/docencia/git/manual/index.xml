@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manual de Git | Aprende con Alf</title>
+    <link>/docencia/git/manual/</link>
+      <atom:link href="/docencia/git/manual/index.xml" rel="self" type="application/rss+xml" />
+    <description>Manual de Git</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Manual de Git</title>
+      <link>/docencia/git/manual/</link>
+    </image>
+    
+    <item>
+      <title>Introducción a Git</title>
+      <link>/docencia/git/manual/introduccion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/git/manual/introduccion/</guid>
+      <description>&lt;h2 id=&#34;qué-es-un-sistema-de-control-de-versiones&#34;&gt;¿Qué es un sistema de control de versiones?&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    Un &lt;strong&gt;Sistema de Control de Versiones&lt;/strong&gt; (SCV) es una aplicación que permite gestionar los cambios que se realizan sobre los elementos de un proyecto o repositorio, guardando así versiones del mismo en todas sus fases de desarrollo.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Registra cada cambio en el proyecto o repositorio, quién y cuándo lo hace, en una base de datos.&lt;/li&gt;
+&lt;li&gt;Permite volver a estados previos del desarrollo.&lt;/li&gt;
+&lt;li&gt;Permite gestionar diferentes versiones del proyecto (ramas) para trabajar en paralelo y luego fundirlas.&lt;/li&gt;
+&lt;li&gt;Permite colaborar entre diferentes usuarios en un mismo repositorio, facilitando la resolución de conflictos.&lt;/li&gt;
+&lt;li&gt;Se utiliza principalmente en proyectos de desarrollo de software, pero sirve para cualquier otro tipo de proyecto.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;qué-es-git&#34;&gt;¿Qué es Git?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; es un sistema de control de versiones de código abierto ideado por Linus Torvalds (el padre del sistema operativo Linux) y actualmente es el sistema de control de versiones más extendido.&lt;/p&gt;
+&lt;p&gt;A diferencia de otros SCV Git tiene una arquitectura &lt;em&gt;distribuida&lt;/em&gt;, lo que significa que en lugar de guardar todos los cambios de un proyecto en un único sitio, cada usuario contiene una copia del repositorio con el historial de cambios completo del proyecto. Esto aumenta significativamente su rendimiento.&lt;/p&gt;
+&lt;img src=&#34;../img/logo-git.png&#34; alt=&#34;Logo de Git&#34;&gt;
+&lt;h2 id=&#34;configuración-de-git&#34;&gt;Configuración de Git&lt;/h2&gt;
+&lt;p&gt;Antes de empezar a usar git es necesario configurarlo con el nombre de usuario y su correo electrónico.&lt;/p&gt;
+&lt;h4 id=&#34;git-config&#34;&gt;&lt;code&gt;git config&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Establecer el nombre de usuario&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;git config --global user.name &amp;quot;Your-Full-Name&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Establecer el correo del usuario&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;git config --global user.email &amp;quot;your-email-address&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Activar el coloreado de la salida&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;git config --global color.ui auto
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Mostrar el estado original en los conflictos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;git config --global merge.conflictstyle diff3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Mostrar la configuración&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;git config --list
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Creación y actualización de repositorios</title>
+      <link>/docencia/git/manual/creacion-actualizacion-repositorios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/git/manual/creacion-actualizacion-repositorios/</guid>
+      <description>&lt;h2 id=&#34;creación-de-repositorios&#34;&gt;Creación de repositorios&lt;/h2&gt;
+&lt;h3 id=&#34;creación-de-un-repositorio-nuevo&#34;&gt;Creación de un repositorio nuevo&lt;/h3&gt;
+&lt;h4 id=&#34;git-init&#34;&gt;&lt;code&gt;git init&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git init &amp;lt;nombre-repositorio&amp;gt;&lt;/code&gt; crea un repositorio nuevo con el nombre &lt;code&gt;&amp;lt;nombre-repositorio&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Este comando crea crea una nueva carpeta con el nombre del repositorio, que a su vez contiene otra carpeta oculta llamada &lt;code&gt;.git&lt;/code&gt; que contiene la base de datos donde se registran los cambios en el repositorio.&lt;/p&gt;
+&lt;h2 id=&#34;copia-de-repositorios&#34;&gt;Copia de repositorios&lt;/h2&gt;
+&lt;h4 id=&#34;git-clone&#34;&gt;&lt;code&gt;git clone&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git clone &amp;lt;url-repositorio&amp;gt;&lt;/code&gt; crea una copia local del repositorio ubicado en la dirección &lt;code&gt;&amp;lt;url-repositorio&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A partir de que se hace la copia, los dos repositorios, el original y la copia, son independientes, es decir, cualquier cambio en uno de ellos no se verá reflejado en el otro.&lt;/p&gt;
+&lt;h2 id=&#34;añadir-cambios-a-un-repositorio&#34;&gt;Añadir cambios a un repositorio&lt;/h2&gt;
+&lt;p&gt;Con Git, cualquier cambio que hagamos en un proyecto tiene que pasar por tres estados hasta que guarde definitivamente en el repositorio.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Directorio de trabajo&lt;/strong&gt; Es el directorio que contiene una copia de una versión concreta del proyecto en la que se está trabajando. Puede contener ficheros que no pertenecen al repositorio.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zona temporal de intercambio&lt;/strong&gt; (staging area) es una zona donde se guardan los cambios temporalmente desde el directorio de trabajo antes de hacerlos definitivos y registrarlos en el repositorio.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Repositorio&lt;/strong&gt; Es donde finalmente se guardan los cambios confirmados desde la zona temporal de intercambio.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;añadir-cambios-a-la-zona-de-intercambio-temporal&#34;&gt;Añadir cambios a la zona de intercambio temporal&lt;/h3&gt;
+&lt;h4 id=&#34;git-add&#34;&gt;&lt;code&gt;git add&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git add &amp;lt;fichero&amp;gt;&lt;/code&gt; añade los cambios en el fichero &lt;code&gt;&amp;lt;fichero&amp;gt;&lt;/code&gt; del directorio de trabajo a la zona de intercambio temporal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git add &amp;lt;carpeta&amp;gt;&lt;/code&gt; añade los cambios en todos los ficheros de la carpeta &lt;code&gt;&amp;lt;carpeta&amp;gt;&lt;/code&gt; del directorio de trabajo a la zona de intercambio temporal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt; añade todos los cambios de todos los ficheros no guardados aún en la zona de intercambio temporal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;añadir-cambios-al-repositorio&#34;&gt;Añadir cambios al repositorio&lt;/h3&gt;
+&lt;h4 id=&#34;git-commit&#34;&gt;&lt;code&gt;git commit&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git commit -m &amp;quot;mensaje&amp;quot;&lt;/code&gt; confirma todos los cambios de la zona de intercambio temporal añadiéndolos al repositorio y creando una nueva versión del proyecto. &lt;code&gt;&amp;quot;mensaje&amp;quot;&lt;/code&gt; es un breve mensaje describiendo los cambios realizados que se asociará a la nueva versión del proyecto.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git commit --amend -m &amp;quot;mensaje&amp;quot;&lt;/code&gt; cambia el mensaje del último commit por el nuevo mensaje &lt;code&gt;&amp;quot;mensaje&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;../img/git-add-commit.png&#34; alt=&#34;Añadir commit&#34;&gt;
+&lt;h2 id=&#34;registro-de-cambios&#34;&gt;Registro de cambios&lt;/h2&gt;
+&lt;p&gt;Para guardar los cambios en un repositorio Git utiliza una estructura de tres niveles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Commit&lt;/strong&gt; Contiene información sobre el autor, el momento y el mensaje de los cambios.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Árbol (tree)&lt;/strong&gt; Cada commit contiene además un árbol donde se registran los nombres y rutas de los ficheros en el repositorio cuando se hizo el commit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Blob (binary file object)&lt;/strong&gt; Para cada uno de los ficheros listados en el árbol hay un blob, que contiene una instantánea comprimida del contenido del fichero cuando se hizo el commit.&lt;br&gt;
+Si un fichero del repositorio no ha cambiado en el commit, el árbol apunta al blob del fichero del último commit donde el fichero cambió.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;referenciar-un-commit&#34;&gt;Referenciar un commit&lt;/h2&gt;
+&lt;p&gt;Cada commit tiene asociado un código hash de 40 caracteres hexadecimales que lo identifica de manera única.
+Hay dos formas de referirse a un commit:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Nombre absoluto&lt;/strong&gt;: Se utiliza su código hash (basta indicar los 4 o 5 primeros dígitos).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nombre relativo&lt;/strong&gt;: Se utiliza la palabra &lt;code&gt;HEAD&lt;/code&gt; para referirse siempre al último commit. Para referirse al penúltimo commit se utiliza &lt;code&gt;HEAD~1&lt;/code&gt;, al antepenúltimo &lt;code&gt;HEAD~2&lt;/code&gt;, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;../img/modelo-datos-git.png&#34; alt=&#34;Modelo de datos de Git&#34;&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Historial de cambios</title>
+      <link>/docencia/git/manual/historial-cambios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/git/manual/historial-cambios/</guid>
+      <description>&lt;h2 id=&#34;estado-e-historia-de-un-repositorio&#34;&gt;Estado e historia de un repositorio&lt;/h2&gt;
+&lt;h3 id=&#34;mostrar-el-estado-de-un-repositorio&#34;&gt;Mostrar el estado de un repositorio&lt;/h3&gt;
+&lt;h4 id=&#34;git-status&#34;&gt;&lt;code&gt;git status&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git status&lt;/code&gt; muestra el estado de los cambios en el repositorio desde la última versión guardada. En particular, muestra los ficheros con cambios en el directorio de trabajo que no se han añadido a la zona de intercambio temporal y los ficheros en la zona de intercambio temporal que no se han añadido al repositorio.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mostrar-el-historial-de-versiones-de-un-repositorio&#34;&gt;Mostrar el historial de versiones de un repositorio&lt;/h3&gt;
+&lt;h4 id=&#34;git-log&#34;&gt;&lt;code&gt;git log&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git log&lt;/code&gt; muestra el historial de commits de un repositorio ordenado cronológicamente. Para cada commit muestra su código hash, el autor, la fecha, la hora y el mensaje asociado.&lt;br&gt;
+Este comando es muy versátil y muestra la historia del repositorio en distintos formatos dependiendo de los parámetros que se le den. Los más comunes son:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--oneline&lt;/code&gt; muestra cada commit en una línea produciendo una salida más compacta.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--graph&lt;/code&gt; muestra la historia en forma de grafo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mostrar-los-datos-de-un-commit&#34;&gt;Mostrar los datos de un commit&lt;/h3&gt;
+&lt;h4 id=&#34;git-show&#34;&gt;&lt;code&gt;git show&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git show&lt;/code&gt; muestra el usuario, el día, la hora y el mensaje del último commit, así como las diferencias con el anterior.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git show &amp;lt;commit&amp;gt;&lt;/code&gt; muestra el usuario, el día, la hora y el mensaje del commit indicado, así como las diferencias con el anterior.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mostrar-el-historial-de-cambios-de-un-fichero&#34;&gt;Mostrar el historial de cambios de un fichero&lt;/h3&gt;
+&lt;h4 id=&#34;git-annotate&#34;&gt;&lt;code&gt;git annotate&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git annotate&lt;/code&gt; muestra el contenido de un fichero anotando cada línea con información del commit en el que se introdujo.&lt;br&gt;
+Cada línea de la salida contiene los 8 primeros dígitos del código hash del commit correspondiente al cambio, el autor de los cambio, la fecha, el número de línea del fichero y el contenido de la línea.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;mostrar-las-diferencias-entre-versiones&#34;&gt;Mostrar las diferencias entre versiones&lt;/h2&gt;
+&lt;h4 id=&#34;git-diff&#34;&gt;&lt;code&gt;git diff&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git diff&lt;/code&gt; muestra las diferencias entre el directorio de trabajo y la zona de intercambio temporal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git diff --cached&lt;/code&gt; muestra las diferencias entre la zona de intercambio temporal y el último commit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git diff HEAD&lt;/code&gt; muestra la diferencia entre el directorio de trabajo y el último commit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Deshacer cambios</title>
+      <link>/docencia/git/manual/deshacer-cambios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/git/manual/deshacer-cambios/</guid>
+      <description>&lt;h2 id=&#34;deshacer-cambios&#34;&gt;Deshacer cambios&lt;/h2&gt;
+&lt;h3 id=&#34;eliminar-cambios-del-directorio-de-trabajo-o-volver-a-una-versión-anterior&#34;&gt;Eliminar cambios del directorio de trabajo o volver a una versión anterior&lt;/h3&gt;
+&lt;h4 id=&#34;git-checkout&#34;&gt;&lt;code&gt;git checkout&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git checkout &amp;lt;commit&amp;gt; -- &amp;lt;file&amp;gt;&lt;/code&gt; actualiza el fichero &lt;code&gt;&amp;lt;file&amp;gt;&lt;/code&gt; a la versión correspondiente al commit &lt;code&gt;&amp;lt;commit&amp;gt;&lt;/code&gt;.&lt;br&gt;
+Suele utilizarse para eliminar los cambios en un fichero que no han sido guardados aún en la zona de intercambio temporal, mediante el comando &lt;code&gt;git checkout HEAD -- &amp;lt;file&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;eliminar-cambios-de-la-zona-de-intercambio-temporal&#34;&gt;Eliminar cambios de la zona de intercambio temporal&lt;/h3&gt;
+&lt;h4 id=&#34;git-reset&#34;&gt;&lt;code&gt;git reset&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git reset &amp;lt;fichero&amp;gt;&lt;/code&gt; elimina los cambios del fichero &lt;code&gt;&amp;lt;fichero&lt;/code&gt;&amp;gt; de la zona de intercambio temporal, pero preserva los cambios en el directorio de trabajo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para eliminar por completo los cambios de un fichero que han sido guardados en la zona de intercambio temporal hay que aplicar este comando y después &lt;code&gt;git checkout HEAD -- &amp;lt;fichero&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;eliminar-cambios-de-un-commit&#34;&gt;Eliminar cambios de un commit&lt;/h3&gt;
+&lt;h4 id=&#34;git-reset-1&#34;&gt;&lt;code&gt;git reset&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git reset --hard &amp;lt;commit&amp;gt;&lt;/code&gt; elimina todos los cambios desde el commit &lt;code&gt;&amp;lt;commit&amp;gt;&lt;/code&gt; y actualiza el HEAD este commit.&lt;/p&gt;
+&lt;p&gt;Suele usarse para eliminar todos los cambios en el directorio de trabajo desde el último commit mediante el comando &lt;code&gt;git reset --hard HEAD&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+&lt;div&gt;
+  Usar con cuidado este comando pues los cambios posteriores al commit indicado se pierden por completo.
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git reset &amp;lt;commit&amp;gt;&lt;/code&gt; actualiza el HEAD al commit &lt;code&gt;&amp;lt;commit&amp;gt;&lt;/code&gt;, es decir, elimina todos los commits posteriores a este commit, pero no elimina los cambios del directorio de trabajo.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gestión de ramas</title>
+      <link>/docencia/git/manual/gestion-ramas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/git/manual/gestion-ramas/</guid>
+      <description>&lt;h2 id=&#34;ramas&#34;&gt;Ramas&lt;/h2&gt;
+&lt;p&gt;Inicialmente cualquier repositorio tiene una única rama llamada &lt;strong&gt;master&lt;/strong&gt; donde se van sucediendo todos los commits de manera lineal.&lt;/p&gt;
+&lt;p&gt;Una de las característica más útiles de Git es que permite la creación de ramas para trabajar en distintas versiones de un proyecto a la vez.&lt;/p&gt;
+&lt;p&gt;Esto es muy útil si, por ejemplo, se quieren añadir nuevas funcionalidades al proyecto sin que interfieran con lo desarrollado hasta ahora.&lt;/p&gt;
+&lt;p&gt;Cuando se termina el desarrollo de las nuevas funcionalidades las ramas se pueden fusionar para incorporar lo cambios al proyecto principal.&lt;/p&gt;
+&lt;h3 id=&#34;creación-de-ramas&#34;&gt;Creación de ramas&lt;/h3&gt;
+&lt;h4 id=&#34;git-branch&#34;&gt;&lt;code&gt;git branch&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git branch &amp;lt;rama&amp;gt;&lt;/code&gt; crea una nueva rama con el nombre &lt;code&gt;&amp;lt;rama&amp;gt;&lt;/code&gt; en el repositorio a partir del último commit, es decir, donde apunte HEAD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Al crear una rama a partir de un commit, el flujo de commits se bifurca en dos de manera que se pueden desarrollar dos versiones del proyecto en paralelo.&lt;/p&gt;
+&lt;img src=&#34;../img/ramificacion.png&#34; alt=&#34;Dos ramas del repositorio git&#34;&gt;
+&lt;h3 id=&#34;desarrollo-en-ramas-diferentes&#34;&gt;Desarrollo en ramas diferentes&lt;/h3&gt;
+&lt;img src=&#34;../img/dos-ramas.png&#34; alt=&#34;Dos ramas del repositorio git&#34;&gt;
+&lt;h3 id=&#34;listado-de-ramas&#34;&gt;Listado de ramas&lt;/h3&gt;
+&lt;h4 id=&#34;git-log&#34;&gt;&lt;code&gt;git log&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git branch&lt;/code&gt; muestra las ramas activas de un repositorio indicando con &lt;strong&gt;*&lt;/strong&gt; la rama activa en ese momento.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git log --graph --oneline&lt;/code&gt; muestra la historia del repositorio en forma de grafo (&amp;ndash;graph) incluyendo todas las ramas (&amp;ndash;all).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cambio-de-ramas&#34;&gt;Cambio de ramas&lt;/h3&gt;
+&lt;h4 id=&#34;git-checkout&#34;&gt;&lt;code&gt;git checkout&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git checkout &amp;lt;rama&amp;gt;&lt;/code&gt; actualiza los ficheros del directorio de trabajo a la última versión del repositorio correspondiente a la rama &lt;code&gt;&amp;lt;rama&amp;gt;&lt;/code&gt;, y la activa, es decir, HEAD pasa a apuntar al último commit de esta rama.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git checkout -b &amp;lt;rama&amp;gt;&lt;/code&gt; crea una nueva rama con el nombre &lt;code&gt;&amp;lt;rama&amp;gt;&lt;/code&gt; y la activa, es decir, HEAD pasa a apuntar al último commit de esta rama. Este comando es equivalente aplicar los comandos &lt;code&gt;git branch &amp;lt;rama&amp;gt;&lt;/code&gt; y después &lt;code&gt;git checkout &amp;lt;rama&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;fusión-de-ramas&#34;&gt;Fusión de ramas&lt;/h3&gt;
+&lt;h4 id=&#34;git-merge&#34;&gt;&lt;code&gt;git merge&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git merge &amp;lt;rama&amp;gt;&lt;/code&gt; integra los cambios de la rama &lt;code&gt;&amp;lt;rama&amp;gt;&lt;/code&gt; en la rama actual a la que apunta HEAD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;../img/fusion-ramas.png&#34; alt=&#34;Dos ramas del repositorio git&#34;&gt;
+&lt;h3 id=&#34;resolución-de-conflictos&#34;&gt;Resolución de conflictos&lt;/h3&gt;
+&lt;p&gt;Para fusionar dos ramas es necesario que no haya conflictos entre los cambios realizados a las dos versiones del proyecto.&lt;/p&gt;
+&lt;p&gt;Si en ambas versiones se han hecho cambios sobre la misma parte de un fichero, entonces se produce un conflicto y es necesario resolverlo antes de poder fusionar las ramas.&lt;/p&gt;
+&lt;p&gt;La resolución debe hacerse manualmente observando los cambios que interfieren y decidiendo cuales deben prevalecer, aunque existen herramientas como KDif3 o meld que facilitan el proceso.&lt;/p&gt;
+&lt;h3 id=&#34;reorganización-de-ramas&#34;&gt;Reorganización de ramas&lt;/h3&gt;
+&lt;h4 id=&#34;git-rebase&#34;&gt;&lt;code&gt;git rebase&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git rebase &amp;lt;rama-1&amp;gt; &amp;lt;rama-2&amp;gt;&lt;/code&gt; replica los cambios de la rama &lt;code&gt;&amp;lt;rama-2&amp;gt;&lt;/code&gt; en la rama &lt;code&gt;&amp;lt;rama-1&amp;gt;&lt;/code&gt; partiendo del ancestro común de ambas ramas.
+El resultado es el mismo que la fusión de las dos ramas pero la bifurcación de la &lt;code&gt;&amp;lt;rama-2&amp;gt;&lt;/code&gt; desaparece ya que sus commits pasan a estar en la &lt;code&gt;&amp;lt;rama-1&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;eliminación-de-ramas&#34;&gt;Eliminación de ramas&lt;/h3&gt;
+&lt;h4 id=&#34;git-branch--d&#34;&gt;&lt;code&gt;git branch -d&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git branch -d &amp;lt;rama&amp;gt;&lt;/code&gt; elimina la rama de nombre &lt;code&gt;&amp;lt;rama&amp;gt;&lt;/code&gt; siempre y cuando haya sido fusionada previamente.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git branch -D &amp;lt;rama&amp;gt;&lt;/code&gt; elimina la rama de nombre &lt;code&gt;&amp;lt;rama&amp;gt;&lt;/code&gt; incluso si no ha sido fusionada. Si la rama no ha sido fusionada previamente se perderán todos los cambios de esa rama.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Repositorios remotos</title>
+      <link>/docencia/git/manual/repositorios-remotos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/git/manual/repositorios-remotos/</guid>
+      <description>&lt;h2 id=&#34;repositorios-remotos&#34;&gt;Repositorios remotos&lt;/h2&gt;
+&lt;p&gt;La otra característica de Git, que unida a las ramas, facilita la colaboración entre distintos usuarios en un proyecto son los repositorios remotos.&lt;/p&gt;
+&lt;p&gt;Git permite la creación de una copia del repositorio en un servidor git en internet. La principal ventaja de tener una copia remota del repositorio, a parte de servir como copia de seguridad, es que otros usuarios pueden acceder a ella y hacer también cambios.&lt;/p&gt;
+&lt;p&gt;Existen muchos proveedores de alojamiento para repositorios Git pero el más usado es GitHub.&lt;/p&gt;
+&lt;h3 id=&#34;qué-es-github&#34;&gt;¿Qué es GitHub?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt; es el proveedor de alojamiento en la nube para repositorios gestionados con git más usado y el que actualmente tiene alojados más proyectos de desarrollo de software de código abierto en el mundo.&lt;/p&gt;
+&lt;p&gt;La principal ventaja de GitHub es que permite albergar un número ilimitado de repositorios tanto públicos como privados, y que además ofrece servicios de registro de errores, solicitud de nuevas funcionalidades, gestión de tareas, wikis o publicación de páginas web, para cada proyecto, incluso con el plan básico que es gratuito.&lt;/p&gt;
+&lt;img src=&#34;../img/logo-github.jpeg&#34; alt=&#34;Logo de GitHub&#34;&gt;
+&lt;h3 id=&#34;añadir-un-repositorio-remoto&#34;&gt;Añadir un repositorio remoto&lt;/h3&gt;
+&lt;h4 id=&#34;git-remote-add&#34;&gt;&lt;code&gt;git remote add&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git remote add &amp;lt;repositorio-remoto&amp;gt; &amp;lt;url&amp;gt;&lt;/code&gt; crea un enlace con el nombre &lt;code&gt;&amp;lt;repositorio-remoto&amp;gt;&lt;/code&gt; a un repositorio remoto ubicado en la dirección &lt;code&gt;&amp;lt;url&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cuando se añade un repositorio remoto a un repositorio, Git seguirá también los cambios del repositorio remoto de manera que se pueden descargar los cambios del repositorio remoto al local y se pueden subir los cambios del repositorio local al remoto.&lt;/p&gt;
+&lt;h3 id=&#34;lista-de-repositorios-remotos&#34;&gt;Lista de repositorios remotos&lt;/h3&gt;
+&lt;h4 id=&#34;git-remote&#34;&gt;&lt;code&gt;git remote&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git remote&lt;/code&gt; muestra un listado con todos los enlaces a repositorios remotos definidos en un repositorio local.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git remote -v&lt;/code&gt; muestra además las direcciones url para cada repositorio remoto.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;descargar-cambios-desde-un-repositorio-remoto&#34;&gt;Descargar cambios desde un repositorio remoto&lt;/h3&gt;
+&lt;h4 id=&#34;git-pull&#34;&gt;&lt;code&gt;git pull&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git pull &amp;lt;remoto&amp;gt; &amp;lt;rama&amp;gt;&lt;/code&gt; descarga los cambios de la rama &lt;code&gt;&amp;lt;rama&amp;gt;&lt;/code&gt; del repositorio remoto &lt;code&gt;&amp;lt;remoto&amp;gt;&lt;/code&gt; y los integra en la última versión del repositorio local, es decir, en el HEAD.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git fetch &amp;lt;remoto&amp;gt;&lt;/code&gt; descarga los cambios del repositorio remoto &lt;code&gt;&amp;lt;remoto&amp;gt;&lt;/code&gt; pero no los integra en la última versión del repositorio local.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;subir-cambios-a-un-repositorio-remoto&#34;&gt;Subir cambios a un repositorio remoto&lt;/h3&gt;
+&lt;h4 id=&#34;git-push&#34;&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git push &amp;lt;remoto&amp;gt; &amp;lt;rama&amp;gt;&lt;/code&gt; sube al repositorio remoto &lt;code&gt;&amp;lt;remoto&amp;gt;&lt;/code&gt; los cambios de la rama &lt;code&gt;&amp;lt;rama&amp;gt;&lt;/code&gt; en el repositorio local.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;colaboración-en-repositorios-remotos-de-github&#34;&gt;Colaboración en repositorios remotos de GitHub&lt;/h3&gt;
+&lt;p&gt;Existen dos formas de colaborar en un repositorio alojado en GitHub:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ser colaborador del repositorio.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Recibir autorización de colaborador por parte de la persona propietaria del proyecto.&lt;/li&gt;
+&lt;li&gt;Clonar el repositorio en local.&lt;/li&gt;
+&lt;li&gt;Hacer cambios en el repositorio local.&lt;/li&gt;
+&lt;li&gt;Subir los cambios al repositorio remoto. Primero hacer &lt;code&gt;git pull&lt;/code&gt; para integrar los cambios remotos en el repositorio local y luego &lt;code&gt;git push&lt;/code&gt; para subir los cambios del repositorio local al remoto.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Replicar el repositorio y solicitar integración de cambios.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Replicar el repositorio remoto en nuestra cuenta de GitHub mediante un &lt;code&gt;fork&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Hacer cambios en nuestro repositorio remoto.&lt;/li&gt;
+&lt;li&gt;Solicitar a la persona propietaria del repositorio original que integre nuestros cambios en su repositorio mediante un &lt;code&gt;pull request&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Referencias</title>
+      <link>/docencia/git/manual/referencias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/git/manual/referencias/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git&lt;/a&gt;. Sitio web de Git.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;. Sitio web de GitHub.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://git-scm.com/book/es/v2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pro Git&lt;/a&gt;. Libro oficial de Git.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.smashwords.com/books/view/498426&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ry&amp;rsquo;s Git Tutorial&lt;/a&gt;. Tutorial de Git gratuito.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gitcheats.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gitcheats&lt;/a&gt;. Página de ayuda sobre los comandos de Git.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.git-tower.com/learn/cheat-sheets/git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trucos y consejos de Git&lt;/a&gt; Resumen de los comandos más importantes y consejos sobre el uso de Git.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chuleta de comandos de Git&lt;/a&gt; Resumen de los comandos de Git más habituales.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.git-tower.com/learn/cheat-sheets/vcs-workflow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Flujos de trabajo con Git&lt;/a&gt; Esquema de los flujos de trabajo más habituales con Git.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

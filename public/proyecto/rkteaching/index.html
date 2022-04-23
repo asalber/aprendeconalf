@@ -1,0 +1,1658 @@
+<!DOCTYPE html><html lang="es-es" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alfredo Sánchez Alberca">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Un paquete de R para el aprendizaje de Estadística">
+
+  
+  <link rel="alternate" hreflang="es-es" href="/proyecto/rkteaching/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#6f5499">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700%7CSource Sans Pro:400+400italic%7COpen Sans:400+400italic%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/proyecto/rkteaching/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@aprendeconalf">
+  <meta property="twitter:creator" content="@aprendeconalf">
+  
+  <meta property="og:site_name" content="Aprende con Alf">
+  <meta property="og:url" content="/proyecto/rkteaching/">
+  <meta property="og:title" content="rkTeaching | Aprende con Alf">
+  <meta property="og:description" content="Un paquete de R para el aprendizaje de Estadística"><meta property="og:image" content="/proyecto/rkteaching/featured.png">
+  <meta property="twitter:image" content="/proyecto/rkteaching/featured.png"><meta property="og:locale" content="es-es">
+  
+    
+      <meta property="article:published_time" content="2020-09-01T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-12-27T19:51:26&#43;01:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/proyecto/rkteaching/"
+  },
+  "headline": "rkTeaching",
+  
+  "image": [
+    "/proyecto/rkteaching/featured.png"
+  ],
+  
+  "datePublished": "2020-09-01T00:00:00Z",
+  "dateModified": "2021-12-27T19:51:26+01:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Alfredo Sánchez Alberca"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aprende con Alf",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_192x192_fit_lanczos_3.png"
+    }
+  },
+  "description": "Un paquete de R para el aprendizaje de Estadística"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>rkTeaching | Aprende con Alf</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Buscar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Buscar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Sobre mi</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Docencia</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/docencia/calculo/"><span>Cálculo</span></a>
+            
+              <a class="dropdown-item" href="/docencia/estadistica/"><span>Estadística</span></a>
+            
+              <a class="dropdown-item" href="/docencia/r/"><span>R</span></a>
+            
+              <a class="dropdown-item" href="/docencia/python/"><span>Python</span></a>
+            
+              <a class="dropdown-item" href="/docencia/spss/"><span>SPSS</span></a>
+            
+              <a class="dropdown-item" href="/docencia/geogebra/"><span>Geogebra</span></a>
+            
+              <a class="dropdown-item" href="/docencia/git/"><span>Git</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Proyectos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publicaciones</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contacto</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Buscar"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Claro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Oscuro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automático</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>rkTeaching</h1>
+
+  
+  <p class="page-subtitle">Un paquete de R para el aprendizaje de Estadística</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Última actualización el
+      
+    
+    Dec 27, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/proyecto/rkteaching/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/r/">R</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 173px; max-height: 200px;">
+  <div style="position: relative">
+    <img src="/proyecto/rkteaching/featured.png" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2>Índice</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#qué-es-rkteaching">¿Qué es rkTeaching?</a></li>
+    <li><a href="#instalación">Instalación</a>
+      <ul>
+        <li><a href="#instalación-en-windows">Instalación en Windows</a></li>
+        <li><a href="#instalación-en-mac-os">Instalación en Mac Os</a></li>
+        <li><a href="#instalación-en-linux">Instalación en Linux</a></li>
+      </ul>
+    </li>
+    <li><a href="#procedimientos-estadísticos">Procedimientos estadísticos</a></li>
+    <li><a href="#funcionalidades">Funcionalidades</a></li>
+    <li><a href="#cómo-citar-rkteaching">¿Cómo citar rkTeaching?</a></li>
+  </ul>
+</nav>
+<h2 id="qué-es-rkteaching">¿Qué es rkTeaching?</h2>
+<p>rkTeaching es un paquete de 
+<a href="http://www.r-project.org/" target="_blank" rel="noopener">R</a> que proporciona un plugin para la interfaz gráfica 
+<a href="http://rkward.sourceforge.net/" target="_blank" rel="noopener">RKWard</a> añadiendo nuevos menús y cuadros de diálogo especialmente diseñados para la enseñanza de Estadística.</p>
+<p>El paquete ha sido desarrollado y es mantenido por Alfredo Sánchez Alberca 
+<a href="mailto:asalber@ceu.es">asalber@ceu.es</a> del Departamento de Matemáticas de la Universidad San Pablo CEU de Madrid.</p>
+<p>Si descubre algún error o tiene cualquier sugerencia, por favor, envíeselo por correo al autor o bien indíquelo como un 
+<a href="https://github.com/asalber/rkTeaching_es/issues" target="_blank" rel="noopener">issue en Github</a>.</p>
+<p><img src="img/rkward.png" alt="RKWArd"></p>
+<h2 id="instalación">Instalación</h2>
+<h3 id="instalación-en-windows">Instalación en Windows</h3>
+<p>Para usuarios de plataformas Windows existe un programa de instalación que incluye R, RKWard y rkTeaching.</p>
+<p>
+<a href="https://drive.google.com/file/d/17eWedHkSI1f0pIjAra94HOwagchr-h7T/view?usp=sharing" target="_blank" rel="noopener">Descarga la última versión (R versión 3.6.2, RKWard versión 0.7.1b, rkTeaching versión 1.3.0)</a></p>
+<p>Una vez descargado el fichero, sólo hay que ejecutarlo para descomprimirlo.
+Al ejecutarse aparecerá un cuadro de diálogo donde preguntará por la unidad y el directorio de instalación y es importante indicar que se instale en la carpeta raíz del disco duro C, es decir en la dirección C:, tras esto se creará una carpeta rkward y dentro de ella la carpeta bin donde se encuentra el fichero <code>rkward.exe</code> que hay que ejecutar para arrancar RKWard.</p>
+<p>El siguiente vídeo muestra el proceso de instalación.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/BrqFyfNO9RM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="instalación-en-mac-os">Instalación en Mac Os</h3>
+<p>Para instalar el software en plataformas Mac Os debe instalarse cada programa por separado con el siguiente orden:</p>
+<ol>
+<li>
+<p><strong>Instalar R</strong>. R puede descargarse desde la página 
+<a href="https://cran.r-project.org/bin/macosx/el-capitan/base/R-3.5.3.pkg" target="_blank" rel="noopener">https://cran.r-project.org/</a>.
+Se recomienda instalar la versión 3.5.3 para MacOs.</p>
+</li>
+<li>
+<p><strong>Instalar RKWard</strong>. RKWard puede descargarse desde la página 
+<a href="http://rkward.sourceforge.net" target="_blank" rel="noopener">http://rkward.sourceforge.net</a>.
+Debe seleccionarse la distribución correspondiente a Mac Os (
+<a href="https://download.kde.org/stable/rkward/0.7.0/mac/RKWard-binary-0.7.0b_OSX10.11_KF5-5.42.0_needs_CRAN_R-3.5.0.pkg" target="_blank" rel="noopener">https://download.kde.org/stable/rkward/0.7.0/mac/RKWard-binary-0.7.0b_OSX10.11_KF5-5.42.0_needs_CRAN_R-3.5.0.pkg</a>) y seguir las instrucciones de instalación que allí se especifican.
+Es importante asegurase de tener una versión de Mac OS X 10.11 o superior, ya que RKWard no funciona con versiones anteriores.</p>
+<p>Si hay algún error en la instalación, consultar las posibles soluciones en (
+<a href="http://rkward.sourceforge.net/wiki/RKWard_on_Mac#Troubleshooting" target="_blank" rel="noopener">http://rkward.sourceforge.net/wiki/RKWard_on_Mac#Troubleshooting</a>)</p>
+</li>
+<li>
+<p><strong>Instalar los paquetes de los que depende rkTeaching</strong>. Para instalar rkTeaching primero hay que instalar los paquetes de R de los que depende.
+Para ello, hay que ejecutar R en línea de comandos, o bien arrancar RKWard e ir a la solapa de la Consola de R (R console) e introducir los siguientes comandos:</p>
+<pre><code class="language-R">install.packages(c(&quot;R2HTML&quot;,&quot;car&quot;,&quot;e1071&quot;,&quot;Hmisc&quot;,&quot;plyr&quot;,&quot;ggplot2&quot;,&quot;prob&quot;,&quot;ez&quot;,&quot;multcomp&quot;, &quot;remotes&quot;))
+</code></pre>
+</li>
+<li>
+<p><strong>Instalar rkTeaching</strong>. La mejor forma de instalar rkTeaching desde este repositorio es utilizando el paquete de R <code>devtools</code>.
+Para ello hay que introducir los siguientes comandos en la consola de R:</p>
+<pre><code class="language-R">library(remotes)
+install_github(&quot;rkward-community/rk.Teaching&quot;)
+</code></pre>
+<p>El siguiente vídeo muestra el proceso de instalación.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/SB1oER6HbEs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</li>
+</ol>
+<h3 id="instalación-en-linux">Instalación en Linux</h3>
+<p>Para instalar el software en plataformas Linux debe instalarse cada programa por separado con el siguiente orden:</p>
+<ol>
+<li>
+<p><strong>Instalar R</strong>. R puede descargarse desde la página 
+<a href="http://cran.es.r-project.org/" target="_blank" rel="noopener">http://cran.es.r-project.org/</a>.
+Debe seleccionarse la distribución correspondiente a Linux y seguir las instrucciones de instalación que allí se especifican.
+Es necesario que la versión de R sea la 3.0 o superior.</p>
+<p>En sistemas Debian y Ubuntu, puede instalarse desde la línea de comandos con el comando:</p>
+<pre><code class="language-sh">sudo apt-get install rbase
+</code></pre>
+</li>
+<li>
+<p><strong>Instalar RKWard</strong>. RKWard puede descargarse desde la página 
+<a href="http://rkward.sourceforge.net" target="_blank" rel="noopener">http://rkward.sourceforge.net</a>.
+Debe seleccionarse la distribución correspondiente a Linux y seguir las instrucciones de instalación que allí se especifican.</p>
+<p>En sistemas Debian y Ubuntu, puede instalarse desde la línea de comandos con el comando:</p>
+<pre><code class="language-sh">sudo apt-get install rkward
+</code></pre>
+<p>Es importante asegurarse de que la versión instalada es la 0.6.5 o superior.</p>
+</li>
+<li>
+<p><strong>Instalar los paquetes de los que depende rkTeaching</strong>. Para instalar rkTeaching primero hay que instalar los paquetes de R de los que depende.
+Para ello, hay que ejecutar R en línea de comandos, o bien arrancar RKWard e ir a la solapa de la Consola de R (R console) e introducir los siguientes comandos:</p>
+<pre><code class="language-R">install.packages(c(&quot;R2HTML&quot;,&quot;car&quot;,&quot;e1071&quot;,&quot;Hmisc&quot;,&quot;plyr&quot;,&quot;ggplot2&quot;,&quot;prob&quot;,&quot;ez&quot;,&quot;multcomp&quot;, &quot;remotes&quot;))
+</code></pre>
+</li>
+<li>
+<p><strong>Instalar rkTeaching</strong>. La mejor forma de instalar rkTeaching desde este repositorio es utilizando el paquete de R <code>devtools</code>.
+Para ello hay que introducir los siguientes comandos en la consola de R:</p>
+<pre><code class="language-R">library(remotes)
+install_github(&quot;rkward-community/rk.Teaching&quot;)
+</code></pre>
+<p>El siguiente vídeo muestra el proceso de instalación.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/vQa4umDJko8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</li>
+</ol>
+<h2 id="procedimientos-estadísticos">Procedimientos estadísticos</h2>
+<p>Una vez instalado, al arrancar RKWard aparecerá un nuevo menú <code>Teaching</code> con los siguientes procedimientos estadísticos:</p>
+<ul>
+<li>Manipulación de datos
+<ul>
+<li>Filtrar datos</li>
+<li>Calcular variable</li>
+<li>Recodificar variable</li>
+<li>Ponderar datos</li>
+<li>Tipificar variables</li>
+</ul>
+</li>
+<li>Distribución de frecuencias
+<ul>
+<li>Tablas de frecuencias</li>
+<li>Tablas de frecuencias bidimensionales</li>
+</ul>
+</li>
+<li>Gráficos
+<ul>
+<li>Diagrama de barras</li>
+<li>Histograma</li>
+<li>Diagrama de sectores</li>
+<li>Diagrama de caja</li>
+<li>Diagrama de medias</li>
+<li>Diagrama de interacción</li>
+<li>Diagrama de dispersión</li>
+<li>Matriz de dispersión</li>
+</ul>
+</li>
+<li>Estadística descriptiva
+<ul>
+<li>Estadísticos</li>
+<li>Estadísticos (cálculo detallado)</li>
+</ul>
+</li>
+<li>Regresión
+<ul>
+<li>Regresión lineal</li>
+<li>Regresión no lineal</li>
+<li>Comparación de modelos</li>
+<li>Predicciones</li>
+<li>Correlación</li>
+</ul>
+</li>
+<li>Test paramétricos
+<ul>
+<li>Medias
+<ul>
+<li>Test T para una muestra</li>
+<li>Test T para dos muestras independientes</li>
+<li>Test T para dos muestras pareadas</li>
+<li>ANOVA</li>
+<li>Cálculo del tamaño muestral para la media</li>
+<li>Cálculo del tamaño muestral para el test T</li>
+</ul>
+</li>
+<li>Varianzas
+<ul>
+<li>Test F de Fisher</li>
+<li>Test de Levene</li>
+</ul>
+</li>
+<li>Proporciones
+<ul>
+<li>Test para una proporción</li>
+<li>Test para dos proporciones</li>
+<li>Cálculo del tamaño muestral para una proproción</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Test no paramétricos
+<ul>
+<li>Normalidad
+<ul>
+<li>Test de Lilliefors (Komogorov-Smirnov)</li>
+<li>Test de Shapiro-Wilk</li>
+</ul>
+</li>
+<li>Test U de Mann-Whitney para dos muestas independientes</li>
+<li>Test de Wilcoxon para dos muestras pareadas</li>
+<li>Test de Kruskal-Wallis para varias muestras independientes</li>
+<li>Test de Friedman para medidas repetidas</li>
+<li>Test Chi-cuadrado de independencia</li>
+<li>Test Chi-cuadrado de bondad de ajuste</li>
+</ul>
+</li>
+<li>Concordancia
+<ul>
+<li>Coeficiente de correlación intraclase</li>
+<li>Kappa de Cohen</li>
+</ul>
+</li>
+<li>Probabilidad
+<ul>
+<li>Juegos de azar
+<ul>
+<li>Monedas
+<ul>
+<li>Espacio probabilístico</li>
+<li>Lanzamiento de monedas</li>
+</ul>
+</li>
+<li>Dados
+<ul>
+<li>Espacio probabilístico</li>
+<li>Lanzamiento de dados</li>
+</ul>
+</li>
+<li>Naipes
+<ul>
+<li>Espacio probabilístico</li>
+<li>Extracción naipes</li>
+</ul>
+</li>
+<li>Urnas
+<ul>
+<li>Espacio probabilístico</li>
+<li>Extracción de urnas</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Construcción de espacio probabilístico</li>
+<li>Combinación de espacios probabilísticos</li>
+<li>Repetición de espacios probabilísticos</li>
+<li>Cálculo de probabilidad</li>
+</ul>
+</li>
+<li>Distribuciones de probabilidad
+<ul>
+<li>Distribuciones discretas
+<ul>
+<li>Binomial
+<ul>
+<li>Probabilidades</li>
+<li>Cuantiles</li>
+<li>Gráfico de probabilidad</li>
+</ul>
+</li>
+<li>Poisson
+<ul>
+<li>Probabilidades</li>
+<li>Cuantiles</li>
+<li>Gráfico de probabilidad</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Distribuciones continuas
+<ul>
+<li>Chi-cuadrado
+<ul>
+<li>Probabilidades</li>
+<li>Cuantiles</li>
+<li>Gráfico de probabilidad</li>
+</ul>
+</li>
+<li>F de Fisher
+<ul>
+<li>Probabilidades</li>
+<li>Cuantiles</li>
+<li>Gráfico de probabilidad</li>
+</ul>
+</li>
+<li>Normal
+<ul>
+<li>Probabilidades</li>
+<li>Cuantiles</li>
+<li>Gráfico de probabilidad</li>
+</ul>
+</li>
+<li>T de student
+<ul>
+<li>Probabilidades</li>
+<li>Cuantiles</li>
+<li>Gráfico de probabilidad</li>
+</ul>
+</li>
+<li>Uniforme continua
+<ul>
+<li>Probabilidades</li>
+<li>Cuantiles</li>
+<li>Gráfico de probabilidad</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Simulaciones
+<ul>
+<li>Ley de los casos raros</li>
+</ul>
+</li>
+</ul>
+<h2 id="funcionalidades">Funcionalidades</h2>
+<ul>
+<li>
+<p>Menús y cuadros de diálogo diseñados para facilitar el aprendizaje, eliminando todas las opciones secundarias para conseguir una interfaz simple e intuitiva.</p>
+</li>
+<li>
+<p>Diseño de asistentes que guían al usuario paso a paso y le asesoran en los análisis estadísticos.
+<img src="img/wizard.png" alt="Asistente"></p>
+</li>
+<li>
+<p>Salidas en HTML que presentan los resultados de los análisis y sus     interpretaciones de manera clara y concisa.
+<img src="img/output.png" alt="Salida"></p>
+</li>
+<li>
+<p>Gráficos sencillos basados en el moderno paquete ggplot2.
+<img src="img/graphics1.png" alt="Salida gráfica"></p>
+</li>
+<li>
+<p>Posibilidad mostrar el desarrollo de los cálculos de algunos
+procedimientos estadísticos.
+<img src="img/detailed_calculation.png" alt="Salida gráfica"></p>
+</li>
+</ul>
+<p>rkTeaching es mantenido por 
+<a href="https://github.com/asalber" target="_blank" rel="noopener">asalber</a>.</p>
+<h2 id="cómo-citar-rkteaching">¿Cómo citar rkTeaching?</h2>
+<p>Sánchez-Alberca, A. (2020). rkTeaching (version 1.3) [software]. Obtenido de: 
+<a href="http://aprendeconalf.es/es/proyecto/rkteaching" target="_blank" rel="noopener">http://aprendeconalf.es/es/proyecto/rkteaching</a>.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/rkward/">RKWard</a>
+  
+  <a class="badge badge-light" href="/tag/rkteaching/">rkTeaching</a>
+  
+  <a class="badge badge-light" href="/tag/software/">Software</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/proyecto/rkteaching/&amp;text=rkTeaching" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/proyecto/rkteaching/&amp;t=rkTeaching" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=rkTeaching&amp;body=/proyecto/rkteaching/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/proyecto/rkteaching/&amp;title=rkTeaching" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=rkTeaching%20/proyecto/rkteaching/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/proyecto/rkteaching/&amp;title=rkTeaching" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+    
+    
+      
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/author/alfredo-sanchez-alberca/avatar_hu9fa9e675c59c2c79e123e4a6117bd701_118845_270x270_fill_lanczos_center_3.png" alt="Alfredo Sánchez Alberca">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/">Alfredo Sánchez Alberca</a></h5>
+        <h6 class="card-subtitle">Profesor de Matemáticas y Estadística</h6>
+        <p class="card-text">Mis principales temas de investigación son Bioestadística, Matemática Aplicada y Aprendizaje Automático.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/aprendeconalf" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.es/citations?user=aw8BqeEAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/asalber" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "aprendeconalf" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Relacionado</h3>
+    <ul>
+      
+      <li><a href="/post/rkteaching-version1.3/">Liberada la versión 1.3.0 del paquete rkTeaching</a></li>
+      
+      <li><a href="/post/articulo-rkteaching-beio/">rkTeaching en BEIO</a></li>
+      
+      <li><a href="/post/curso-bioestadistica-miriadax-3ed/">3ª edición del Curso Práctico de Bioestadística con R</a></li>
+      
+      <li><a href="/post/rkteaching-version1.2/">Liberada la versión 1.2.0 del paquete rkTeaching</a></li>
+      
+      <li><a href="/post/curso-bioestadistica-miriadax/">2ª edición del Curso Práctico de Bioestadística con R</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No se encontraron resultados","placeholder":"Buscar...","results":"resultados encontrados"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Proyectos",
+        'publication' : "Publicaciones",
+        'talk' : "Charlas",
+        'slides' : "Diapositivas"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://aprendeconalf.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.f79ea001fad4564ac91850b0b5a8f31c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt="CC SA icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

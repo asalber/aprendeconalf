@@ -1,0 +1,29 @@
+id;origen;destino
+10T0001C1;Principe Pio;Aeropuerto
+10T0002C1;Aeropuerto;Principe Pio
+10T0003C10;Villalba;Aeropuerto
+10T0004C10;Aeropuerto;Villalba
+10T0005C2;Guadalajara;Chamartin
+10T0006C2;Chamartin;Guadalajara
+10T0007C3;Chamartin;Aranjuez
+10T0008C3;Aranjuez;Chamartin 
+10T0009C3a;Chamartin;El Escorial
+10T0010C3a;El Escorial;Chamartin
+10T0011C4;Chamartin;Parla
+10T0012C4;Parla;Chamartin
+10T0013C4a;Alcobendas;Parla
+10T0014C4a;Parla;Alcobendas
+10T0015C4b;Colmenar Viejo;Parla
+10T0016C4b;Parla;Colmenar Viejo
+10T0017C5;Mostoles el Soto;Humanes
+10T0018C5;Humanes;Mostoles el Soto
+10T0019C7;Alcala de Henares;Principe Pio
+10T0020C7;Principe Pio;Alcala de Henares
+10T0021C8;Atocha;Cercedilla
+10T0022C8;Cercedilla;Atocha
+10T0023C3a;Atocha;El Escorial
+10T0024C3a;El Escorial;Atocha
+10T0025C9;Cercedilla;Cotos
+10T0026C9;Cotos;Cercedilla
+10T0027C3a;Atocha;El Escorial
+10T0028C3a;El Escorial;Atocha

@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Análisis de datos con R | Aprende con Alf</title>
+    <link>/docencia/r/</link>
+      <atom:link href="/docencia/r/index.xml" rel="self" type="application/rss+xml" />
+    <description>Análisis de datos con R</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Análisis de datos con R</title>
+      <link>/docencia/r/</link>
+    </image>
+    
+    <item>
+      <title>Tipos de estudios estadísticos</title>
+      <link>/docencia/r/estudios-estadisticos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/r/estudios-estadisticos/</guid>
+      <description>&lt;p&gt;El tipo de estudio estadístico más apropiado en cada caso depende de varios factores:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;El objetivo del estudio.&lt;/li&gt;
+&lt;li&gt;El número de variables que intervienen.&lt;/li&gt;
+&lt;li&gt;El tipo de las variables dependientes e independientes.&lt;/li&gt;
+&lt;li&gt;La naturaleza de las observaciones (independientes o emparejadas).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A continuación se presentan los estudios estadísticos más habituales en función de estos factores. La siguiente tabla puede ayudar a identificar el más apropiado en cada caso.&lt;/p&gt;
+&lt;table width=&#34;1054&#34; cellspacing=&#34;0&#34; cellpadding=&#34;5&#34; border=&#34;1&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&#34;#6d9eeb&#34; width=&#34;95&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Variables independientes&lt;/strong&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td bgcolor=&#34;#6d9eeb&#34; width=&#34;88&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Variable dependiente&lt;/strong&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td bgcolor=&#34;#6d9eeb&#34; width=&#34;315&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td bgcolor=&#34;#6d9eeb&#34; width=&#34;330&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td bgcolor=&#34;#6d9eeb&#34; width=&#34;174&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Contraste&lt;/strong&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td rowspan=&#34;6&#34; width=&#34;95&#34; height=&#34;14&#34;&gt;
+&lt;p&gt;Ninguna&lt;br /&gt; (Una poblaci&amp;oacute;n)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td rowspan=&#34;2&#34; width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa&lt;/p&gt;
+&lt;/td&gt;
+&lt;td rowspan=&#34;2&#34; width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar la normalidad de una variable&lt;/p&gt;
+&lt;/td&gt;
+&lt;td rowspan=&#34;2&#34; width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si la nota de un examen tiene distribuci&amp;oacute;n normal (forma de campana de Gauss)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Komogorov-Smirnov&lt;br /&gt; (requiere muestras grandes)&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Shapiro-Willks&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa normal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si la media poblacional de una variable tiene un valor determinado&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si la nota media de un examen es 5&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test T para la media de una poblaci&amp;oacute;n&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa o cualitativa ordinal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si la mediana poblacional de una variable tiene un valor determinado&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si la calificaci&amp;oacute;n mediana de un examen es Aprobado&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test para la mediana de una poblaci&amp;oacute;n&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cualitativa (2 categor&amp;iacute;as)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si la proporci&amp;oacute;n poblacional de una de las categor&amp;iacute;as tiene un valor determinado&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si la proporci&amp;oacute;n de aprobados es de la mitad (o que el porcentaje es 50%)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test Binomial&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cualitativa&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si las proporciones de cada una de las categor&amp;iacute;as tienen un valor determinado&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si las proporciones de alumnos matriculados en ciencias, letras o mixtas son 0.5, 0.2 y 0.3 respectivamente&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test Chi-cuadrado de bondad de ajuste&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td rowspan=&#34;7&#34; width=&#34;95&#34; height=&#34;13&#34;&gt;
+&lt;p&gt;Una cualitativa con dos categor&amp;iacute;as independientes &lt;br /&gt; (Dos poblaciones independientes)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td rowspan=&#34;3&#34; width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa normal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay diferencias entre las medias la variable dependiente en dos poblaciones independientes&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si el grupo de ma&amp;ntilde;ana y el grupo de tarde han tenido notas medias diferentes&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test T para la comparaci&amp;oacute;n de medias de poblaciones independientes&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay diferencias entre las varianzas de la variable dependiente en dos poblaciones independientes&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si hay diferencias entre la variabilidad de las notas del grupo de ma&amp;ntilde;ana y el de tarde&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test F de Fisher&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay concordancia o acuerdo entre las dos variables&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si hay concordancia o acuerdo entre las notas que ponen dos profesores distintos para los mismos ex&amp;aacute;menes&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Correlaci&amp;oacute;n intraclase&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td rowspan=&#34;2&#34; width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa o cualitativa ordinal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay diferencias entre las distribuciones de la variable dependiente en dos poblaciones independientes&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si el grupo de ma&amp;ntilde;ana y el grupo de tarde han tenido calificaciones diferentes&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test de la U de Mann-Whitney&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay concordancia o acuerdo entre las dos variables&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si hay concordancia o acuerdo entre las calificaciones que ponen dos profesores distintos para los mismos ex&amp;aacute;menes&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Kappa de Cohen&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td rowspan=&#34;2&#34; width=&#34;88&#34;&gt;
+&lt;p&gt;Cualitativa&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay relaci&amp;oacute;n entre las dos variables o bien si hay diferencias entre las proporciones de las categor&amp;iacute;as de la variable dependiente en las dos poblaciones definidas por las categor&amp;iacute;as de la variable independiente&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si existe relaci&amp;oacute;n entre los aprobados en una asignatura y el grupo al que pertenecen los alumnos, es decir, si la proporci&amp;oacute;n de aprobados es diferente en dos grupos distintos.&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test Chi-cuadrado &lt;br /&gt; (si no ha m&amp;aacute;s del 20% de frecuencias esperadas menores que 5)&lt;br /&gt; Test exacto de Fisher&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay concordancia o acuerdo entre las dos variables&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si hay concordancia o acuerdo entre la valoraci&amp;oacute;n (aprobado o suspenso) que hacen dos profesores distintos para los mismos ex&amp;aacute;menes&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Kappa de Cohen&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td rowspan=&#34;3&#34; width=&#34;95&#34; height=&#34;14&#34;&gt;
+&lt;p&gt;Una cualitativa con dos categor&amp;iacute;as relacionadas o pareadas&lt;br /&gt; (Dos poblaciones relacionadas o pareadas)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa normal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay diferencias entre las medias de la variable dependiente en dos poblaciones relacionadas o pareadas&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si las notas medias de dos asignaturas cursadas por los mismos alumnos han sido diferentes o si las notas medias de un examen realizado al comienzo del curso (antes) y otro al final (despu&amp;eacute;s) de una misma asignatura han sido diferentes&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test T para la comparaci&amp;oacute;n de medias de poblaciones relacionadas o pareadas&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa o cualitativa ordinal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay diferencias entre las distribuciones de la variable dependiente en dos poblaciones relacionadas o pareadas&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si las calificaciones de dos asignaturas cursadas por los mismos alumnos han sido diferentes&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test de Wilcoxon&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cualitativa con dos categor&amp;iacute;as&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay diferencias entre las proporciones de las categor&amp;iacute;as de la variable dependiente en dos poblaciones relacionadas o pareadas&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si la proporci&amp;oacute;n o el porcentaje de aprobados en un examen es distinta al comienzo y al final del curso&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test de McNemar&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td rowspan=&#34;4&#34; width=&#34;95&#34; height=&#34;14&#34;&gt;
+&lt;p&gt;Una cualitativa con dos o m&amp;aacute;s categor&amp;iacute;as&lt;/p&gt;
+&lt;p&gt;independientes&lt;br /&gt; (Dos o m&amp;aacute;s poblaciones independientes)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa normal y homogeneidad de varianzas&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay diferencias entre las medias la variable dependiente en cada una de las poblaciones definidas por las categor&amp;iacute;as de la variable independiente&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si existen diferencias entre las notas medias de tres grupos distintos de clase.&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;An&amp;aacute;lisis de la Varianza de un factor (ANOVA)&lt;br /&gt; Si hay diferencias &amp;gt; Test de Tukey o Bonferroni para la diferencia por pares&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa normal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay diferencias entre las varianzas de la variable dependiente en cada una de las poblaciones definidas por las categor&amp;iacute;as de la variable independiente&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si la variabilidad de las notas de una asignatura es distinta en tres grupos diferentes de clase&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Prueba de Levene para la homogeneidad de varianzas&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa o cualitativa ordinal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay diferencias entre las distribuciones de la variable dependiente en cada una de las poblaciones definidas por las categor&amp;iacute;as de la variable independiente&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si existen diferencias entre las calificaciones de tres grupos distintos de clase&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test de Kruskal Wallis&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cualitativa&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay relaci&amp;oacute;n entre las dos variables o bien si hay diferencias entre las proporciones de las categor&amp;iacute;as de la variable dependiente en cada una de las poblaciones definidas por las categor&amp;iacute;as de la variable independiente&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si existe relaci&amp;oacute;n entre los aprobados en una asignatura y el grupo al que pertenecen los alumnos, es decir, si la proporci&amp;oacute;n de aprobados es diferente en los distintos grupos.&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test Chi-cuadrado &lt;br /&gt; (si no ha m&amp;aacute;s del 20% de frecuencias esperadas menores que 5)&lt;br /&gt; Test exacto de Fisher&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td rowspan=&#34;3&#34; width=&#34;95&#34; height=&#34;14&#34;&gt;
+&lt;p&gt;Una cualitativa con dos o m&amp;aacute;s categor&amp;iacute;as relacionadas &lt;br /&gt; (medidas repetidas)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa normal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay diferencias entre las medias repetidas de la variable dependiente&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si hay diferencias entre las notas que otorgan varios profesores a un mismo examen&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;An&amp;aacute;lisis de la Varianza (ANOVA) de medidas repetidas de un factor&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa o cualitativa ordinal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay diferencias entre las medidas repetidas de la variable dependiente&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si hay diferencias entre las calificaciones que otorgan varios profesores a un mismo examen&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Test de Friedman&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cualitativa&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si hay diferencias entre las valoraciones repetidas de la variable dependiente&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si hay diferencias entre la valoraci&amp;oacute;n (aprobado o suspenso) que hacen varios profesores de un mismo examen&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Regresi&amp;oacute;n log&amp;iacute;stica de medidas repetidas&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td rowspan=&#34;4&#34; width=&#34;95&#34; height=&#34;13&#34;&gt;
+&lt;p&gt;Una cuantitativa normal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td rowspan=&#34;2&#34; width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa normal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si existe relaci&amp;oacute;n lineal entre las dos variables&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si existe relaci&amp;oacute;n entre las notas de dos asignaturas&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Correlaci&amp;oacute;n de Pearson&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Construir un modelo predictivo que explique la variable dependiente en funci&amp;oacute;n de la independiente&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Construir el modelo (funci&amp;oacute;n de regresi&amp;oacute;n) que mejor explique la relaci&amp;oacute;n entre la nota de un examen y las horas dedicadas a su estudio&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Regresi&amp;oacute;n simple (lineal o no lineal)&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cuantitativa o cualitativa ordinal&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Contrastar si existe relaci&amp;oacute;n lineal entre las dos variables&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Comprobar si existe relaci&amp;oacute;n entre las calificaciones de dos asignaturas&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Correlaci&amp;oacute;n de Spearman&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;88&#34;&gt;
+&lt;p&gt;Cualitativa&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;315&#34;&gt;
+&lt;p&gt;Construir un modelo predictivo que explique la variable dependiente en funci&amp;oacute;n de la independiente&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;330&#34;&gt;
+&lt;p&gt;Construir el modelo (funci&amp;oacute;n log&amp;iacute;stica) que mejor explique la relaci&amp;oacute;n entre el resultado de un examen (aprobado o suspenso) y las horas dedicadas a su estudio&lt;/p&gt;
+&lt;/td&gt;
+&lt;td width=&#34;174&#34;&gt;
+&lt;p&gt;Regresi&amp;oacute;n log&amp;iacute;stica simple&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Los ejemplos de los distintos test que se presentan a continuación se han realizado a partir del siguiente conjunto de datos que contiene las notas y calificaciones de un curso. El fichero con los datos puede descargarse aquí para reproducir los estudios: 
+&lt;a href=&#34;datos/datos-curso.csv&#34;&gt;datos-curso.csv&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidyverse)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;una-variable-cuantitativa&#34;&gt;Una variable cuantitativa&lt;/h2&gt;
+&lt;h3 id=&#34;estudios-descriptivos&#34;&gt;Estudios descriptivos&lt;/h3&gt;
+&lt;h4 id=&#34;estadísticos&#34;&gt;Estadísticos&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Tamaño muestral&lt;/li&gt;
+&lt;li&gt;Media&lt;/li&gt;
+&lt;li&gt;Desviación típica&lt;/li&gt;
+&lt;li&gt;Mínimo, Máximo&lt;/li&gt;
+&lt;li&gt;Cuartiles&lt;/li&gt;
+&lt;li&gt;Coeficiente de asimetría&lt;/li&gt;
+&lt;li&gt;Coeficiente de apuntamiento&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Tamaño muestral
+nrow(df)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 120
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Media
+mean(df$notaA, na.rm = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 6.028333
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Desviación típica
+sd(df$notaA, na.rm = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 1.340524
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Min, max
+min(df$notaA, na.rm = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 2.5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;max(df$notaA, na.rm = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 9.3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Cuartiles
+quantile(df$notaA, c(0.25, 0.5, 0.75), na.rm = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   25%   50%   75% 
+## 5.100 5.900 6.825
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Coef. asimetría
+library(moments)
+skewness(df$notaA, na.rm = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.1373915
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Coef. apuntamiento
+kurtosis(df$notaA, na.rm = TRUE) - 3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] -0.102287
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;gráficos&#34;&gt;Gráficos&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de barras (variables discretas)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% ggplot(aes(x = asinaturas.aprobadas)) + 
+  geom_bar(fill=&amp;quot;#00BFC4&amp;quot;) + 
+  # Cambio de escala del eje X
+  scale_x_discrete(limits=0:5) 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/one-quantitative-variable-bar-chart-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Histograma&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(ggplot2)
+# Límites de los intervalos
+breaks = 0:10
+# Histograma de las notasA
+df %&amp;gt;% ggplot(aes(x = notaA)) + 
+  geom_histogram(breaks = breaks, fill=&amp;quot;#00BFC4&amp;quot;) + 
+  # Cambio de escala del eje X
+  scale_x_continuous(limits=c(0, 10), breaks = 0:10) 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/one-quantitative-variable-histogram-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Histograma de notasE
+df %&amp;gt;% ggplot(aes(x = notaE)) + 
+  geom_histogram(breaks = breaks, fill=&amp;quot;#00BFC4&amp;quot;) + 
+  # Cambio de escala del eje X
+  scale_x_continuous(limits=c(0, 10), breaks = 0:10) 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/one-quantitative-variable-histogram-2.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de líneas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Variables discretas
+df %&amp;gt;% count(asinaturas.aprobadas) %&amp;gt;%
+  ggplot(aes(x = asinaturas.aprobadas, y = n)) +
+  geom_line(col=&amp;quot;#00BFC4&amp;quot;) + 
+  # Cambio de escala del eje X
+  scale_x_discrete(limits=0:5) 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/one-quantitative-variable-line-chart-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Agrupación de datos en intervalos
+df %&amp;gt;% ggplot(aes(x = notaA)) + 
+  geom_freqpoly(breaks = breaks, col=&amp;quot;#00BFC4&amp;quot;) + 
+  # Cambio de escala del eje X
+  scale_x_continuous(limits=c(0, 10), breaks = 0:10) 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/one-quantitative-variable-line-chart-2.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de caja y bigotes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% ggplot(aes(x = notaA)) + 
+  geom_boxplot(fill=&amp;quot;#00BFC4&amp;quot;) +
+  # Cambio de escala del eje X
+  scale_x_continuous(limits=c(0, 10), breaks = 0:10)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/one-quantitative-variable-box-plot-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;estudios-inferenciales&#34;&gt;Estudios inferenciales&lt;/h3&gt;
+&lt;h4 id=&#34;test-de-normalidad-de-shapiro-wilk&#34;&gt;Test de normalidad de Shapiro-Wilk&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Comprobar la normalidad de la distribución.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La distribución es normal.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;shapiro.test(df$notaA)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Shapiro-Wilk normality test
+## 
+## data:  df$notaA
+## W = 0.99424, p-value = 0.907
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;shapiro.test(df$notaE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Shapiro-Wilk normality test
+## 
+## data:  df$notaE
+## W = 0.92264, p-value = 4.065e-06
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;test-t-para-la-media-de-una-población&#34;&gt;Test t para la media de una población&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Estimar la media de una variable o compararla con un valor
+dado &lt;em&gt;μ&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Requisitos&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Una variable cuantitativa.&lt;/li&gt;
+&lt;li&gt;Distribución normal o tamaño muestral ≥ 30.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La media de la población es igual a &lt;em&gt;μ&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar si la nota media de un examen es diferente de 5.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;t.test(df$notaA, mu = 5, alternative = &amp;quot;two.sided&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  One Sample t-test
+## 
+## data:  df$notaA
+## t = 8.4033, df = 119, p-value = 1.08e-13
+## alternative hypothesis: true mean is not equal to 5
+## 95 percent confidence interval:
+##  5.786023 6.270643
+## sample estimates:
+## mean of x 
+##  6.028333
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;una-variable-cualitativa&#34;&gt;Una variable cualitativa&lt;/h2&gt;
+&lt;h3 id=&#34;estudios-descriptivos-1&#34;&gt;Estudios descriptivos&lt;/h3&gt;
+&lt;h4 id=&#34;estadísticos-1&#34;&gt;Estadísticos&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Tamaños muestral&lt;/li&gt;
+&lt;li&gt;Frecuencias muestrales&lt;/li&gt;
+&lt;li&gt;Proporciones/porcentajes muestrales&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Tamaño muestral sin datos perdidos
+length(na.omit(df$calificacionB))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 115
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Frecuencias
+table(df$calificacionB)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Aprobado Suspenso 
+##       98       17
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Proporciones
+table(df$calificacionB) / length(na.omit(df$calificacionB))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Aprobado  Suspenso 
+## 0.8521739 0.1478261
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Porcentajes
+table(df$calificacionB) / length(na.omit(df$calificacionB)) * 100
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Aprobado Suspenso 
+## 85.21739 14.78261
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;gráficos-1&#34;&gt;Gráficos&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de sectores&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% ggplot(aes(x = &amp;quot;&amp;quot;, fill = calificacionA)) + 
+  geom_bar() +
+  # Cambiar a coordenadas polares
+  coord_polar(theta = &amp;quot;y&amp;quot;) +
+  # Eliminar ejes
+   theme_void()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/piechart-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;estudios-inferenciales-1&#34;&gt;Estudios inferenciales&lt;/h3&gt;
+&lt;h4 id=&#34;test-binomial-para-una-proporción-de-una-población&#34;&gt;Test binomial para una proporción de una población&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Estimar la propoción de una categoría en una población o
+compararla con un valor &lt;em&gt;p&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Requisitos&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;One variable cualitativa&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La proporción poblacional es igual a
+&lt;em&gt;p&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar si la proporción de aprobados es mayor de 0.5.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;freq &amp;lt;- table(df$calificacionA)[&amp;quot;Aprobado&amp;quot;]
+binom.test(freq, n, p = 0.7, alternative = &amp;quot;greater&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Exact binomial test
+## 
+## data:  freq and n
+## number of successes = 94, number of trials = 120, p-value = 0.02657
+## alternative hypothesis: true probability of success is greater than 0.7
+## 95 percent confidence interval:
+##  0.7123183 1.0000000
+## sample estimates:
+## probability of success 
+##              0.7833333
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;test-z-para-la-proporción-de-una-población&#34;&gt;Test Z para la proporción de una población&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Estimar la propoción de una categoría en una población o
+compararla con un valor &lt;em&gt;p&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Requisitos&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Una variable cualitativa&lt;/li&gt;
+&lt;li&gt;Tamaño muestral &amp;gt;= 30&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Observación&lt;/strong&gt;: Utiliza la aproximación normal de la distribución
+Binomal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar si la proporción de aprobados es mayor de 0.5.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;freq &amp;lt;- table(df$calificacionA)[&amp;quot;Aprobado&amp;quot;]
+prop.test(freq, n, p = 0.7, alternative = &amp;quot;greater&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  1-sample proportions test with continuity correction
+## 
+## data:  freq out of n, null probability 0.7
+## X-squared = 3.5813, df = 1, p-value = 0.02922
+## alternative hypothesis: true p is greater than 0.7
+## 95 percent confidence interval:
+##  0.7111099 1.0000000
+## sample estimates:
+##         p 
+## 0.7833333
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;dos-variables-variable-dependiente-cuantitativa-y-variable-independiente-culitativa-con-dos-categorías-o-grupos&#34;&gt;Dos variables: Variable dependiente cuantitativa y variable independiente culitativa con dos categorías o grupos&lt;/h2&gt;
+&lt;h3 id=&#34;estudios-descriptivos-2&#34;&gt;Estudios descriptivos&lt;/h3&gt;
+&lt;h4 id=&#34;estadísticos-2&#34;&gt;Estadísticos&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Tamaño muestral de cada grupo&lt;/li&gt;
+&lt;li&gt;Media de cada grupo&lt;/li&gt;
+&lt;li&gt;Desviación típica de cada grupo&lt;/li&gt;
+&lt;li&gt;Mínimo, Máximo de cada grupo&lt;/li&gt;
+&lt;li&gt;Cuartiles de cada grupo&lt;/li&gt;
+&lt;li&gt;Coeficiente de asimetría de cada grupo&lt;/li&gt;
+&lt;li&gt;Coeficiente de apuntamiento de cada grupo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Tamaño muestral de notaA según el sexo
+df %&amp;gt;% group_by(sexo) %&amp;gt;% group_size()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 71 49
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Media, Desviación típica, Mín, Máx, Cuartiles, Coef. Asimetría y Coef. Apuntamiento
+library(moments)
+df %&amp;gt;% group_by(sexo) %&amp;gt;% summarize(Media = mean(notaA, na.rm=TRUE), Des.Tip = sd(notaA, na.rm = TRUE), Mín = min(notaA), Máx = max(notaA), C1 = quantile(notaA, 0.25, na.rm = TRUE), C2 = quantile(notaA, 0.5, na.rm = TRUE), C3 = quantile(notaA, 0.75, na.rm = TRUE), Coef.Asimetría = skewness(notaA, na.rm = TRUE), Coef.Apuntamiento = kurtosis(notaA, na.rm = TRUE) - 3)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 2 x 10
+##   sexo   Media Des.Tip   Mín   Máx    C1    C2    C3 Coef.Asimetría
+##   &amp;lt;chr&amp;gt;  &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;          &amp;lt;dbl&amp;gt;
+## 1 Hombre  6.12    1.23   3.5   9.3   5.3   6.1  6.85          0.249
+## 2 Mujer   5.89    1.49   2.5   9.3   5     5.7  6.8           0.135
+## # … with 1 more variable: Coef.Apuntamiento &amp;lt;dbl&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;gráficos-2&#34;&gt;Gráficos&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de cajas y bigotes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% ggplot(aes(x = sexo, y = notaA, fill = sexo)) + 
+  geom_boxplot() +
+  # Cambio de escala del eje X
+  scale_y_continuous(limits=c(0, 10), breaks = 0:10)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/quantiative-vs-qualitative-box-plot-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de violín&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% ggplot(aes(x = sexo, y = notaA, fill = sexo)) + 
+  geom_violin() +
+  # Cambio de escala del eje X
+  scale_y_continuous(limits=c(0, 10), breaks = 0:10)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/quantiative-vs-qualitative-viol%C3%ADn-plot-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;estudios-inferenciales-2&#34;&gt;Estudios inferenciales&lt;/h3&gt;
+&lt;h4 id=&#34;test-de-normalidad-de-shapiro-wilks&#34;&gt;Test de normalidad de Shapiro-Wilks&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Comprobar la normalidad de la distribución de cada
+población.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La distribución es normal.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% group_by(sexo) %&amp;gt;% 
+  summarise(`Estadístico W` = shapiro.test(notaA)$statistic, `p-valor` = shapiro.test(notaA)$p.value)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 2 x 3
+##   sexo   `Estadístico W` `p-valor`
+##   &amp;lt;chr&amp;gt;            &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1 Hombre           0.990     0.872
+## 2 Mujer            0.990     0.942
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;test-f-de-fisher-de-comparación-de-varianzas-de-dos-poblaciones-independientes&#34;&gt;Test F de Fisher de comparación de varianzas de dos poblaciones independientes&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Comparar las varianzas de dos poblaciones independientes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Requisitos&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variable dependiente cuantitativa.&lt;/li&gt;
+&lt;li&gt;Una variable independiente cualitativa con dos categorías
+(poblaciones)&lt;/li&gt;
+&lt;li&gt;Distribución normal de la variable dependiente en ambas poblaciones
+o tamaños de las muestras de cada población ≥ 30.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La varianzas poblacionales son iguales (no existe
+una diferencia significativa entre las medias poblacionales).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar si diferencias signicativas entre las notas
+medias de hombres y mujeres.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Test de comparación de varianzas
+var.test(notaA ~ sexo, data = df)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  F test to compare two variances
+## 
+## data:  notaA by sexo
+## F = 0.6769, num df = 70, denom df = 48, p-value = 0.1347
+## alternative hypothesis: true ratio of variances is not equal to 1
+## 95 percent confidence interval:
+##  0.3953421 1.1293155
+## sample estimates:
+## ratio of variances 
+##          0.6769032
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;test-t-de-comparación-de-medias-de-dos-poblaciones-independientes&#34;&gt;Test t de comparación de medias de dos poblaciones independientes&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Estimar la diferencia de medias en las dos poblaciones o
+comprobar si hay diferencias significativas entre ellas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Requisitos&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variable dependiente cuantitativa.&lt;/li&gt;
+&lt;li&gt;Una variable independiente cualitativa con dos categorías
+(poblaciones)&lt;/li&gt;
+&lt;li&gt;Distribución normal de la variable dependiente en ambas poblaciones
+o tamaños de las muestras de cada población ≥ 30.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La medias poblacionales son iguales (no existe una
+diferencia significativa entre las medias poblacionales).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observación&lt;/strong&gt;: El resultado del test depende de si las varianzas
+poblacionales son iguales o no.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar si diferencias signicativas entre las notas
+medias de hombres y mujeres.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Test de comparación de varianzas
+var.test(notaA ~ sexo, data = df)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  F test to compare two variances
+## 
+## data:  notaA by sexo
+## F = 0.6769, num df = 70, denom df = 48, p-value = 0.1347
+## alternative hypothesis: true ratio of variances is not equal to 1
+## 95 percent confidence interval:
+##  0.3953421 1.1293155
+## sample estimates:
+## ratio of variances 
+##          0.6769032
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Test de comparación de medias asumiendo varianzas iguales
+t.test (notaA ~ sexo, data = df, alternative = &amp;quot;two.sided&amp;quot;, var.equal = FALSE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Welch Two Sample t-test
+## 
+## data:  notaA by sexo
+## t = 0.89364, df = 89.873, p-value = 0.3739
+## alternative hypothesis: true difference in means between group Hombre and group Mujer is not equal to 0
+## 95 percent confidence interval:
+##  -0.2821809  0.7435779
+## sample estimates:
+## mean in group Hombre  mean in group Mujer 
+##             6.122535             5.891837
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Test de comparación de medias asumiendo varianzas iguales
+t.test (notaA ~ sexo, data = df, alternative = &amp;quot;two.sided&amp;quot;, var.equal = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Two Sample t-test
+## 
+## data:  notaA by sexo
+## t = 0.92608, df = 118, p-value = 0.3563
+## alternative hypothesis: true difference in means between group Hombre and group Mujer is not equal to 0
+## 95 percent confidence interval:
+##  -0.262615  0.724012
+## sample estimates:
+## mean in group Hombre  mean in group Mujer 
+##             6.122535             5.891837
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de medias&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% ggplot(aes(x = sexo, y = notaA, colour = sexo)) + 
+  # Puntos de medias
+  stat_summary(fun=&amp;quot;mean&amp;quot;, size=3,  geom=&amp;quot;point&amp;quot;, position=position_dodge(width=0.25)) + 
+  # Intervalos de confianza para la media
+  stat_summary(fun.data = function(x) mean_cl_normal(x, conf.int=0.95), geom = &amp;quot;pointrange&amp;quot;, position=position_dodge(width=0.25)) 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/quantitative-vs-qualitative-means-plot-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;h4 id=&#34;test-u-de-mann-whitney-de-comparación-de-dos-poblaciones-independientes-no-paramétrico&#34;&gt;Test U de Mann-Whitney de comparación de dos poblaciones independientes (no paramétrico)&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Comprobar si hay diferencias significativas entre entre
+dos poblaciones independientes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Requisitos&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variable dependiente cuantitativa.&lt;/li&gt;
+&lt;li&gt;Una variable independiente cualitativa con dos categorías
+(poblaciones)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La medianas poblacionales son iguales (no existe una
+diferencia significativa entre las medianas poblacionales).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar si diferencias signicativas entre las notas de
+hombres y mujeres.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Test de rangos U the Mann-Whitney
+wilcox.test(notaA ~ sexo, data = df, alternative = &amp;quot;two.sided&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Wilcoxon rank sum test with continuity correction
+## 
+## data:  notaA by sexo
+## W = 1917, p-value = 0.3445
+## alternative hypothesis: true location shift is not equal to 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;dos-variables-variable-dependiente-cuantitativa-y-variable-independiente-culitativa-con-dos-categorías-o-grupos-pareados&#34;&gt;Dos variables: Variable dependiente cuantitativa y variable independiente culitativa con dos categorías o grupos pareados&lt;/h2&gt;
+&lt;p&gt;Dos grupos o poblaciones están pareadas o emparejadas cuando los dos
+poblaciones contienen los mismos individuos, es decir, se trata en
+realidadad de una única población, pero la variable dependiente se mide
+dos veces en cada individuo (normalmente antes y después de la algún
+suceso) y por tanto cada individuo tiene asociado un par de valores.&lt;/p&gt;
+&lt;p&gt;Este estudio puede realizarse también creando una nueva variable a
+partir de la resta de las dos mediciones y planteando un estudio de una
+sola variable cuantitativa.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Creación de la diferencia de notas de las asignaturas A y
+B.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Creamos la variable diferencia = notaA - notaB
+df &amp;lt;- df %&amp;gt;% mutate(diferencia = notaA - notaB)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;estudios-descriptivos-3&#34;&gt;Estudios descriptivos&lt;/h3&gt;
+&lt;h4 id=&#34;estadísticos-3&#34;&gt;Estadísticos&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Tamaño muestral del grupo&lt;/li&gt;
+&lt;li&gt;Media de la diferencia&lt;/li&gt;
+&lt;li&gt;Desviación típica de la diferencia&lt;/li&gt;
+&lt;li&gt;Mínimo, Máximo de la diferencia&lt;/li&gt;
+&lt;li&gt;Cuartiles de la diferencia&lt;/li&gt;
+&lt;li&gt;Coeficiente de asimetría de la diferencia&lt;/li&gt;
+&lt;li&gt;Coeficiente de apuntamiento de la diferencia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Estadísticos descriptivos de la diferencia entre las notas
+de las asignaturas A y B de un mismo grupo de alumnos.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Tamaño muestral de sin contar los datos perdidos
+length(na.omit(df$diferencia))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 115
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Media, Desviación típica, Mín, Máx, Cuartiles, Coef. Asimetría y Coef. Apuntamiento
+library(moments)
+df %&amp;gt;% summarize(Media = mean(diferencia, na.rm=TRUE), Des.Tip = sd(diferencia, na.rm = TRUE), Mín = min(diferencia, na.rm = TRUE), Máx = max(diferencia, na.rm = TRUE), C1 = quantile(diferencia, 0.25, na.rm = TRUE), C2 = quantile(diferencia, 0.5, na.rm = TRUE), C3 = quantile(diferencia, 0.75, na.rm = TRUE), Coef.Asimetría = skewness(diferencia, na.rm = TRUE), Coef.Apuntamiento = kurtosis(diferencia, na.rm = TRUE) - 3)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 x 9
+##    Media Des.Tip   Mín   Máx    C1    C2     C3 Coef.Asimetría Coef.Apuntamiento
+##    &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt;          &amp;lt;dbl&amp;gt;             &amp;lt;dbl&amp;gt;
+## 1 -0.882   0.900  -3.2  1.10  -1.5  -0.8 -0.300         -0.430            -0.137
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;gráficos-3&#34;&gt;Gráficos&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de cajas y bigotes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% ggplot(aes(x = diferencia)) + 
+  geom_boxplot(fill=&amp;quot;#00BFC4&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/quantiative-vs-qualitative-paired-box-plot-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;estudios-inferenciales-3&#34;&gt;Estudios inferenciales&lt;/h3&gt;
+&lt;h4 id=&#34;test-de-normalidad-de-shapiro-wilks-1&#34;&gt;Test de normalidad de Shapiro-Wilks&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Comprobar la normalidad de la distribución de la
+diferencia.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La distribución es normal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar la normalidad de la diferencia entre las notas de
+las asignaturas A y B de un mismo grupo de alumnos.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% summarise(`Estadístico W` = shapiro.test(diferencia)$statistic, `p-valor` = shapiro.test(diferencia)$p.value)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 x 2
+##   `Estadístico W` `p-valor`
+##             &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1           0.979    0.0737
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;test-t-de-comparación-de-medias-de-dos-poblaciones-pareadas&#34;&gt;Test t de comparación de medias de dos poblaciones pareadas&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Estimar la media de la diferencia o compararla con un
+valor dado &lt;em&gt;μ&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Requisitos&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variable dependiente cuantitativa.&lt;/li&gt;
+&lt;li&gt;Una variable independiente cualitativa con dos categorías
+(poblaciones) pareadas&lt;/li&gt;
+&lt;li&gt;Distribución normal de la variable diferencia o tamaño muestral
+≥ 30.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La medias poblacionales son iguales (no existe una
+diferencia significativa entre las medias poblacionales).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar si hay una diferencia signicativa entre las notas
+medias de las asinaturas A y B, o lo que es lo mismo, comprobar si la
+media de la diferencia de las notas de A y B es distinta de 0.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;t.test (notaA, notaB, data = df, alternative = &amp;quot;two.sided&amp;quot;, paired = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Paired t-test
+## 
+## data:  notaA and notaB
+## t = -10.618, df = 114, p-value &amp;lt; 2.2e-16
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -1.0515337 -0.7208695
+## sample estimates:
+## mean of the differences 
+##              -0.8862016
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de medias&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% ggplot(aes(x=&amp;quot;&amp;quot;, y = diferencia)) + 
+  # Puntos de medias
+  stat_summary(fun=&amp;quot;mean&amp;quot;, size=3,  geom=&amp;quot;point&amp;quot;) + 
+  # Intervalos de confianza para la media
+  stat_summary(fun.data = function(x) mean_cl_normal(x, conf.int=0.95), geom = &amp;quot;pointrange&amp;quot;, position=position_dodge(width=0.25)) 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/quantitative-vs-qualitative-paired-means-plot-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;h4 id=&#34;test-wilcoxon-de-comparación-de-dos-poblaciones-pareadas-no-paramétrico&#34;&gt;Test Wilcoxon de comparación de dos poblaciones pareadas (no paramétrico)&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Comparar las medianas de las dos poblaciones.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Requisitos&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variable dependiente cuantitativa.&lt;/li&gt;
+&lt;li&gt;Una variable independiente cualitativa con dos categorías
+(poblaciones) pareadas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La medianas poblacionales son iguales (no existe una
+diferencia significativa entre las medianas poblacionales).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar si hay una diferencia signicativa entre las notas
+de las asignaturas A y B.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;wilcox.test(notaA, notaB, data = df, alternative = &amp;quot;two.sided&amp;quot;, paired = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Wilcoxon signed rank test with continuity correction
+## 
+## data:  notaA and notaB
+## V = 466, p-value = 1.192e-15
+## alternative hypothesis: true location shift is not equal to 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;dos-variables-variable-dependiente-cuantitativa-y-variable-independiente-culitativa-con-más-de-dos-categorías-o-grupos&#34;&gt;Dos variables: Variable dependiente cuantitativa y variable independiente culitativa con más de dos categorías o grupos&lt;/h2&gt;
+&lt;h3 id=&#34;estudios-descriptivos-4&#34;&gt;Estudios descriptivos&lt;/h3&gt;
+&lt;h4 id=&#34;estadísticos-4&#34;&gt;Estadísticos&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Tamaño muestral de cada grupo&lt;/li&gt;
+&lt;li&gt;Media de cada grupo&lt;/li&gt;
+&lt;li&gt;Desviación típica de cada grupo&lt;/li&gt;
+&lt;li&gt;Mínimo, Máximo de cada grupo&lt;/li&gt;
+&lt;li&gt;Cuartiles de cada grupo&lt;/li&gt;
+&lt;li&gt;Coeficiente de asimetría de cada grupo&lt;/li&gt;
+&lt;li&gt;Coeficiente de apuntamiento de cada grupo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Tamaño muestral de notaA según el grupo
+df %&amp;gt;% group_by(grupo) %&amp;gt;% group_size()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 38 35 47
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Media, Desviación típica, Mín, Máx, Cuartiles, Coef. Asimetría y Coef. Apuntamiento
+library(moments)
+df %&amp;gt;% group_by(grupo) %&amp;gt;% summarize(Media = mean(notaA, na.rm=TRUE), Des.Tip = sd(notaA, na.rm = TRUE), Mín = min(notaA, na.rm = TRUE), Máx = max(notaA, na.rm = TRUE), C1 = quantile(notaA, 0.25, na.rm = TRUE), C2 = quantile(notaA, 0.5, na.rm = TRUE), C3 = quantile(notaA, 0.75, na.rm = TRUE), Coef.Asimetría = skewness(notaA, na.rm = TRUE), Coef.Apuntamiento = kurtosis(notaA, na.rm = TRUE) - 3)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 3 x 10
+##   grupo Media Des.Tip   Mín   Máx    C1    C2    C3 Coef.Asimetría
+##   &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;          &amp;lt;dbl&amp;gt;
+## 1 A      6.54   0.998   4.3   8.6  5.93   6.6  7.15         -0.250
+## 2 B      6.96   1.23    3.5   9.3  6.2    6.8  7.7          -0.141
+## 3 C      4.92   0.771   2.5   5.9  4.5    5.1  5.5          -1.06 
+## # … with 1 more variable: Coef.Apuntamiento &amp;lt;dbl&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;gráficos-4&#34;&gt;Gráficos&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de cajas y bigotes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% ggplot(aes(x = grupo, y = notaA, fill = grupo)) + 
+  geom_boxplot() +
+  # Cambio de escala del eje X
+  scale_y_continuous(limits=c(0, 10), breaks = 0:10)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/quantiative-vs-qualitative-more-two-box-plot-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de violín&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% ggplot(aes(x = grupo, y = notaA, fill = grupo)) + 
+  geom_violin() +
+  # Cambio de escala del eje X
+  scale_y_continuous(limits=c(0, 10), breaks = 0:10)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/quantiative-vs-qualitative-more-two-viol%C3%ADn-plot-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;estudios-inferenciales-4&#34;&gt;Estudios inferenciales&lt;/h3&gt;
+&lt;h4 id=&#34;test-de-normalidad-de-shapiro-wilks-2&#34;&gt;Test de normalidad de Shapiro-Wilks&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Comprobar la normalidad de la distribución de cada
+población.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La distribución es normal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar la normalidad de las distribuciones de la nota A
+en los grupos A, B y C.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% group_by(grupo) %&amp;gt;% 
+  summarise(`Estadístico W` = shapiro.test(notaA)$statistic, `p-valor` = shapiro.test(notaA)$p.value)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 3 x 3
+##   grupo `Estadístico W` `p-valor`
+##   &amp;lt;chr&amp;gt;           &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1 A               0.984   0.840  
+## 2 B               0.963   0.277  
+## 3 C               0.918   0.00280
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Interpretación&lt;/strong&gt;: La distribución de la nota A en los grupos A y B es
+normal (p-valores &amp;gt; 0.05) pero no en el grupo C (p-valor &amp;lt; 0.05)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar la normalidad de las distribuciones de la nota A
+en los grupos A, B y C.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% group_by(grupo) %&amp;gt;% 
+  summarise(`Estadístico W` = shapiro.test(notaC)$statistic, `p-valor` = shapiro.test(notaC)$p.value)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 3 x 3
+##   grupo `Estadístico W` `p-valor`
+##   &amp;lt;chr&amp;gt;           &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1 A               0.989     0.961
+## 2 B               0.965     0.343
+## 3 C               0.976     0.442
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Interpretación&lt;/strong&gt;: La distribución de la nota C en los tres grupos es
+normal (p-valores &amp;gt; 0.05).&lt;/p&gt;
+&lt;h4 id=&#34;test-de-levene-de-comparación-de-varianzas-de-dos-o-más-poblaciones-independientes&#34;&gt;Test de Levene de comparación de varianzas de dos o más poblaciones independientes&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Comparar las varianzas de dos o más poblaciones
+independientes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Requisitos&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variable dependiente cuantitativa.&lt;/li&gt;
+&lt;li&gt;Una variable independiente cualitativa con dos o más categorías
+(poblaciones)&lt;/li&gt;
+&lt;li&gt;Distribución normal de la variable dependiente en todas las
+poblaciones o tamaños de las muestras de cada población ≥ 30.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La varianzas poblacionales son iguales (no existe
+una diferencia significativa entre las medias poblacionales).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar si diferencias signicativas entre las varianzas
+de las notas de la asignatura C de los grupos A, B y C.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# El test de Levene está disponible en el paquete car
+library(car)
+# Test de comparación de varianzas
+leveneTest(notaC ~ grupo, data = df)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Levene&#39;s Test for Homogeneity of Variance (center = median)
+##        Df F value Pr(&amp;gt;F)
+## group   2  0.3186 0.7278
+##       116
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Interpretación&lt;/strong&gt;: No existe diferencia significativa entre las
+varianzas de la nota C en los grupos A, B y C (p-valor &amp;gt; 0.05).&lt;/p&gt;
+&lt;h4 id=&#34;anova-de-un-factor-para-la-comparación-medias-de-más-de-dos-poblaciones-independientes&#34;&gt;ANOVA de un factor para la comparación medias de más de dos poblaciones independientes&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Comprobar si hay diferencias significativas entre las
+medias de más de dos poblaciones independientes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Requisitos&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variable dependiente cuantitativa.&lt;/li&gt;
+&lt;li&gt;Una variable independiente cualitativa con más de dos categorías
+(poblaciones)-&lt;/li&gt;
+&lt;li&gt;Distribución normal de la variable dependiente en todas las
+poblaciones o tamaños de las muestras de cada población ≥ 30.&lt;/li&gt;
+&lt;li&gt;Homogeneidad de varianzas en las poblaciones.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La medias poblacionales son iguales (no existe una
+diferencia significativa entre las medias poblacionales).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar si diferencias signicativas entre las notas
+medias de la asignatura C de los grupos A, B y C.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Análisis de la varianza de un factor
+summary(aov(notaC ~ grupo, data = df))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##              Df Sum Sq Mean Sq F value   Pr(&amp;gt;F)    
+## grupo         2  80.69   40.34   20.05 3.32e-08 ***
+## Residuals   116 233.41    2.01                     
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 1 observation deleted due to missingness
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Interpretación&lt;/strong&gt;: Existen diferencias significativas entre las medias
+de la nota C entre al menos dos grupos (p-valor=3.32e-08 &amp;lt; 0.05).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observación&lt;/strong&gt;: Cuando se detectan diferencias significativas entre las
+medias de al menos dos grupos conviene realizar un test de comparación
+múltiple por pares para ver entre qué poblaciones hay diferencias y
+entre cuáles no. Los test más habituales de comparación por pares son el
+de Tukey y el de Bonferroni.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Test de comparación múltiple de Tukey
+TukeyHSD(aov(notaC ~ grupo, data = df))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Tukey multiple comparisons of means
+##     95% family-wise confidence level
+## 
+## Fit: aov(formula = notaC ~ grupo, data = df)
+## 
+## $grupo
+##           diff        lwr        upr     p adj
+## B-A  0.4312693 -0.3637573  1.2262960 0.4048482
+## C-A -1.4455767 -2.1802858 -0.7108676 0.0000241
+## C-B -1.8768461 -2.6350758 -1.1186163 0.0000001
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Interpretación&lt;/strong&gt;: No existe una diferencia significativa entre las
+notas medias de la asignatura C de los grupos A y B (p-valor=0.4048 &amp;gt;
+0.05), pero si existe una diferencia significativa entre las notas
+medias de los grupos A y C (p-valor=0.00002 &amp;lt; 0.05) y también entre las
+notas medias de los grupos B y C (p-valor=0.0000001 &amp;lt; 0.05).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrama de medias&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;df %&amp;gt;% ggplot(aes(x = grupo, y = notaC, colour = grupo)) + 
+  # Puntos de medias
+  stat_summary(fun=&amp;quot;mean&amp;quot;, size=3,  geom=&amp;quot;point&amp;quot;, position=position_dodge(width=0.25)) + 
+  # Intervalos de confianza para la media
+  stat_summary(fun.data = function(x) mean_cl_normal(x, conf.int=0.95), geom = &amp;quot;pointrange&amp;quot;, position=position_dodge(width=0.25)) 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;img/quantitative-vs-qualitative-more-two-means-plot-1.svg&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;h4 id=&#34;test-kruskal-wallis-de-comparación-de-más-de-dos-poblaciones-independientes-no-paramétrico&#34;&gt;Test Kruskal-Wallis de comparación de más de dos poblaciones independientes (no paramétrico)&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Objetivo&lt;/strong&gt;: Comprobar si hay diferencias significativas entre entre
+más de dos poblaciones independientes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Requisitos&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variable dependiente cuantitativa.&lt;/li&gt;
+&lt;li&gt;Una variable independiente cualitativa con más de dos categorías
+(poblaciones)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hipótesis nula&lt;/strong&gt;: La medianas poblacionales son iguales (no existe una
+diferencia significativa entre las medianas poblacionales).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;: Comprobar si diferencias signicativas entre las notas de la
+asignatura A de los grupos A, B y C.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Test de Kruskal-Wallis
+kruskal.test(notaA ~ grupo, data = df)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Kruskal-Wallis rank sum test
+## 
+## data:  notaA by grupo
+## Kruskal-Wallis chi-squared = 62.218, df = 2, p-value = 3.087e-14
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Interpretación&lt;/strong&gt;: Existen diferencias significativas entre las notas
+de la asignatura A de al menos dos de los grupos.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Observación&lt;/strong&gt;: Cuando se detectan diferencias significativas entre al
+menos dos grupos conviene realizar un test de comparación múltiple por
+pares para ver entre qué poblaciones hay diferencias y entre cuáles no.
+El test más habitual es el de Wilcoxon.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Test de comparación múltiple de Wilcoxon
+pairwise.wilcox.test(df$notaA, df$grupo, p.adjust.method = &amp;quot;BH&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Pairwise comparisons using Wilcoxon rank sum test with continuity correction 
+## 
+## data:  df$notaA and df$grupo 
+## 
+##   A       B      
+## B 0.19    -      
+## C 4.2e-10 1.3e-11
+## 
+## P value adjustment method: BH
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Interpretación&lt;/strong&gt;: No existe una diferencia significativa entre las
+notas de la asignatura A de los grupos A y B (p-valor=0.19 &amp;gt; 0.05),
+pero si existe una diferencia significativa entre las notas de los
+grupos A y C (p-valor=4.2e-10 &amp;lt; 0.05) y también entre las notas de los
+grupos B y C (p-valor=1.3e-11 &amp;lt; 0.05).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

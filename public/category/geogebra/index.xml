@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geogebra | Aprende con Alf</title>
+    <link>/category/geogebra/</link>
+      <atom:link href="/category/geogebra/index.xml" rel="self" type="application/rss+xml" />
+    <description>Geogebra</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Geogebra</title>
+      <link>/category/geogebra/</link>
+    </image>
+    
+    <item>
+      <title>Cálculo con Geogebra</title>
+      <link>/docencia/geogebra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/geogebra/</guid>
+      <description>&lt;h2 id=&#34;geogebra&#34;&gt;Geogebra&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.geogebra.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoGebra&lt;/a&gt; es un software interactivo libre para el aprendizaje de Matemáticas en educación secundaria y superior. A continuación os presentamos un manual de Cálculo con Geogegra que se centra, sobre todo, en la resolución analítica de problemas de cálculo en una y varias variables con la vista CAS (cálculo simbólico) de Geogegra.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/asalber/practicas-geogebra/blob/master/practicas_geogebra.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;button type=&#34;button&#34; class=&#34;btn btn-primary&#34;&gt;
+  &lt;i class=&#34;fas fa-file-pdf  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Descargar&lt;/button&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

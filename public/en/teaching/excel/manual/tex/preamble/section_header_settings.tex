@@ -1,0 +1,76 @@
+% Autor: Alfredo Sánchez Alberca (email:asalber@ceu.es)
+
+% Citas en los capítulos
+%\usepackage[palatino]{quotchap}
+%\makeatletter
+% \renewcommand*{\sectfont}{\Huge\bfseries}
+% \renewcommand*{\chapnumfont}{%
+%  \usefont{T1}{\@defaultcnfont}{b}{n}\fontsize{120}{150}\selectfont% Default: 100/130
+%  \color{chaptergrey}%
+% }
+%\makeatother
+
+\usepackage{titlesec}
+
+\setkomafont{chapter}{\usefont{T1}{ppl}{b}{n}\fontsize{1cm}{1em}\selectfont\color{color1}} % "ppl" - Font Palatino, "b" -
+% negrita
+\setkomafont{section}{\usefont{T1}{ppl}{b}{n}\selectfont\LARGE}
+\addtokomafont{subsection}{\color{color1}}
+\addtokomafont{subsubsection}{\color{color1}}
+\addtokomafont{paragraph}{\color{color1}}
+\addtokomafont{subparagraph}{\color{color1}}
+
+
+\titleformat{\chapter}
+  {\usekomafont{chapter}} 
+  {} % etiqueta
+  {0pt} % separación horizontal entre la etiqueta y el cuerpo del título
+  {
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-7cm] at (current page.north east) 
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[color1, fill=color1] (-6,0) rectangle (6cm,3cm);
+        %\node[anchor=east,xshift=\paperwidth-3cm, yshift=1.5cm] {\color{color2}#1};
+		\node[anchor=east,xshift=-3cm, yshift=1.5cm] {\fontsize{3cm}{1em}\selectfont\color{white}\thechapter};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+   \hspace{-25pt}
+  }
+  
+\titlespacing*{\chapter}{0pt}{7cm}{2cm}  
+
+\titleformat{name=\chapter,numberless}
+  {\usekomafont{chapter}} 
+  {} % etiqueta
+  {0pt} % separación horizontal entre la etiqueta y el cuerpo del título
+  {}
+
+\titlespacing*{name=\chapter,numberless}{0pt}{2cm}{2cm}  
+
+\titleformat{\section}[hang]
+  {\usekomafont{section}} % "qhv" - TeX Gyre Heros, "b" - negrita
+  {} % etiqueta
+  {0em} % separación horizontal entre la etiqueta y el cuerpo del título
+  {\color{color1}\thesection\hspace{0.6em}} %código que precede al título
+  [] % código opcional que sigue al título
+  
+\titlespacing*{name=\section}{0pt}{1cm}{0cm}  
+
+\titleformat{\subsection}[hang]
+  {\usefont{T1}{ppl}{b}{n}\selectfont} % "qhv" - TeX Gyre Heros, "b" - negrita
+  {} % etiqueta
+  {0em} % separación horizontal entre la etiqueta y el cuerpo del título
+  {\Large \color{color1}\thesubsection\hspace{0.6em}} %código que precede al título
+  [] % código opcional que sigue al título
+  
+\titlespacing*{name=\subsection}{0pt}{0.5cm}{0cm}  
+
+\titleformat{\subsubsection}[hang]
+  {\usefont{T1}{ppl}{b}{n}\selectfont} % "qhv" - TeX Gyre Heros, "b" - negrita
+  {} % etiqueta
+  {0em} % separación horizontal entre la etiqueta y el cuerpo del título
+  {\large \color{color1}\thesubsection\hspace{0.6em}} %código que precede al título
+  [] % código opcional que sigue al título
+
+\titlespacing*{name=\subsubsection}{0pt}{0.4cm}{0cm} 

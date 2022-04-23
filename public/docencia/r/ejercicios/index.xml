@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ejercicios de Bioestadística con R y el paquete rkTeaching | Aprende con Alf</title>
+    <link>/docencia/r/ejercicios/</link>
+      <atom:link href="/docencia/r/ejercicios/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ejercicios de Bioestadística con R y el paquete rkTeaching</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Ejercicios de Bioestadística con R y el paquete rkTeaching</title>
+      <link>/docencia/r/ejercicios/</link>
+    </image>
+    
+    <item>
+      <title>Ejercicios de Tipos de Datos Simples</title>
+      <link>/docencia/r/ejercicios/tipos-datos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/r/ejercicios/tipos-datos/</guid>
+      <description>&lt;!-- Datacamp light
+&lt;script async type=&#34;text/javascript&#34; src=&#34;https://cdn.datacamp.com/dcl-react-dev.js.gz&#34;&gt;&lt;/script&gt;  
+--&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que muestre por pantalla la cadena &lt;code&gt;¡Hola Mundo!&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/r/ejercicios/soluciones/tipos-datos/ejercicio1.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;!-- ## Ejercicio 2
+
+Escribir un programa que almacene la cadena `¡Hola Mundo!` en una variable y luego muestre por pantalla el contenido de la variable.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio2.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 3
+
+Escribir un programa que pregunte el nombre del usuario en la consola y después de que el usuario lo introduzca muestre por pantalla la cadena `¡Hola &lt;nombre&gt;!`, donde `&lt;nombre&gt;` es el nombre que el usuario haya introducido.
+
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio3.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+
+## Ejercicio 4
+
+Escribir un programa que muestre por pantalla el resultado de la siguiente operación aritmética $\left(\frac{3+2}{2\cdot 5}\right)^2$.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio4.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 5
+
+Escribir un programa que pregunte al usuario por el número de horas trabajadas y el coste por hora.
+Después debe mostrar por pantalla la paga que le corresponde.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio5.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 6
+
+Escribir un programa que lea un entero positivo, $n$, introducido por el usuario y después muestre en pantalla la suma de todos los enteros desde 1 hasta $n$.
+La suma de los $n$ primeros enteros positivos puede ser calculada de la siguiente forma:
+
+$$ \mbox{suma} = \frac{n(n+1)}{2} $$
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio6.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 7
+
+Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el índice de masa corporal y lo almacene en una variable, y muestre por pantalla la frase `Tu índice de masa corporal es &lt;imc&gt;` donde `&lt;imc&gt;` es el índice de masa corporal calculado redondeado con dos decimales.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio7.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 8
+
+Escribir un programa que pida al usuario dos números enteros y muestre por pantalla la `&lt;n&gt; entre &lt;m&gt; da un cociente &lt;c&gt; y un resto &lt;r&gt;` donde `&lt;n&gt;` y `&lt;m&gt;` son los números introducidos por el usuario, y `&lt;c&gt;` y `&lt;r&gt;` son el cociente y el resto de la división entera respectivamente.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio8.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 9
+
+Escribir un programa que pregunte al usuario una cantidad a invertir, el interés anual y el número de años, y muestre por pantalla el capital obtenido en la inversión.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio9.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 10
+
+Una juguetería tiene mucho éxito en dos de sus productos: payasos y muñecas.
+Suele hacer venta por correo y la empresa de logística les cobra por peso de cada paquete así que deben calcular el peso de los payasos y muñecas que saldrán en cada paquete a demanda. Cada payaso pesa 112 g y cada muñeca 75 g.
+Escribir un programa que lea el número de payasos y muñecas vendidos en el último pedido y calcule el peso total del paquete que será enviado.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio10.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 11
+
+Imagina que acabas de abrir una nueva cuenta de ahorros que te ofrece el 4% de interés al año. Estos ahorros debido a intereses, que no se cobran hasta finales de año, se te añaden al balance final de tu cuenta de ahorros.
+Escribir un programa que comience leyendo la cantidad de dinero depositada en la cuenta de ahorros, introducida por el usuario. Después el programa debe calcular y mostrar por pantalla la cantidad de ahorros tras el primer, segundo y tercer años.
+Redondear cada cantidad a dos decimales.  
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio11.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;
+
+## Ejercicio 12
+
+Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%.
+Escribir un programa que comience leyendo el número de barras vendidas que no son del día. Después el programa debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste final total.
+
+&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/tipos-datos/ejercicio12.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt; --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

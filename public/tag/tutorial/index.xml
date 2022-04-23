@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial | Aprende con Alf</title>
+    <link>/tag/tutorial/</link>
+      <atom:link href="/tag/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tutorial</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language><lastBuildDate>Sun, 07 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Tutorial</title>
+      <link>/tag/tutorial/</link>
+    </image>
+    
+    <item>
+      <title>Epidemiología para tiempos de pandemia</title>
+      <link>/post/epidemiologia-tiempos-pandemias/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>/post/epidemiologia-tiempos-pandemias/</guid>
+      <description>&lt;p&gt;Debido a la epidemia provocada por el coronavirus, la Epidemiología se ha convertido en una de las ramas de la medicina que más interés despiertan.&lt;/p&gt;
+&lt;p&gt;En estos tiempos de pandemia un montón de términos técnicos de la Epidemiología se han convertido en lugares comunes gracias a los medios de comunicación. Sin embargo, muchos de estos términos se utilizan de manera errónea, incluso por los propios medios de comunicación, y generan confusión para la población no experta.&lt;/p&gt;
+&lt;p&gt;Por ello, y con motivo de la 
+&lt;a href=&#34;http://www.madrimasd.org/semanacienciaeinnovacion/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Semana de la Ciencia y la Innovación de Madrid 2021&lt;/a&gt;, he preparado un tutorial para explicar al público en general los principales conceptos epidemiológicos usados en el control de enfermedades como la COVID e ilustrar su uso con ejemplos de aplicación.&lt;/p&gt;
+&lt;p&gt;Podéis acceder a él en el siguiente enlace: 
+&lt;a href=&#34;/docencia/estadistica/tutoriales/epidemiologia/#valores-predictivos-de-un-test&#34;&gt;Tutorial de Epidemiología&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/R_Z_atAXoXA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

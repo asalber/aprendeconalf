@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>One Variable Calculus | Aprende con Alf</title>
+    <link>/en/category/one-variable-calculus/</link>
+      <atom:link href="/en/category/one-variable-calculus/index.xml" rel="self" type="application/rss+xml" />
+    <description>One Variable Calculus</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>One Variable Calculus</title>
+      <link>/en/category/one-variable-calculus/</link>
+    </image>
+    
+    <item>
+      <title>One variable differential calculus</title>
+      <link>/en/teaching/calculus/manual/derivatives-one-variable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/calculus/manual/derivatives-one-variable/</guid>
+      <description>&lt;h2 id=&#34;concept-of-derivative&#34;&gt;Concept of derivative&lt;/h2&gt;
+&lt;h3 id=&#34;increment&#34;&gt;Increment&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definition - Increment of a variable&lt;/strong&gt;.  An &lt;em&gt;increment of a variable&lt;/em&gt; $x$ is a change in the value of the variable; it is denoted $\Delta x$. The increment of a variable $x$ along an interval $[a,b]$ is given by  $$\Delta x = b-a.$$
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definition - Increment of a function&lt;/strong&gt;. The &lt;em&gt;increment of a function&lt;/em&gt; $y=f(x)$ along an interval $[a,b]\subseteq Dom(f)$ is given by $$\Delta y = f(b)-f(a).$$
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The increment of $x$ along the interval $[2,5]$ is $\Delta x=5-2=3$, and the increment of the function $y=x^2$ along the same interval is $\Delta y=5^2-2^2=21$.&lt;/p&gt;
+&lt;h3 id=&#34;average-rate-of-change&#34;&gt;Average rate of change&lt;/h3&gt;
+&lt;p&gt;The study of a function $y=f(x)$ requires to understand how the function changes, that is, how the dependent variable $y$ changes when we change the independent variable $x$.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definition - Average rate of change&lt;/strong&gt;. The &lt;em&gt;average rate of change&lt;/em&gt; of a function $y=f(x)$ in an interval $[a,a+\Delta x]\subseteq Dom(f)$, is the quotient between the increment of $y$ and the increment of $x$ in that interval; it is denoted by $$\mbox{ARC}\;f[a,a+\Delta x]=\frac{\Delta y}{\Delta x}=\frac{f(a+\Delta x)-f(a)}{\Delta x}.$$
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example - Area of a square&lt;/strong&gt;. Let $y=x^2$ be the function that measures the area of a metallic square of side length $x$.&lt;/p&gt;
+&lt;p&gt;If at any given time the side of the square is $a$, and we heat the square uniformly increasing the side by dilatation a quantity $\Delta x$, how much will increase the area of the square?&lt;/p&gt;
+&lt;p&gt;$$
+\Delta y = f(a+\Delta x)-f(a)=(a+\Delta x)^2-a^2=
+a^2+2a\Delta x+\Delta x^2-a^2=2a\Delta x+\Delta x^2.
+$$&lt;/p&gt;
+&lt;p&gt;What is the average rate of change in the interval $[a,a+\Delta x]$? $$\mbox{ARC}\;f[a,a+\Delta x]=\frac{\Delta y}{\Delta x}=\frac{2a\Delta x+\Delta x^2}{\Delta x}=2a+\Delta x.$$&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/square_area_variation.svg&#34; alt=&#34;Variation of the area of a square&#34; width=&#34;300&#34;&gt;
+&lt;h3 id=&#34;geometric-interpretation-of-the-average-rate-of-change&#34;&gt;Geometric interpretation of the average rate of change&lt;/h3&gt;
+&lt;p&gt;The average rate of change of a function $y=f(x)$ in an interval $[a,a+\Delta x]$ is the slope of the &lt;em&gt;secant&lt;/em&gt; line to the graph of $f$ through the points $(a,f(a))$ and $(a+\Delta x,f(a+\Delta x))$.&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/secant_line.svg&#34; alt=&#34;Secant line to a function&#34; width=&#34;500&#34;&gt;
+&lt;h3 id=&#34;instantaneous-rate-of-change&#34;&gt;Instantaneous rate of change&lt;/h3&gt;
+&lt;p&gt;Often it is interesting to study the rate of change of a function, not in an interval, but in a point.&lt;/p&gt;
+&lt;p&gt;Knowing the tendency of change of a function in an instant can be used to predict the value of the function in nearby instants.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Instantaneous rate of change and derivative&lt;/strong&gt;.  The &lt;em&gt;instantaneous rate of change&lt;/em&gt; of a function $f$ in a point $a$, is the limit of the average rate of change of $f$ in the interval $[a,a+\Delta x]$, when $\Delta x$ approaches 0; it is denoted by&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\textrm{IRC}\;f (a) &amp;amp;= \lim_{\Delta x\rightarrow 0} \textrm{ARC}\; f[a,a+\Delta x]=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}=\newline
+&amp;amp;= \lim_{\Delta x\rightarrow 0}\frac{f(a+\Delta x)-f(a)}{\Delta x}.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;When this limit exists, the function $f$ is said to be &lt;em&gt;differentiable&lt;/em&gt; at the point $a$, and its value is called the &lt;em&gt;derivative&lt;/em&gt; of $f$ at $a$, and it is denoted $f&amp;rsquo;(a)$ (Lagrange’s notation) or $\frac{df}{dx}(a)$ (Leibniz’s notation).&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example - Area of a square&lt;/strong&gt;. Let us take again the function $y=x^2$ that measures the area of a metallic square of side $x$.&lt;/p&gt;
+&lt;p&gt;If at any given time the side of the square is $a$, and we heat the square uniformly increasing the side, what is the tendency of change of the area in that moment?&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+\textrm{IRC}\;f(a)&amp;amp;=\lim_{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x} = \lim_{\Delta x\rightarrow 0}\frac{f(a+\Delta x)-f(a)}{\Delta x} =\newline
+&amp;amp;= \lim_{\Delta x\rightarrow 0}\frac{2a\Delta x+\Delta x^2}{\Delta x}=\lim_{\Delta x\rightarrow 0} 2a+\Delta x= 2a.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;Thus, $$f&amp;rsquo;(a)=\frac{df}{dx}(a)=2a,$$ indicating that the area of the square tends to increase the double of the side.&lt;/p&gt;
+&lt;h3 id=&#34;interpretation-of-the-derivative&#34;&gt;Interpretation of the derivative&lt;/h3&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;The derivative of a function $f&amp;rsquo;(a)$ shows the growth rate of $f$ at point $a$:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$f&amp;rsquo;(a)&amp;gt;0$ indicates an increasing tendency ($y$ increases as $x$ increases).&lt;/li&gt;
+&lt;li&gt;$f&amp;rsquo;(a)&amp;lt;0$ indicates a decreasing tendency ($y$ decreases as $x$ increases).&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. A derivative $f&amp;rsquo;(a)=3$ indicates that $y$ tends to increase triple of $x$ at point $a$. A derivative $f&amp;rsquo;(a)=-0.5$ indicates that $y$ tends to decrease half of $x$ at point $a$.&lt;/p&gt;
+&lt;h3 id=&#34;geometric-interpretation-of-the-derivative&#34;&gt;Geometric interpretation of the derivative&lt;/h3&gt;
+&lt;p&gt;We have seen that the average rate of change of a function $y=f(x)$ in an interval $[a,a+\Delta x]$ is the slope of the secant line, but when $\Delta x$ approaches $0$, the secant line becomes the tangent line.&lt;/p&gt;
+&lt;p&gt;The instantaneous rate of change or derivative of a function $y=f(x)$ at $x=a$ is the slope of the &lt;em&gt;tangent line&lt;/em&gt; to the graph of $f$ at point $(a,f(a))$. Thus, the equation of the tangent line to the graph of $f$ at the point $(a,f(a))$ is $$y-f(a) = f&amp;rsquo;(a)(x-a) \Leftrightarrow y = f(a)+f&amp;rsquo;(a)(x-a)$$&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/tangent_line.svg&#34; alt=&#34;Tangent line to a function&#34; width=&#34;450&#34;&gt;
+&lt;h3 id=&#34;kinematic-applications-linear-motion&#34;&gt;Kinematic applications: Linear motion&lt;/h3&gt;
+&lt;p&gt;Assume that the function $y=f(t)$ describes the position of an object moving in the real line at time $t$. Taking as reference the coordinates origin $O$ and the unitary vector $\mathbf{i}=(1)$, we can represent the position of the moving object $P$ at every moment $t$ with a vector $\vec{OP}=x\mathbf{i}$ where $x=f(t)$.&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/linear_motion.svg&#34; alt=&#34;Linear motion&#34; width=&#34;500&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Remark&lt;/strong&gt;. It also makes sense when $f$ measures other magnitudes as the temperature of a body, the concentration of a gas, or the quantity of substance in a chemical reaction at every moment $t$.&lt;/p&gt;
+&lt;h3 id=&#34;kinematic-interpretation-of-the-average-rate-of-change&#34;&gt;Kinematic interpretation of the average rate of change&lt;/h3&gt;
+&lt;p&gt;In this context, if we take the instants $t=t_0$ and $t=t_0+\Delta t$, both in $\mbox{Dom}(f)$, the vector $$\mathbf{v}_m=\frac{f(t_0+\Delta t)-f(t_0)}{\Delta t}$$ is known as the &lt;em&gt;average velocity&lt;/em&gt; of the trajectory $f$ in the interval $[t_0, t_0+\Delta t]$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. A vehicle makes a trip from Madrid to Barcelona. Let $f(t)$ be the function that determine the position of the vehicle at every moment $t$. If the vehicle departs from Madrid (km 0) at 8:00 and arrives at Barcelona (km 600) at 14:00, then the average velocity of the vehicle in the path is $$\mathbf{v}_m=\frac{f(14)-f(8)}{14-8}=\frac{600-0}{6} = 100 km/h.$$&lt;/p&gt;
+&lt;h3 id=&#34;kinematic-interpretation-of-the-derivative&#34;&gt;Kinematic interpretation of the derivative&lt;/h3&gt;
+&lt;p&gt;In the same context of the linear motion, the derivative of the function $f(t)$ at the moment $t_0$ is the vector&lt;/p&gt;
+&lt;p&gt;$$\mathbf{v}=f&amp;rsquo;(t_0)=\lim_{\Delta t\rightarrow 0}\frac{f(t_0+\Delta t)-f(t_0)}{\Delta t},$$&lt;/p&gt;
+&lt;p&gt;that is known, as long as the limit exists, as the &lt;em&gt;instantaneous velocity&lt;/em&gt; or simply &lt;em&gt;velocity&lt;/em&gt; of the trajectory $f$ at moment $t_0$.&lt;/p&gt;
+&lt;p&gt;That is, the derivative of the object position with respect to time is a vector field that is called &lt;em&gt;velocity along the trajectory $f$&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Following with the previous example, what indicates the speedometer at any instant is the modulus of the instantaneous velocity vector at that moment.&lt;/p&gt;
+&lt;h2 id=&#34;algebra-of-derivatives&#34;&gt;Algebra of derivatives&lt;/h2&gt;
+&lt;h3 id=&#34;properties-of-the-derivative&#34;&gt;Properties of the derivative&lt;/h3&gt;
+&lt;p&gt;If $y=c$, is a constant function, then $y&amp;rsquo;=0$ at any point.&lt;/p&gt;
+&lt;p&gt;If $y=x$, is the identity function, then $y&amp;rsquo;=1$ at any point.&lt;/p&gt;
+&lt;p&gt;If $u=f(x)$ and $v=g(x)$ are two differentiable functions, then&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$(u+v)&amp;rsquo;=u&amp;rsquo;+v&#39;$&lt;/li&gt;
+&lt;li&gt;$(u-v)&amp;rsquo;=u&amp;rsquo;-v&#39;$&lt;/li&gt;
+&lt;li&gt;$(u\cdot v)&amp;rsquo;=u&amp;rsquo;\cdot v+ u\cdot v&#39;$&lt;/li&gt;
+&lt;li&gt;$\left(\dfrac{u}{v}\right)&amp;rsquo;=\dfrac{u&amp;rsquo;\cdot v-u\cdot v&amp;rsquo;}{v^2}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;derivative-of-a-composite-function&#34;&gt;Derivative of a composite function&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Theorem - Chain rule&lt;/strong&gt;. If the function $y=f\circ g$ is the composition of two functions $y=f(z)$ and $z=g(x)$, then $$(f\circ g)&amp;rsquo;(x)=f&amp;rsquo;(g(x))g&amp;rsquo;(x).$$
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Proof
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      It is easy to proof this fact using the Leibniz notation $$\frac{dy}{dx}=\frac{dy}{dz}\frac{dz}{dx}=f&amp;rsquo;(z)g&amp;rsquo;(x)=f&amp;rsquo;(g(x))g&amp;rsquo;(x).$$
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. If $f(z)=\sin z$ and $g(x)=x^2$, then $f\circ g(x)=\sin(x^2)$. Applying the chain rule the derivative of the composite function is
+$$(f\circ g)&amp;rsquo;(x)=f&amp;rsquo;(g(x))g&amp;rsquo;(x) = \cos(g(x)) 2x = \cos(x^2)2x.$$&lt;/p&gt;
+&lt;p&gt;On the other hand, $g\circ f(z)= (\sin z)^2$, and applying the chain rule again, its derivative is
+$$(g\circ f)&amp;rsquo;(z)=g&amp;rsquo;(f(z))f&amp;rsquo;(z) = 2f(z)\cos z = 2\sin z\cos z.$$&lt;/p&gt;
+&lt;h3 id=&#34;derivative-of-the-inverse-of-a-function&#34;&gt;Derivative of the inverse of a function&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Theorem - Derivative of the inverse function&lt;/strong&gt;.  Given a function $y=f(x)$ with inverse $x=f^{-1}(y)$, then $$\left(f^{-1}\right)&amp;rsquo;(y)=\frac{1}{f&amp;rsquo;(x)}=\frac{1}{f&amp;rsquo;(f^{-1}(y))},$$
+provided that $f$ is differentiable at $f^{-1}(y)$ and $f&amp;rsquo;(f^{-1}(y))\neq 0$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-8&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-8&#34;&gt;
+      Proof
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-8&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      It is easy to prove this equality using the Leibniz notation $$\frac{dx}{dy}=\frac{1}{dy/dx}=\frac{1}{f&amp;rsquo;(x)}=\frac{1}{f&amp;rsquo;(f^{-1}(y))}$$
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The inverse of the exponential function $y=f(x)=e^x$ is the natural logarithm $x=f^{-1}(y)=\ln y$, so we can compute the derivative of the natural logarithm using the previous theorem and we get $$\left(f^{-1}\right)&amp;rsquo;(y)=\frac{1}{f&amp;rsquo;(x)}=\frac{1}{e^x}=\frac{1}{e^{\ln y}}=\frac{1}{y}.$$&lt;/p&gt;
+&lt;p&gt;Sometimes it is easier to apply the chain rule to compute the derivative of the inverse of a function. In this example, as $\ln x$ is the inverse of $e^x$, we know that $e^{\ln x}=x$, so differentiating both sides and applying the chain rule to the left side we get $$(e^{\ln x})&amp;rsquo;=x&amp;rsquo; \Leftrightarrow e^{\ln x}(\ln(x))&amp;rsquo; = 1 \Leftrightarrow (\ln(x))&amp;rsquo;=\frac{1}{e^{\ln x}}=\frac{1}{x}.$$&lt;/p&gt;
+&lt;h2 id=&#34;analysis-of-functions&#34;&gt;Analysis of functions&lt;/h2&gt;
+&lt;h3 id=&#34;analysis-of-functions-increase-and-decrease&#34;&gt;Analysis of functions: increase and decrease&lt;/h3&gt;
+&lt;p&gt;The main application of derivatives is to determine the variation (increase or decrease) of functions. For that we use the sign of the first derivative.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt;. Let $f(x)$ be a function with first derivative in an interval $I\subseteq \mathbb{R}$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $\forall x\in I\ f&amp;rsquo;(x)&amp;gt; 0$ then $f$ is increasing on $I$.&lt;/li&gt;
+&lt;li&gt;If $\forall x\in I\ f&amp;rsquo;(x)&amp;lt; 0$ then $f$ is decreasing on $I$.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If $f&amp;rsquo;(x_0)=0$ then $x_0$ is known as a &lt;em&gt;critical point&lt;/em&gt; or  &lt;em&gt;stationary point&lt;/em&gt;. At this point the function can be increasing, decreasing or neither increasing nor decreasing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt; The function $f(x)=x^2$ has derivative $f&amp;rsquo;(x)=2x$; it is decreasing on $\mathbb{R}^-$ as $f&amp;rsquo;(x)&amp;lt; 0$ $\forall x\in \mathbb{R}^-$  and increasing on $\mathbb{R}^+$ as $f&amp;rsquo;(x)&amp;gt; 0$ $\forall x\in \mathbb{R}^+$.
+It has a critical point at $x=0$, as $f&amp;rsquo;(0)=0$; at this point the function is neither increasing nor decreasing.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    A function can be increasing or decreasing on an interval and not have first derivative.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Let us analyze the increase and decrease of the function $f(x)=x^4-2x^2+1$. Its first derivative is $f&amp;rsquo;(x)=4x^3-4x$.&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/increase_analysis.svg&#34; alt=&#34;Inrease or decrease analysis of a function&#34; width=&#34;550&#34;&gt;
+&lt;h3 id=&#34;analysis-of-functions-relative-extrema&#34;&gt;Analysis of functions: relative extrema&lt;/h3&gt;
+&lt;p&gt;As a consequence of the previous result we can also use the first derivative to determine the relative extrema of a function.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - First derivative test&lt;/strong&gt;. Let $f(x)$ be a function with first derivative in an interval $I\subseteq \mathbb{R}$ and let $x_0\in I$ be a critical point of $f$ ($f&amp;rsquo;(x_0)=0$).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $f&amp;rsquo;(x)&amp;gt;0$ on an open interval extending left from $x_0$ and $f&amp;rsquo;(x)&amp;lt;0$ on an open interval extending right from $x_0$, then $f$ has a &lt;em&gt;relative maximum&lt;/em&gt; at $x_0$.&lt;/li&gt;
+&lt;li&gt;If $f&amp;rsquo;(x)&amp;lt;0$ on an open interval extending left from $x_0$ and $f&amp;rsquo;(x)&amp;gt;0$ on an open interval extending right from $x_0$, then $f$ has a &lt;em&gt;relative minimum&lt;/em&gt; at $x_0$.&lt;/li&gt;
+&lt;li&gt;If $f&amp;rsquo;(x)$ has the same sign on both an open interval extending left from $x_0$ and an open interval extending right from $x_0$, then $f$ has an &lt;em&gt;inflection point&lt;/em&gt; at $x_0$.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    A vanishing derivative is a necessary but not sufficient condition for the function to have a relative extrema at a point.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The function $f(x)=x^3$ has derivative $f&amp;rsquo;(x)=3x^2$; it has a critical point at $x=0$. However it does not have a relative extrema at that point, but an inflection point.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Consider again the function $f(x)=x^4-2x^2+1$ and let us analyze its relative extrema now. Its first derivative is $f&amp;rsquo;(x)=4x^3-4x$.&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/extrema_analysis.svg&#34; alt=&#34;Extrema analysis of a function&#34; width=&#34;550&#34;&gt;
+&lt;h3 id=&#34;analysis-of-functions-concavity&#34;&gt;Analysis of functions: concavity&lt;/h3&gt;
+&lt;p&gt;The concavity of a function can be determined by de second derivative.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt;. Let $f(x)$ be a function with second derivative in an interval $I\subseteq \mathbb{R}$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $\forall x\in I\ f&amp;rsquo;&amp;rsquo;(x)&amp;gt; 0$ then $f$ is concave up (convex) on $I$.&lt;/li&gt;
+&lt;li&gt;If $\forall x\in I\ f&amp;rsquo;&amp;rsquo;(x)&amp;lt; 0$ then $f$ is concave down (concave) on $I$.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The function $f(x)=x^2$ has second derivative $f&amp;rsquo;&amp;rsquo;(x)=2&amp;gt;0$ $\forall x\in \mathbb{R}$, so it is concave up in all $\mathbb{R}$.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    A function can be concave up or down and not have second derivative.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Let us analyze the concavity of the same function of previous examples $f(x)=x^4-2x^2+1$. Its second derivative is $f&amp;rsquo;&amp;rsquo;(x)=12x^2-4$.&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/concavity_analysis.svg&#34; alt=&#34;Concavity analysis of a function&#34; width=&#34;550&#34;&gt;
+&lt;h2 id=&#34;function-approximation&#34;&gt;Function approximation&lt;/h2&gt;
+&lt;h3 id=&#34;approximating-a-function-with-the-derivative&#34;&gt;Approximating a function with the derivative&lt;/h3&gt;
+&lt;p&gt;The tangent line to the graph of a function $f(x)$ at $x=a$ can be used to approximate $f$ in a neighbourhood of $a$.&lt;/p&gt;
+&lt;p&gt;Thus, the increment of a function $f(x)$ in an interval $[a,a+\Delta x]$ can be approximated multiplying the derivative of $f$ at $a$ by the increment of $x$ $$\Delta y \approx f&amp;rsquo;(a)\Delta x$$&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/tangent_line_approximation.gif&#34; alt=&#34;Approximation of a function with the tangent line&#34; width=&#34;700&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Example - Area of a square&lt;/strong&gt;. In the previous example of the function $y=x^2$ that measures the area of a metallic square of side $x$, if the side of the square is $a$ and we increment it by a quantity $\Delta x$, then the increment on the area will be approximately $$\Delta y \approx f&amp;rsquo;(a)\Delta x = 2a\Delta x.$$
+In the figure below we can see that the error of this approximation is $\Delta x^2$, which is smaller than $\Delta x$ when $\Delta x$ approaches to 0.&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/square_area_variation_approximation.svg&#34; alt=&#34;Approximation of the variation of a square area&#34; width=&#34;300&#34;&gt;
+&lt;h3 id=&#34;approximating-a-function-by-a-polynomial&#34;&gt;Approximating a function by a polynomial&lt;/h3&gt;
+&lt;p&gt;Another useful application of the derivative is the approximation of functions by polynomials.&lt;/p&gt;
+&lt;p&gt;Polynomials are functions easy to calculate (sums and products) with very good properties:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Defined in all the real numbers.&lt;/li&gt;
+&lt;li&gt;Continuous.&lt;/li&gt;
+&lt;li&gt;Differentiable of all orders with continuous derivatives.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt; Approximate a function $f(x)$ by a polynomial $p(x)$ near a point $x=a$.&lt;/p&gt;
+&lt;h3 id=&#34;approximating-a-function-by-a-polynomial-of-order-0&#34;&gt;Approximating a function by a polynomial of order 0&lt;/h3&gt;
+&lt;p&gt;A polynomial of degree 0 has equation
+$$p(x) = c_0,$$
+where $c_0$ is a constant.&lt;/p&gt;
+&lt;p&gt;As the polynomial should coincide with the function at $a$, it must satisfy
+$$p(a) = c_0 = f(a).$$&lt;/p&gt;
+&lt;p&gt;Therefore, the polynomial of degree 0 that best approximate $f$ near $a$ is
+$$p(x) = f(a).$$&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/approximation_polynomial_0.gif&#34; alt=&#34;Approximation of a function by a polynomial of order 0&#34; width=&#34;550&#34;&gt;
+&lt;h3 id=&#34;approximating-a-function-by-a-polynomial-of-order-1&#34;&gt;Approximating a function by a polynomial of order 1&lt;/h3&gt;
+&lt;p&gt;A polynomial of order 1 has equation
+$$p(x) = c_0+c_1x,$$ but it can also be written as $$p(x) = c_0+c_1(x-a).$$&lt;/p&gt;
+&lt;p&gt;Among all the polynomials of degree 1, the one that best approximates $f(x)$ near $a$ is that which meets the following conditions&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$p$ and $f$ coincide at $a$: $p(a) = f(a)$,&lt;/li&gt;
+&lt;li&gt;$p$ and $f$ have the same rate of change at $a$: $p&amp;rsquo;(a) = f&amp;rsquo;(a)$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The last condition guarantees that $p$ and $f$ have approximately the same tendency, but it requires the function $f$ to be differentiable at $a$.&lt;/p&gt;
+&lt;p&gt;Imposing the previous conditions we have&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$p(x)=c_0+c_1(x-a) \Rightarrow p(a)=c_0+c_1(a-a)=c_0=f(a)$,&lt;/li&gt;
+&lt;li&gt;$p&amp;rsquo;(x)=c_1 \Rightarrow p&amp;rsquo;(a)=c_1=f&amp;rsquo;(a)$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Therefore, the polynomial of degree 1 that best approximates $f$ near $a$ is
+$$p(x) = f(a)+f &amp;lsquo;(a)(x-a),$$
+which turns out to be the tangent line to $f$ at $(a,f(a))$.&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/approximation_polynomial_1.gif&#34; alt=&#34;Approximation of a function by a polynomial of order 1&#34; width=&#34;650&#34;&gt;
+&lt;h3 id=&#34;approximating-a-function-by-a-polynomial-of-order-2&#34;&gt;Approximating a function by a polynomial of order 2&lt;/h3&gt;
+&lt;p&gt;A polynomial of order 2 is a parabola with equation $$p(x) = c_0+c_1x+c_2x^2,$$ but it can also be written as
+$$p(x) = c_0+c_1(x-a)+c_2(x-a)^2.$$&lt;/p&gt;
+&lt;p&gt;Among all the polynomials of degree 2, the one that best approximate $f(x)$ near $a$ is that which meets the following conditions&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$p$ and $f$ coincide at $a$: $p(a) = f(a)$,&lt;/li&gt;
+&lt;li&gt;$p$ and $f$ have the same rate of change at $a$: $p&amp;rsquo;(a) = f&amp;rsquo;(a)$.&lt;/li&gt;
+&lt;li&gt;$p$ and $f$ have the same concavity at $a$: $p&amp;rsquo;&amp;rsquo;(a)=f&amp;rsquo;&amp;rsquo;(a)$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The last condition requires the function $f$ to be differentiable twice at $a$.&lt;/p&gt;
+&lt;p&gt;Imposing the previous conditions we have&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$p(x)=c_0+c_1(x-a) \Rightarrow p(a)=c_0+c_1(a-a)=c_0=f(a)$,&lt;/li&gt;
+&lt;li&gt;$p&amp;rsquo;(x)=c_1 \Rightarrow p&amp;rsquo;(a)=c_1=f&amp;rsquo;(a)$.&lt;/li&gt;
+&lt;li&gt;$p&amp;rsquo;&amp;rsquo;(x)=2c_2 \Rightarrow p&amp;rsquo;&amp;rsquo;(a)=2c_2=f&amp;rsquo;&amp;rsquo;(a) \Rightarrow c_2=\frac{f&amp;rsquo;&amp;rsquo;(a)}{2}$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Therefore, the polynomial of degree 2 that best approximates $f$ near $a$ is
+$$p(x) = f(a)+f&amp;rsquo;(a)(x-a)+\frac{f&amp;rsquo;&amp;rsquo;(a)}{2}(x-a)^2.$$&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/approximation_polynomial_2.gif&#34; alt=&#34;Approximation of a function by a polynomial of order 2&#34; width=&#34;750&#34;&gt;
+&lt;h3 id=&#34;approximating-a-function-by-a-polynomial-of-order-n&#34;&gt;Approximating a function by a polynomial of order $n$&lt;/h3&gt;
+&lt;p&gt;A polynomial of order $n$ has equation
+$$p(x) = c_0+c_1x+c_2x^2+\cdots +c_nx^n,$$ but it can also be written as $$p(x) = c_0+c_1(x-a)+c_2(x-a)^2+\cdots +c_n(x-a)^n.$$&lt;/p&gt;
+&lt;p&gt;Among all the polynomials of degree $n$, the one that best approximate $f(x)$ near $a$ is that which meets the following $n+1$ conditions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$p(a) = f(a)$,&lt;/li&gt;
+&lt;li&gt;$p&amp;rsquo;(a) = f&amp;rsquo;(a)$,&lt;/li&gt;
+&lt;li&gt;$p&amp;rsquo;&amp;rsquo;(a)=f&amp;rsquo;&amp;rsquo;(a)$,&lt;/li&gt;
+&lt;li&gt;$\cdots$&lt;/li&gt;
+&lt;li&gt;$p^{(n)}(a)=f^{(n)}(a)$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The successive derivatives of $p$ are&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+p(x) &amp;amp;= c_0+c_1(x-a)+c_2(x-a)^2+\cdots +c_n(x-a)^n,\newline
+p&amp;rsquo;(x)&amp;amp; = c_1+2c_2(x-a)+\cdots +nc_n(x-a)^{n-1},\newline
+p&amp;rsquo;&amp;rsquo;(x)&amp;amp; = 2c_2+\cdots +n(n-1)c_n(x-a)^{n-2},\newline
+\vdots
+\newline
+p^{(n)}(x)&amp;amp;= n(n-1)(n-2)\cdots 1 c_n=n!c_n.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;Imposing the previous conditions we have&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$p(a) = c_0+c_1(a-a)+c_2(a-a)^2+\cdots +c_n(a-a)^n=c_0=f(a)$,&lt;/li&gt;
+&lt;li&gt;$p&amp;rsquo;(a) = c_1+2c_2(a-a)+\cdots +nc_n(a-a)^{n-1}=c_1=f&amp;rsquo;(a)$,&lt;/li&gt;
+&lt;li&gt;$p&amp;rsquo;&amp;rsquo;(a) = 2c_2+\cdots +n(n-1)c_n(a-a)^{n-2}=2c_2=f&amp;rsquo;&amp;rsquo;(a)\Rightarrow c_2=f&amp;rsquo;&amp;rsquo;(a)/2$,&lt;/li&gt;
+&lt;li&gt;$\cdots$&lt;/li&gt;
+&lt;li&gt;$p^{(n)}(a)=n!c_n=f^{(n)}(a)=c_n=\frac{f^{(n)}(a)}{n!}$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;taylor-polynomial-of-order-n&#34;&gt;Taylor polynomial of order $n$&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Taylor polynomial&lt;/strong&gt;. Given a function $f(x)$ differentiable $n$ times at $x=a$, the &lt;em&gt;Taylor polynomial&lt;/em&gt; of order $n$ of $f$ at $a$ is the polynomial with equation&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+p_{f,a}^n(x) &amp;amp;= f(a) + f&amp;rsquo;(a)(x-a) + \frac{f&amp;rsquo;&amp;rsquo;(a)}{2}(x-a)^2 + \cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n = \newline
+&amp;amp;= \sum_{i=0}^{n}\frac{f^{(i)}(a)}{i!}(x-a)^i.
+\end{aligned}
+$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    The Taylor polynomial of order $n$ of $f$ at $a$ is the $n$th degree polynomial that best approximates $f$ near $a$, as is the only one that meets the previous conditions.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Let us approximate the function $f(x)=\log x$ near the value $1$ by a polynomial of order $3$.&lt;/p&gt;
+&lt;p&gt;The equation of the Taylor polynomial of order $3$ of $f$ at $a=1$ is $$p_{f,1}^3(x)=f(1)+f&amp;rsquo;(1)(x-1)+\frac{f&amp;rsquo;&amp;rsquo;(1)}{2}(x-1)^2+\frac{f&amp;rsquo;&amp;rsquo;&amp;rsquo;(1)}{3!}(x-1)^3.$$ The derivatives of $f$ at $1$ up to order $3$ are&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lll}
+f(x)=\log x &amp;amp; \quad &amp;amp; f(1)=\log 1 =0,\newline
+f&amp;rsquo;(x)=1/x &amp;amp; &amp;amp; f&amp;rsquo;(1)=1/1=1,\newline
+f&amp;rsquo;&amp;rsquo;(x)=-1/x^2 &amp;amp; &amp;amp; f&amp;rsquo;&amp;rsquo;(1)=-1/1^2=-1,\newline
+f&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)=2/x^3 &amp;amp; &amp;amp; f&amp;rsquo;&amp;rsquo;&amp;rsquo;(1)=2/1^3=2.
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;And substituting into the polynomial equation we get $$p_{f,1}^3(x)=0+1(x-1)+\frac{-1}{2}(x-1)^2+\frac{2}{3!}(x-1)^3= \frac{2}{3}x^3-\frac{3}{2}x^2+3x-\frac{11}{6}.$$&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/taylor_polynomials_logarithm.gif&#34; alt=&#34;Taylor polynomials of the logarithm function&#34; width=&#34;650&#34;&gt;
+&lt;h3 id=&#34;maclaurin-polynomial-of-order-n&#34;&gt;Maclaurin polynomial of order $n$&lt;/h3&gt;
+&lt;p&gt;The Taylor polynomial equation has a simpler form when the polynomial is calculated at $0$. This special case of Taylor polynomial at $0$ is known as the &lt;em&gt;Maclaurin polynomial&lt;/em&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Maclaurin polynomial&lt;/strong&gt;. Given a function $f(x)$ differentiable $n$ times at $0$, the &lt;em&gt;Maclaurin polynomial&lt;/em&gt; of order $n$ of $f$ is the polynomial with equation&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+p_{f,0}^n(x)&amp;amp;=f(0)+f&amp;rsquo;(0)x+\frac{f&amp;rsquo;&amp;rsquo;(0)}{2}x^2+\cdots +\frac{f^{(n)}(0)}{n!}x^n = \newline
+&amp;amp;=\sum_{i=0}^{n}\frac{f^{(i)}(0)}{i!}x^i.
+\end{aligned}
+$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Let us approximate the function $f(x)=\sin x$ near the value $0$ by a polynomial of order $3$.&lt;/p&gt;
+&lt;p&gt;The Maclaurin polynomial equation of order $3$ of $f$ is $$p_{f,0}^3(x)=f(0)+f&amp;rsquo;(0)x+\frac{f&amp;rsquo;&amp;rsquo;(0)}{2}x^2+\frac{f&amp;rsquo;&amp;rsquo;&amp;rsquo;(0)}{3!}x^3.$$
+The derivatives of $f$ at $0$ up to order $3$ are&lt;/p&gt;
+&lt;p&gt;$$\begin{array}{lll}
+f(x)=\sin x &amp;amp; \quad &amp;amp; f(0)=\sin 0 =0,\newline
+f&amp;rsquo;(x)=\cos x &amp;amp; &amp;amp; f&amp;rsquo;(0)=\cos 0=1,\newline
+f&amp;rsquo;&amp;rsquo;(x)=-\sin x &amp;amp; &amp;amp; f&amp;rsquo;&amp;rsquo;(0)=-\sin 0=0,\newline
+f&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)=-\cos x &amp;amp; &amp;amp; f&amp;rsquo;&amp;rsquo;&amp;rsquo;(0)=-\cos 0=-1.
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;And substituting into the polynomial equation we get
+$$p_{f,0}^3(x)=0+1\cdot x+\frac{0}{2}x^2+\frac{-1}{3!}x^3= x-\frac{x^3}{6}.$$&lt;/p&gt;
+&lt;img src=&#34;../img/derivatives1/maclaurin_polynomials_sine.gif&#34; alt=&#34;Macalurin polynomials of the sine function&#34; width=&#34;650&#34;&gt;
+&lt;h3 id=&#34;maclaurin-polynomials-of-elementary-functions&#34;&gt;Maclaurin polynomials of elementary functions&lt;/h3&gt;
+&lt;p&gt;$$
+\renewcommand{\arraystretch}{2.5}
+\begin{array}{cc}
+\hline
+f(x) &amp;amp; p_{f,0}^n(x) \newline
+\hline
+\sin x &amp;amp; \displaystyle x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots + (-1)^k\frac{x^{2k-1}}{(2k-1)!} \mbox{ if $n=2k$ or $n=2k-1$}\newline
+\cos x &amp;amp;  \displaystyle 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots + (-1)^k\frac{x^{2k}}{(2k)!} \mbox{ if $n=2k$ or $n=2k+1$}\newline
+\arctan x &amp;amp;  \displaystyle x - \frac{x^3}{3} + \frac{x^5}{5} - \cdots + (-1)^k\frac{x^{2k-1}}{(2k-1)} \mbox{ if $n=2k$ or $n=2k-1$}\newline
+e^x &amp;amp; \displaystyle 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots + \frac{x^n}{n!}\newline
+\log(1+x) &amp;amp; \displaystyle x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1}\frac{x^n}{n}\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;taylor-remainder-and-taylor-formula&#34;&gt;Taylor remainder and Taylor formula&lt;/h3&gt;
+&lt;p&gt;Taylor polynomials allow to approximate a function in a neighborhood of a value $a$, but most of the times there is an error in the approximation.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Taylor remainder&lt;/strong&gt;. Given a function $f(x)$ and its Taylor polynomial of order $n$ at $a$, $p_{f,a}^n(x)$, the &lt;em&gt;Taylor remainder&lt;/em&gt; of order $n$ of $f$ at $a$ is the difference between the function and the polynomial,&lt;/p&gt;
+&lt;p&gt;$$r_{f,a}^n(x)=f(x)-p_{f,a}^n(x).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The Taylor remainder measures the error int the approximation of $f(x)$ by the Taylor polynomial and allow us to express the function as the Taylor polynomial plus the Taylor remainder&lt;/p&gt;
+&lt;p&gt;$$f(x)=p_{f,a}^n(x) + r_{f,a}^n(x).$$&lt;/p&gt;
+&lt;p&gt;This expression is known as the &lt;em&gt;Taylor formula&lt;/em&gt; of order $n$ or $f$ at $a$.&lt;/p&gt;
+&lt;p&gt;It can be proved that&lt;/p&gt;
+&lt;p&gt;$$\lim_{h\rightarrow 0}\frac{r_{f,a}^n(a+h)}{h^n}=0,$$&lt;/p&gt;
+&lt;p&gt;which means that the remainder $r_{f,a}^n(a+h)$ is much smaller than $h^n$.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Integral calculus</title>
+      <link>/en/teaching/calculus/manual/integrals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/calculus/manual/integrals/</guid>
+      <description>&lt;h2 id=&#34;antiderivative-of-a-function&#34;&gt;Antiderivative of a function&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definition - Antiderivative of a function&lt;/strong&gt;. Given a function $f(x)$, the function $F(X)$ is an &lt;em&gt;antiderivative&lt;/em&gt; or &lt;em&gt;primitive function&lt;/em&gt; of $f$ if it satisfies that $F&amp;rsquo;(x)=f(x)$ $\forall x \in \mathop{\rm Dom}(f)$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The function $F(x)=x^2$ is an antiderivative of the function $f(x)=2x$ as $F&amp;rsquo;(x)=2x$ on $\mathbb{R}$.&lt;/p&gt;
+&lt;p&gt;Roughly speaking, the calculus of antiderivatives is the reverse process of differentiation, and that is the reason for the name of antiderivative.&lt;/p&gt;
+&lt;h3 id=&#34;indefinite-integral-of-a-function&#34;&gt;Indefinite integral of a function&lt;/h3&gt;
+&lt;p&gt;As two functions that differs in a constant term have the same derivative, if $F(x)$ is an antiderivative of $f(x)$, so will be any function of the form $F(x)+k$ $\forall k \in \mathbb{R}$. This means that, when a function has an antiderivative, it has an infinite number of antiderivatives.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Indefinite integral&lt;/strong&gt;. The &lt;em&gt;indefinite integral&lt;/em&gt; of a function $f(x)$ is the set of all its antiderivatives; it is denoted by&lt;/p&gt;
+&lt;p&gt;$$\int{f(x)}\,dx=F(x)+C$$ where $F(x)$ is an antiderivative of $f(x)$ and $C$ is a constant.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The indefinite integral of the function $f(x)=2x$ is $$\int 2x\, dx = x^2+C.$$&lt;/p&gt;
+&lt;h3 id=&#34;interpretation-of-the-integral&#34;&gt;Interpretation of the integral&lt;/h3&gt;
+&lt;p&gt;We have seen in a previous chapter that the derivative of a function is the instantaneous rate of change of the function. Thus, if we know the instantaneous rate of change of the function at any point, we can compute the change of the function.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. What is the space covered by an free falling object?&lt;/p&gt;
+&lt;p&gt;Assume that the only force acting upon an object drop is gravity, with an acceleration of $9.8$ m/s$^2$. As acceleration is the the rate of change of the speed, that is constant at any moment, the antiderivative is the speed of the object,&lt;/p&gt;
+&lt;p&gt;$$v(t) = 9.8t  \mbox{ m/s}$$&lt;/p&gt;
+&lt;p&gt;And as the speed is the rate of change of the space covered by object during the fall, the antiderivative of the speed is the space covered by the object,&lt;/p&gt;
+&lt;p&gt;$$s(t) = \int 9.8t\, dt = 9,8\frac{t^2}{2}.$$&lt;/p&gt;
+&lt;p&gt;Thus, for instance, after 2 seconds, the covered space is $s(2) = 9.8\frac{2^2}{2} = 19.6$ m.&lt;/p&gt;
+&lt;h3 id=&#34;linearity-of-integration&#34;&gt;Linearity of integration&lt;/h3&gt;
+&lt;p&gt;Given two integrable functions $f(x)$ and $g(x)$ and a constant $k \in \mathbb{R}$, it is satisfied that&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$\int{(f(x)+g(x))}\,dx=\int{f(x)}\,dx+\int{g(x)}\,dx$,&lt;/li&gt;
+&lt;li&gt;$\int{kf(x)}\,dx=k\int{f(x)}\,dx$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This means that the integral of any linear combination of functions equals the same linear combination of the integrals of the functions.&lt;/p&gt;
+&lt;h2 id=&#34;elementary-integrals&#34;&gt;Elementary integrals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int a\,dx=ax+C$, with $a$ constant.&lt;/li&gt;
+&lt;li&gt;$\int x^n\,dx=\dfrac{x^{n+1}}{n+1}+C$ if $n\neq -1$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{1}{x}\, dx=\ln\vert x\vert+C$.&lt;/li&gt;
+&lt;li&gt;$\int e^x\,dx=e^x+C$.&lt;/li&gt;
+&lt;li&gt;$\int a^x\,dx=\dfrac{a^x}{\ln a}+C$.&lt;/li&gt;
+&lt;li&gt;$\int \sin x\, dx=-\cos x+C$.&lt;/li&gt;
+&lt;li&gt;$\int \cos x\, dx=\sin x+C$.&lt;/li&gt;
+&lt;li&gt;$\int \tan x\, dx=\ln\vert\sec x\vert+C$.&lt;/li&gt;
+&lt;li&gt;$\int \sec x\, dx = \ln\vert\sec x + \tan x\vert+C$.&lt;/li&gt;
+&lt;li&gt;$\int \csc x\, dx= \ln\vert\csc x-\cot x\vert+C$.&lt;/li&gt;
+&lt;li&gt;$\int \cot x \, dx= \ln\vert\sin x\vert+C$.&lt;/li&gt;
+&lt;li&gt;$\int \sec^2 x\, dx= \tan x+ C$.&lt;/li&gt;
+&lt;li&gt;$\int \csc^2 x\, dx= -\cot x+ C$.&lt;/li&gt;
+&lt;li&gt;$\int \sec x \tan x\, dx= \sec x+ C$.&lt;/li&gt;
+&lt;li&gt;$\int \csc x \cot x\, dx = -\csc x +C$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{dx}{\sqrt{a^2-x^2}}=\arcsin\dfrac{x}{a}+C$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{dx}{a^2+x^2}=\dfrac{1}{a}\arctan\dfrac{x}{a}+C$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{dx}{x\sqrt{x^2-a^2}}=\dfrac{1}{a}\sec^{-1}\dfrac{x}{a}+C$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{dx}{a^2-x^2}=\dfrac{1}{2a}\ln\left\vert\dfrac{x+a}{x-a}\right\vert+C$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;techniques-of-integration&#34;&gt;Techniques of integration&lt;/h2&gt;
+&lt;p&gt;Unfortunately, unlike differential calculus, the is not a foolproof procedure to compute the antiderivative of a function. However, there are some techniques that allow to integrate some types of functions. The most common methods of integration are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integration by parts&lt;/li&gt;
+&lt;li&gt;Integration by reduction&lt;/li&gt;
+&lt;li&gt;Integration by substitution&lt;/li&gt;
+&lt;li&gt;Integration of rational functions&lt;/li&gt;
+&lt;li&gt;Integration of trigonometric functions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;integration-by-parts&#34;&gt;Integration by parts&lt;/h3&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - Integration by parts&lt;/strong&gt;. Given two differentiable functions $u(x)$ and $v(x)$,&lt;/p&gt;
+&lt;p&gt;$$\int{u(x)v&amp;rsquo;(x)}\,dx=u(x)v(x)-\int{u&amp;rsquo;(x)v(x)}\,dx,$$&lt;/p&gt;
+&lt;p&gt;or, writing $u&amp;rsquo;(x)dx=du$ and $v&amp;rsquo;(x)dx=dv$,&lt;/p&gt;
+&lt;p&gt;$$\int{u}\,dv=uv-\int{v}\,du.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Proof
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;From the rule for differentiating a product we have&lt;/p&gt;
+&lt;p&gt;$$ (uv)&amp;rsquo; = u&amp;rsquo;v + uv&amp;rsquo; $$&lt;/p&gt;
+&lt;p&gt;and computing the integrals both sides we get&lt;/p&gt;
+&lt;p&gt;$$
+\begin{gathered}
+\int (uv)&amp;rsquo; \, dx = \int u&amp;rsquo;v \, dx + \int uv&amp;rsquo;\, dx \Rightarrow\newline
+uv = \int v\,du + \int u\, dv \Rightarrow\newline
+\int{u}\,dv=uv-\int{v}\,du.
+\end{gathered}
+$$&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;To apply this method we have to choose the functions $u$ and $dv$ in a way so that the final integral is easier to compute than the original one.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. To integrate $\int{x \sin x}\,dx$ we have to choose $u=x$ and $dv=\sin x\, dx$, so $du=dx$ and $v=-\cos x$, getting $$\int{x \sin x}\,dx=-x\cos x-\int (-\cos x)\,dx = -x\cos x +\sin x.$$ If we had chosen $u=\sin x$ and $dv=x\,dx$, we would have got a more difficult integral.&lt;/p&gt;
+&lt;h3 id=&#34;integration-by-reduction&#34;&gt;Integration by reduction&lt;/h3&gt;
+&lt;p&gt;The reduction technique is used when we have to apply the integration by parts several times.&lt;/p&gt;
+&lt;p&gt;If we want to compute the antiderivative $I_{n}$ that depends on a natural number $n$, the reduction formulas allow us to write $I_{n}$ as a function of $I_{n-1}$, that is, we have a recurrent relation $$\ I_{n}=f(I_{n-1},x,n)$$ so by computing the first antiderivative $I_0$ we should be able to compute the others.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. To compute $I_{n}=\int{x^ne^x}\,dx$ applying integration by parts, we have to choose $u=x^n$ y $dv=e^x\,dx$, so $du=nx^{n-1}\,dx$ and $v=e^{x}$, getting&lt;/p&gt;
+&lt;p&gt;$$\ I_{n}=\int{x^ne^x}\,dx=x^ne^x-n\int{x^{n-1}e^x}\,dx=x^ne^x-nI_{n-1}.$$&lt;/p&gt;
+&lt;p&gt;Thus, for instance, for $n=3$ we have&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int x^3 e^x\, dx &amp;amp;= I_3 = x^3e^x-3I_2 = x^3e^x-3(x^2e^x-2I_1) =\newline
+&amp;amp;= x^3e^x-3(x^2e^x-(xe^x-I_0) = x^3e^x-3(x^2e^x-(xe^x-e^x) =\newline
+&amp;amp;= e^x(x^3-3x^2+6x-6).
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;integration-by-substitution&#34;&gt;Integration by substitution&lt;/h3&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;From the chain rule for differentiating the composition of two functions&lt;/p&gt;
+&lt;p&gt;$$f(g(x))&amp;rsquo; = f&amp;rsquo;(g(x))g&amp;rsquo;(x),$$&lt;/p&gt;
+&lt;p&gt;we can make a variable change $u=g(x)$, so $du=g&amp;rsquo;(x)dx$, and get&lt;/p&gt;
+&lt;p&gt;$$\int f&amp;rsquo;(g(x))g&amp;rsquo;(x)\, dx = \int f&amp;rsquo;(u)\, du = f(u)+C = f(g(x))+C.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. To compute the integral of $\int{\dfrac{1}{x\log x}}\, dx$ we can make the substitution $u=\log x$, so $du=\frac{1}{x}dx$, and we have&lt;/p&gt;
+&lt;p&gt;$$\int \frac{dx}{x\log x}=\int \frac{1}{\log x}\frac{1}{x}\,dx = \int \frac{1}{u}\,du = \log \vert u\vert+ C.$$&lt;/p&gt;
+&lt;p&gt;Finally, undoing the substitution we get&lt;/p&gt;
+&lt;p&gt;$$\int \frac{1}{x\log x}\,dx= \log \vert\log x\vert + C.$$&lt;/p&gt;
+&lt;h3 id=&#34;integration-of-rational-functions&#34;&gt;Integration of rational functions&lt;/h3&gt;
+&lt;h4 id=&#34;partial-fractions-decomposition&#34;&gt;Partial fractions decomposition&lt;/h4&gt;
+&lt;p&gt;A rational function can be written as the sum of a polynomial (with an immediate antiderivative) plus a proper rational function, that is, a rational function in which the degree of the numerator is less than the degree of the denominator.&lt;/p&gt;
+&lt;p&gt;On the other hand, depending of the factorization of the denominator, a proper rational function can be expressed as a sum of simpler fractions of the following types&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Denominator with a single linear factor: $\dfrac{A}{(x-a)}$&lt;/li&gt;
+&lt;li&gt;Denominator with a linear factor repeated $n$ times : $\dfrac{A}{(x-a)^{n}}$&lt;/li&gt;
+&lt;li&gt;Denominator with a single quadratic factor: $\dfrac{Ax+B}{x^2+cx+d}$&lt;/li&gt;
+&lt;li&gt;Denominator with a quadratic factor repeated $n$ times: $\dfrac{Ax+B}{(x^2+cx+d)^n}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;antiderivatives-of-partial-fractions&#34;&gt;Antiderivatives of partial fractions&lt;/h4&gt;
+&lt;p&gt;Using the linearity of integration, we can compute the antiderivative of a rational function from the antiderivative of these partial fractions&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \frac{A}{x-a}\,dx &amp;amp;= A\log\vert x-a\vert+C,\newline
+\int \frac{A}{(x-a)^n}\,dx &amp;amp;= \frac{-A}{(n-1)(x-a)^{n-1}}+C \textrm{ si $n\neq 1$}.\newline
+\int \frac{Ax+B}{x^2+cx+d} &amp;amp;= \frac{A}{2}\log\vert x^2+cx+d\vert + \frac{2B-Ac}{\sqrt{4d-c^2}}\arctan \frac{2x+c}{\sqrt{4d-c^2}}+C.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h4 id=&#34;integration-of-a-rational-function-with-a-denominator-with-linear-factors&#34;&gt;Integration of a rational function with a denominator with linear factors&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Consider the function $f(x)=\dfrac{x^2+3x-5}{x^3-3x+2}$.&lt;/p&gt;
+&lt;p&gt;The factorization of the denominator is $x^3-3x+2=(x-1)^2(x+2)$; it has a single linear factor $(x+2)$ and a linear factor $(x-1)$, repeated two times. In this case the decomposition in partial fractions is:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\frac{x^2+3x-5}{x^3-3x+2}&amp;amp;=\frac{A}{x-1}+\frac{B}{(x-1)^2}+\frac{C}{x+2} = \newline
+&amp;amp;= \frac{A(x-1)(x+2)+ B(x+2)+C(x-1)^2}{(x-1)^2(x+2)} = \newline
+&amp;amp;= \frac{(A+C)x^2+(A+B-2C)x+(-2A+2B+C)}{(x-1)^2(x+2)}
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;and equating the numerators we get $A=16/9$, $B=-1/3$ and $C=-7/9$, so&lt;/p&gt;
+&lt;p&gt;$$\frac{x^2+3x-5}{x^3-3x+2}= \frac{16/9}{x-1}+\frac{-1/3}{(x-1)^2}+\frac{-7/9}{x+2}.$$&lt;/p&gt;
+&lt;p&gt;Finally, integrating each partial fraction we have&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \frac{x^2+3x-5}{x^3-3x+2}\, dx &amp;amp;= \int \frac{16/9}{x-1}\,dx+\int \frac{-1/3}{(x-1)^2}\,dx+\int \frac{-7/9}{x+2}\,dx = \newline
+&amp;amp;= \frac{16}{9}\int\frac{1}{x-1}\,dx-\frac{1}{3}\int(x-1)^{-2}\,dx- \frac{7}{9}\int \frac{1}{x+2}\,dx = \newline
+&amp;amp;= \frac{16}{9}\ln\vert x-1\vert+\frac{1}{3(x-1)}-\frac{7}{9}\ln\vert x+2\vert+C.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h4 id=&#34;integration-of-a-rational-function-with-a-denominator-with-simple-quadratic-factors&#34;&gt;Integration of a rational function with a denominator with simple quadratic factors&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Consider the function $f(x)=\dfrac{x+1}{x^2-4x+8}$.&lt;/p&gt;
+&lt;p&gt;In this case the denominator cannot be factorised as a product of linear factors, but we can write&lt;/p&gt;
+&lt;p&gt;$$x^2-4x+8 = (x-2)^2+4,$$&lt;/p&gt;
+&lt;p&gt;so&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \dfrac{x+1}{x^2-4x+8}\, dx &amp;amp;= \int \dfrac{x-2+3}{(x-2)^2+4}\,dx = \newline
+&amp;amp;= \int \dfrac{x-2}{(x-2)^2+4}\,dx + \int \dfrac{3}{(x-2)^2+4}\,dx = \newline
+&amp;amp;= \frac{1}{2}\ln\vert(x-2)^2+4\vert + \dfrac{3}{2}\arctan\left(\frac{x-2}{2}\right)+C.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;integration-of-trigonometric-functions&#34;&gt;Integration of trigonometric functions&lt;/h3&gt;
+&lt;h4 id=&#34;integration-of-sinn-xcosm-x-with-n-or-m-odd&#34;&gt;Integration of $\sin^n x\cos^m x$ with $n$ or $m$ odd&lt;/h4&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    If $f(x)=\sin^n x\cos^m x$ with $n$ or $m$ odd, then we can make the substitution $t=\sin x$ or $t=\cos x$, to convert the function into a polynomial.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$\int \sin^2 x\cos^3 x\, dx = \int \sin^2 x\cos^2 x\cos x\, dx = \int \sin^2 x(1-\sin^2 x)\cos x\, dx,$$&lt;/p&gt;
+&lt;p&gt;and making the substitution $t=\sin x$, so $dt = \cos x dx$, we have&lt;/p&gt;
+&lt;p&gt;$$\int \sin^2 x(1-\sin^2 x)\cos x\, dx = \int t^2(1-t^2)\, dt = \int t^2-t^4 \, dt = \frac{t^3}{3}-\frac{t^5}{5}+C.$$&lt;/p&gt;
+&lt;p&gt;Finally, undoing the substitution we have&lt;/p&gt;
+&lt;p&gt;$$\int \sin^2 x\cos^3 x\, dx = \frac{\sin^3 x}{3}-\frac{\sin^5 x}{5}+C.$$&lt;/p&gt;
+&lt;h4 id=&#34;integration-of-sinn-xcosm-x-with-n-and-m-even&#34;&gt;Integration of $\sin^n x\cos^m x$ with $n$ and $m$ even&lt;/h4&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;If $f(x)=\sin^n x\cos^m x$ with $n$ and $m$ even, then we can make the following substitutions to simplify the integration&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\sin^2 x &amp;amp;= \frac{1}{2}(1-\cos(2x))\newline
+\cos^2 x &amp;amp;= \frac{1}{2}(1+\cos(2x))\newline
+\sin x\cos x &amp;amp;= \frac{1}{2}\sin(2x)
+\end{aligned}
+$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \sin^2 x\cos^4 x\, dx &amp;amp;= \int (\sin x\cos x)^2\cos^2 x\, dx = \int \left(\frac{1}{2}\sin(2x)\right)^2\frac{1}{2}(1+\cos(2x))\,dx =\newline
+&amp;amp;= \frac{1}{8}\int \sin^2(2x)\,dx+\frac{1}{8}\int \sin^2(2x) \cos(2x)\,dx,
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;the first integral is of the same type and the second one of the previous type, so
+$$\int \sin^2 x\cos^4 x\, dx = \frac{1}{32}x-\frac{1}{32}\sin(2x)+\frac{1}{24}\sin^3(2x).$$&lt;/p&gt;
+&lt;h4 id=&#34;products-of-sines-and-cosines&#34;&gt;Products of sines and cosines&lt;/h4&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;The equalities&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\sin x\cos y &amp;amp;= \frac{1}{2}(\sin(x-y)+\sin(x+y))\newline
+\sin x\sin y &amp;amp;= \frac{1}{2}(\cos(x-y)-\cos(x+y))\newline
+\cos x\cos y &amp;amp;= \frac{1}{2}(\cos(x-y)+\cos(x+y))
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;transform products in sums, simplifying the integration.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \sin x\cos 2x\, dx &amp;amp;= \int \frac{1}{2}(\sin(x-2x)+\sin(x+2x))\,dx = \newline
+&amp;amp;= \frac{1}{2}\int \sin (-x)\,dx +\frac{1}{2}\int \sin 3x\,dx = \newline
+&amp;amp;= \frac{1}{2}\cos(-x)- \frac{1}{6}\cos 3x +C.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h4 id=&#34;rational-functions-of-sines-and-cosines&#34;&gt;Rational functions of sines and cosines&lt;/h4&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;If $f(x,y)$ is a rational function then the function $f(\sin x,\cos x)$ can be transformed in an rational function of $t$ with the following substitutions&lt;/p&gt;
+&lt;p&gt;$$\tan \frac{x}{2}=t \quad \sin x=\frac{2t}{1+t^2} \quad \cos x = \frac{1-t^2}{1+t^2} \quad dx = \frac{2}{1+t^2}dt.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$\int \frac{1}{\sin x}\,dx = \int \frac{1}{\frac{2t}{1+t^2}}\frac{2}{1+t^2}\,dt = \int \frac{1}{t}\,dt = \log\vert t\vert+C =
+\log\vert\tan\frac{x}{2}\vert+C.$$&lt;/p&gt;
+&lt;h2 id=&#34;definite-integral&#34;&gt;Definite integral&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Definite integral&lt;/strong&gt;. Let $f(x)$ be a function which is continuous on an interval $[a, b]$. Divide this interval into $n$ subintervals of equal width $\Delta x$ and choose an arbitrary point $x_i$ from each subinterval. The &lt;em&gt;definite integral&lt;/em&gt; of $f$ from $a$ to $b$ is defined to be the limit&lt;/p&gt;
+&lt;p&gt;$$\int_a^b f(x)\,dx = \lim_{n\rightarrow \infty}\sum_{i=1}^n f(x_i)\Delta x.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;img src=&#34;../img/integrals/riemann_sums.gif&#34; alt=&#34;Riemann sums&#34; width=&#34;350&#34;&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - First fundamental theorem of Calculus&lt;/strong&gt;.  If $f(x)$ is continuous on the interval $[a,b]$ and $F(x)$ is an antiderivative of $f$ on $[a,b]$, then&lt;/p&gt;
+&lt;p&gt;$$\int_a^b f(x)\,dx = F(b)-F(a)$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the function $f(x)=x^2$, we have&lt;/p&gt;
+&lt;p&gt;$$\int_1^2 x^2\,dx = \left[\frac{x^3}{3}\right]_1^2 = \frac{2^3}{3}-\frac{1^3}{3} = \frac{7}{3}.$$&lt;/p&gt;
+&lt;h3 id=&#34;properties-of-the-definite-integral&#34;&gt;Properties of the definite integral&lt;/h3&gt;
+&lt;p&gt;Given two functions $f(x)$ and $g(x)$ integrable on $[a,b]$ and $k \in \mathbb{R}$ the following properties are satisfied:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$\int_{a}^{b}(f(x)+g(x))\,dx=\int_{a}^{b}f(x)\,dx+\int_{a}^{b}g(x)\,dx$ (linearity)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int_{a}^{b}{kf(x)}\,dx=k\int_{a}^{b}{f(x)}\,dx$ (linearity)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int_{a}^{b}{f(x)\,dx} \leq \int_{a}^{b}{g(x)\,dx}$ si $f(x)\leq g(x)\ \forall x \in [a,b]$ (monotony)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int_{a}^{b}{f(x)\,dx} = \int_{a}^{c}{f(x)\,dx}+\int_{c}^{b}{f(x)\,dx}$ for any $c\in(a,b)$ (additivity)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int_a^b f(x)\,dx = -\int_b^a f(x)\,dx$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;area-calculation&#34;&gt;Area calculation&lt;/h2&gt;
+&lt;h3 id=&#34;area-between-a-positive-function-and-the-x-axis&#34;&gt;Area between a positive function and the $x$ axis&lt;/h3&gt;
+&lt;p&gt;If $f(x)$ is an integrable function on the interval $[a,b]$ and $f(x)\geq 0\ \forall x\in[a,b]$, then the definite integral&lt;/p&gt;
+&lt;p&gt;$$\int_a^b f(x)\,dx$$&lt;/p&gt;
+&lt;p&gt;measures the area between the graph of $f$ and the $x$ axis on the interval $[a,b]$.&lt;/p&gt;
+&lt;img src=&#34;../img/integrals/area_positive_function.svg&#34; alt=&#34;Area of a positive function&#34; width=&#34;350&#34;&gt;
+&lt;h3 id=&#34;area-between-a-negative-function-and-the-x-axis&#34;&gt;Area between a negative function and the $x$ axis&lt;/h3&gt;
+&lt;p&gt;If $f(x)$ is an integrable function on the interval $[a,b]$ and $f(x)\leq 0\ \forall x\in[a,b]$, then the area between the graph of $f$ and the $x$ axis on the interval $[a,b]$ is&lt;/p&gt;
+&lt;p&gt;$$-\int_a^b f(x)\,dx.$$&lt;/p&gt;
+&lt;img src=&#34;../img/integrals/area_negative_function.svg&#34; alt=&#34;Area of a negative function&#34; width=&#34;350&#34;&gt;
+&lt;h3 id=&#34;area-between-a-function-and-the-x-axis&#34;&gt;Area between a function and the $x$ axis&lt;/h3&gt;
+&lt;p&gt;In general, if $f(x)$ is an integrable function on the interval $[a,b]$, no matter the sign of $f$ on $[a,b]$, the area between the graph of $f$ and the $x$ axis on the interval $[a,b]$ is&lt;/p&gt;
+&lt;p&gt;$$\int_a^b \vert f(x)\vert\,dx.$$&lt;/p&gt;
+&lt;img src=&#34;../img/integrals/area_function.svg&#34; alt=&#34;Area of a function&#34; width=&#34;350&#34;&gt;
+&lt;h3 id=&#34;area-between-two-functions&#34;&gt;Area between two functions&lt;/h3&gt;
+&lt;p&gt;If $f(x)$ and $g(x)$ are two integrable functions on the interval $[a,b]$, then the area between the graph of $f$ and $g$ on the interval $[a,b]$ is
+$$\int_{a}^{b}{\vert f(x)- g(x)\vert\,dx}.$$&lt;/p&gt;
+&lt;img src=&#34;../img/integrals/area_between_functions.svg&#34; alt=&#34;Area between two function&#34; width=&#34;350&#34;&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ordinary differential equations</title>
+      <link>/en/teaching/calculus/manual/ordinary-differential-equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/calculus/manual/ordinary-differential-equations/</guid>
+      <description>&lt;h2 id=&#34;ordinary-differential-equations&#34;&gt;Ordinary Differential Equations&lt;/h2&gt;
+&lt;p&gt;Often in Physics, Chemistry, Biology, Geometry, etc there arise equations that relate a function with its derivative, or successive derivatives.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Ordinary differential equation&lt;/strong&gt;. An &lt;em&gt;ordinary differential equation&lt;/em&gt; (O.D.E.) is a equation that relates an independent variable $x$, a function $y(x)$ that depends on $x$, and the successive derivatives of $y$, $y&amp;rsquo;,y&amp;rsquo;&amp;rsquo;,\ldots,y^{(n)}$; it can be written as&lt;/p&gt;
+&lt;p&gt;$$F(x, y, y&amp;rsquo;, y&amp;rsquo;&amp;rsquo;,\ldots, y^{(n)})=0.$$&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;order&lt;/em&gt; of a differential equation is the greatest order of the derivatives in the equation.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The equation $y&amp;rsquo;&amp;rsquo;&amp;rsquo;+sen(x)y&amp;rsquo;=2x$ is a differential equation of order 3.&lt;/p&gt;
+&lt;h3 id=&#34;deducing-a-differential-equation&#34;&gt;Deducing a differential equation&lt;/h3&gt;
+&lt;p&gt;To deduce a differential equation that explains a natural phenomenon is essential to understand what a derivative is and how to interpret it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Newton’s law of cooling states&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“The rate of change of the temperature of a body in a surrounding medium is proportional to the difference between the temperature of the body $T$ and the temperature of the medium $T_a$.”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The rate of change of the temperature is the derivative of temperature with respect to time $dT/dt$. Thus, Newton’s law of cooling can be explained by the differential equation&lt;/p&gt;
+&lt;p&gt;$$\frac{dT}{dt}=k(T-T_a),$$&lt;/p&gt;
+&lt;p&gt;where $k$ is a proportionality constant.&lt;/p&gt;
+&lt;h3 id=&#34;solution-of-an-ordinary-differential-equation&#34;&gt;Solution of an ordinary differential equation&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Solution of an ordinary differential equation&lt;/strong&gt;. Given an ordinary differential equation $F(x,y,y&amp;rsquo;,y&amp;rsquo;&amp;rsquo;,\ldots,y^{(n})=0$, the function $y=f(x)$ is a &lt;em&gt;solution of the ordinary differential equation&lt;/em&gt; if it satisfies the equation, that is, if&lt;/p&gt;
+&lt;p&gt;$$F(x,f(x), f&amp;rsquo;(x), f&amp;rsquo;&amp;rsquo;(x),\ldots, f^{(n}(x))=0.$$&lt;/p&gt;
+&lt;p&gt;The graph of a solution of the ordinary differential equation is known as &lt;em&gt;integral curve&lt;/em&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Solving an ordinary differential equations consists on finding all its solutions in a given domain. For that integral calculus is required.&lt;/p&gt;
+&lt;p&gt;The same manner than the indefinite integral is a family of antiderivatives, that differ in a constant term, after integrating an ordinary differential equation we get a family of solutions that differ in a constant. We can get particular solutions giving values to this constant.&lt;/p&gt;
+&lt;h3 id=&#34;general-solution-of-an-ordinary-differential-equation&#34;&gt;General solution of an ordinary differential equation&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - General solution of an ordinary differential equation&lt;/strong&gt;. Given an ordinary differential equation $F(x,y,y&amp;rsquo;,y&amp;rsquo;&amp;rsquo;,\ldots,y^{(n})=0$ of order $n$, the &lt;em&gt;general solution&lt;/em&gt; of the differential equation is a family of functions&lt;/p&gt;
+&lt;p&gt;$$y =f (x,C_1,\ldots,C_n),$$&lt;/p&gt;
+&lt;p&gt;depending on $n$ constants, such that for any value of $C_1,\ldots,C_n$ we get a solution of the differential equation.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;For every value of the constant we get &lt;em&gt;particular solution&lt;/em&gt; of the differential equation. Thus, when a differential equation can be solved, it has infinite solutions.&lt;/p&gt;
+&lt;p&gt;Geometrically, the general solution of a differential equation corresponds to a family of integral curves of the differential equation.&lt;/p&gt;
+&lt;p&gt;Often, it is common to impose conditions to the solutions of a differential equation to reduce the number of solutions. In many cases, these conditions allow to determine the values of the constants in the general solution to get a particular solution.&lt;/p&gt;
+&lt;h2 id=&#34;first-order-differential-equations&#34;&gt;First order differential equations&lt;/h2&gt;
+&lt;p&gt;In this chapter we are going to study first order differential equations&lt;/p&gt;
+&lt;p&gt;$$F(x,y,y&amp;rsquo;)=0.$$&lt;/p&gt;
+&lt;p&gt;The general solution of a first order differential equation is&lt;/p&gt;
+&lt;p&gt;$$y = f (x,C),$$&lt;/p&gt;
+&lt;p&gt;so to get a particular solution from the general one, it is enough to set the value of the constant $C$, and for that we only need to impose one initial condition.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Initial value problem&lt;/strong&gt;. The group consisting of a first order differential equation and an initial condition is known as &lt;em&gt;initial value problem&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+F(x,y,y&amp;rsquo;)=0, &amp;amp; \mbox{First order differential equation;} \newline
+y(x_0)=y_0, &amp;amp; \mbox{Initial condition.}
+\end{cases}
+$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Solving an initial value problem consists in finding a solution of the first order differential equation that satisfies the initial condition.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Recall the first order differential equation of the Newton’s law of cooling, $$\frac{dT}{dt}=k(T-T_a),$$
+where $T$ is the temperature of the body and $T_a$ is the temperature of the surrounding medium.&lt;/p&gt;
+&lt;p&gt;It is easy to check that the general solution of this equation is&lt;/p&gt;
+&lt;p&gt;$$T(t) = Ce^{kt}+T_a.$$&lt;/p&gt;
+&lt;p&gt;If we impose the initial condition that the temperature of the body at the initial instant is $5$ ºC, that is, $T(0)=5$, we have&lt;/p&gt;
+&lt;p&gt;$$T(0) = Ce^{k\cdot0}+T_a = C+T_a = 5,$$&lt;/p&gt;
+&lt;p&gt;from where we get $C=5-T_a$, and this give us the particular solution&lt;/p&gt;
+&lt;p&gt;$$T(t) = (5-T_a)e^{kt}+T_a.$$&lt;/p&gt;
+&lt;h3 id=&#34;integral-curve-of-an-initial-value-problem&#34;&gt;Integral curve of an initial value problem&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. If we assume in the previous example that the temperature of the surrounding medium is $T_a=0$ ºC and the cooling constant of the body is $k=1$, the general solution of the differential equation is
+$$T(t)=Ce^t,$$
+that is a family of integral curves. Among all of them, only the one that passes through the point $(0,5)$ corresponds to the particular solution of the previous initial value problem.&lt;/p&gt;
+&lt;img src=&#34;../img/ode/integral_curves.svg&#34; alt=&#34;Area of a positive function&#34; width=&#34;350&#34;&gt;
+&lt;h3 id=&#34;existence-and-uniqueness-of-solutions&#34;&gt;Existence and uniqueness of solutions&lt;/h3&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - Existence and uniqueness of solutions of a first order ODE&lt;/strong&gt;. Given an initial value problem&lt;/p&gt;
+&lt;p&gt;$$\begin{cases}
+y&amp;rsquo;=F(x,y);\newline
+y(x_0)=y_0;
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;if $F(x,y(x))$ is a function continuous on an open interval around the point $(x_0,y_0)$, then a solution of the initial value problem exists. If, in addition, $\frac{\partial F}{\partial y}$ is continuous in an open interval around $(x_0,y_0)$, the solution is unique.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Although this theorem guarantees the existence and uniqueness of a solution of a first order differential equation, it does not provide a method to compute it. In fact, there is not a general method to solve first order differential equations, but we will see how to solve some types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;#separable-differential-equations&#34;&gt;Separable differential equations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#homogeneous-differential-equations&#34;&gt;Homogeneous differential equations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#linear-differential-equations&#34;&gt;Linear differential equations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;separable-differential-equations&#34;&gt;Separable differential equations&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Separable differential equation&lt;/strong&gt;. A &lt;em&gt;separable differential equation&lt;/em&gt; is a first order differential equation that can be written as&lt;/p&gt;
+&lt;p&gt;$$y&amp;rsquo;g(y)=f(x),$$&lt;/p&gt;
+&lt;p&gt;or what is the same,&lt;/p&gt;
+&lt;p&gt;$$g(y)dy=f(x)dx,$$&lt;/p&gt;
+&lt;p&gt;so the different variables are on different sides of the equality (the variables are separated).&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;The general solution for a separable differential equation comes after integrating both sides of the equation&lt;/p&gt;
+&lt;p&gt;$$\int g(y)\,dy = \int f(x)\,dx+C.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The differential equation of the Newton’s law of cooling&lt;/p&gt;
+&lt;p&gt;$$\frac{dT}{dt}=k(T-T_a),$$&lt;/p&gt;
+&lt;p&gt;is a separable differential equation since it can be written as&lt;/p&gt;
+&lt;p&gt;$$\frac{1}{T-T_a}dT=k\,dt.$$&lt;/p&gt;
+&lt;p&gt;Integrating both sides of the equation we have&lt;/p&gt;
+&lt;p&gt;$$\int \frac{1}{T-T_a}\,dT=\int k\,dt\Leftrightarrow \log(T-T_a)=kt+C,$$&lt;/p&gt;
+&lt;p&gt;and solving for $T$ we get the general solution of the equation&lt;/p&gt;
+&lt;p&gt;$$T(t)=e^{kt+C}+T_a=e^Ce^{kt}+T_a=Ce^{kt}+T_a,$$&lt;/p&gt;
+&lt;p&gt;rewriting $C=e^C$ as an arbitrary constant.&lt;/p&gt;
+&lt;h2 id=&#34;homogeneous-differential-equations&#34;&gt;Homogeneous differential equations&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Homogeneous function&lt;/strong&gt;. A function $f(x,y)$ is &lt;em&gt;homogeneous&lt;/em&gt; of degree $n$, if it satisfies&lt;/p&gt;
+&lt;p&gt;$$f(kx,ky)= k^nf(x,y),$$&lt;/p&gt;
+&lt;p&gt;for any value $k\in \mathbb{R}$.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;In particular, a homogeneous function of degree $0$ always satisfies&lt;/p&gt;
+&lt;p&gt;$$f(kx,ky)=f(x,y).$$&lt;/p&gt;
+&lt;p&gt;Setting $k=1/x$ we have&lt;/p&gt;
+&lt;p&gt;$$f(x,y)=f\left(\frac{1}{x}x,\frac{1}{x}y\right)=f\left(1,\frac{y}{x}\right)=g\left(\frac{y}{x}\right).$$&lt;/p&gt;
+&lt;p&gt;This way, a homogeneous function of degree $0$ always can be written as a function of $u=y/x$:&lt;/p&gt;
+&lt;p&gt;$$f(x,y)=g\left(\frac{y}{x}\right)=g(u).$$&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Homogeneous differential equation&lt;/strong&gt;. A &lt;em&gt;homogeneous differential equation&lt;/em&gt; is a first order differential equation that can be written as&lt;/p&gt;
+&lt;p&gt;$$y&amp;rsquo;=f(x,y),$$&lt;/p&gt;
+&lt;p&gt;where $f(x,y)$ is a homogeneous function of degree $0$.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;We can solve a homogeneous differential equation by making the substitution&lt;/p&gt;
+&lt;p&gt;$$u=\frac{y}{x}\Leftrightarrow y=ux,$$&lt;/p&gt;
+&lt;p&gt;so the equation becomes&lt;/p&gt;
+&lt;p&gt;$$u&amp;rsquo;x+u=f(u),$$&lt;/p&gt;
+&lt;p&gt;that is a separable differential equation.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Once solved the separable differential equation, the substitution must be undone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Let us consider the following differential equation
+$$4x-3y+y&amp;rsquo;(2y-3x)=0.$$&lt;/p&gt;
+&lt;p&gt;Rewriting the equation in this way&lt;/p&gt;
+&lt;p&gt;$$y&amp;rsquo;=\frac{3y-4x}{2y-3x}$$&lt;/p&gt;
+&lt;p&gt;we can easily check that it is a homogeneous differential equation.&lt;/p&gt;
+&lt;p&gt;To solve this equation we have to do the substitution $y=ux$, and we get&lt;/p&gt;
+&lt;p&gt;$$u&amp;rsquo;x+u=\frac{3ux-4x}{2ux-3x}=\frac{3u-4}{2u-3}$$&lt;/p&gt;
+&lt;p&gt;that is a separable differential equation.&lt;/p&gt;
+&lt;p&gt;Separating the variables we have&lt;/p&gt;
+&lt;p&gt;$$u&amp;rsquo;x=\frac{3u-4}{2u-3}-u=\frac{-2u^2+6u-4}{2u-3}\Leftrightarrow \frac{2u-3}{-2u^2+6u-4}\,du=\frac{1}{x}\,dx.$$&lt;/p&gt;
+&lt;p&gt;Now, integrating both sides of the equation we have&lt;/p&gt;
+&lt;p&gt;$$
+\renewcommand{\arraystretch}{2}
+\begin{array}{c}
+\displaystyle \int \frac{2u-3}{-2u^2+6u-4}\,du=\int \frac{1}{x}\,dx
+\Leftrightarrow -\frac{1}{2}\log|u^2-3u+2|=\log|x|+C \Leftrightarrow\newline
+\Leftrightarrow \log|u^2-3u+2|=-2\log|x|-2C,
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;then, applying the exponential function to both sides and simplifying we get the general solution&lt;/p&gt;
+&lt;p&gt;$$u^2-3u+2=e^{-2\log|x|-2C}=\frac{e^{-2C}}{e^{\log|x|^2}}=\frac{C}{x^2},$$&lt;/p&gt;
+&lt;p&gt;rewriting the constant $K=e^{-2C}$.&lt;/p&gt;
+&lt;p&gt;Finally, undoing the initial substitution $u=y/x$, we arrive at the general solution of the homogeneous differential equation&lt;/p&gt;
+&lt;p&gt;$$\left(\frac{y}{x}\right)^2-3\frac{y}{x}+2=\frac{K}{x^2}\Leftrightarrow y^2-3xy+2x^2=K.$$&lt;/p&gt;
+&lt;h3 id=&#34;linear-differential-equations&#34;&gt;Linear differential equations&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Linear differential equation&lt;/strong&gt; A &lt;em&gt;linear differential equation&lt;/em&gt; is a first order differential equation that can be written as&lt;/p&gt;
+&lt;p&gt;$$y&amp;rsquo;+g(x)y = h(x).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;To solve a linear differential equation we try to write the left side of the equation as the derivative of a product. For that we multiply both sides by the function $f(x)$, such that&lt;/p&gt;
+&lt;p&gt;$$f&amp;rsquo;(x)=g(x)f(x).$$&lt;/p&gt;
+&lt;p&gt;Thus, we get&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{c}
+y&amp;rsquo;f(x)+g(x)f(x)y=h(x)f(x)\newline
+\Updownarrow\newline
+y&amp;rsquo;f(x)+f&amp;rsquo;(x)y=h(x)f(x)\newline
+\Updownarrow\newline
+\dfrac{d}{dx}(yf(x))=h(x)f(x)
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;Integrating both sides of the previous equation we get the solution&lt;/p&gt;
+&lt;p&gt;$$yf(x)=\int h(x)f(x)\,dx+C.$$&lt;/p&gt;
+&lt;p&gt;On the other hand, the unique function that satisfies $f&amp;rsquo;(x)=g(x)f(x)$ is&lt;/p&gt;
+&lt;p&gt;$$f(x)=e^{\int g(x)\,dx},$$&lt;/p&gt;
+&lt;p&gt;so, substituting this function in the previous solution we arrive at the solution of the linear differential equation&lt;/p&gt;
+&lt;p&gt;$$ye^{\int g(x)\,dx}=\int h(x) e^{\int g(x)\,dx}\,dx+C,$$&lt;/p&gt;
+&lt;p&gt;or what is the same&lt;/p&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Solution of a linear differential equation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$y=e^{-\int g(x)\,dx}\left(\int h(x)e^{\int g(x)\,dx}\,dx+C\right).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. If in the differential equation of the Newton’s law of cooling the temperature of the surrounding medium is a function of time $T_a(t)$, then the differential equation&lt;/p&gt;
+&lt;p&gt;$$\frac{dT}{dt}=k(T-T_a(t)),$$&lt;/p&gt;
+&lt;p&gt;is a linear differential equation since it can be written as&lt;/p&gt;
+&lt;p&gt;$$T&amp;rsquo;-kT=-kT_a(t),$$&lt;/p&gt;
+&lt;p&gt;where the independent term is $-kT_a(t)$ and the coefficient of $T$ is $-k$.&lt;/p&gt;
+&lt;p&gt;Substituting in the formula of the general solution of a linear differential equation we have&lt;/p&gt;
+&lt;p&gt;$$y=e^{-\int -k\,dt}\left(\int -kT_a(t)e^{\int -k\,dt}\,dt+C\right)=
+e^{kt}\left(-\int kT_a(t)e^{-kt}\,dt+C\right).$$&lt;/p&gt;
+&lt;p&gt;In the particular case that $T_a(t)=t$, and the proportionality constant $k=1$, the general solution of the linear differential equation is&lt;/p&gt;
+&lt;p&gt;$$y=e^{t}\left(-\int te^{-kt}\,dt+C\right)=e^t(e^{-t}(t+1)+C)=Ce^t+t+1.$$&lt;/p&gt;
+&lt;p&gt;If, in addition, we know that the temperature of the body at time $t=0$ is $5$ ºC, that is, we have the initial condition $T(0)=5$, then we can compute the value of the constant $C$,&lt;/p&gt;
+&lt;p&gt;$$y(0)=Ce^0+0+1=5 \Leftrightarrow C+1=5 \Leftrightarrow C=4,$$
+and we get the particular solution&lt;/p&gt;
+&lt;p&gt;$$y(t)=4e^t+t+1.$$&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

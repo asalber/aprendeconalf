@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Variables Aleatorias Discretas | Aprende con Alf</title>
+    <link>/tag/variables-aleatorias-discretas/</link>
+      <atom:link href="/tag/variables-aleatorias-discretas/index.xml" rel="self" type="application/rss+xml" />
+    <description>Variables Aleatorias Discretas</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Variables Aleatorias Discretas</title>
+      <link>/tag/variables-aleatorias-discretas/</link>
+    </image>
+    
+    <item>
+      <title>Ejercicios de Variables Aleatorias Discretas</title>
+      <link>/docencia/estadistica/ejercicios/variables-aleatorias-discretas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/estadistica/ejercicios/variables-aleatorias-discretas/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Titulación: Farmacia, Biotecnología&lt;/p&gt;
+&lt;p&gt;Se sabe que el 0.1 % de los comprimidos fabricados en un laboratorio no supera los controles de calidad.
+Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular la probabilidad de que en un envase de 500 comprimidos haya más de 2 comprimidos que no superan los controles de calidad.&lt;/li&gt;
+&lt;li&gt;Calcular la probabilidad de que en un lote de 10 envases haya más de 7 envases en los que todos sus comprimidos superen los controles de calidad.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;SOLUCIÓN&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/35218677&#34; width=&#34;640&#34; height=&#34;449&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
+&lt;iframe src=&#34;//www.youtube.com/embed/49i-So_DvbY&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34;&gt; &lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geometría | Aprende con Alf</title>
+    <link>/category/geometria/</link>
+      <atom:link href="/category/geometria/index.xml" rel="self" type="application/rss+xml" />
+    <description>Geometría</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Geometría</title>
+      <link>/category/geometria/</link>
+    </image>
+    
+    <item>
+      <title>Geometría Analítica</title>
+      <link>/docencia/calculo/manual/geometria-analitica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/calculo/manual/geometria-analitica/</guid>
+      <description>&lt;h2 id=&#34;escalares-y-vectores&#34;&gt;Escalares y vectores&lt;/h2&gt;
+&lt;h3 id=&#34;escalares&#34;&gt;Escalares&lt;/h3&gt;
+&lt;p&gt;Algunos fenómenos de la naturaleza pueden describirse mediante un número referido a una unidad de medida.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definición - Escalar&lt;/strong&gt;. Un &lt;em&gt;escalar&lt;/em&gt; es un número que sirve para expresar una magnitud sin dirección.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. La estatura o el peso de una persona, la temperatura de un gas o el tiempo que tarda un móvil en recorrer una distancia.&lt;/p&gt;
+&lt;p&gt;Sin embargo, existen otros fenómenos que no pueden describirse adecuadamente mediante un escalar.
+Si, por ejemplo, un navegante quiere poner rumbo a puerto y sólo conoce de la intensidad del viento, no sabrá qué dirección tomar.
+La descripción del viento requiere dos elementos, su intensidad y su dirección.&lt;/p&gt;
+&lt;h3 id=&#34;vectores&#34;&gt;Vectores&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definición - Vector&lt;/strong&gt;. Un &lt;em&gt;vector&lt;/em&gt; es un número que sirve para expresar una magnitud y tiene asociada una dirección y un sentido.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt; La velocidad de un móvil o la fuerza que se aplica sobre un objeto.&lt;/p&gt;
+&lt;p&gt;Geométricamente, un vector se representa mediante un segmento orientado, es decir, una flecha.&lt;/p&gt;
+&lt;img src=&#34;../img/geometria_analitica/vector.png&#34; width=&#34;500px&#34; alt=&#34;Vector&#34; /&gt;
+&lt;h3 id=&#34;representación-de-un-vector&#34;&gt;Representación de un vector&lt;/h3&gt;
+&lt;p&gt;Un segmento orientado puede ubicarse en diferentes lugares dentro de un espacio cartesiano. Sin embargo, con independencia de donde esté situado, si la longitud y la dirección no varían, dicho segmento representará siempre el mismo vector.&lt;/p&gt;
+&lt;p&gt;Esto permite representar todos los vectores con un mismo origen, el origen en sistema de coordenadas cartesianas.
+Así, un vector queda determinado por las &lt;em&gt;coordenadas&lt;/em&gt; de su extremo final en cualquier espacio euclideo.&lt;/p&gt;
+&lt;img src=&#34;../img/geometria_analitica/coordenadas_vector.svg&#34; width=&#34;400&#34; alt=&#34;Coordenadas de un vector&#34; /&gt;
+&lt;h3 id=&#34;vector-a-partir-de-dos-puntos&#34;&gt;Vector a partir de dos puntos&lt;/h3&gt;
+&lt;p&gt;Dados dos puntos $P$ y $Q$ de un espacio cartesiano, el vector con origen en $P$ y destino en $Q$ tiene coordenadas $\vec{PQ}=Q-P$.&lt;/p&gt;
+&lt;p&gt;Sean los puntos $P=(2,1)$ y $Q=(3,4)$ del plano real $\mathbb{R}^2$, entonces&lt;/p&gt;
+&lt;p&gt;$$\vec{PQ} = Q-P = (3,4)-(2,1) = (3-2,4-1) = (1,3).$$&lt;/p&gt;
+&lt;img src=&#34;../img/geometria_analitica/vector_puntos.png&#34; width=&#34;300px&#34; alt=&#34;Definción de un vector a partir de dos puntos&#34; /&gt;
+&lt;h3 id=&#34;módulo-de-un-vector&#34;&gt;Módulo de un vector&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Módulo de un vector&lt;/strong&gt;. Dado un vector $\mathbf{v}=(v_1,\cdots,v_n)$ de $\mathbb{R}^n$, se define el &lt;em&gt;módulo&lt;/em&gt; de $\mathbf{v}$ como&lt;/p&gt;
+&lt;p&gt;$$\lvert \mathbf{v} \rvert = \sqrt{v_1^2+ \cdots + v_n^2}.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;El módulo de un vector coincide con la longitud del segmento que representa al vector.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Sea $\mathbf{u}=(3,4)$ un vector en $\mathbb{R}^2$, entonces&lt;/p&gt;
+&lt;p&gt;$$\lvert \mathbf{u} \rvert = \sqrt{3^2+4^2} = \sqrt{25} = 5.$$&lt;/p&gt;
+&lt;p&gt;Sea $\lvert \mathbf{v}\rvert =(4,7,4)$ un vector en $\mathbb{R}^3$, entonces&lt;/p&gt;
+&lt;p&gt;$$\lvert \mathbf{v} \vert = \sqrt{4^2+7^2+4^2} = \sqrt{81} = 9.$$&lt;/p&gt;
+&lt;h3 id=&#34;vectores-unitarios&#34;&gt;Vectores unitarios&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definición - Vector unitario&lt;/strong&gt;. Se dice que un vector $\mathbf{v}$ de $\mathbb{R}^n$ es &lt;em&gt;unitario&lt;/em&gt; si su módulo es 1, es decir $\lvert \mathbf{v}\rvert=1$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Especial atención merecen los vectores unitarios que siguen la dirección de los ejes de coordenadas, estos vectores se llaman &lt;em&gt;vectores coordenados&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;En $\mathbb{R}^2$ los vectores coordenados son&lt;/p&gt;
+&lt;p&gt;$$\mathbf{i}=(1,0)\mbox{ y }\mathbf{j}=(0,1)$$&lt;/p&gt;
+&lt;img src=&#34;../img/geometria_analitica/vectores_unitarios_r2.png&#34; width=&#34;200px&#34; alt=&#34;Vectores unitarios en el plano real&#34; /&gt;
+&lt;p&gt;En $\mathbb{R}^3$ los vectores coordenados son&lt;/p&gt;
+&lt;p&gt;$$\mathbf{i}=(1,0,0)\mbox{, }\mathbf{j}=(0,1,0) \mbox{ y } \mathbf{k}=(0,0,1)$$&lt;/p&gt;
+&lt;img src=&#34;../img/geometria_analitica/vectores_unitarios_r3.png&#34; width=&#34;200px&#34; alt=&#34;Vectores unitarios en espacio real&#34; /&gt;
+&lt;h3 id=&#34;suma-de-vectores&#34;&gt;Suma de vectores&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Suma de vectores&lt;/strong&gt;. Dados dos vectores $\mathbf{u}=(u_1,\cdots,u_n)$ y $\mathbf{v}=(v_1,\cdots,v_n)$ de $\mathbb{R}^n$, se define la &lt;em&gt;suma&lt;/em&gt; de $\mathbf{u}$ y $\mathbf{v}$ como&lt;/p&gt;
+&lt;p&gt;$$\mathbf{u}+\mathbf{v} = (u_1+v_1,\ldots, u_n+v_n).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;img src=&#34;../img/geometria_analitica/suma_vectores.png&#34; width=&#34;400px&#34; alt=&#34;Suma de vectores&#34; /&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Sean $\mathbf{u}=(3,1)$ y $\mathbf{v}=(2,3)$ dos vectores en $\mathbb{R}^2$, entonces&lt;/p&gt;
+&lt;p&gt;$$\mathbf{u}+\mathbf{v} = (3+2,1+3) = (5,4).$$&lt;/p&gt;
+&lt;h3 id=&#34;producto-de-un-vector-por-un-escalar&#34;&gt;Producto de un vector por un escalar&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Producto de un vector por un escalar&lt;/strong&gt;. Dado un vector $\mathbf{v}=(v_1,\cdots,v_n)$ de $\mathbb{R}^n$, y un escalar $a\in \mathbb{R}$, se define el &lt;em&gt;producto&lt;/em&gt; de $a$ por $\mathbf{v}$ como&lt;/p&gt;
+&lt;p&gt;$$a\mathbf{v} = (av_1,\ldots, av_n).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;img src=&#34;../img/geometria_analitica/producto_por_escalar.png&#34; width=&#34;400px&#34; alt=&#34;Producto de un vector por un escalar&#34; /&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Sean el vector $\mathbf{v}=(2,1)$ en $\mathbb{R}^2$ y el escalar $a=2$, entonces&lt;/p&gt;
+&lt;p&gt;$$a\mathbf{v} = 2(2,1) = (4,2).$$&lt;/p&gt;
+&lt;h3 id=&#34;expresión-de-un-vector-como-combinación-lineal-de-los-vectores-coordenados&#34;&gt;Expresión de un vector como combinación lineal de los vectores coordenados&lt;/h3&gt;
+&lt;p&gt;La suma de vectores y el producto de un vector por un escalar permite expresar cualquier vector como una combinación lineal de los vectores
+coordenados.&lt;/p&gt;
+&lt;p&gt;En el caso del espacio real $\mathbb{R}^3$, cualquier vector $\mathbf{v}=(v_1,v_2,v_3)$ puede expresarse como&lt;/p&gt;
+&lt;p&gt;$$\mathbf{v}=(v_1,v_2,v_3) = v_1\mathbf{i}+v_2\mathbf{j}+v_3\mathbf{k}.$$&lt;/p&gt;
+&lt;img src=&#34;../img/geometria_analitica/combinacion_lineal_vectores_coordenados.png&#34; width=&#34;300px&#34; alt=&#34;Vectores unitarios en espacio real&#34; /&gt;
+&lt;h3 id=&#34;producto-escalar&#34;&gt;Producto escalar&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Producto escalar&lt;/strong&gt;. Dados dos vectores $\mathbf{u}=(u_1,\cdots,u_n)$ y $\mathbf{v}=(v_1,\cdots,v_n)$ de $\mathbb{R}^n$, se define el &lt;em&gt;producto escalar&lt;/em&gt; de $\mathbf{u}$ y $\mathbf{v}$ como&lt;/p&gt;
+&lt;p&gt;$$\mathbf{u}\cdot \mathbf{v} = u_1v_1 + \cdots + u_nv_n.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Sean $\mathbf{u}=(3,1)$ y $\mathbf{v}=(2,3)$ dos vectores en $\mathbb{R}^2$, entonces&lt;/p&gt;
+&lt;p&gt;$$\mathbf{u}\cdot\mathbf{v} = 3\cdot 2 +1\cdot 3 = 9.$$&lt;/p&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Teorema - Producto escalar&lt;/strong&gt;. Dados dos vectores $\mathbf{u}$ y $\mathbf{v}$ de $\mathbb{R}^n$, se cumple que&lt;/p&gt;
+&lt;p&gt;$$\mathbf{u}\cdot\mathbf{v} =  \lvert \mathbf{u}\rvert \lvert\mathbf{v}\rvert \cos\alpha$$&lt;/p&gt;
+&lt;p&gt;donde $\alpha$ es el ángulo que forman los vectores.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;vectores-paralelos&#34;&gt;Vectores paralelos&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Vectores paralelos&lt;/strong&gt;. Dos vectores $\mathbf{u}$ y $\mathbf{v}$ son &lt;em&gt;paralelos&lt;/em&gt; si existe un valor $a\in\mathbb{R}$ tal que&lt;/p&gt;
+&lt;p&gt;$$\mathbf{u} = a\mathbf{v}.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Los vectores $\mathbf{u}=(-4,2)$ y $\mathbf{v}=(2,-1)$ en $\mathbb{R}^2$ son paralelos, ya que&lt;/p&gt;
+&lt;p&gt;$$\mathbf{v}= (-4,2) = -2(2,-1) = -2\mathbf{v}.$$&lt;/p&gt;
+&lt;h3 id=&#34;vectores-ortogonales-y-ortonormales&#34;&gt;Vectores ortogonales y ortonormales&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Vectores ortogonales y ortonormales&lt;/strong&gt;. Dos vectores $\mathbf{u}$ y $\mathbf{v}$ son &lt;em&gt;ortogonales&lt;/em&gt; si su producto escalar es nulo&lt;/p&gt;
+&lt;p&gt;$$\mathbf{u}\cdot \mathbf{v} = 0.$$&lt;/p&gt;
+&lt;p&gt;Si además el módulo de ambos vectores es la unidad $\lvert\mathbf{u}\rvert=\lvert\mathbf{v}\rvert=1$, entonces se dice que son &lt;em&gt;ortonormales&lt;/em&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    Los vectores ortogonales son perpendiculares entre sí, es decir, forman un ángulo de $90^\circ$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Los vectores $\mathbf{u}=(2,1)$ y $\mathbf{v}=(-2,4)$ en $\mathbb{R}^2$ son ortogonales, ya que&lt;/p&gt;
+&lt;p&gt;$$\mathbf{u}\mathbf{v} = 2\cdot -2 +1\cdot 4 = 0,$$&lt;/p&gt;
+&lt;p&gt;pero no son ortonormales ya que $\lvert\mathbf{u}\rvert = \sqrt{2^2+1^2} \neq 1$ y $\lvert \mathbf{v}\rvert = \sqrt{-2^2+4^2} \neq 1$.&lt;/p&gt;
+&lt;p&gt;Los vectores $\mathbf{i}=(1,0)$ y $\mathbf{j}=(0,1)$ en $\mathbb{R}^2$ son ortonormales, ya que&lt;/p&gt;
+&lt;p&gt;$$\mathbf{i}\mathbf{j} = 1\cdot 0 +0\cdot 1 = 0, \quad \lvert\mathbf{i}\rvert = \sqrt{1^2+0^2} = 1,  \quad \lvert \mathbf j\rvert = \sqrt{0^2+1^2} = 1.$$&lt;/p&gt;
+&lt;h2 id=&#34;rectas&#34;&gt;Rectas&lt;/h2&gt;
+&lt;h3 id=&#34;ecuación-vectorial-de-la-recta&#34;&gt;Ecuación vectorial de la recta&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Ecuación vectorial de la recta&lt;/strong&gt;. Sea $l$ una recta del espacio $\mathbb{R}^n$ y sean $P=(p_1,\ldots,p_n)$ un punto cualquiera de la recta y $\mathbf{v}=(v_1,\ldots,v_n)$ un vector cualquiera con la misma dirección que la recta.
+La ecuación&lt;/p&gt;
+&lt;p&gt;$$l: X= P + t\mathbf{v} = (p_1,\ldots,p_n)+t(v_1,\ldots,v_n) = (p_1+tv_1,\ldots,p_n+tv_n).$$&lt;/p&gt;
+&lt;p&gt;parametriza a $l$ en función de $t\in \mathbb{R}$, y se conoce como &lt;em&gt;ecuación vectorial de la recta&lt;/em&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Considérese la recta del espacio real $\mathbb{R}^3$ que aparece en la gráfica.
+Un punto de la recta es $P=(1,1,2)$ y un vector director es $\mathbf{v}=(-1,2,2)$, luego su ecuación vectorial es&lt;/p&gt;
+&lt;p&gt;$$l: X= P + t\mathbf{v} = (1,1,2)+t(-1,2,1)=(1-t,1+2t,2+t)\quad t\in\mathbb{R}.$$&lt;/p&gt;
+&lt;img src=&#34;../img/geometria_analitica/ecuacion_vectorial_recta.png&#34; width=&#34;400px&#34; alt=&#34;Vectores unitarios en espacio real&#34; /&gt;
+&lt;h3 id=&#34;ecuaciones-paramétricas-y-cartesianas-de-la-recta&#34;&gt;Ecuaciones paramétricas y cartesianas de la recta&lt;/h3&gt;
+&lt;p&gt;De la ecuación vectorial de una recta $l: X=P + t\mathbf{v}=(p_1+tv_1,\ldots,p_n+tv_n)$ se obtienen fácilmente las coordenadas de los puntos que forman parte de la recta mediante $n$ ecuaciones paramétricas:&lt;/p&gt;
+&lt;p&gt;$$x_1(t)=p_1+tv_1, \ldots, x_n(t)=p_n+tv_n$$&lt;/p&gt;
+&lt;p&gt;donde, si $\mathbf{v}$ es un vector cuyas coordenadas son no nulas ($v_i\neq 0$ $\forall i$), se puede despejar el parámetro $t$ en cada una de ellas e igualarlas,&lt;/p&gt;
+&lt;p&gt;$$\frac{x_1-p_1}{v_1}=\cdots = \frac{x_n-p_n}{v_n}$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Dada la ecuación vectorial de la recta $l: X=(1,1,2)+t(-1,2,1) =(1-t,1+2t,2+t)$ en el espacio real $\mathbb{R^3}$, sus ecuaciones paramétricas son&lt;/p&gt;
+&lt;p&gt;$$x(t) = 1-t, \quad y(t)=1+2t, \quad z(t)=2+t,$$&lt;/p&gt;
+&lt;p&gt;y sus ecuaciones cartesianas son&lt;/p&gt;
+&lt;p&gt;$$\frac{x-1}{-1}=\frac{y-1}{2}=\frac{z-2}{1}$$&lt;/p&gt;
+&lt;h3 id=&#34;ecuación-punto-pendiente-de-una-recta-en-el-plano&#34;&gt;Ecuación punto-pendiente de una recta en el plano&lt;/h3&gt;
+&lt;p&gt;En el caso particular del plano cartesiano $\mathbb{R^2}$, si se tiene una recta con ecuación vectorial&lt;/p&gt;
+&lt;p&gt;$$l: X=P+t\mathbf{v}=(x_0,y_0)+t(a,b) = (x_0+ta,y_0+tb),$$&lt;/p&gt;
+&lt;p&gt;sus ecuaciones paramétricas son&lt;/p&gt;
+&lt;p&gt;$$x(t)=x_0+ta,\quad y(t)=y_0+tb$$&lt;/p&gt;
+&lt;p&gt;y sus ecuación cartesiana es&lt;/p&gt;
+&lt;p&gt;$$\frac{x-x_0}{a} = \frac{y-y_0}{b}.$$&lt;/p&gt;
+&lt;p&gt;A partir de aquí, pasando $b$ multiplicando al otro lado de la ecuación, se obtiene&lt;/p&gt;
+&lt;p&gt;$$y-y_0 = \frac{b}{a}(x-x_0) \mbox{ o bien } y-y_0+m(x-x_0),$$&lt;/p&gt;
+&lt;p&gt;llamando $m=b/a$.
+Esta ecuación se conoce como ecuación en la forma &lt;em&gt;punto-pendiente&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/media/logo-geogebra.png#left&#34; /&gt; &lt;strong&gt;&lt;a href=&#34;http://ggbtu.be/m150370&#34; target=&#34;_blank&#34;&gt;Ejemplo interactivo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;pendiente-de-una-recta-en-el-plano&#34;&gt;Pendiente de una recta en el plano&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definición - Pendiente de una recta&lt;/strong&gt;. Dada una recta $l: X=P+t\mathbf{v}$ en el plano real $\mathbb{R}^2$, con vector director $\mathbf{v}=(a,b)$, se define la pendiente de $l$ como $b/a$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;img src=&#34;../img/geometria_analitica/pendiente_recta.png&#34; width=&#34;400px&#34; alt=&#34;Vectores unitarios en espacio real&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/media/logo-geogebra.png#left&#34; /&gt; &lt;strong&gt;&lt;a href=&#34;http://ggbtu.be/m150247&#34; target=&#34;_blank&#34;&gt;Ejemplo interactivo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Recordar que dados dos puntos $Q=(x_1,y_1)$ y $Q=(x_2,y_2)$ de la recta $l$, se puede tomar como vector director el vector que los une, que tiene coordenadas $\vec{PQ}=Q-P=(x_2-x_1,y_2-y_1)$, de manera que la pendiente de $l$ será $\dfrac{y_2-y_1}{x_2-x_1}$, es decir, el cociente entre lo que cambia la coordenada $y$ y lo que cambia la coordenada $x$.&lt;/p&gt;
+&lt;h2 id=&#34;planos&#34;&gt;Planos&lt;/h2&gt;
+&lt;h3 id=&#34;ecuación-vectorial-del-plano-en-el-espacio-real&#34;&gt;Ecuación vectorial del plano en el espacio real&lt;/h3&gt;
+&lt;p&gt;Para llegar a la ecuación de un plano en el espacio real $\mathbb{R}^3$ se puede partir de un punto del plano $P=(x_0,y_0,z_0)$ y de un vector perpendicular al plano $\mathbf{v}=(a,b,c)$.
+Entonces, para cualquier punto del plano $Q=(x,y,z)$ se cumple que el vector $\vec{PQ} = (x-x_0,y-y_0,z-z_0)$ es ortogonal a $\mathbf{v}$, por lo que su producto escalar se anulará.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definición - Ecuación vectorial de un plano en el espacio&lt;/strong&gt;. Dado un punto $P=(v_0,y_0,z_0)$ y un vector $\mathbf{v}=(a,b,c)$ en el espacio real $\mathbb{R}^3$, la &lt;em&gt;ecuación vectorial del plano&lt;/em&gt; que pasa por $P$ perpendicular a $\mathbf{v}=(a,b,c)$ es&lt;/p&gt;
+&lt;p&gt;$$\vec{PQ}\cdot\mathbf{v} = (x-x_0,y-y_0,z-z_0)(a,b,c) = a(x-x_0)+b(y-y_0)+c(z-z_0) = 0.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;img src=&#34;../img/geometria_analitica/ecuacion_plano.png&#34; width=&#34;400px&#34; alt=&#34;Vectores unitarios en espacio real&#34; /&gt;
+&lt;h3 id=&#34;ecuación-escalar-de-un-plano-en-el-espacio&#34;&gt;Ecuación escalar de un plano en el espacio&lt;/h3&gt;
+&lt;p&gt;De la ecuación vectorial del plano se obtiene&lt;/p&gt;
+&lt;p&gt;$$a(x-x_0)+b(y-y_0)+c(z-z_0) = 0 \Leftrightarrow ax+by+cz=ax_0+by_0+cz_0,$$&lt;/p&gt;
+&lt;p&gt;que, renombrando $d=ax_0+by_0+cz_0$, puede reescribirse como&lt;/p&gt;
+&lt;p&gt;$$ax+by+cz=d,$$&lt;/p&gt;
+&lt;p&gt;y se conoce como &lt;em&gt;ecuación escalar del plano&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Dado el punto $P=(2,1,1)$ y el vector $\mathbf{v}=(2,1,2)$, la ecuación vectorial del plano qu pasa por $P$ y es ortogonal a $\mathbf{v}$ es&lt;/p&gt;
+&lt;p&gt;$$(x-2,y-1,z-1)(2,1,2)=2(x-2)+(y-1)+2(z-1)=0,$$&lt;/p&gt;
+&lt;p&gt;y su ecuación escalar es&lt;/p&gt;
+&lt;p&gt;$$2x+y+2z=7.$$&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

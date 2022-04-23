@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diccionarios | Aprende con Alf</title>
+    <link>/tag/diccionarios/</link>
+      <atom:link href="/tag/diccionarios/index.xml" rel="self" type="application/rss+xml" />
+    <description>Diccionarios</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Diccionarios</title>
+      <link>/tag/diccionarios/</link>
+    </image>
+    
+    <item>
+      <title>Ejercicios de Diccionarios</title>
+      <link>/docencia/python/ejercicios/diccionarios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/ejercicios/diccionarios/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que guarde en una variable el diccionario &lt;code&gt;{&#39;Euro&#39;:&#39;€&#39;, &#39;Dollar&#39;:&#39;$&#39;, &#39;Yen&#39;:&#39;¥&#39;}&lt;/code&gt;, pregunte al usuario por una divisa y muestre su símbolo o un mensaje de aviso si la divisa no está en el diccionario.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/diccionarios/ejercicio1.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte al usuario su nombre, edad, dirección y teléfono y lo guarde en un diccionario. Después debe mostrar por pantalla el mensaje &lt;code&gt;&amp;lt;nombre&amp;gt; tiene &amp;lt;edad&amp;gt; años, vive en &amp;lt;dirección&amp;gt; y su número de teléfono es &amp;lt;teléfono&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/diccionarios/ejercicio2.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que guarde en un diccionario los precios de las frutas de la tabla, pregunte al usuario por una fruta, un número de kilos y muestre por pantalla el precio de ese número de kilos de fruta. Si la fruta no está en el diccionario debe mostrar un mensaje informando de ello.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Fruta&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Precio&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Plátano&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.35&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Manzana&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.80&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Pera&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.85&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Naranja&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.70&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/diccionarios/ejercicio3.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que pregunte una fecha en formato &lt;code&gt;dd/mm/aaaa&lt;/code&gt; y muestre por pantalla la misma fecha en formato &lt;code&gt;dd de &amp;lt;mes&amp;gt; de aaaa&lt;/code&gt; donde &lt;code&gt;&amp;lt;mes&amp;gt;&lt;/code&gt; es el nombre del mes.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/diccionarios/ejercicio4.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-5&#34;&gt;Ejercicio 5&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que almacene el diccionario con los créditos de las asignaturas de un curso &lt;code&gt;{&#39;Matemáticas&#39;: 6, &#39;Física&#39;: 4, &#39;Química&#39;: 5}&lt;/code&gt; y después muestre por pantalla los créditos de cada asignatura en el formato &lt;code&gt;&amp;lt;asignatura&amp;gt; tiene &amp;lt;créditos&amp;gt; créditos&lt;/code&gt;, donde &lt;code&gt;&amp;lt;asignatura&amp;gt;&lt;/code&gt; es cada una de las asignaturas del curso, y &lt;code&gt;&amp;lt;créditos&amp;gt;&lt;/code&gt; son sus créditos. Al final debe mostrar también el número total de créditos del curso.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/diccionarios/ejercicio5.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-6&#34;&gt;Ejercicio 6&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que cree un diccionario vacío y lo vaya llenado con información sobre una persona (por ejemplo nombre, edad, sexo, teléfono, correo electrónico, etc.) que se le pida al usuario. Cada vez que se añada un nuevo dato debe imprimirse el contenido del diccionario.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/diccionarios/ejercicio6.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-7&#34;&gt;Ejercicio 7&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que cree un diccionario simulando una cesta de la compra. El programa debe preguntar el artículo y su precio y añadir el par al diccionario, hasta que el usuario decida terminar. Después se debe mostrar por pantalla la lista de la compra y el coste total, con el siguiente formato&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Lista de la compra&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Artículo 1&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;Precio&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Artículo 2&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;Precio&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Artículo 3&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;Precio&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;hellip;&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&amp;hellip;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Total&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;Coste&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/diccionarios/ejercicio7.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-8&#34;&gt;Ejercicio 8&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que cree un diccionario de traducción español-inglés. El usuario introducirá las palabras en español e inglés separadas por dos puntos, y cada par &lt;code&gt;&amp;lt;palabra&amp;gt;:&amp;lt;traducción&amp;gt;&lt;/code&gt; separados por comas. El programa debe crear un diccionario con las palabras y sus traducciones. Después pedirá una frase en español y utilizará el diccionario para traducirla palabra a palabra. Si una palabra no está en el diccionario debe dejarla sin traducir.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/diccionarios/ejercicio8.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-9&#34;&gt;Ejercicio 9&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que gestione las facturas pendientes de cobro de una empresa. Las facturas se almacenarán en un diccionario donde la clave de cada factura será el número de factura y el valor el coste de la factura. El programa debe preguntar al usuario si quiere añadir una nueva factura, pagar una existente o terminar. Si desea añadir una nueva factura se preguntará por el número de factura y su coste y se añadirá al diccionario. Si se desea pagar una factura se preguntará por el número de factura y se eliminará del diccionario. Después de cada operación el programa debe mostrar por pantalla la cantidad cobrada hasta el momento y la cantidad pendiente de cobro.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/diccionarios/ejercicio9.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-10&#34;&gt;Ejercicio 10&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que permita gestionar la base de datos de clientes de una empresa. Los clientes se guardarán en un diccionario en el que la clave de cada cliente será su NIF, y el valor será otro diccionario con los datos del cliente (nombre, dirección, teléfono, correo, preferente), donde preferente tendrá el valor &lt;code&gt;True&lt;/code&gt; si se trata de un cliente preferente. El programa debe preguntar al usuario por una opción del siguiente menú: (1) Añadir cliente, (2) Eliminar cliente, (3) Mostrar cliente, (4) Listar todos los clientes, (5) Listar clientes preferentes, (6) Terminar. En función de la opción elegida el programa tendrá que hacer lo siguiente:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Preguntar los datos del cliente, crear un diccionario con los datos y añadirlo a la base de datos.&lt;/li&gt;
+&lt;li&gt;Preguntar por el NIF del cliente y eliminar sus datos de la base de datos.&lt;/li&gt;
+&lt;li&gt;Preguntar por el NIF del cliente y mostrar sus datos.&lt;/li&gt;
+&lt;li&gt;Mostrar lista de todos los clientes de la base datos con su NIF y nombre.&lt;/li&gt;
+&lt;li&gt;Mostrar la lista de clientes preferentes de la base de datos con su NIF y nombre.&lt;/li&gt;
+&lt;li&gt;Terminar el programa.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/diccionarios/ejercicio10.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-11&#34;&gt;Ejercicio 11&lt;/h2&gt;
+&lt;p&gt;El directorio de los clientes de una empresa está organizado en una cadena de texto como la de más abajo, donde cada línea contiene la información del nombre, email, teléfono, nif, y el descuento que se le aplica. Las líneas se separan con el carácter de cambio de línea &lt;code&gt;\n&lt;/code&gt; y la primera línea contiene los nombres de los campos con la información contenida en el directorio.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;quot;nif;nombre;email;teléfono;descuento\n01234567L;Luis González;luisgonzalez@mail.com;656343576;12.5\n71476342J;Macarena Ramírez;macarena@mail.com;692839321;8\n63823376M;Juan José Martínez;juanjo@mail.com;664888233;5.2\n98376547F;Carmen Sánchez;carmen@mail.com;667677855;15.7&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Escribir un programa que genere un diccionario con la información del directorio, donde cada elemento corresponda a un cliente y tenga por clave su nif y por valor otro diccionario con el resto de la información del cliente. Los diccionarios con la información de cada cliente tendrán como claves los nombres de los campos y como valores la información de cada cliente correspondientes a los campos. Es decir, un diccionario como el siguiente&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;{&#39;01234567L&#39;: {&#39;nombre&#39;: &#39;Luis González&#39;, &#39;email&#39;: &#39;luisgonzalez@mail.com&#39;, &#39;teléfono&#39;: &#39;656343576&#39;, &#39;descuento&#39;: 12.5}, &#39;71476342J&#39;: {&#39;nombre&#39;: &#39;Macarena Ramírez&#39;, &#39;email&#39;: &#39;macarena@mail.com&#39;, &#39;teléfono&#39;: &#39;692839321&#39;, &#39;descuento&#39;: 8.0}, &#39;63823376M&#39;: {&#39;nombre&#39;: &#39;Juan José Martínez&#39;, &#39;email&#39;: &#39;juanjo@mail.com&#39;, &#39;teléfono&#39;: &#39;664888233&#39;, &#39;descuento&#39;: 5.2}, &#39;98376547F&#39;: {&#39;nombre&#39;: &#39;Carmen Sánchez&#39;, &#39;email&#39;: &#39;carmen@mail.com&#39;, &#39;teléfono&#39;: &#39;667677855&#39;, &#39;descuento&#39;: 15.7}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/diccionarios/ejercicio11.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Diccionarios</title>
+      <link>/docencia/python/manual/diccionarios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/manual/diccionarios/</guid>
+      <description>&lt;h2 id=&#34;diccionarios&#34;&gt;Diccionarios&lt;/h2&gt;
+&lt;p&gt;Un diccionario es una colección de pares formados por una &lt;em&gt;clave&lt;/em&gt; y un &lt;em&gt;valor&lt;/em&gt; asociado a la clave.&lt;/p&gt;
+&lt;p&gt;Se construyen poniendo los pares entre llaves &lt;code&gt;{ }&lt;/code&gt; separados por comas, y separando la clave del valor con dos puntos &lt;code&gt;:&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Se caracterizan por:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No tienen orden.&lt;/li&gt;
+&lt;li&gt;Pueden contener elementos de distintos tipos.&lt;/li&gt;
+&lt;li&gt;Son mutables, es decir, pueden alterarse durante la ejecución de un programa.&lt;/li&gt;
+&lt;li&gt;Las claves son únicas, es decir, no pueden repetirse en un mismo diccionario, y pueden ser de cualquier tipo de datos inmutable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Diccionario vacío
+type({})
+&amp;lt;class &#39;dict&#39;&amp;gt;
+# Diccionario con elementos de distintos tipos
+{&#39;nombre&#39;:&#39;Alfredo&#39;, &#39;despacho&#39;: 218, &#39;email&#39;:&#39;asalber@ceu.es&#39;}
+# Diccionarios anidados
+{&#39;nombre_completo&#39;:{&#39;nombre&#39;: &#39;Alfredo&#39;, &#39;Apellidos&#39;: &#39;Sánchez Alberca&#39;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;acceso-a-los-elementos-de-un-diccionario&#34;&gt;Acceso a los elementos de un diccionario&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;d[clave]&lt;/code&gt; devuelve el valor del diccionario &lt;code&gt;d&lt;/code&gt; asociado a la clave &lt;code&gt;clave&lt;/code&gt;. Si en el diccionario no existe esa clave devuelve un error.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d.get(clave, valor)&lt;/code&gt; devuelve el valor del diccionario &lt;code&gt;d&lt;/code&gt; asociado a la clave &lt;code&gt;clave&lt;/code&gt;. Si en el diccionario no existe esa clave devuelve &lt;code&gt;valor&lt;/code&gt;, y si no se especifica un valor por defecto devuelve &lt;code&gt;None&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; a = {&#39;nombre&#39;:&#39;Alfredo&#39;, &#39;despacho&#39;: 218, &#39;email&#39;:&#39;asalber@ceu.es&#39;}
+&amp;gt;&amp;gt;&amp;gt; a[&#39;nombre&#39;]
+&#39;Alfredo&#39;
+&amp;gt;&amp;gt;&amp;gt; a[&#39;despacho&#39;] = 210
+&amp;gt;&amp;gt;&amp;gt; a
+{&#39;nombre&#39;:&#39;Alfredo&#39;, &#39;despacho&#39;: 218, &#39;email&#39;:&#39;asalber@ceu.es&#39;}
+&amp;gt;&amp;gt;&amp;gt; a.get(&#39;email&#39;)
+&#39;asalber@ceu.es&#39;
+&amp;gt;&amp;gt;&amp;gt; a.get(&#39;universidad&#39;, &#39;CEU&#39;)
+&#39;CEU&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;operaciones-que-no-modifican-un-diccionario&#34;&gt;Operaciones que no modifican un diccionario&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;len(d)&lt;/code&gt; : Devuelve el número de elementos del diccionario &lt;code&gt;d&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;min(d)&lt;/code&gt; : Devuelve la mínima clave del diccionario &lt;code&gt;d&lt;/code&gt; siempre que las claves sean comparables.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;max(d)&lt;/code&gt; : Devuelve la máxima clave del diccionario &lt;code&gt;d&lt;/code&gt; siempre que las claves sean comparables.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sum(d)&lt;/code&gt; : Devuelve la suma de las claves del diccionario &lt;code&gt;d&lt;/code&gt;, siempre que las claves se puedan sumar.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clave in d&lt;/code&gt; : Devuelve &lt;code&gt;True&lt;/code&gt; si la clave &lt;code&gt;clave&lt;/code&gt; pertenece al diccionario &lt;code&gt;d&lt;/code&gt; y &lt;code&gt;False&lt;/code&gt; en caso contrario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d.keys()&lt;/code&gt; : Devuelve un iterador sobre las claves de un diccionario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d.values()&lt;/code&gt; : Devuelve un iterador sobre los valores de un diccionario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d.items()&lt;/code&gt; : Devuelve un iterador sobre los pares clave-valor de un diccionario.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; a = {&#39;nombre&#39;:&#39;Alfredo&#39;, &#39;despacho&#39;: 218, &#39;email&#39;:&#39;asalber@ceu.es&#39;}
+&amp;gt;&amp;gt;&amp;gt; len(a)
+3
+&amp;gt;&amp;gt;&amp;gt; min(a)
+&#39;despacho&#39;
+&amp;gt;&amp;gt;&amp;gt; &#39;email&#39; in a
+True
+&amp;gt;&amp;gt;&amp;gt; a.keys()
+dict_keys([&#39;nombre&#39;, &#39;despacho&#39;, &#39;email&#39;])
+&amp;gt;&amp;gt;&amp;gt; a.values()
+dict_values([&#39;Alfredo&#39;, 218, &#39;asalber@ceu.es&#39;])
+&amp;gt;&amp;gt;&amp;gt; a.items()
+dict_items([(&#39;nombre&#39;, &#39;Alfredo&#39;), (&#39;despacho&#39;, 218), (&#39;email&#39;, &#39;asalber@ceu.es&#39;)])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;operaciones-que-modifican-un-diccionario&#34;&gt;Operaciones que modifican un diccionario&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;d[clave] = valor&lt;/code&gt; : Añade al diccionario &lt;code&gt;d&lt;/code&gt; el par formado por la clave &lt;code&gt;clave&lt;/code&gt; y el valor &lt;code&gt;valor&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d.update(d2)&lt;/code&gt;. Añade los pares del diccionario &lt;code&gt;d2&lt;/code&gt; al diccionario &lt;code&gt;d&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d.pop(clave, alternativo)&lt;/code&gt; : Devuelve del valor asociado a la clave &lt;code&gt;clave&lt;/code&gt; del diccionario &lt;code&gt;d&lt;/code&gt; y lo elimina del diccionario. Si la clave no está devuelve el valor &lt;code&gt;alternativo&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d.popitem()&lt;/code&gt; : Devuelve la tupla formada por la clave y el valor del último par añadido al diccionario &lt;code&gt;d&lt;/code&gt; y lo elimina del diccionario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;del d[clave]&lt;/code&gt; : Elimina del diccionario &lt;code&gt;d&lt;/code&gt; el par con la clave &lt;code&gt;clave&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;d.clear()&lt;/code&gt; : Elimina todos los pares del diccionario &lt;code&gt;d&lt;/code&gt; de manera que se queda vacío.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; a = {&#39;nombre&#39;:&#39;Alfredo&#39;, &#39;despacho&#39;: 218, &#39;email&#39;:&#39;asalber@ceu.es&#39;}
+&amp;gt;&amp;gt;&amp;gt; a[&#39;universidad&#39;] = &#39;CEU&#39;
+&amp;gt;&amp;gt;&amp;gt; a
+{&#39;nombre&#39;: &#39;Alfredo&#39;, &#39;despacho&#39;: 218, &#39;email&#39;: &#39;asalber@ceu.es&#39;, &#39;universidad&#39;: &#39;CEU&#39;}
+&amp;gt;&amp;gt;&amp;gt; a.pop(&#39;despacho&#39;)
+218
+&amp;gt;&amp;gt;&amp;gt; a
+{&#39;nombre&#39;: &#39;Alfredo&#39;, &#39;email&#39;: &#39;asalber@ceu.es&#39;, &#39;universidad&#39;: &#39;CEU&#39;}
+&amp;gt;&amp;gt;&amp;gt; a.popitem()
+(&#39;universidad&#39;, &#39;CEU&#39;)
+&amp;gt;&amp;gt;&amp;gt; a
+{&#39;nombre&#39;: &#39;Alfredo&#39;, &#39;email&#39;: &#39;asalber@ceu.es&#39;}
+&amp;gt;&amp;gt;&amp;gt; del a[&#39;email&#39;]
+&amp;gt;&amp;gt;&amp;gt; a
+{&#39;nombre&#39;: &#39;Alfredo&#39;}
+&amp;gt;&amp;gt;&amp;gt; a.clear()
+&amp;gt;&amp;gt;&amp;gt; a
+{}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;copia-de-diccionarios&#34;&gt;Copia de diccionarios&lt;/h3&gt;
+&lt;p&gt;Existen dos formas de copiar diccionarios:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Copia por referencia&lt;/strong&gt; &lt;code&gt;d1 = d2&lt;/code&gt;: Asocia la la variable &lt;code&gt;d1&lt;/code&gt; el mismo diccionario que tiene asociado la variable &lt;code&gt;d2&lt;/code&gt;, es decir, ambas variables apuntan a la misma dirección de memoria. Cualquier cambio que hagamos a través de &lt;code&gt;l1&lt;/code&gt; o &lt;code&gt;l2&lt;/code&gt; afectará al mismo diccionario.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Copia por valor&lt;/strong&gt; &lt;code&gt;d1 = list(d2)&lt;/code&gt;: Crea una copia del diccionario asociado a &lt;code&gt;d2&lt;/code&gt; en una dirección de memoria diferente y se la asocia a &lt;code&gt;d1&lt;/code&gt;. Las variables apuntan a direcciones de memoria diferentes que contienen los mismos datos. Cualquier cambio que hagamos a través de &lt;code&gt;l1&lt;/code&gt; no afectará al diccionario de &lt;code&gt;l2&lt;/code&gt; y viceversa.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; a = {1:&#39;A&#39;, 2:&#39;B&#39;, 3:&#39;C&#39;}
+&amp;gt;&amp;gt;&amp;gt; # copia por referencia
+&amp;gt;&amp;gt;&amp;gt; b = a
+&amp;gt;&amp;gt;&amp;gt; b
+{1:&#39;A&#39;, 2:&#39;B&#39;, 3:&#39;C&#39;}
+&amp;gt;&amp;gt;&amp;gt; b.pop(2)
+&amp;gt;&amp;gt;&amp;gt; b
+{1:&#39;A&#39;, 3:&#39;C&#39;}
+&amp;gt;&amp;gt;&amp;gt; a
+{1:&#39;A&#39;, 3:&#39;C&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; a = {1:&#39;A&#39;, 2:&#39;B&#39;, 3:&#39;C&#39;}
+&amp;gt;&amp;gt;&amp;gt; # copia por referencia
+&amp;gt;&amp;gt;&amp;gt; b = dict(a)
+&amp;gt;&amp;gt;&amp;gt; b
+{1:&#39;A&#39;, 2:&#39;B&#39;, 3:&#39;C&#39;}
+&amp;gt;&amp;gt;&amp;gt; b.pop(2)
+&amp;gt;&amp;gt;&amp;gt; b
+{1:&#39;A&#39;, 3:&#39;C&#39;}
+&amp;gt;&amp;gt;&amp;gt; a
+{1:&#39;A&#39;, 2:&#39;B&#39;, 3:&#39;C&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exams | Aprende con Alf</title>
+    <link>/en/tag/exams/</link>
+      <atom:link href="/en/tag/exams/index.xml" rel="self" type="application/rss+xml" />
+    <description>Exams</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Exams</title>
+      <link>/en/tag/exams/</link>
+    </image>
+    
+  </channel>
+</rss>

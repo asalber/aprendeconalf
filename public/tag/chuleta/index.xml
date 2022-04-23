@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chuleta | Aprende con Alf</title>
+    <link>/tag/chuleta/</link>
+      <atom:link href="/tag/chuleta/index.xml" rel="self" type="application/rss+xml" />
+    <description>Chuleta</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language><lastBuildDate>Thu, 02 Nov 2017 10:21:50 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Chuleta</title>
+      <link>/tag/chuleta/</link>
+    </image>
+    
+    <item>
+      <title>Hojas de fórmulas de Estadística y Cálculo</title>
+      <link>/post/chuletas/</link>
+      <pubDate>Thu, 02 Nov 2017 10:21:50 +0000</pubDate>
+      <guid>/post/chuletas/</guid>
+      <description>&lt;p&gt;A partir de ahora están disponibles varias hojas de fórmulas de cálculo y Estadística.&lt;/p&gt;
+&lt;p&gt;Estas hojas contienen un resumen con las principales fórmulas utilizadas en Cálculo y Estadística.&lt;/p&gt;
+&lt;p&gt;Las hojas de cálculo pueden descargarse desde los siguientes enlaces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://aprendeconalf.es/docencia/calculo/formulas/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hoja de fórmulas de Cálculo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://aprendeconalf.es/docencia/estadistica/formulas/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hoja de fórmulas de Estadística&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Estaría muy agradecido si me informáis de cualquier error que detectéis en estas hojas.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

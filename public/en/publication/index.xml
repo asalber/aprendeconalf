@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Aprende con Alf</title>
+    <link>/en/publication/</link>
+      <atom:link href="/en/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Publications</title>
+      <link>/en/publication/</link>
+    </image>
+    
+    <item>
+      <title>Clinical-Evolutionary Staging System of Primary Open-Angle Glaucoma Using Optical Coherence Tomography</title>
+      <link>/en/publication/clinical-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/en/publication/clinical-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clasificación por estadios clínico evolutivos del glaucoma primario de ángulo abierto (GPAA) usando valores normalizados obtenidos mediante tomografía de coherencia óptica</title>
+      <link>/en/publication/clasificacion-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/en/publication/clasificacion-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Análisis epidemiológico evolutivo del daño sectorizado en la papila y retina papilar a través de OCT. Nueva clasificación de grados de GCAA.</title>
+      <link>/en/publication/analisis-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/en/publication/analisis-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Análisis estadístico inferencial y descriptivo de las capas retinianas; glaucoma versus no glaucoma</title>
+      <link>/en/publication/analisis-2018-2/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/en/publication/analisis-2018-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clasificación por estadios del glaucoma primario de ángulo abierto usando valores normalizados del anillo BMO</title>
+      <link>/en/publication/clasificacion-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/en/publication/clasificacion-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Una nueva taxonomía de colecciones y de funciones de similitud para su comparación</title>
+      <link>/en/publication/nueva-2018-2/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/en/publication/nueva-2018-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Una nueva taxonomía de colecciones y de funciones de similitud para su comparación</title>
+      <link>/en/publication/nueva-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/en/publication/nueva-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Innovación en la docencia de Estadística con R y rk.Teaching</title>
+      <link>/en/publication/innovacion-2016-2/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/en/publication/innovacion-2016-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Innovación en la docencia de Estadística con R y rk.Teaching</title>
+      <link>/en/publication/innovacion-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/en/publication/innovacion-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bringing R to non-expert users with the package RKTeaching</title>
+      <link>/en/publication/bringing-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/en/publication/bringing-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bioestadística Aplicada con SPSS</title>
+      <link>/en/publication/bioestadistica-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/en/publication/bioestadistica-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards a Semanctic Catalog of Similarity Measures</title>
+      <link>/en/publication/towards-2014-1/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/en/publication/towards-2014-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards a Semantic Catalog of Similarity Measures</title>
+      <link>/en/publication/towards-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/en/publication/towards-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RKTeaching: a new R package for teaching Statistics .</title>
+      <link>/en/publication/rkteaching-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/en/publication/rkteaching-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RKTeaching: Un paquete de R para la enseñanza de la Estadística</title>
+      <link>/en/publication/rkteaching-2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/en/publication/rkteaching-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evolution of neuroendocrine cell population and peptidergic innervation, assessed by discriminant analysis, during postnatal development of the rat prostate</title>
+      <link>/en/publication/evolution-2007/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/en/publication/evolution-2007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AMON: A software system for automatic generation of ontology mappings</title>
+      <link>/en/publication/amon-2005/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/en/publication/amon-2005/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Framework for automatic generation of ontology mappings</title>
+      <link>/en/publication/framework-2004/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/en/publication/framework-2004/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Herramientas de trabajo cooperativo</title>
+      <link>/en/publication/herramientas-2004/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/en/publication/herramientas-2004/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aspectos técnicos de la comunidad virtual de usuarios FARMATOXI</title>
+      <link>/en/publication/aspectos-2002/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <guid>/en/publication/aspectos-2002/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FARMATOXI, a new virtual community of pharmacology and toxicology</title>
+      <link>/en/publication/farmatoxi-2001/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>/en/publication/farmatoxi-2001/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FARMATOXI: Red temática de farmacología y toxicología de RedIris</title>
+      <link>/en/publication/farmatoxi-2000/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
+      <guid>/en/publication/farmatoxi-2000/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

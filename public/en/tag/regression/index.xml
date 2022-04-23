@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regression | Aprende con Alf</title>
+    <link>/en/tag/regression/</link>
+      <atom:link href="/en/tag/regression/index.xml" rel="self" type="application/rss+xml" />
+    <description>Regression</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Regression</title>
+      <link>/en/tag/regression/</link>
+    </image>
+    
+    <item>
+      <title>Regression</title>
+      <link>/en/teaching/statistics/manual/regression/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/manual/regression/</guid>
+      <description>&lt;p&gt;In the last chapter we saw how to describe the distribution of a single variable in a sample. However, in most cases, studies require to describe several variables that are often related. For instance, a nutritional study should consider all the variables that could be related to the weight, as height, age, gender, smoking, diet, physic exercise, etc.&lt;/p&gt;
+&lt;p&gt;To understand a phenomenon that involve several variables is not enough to study every variable by its own. We have to study all the variables together to describe how they interact and the type of relation among them.&lt;/p&gt;
+&lt;p&gt;Usually in a &lt;em&gt;dependency study&lt;/em&gt; there is a &lt;strong&gt;dependent variable&lt;/strong&gt; $Y$ that it is supposed to be influenced by a set of variables $X_1,\ldots,X_n$ known as &lt;strong&gt;independent variables&lt;/strong&gt;. The simpler case is a &lt;em&gt;simple dependency study&lt;/em&gt; when there is only one independent variable, that is the case covered in this chapter.&lt;/p&gt;
+&lt;h2 id=&#34;joint-distribution&#34;&gt;Joint distribution&lt;/h2&gt;
+&lt;h3 id=&#34;joint-frequencies&#34;&gt;Joint frequencies&lt;/h3&gt;
+&lt;p&gt;To study the relation between two variables $X$ and $Y$, we have to study the joint distribution of the &lt;strong&gt;two-dimensional variable&lt;/strong&gt; $(X,Y)$, whose values are pairs $(x_i,y_j)$ where the first element is a value of $X$ and the second a value of $Y$.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Joint sample frequencies&lt;/strong&gt;. Given a sample of $n$ values and a two-dimensional variable $(X,Y)$, for every value of the variable $(x_i,y_j)$ is defined:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Absolute frequency&lt;/strong&gt; $n_{ij}$: Is the number of times that the pair $(x_i,y_j)$ appears in the sample.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Relative frequency&lt;/strong&gt; $f_{ij}$: Is the proportion of times that the pair $(x_i,y_j)$ appears in the sample.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$f_{ij}=\frac{n_{ij}}{n}.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    For two-dimensional variables it make no sense cumulative frequencies.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;joint-frequency-distribution&#34;&gt;Joint frequency distribution&lt;/h3&gt;
+&lt;p&gt;The values of the two-dimensional variable with their frequencies is known as &lt;strong&gt;joint frequency distribution&lt;/strong&gt;, and is represented in a &lt;strong&gt;joint frequency table&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$\begin{array}{|c|ccccc|}
+\hline
+X\backslash Y &amp;amp; y_1 &amp;amp; \cdots &amp;amp; y_j &amp;amp; \cdots &amp;amp; y_q \newline
+\hline
+x_1 &amp;amp; n_{11} &amp;amp; \cdots &amp;amp; n_{1j} &amp;amp; \cdots &amp;amp; n_{1q} \newline
+\vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \vdots \newline
+x_i &amp;amp; n_{i1} &amp;amp; \cdots &amp;amp; n_{ij} &amp;amp; \cdots &amp;amp; n_{iq} \newline
+\vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \vdots \newline
+x_p &amp;amp; n_{p1} &amp;amp; \cdots &amp;amp; n_{pj} &amp;amp; \cdots &amp;amp; n_{pq} \newline
+\hline
+\end{array}$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example (grouped data)&lt;/strong&gt;. The height (in cm) and weight (in kg) of a sample of 30 students is:&lt;/p&gt;
+&lt;div style=&#34;text-align:center&#34;&gt;
+(179,85), (173,65), (181,71), (170,65), (158,51), (174,66),&lt;br/&gt;
+(172,62), (166,60), (194,90), (185,75), (162,55), (187,78),&lt;br/&gt;
+(198,109), (177,61), (178,70), (165,58), (154,50), (183,93),&lt;br/&gt;
+(166,51), (171,65), (175,70), (182,60), (167,59), (169,62),&lt;br/&gt;
+(172,70), (186,71), (172,54), (176,68),(168,67), (187,80).
+&lt;/div&gt;
+&lt;p&gt;The joint frequency table is&lt;/p&gt;
+&lt;p&gt;$$\begin{array}{|c||c|c|c|c|c|c|}
+\hline
+X/Y &amp;amp; [50,60) &amp;amp; [60,70) &amp;amp; [70,80) &amp;amp; [80,90) &amp;amp; [90,100) &amp;amp; [100,110) \ \newline
+\hline\hline
+(150,160] &amp;amp; 2 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \ \newline
+\hline
+(160,170] &amp;amp; 4 &amp;amp; 4 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \ \newline
+\hline
+(170,180] &amp;amp; 1 &amp;amp; 6 &amp;amp; 3 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 \ \newline
+\hline
+(180,190] &amp;amp; 0 &amp;amp; 1 &amp;amp; 4 &amp;amp; 1 &amp;amp; 1 &amp;amp; 0 \ \newline
+\hline
+(190,200] &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 1 \ \newline
+\hline
+\end{array}$$&lt;/p&gt;
+&lt;h3 id=&#34;scatter-plot&#34;&gt;Scatter plot&lt;/h3&gt;
+&lt;p&gt;The joint frequency distribution can be represented graphically with a &lt;strong&gt;scatter plot&lt;/strong&gt;, where data is displayed as a collections of points on a $XY$ coordinate system.&lt;/p&gt;
+&lt;p&gt;Usually the independent variable is represented in the $X$ axis and the dependent variable in the $Y$ axis. For every data pair $(x_i,y_j)$ in the sample a dot is drawn on the plane with those coordinates.&lt;/p&gt;
+&lt;img src=&#34;../img/regression/scatterplot.svg&#34; alt=&#34;Scatter plot&#34; width=&#34;300&#34;&gt;
+&lt;p&gt;The result is a set of points that usually is known as a &lt;em&gt;point cloud&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The scatter plot below represent the distribution of heights and weights of the previous sample.&lt;/p&gt;
+&lt;img src=&#34;../img/regression/height_weight_scatterplot.svg&#34; alt=&#34;Scatter plot of heights and weights&#34; width=&#34;600&#34;&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    The shape of the point cloud in a scatter plot gives information about the type of relation between the variables.&lt;/p&gt;
+&lt;img src=&#34;../img/regression/scatterplot_different_relations.svg&#34; alt=&#34;Scatter plot of different types of relations&#34; width=&#34;700&#34;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;marginal-frequency-distributions&#34;&gt;Marginal frequency distributions&lt;/h3&gt;
+&lt;p&gt;The frequency distributions of each variable of the two-dimensional variable are known as &lt;strong&gt;marginal frequency distributions&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We can get the marginal frequency distributions from the joint frequency table by adding frequencies by rows and columns.&lt;/p&gt;
+&lt;p&gt;$$\begin{array}{|c|ccccc|c|}
+\hline
+X\backslash Y &amp;amp; y_1 &amp;amp; \cdots &amp;amp; y_j &amp;amp; \cdots &amp;amp; y_q &amp;amp; \color{red}{n_x} \newline
+\hline
+x_1 &amp;amp; n_{11} &amp;amp; \cdots &amp;amp; n_{1j} &amp;amp; \cdots &amp;amp; n_{1q} &amp;amp; \color{red}{n_{x_1}} \newline
+\vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \downarrow + &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \color{red}{\vdots}  \newline
+x_i &amp;amp; n_{i1} &amp;amp; \stackrel{+}{\rightarrow} &amp;amp; n_{ij} &amp;amp; \stackrel{+}{\rightarrow} &amp;amp; n_{iq} &amp;amp; \color{red}{n_{x_i}} \newline
+\vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \downarrow +  &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \color{red}{\vdots} \newline
+x_p &amp;amp; n_{p1} &amp;amp; \cdots &amp;amp; n_{pj} &amp;amp; \cdots &amp;amp; n_{pq} &amp;amp; \color{red}{n_{x_p}}  \newline
+\hline
+\color{red}{n_y} &amp;amp; \color{red}{n_{y_1}} &amp;amp; \color{red}{\cdots} &amp;amp; \color{red}{n_{y_j}} &amp;amp; \color{red}{\cdots} &amp;amp; \color{red}{n_{y_q}} &amp;amp; n \newline
+\hline
+\end{array}$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The marginal frequency distributions for the previous sample of heights and weights are&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{|c||c|c|c|c|c|c|c|}
+\hline
+X/Y &amp;amp; [50,60) &amp;amp; [60,70) &amp;amp; [70,80) &amp;amp; [80,90) &amp;amp; [90,100) &amp;amp; [100,110) &amp;amp; \color{red}{n_x}\ \newline
+\hline\hline
+(150,160] &amp;amp; 2 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; \color{red}{2}\ \newline
+\hline
+(160,170] &amp;amp; 4 &amp;amp; 4 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; \color{red}{8}\ \newline
+\hline
+(170,180] &amp;amp; 1 &amp;amp; 6 &amp;amp; 3 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; \color{red}{11} \ \newline
+\hline
+(180,190] &amp;amp; 0 &amp;amp; 1 &amp;amp; 4 &amp;amp; 1 &amp;amp; 1 &amp;amp; 0 &amp;amp; \color{red}{7} \ \newline
+\hline
+(190,200] &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 1 &amp;amp; \color{red}{2}\ \newline
+\hline
+\color{red}{n_y} &amp;amp; \color{red}{7} &amp;amp; \color{red}{11} &amp;amp; \color{red}{7} &amp;amp; \color{red}{2} &amp;amp; \color{red}{2} &amp;amp; \color{red}{1} &amp;amp; 30\ \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;and the corresponding statistics are&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lllll}
+\bar x = 174.67 \mbox{ cm} &amp;amp; \quad &amp;amp; s^2_x = 102.06 \mbox{ cm}^2 &amp;amp; \quad &amp;amp; s_x = 10.1 \mbox{ cm} \newline
+\bar y = 69.67 \mbox{ Kg} &amp;amp; &amp;amp; s^2_y = 164.42 \mbox{ Kg}^2 &amp;amp; &amp;amp; s_y = 12.82 \mbox{ Kg}
+\end{array}
+$$&lt;/p&gt;
+&lt;h2 id=&#34;covariance&#34;&gt;Covariance&lt;/h2&gt;
+&lt;p&gt;To study the relation between two variables, we have to analyze the joint variation of them.&lt;/p&gt;
+&lt;img src=&#34;../img/regression/deviations_to_means.svg&#34; alt=&#34;Devitations to means in an scatterplot&#34; width=&#34;600&#34;&gt;
+&lt;p&gt;Dividing the point cloud of the scatter plot in 4 quadrants centered in the mean point $(\bar x, \bar y)$, the sign of deviations from the mean is:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;Quadrant&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;$(x_i-\bar x)$&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;$(y_j-\bar y)$&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;$(x_i-\bar x)(y_j-\bar y)$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$+$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$+$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$+$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$-$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$+$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$-$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$-$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$-$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$+$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$+$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$-$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$-$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;img src=&#34;../img/regression/scatterplot_quadrants.svg&#34; alt=&#34;Quadrants of a scatter plot&#34; width=&#34;400&#34;&gt;
+&lt;p&gt;If there is an &lt;em&gt;increasing linear&lt;/em&gt; relationship between the variables, most of the points will fall in quadrants 1 and 3, and the sum of the products of deviations from the mean will be positive.&lt;/p&gt;
+&lt;p&gt;$$\sum(x_i-\bar x)(y_j-\bar y) &amp;gt; 0$$&lt;/p&gt;
+&lt;img src=&#34;../img/regression/increasing_linear_scatterplot.svg&#34; alt=&#34;Increasing linear scatter plot&#34; width=&#34;500&#34;&gt;
+&lt;p&gt;If there is an &lt;em&gt;decreasing linear&lt;/em&gt; relationship between the variables, most of the points will fall in quadrants 2 and 4, and the sum of the products of deviations from the mean will be negative.&lt;/p&gt;
+&lt;p&gt;$$\sum(x_i-\bar x)(y_j-\bar y) &amp;lt; 0$$&lt;/p&gt;
+&lt;img src=&#34;../img/regression/decreasing_linear_scatterplot.svg&#34; alt=&#34;Decreasing linear scatter plot&#34; width=&#34;500&#34;&gt;
+&lt;p&gt;Using the products of deviations from the means we get the following statistic.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definition - Sample covariance&lt;/strong&gt;. The &lt;em&gt;sample covariance&lt;/em&gt; of a two-dimensional variable $(X,Y)$ is the average of the products of deviations from the respective means.$$s_{xy}=\frac{\sum (x_i-\bar x)(y_j-\bar y)n_{ij}}{n}$$
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;It can also be calculated using the formula&lt;/p&gt;
+&lt;p&gt;$$s_{xy}=\frac{\sum x_iy_jn_{ij}}{n}-\bar x\bar y.$$&lt;/p&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;The covariance measures the linear relation between two variables:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $s_{xy}&amp;gt;0$ there exists an increasing linear relation.&lt;/li&gt;
+&lt;li&gt;If $s_{xy}&amp;lt;0$ there exists a decreasing linear relation.&lt;/li&gt;
+&lt;li&gt;If $s_{xy}=0$ there is no linear relation.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Using the joint frequency table of the sample of heights and weights&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{|c||c|c|c|c|c|c|c|}
+\hline
+X/Y &amp;amp; [50,60) &amp;amp; [60,70) &amp;amp; [70,80) &amp;amp; [80,90) &amp;amp; [90,100) &amp;amp; [100,110) &amp;amp; n_x\ \newline
+\hline\hline
+(150,160] &amp;amp; 2 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 2\ \newline
+\hline
+(160,170] &amp;amp; 4 &amp;amp; 4 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 8\ \newline
+\hline
+(170,180] &amp;amp; 1 &amp;amp; 6 &amp;amp; 3 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 11 \ \newline
+\hline
+(180,190] &amp;amp; 0 &amp;amp; 1 &amp;amp; 4 &amp;amp; 1 &amp;amp; 1 &amp;amp; 0 &amp;amp; 7 \ \newline
+\hline
+(190,200] &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 1 &amp;amp; 2\ \newline
+\hline
+n_y &amp;amp; 7 &amp;amp; 11 &amp;amp; 7 &amp;amp; 2 &amp;amp; 2 &amp;amp; 1 &amp;amp; 30\ \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;$$\bar x = 174.67 \mbox{ cm} \qquad \bar y = 69.67 \mbox{ Kg}$$&lt;/p&gt;
+&lt;p&gt;we get that the covariance is equal to&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+s_{xy} &amp;amp;=\frac{\sum x_iy_jn_{ij}}{n}-\bar x\bar y =  \frac{155\cdot 55\cdot 2 + 165\cdot 55\cdot 4 + \cdots + 195\cdot 105\cdot 1}{30}-174.67\cdot 69.67 = \newline
+&amp;amp; = \frac{368200}{30}-12169.26 = 104.07 \mbox{ cm$\cdot$ Kg}.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;This means that there is a increasing linear relation between the weight and the height.&lt;/p&gt;
+&lt;h2 id=&#34;regression&#34;&gt;Regression&lt;/h2&gt;
+&lt;p&gt;In most cases the goal of a dependency study is not only to detect a relation between two variables, but also to express that relation with a mathematical function, $$y=f(x)$$ in order to predict the dependent variable for every value of the independent one.
+The part of Statistics in charge of constructing such a function is called  &lt;strong&gt;regression&lt;/strong&gt;, and the function is known as &lt;strong&gt;regression function&lt;/strong&gt; or &lt;strong&gt;regression model&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;simple-regression-models&#34;&gt;Simple regression models&lt;/h3&gt;
+&lt;p&gt;There are a lot of types of regression models. The most common models are shown in the table below.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Model&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;strong&gt;Equation&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Linear&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$y=a+bx$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Quadratic&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$y=a+bx+cx^2$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Cubic&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$y=a+bx+cx^2+dx^3$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Potential&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$y=a\cdot x^b$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Exponential&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$y=e^{a+bx}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Logarithmic&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$y=a+b\log x$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Inverse&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$y=a+\frac{b}{x}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Sigmoidal&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$y=e^{a+\frac{b}{x}}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The model choice depends on the shape of the points cloud in the scatterplot.&lt;/p&gt;
+&lt;h3 id=&#34;residuals-or-predictive-errors&#34;&gt;Residuals or predictive errors&lt;/h3&gt;
+&lt;p&gt;Once chosen the type of regression model, we have to determine which function of that family explains better the relation between the dependent and the independent variables, that is, the function that predicts better the dependent variable.&lt;/p&gt;
+&lt;p&gt;That function is the function that minimizes the distances from the observed values for $Y$ in the sample to the predicted values of the regression function. These distances are known as &lt;em&gt;residuals&lt;/em&gt; or &lt;em&gt;predictive errors&lt;/em&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definition - Residuals or predictive errors&lt;/strong&gt;. Given a regression model $y=f(x)$ for a two-dimensional variable $(X,Y)$, the &lt;em&gt;residual&lt;/em&gt; or &lt;em&gt;predictive error&lt;/em&gt; for every pair $(x_i,y_j)$ of the sample is the difference between the observed value of the dependent variable $y_j$ and the predicted value of the regression function for $x_i$,$$e_{ij} = y_j-f(x_i).$$
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;img src=&#34;../img/regression/y_residuals.svg&#34; alt=&#34;Regression rediduals on Y&#34; width=&#34;600&#34;&gt;
+&lt;h3 id=&#34;least-squares-fitting&#34;&gt;Least squares fitting&lt;/h3&gt;
+&lt;p&gt;A way to get the regression function is the &lt;em&gt;least squares method&lt;/em&gt;, that determines the function that minimizes the squared residuals.&lt;/p&gt;
+&lt;p&gt;$$\sum e_{ij}^2.$$&lt;/p&gt;
+&lt;p&gt;For a linear model $f(x) = a + bx$, the sum depends on two parameters,the intercept $a$, and the slope $b$ of the straight line,&lt;/p&gt;
+&lt;p&gt;$$\theta(a,b) = \sum e_{ij}^2 =\sum (y_j - f(x_i))^2 =\sum (y_j-a-bx_i)^2.$$&lt;/p&gt;
+&lt;p&gt;This reduces the problem to determine the values of $a$ and $b$ that minimize this sum.&lt;/p&gt;
+&lt;p&gt;To solve the minimization problem, we have to set to zero the partial derivatives with respect to $a$ and $b$.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\frac{\partial \theta(a,b)}{\partial a} &amp;amp;=  \frac{\partial \sum (y_j-a-bx_i)^2 }{\partial a} =0 \newline
+\frac{\partial \theta(a,b)}{\partial b} &amp;amp;=  \frac{\partial \sum (y_j-a-bx_i)^2 }{\partial b} =0
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;And solving the equation system, we get&lt;/p&gt;
+&lt;p&gt;$$a= \bar y - \frac{s_{xy}}{s_x^2}\bar x \qquad b=\frac{s_{xy}}{s_x^2}$$&lt;/p&gt;
+&lt;p&gt;This values minimize the residuals on $Y$ and give us the optimal linear model.&lt;/p&gt;
+&lt;h2 id=&#34;regression-line&#34;&gt;Regression line&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definition - Regression line&lt;/strong&gt;. Given a sample of a two-dimensional variable $(X,Y)$, the &lt;em&gt;regression line&lt;/em&gt; of $Y$ on $X$ is$$y = \bar y +\frac{s_{xy}}{s_x^2}(x-\bar x).$$
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    The regression line of $Y$ on $X$ is the straight line that minimizes the predictive errors on $Y$, therefore it is the linear regression model that gives better predictions of $Y$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Using the previous sample of heights ($X$) and weights ($Y$) with the following statistics&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lllll}
+\bar x = 174.67 \mbox{ cm} &amp;amp; \quad &amp;amp; s^2_x = 102.06 \mbox{ cm}^2 &amp;amp; \quad &amp;amp; s_x = 10.1 \mbox{ cm} \newline
+\bar y = 69.67 \mbox{ Kg} &amp;amp; &amp;amp; s^2_y = 164.42 \mbox{ Kg}^2 &amp;amp; &amp;amp; s_y = 12.82 \mbox{ Kg} \newline
+&amp;amp; &amp;amp; s_{xy} = 104.07 \mbox{ cm$\cdot$ Kg} &amp;amp; &amp;amp;
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;the regression line of weight on height is&lt;/p&gt;
+&lt;p&gt;$$y = \bar y +\frac{s_{xy}}{s_x^2}(x-\bar x) = 69.67+\frac{104.07}{102.06}(x-174.67) = -108.49 +1.02 x$$&lt;/p&gt;
+&lt;p&gt;And the regression line of height on weight is&lt;/p&gt;
+&lt;p&gt;$$x = \bar x +\frac{s_{xy}}{s_y^2}(y-\bar y) = 174.67+\frac{104.07}{164.42}(y-69.67) = 130.78 + 0.63 y$$&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Observe that the regression lines are different!
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;img src=&#34;../img/regression/regression_lines.svg&#34; alt=&#34;Regression lines of heights and wieghts&#34; width=&#34;600&#34;&gt;
+&lt;h3 id=&#34;relative-position-of-the-regression-lines&#34;&gt;Relative position of the regression lines&lt;/h3&gt;
+&lt;p&gt;Usually, the regression line of $Y$ on $X$ and the regression line of $X$ on $Y$ are not the same, but they always intersect in the mean point $(\bar x,\bar y)$.&lt;/p&gt;
+&lt;p&gt;If there is a perfect linear relation between the variables, then both regression lines are the same, as that line makes both $X$-residuals and $Y$-residuals zero.&lt;/p&gt;
+&lt;img src=&#34;../img/regression/perfect_linear_regression.svg&#34; alt=&#34;Perfect linear regression&#34; width=&#34;500&#34;&gt;
+&lt;p&gt;If there is no linear relation between the variables, then both regression lines are constant and equals to the respective means,&lt;/p&gt;
+&lt;p&gt;$$y = \bar y,\quad x = \bar x.$$&lt;/p&gt;
+&lt;p&gt;So, they intersect perpendicularly.&lt;/p&gt;
+&lt;img src=&#34;../img/regression/non_linear_regression.svg&#34; alt=&#34;Non linear regression&#34; width=&#34;500&#34;&gt;
+&lt;h3 id=&#34;regression-coefficient&#34;&gt;Regression coefficient&lt;/h3&gt;
+&lt;p&gt;The most important parameter of a regression line is the slope.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definition - Regression coefficient&lt;/strong&gt; $b_{yx}$. Given a sample of a two-dimensional variable $(X,Y)$, the &lt;em&gt;regression coefficient&lt;/em&gt; of the regression line of $Y$ on $X$ is its slope,$$b_{yx} = \frac{s_{xy}}{s_x^2}$$
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    The regression coefficient has always the same sign as the covariance.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    It measures how the dependent variable changes in relation to the independent one according to the regression line. In particular, it gives the number of units that the dependent variable increases or decreases for every unit that the independent variable increases.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. In the sample of heights and weights, the regression line of weight on height was&lt;/p&gt;
+&lt;p&gt;$$y=-108.49 +1.02 x.$$&lt;/p&gt;
+&lt;p&gt;Thus, the regression coefficient of weight on height is&lt;/p&gt;
+&lt;p&gt;$$b_{yx}= 1.02 \mbox{Kg/cm.}$$&lt;/p&gt;
+&lt;p&gt;That means that, according to the regression line of weight on height, the weight will increase $1.02$ Kg for every cm that the height increases.&lt;/p&gt;
+&lt;h3 id=&#34;regression-predictions&#34;&gt;Regression predictions&lt;/h3&gt;
+&lt;p&gt;Usually the regression models are used to predict the dependent variable for some values of the independent variable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. In the sample of heights and weights, to predict the weight of a person with a height of 180 cm, we have to use the regression line of weight on height,&lt;/p&gt;
+&lt;p&gt;$$y = -108.49 + 1.02 \cdot 180  = 75.11 \mbox{ Kg}.$$&lt;/p&gt;
+&lt;p&gt;But to predict the height of a person with a weight of 79 Kg, we have to use the regression line of height on weight,&lt;/p&gt;
+&lt;p&gt;$$x = 130.78 + 0.63\cdot 79 = 180.55 \mbox{ cm}.$$&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;However, how reliable are these predictions?&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;correlation&#34;&gt;Correlation&lt;/h2&gt;
+&lt;p&gt;Once we have a regression model, in order to see if it is a good predictive model we have to assess the goodness of fit of the model and the strength of the of relation set by it. The part of Statistics in charge of this is &lt;strong&gt;correlation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The correlation study the residuals of a regression model: the smaller the residuals, the greater the goodness of fit, and the stronger the relation set by the model.&lt;/p&gt;
+&lt;h3 id=&#34;residual-variance&#34;&gt;Residual variance&lt;/h3&gt;
+&lt;p&gt;To measure the goodness of fit of a regression model is common to use the &lt;em&gt;residual variance&lt;/em&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Sample residual variance&lt;/strong&gt; $s_{ry}^2$. Given a regression model $y=f(x)$ of a two-dimensional variable $(X,Y)$, its &lt;em&gt;sample residual variance&lt;/em&gt; is the average of the squared residuals,&lt;/p&gt;
+&lt;p&gt;$$s_{ry}^2 = \frac{\sum e_{ij}^2n_{ij}}{n} = \frac{\sum (y_j - f(x_i))^2n_{ij}}{n}.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;The greater the residuals, the greater the residual variance and the smaller the goodness of fit.&lt;/p&gt;
+&lt;p&gt;When the linear relation is perfect, the residuals are zero and the residual variance is zero. Conversely, when there are no relation, the residuals coincide with deviations from the mean, and the residual variance is equal to the variance of the dependent variable.&lt;/p&gt;
+&lt;p&gt;$$0\leq s_{ry}^2\leq s_y^2$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;explained-and-non-explained-variation&#34;&gt;Explained and non-explained variation&lt;/h3&gt;
+&lt;img src=&#34;../img/regression/variation_decomposition.gif&#34; alt=&#34;Variation decomposition by regression model&#34; width=&#34;600&#34;&gt;
+&lt;h3 id=&#34;coefficient-of-determination&#34;&gt;Coefficient of determination&lt;/h3&gt;
+&lt;p&gt;From the residual variance is possible to define another correlation statistic easier to interpret.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definition - Sample coefficient of determination $r^2$&lt;/strong&gt;. Given a regression model $y=f(x)$ of a two-dimensional variable $(X,Y)$, its &lt;em&gt;coefficient of determination&lt;/em&gt; is$$r^2 = 1- \frac{s_{ry}^2}{s_y^2}$$
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;As the residual variance ranges from 0 to $s_y^2$, we have&lt;/p&gt;
+&lt;p&gt;$$0\leq r^2\leq 1$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;The greater $r^2$ is, the greater the goodness of fit of the regression model, and the more reliable will its predictions be. In particular,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $r^2 =0$ then there is no relation as set by the regression model.&lt;/li&gt;
+&lt;li&gt;If $r^2=1$ then the relation set by the model is perfect.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;When the regression model is linear, the coefficient of determination can be computed with this formula&lt;/p&gt;
+&lt;p&gt;$$ r^2 =  \frac{s_{xy}^2}{s_x^2s_y^2}.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-18&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-18&#34;&gt;
+      Proof
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-18&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;When the fitted model is the regression line, the the residual variance is&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+s_{ry}^2 &amp;amp; = \sum e_{ij}^2f_{ij} = \sum (y_j - f(x_i))^2f_{ij} = \sum \left(y_j - \bar y -\frac{s_{xy}}{s_x^2}(x_i-\bar x) \right)^2f_{ij}= \newline
+&amp;amp; = \sum \left((y_j - \bar y)^2 +\frac{s_{xy}^2}{s_x^4}(x_i-\bar x)^2 - 2\frac{s_{xy}}{s_x^2}(x_i-\bar x)(y_j -\bar y)\right)f_{ij} = \newline
+&amp;amp; = \sum (y_j - \bar y)^2f_{ij} +\frac{s_{xy}^2}{s_x^4}\sum (x_i-\bar x)^2f_{ij}- 2\frac{s_{xy}}{s_x^2}\sum (x_i-\bar x)(y_j -\bar y)f_{ij}= \newline
+&amp;amp; = s_y^2 + \frac{s_{xy}^2}{s_x^4}s_x^2 - 2 \frac{s_{xy}}{s_x^2}s_{xy} = s_y^2 - \frac{s_{xy}^2}{s_x^2}.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;and the coefficient of determination is&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+r^2 &amp;amp;= 1- \frac{s_{ry}^2}{s_y^2} = 1- \frac{s_y^2 - \frac{s_{xy}^2}{s_x^2}}{s_y^2} = 1 - 1 + \frac{s_{xy}^2}{s_x^2s_y^2} = \frac{s_{xy}^2}{s_x^2s_y^2}.
+\end{aligned}
+$$&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. In the sample of heights and weights, we had&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lll}
+\bar x = 174.67 \mbox{ cm} &amp;amp; \quad &amp;amp; s^2_x = 102.06 \mbox{ cm}^2 \newline
+\bar y = 69.67 \mbox{ Kg} &amp;amp; &amp;amp; s^2_y = 164.42 \mbox{ Kg}^2 \newline
+s_{xy} = 104.07 \mbox{ cm$\cdot$ Kg}
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;Thus, the linear coefficient of determination is&lt;/p&gt;
+&lt;p&gt;$$r^2 = \frac{s_{xy}^2}{s_x^2s_y^2} = \frac{(104.07 \mbox{ cm\cdot Kg})^2}{102.06 \mbox{ cm}^2 \cdot 164.42 \mbox{ Kg}^2} = 0.65.$$&lt;/p&gt;
+&lt;p&gt;This means that the linear model of weight on height explains the 65% of the variation of weight, and the linear model of height on weight also explains 65% of the variation of height.&lt;/p&gt;
+&lt;h3 id=&#34;correlation-coefficient&#34;&gt;Correlation coefficient&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definition - Sample correlation coefficient $r$&lt;/strong&gt;. Given a sample of a two-dimensional variable $(X,Y)$, the &lt;em&gt;sample correlation coefficient&lt;/em&gt; is the square root of the linear coefficient of determination, with the sign of the covariance,$$r = \dfrac{s_{xy}}{s_xs_y}.$$
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;As $r^2$ ranges from 0 to 1, $r$ ranges from -1 to 1,&lt;/p&gt;
+&lt;p&gt;$$-1\leq r\leq 1.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;The correlation coefficient measures not only the strength of the linear association but also its direction (increasing or decreasing):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $r=0$ then there is no linear relation.&lt;/li&gt;
+&lt;li&gt;Si $r=1$ then there is a perfect increasing linear relation.&lt;/li&gt;
+&lt;li&gt;Si $r=-1$ then there is a perfect decreasing linear relation.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. In the sample of heights and weights, we had&lt;/p&gt;
+&lt;p&gt;$$\begin{array}{lll}
+\bar x = 174.67 \mbox{ cm} &amp;amp; \quad &amp;amp; s^2_x = 102.06 \mbox{ cm}^2 \newline
+\bar y = 69.67 \mbox{ Kg} &amp;amp; &amp;amp; s^2_y = 164.42 \mbox{ Kg}^2 \newline
+s_{xy} = 104.07 \mbox{ cm$\cdot$ Kg}
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;Thus, the correlation coefficient is&lt;/p&gt;
+&lt;p&gt;$$r = \frac{s_{xy}}{s_xs_y} = \frac{104.07 \mbox{ cm\cdot Kg}}{10.1 \mbox{ cm} \cdot 12.82 \mbox{ Kg}} = +0.8.$$&lt;/p&gt;
+&lt;p&gt;This means that there is a rather strong linear, increasing, relation between height and weight.&lt;/p&gt;
+&lt;h3 id=&#34;different-linear-correlations&#34;&gt;Different linear correlations&lt;/h3&gt;
+&lt;p&gt;The scatter plots below show linear regression models with differents correlations.&lt;/p&gt;
+&lt;img src=&#34;../img/regression/different_correlations.svg&#34; alt=&#34;Linear regression models with different correlations&#34; width=&#34;700&#34;&gt;
+&lt;h3 id=&#34;reliability-of-regression-predictions&#34;&gt;Reliability of regression predictions&lt;/h3&gt;
+&lt;p&gt;The coefficient of determination explains the goodness of fit of a regression model, but there are other factors that influence the reliability of regression predictions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The coefficient of determination: The greater $r^2$, the greater the goodness of fit and the more reliable the predictions are.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The variability of the population distribution: The greater the variation, the more difficult to predict and the less reliable the predictions are.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The sample size: The greater the sample size, the more information we have and the more reliable the predictions are.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    In addition, we have to take into account that a regression model is only valid for the range of values observed in the sample. That means that, as we don’t have any information outside that range, we must not do predictions for values far from that range.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;non-linear-regression&#34;&gt;Non-linear regression&lt;/h2&gt;
+&lt;p&gt;The fit of a non-linear regression can be also done by the least square fitting method.&lt;/p&gt;
+&lt;p&gt;However, in some cases the fitting of a non-linear model can be reduced to the fitting of a linear model applying a simple transformation to the variables of the model.&lt;/p&gt;
+&lt;h3 id=&#34;transformations-of-non-linear-regression-models&#34;&gt;Transformations of non-linear regression models&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Logarithmic&lt;/strong&gt;: A logarithmic model $y = a+b \log x$ can be transformed in a linear model with the change $t=\log x$:&lt;/p&gt;
+&lt;p&gt;$$y=a+b\log x = a+bt.$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Exponential&lt;/strong&gt;: An exponential model $y = e^{a+bx}$ can be transformed in a linear model with the change $z = \log y$:&lt;/p&gt;
+&lt;p&gt;$$z = \log y = \log(e^{a+bx}) =  a+bx.$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Potential&lt;/strong&gt;: A potential model $y = ax^b$ can be transformed in a linear model with the changes $t=\log x$ and $z=\log y$:&lt;/p&gt;
+&lt;p&gt;$$z = \log y = \log(ax^b) = \log a + b \log x = a^\prime+bt.$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Inverse&lt;/strong&gt;: An inverse model $y = a+b/x$ can be transformed in a linear model with the change $t=1/x$:&lt;/p&gt;
+&lt;p&gt;$$y = a + b(1/x) = a+bt.$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Sigmoidal&lt;/strong&gt;: A sigmoidal model $y = e^{a+b/x}$ can be transformed in a linear model with the changes $t=1/x$ and $z=\log y$:&lt;/p&gt;
+&lt;p&gt;$$z = \log y = \log (e^{a+b/x}) = a+b(1/x) = a+bt.$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;exponential-relation&#34;&gt;Exponential relation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The number of bacteria in a culture evolves with time according to the table below.&lt;/p&gt;
+&lt;p&gt;$$\begin{array}{c|c}
+\mbox{Hours} &amp;amp; \mbox{Bacteria} \newline
+\hline
+0 &amp;amp;  25  \newline
+1 &amp;amp; 28  \newline
+2 &amp;amp;  47 \newline
+3 &amp;amp; 65  \newline
+4 &amp;amp; 86 \newline
+5 &amp;amp; 121 \newline
+6 &amp;amp; 190 \newline
+7 &amp;amp; 290 \newline
+8 &amp;amp; 362
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;The scatter plot of the sample is showed below.&lt;/p&gt;
+&lt;img src=&#34;../img/regression/bacteria_evolution.svg&#34; alt=&#34;Scatter plot of the evolution of a bacteria culture&#34; width=&#34;500&#34;&gt;
+&lt;p&gt;Fitting a linear model we get&lt;/p&gt;
+&lt;p&gt;$$\mbox{Bacteria} = -30.18+41,27,\mbox{Hours, with } r^2=0.85.$$&lt;/p&gt;
+&lt;img src=&#34;../img/regression/linear_regression_bacteria.svg&#34; alt=&#34;Linear regression of the bacteria evolution&#34; width=&#34;500&#34;&gt;
+&lt;p&gt;&lt;em&gt;Is a good model?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Although the linear model is not bad, according to the shape of the point cloud of the scatter plot, an exponential model looks more suitable.&lt;/p&gt;
+&lt;p&gt;To construct an exponential model $y = e^{a+bx}$ we can apply the transformation $z=\log y$, that is, applying a logarithmic transformation to the dependent variable.&lt;/p&gt;
+&lt;p&gt;$$\begin{array}{c|c|c}
+\mbox{Hours} &amp;amp; \mbox{Bacteria} &amp;amp; \mbox{$\log$(Bacteria)} \newline
+\hline
+0 &amp;amp;  25 &amp;amp; 3.22 \newline
+1 &amp;amp; 28 &amp;amp; 3.33 \newline
+2 &amp;amp;  47 &amp;amp; 3.85 \newline
+3 &amp;amp; 65  &amp;amp; 4.17 \newline
+4 &amp;amp; 86 &amp;amp; 4.45 \newline
+5 &amp;amp; 121 &amp;amp; 4.80 \newline
+6 &amp;amp; 190 &amp;amp; 5.25 \newline
+7 &amp;amp; 290 &amp;amp; 5.67 \newline
+8 &amp;amp; 362 &amp;amp; 5.89
+\end{array}
+$$&lt;/p&gt;
+&lt;img src=&#34;../img/regression/log_bacteria_evolution.svg&#34; alt=&#34;Scatter plot of the evolution of the logarithm of bacteria culture&#34; width=&#34;500&#34;&gt;
+&lt;p&gt;Now it only remains to compute the regression line of the logarithm of bacteria on hours,&lt;/p&gt;
+&lt;p&gt;$$\mbox{$\log$(Bacteria)} = 3.107 + 0.352, \mbox{Horas},$$&lt;/p&gt;
+&lt;p&gt;and, undoing the change of variable,&lt;/p&gt;
+&lt;p&gt;$$\mbox{Bacteria} = e^{3.107+0.352,\mbox{Hours}}, \mbox{ with } r^2=0.99.$$&lt;/p&gt;
+&lt;img src=&#34;../img/regression/exponential_regression_bacteria.svg&#34; alt=&#34;Exponential regression of the bacteria evolution&#34; width=&#34;500&#34;&gt;
+&lt;p&gt;Thus, the exponential model fits much better than the linear model.&lt;/p&gt;
+&lt;h2 id=&#34;regression-risks&#34;&gt;Regression risks&lt;/h2&gt;
+&lt;h3 id=&#34;lack-of-fit-does-not-mean-independence&#34;&gt;Lack of fit does not mean independence&lt;/h3&gt;
+&lt;p&gt;It is important to note that every regression model has its own coefficient of determination.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Thus, a coefficient of determination near zero means that there is no relation as set by the model, but &lt;em&gt;that does not mean that the variables are independent&lt;/em&gt;, because there could be a different type of relation.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;center&#34;&gt;
+&lt;img src=&#34;../img/regression/linear_regression_parabolic_relation.svg&#34; alt=&#34;Linear regression on a cuadratic relation&#34; width=&#34;500&#34;&gt;
+&lt;img src=&#34;../img/regression/parabolic_regression.svg&#34; alt=&#34;Cuadratic regression on a cuadratic relation&#34; width=&#34;500&#34;&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;outliers-influence-in-regression&#34;&gt;Outliers influence in regression&lt;/h3&gt;
+&lt;p&gt;Outliers in regression studies are points that clearly do not follow the tendency of the rest of points, even if the values of the pair are not outliers for every variable separately.&lt;/p&gt;
+&lt;img src=&#34;../img/regression/scatterplot_with_outliers.svg&#34; alt=&#34;Scatter plot with an outlier&#34; width=&#34;500&#34;&gt;
+&lt;p&gt;Outliers in regression studies can provoke drastic changes in the regression models.&lt;/p&gt;
+&lt;div class=&#34;center&#34;&gt;
+&lt;img src=&#34;../img/regression/linear_regression_with_outliers.svg&#34; alt=&#34;Linear regression with an outlier&#34; width=&#34;500&#34;&gt; &lt;img src=&#34;../img/regression/linear_regression_without_outliers.svg&#34; alt=&#34;Linear regression without outliers&#34; width=&#34;500&#34;&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;the-simpsons-paradox&#34;&gt;The Simpson&amp;rsquo;s paradox&lt;/h3&gt;
+&lt;p&gt;Sometimes a trend can disappears or even reverses when we split the sample into groups according to a qualitative variable that is related to the dependent variable.
+This is known as the &lt;em&gt;Simpson&amp;rsquo;s paradox&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The scatterplot below shows an inverse relation between the study hours and the score in an exam.&lt;/p&gt;
+&lt;div class=&#34;center&#34;&gt;
+&lt;img src=&#34;../img/regression/simpson_paradox_1.svg&#34; alt=&#34;Simpon&#39;s paradox. Inverse relation between study hours and the score in an exam.&#34; width=&#34;500&#34;&gt;
+&lt;/div&gt;
+&lt;p&gt;But if we split the sample in two groups (good and bad students) we get different trends and now the relation is direct, which makes more sense.&lt;/p&gt;
+&lt;div class=&#34;center&#34;&gt;
+&lt;img src=&#34;../img/regression/simpson_paradox_2.svg&#34; alt=&#34;Simpon&#39;s paradox. Direct relation between study hours and the score in an exam.&#34;&#34; width=&#34;500&#34;&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problems of Linear Regression</title>
+      <link>/en/teaching/statistics/problems/linear_regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/problems/linear_regression/</guid>
+      <description>&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise 1&lt;/h2&gt;
+&lt;p&gt;Give some examples of:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Non related variables.&lt;/li&gt;
+&lt;li&gt;Variables that are increasingly related.&lt;/li&gt;
+&lt;li&gt;Variables that are decreasingly related.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;The daily averge temperature and the daily number of births in a city.&lt;/li&gt;
+&lt;li&gt;The hours preparing an exam and the score.&lt;/li&gt;
+&lt;li&gt;The weight of a person and the time require to run 100 meters.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise 2&lt;/h2&gt;
+&lt;p&gt;In a study about the effect of different doses of a medicament, 2 patients got 2 mg and took 5 days to cure, 4 patients got 2 mg and took 6 days to cure, 2 patients got 3 mg ant took 3 days to cure, 4 patients got 3 mg and took 5 days to cure, 1 patient got 3 mg and took 6 days to cure, 5 patients got 4 mg and took 3 days to cure and 2 patients got 4 mg and took 5 days to cure.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Construct the joint frequency table.&lt;/li&gt;
+&lt;li&gt;Get the marginal frequency distributions and compute the main statistics for each variable.&lt;/li&gt;
+&lt;li&gt;Compute the covariance and interpret it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$$
+\begin{array}{c|c|c|c}
+\hline
+\mbox{dose/days} &amp;amp; 3 &amp;amp; 5 &amp;amp; 6\newline
+\hline
+2 &amp;amp; 0 &amp;amp; 2 &amp;amp; 4\newline
+\hline
+3 &amp;amp; 2 &amp;amp; 4 &amp;amp; 1\newline
+\hline
+4 &amp;amp; 5 &amp;amp; 2 &amp;amp; 0\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dose: $\bar x=3.05$ mg, $s_x^2=0.6475$ mg$^2$, $s_x=0.8047$ mg.&lt;br/&gt;
+Days: $\bar y=4.55$ days, $s_y^2=1.4475$ days$^2$, $s_y=1.2031$ days.&lt;br/&gt;
+3. $s_{xy}=-0.6775$ mg$\cdot$days.&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise 3&lt;/h2&gt;
+&lt;p&gt;The table below shows the two-dimensional frequency distribution of a sample of 80 persons in a study about the relation between the blood cholesterol ($X$) in mg/dl and the high blood pressure ($Y$).&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{|c||c|c|c||c|}
+\hline
+X\setminus Y &amp;amp; [110,130) &amp;amp; [130,150) &amp;amp; [150,170) &amp;amp; n_x \newline
+\hline\hline
+[170,190)   &amp;amp;           &amp;amp;     4     &amp;amp;           &amp;amp; 12\newline
+\hline
+[190,210)   &amp;amp;    10     &amp;amp;    12     &amp;amp;     4     &amp;amp;   \newline
+\hline
+[210,230)   &amp;amp;     7     &amp;amp;           &amp;amp;     8     &amp;amp;   \newline
+\hline
+[230,250)   &amp;amp;     1     &amp;amp;           &amp;amp;           &amp;amp; 18\newline
+\hline\hline
+n_y          &amp;amp;           &amp;amp;    30     &amp;amp;    24    &amp;amp;    \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Complete the table.&lt;/li&gt;
+&lt;li&gt;Construct the linear regression model of cholesterol on pressure.&lt;/li&gt;
+&lt;li&gt;Use the linear model to calculate the expected cholesterol for a person with pressure 160 mmHg.&lt;/li&gt;
+&lt;li&gt;According to the linear model, what is the expected pressure for a person with cholesterol 270 mg/dl?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums: $\sum x_i=16960$ mg/dl, $\sum y_j=11160$ mmHg, $\sum x_i^2=3627200$ (mg/dl)$^2$, $\sum  y_j^2=1576800$ mmHg$^2$ y $\sum x_iy_j=2378800$ mg/dl$\cdot$mmHg.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$\bar x=212$ mg/dl, $s_x^2=396$ (mg/dl)$^2$.&lt;br/&gt;
+$\bar y=139.5$ mmHg, $s_y^2=249.75$ mmHg$^2$.&lt;br/&gt;
+$s_{xy}=161$ mg/dl$\cdot$mmHg.&lt;br/&gt;
+Regression line of cholesterol on blood pressure: $x=122.0721 + 0.6446y$.&lt;br/&gt;
+3. $x(160)=225.2152$ mg/dl.&lt;br/&gt;
+4.&lt;/p&gt;
+&lt;p&gt;Regression line of blood pressure on cholesterol: $y=53.3081 + 0.4066x$.&lt;br/&gt;
+$y(270)=163.0808$ mmHg.&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-4&#34;&gt;Exercise 4&lt;/h2&gt;
+&lt;p&gt;A research study has been conducted to determine the loss of activity of a drug. The table below shows the results of the experiment.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrr}
+\hline
+\mbox{Time (in years)} &amp;amp; 1 &amp;amp; 2 &amp;amp; 3 &amp;amp; 4 &amp;amp; 5 \newline
+\mbox{Activity (%)} &amp;amp; 96 &amp;amp; 84 &amp;amp; 70 &amp;amp; 58 &amp;amp; 52 \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Construct the linear regression model of activity on time.&lt;/li&gt;
+&lt;li&gt;According to the linear model, when will the activity be 80%? When will the drug have lost all activity?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar x=3$ years, $s_x^2=2$ years$^2$.&lt;br/&gt;
+$\bar y=72$ %, $s_y^2=264$ %$^2$.&lt;br/&gt;
+$s_{xy}=-22.8$ years$\cdot$%.&lt;br/&gt;
+Regression line of activity on time: $y=106.2 + -11.4x$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Regression line of time on activity: $x=9.2182 + -0.0864y$.&lt;br/&gt;
+$x(80)=2.3091$ years and $x(0)=9.2182$ years.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-5&#34;&gt;Exercise 5&lt;/h2&gt;
+&lt;p&gt;A basketball team is testing a new stretching program to reduce the injuries during the league. The data below show the daily number of minutes doing stretching exercises and the number of injuries along the league.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrrr}
+\hline
+\mbox{Stretching minutes} &amp;amp; 0 &amp;amp; 30 &amp;amp; 10 &amp;amp; 15 &amp;amp; 5 &amp;amp; 25 &amp;amp; 35 &amp;amp; 40\newline
+\mbox{Injuries} &amp;amp; 4 &amp;amp; 1 &amp;amp; 2 &amp;amp; 2 &amp;amp; 3 &amp;amp; 1 &amp;amp; 0 &amp;amp; 1\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Construct the regression line of the number of injuries on the time of stretching.&lt;/li&gt;
+&lt;li&gt;How much is the reduction of injuries for every minute of stretching?&lt;/li&gt;
+&lt;li&gt;How many minutes of stretching are require for having no injuries? Is reliable this prediction?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($X$=Number of minutes stretching, and $Y$=Number of injuries): $\sum x_i =160$ min, $\sum y_j=14$ injuries, $\sum x_i^2=4700$ min$^2$, $\sum y_j^2=36$ injuries$^2$ and $\sum x_iy_j=160$ min$\cdot$injuries.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar x=20$ min, $s_x^2=187.5$ min$^2$.&lt;br/&gt;
+$\bar y=1.75$ injuries, $s_y^2=1.4375$ injuries$^2$.&lt;br/&gt;
+$s_{xy}=-15$ min$\cdot$injuries.&lt;br/&gt;
+Regression line of injuries on time of stetching: $y=3.35 + -0.08x$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$0.08$ injuries/min.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Regression line of time of stretching on injuries: $x=38.2609 + -10.4348y$.&lt;br/&gt;
+$x(0)=38.2609$ min.&lt;br/&gt;
+$r^2=0.8348$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-6&#34;&gt;Exercise 6&lt;/h2&gt;
+&lt;p&gt;For two variables $X$ and $Y$ we have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The regression line of $Y$ on $X$ is $y-x-2=0$.&lt;/li&gt;
+&lt;li&gt;The regression line of $X$ on $Y$ is $y-4x+22=0$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Calculate:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The means $\bar x$ and $\bar y$.&lt;/li&gt;
+&lt;li&gt;The correlation coefficient.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar x=8$ and $\bar y=10$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$r=0.5$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-7&#34;&gt;Exercise 7&lt;/h2&gt;
+&lt;p&gt;The means of two variables $X$ and $Y$ are $\bar x=2$ and $\bar y=1$, and the correlation coefficient is 0.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Predict the value of $Y$ for $x=10$.&lt;/li&gt;
+&lt;li&gt;Predict the value of $X$ for $y=5$.&lt;/li&gt;
+&lt;li&gt;Plot both regression lines.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$y(10)=1$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$x(5)=2$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-8&#34;&gt;Exercise 8&lt;/h2&gt;
+&lt;p&gt;A study to determine the relation between the age and the physical strength gave the scatter plot below.
+&lt;img src=&#34;../img/age_physical_strength_scatterplot-1.svg&#34; title=&#34;plot of chunk age_physical_strength_scatterplot&#34; alt=&#34;plot of chunk age_physical_strength_scatterplot&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calculate the linear coefficient of determination for the whole sample.&lt;/li&gt;
+&lt;li&gt;Calculate the linear coefficient of determination for the sample of people younger than 25 years old.&lt;/li&gt;
+&lt;li&gt;Calculate the linear coefficient of determination for the sample of people older than 25 years old.&lt;/li&gt;
+&lt;li&gt;For which age group the relation between age and strength is stronger?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($X$=Age and $Y=$Weight lifted).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Whole sample: $\sum x_i=431$ years, $\sum y_j=769$ Kg, $\sum x_i^2=13173$ years$^2$, $\sum y_j^2=39675$ Kg$^2$ and $\sum x_iy_j=21792$ years$\cdot$Kg.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Young people: $\sum x_i=123$ years, $\sum y_j=294$ Kg, $\sum x_i^2=2339$ years$^2$, $\sum y_j^2=14418$ Kg$^2$ and $\sum x_iy_j=5766$ years$\cdot$Kg.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Old people: $\sum x_i=308$ years, $\sum y_j=475$ Kg, $\sum x_i^2=10834$ years$^2$, $\sum y_j^2=25257$ Kg$^2$ and $\sum x_iy_j=16026$ years$\cdot$Kg.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-7&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-7&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-7&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar x=26.9375$ years, $s_x^2=97.6836$ years$^2$.&lt;br/&gt;
+$\bar y=48.0625$ kg, $s_y^2=169.6836$ kg$^2$.&lt;br/&gt;
+$s_{xy}=67.3164$ years$\cdot$kg.&lt;br/&gt;
+$r^2=0.2734$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$\bar x=17.5714$ years, $s_x^2=25.3878$ years$^2$.&lt;br/&gt;
+$\bar y=42$ kg, $s_y^2=295.7143$ kg$^2$.&lt;br/&gt;
+$s_{xy}=85.7143$ years$\cdot$kg.&lt;br/&gt;
+$r^2=0.9786$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;$\bar x=34.2222$ years, $s_x^2=32.6173$ years$^2$.&lt;br/&gt;
+$\bar y=52.7778$ kg, $s_y^2=20.8395$ kg$^2$.&lt;br/&gt;
+$s_{xy}=-25.5062$ years$\cdot$kg.&lt;br/&gt;
+$r^2=0.9571$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;The linear relation between the age and the physical strength is a little bit stronger in the group of young people.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problems of Non Linear Regression</title>
+      <link>/en/teaching/statistics/problems/non_linear_regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/statistics/problems/non_linear_regression/</guid>
+      <description>&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise 1&lt;/h2&gt;
+&lt;p&gt;A dietary center is testing a new diet in sample of 12 persons. The data below are the number of days of diet and the weight loss (in kg) until them for every person.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;(33,3.9)  (51,5.9)  (30,3.2)  (55,6)  (38,4.9)  (62,6.2)  (35,4.5)  (60,6.1)  (44,5.6)  (69,6.2)  (47,5.8)  (40,5.3) 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;Draw the scatter plot. According to the point cloud, what type of regression model explains better the relation between the weight loss and the days of diet?&lt;/li&gt;
+&lt;li&gt;Construct the linear regression model and the logarithmic regression model of the weight loss on the number of days of diet.&lt;/li&gt;
+&lt;li&gt;Use the best model to predict the weight that will lose a person after 40 and 100 days of diet. Are these predictions reliable?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($X$=days of diet and $Y$=weight loss):
+$\sum x_i=564$ days, $\sum \log(x_i)=45.8086$ $\log(\mbox{days})$, $\sum y_j=63.6$ kg, $\sum x_i^2=28234$ days$^2$, $\sum \log(x_i)^2=175.6603$ $\log(\mbox{days})^2$, $\sum y_j^2=347.7$ kg$^2$, $\sum x_iy_j=3108.5$ days$\cdot$kg, $\sum \log(x_i)y_j=245.4738$ $\log(\mbox{days})\cdot$kg.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;Linear model&lt;br/&gt;
+$\bar x=47$ days, $s_x^2=143.8333$ days$^2$.&lt;br/&gt;
+$\bar y=5.3$ kg, $s_y^2=0.885$ kg$^2$.&lt;br/&gt;
+$s_{xy}=9.9417$ days$\cdot$kg.&lt;br/&gt;
+Regression line of weight loss on days of diet: $y=2.0514 + 0.0691x$.&lt;br/&gt;
+$r^2=0.7765$.&lt;br/&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Logartihmic model&lt;br/&gt;
+$\overline{\log(x)}=3.8174$ log(days), $s_{\log(x)}^2=0.0659$ log(days)$^2$.&lt;br/&gt;
+$s_{\log(x)y}=0.224$ log(days)$\cdot$kg.&lt;br/&gt;
+Logartihmic model of weight loss on days of diet: $y=-7.6678 + 3.397\log(x)$.&lt;br/&gt;
+$r^2=0.8599$.&lt;br/&gt;
+3. $y(40)=4.8635$ kg and $y(100)=7.9761$ kg. The predictions are reliable because the coefficient of determination is close to 1, but the last one is less reiable as 100 is far from the observed range of values in the sample.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise 2&lt;/h2&gt;
+&lt;p&gt;The concentration of a drug in blood, in mg/dl, depends on time, in hours, according to the data below.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrr}
+\hline
+\mbox{Time} &amp;amp; 2 &amp;amp; 3 &amp;amp; 4 &amp;amp; 5 &amp;amp; 6 &amp;amp; 7 &amp;amp; 8\newline
+\mbox{Drug concentration} &amp;amp; 25 &amp;amp; 36 &amp;amp; 48 &amp;amp; 64 &amp;amp; 86 &amp;amp; 114 &amp;amp; 168\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Construct the linear regression model of drug concentration on time.&lt;/li&gt;
+&lt;li&gt;Construct the exponential regression model of drug concentration on time.&lt;/li&gt;
+&lt;li&gt;Use the best regression model to predict the drug concentration after $4.8$ hours? Is this prediction reliable? Justify your answer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($C$=Drug concentration and $T$=time): $\sum t_i=35$ h, $\sum \log(t_i)=10.6046$ $\log(\mbox{h})$, $\sum c_j=541$ mg/dl, $\sum \log(c_j)= 29.147$ $\log(\mbox{mg/dl})$, $\sum t_i^2=203$ h$^2$, $\sum \log(t_i)^2=17.5206$ $\log(\mbox{h})^2$, $\sum c_j^2=56937$ (mg/dl)$^2$, $\sum \log(c_j)^2=124.0131$ $\log(\mbox{mg/dl})^2$, $\sum t_ic_j=3328$ h$\cdot$mg/dl, $\sum t_i\log(c_j)=154.3387$ h$\cdot\log(\mbox{mg/dl})$, $\sum \log(t_i)c_j=951.6961$ $\log(\mbox{h})\cdot$mg/dl, $\sum\log(t_i)\log(c_j)=46.08046$ $\log(\mbox{h})\cdot\log(\mbox{mg/dl})$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\bar x=5$ hours, $s_x^2=4$ hours$^2$.&lt;br/&gt;
+$\bar y=77.2857$ mg/dl, $s_y^2=2160.7755$ (mg/dl)$^2$.&lt;br/&gt;
+$s_{xy}=89$ hours$\cdot$mg/dl.&lt;br/&gt;
+Regression line of drug concentration on time: $y=-33.9643 + 22.25x$.&lt;br/&gt;
+$r^2=0.9165$.&lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$\overline{\log(y)}=4.1639$ log(mg/dl), $s_{\log(y)}^2=0.3785$ log(mg/dl)$^2$.&lt;br/&gt;
+$s_{x\log(y)}=1.2291$ hours$\cdot$log(mg/dl).&lt;br/&gt;
+Exponential model of drug concentration on time: $y=e^{2.6275 + 0.3073x}$.&lt;br/&gt;
+$r^2=0.9979$.&lt;br/&gt;
+3. $y(4.8)=60.4853$ mg/dl.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise 3&lt;/h2&gt;
+&lt;p&gt;A researcher is studying the relation between the obesity and the response to pain. The obesity is measured as the percentage over the ideal weight, and the response to pain as the nociceptive flexion pain threshold. The results of the study appears in the table below.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrrrrr}
+\hline
+\mbox{Obesity} &amp;amp; 89 &amp;amp; 90 &amp;amp; 77 &amp;amp; 30 &amp;amp; 51 &amp;amp; 75 &amp;amp; 62 &amp;amp; 45 &amp;amp; 90 &amp;amp; 20\newline
+\mbox{Pain threshold} &amp;amp; 10 &amp;amp; 12 &amp;amp; 11.5 &amp;amp; 4.5 &amp;amp; 5.5 &amp;amp; 7 &amp;amp; 9 &amp;amp; 8 &amp;amp; 15 &amp;amp; 3\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;According to the scatter plot, what model explains better the relation of the response to pain on the obesity?&lt;/li&gt;
+&lt;li&gt;According to the best regression model, what is the response to pain expected for a person with an obesity of 50%? Is this prection reliable?&lt;/li&gt;
+&lt;li&gt;According to the best regression model, what is the expected obesity for a person with a pain threshold of 10? Is this prediction reliable?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($X$=Obesity and $Y$=Pain threshold):
+$\sum x_i=629$, $\sum \log(x_i)=40.4121$, $\sum y_j=92.2$, $\sum \log(y_j)=21.339$, $\sum x_i^2=45445$, $\sum \log(x_i)^2=165.6795$, $\sum y_j^2=960.14$, $\sum \log(y_j)^2=47.6231$, $\sum x_iy_j=6537.7$, $\sum x_i\log(y_j)=1443.1275$, $\sum \log(x_i)y_j=387.5728$, $\sum \log(x_i)\log(y_j)=88.3696$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;Linear model&lt;br/&gt;
+$\bar x=62.9$, $s_x^2=588.09$.&lt;br/&gt;
+$\bar y=9.22$, $s_y^2=11.0056$.&lt;br/&gt;
+$s_{xy}=82.0356$.&lt;br/&gt;
+Regression line of pain threshold on obesity: $y=1.3232 + 0.1255x$.&lt;br/&gt;
+$r^2=0.8422$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Logartihmic model&lt;br/&gt;
+$\overline{\log(x)}=4.0412$, $s_{\log(x)}^2=0.2366$.&lt;br/&gt;
+$s_{\log(x)y}=1.4973$.&lt;br/&gt;
+Logartihmic model of pain threshold on obesity: $y=-16.3578 + 6.3293\log(x)$.&lt;br/&gt;
+$r^2=0.8611$.&lt;br/&gt;
+$y(50)=8.4023$.&lt;br/&gt;
+3.&lt;/p&gt;
+&lt;p&gt;Exponential model of obesity on pain threshold: $x=e^{2.7868 + 0.1361y}$.&lt;br/&gt;
+$x(10)=63.2648$.&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-4&#34;&gt;Exercise 4&lt;/h2&gt;
+&lt;p&gt;A blood bank keeps plasma at a temperature of 0ºF.
+When it is required for a blood transfusion, it is heated in an oven at a constant temperature of 120ºF.
+In an experiment it has been measured the temperature of plasma at different times during the heating.
+The results are in the table below.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrrr}
+\hline
+\mbox{Time (min)}	&amp;amp; 5 &amp;amp; 8 &amp;amp; 15 &amp;amp; 25 &amp;amp; 30 &amp;amp; 37 &amp;amp; 45 &amp;amp; 60\newline
+\mbox{Temperature (ºF)} &amp;amp; 25 &amp;amp; 50 &amp;amp; 86 &amp;amp; 102 &amp;amp; 110 &amp;amp; 114 &amp;amp; 118 &amp;amp; 120\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Plot the scatter plot.
+Which type of regression model do you think explains better relationship between temperature and time?&lt;/li&gt;
+&lt;li&gt;Which transformation should we apply to the variables to have a linear relationship?&lt;/li&gt;
+&lt;li&gt;Compute the logarithmic regression of the temperature on time.&lt;/li&gt;
+&lt;li&gt;According to the logarithmic model, what will the temperature of the plasma be after 15 minutes of heating?
+Is this prediction reliable? Justify your answer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($X$=Time and $Y$=Temperature):
+$\sum x_i=225$ min, $\sum \log(x_i)=24.5289$ log(min), $\sum y_j=725$ ºF, $\sum \log(y_j)=35.2051$ log(ºF), $\sum x_i^2=8833$ min², $\sum \log(x_i)^2=80.4703$ log²(min), $\sum y_j^2=74345$ ºF², $\sum \log(y_j)^2=157.1023$ log²(ºF), $\sum x_iy_j=24393$ min⋅ºF, $\sum x_i\log(y_j)=1048.0142$ min⋅log(ºF), $\sum \log(x_i)y_j=2431.7096$ log(min)⋅ºF, $\sum \log(x_i)\log(y_j)=111.1165$ log(min)log(ºF).&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Apply a logarithmic transformation to time $z=\log(x)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\bar z=28.125$ log(min), $s_z^2=0.6577$ log²(min).&lt;br/&gt;
+$\bar y=90.625$ ºF, $s_y^2=1080.2344$ ºF².&lt;br/&gt;
+$s_{zy}=26.0969$ log(min)ºF.&lt;br/&gt;
+Logarithmic model of temperature on time: $y=-31.0325 + 39.6781\log(x)$.&lt;br/&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$y(15)=76.4176$ ºF.&lt;br/&gt;
+$r^2=0.9586$, that is close to 1, so the prediction is reliable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-5&#34;&gt;Exercise 5&lt;/h2&gt;
+&lt;p&gt;The activity of a radioactive substance depends on time according to the data in the table below.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrrrrr}
+\hline
+t\mbox{ (hours)} &amp;amp; 0 &amp;amp; 10 &amp;amp; 20 &amp;amp; 30 &amp;amp; 40 &amp;amp; 50 &amp;amp; 60 &amp;amp; 70 \newline
+A\mbox{ ($10^7$ disintegrations/s)} &amp;amp; 25.9 &amp;amp; 8.16 &amp;amp; 2.57 &amp;amp; 0.81 &amp;amp; 0.25 &amp;amp; 0.08 &amp;amp; 0.03 &amp;amp; 0.01\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Represent graphically the data of radioactivity as a function of time.
+Which type of regression model explains better the relationship between radioactivity and time?&lt;/li&gt;
+&lt;li&gt;Represent graphically the data of radioactivity as a function of time in a semi-logarithmic paper.&lt;/li&gt;
+&lt;li&gt;Compute the regression line of the logarithm of radioactivity on time.&lt;/li&gt;
+&lt;li&gt;Taking into account that radioactivity decay follows the formula
+\newline[
+A(t) = A_0 e^{-\lambda t}
+\newline]
+where $A_0$ is the number of disintegrations at the begining and $\lambda$ is a disintegration constant, different for each radioactive substance, use the slope of the previous regression line to compute the disintegration constant for the substance.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums ($X$=Time and $Y$=Radioactivity):
+$\sum x_i=280$ hours, $\sum y_j=37.81$ 10⁷ disintegrations/s, $\sum \log(y_j)=-5.9371$ log(10⁷ disintegrations/s), $\sum x_i^2=14000$ hours², $\sum y_j^2=744.7265$ 10⁷ disintegrations/s², $\sum \log(y_j)^2=57.7369$ log²(10⁷ disintegrations/s), $\sum x_iy_j=173.8$ hours⋅10⁷ disintegrations/s, $\sum x_i\log(y_j)=-680.9447$ hours⋅log(10⁷ disintegrations/s).&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\bar x=35$ hours, $s_x^2=525$ hours².&lt;br/&gt;
+$\bar z=-0.7421$ log(10⁷ disintegrations/s), $s_z^2=6.6664$ log(10⁷ disintegrations/s)^2.&lt;br/&gt;
+$s_{xz}=-59.1434$ hours⋅log(10⁷ disintegrations/s)&lt;br/&gt;
+Regression line of logarithm of radioactivity on time: $z=3.2008 + -0.1127x$.&lt;br/&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\lambda=0.1127$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-6&#34;&gt;Exercise 6&lt;/h2&gt;
+&lt;p&gt;For oscillations of small amplitude, the oscillation period $T$ of a pendulum is given by the formula
+\newline[
+T = 2\pi\sqrt{\frac{L}{g}}
+\newline]
+where $L$ is the length of the pendulum and $g$ is the gravitational constant. In order to check if the previous formula is satisfied, an experiment has been conducted where it has been measured the oscillation period for different lengths of the pendulum.The measurements are shown in the table below.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lrrrrr}
+\hline
+L\text{ (cm)} &amp;amp; 52.5 &amp;amp; 68.0 &amp;amp; 99.0 &amp;amp; 116.0 &amp;amp; 146.0 \newline
+P\text{ (seg)} &amp;amp; 1.449 &amp;amp; 1.639 &amp;amp; 1.999 &amp;amp; 2.153 &amp;amp; 2.408\newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Represent graphically the data of the period versus the length of the pendulum.&lt;br&gt;
+Does a linear model fit well to the points cloud?&lt;/li&gt;
+&lt;li&gt;Represent graphically the data of the period versus the length in a logarithmic paper.
+Which type of model fits better to the points cloud?&lt;/li&gt;
+&lt;li&gt;Compute the regression line of the logarithm of period on the logarithm of length.&lt;/li&gt;
+&lt;li&gt;Taking in to account the independent term of the previous regression line, compute the value of $g$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;The model that best fits the points cloud is linear.&lt;/li&gt;
+&lt;li&gt;Let $X$ be the logarithm of length and $Y$ to the logarithm of period,&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$\bar x=4.5025$ log(cm), $s_x^2=0.1353$ log(cm)².&lt;br/&gt;
+$\bar y=0.6407$ log(s), $s_y^2=0.0339$ log(s)².&lt;br/&gt;
+$s_{xy}=0.0677$ log(cm)log(s)&lt;br&gt;
+Regression line of Y on X: $y=-1.6132 + 0.5006x$.&lt;br/&gt;
+4. $g=994.4579 cm/s².
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;exercise-7&#34;&gt;Exercise 7&lt;/h2&gt;
+&lt;p&gt;A study tries to determine the relationship between two substances $X$ and $Y$ in blood.
+The concentrations of these substances have been measured in seven individuals (in $\mu$g/dl) and the results are shown in the table below.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{rrrrrrrr}
+\hline
+X &amp;amp; 2.1 &amp;amp; 4.9 &amp;amp; 9.8 &amp;amp; 11.7 &amp;amp; 5.9 &amp;amp; 8.4 &amp;amp; 9.2 \newline
+Y &amp;amp; 1.3 &amp;amp; 1.5 &amp;amp; 1.7 &amp;amp; 1.8 &amp;amp; 1.5 &amp;amp; 1.7 &amp;amp; 1.7 \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Are $Y$ and $X$ linearly related?&lt;/li&gt;
+&lt;li&gt;Are $Y$ and $X$ potentially related?&lt;/li&gt;
+&lt;li&gt;Use the best of the previous regression models to predict the concentration in blood of $Y$ for $x=8$ $\mu$gr/dl.Is this prediction reliable. Justify your answer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use the following sums:
+$\sum x_i=52$ μg/dl, $\sum \log(x_i)=13.1955$ log(μg/dl), $\sum y_j=11.2$ μg/dl, $\sum \log(y_j)=3.253$ log(μg/dl), $\sum x_i^2=451.36$ (μg/dl)², $\sum \log(x_i)^2=26.9397$ log(μg/dl)², $\sum y_j^2=18.1$ (μg/dl)², $\sum \log(y_j)^2=1.5878$ log(μg/dl)², $\sum x_iy_j=86.57$ (μg/dl)², $\sum x_i\log(y_j)=26.3463$ μg/dl⋅log(μg/dl), $\sum \log(x_i)y_j=21.7087$ log(μg/dl)⋅μg/dl, $\sum \log(x_i)\log(y_j)=6.5224$ log(μg/dl)².&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-6&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-6&#34;&gt;
+      Solution
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-6&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$\bar x=7.4286$ μg/dl, $s_x^2=9.2963$ (μg/dl)².&lt;br/&gt;
+$\bar z=-0.7421$ μg/dl, $s_z^2=6.6664$ (μg/dl)².&lt;br/&gt;
+$s_{xz}=-0.4147$ (μg/dl)²&lt;br&gt;
+Linear relation: $r^2=0.9696$, that is close to 1, so there is a strong linear relation.&lt;br&gt;
+2. Naming $u=\log(x)$ and $v=\log(y)$,&lt;/p&gt;
+&lt;p&gt;$\bar u=1.8851$ log(μg/dl), $s_u^2=0.295$ log(μg/dl)².&lt;br/&gt;
+$\bar v=0.4647$ log(μg/dl), $s_v^2=0.0109$ log(μg/dl)².&lt;br/&gt;
+$s_{uv}=0.0558$ (μg/dl)²&lt;br&gt;
+Potential relation: $r^2=0.9688$, that is close to 1, so there is a strong potential relation, although the linear relation is a little bit stronger.&lt;br&gt;
+3. Regression line of $Y$ on $X$: $y=1.2153 + 0.0518x$.&lt;br/&gt;
+$y(8)=1.6296$ μg/dl. The prediction is reliable since the linear coefficient of determination is close to 1.&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

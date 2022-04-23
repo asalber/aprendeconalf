@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hessian Matrix | Aprende con Alf</title>
+    <link>/en/tag/hessian-matrix/</link>
+      <atom:link href="/en/tag/hessian-matrix/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hessian Matrix</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Hessian Matrix</title>
+      <link>/en/tag/hessian-matrix/</link>
+    </image>
+    
+    <item>
+      <title>Several variables differentiable calculus</title>
+      <link>/en/teaching/calculus/manual/derivatives-n-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/calculus/manual/derivatives-n-variables/</guid>
+      <description>&lt;h2 id=&#34;vector-functions-of-a-single-real-variable&#34;&gt;Vector functions of a single real variable&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Vector function of a single real variable&lt;/strong&gt;. A &lt;em&gt;vector function of a single real variable&lt;/em&gt; or &lt;em&gt;vector field of a scalar variable&lt;/em&gt; is a function that maps every scalar value $t\in D\subseteq \mathbb{R}$ into a vector $(x_1(t),\ldots,x_n(t))$ in $\mathbb{R}^n$:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{rccl}
+f: &amp;amp; \mathbb{R} &amp;amp; \longrightarrow &amp;amp; \mathbb{R}^n\newline
+&amp;amp; t &amp;amp; \longrightarrow &amp;amp; (x_1(t),\ldots, x_n(t))
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;where $x_i(t)$, $i=1,\ldots,n$, are real function of a single real variable known as &lt;em&gt;coordinate functions&lt;/em&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The most common vector field of scalar variable are in the the real plane $\mathbb{R}^2$, where usually they are represented as&lt;/p&gt;
+&lt;p&gt;$$f(t)=x(t)\mathbf{i}+y(t)\mathbf{j},$$&lt;/p&gt;
+&lt;p&gt;and in the real space $\mathbb{R}^3$, where usually they are represented as&lt;/p&gt;
+&lt;p&gt;$$f(t)=x(t)\mathbf{i}+y(t)\mathbf{j}+z(t)\mathbf{k},$$&lt;/p&gt;
+&lt;h3 id=&#34;graphic-representation-of-vector-fields&#34;&gt;Graphic representation of vector fields&lt;/h3&gt;
+&lt;p&gt;The graphic representation of a vector field in $\mathbb{R}^2$ is a trajectory in the real plane.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/trajectory_plane.svg&#34; alt=&#34;Trajectory of a vector function in the plane.&#34; width=&#34;300&#34;&gt;
+&lt;p&gt;The graphic representation of a vector field in $\mathbb{R}^3$ is a trajectory in the real space.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/trajectory_space.svg&#34; alt=&#34;Trajectory of a vector function in the space.&#34; width=&#34;350&#34;&gt;
+&lt;h2 id=&#34;derivative-of-a-vector-field&#34;&gt;Derivative of a vector field&lt;/h2&gt;
+&lt;p&gt;The concept of derivative as the limit of the average rate of change of a function can be extended easily to vector fields.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Derivative of a vectorial field&lt;/strong&gt;. A vectorial field $f(t)=(x_1(t),\ldots,x_n(t))$ is &lt;em&gt;differentiable&lt;/em&gt; at a point $t=a$ if the limit&lt;/p&gt;
+&lt;p&gt;$$\lim_{\Delta t\rightarrow 0} \frac{f(a+\Delta t)-f(a)}{\Delta t}.$$&lt;/p&gt;
+&lt;p&gt;exists. In such a case, the value of the limit is known as the &lt;em&gt;derivative&lt;/em&gt; of the vector field at $a$, and it is written $f&amp;rsquo;(a)$.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Many properties of real functions of a single real variable can be extended to vector fields through its component functions. Thus, for instance, the derivative of a vector field can be computed from the derivatives of its component functions.&lt;/p&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt;. Given a vector field $f(t)=(x_1(t),\ldots,x_n(t))$, if $x_i(t)$ is differentiable at $t=a$ for all $i=1,\ldots,n$, then $f$ is differentiable at $a$ and its derivative is&lt;/p&gt;
+&lt;p&gt;$$f&amp;rsquo;(a)=(x_1&amp;rsquo;(a),\ldots,x_n&amp;rsquo;(a))$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Proof
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;The proof for a vectorial field in $\mathbb{R}^2$ is easy.&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+f&amp;rsquo;(a)&amp;amp;=\lim_{\Delta t\rightarrow 0} \frac{f(a+\Delta t)-f(a)}{\Delta t} = \lim_{\Delta t\rightarrow 0} \frac{(x(a+\Delta t),y(a+\Delta t))-(x(a),y(a))}{\Delta t} =\newline
+&amp;amp;=  \lim_{\Delta t\rightarrow 0} \left(\frac{x(a+\Delta t)-x(a)}{\Delta t},\frac{y(a+\Delta t)-y(a)}{\Delta t}\right) =\newline
+&amp;amp;= \left(\lim_{\Delta t\rightarrow 0}\frac{x(a+\Delta t)-x(a)}{\Delta t},\lim_{\Delta t\rightarrow 0}\frac{y(a+\Delta t)-y(a)}{\Delta t}\right) =
+(x&amp;rsquo;(a),y&amp;rsquo;(a)).
+\end{aligned}
+$$&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;kinematics-curvilinear-motion&#34;&gt;Kinematics: Curvilinear motion&lt;/h3&gt;
+&lt;p&gt;The notion of derivative as a velocity along a trajectory in the real line can be generalized to a trajectory in any euclidean space $\mathbb{R}^n$.&lt;/p&gt;
+&lt;p&gt;In case of a two dimensional space $\mathbb{R}^2$, if $f(t)$ describes the position of a moving object in the real plane at any time $t$, taking as reference the coordinates origin $O$ and the unitary vectors ${\mathbf{i}=(1,0),\mathbf{j}=(0,1)}$, we can represent the position of the moving object $P$ at every moment $t$ with a vector $\vec{OP}=x(t)\mathbf{i}+y(t)\mathbf{j}$, where the coordinates&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+x=x(t)\newline
+y=y(t)
+\end{cases}
+\quad
+t\in \mbox{Dom}(f)
+$$&lt;/p&gt;
+&lt;p&gt;are the &lt;em&gt;coordinate functions&lt;/em&gt; of $f$.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/curvilinear_motion.svg&#34; alt=&#34;Trajectory of a curvilinear motion in the plane.&#34; width=&#34;500&#34;&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    In this context the derivative of a trajectory $f&amp;rsquo;(a)=(x_1&amp;rsquo;(a),\ldots,x_n&amp;rsquo;(a))$ is the &lt;em&gt;velocity&lt;/em&gt; vector of the trajectory $f$ at moment $t=a$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the trajectory $f(t) = (\cos t,\sin t)$, $t\in \mathbb{R}$, whose image is the unit circumference centred in the coordinate origin, its coordinate functions are $x(t) = \cos t$, $y(t) = \sin t$, $t\in \mathbb{R}$, and its velocity is&lt;/p&gt;
+&lt;p&gt;$$\mathbf{v}=f&amp;rsquo;(t)=(x&amp;rsquo;(t),y&amp;rsquo;(t))=(-\sin t, \cos t).$$&lt;/p&gt;
+&lt;p&gt;In the moment $t=\pi/4$, the object is in position $f(\pi/4) = (\cos(\pi/4),\sin(\pi/4)) =(\sqrt{2}/2,\sqrt{2}/2)$ and it is moving with a velocity $\mathbf{v}=f&amp;rsquo;(\pi/4)=(-\sin(\pi/4),\cos(\pi/4))=(-\sqrt{2}/2,\sqrt{2}/2)$.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/circumference_trajectory.svg&#34; alt=&#34;Trajectory of a vector function in the space.&#34; width=&#34;300&#34;&gt;
+&lt;p&gt;Observe that the module of the velocity vector is always 1 as $\vert\mathbf{v}\vert=\sqrt{(-\sin t)^2+(\cos t)^2}=1$.&lt;/p&gt;
+&lt;h3 id=&#34;tangent-line-to-a-trajectory&#34;&gt;Tangent line to a trajectory&lt;/h3&gt;
+&lt;h4 id=&#34;tangent-line-to-a-trajectory-in-the-plane&#34;&gt;Tangent line to a trajectory in the plane&lt;/h4&gt;
+&lt;h5 id=&#34;vectorial-equation&#34;&gt;Vectorial equation&lt;/h5&gt;
+&lt;p&gt;Given a trajectory $f(t)$ in the real plane, the vectors that are parallel to the velocity $\mathbf{v}$ at a moment $a$ are called &lt;em&gt;tangent vectors&lt;/em&gt; to the trajectory $f$ at the moment $a$, and the line passing through $P=f(a)$ directed by $\mathbf{v}$ is the tangent line to the graph of $f$ at the moment $a$.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Tangent line to a trajectory&lt;/strong&gt;. Given a trajectory $f(t)$ in the real plane $\mathbb{R}^2$, the &lt;em&gt;tangent line&lt;/em&gt; to to the graph of $f$ at $a$ is the line with equation&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+l:(x,y) &amp;amp;= f(a)+tf&amp;rsquo;(a) = (x(a),y(a))+t(x&amp;rsquo;(a),y&amp;rsquo;(a))\newline
+&amp;amp; = (x(a)+tx&amp;rsquo;(a),y(a)+ty&amp;rsquo;(a)).
+\end{aligned}
+$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. We have seen that for the trajectory $f(t) = (\cos t,\sin t)$, $t\in \mathbb{R}$, whose image is the unit circumference centred at the coordinate origin, the object position at the moment $t=\pi/4$ is $f(\pi/4)=(\sqrt{2}/2,\sqrt{2}/2)$ and its velocity $\mathbf{v}=(-\sqrt{2}/2,\sqrt{2}/2)$. Thus the equation of the tangent line to $f$ at that moment is&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+l: (x,y) &amp;amp; = f(\pi/4)+t\mathbf{v} =
+\left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)+t\left(\frac{-\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right) =\newline
+&amp;amp; =\left(\frac{\sqrt{2}}{2}-t\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}+t\frac{\sqrt{2}}{2}\right).
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h5 id=&#34;cartesian-and-point-slope-equations&#34;&gt;Cartesian and point-slope equations&lt;/h5&gt;
+&lt;p&gt;From the vectorial equation of the tangent to a trajectory $f(t)$ at the moment $t=a$ we can get the coordinate functions&lt;/p&gt;
+&lt;p&gt;$$
+\begin{cases}
+x=x(a)+tx&amp;rsquo;(a)\newline
+y=y(a)+ty&amp;rsquo;(a)
+\end{cases}
+\quad t\in \mathbb{R},
+$$&lt;/p&gt;
+&lt;p&gt;and solving for $t$ and equalling both equations we get the &lt;em&gt;Cartesian equation&lt;/em&gt; of the tangent&lt;/p&gt;
+&lt;p&gt;$$\frac{x-x(a)}{x&amp;rsquo;(a)}=\frac{y-y(a)}{y&amp;rsquo;(a)},$$&lt;/p&gt;
+&lt;p&gt;if $x&amp;rsquo;(a)\neq 0$ and $y&amp;rsquo;(a)\neq 0$.&lt;/p&gt;
+&lt;p&gt;From this equation it is easy to get the &lt;em&gt;point-slope equation&lt;/em&gt; of the tangent&lt;/p&gt;
+&lt;p&gt;$$y-y(a)=\frac{y&amp;rsquo;(a)}{x&amp;rsquo;(a)}(x-x(a)).$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Using the vectorial equation of the tangent of the previous example&lt;/p&gt;
+&lt;p&gt;$$l: (x,y)=\left(\frac{\sqrt{2}}{2}-t\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}+t\frac{\sqrt{2}}{2}\right),$$&lt;/p&gt;
+&lt;p&gt;its Cartesian equation is $$\frac{x-\sqrt{2}/2}{-\sqrt{2}/2} = \frac{y-\sqrt{2}/2}{\sqrt{2}/2}$$
+and the point-slope equation is&lt;/p&gt;
+&lt;p&gt;$$y-\sqrt{2}/2 = \frac{-\sqrt{2}/2}{\sqrt{2}/2}(x-\sqrt{2}/2) \Rightarrow y=-x+\sqrt{2}.$$&lt;/p&gt;
+&lt;h3 id=&#34;normal-line-to-a-trajectory-in-the-plane&#34;&gt;Normal line to a trajectory in the plane&lt;/h3&gt;
+&lt;p&gt;We have seen that the tangent line to a trajectory $f(t)$ at $a$ is the line passing through the point $P=f(a)$ directed by the velocity vector $\mathbf{v}=f&amp;rsquo;(a)=(x&amp;rsquo;(a),y&amp;rsquo;(a))$. If we take as direction vector a vector orthogonal to $\mathbf{v}$, we get another line that is known as &lt;em&gt;normal line&lt;/em&gt; to the trajectory.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Normal line to a trajectory&lt;/strong&gt;. Given a trajectory $f(t)$ in the real plane $\mathbb{R}^2$, the &lt;em&gt;normal line&lt;/em&gt; to the graph of $f$ at moment $t=a$ is the line with equation&lt;/p&gt;
+&lt;p&gt;$$l: (x,y)=(x(a),y(a))+t(y&amp;rsquo;(a),-x&amp;rsquo;(a)) = (x(a)+ty&amp;rsquo;(a),y(a)-tx&amp;rsquo;(a)).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The Cartesian equation is&lt;/p&gt;
+&lt;p&gt;$$\frac{x-x(a)}{y&amp;rsquo;(a)} = \frac{y-y(a)}{-x&amp;rsquo;(a)},$$&lt;/p&gt;
+&lt;p&gt;and the point-slope equation is&lt;/p&gt;
+&lt;p&gt;$$y-y(a) = \frac{-x&amp;rsquo;(a)}{y&amp;rsquo;(a)}(x-x(a)).$$&lt;/p&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    The normal line is always perpendicular to the tangent line as their direction vectors are orthogonal.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Considering again the trajectory of the unit circumference $f(t) = (\cos t,\sin t)$, $t\in \mathbb{R}$, the normal line to the graph of $f$ at moment $t=\pi/4$ is&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+l: (x,y)&amp;amp;=(\cos(\pi/2),\sin(\pi/2))+t(\cos(\pi/2),\sin(\pi/2)) =\newline
+&amp;amp;= \left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)+t\left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)
+=\left(\frac{\sqrt{2}}{2}+t\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}+t\frac{\sqrt{2}}{2}\right),
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;the Cartesian equation is&lt;/p&gt;
+&lt;p&gt;$$\frac{x-\sqrt{2}/2}{\sqrt{2}/2} = \frac{y-\sqrt{2}/2}{\sqrt{2}/2},$$
+and the point-slope equation is
+$$y-\sqrt{2}/2 = \frac{\sqrt{2}/2}{\sqrt{2}/2}(x-\sqrt{2}/2) \Rightarrow y=x.$$&lt;/p&gt;
+&lt;h3 id=&#34;tangent-and-normal-lines-to-a-function&#34;&gt;Tangent and normal lines to a function&lt;/h3&gt;
+&lt;p&gt;A particular case of tangent and normal lines to a trajectory are the tangent and normal lines to a function of one real variable. For every function $y=f(x)$, the trajectory that trace its graph is&lt;/p&gt;
+&lt;p&gt;$$g(x) = (x,f(x))  \quad x\in \mathbb{R},$$&lt;/p&gt;
+&lt;p&gt;and its velocity is&lt;/p&gt;
+&lt;p&gt;$$g&amp;rsquo;(x) = (1,f&amp;rsquo;(x)),$$&lt;/p&gt;
+&lt;p&gt;so that the tangent line to $g$ at the moment $a$ is&lt;/p&gt;
+&lt;p&gt;$$\frac{x-a}{1} = \frac{y-f(a)}{f&amp;rsquo;(a)} \Rightarrow y-f(a) = f&amp;rsquo;(a)(x-a),$$&lt;/p&gt;
+&lt;p&gt;and the normal line is&lt;/p&gt;
+&lt;p&gt;$$\frac{x-a}{f&amp;rsquo;(a)} = \frac{y-f(a)}{-1} \Rightarrow y-f(a) = \frac{-1}{f&amp;rsquo;(a)}(x-a).$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the function $y=x^2$, the trajectory that traces its graph is $g(x)=(x,x^2)$ and its velocity is $g&amp;rsquo;(x)=(1,2x)$. At the moment $x=1$ the trajectory passes through the point $(1,1)$ with a velocity $(1,2)$. Thus, the tangent line at that moment is&lt;/p&gt;
+&lt;p&gt;$$\frac{x-1}{1} = \frac{y-1}{2} \Rightarrow y-1 = 2(x-1) \Rightarrow y = 2x-1,$$&lt;/p&gt;
+&lt;p&gt;and the normal line is&lt;/p&gt;
+&lt;p&gt;$$\frac{x-1}{2} = \frac{y-1}{-1} \Rightarrow y-1 = \frac{-1}{2}(x-1) \Rightarrow y = \frac{-x}{2}+\frac{3}{2}.$$&lt;/p&gt;
+&lt;h3 id=&#34;tangent-line-to-a-trajectory-in-the-space&#34;&gt;Tangent line to a trajectory in the space&lt;/h3&gt;
+&lt;p&gt;The concept of tangent line to a trajectory can be easily extended from the real plane to the three-dimensional space $\mathbb{R}^3$.&lt;/p&gt;
+&lt;p&gt;If $f(t)=(x(t),y(t),z(t))$, $t\in \mathbb{R}$, is a trajectory in the real space $\mathbb{R}^3$, then at the moment $a$, the moving object that follows this trajectory will be at the position $P=(x(a),y(a),z(a))$ with a velocity $\mathbf{v}=f&amp;rsquo;(t)=(x&amp;rsquo;(t),y&amp;rsquo;(t),z&amp;rsquo;(t))$. Thus, the tangent line to $f$ at this moment have the following vectorial equation&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+l&amp;amp;: (x,y,z)=(x(a),y(a),z(a))+t(x&amp;rsquo;(a),y&amp;rsquo;(a),z&amp;rsquo;(a)) =\newline
+&amp;amp;= (x(a)+tx&amp;rsquo;(a),y(a)+ty&amp;rsquo;(a),z(a)+tz&amp;rsquo;(a)),
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;and the Cartesian equations are
+$$\frac{x-x(a)}{x&amp;rsquo;(a)}=\frac{y-y(a)}{y&amp;rsquo;(a)}=\frac{z-z(a)}{z&amp;rsquo;(a)},$$
+provided that $x&amp;rsquo;(a)\neq 0$, $y&amp;rsquo;(a)\neq 0$ y $z&amp;rsquo;(a)\neq 0$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the trajectory $f(t)=(\cos t, \sin t, t)$, $t\in \mathbb{R}$ in the real space, at the moment $t=\pi/2$ the trajectory passes through the point&lt;/p&gt;
+&lt;p&gt;$$f(\pi/2)=(\cos(\pi/2),\sin(\pi/2),\pi/2)=(0,1,\pi/2),$$&lt;/p&gt;
+&lt;p&gt;with velocity&lt;/p&gt;
+&lt;p&gt;$$\mathbf{v}=f&amp;rsquo;(\pi/2)=(-\sin(\pi/2),\cos(\pi/2), 1)=(-1,0,1),$$&lt;/p&gt;
+&lt;p&gt;and the tangent line to the graph of $f$ at that moment is&lt;/p&gt;
+&lt;p&gt;$$l:(x,y,z)=(0,1,\pi/2)+t(-1,0,1) = (-t,1,t+\pi/2).$$&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/tangent_trajectory_space.svg&#34; alt=&#34;Tangent line to a trajectory in the space.&#34; width=&#34;400&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;/media/logo-geogebra.png#left&#34; /&gt; &lt;strong&gt;&lt;a href=&#34;https://ggbm.at/Q2C7EfBn&#34; target=&#34;_blank&#34;&gt;Interactive Example&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;normal-plane-to-a-trajectory-in-the-space&#34;&gt;Normal plane to a trajectory in the space&lt;/h3&gt;
+&lt;p&gt;In the three-dimensional space $\mathbb{R}^3$, the normal line to a trajectory is not unique. There are an infinite number of normal lines and all of them are in the normal plane.&lt;/p&gt;
+&lt;p&gt;If $f(t)=(x(t),y(t),z(t))$, $t\in \mathbb{R}$, is a trajectory in the real space $\mathbb{R}^3$, then at the moment $a$, the moving object that follows this trajectory will be at the position $P=(x(a),y(a),z(a))$ with a velocity $\mathbf{v}=f&amp;rsquo;(t)=(x&amp;rsquo;(t),y&amp;rsquo;(t),z&amp;rsquo;(t))$. Thus, using the velocity vector as normal vector the normal plane to $f$ at this moment have the following vectorial equation&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\Pi &amp;amp;: (x-x(a),y-y(a),z-z(a))(x&amp;rsquo;(a),y&amp;rsquo;(a),z&amp;rsquo;(a)) = 0\newline
+&amp;amp;= x&amp;rsquo;(a)(x-x(a))+y&amp;rsquo;(a)(y-y(a))+z&amp;rsquo;(a)(z-z(a))=0.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. For the trajectory of the previous example $f(t)=(\cos t, \sin t, t)$, $t\in \mathbb{R}$, at the moment $t=\pi/2$ the trajectory passes through the point&lt;/p&gt;
+&lt;p&gt;$$f(\pi/2)=(\cos(\pi/2),\sin(\pi/2),\pi/2)=(0,1,\pi/2),$$&lt;/p&gt;
+&lt;p&gt;with velocity&lt;/p&gt;
+&lt;p&gt;$$\mathbf{v}=f&amp;rsquo;(\pi/2)=(-\sin(\pi/2),\cos(\pi/2), 1)=(-1,0,1),$$
+and normal plane to the graph of $f$ at that moment is&lt;/p&gt;
+&lt;p&gt;$$\Pi:\left(x-0,y-1,z-\frac{\pi}{2}\right)(-1,0,1) =0 \Leftrightarrow -x+z-\frac{\pi}{2}=0.$$&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/normal_plane_trajectory_space.svg&#34; alt=&#34;Normal plane to a trajectory in the space.&#34; width=&#34;400&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;/media/logo-geogebra.png#left&#34; /&gt; &lt;strong&gt;&lt;a href=&#34;https://ggbm.at/Q2C7EfBn&#34; target=&#34;_blank&#34;&gt;Interactive Example&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;functions-of-several-variables&#34;&gt;Functions of several variables&lt;/h2&gt;
+&lt;p&gt;A lot of problems in Geometry, Physics, Chemistry, Biology, etc. involve a variable that depend on two or more variables:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The area of a triangle depends on two variables that are the base and height lengths.&lt;/li&gt;
+&lt;li&gt;The volume of a perfect gas depends on two variables that are the pressure and the temperature.&lt;/li&gt;
+&lt;li&gt;The way travelled by an object free falling depends on a lot of variables: the time, the area of the cross section of the object, the latitude and longitude of the object, the height above the sea level, the air pressure, the air temperature, the speed of wind, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These dependencies are expressed with functions of several variables.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Functions of several real variables&lt;/strong&gt;. A &lt;em&gt;function of $n$ real variables&lt;/em&gt; or a &lt;em&gt;scalar field&lt;/em&gt; from a set $A_1\times \cdots \times A_n\subseteq \mathbb{R}^n$ in a set $B\subseteq \mathbb{R}$, is a relation that maps any tuple $(a_1,\ldots,a_n)\in A_1\times \cdots\times A_n$ into a unique element of $B$, denoted by $f(a_1,\ldots,a_n)$, that is knwon as the &lt;em&gt;image&lt;/em&gt; of $(a_1,\ldots,a_n)$ by $f$.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{lccc}
+f: &amp;amp; A_1\times\cdots\times A_n &amp;amp; \longrightarrow &amp;amp; B\newline
+&amp;amp;(a_1,\ldots,a_n) &amp;amp; \longrightarrow &amp;amp; f(a_1,\ldots,a_n)
+\end{array}
+$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;The area of a triangle is a real function of two real variables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$f(x,y)=\frac{xy}{2}.$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The volume of a perfect gas is a real function of two real variables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$v=f(t,p)=\frac{nRt}{p},\quad \mbox{with $n$ and $R$ constants.}$$&lt;/p&gt;
+&lt;h3 id=&#34;graph-of-a-function-of-two-variables&#34;&gt;Graph of a function of two variables&lt;/h3&gt;
+&lt;p&gt;The graph of a function of two variables $f(x,y)$ is a surface in the real space $\mathbb{R}^3$ where every point of the surface has coordinates $(x,y,z)$, with $z=f(x,y)$.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/paraboloid.svg&#34; alt=&#34;Graph of a two-variables function&#34; width=&#34;300&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The function $f(x,y)=\dfrac{xy}{2}$ that measures the area of a triangle of base $x$ and height $y$ has the graph below.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/area_triangle_graph.svg&#34; alt=&#34;Graph of the function that measures the area of a triangle.&#34; width=&#34;400&#34;&gt;
+&lt;p&gt;The function $\displaystyle f(x,y)=\frac{\sin(x^2+y^2)}{\sqrt{x^2+y^2}}$ has the peculiar graph below.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/water_drop_graph.svg&#34; alt=&#34;Surface of a drop of water.&#34; width=&#34;400&#34;&gt;
+&lt;h3 id=&#34;level-set-of-a-scalar-field&#34;&gt;Level set of a scalar field&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Level set&lt;/strong&gt; Given a scalar field $f:\mathbb{R}^n\rightarrow \mathbb{R}$, the &lt;em&gt;level set&lt;/em&gt; $c$ of $f$ is the set&lt;/p&gt;
+&lt;p&gt;$$C_{f,c}={(x_1,\ldots,x_n): f(x_1,\ldots,x_n)=c},$$&lt;/p&gt;
+&lt;p&gt;that is, a set where the function takes on the constant value $c$.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the scalar field $f(x,y)=x^2+y^2$ and the point $P=(1,1)$, the level set of $f$ that includes $P$ is&lt;/p&gt;
+&lt;p&gt;$$C_{f,2} = {(x,y): f(x,y)=f(1,1)=2} = {(x,y): x^2+y^2=2},$$&lt;/p&gt;
+&lt;p&gt;that is the circumference of radius $\sqrt{2}$ centred at the origin.&lt;/p&gt;
+&lt;p&gt;Level sets are common in applications like topographic maps, where the level curves correspond to points with the same height above the sea level,&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/mountain_level_curves.svg&#34; alt=&#34;Level curves of a topograhic map.&#34; width=&#34;400&#34;&gt;
+&lt;p&gt;and weather maps (&lt;em&gt;isobars&lt;/em&gt;), where level curves correspond to points with the same atmospheric pressure.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/isobars.png&#34; alt=&#34;Isobars of a weather map.&#34; width=&#34;400&#34;&gt;
+&lt;h3 id=&#34;partial-functions&#34;&gt;Partial functions&lt;/h3&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Partial function&lt;/strong&gt;. Given a scalar field $f:\mathbb{R}^n\rightarrow \mathbb{R}$, an $i$-th &lt;em&gt;partial function&lt;/em&gt; of $f$ is any function $f_i:\mathbb{R}\rightarrow \mathbb{R}$ that results of substituting all the variables of $f$ by constants, except the $i$-th variable, that is:&lt;/p&gt;
+&lt;p&gt;$$f_i(x)=f(c_1,\ldots,c_{i-1},x,c_{i+1},\ldots,c_{n}),$$&lt;/p&gt;
+&lt;p&gt;with $c_j$ $(j=1,\ldots, n,\ j\neq i)$ constants.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. If we take the function that measures the area of a triangle&lt;/p&gt;
+&lt;p&gt;$$f(x,y)=\frac{xy}{2},$$
+and set the value of the base to $x=c$, then we the area of the triangle depends only of the height, and $f$ becomes a function of one variable, that is the partial function&lt;/p&gt;
+&lt;p&gt;$$f_1(y)=f(c,y)=\frac{cy}{2},\quad \mbox{with $c$ constant}.$$&lt;/p&gt;
+&lt;h2 id=&#34;partial-derivative-notion&#34;&gt;Partial derivative notion&lt;/h2&gt;
+&lt;h3 id=&#34;variation-of-a-function-with-respect-to-a-variable&#34;&gt;Variation of a function with respect to a variable&lt;/h3&gt;
+&lt;p&gt;We can measure the variation of a scalar field with respect to each of its variables in the same way that we measured the variation of a one-variable function.&lt;/p&gt;
+&lt;p&gt;Let $z=f(x,y)$ be a scalar field of $\mathbb{R}^2$. If we are at point $(x_0,y_0)$ and we increase the value of $x$ a quantity $\Delta x$, then we move in the direction of the $x$-axis from the point $(x_0,y_0)$ to the point $(x_0+\Delta x,y_0)$, and the variation of the function is
+$$\Delta z=f(x_0+\Delta x,y_0)-f (x_0,y_0).$$&lt;/p&gt;
+&lt;p&gt;Thus, the rate of change of the function with respect to $x$ along the interval $[x_0,x_0+\Delta x]$ is given by the quotient&lt;/p&gt;
+&lt;p&gt;$$\frac{\Delta z}{\Delta x}=\frac{f(x_0+\Delta x,y_0)-f(x_0,y_0)}{\Delta x}.$$&lt;/p&gt;
+&lt;h3 id=&#34;instantaneous-rate-of-change-of-a-scalar-field-with-respect-to-a-variable&#34;&gt;Instantaneous rate of change of a scalar field with respect to a variable&lt;/h3&gt;
+&lt;p&gt;If instead o measuring the rate of change in an interval, we measure the rate of change in a point, that is, when $\Delta x$ approaches 0, then we get the instantaneous rate of change that is the partial derivative with respect to $x$.&lt;/p&gt;
+&lt;p&gt;$$\lim_{\Delta x\rightarrow 0}\frac{\Delta z}{\Delta x}=\lim_{\Delta x \rightarrow 0}\frac{f(x_0+\Delta x,y_0)-f(x_0,y_0)}{\Delta x}.$$&lt;/p&gt;
+&lt;p&gt;The value of this limit, if exists, it is known as the &lt;em&gt;partial derivative&lt;/em&gt; of $f$ with respect to the variable $x$ at the point $(x_0,y_0)$; it is written as
+$$\frac{\partial f}{\partial x}(x_0,y_0).$$&lt;/p&gt;
+&lt;p&gt;This partial derivative measures the instantaneous rate of change of $f$ at the point $P=(x_0,y_0)$ when $P$ moves in the $x$-axis direction.&lt;/p&gt;
+&lt;h3 id=&#34;geometric-interpretation-of-partial-derivatives&#34;&gt;Geometric interpretation of partial derivatives&lt;/h3&gt;
+&lt;p&gt;Geometrically, a two-variable function $z=f(x,y)$ defines a surface. If we cut this surface with a plane of equation $y=y_0$ (that is, the plane where $y$ is the constant $y_0$) the intersection is a curve, and the partial derivative of $f$ with respect to to $x$ at $(x_0,y_0)$ is the slope of the tangent line to that curve at $x=x_0$.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/partial_tangent_surface.svg&#34; alt=&#34;Geometric interpretation of the partial derivative.&#34; width=&#34;350&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;/media/logo-geogebra.png#left&#34; /&gt; &lt;strong&gt;&lt;a href=&#34;https://ggbm.at/K3xnQRY8&#34; target=&#34;_blank&#34;&gt;Interactive Example&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;partial-derivative&#34;&gt;Partial derivative&lt;/h3&gt;
+&lt;p&gt;The concept of partial derivative can be extended easily from two-variable function to $n$-variables functions.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Partial derivative&lt;/strong&gt;. Given a $n$-variables function $f(x_1,\ldots,x_n)$, $f$ is &lt;em&gt;partially differentiable&lt;/em&gt; with respect to the variable $x_i$ at the point $a=(a_1,\ldots,a_n)$ if exists the limit&lt;/p&gt;
+&lt;p&gt;$$\lim_{\Delta x_i\rightarrow 0} \frac{f(a_1,\ldots,a_{i-1},a_i+\Delta x_i,a_{i+1},\ldots,a_n)-f(a_1,\ldots,a_{i-1},a_i,a_{i+1},\ldots,a_n)} {h}.$$&lt;/p&gt;
+&lt;p&gt;In such a case, the value of the limit is known as &lt;em&gt;partial derivative&lt;/em&gt; of $f$ with respect to $x_i$ at $a$; it is denoted&lt;/p&gt;
+&lt;p&gt;$$f&amp;rsquo;_{x_i}(a)=\frac{\partial f}{\partial x_i}(a).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Remark&lt;/strong&gt;. The definition of derivative for one-variable functions is a particular case of this definition for $n=1$.&lt;/p&gt;
+&lt;h3 id=&#34;partial-derivatives-computation&#34;&gt;Partial derivatives computation&lt;/h3&gt;
+&lt;p&gt;When we measure the variation of $f$ with respect to a variable $x_i$ at the point $a=(a_1,\ldots,a_n)$, the other variables remain constant. Thus, if we can consider the $i$-th partial function
+$$f_i(x_i)=f(a_1,\ldots,a_{i-1},x_i,a_{i+1},\ldots,a_n),$$&lt;/p&gt;
+&lt;p&gt;the partial derivative of $f$ with respect to $x_i$ can be computed differentiating this function:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial f}{\partial x_i}(a)=f_i&amp;rsquo;(a_i).$$&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    To differentiate partially $f(x_1,\ldots,x_n)$ with respect to the variable $x_i$, you have to differentiate $f$ as a function of the variable $x_i$, considering the other variables as constants.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example of a perfect gas&lt;/strong&gt;. Consider the function that measures the volume of a perfect gas
+$$v(t,p)=\frac{nRt}{p},$$ where $t$ is the temperature, $p$ the pressure and $n$ and $R$ are constants.&lt;/p&gt;
+&lt;p&gt;The instantaneous rate of change of the volume with respect to the pressure is the partial derivative of $v$ with respect to $p$. To compute this derivative we have to think in $t$ as a constant and differentiate $v$ as if the unique variable was $p$:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial v}{\partial p}(t,p)=\frac{d}{dp}\left(\frac{nRt}{p}\right)_{\mbox{$t=$cst}}=\frac{-nRt}{p^2}.$$&lt;/p&gt;
+&lt;p&gt;In the same way, the instantaneous rate of change of the volume with respect to the temperature is the partial derivative of $v$ with respect to $t$:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial v}{\partial t}(t,p)=\frac{d}{dt}\left(\frac{nRt}{p}\right)_{\mbox{$p=$cst}}=\frac{nR}{p}.$$&lt;/p&gt;
+&lt;h2 id=&#34;gradient&#34;&gt;Gradient&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Gradient&lt;/strong&gt;. Given a scalar field $f(x_1,\ldots,x_n)$, the &lt;em&gt;gradient&lt;/em&gt; of $f$, denoted by $\nabla f$, is a function that maps every point $a=(a_1,\ldots,a_n)$ to a vector with coordinates the partial derivatives of $f$ at $a$,&lt;/p&gt;
+&lt;p&gt;$$\nabla f(a)=\left(\frac{\partial f}{\partial x_1}(a),\ldots,\frac{\partial f}{\partial x_n}(a)\right).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-int&#34;&gt;
+  &lt;div&gt;
+    Later we will show that the gradient in a point is a vector with the magnitude and direction of the maximum rate of change of the function in that point. Thus, $\nabla f(a)$ points to direction of maximum increase of $f$ at $a$, while $-\nabla f(a)$ points to the direction of maximum decrease of $f$ at $a$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. After heating a surface, the temperature $t$ (in $^\circ$C) at each point $(x,y,z)$ (in m) of the surface is given by the function&lt;/p&gt;
+&lt;p&gt;$$t(x,y,z)=\frac{x}{y}+z^2.$$&lt;/p&gt;
+&lt;p&gt;In what direction will increase the temperature faster at point $(2,1,1)$ of the surface? What magnitude will the maximum increase of temperature have?&lt;/p&gt;
+&lt;p&gt;The direction of maximum increase of the temperature is given by the gradient&lt;/p&gt;
+&lt;p&gt;$$\nabla t(x,y,z)=\left(\frac{\partial t}{\partial x}(x,y,z),\frac{\partial t}{\partial y}(x,y,z),\frac{\partial t}{\partial z}(x,y,z)\right)=\left(\frac{1}{y},\frac{-x}{y^2},2z\right).$$&lt;/p&gt;
+&lt;p&gt;At point $(2,1,1)$ de direction is given by the vector&lt;/p&gt;
+&lt;p&gt;$$\nabla t(2,1,1)=\left(\frac{1}{1},\frac{-2}{1^2},2\cdot 1\right)=(1,-2,2),$$&lt;/p&gt;
+&lt;p&gt;and its magnitude is&lt;/p&gt;
+&lt;p&gt;$$|\nabla f(2,1,1)|=|\sqrt{1^2+(-2)^2+2^2}|=|\sqrt{9}|=3 \mbox{ $^\circ$C/m}.$$&lt;/p&gt;
+&lt;h2 id=&#34;composition-of-a-vectorial-field-with-a-scalar-field&#34;&gt;Composition of a vectorial field with a scalar field&lt;/h2&gt;
+&lt;h3 id=&#34;multivariate-chain-rule&#34;&gt;Multivariate chain rule&lt;/h3&gt;
+&lt;p&gt;If $f:\mathbb{R}^n\rightarrow \mathbb{R}$ is a scalar field and $g:\mathbb{R}\rightarrow \mathbb{R}^n$ is a vectorial function, then it is possible to compound $g$ with $f$, so that $f\circ g:\mathbb{R}\rightarrow \mathbb{R}$ is a one-variable function.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - Chain rule&lt;/strong&gt;. If $g(t)=(x_1(t),\ldots,x_n(t))$ is a vectorial function differentiable at $t$ and $f(x_1,\ldots,x_n)$ is a scalar field differentiable at the point $g(t)$, then $f\circ g(t)$ is differentiable at $t$ and&lt;/p&gt;
+&lt;p&gt;$$(f\circ g)&amp;rsquo;(t) = \nabla f(g(t))\cdot g&amp;rsquo;(t)=\frac{\partial f}{\partial x_1}\frac{dx_1}{dt}+ \cdots + \frac{\partial f}{\partial x_n}\frac{dx_n}{dt}$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Let us consider the scalar field $f(x,y)=x^2y$ and the vectorial function $g(t)=(\cos t,\sin t)$ $t\in [0,2\pi]$ in the real plane, then&lt;/p&gt;
+&lt;p&gt;$$\nabla f(x,y) = (2xy, x^2) \quad  \mbox{and} \quad g&amp;rsquo;(t) = (-\sin t, \cos t),$$&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+(f\circ g)&amp;rsquo;(t) &amp;amp;= \nabla f(g(t))\cdot g&amp;rsquo;(t) = (2\cos t\sin t,\cos^2 t)\cdot (-\sin t,\cos t) =\newline
+&amp;amp;= -2\cos t\sin^2 t+\cos^3 t.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;We can get the same result differentiating the composed function directly&lt;/p&gt;
+&lt;p&gt;$$(f\circ g)(t) = f(g(t)) = f(\cos t, \sin t) = \cos^2 t\sin t,$$&lt;/p&gt;
+&lt;p&gt;and its derivative is&lt;/p&gt;
+&lt;p&gt;$$(f\circ g)&amp;rsquo;(t) = 2\cos t(-\sin t)\sin t+\cos^2 t \cos t = -2\cos t\sin^2 t+\cos^3 t.$$&lt;/p&gt;
+&lt;p&gt;The chain rule for the composition of a vectorial function with a scalar field allow us to get the algebra of derivatives for one-variable functions easily:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+(u+v)&amp;rsquo; &amp;amp;= u&amp;rsquo;+v&amp;rsquo;\newline
+(uv)&amp;rsquo; &amp;amp;= u&amp;rsquo;v+uv&amp;rsquo;\newline
+\left(\frac{u}{v}\right)&amp;rsquo; &amp;amp;= \frac{u&amp;rsquo;v-uv&amp;rsquo;}{v^2}\newline
+(u\circ v)&amp;rsquo; &amp;amp;= u&amp;rsquo;(v)v&#39;
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;To infer the derivative of the sum of two functions $u$ and $v$, we can take the scalar field $f(x,y)=x+y$ and the vectorial function $g(t)=(u(t),v(t))$. Applying the chain rule we get&lt;/p&gt;
+&lt;p&gt;$$(u+v)&amp;rsquo;(t) = (f\circ g)&amp;rsquo;(t) = \nabla f(g(t))\cdot g&amp;rsquo;(t) = (1,1)\cdot (u&amp;rsquo;,v&amp;rsquo;) = u&amp;rsquo;+v&amp;rsquo;.$$&lt;/p&gt;
+&lt;p&gt;To infer the derivative of the quotient of two functions $u$ and $v$, we can take the scalar field $f(x,y)=x/y$ and the vectorial function $g(t)=(u(t),v(t))$.&lt;/p&gt;
+&lt;p&gt;$$\left(\frac{u}{v}\right)&amp;rsquo;(t) = (f\circ g)&amp;rsquo;(t) = \nabla f(g(t))\cdot g&amp;rsquo;(t) = \left(\frac{1}{v},-\frac{u}{v^2}\right)\cdot (u&amp;rsquo;,v&amp;rsquo;) = \frac{u&amp;rsquo;v-uv&amp;rsquo;}{v^2}.$$&lt;/p&gt;
+&lt;h2 id=&#34;tangent-plane-and-normal-line-to-a-surface&#34;&gt;Tangent plane and normal line to a surface&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;Let $C$ be the level set of a scalar field $f$ that includes a point $P$. If $\mathbf{v}$ is the velocity at $P$ of a trajectory following $C$, then&lt;/p&gt;
+&lt;p&gt;$$\nabla f(P) \cdot \mathbf{v} = 0.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-17&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-17&#34;&gt;
+      Proof
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-17&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;If we take the trajectory $g(t)$ that follows the level set $C$ and passes through $P$ at time $t=t_0$, that is $P=g(t_0)$, so $\mathbf{v}=g&amp;rsquo;(t_0)$, then&lt;/p&gt;
+&lt;p&gt;$$(f\circ g)(t) = f(g(t)) = f(P),$$&lt;/p&gt;
+&lt;p&gt;that is constant at any $t$. Thus, applying the chain rule we have&lt;/p&gt;
+&lt;p&gt;$$(f\circ g)&amp;rsquo;(t) = \nabla f(g(t))\cdot  g&amp;rsquo;(t) = 0,$$&lt;/p&gt;
+&lt;p&gt;and, particularly, at $t=t_0$, we have&lt;/p&gt;
+&lt;p&gt;$$\nabla f(P)\cdot \mathbf{v} = 0.$$&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;That means that the gradient of $f$ at $P$ is normal to $C$ at $P$, provided that the gradient is not zero.&lt;/p&gt;
+&lt;h3 id=&#34;normal-and-tangent-line-to-curve-in-the-plane&#34;&gt;Normal and tangent line to curve in the plane&lt;/h3&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Normal line to a curve in the plane&lt;/strong&gt;. According to the previous result, the normal line to a curve with equation $f(x,y)=0$ at point $P=(x_0,y_0)$, has equation&lt;/p&gt;
+&lt;p&gt;$$P+t\nabla f(P) = (x_0,y_0)+t\nabla f(x_0,y_0).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the scalar field $f(x,y)=x^2+y^2-25$, and the point $P=(3,4)$, the level set of $f$ that passes through $P$, that satisfies $f(x,y)=f(P)=0$, is the circle with radius 5 centred at the origin of coordinates. Thus, taking as a normal vector the gradient of $f$&lt;/p&gt;
+&lt;p&gt;$$\nabla f(x,y) = (2x,2y),$$&lt;/p&gt;
+&lt;p&gt;at the point $P=(3,4)$ is $\nabla f(3,4) = (6,8)$, and the normal line to the circle at $P$ is&lt;/p&gt;
+&lt;p&gt;$$P+t\nabla f(P) = (3,4)+t(6,8) = (3+6t,4+8t),$$&lt;/p&gt;
+&lt;p&gt;On the other hand, the tangent line to the circle at $P$ is&lt;/p&gt;
+&lt;p&gt;$$((x,y)-P)\cdot \nabla f(P) = ((x,y)-(3,4))\cdot (6,8) = (x-3,y-4)\cdot(6,8) = 6x+8y=50.$$&lt;/p&gt;
+&lt;h3 id=&#34;normal-line-and-tangent-plane-to-a-surface-in-the-space&#34;&gt;Normal line and tangent plane to a surface in the space&lt;/h3&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Normal line to a surface in the space&lt;/strong&gt;. if we have a surface with equation $f(x,y,z)=0$, at the point $P=(x_0,y_0,z_0)$ the normal line has equation&lt;/p&gt;
+&lt;p&gt;$$P+t\nabla f(P) = (x_0,y_0,z_0)+t\nabla f(x_0,y_0,z_0).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the scalar field $f(x,y,z)=x^2+y^2-z$, and the point $P=(1,1,2)$, the level set of $f$ that passes through $P$, that satisfies $f(x,y)=f(P)=0$, is the paraboloid $z=x^2+y^2$. Thus, taking as a normal vector the gradient of $f$&lt;/p&gt;
+&lt;p&gt;$$\nabla f(x,y,z) = (2x,2y,-1),$$&lt;/p&gt;
+&lt;p&gt;at the point $P=(1,1,2)$ is $\nabla f(1,1,2) = (2,2,-1)$, and the normal line to the paraboloid at $P$ is&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+P+t\nabla f(P)&amp;amp;= (1,1,2)+t\nabla f(1,1,2) = (1,1,2)+t(2,2,-1)\newline
+&amp;amp;= (1+2t,1+2t,2-t).
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;On the other hand, the tangent plane to the paraboloid at $P$ is&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+((x,y,z)-P)\cdot \nabla f(P) &amp;amp;= ((x,y,z)-(1,1,2))(2,2,-1) = (x-1,y-1,z-2)(2,2,-1)=\newline
+&amp;amp;= 2(x-1)+2(y-1)-(z-2) = 2x+2y-z-2= 0.
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;The graph of the paraboloid $f(x,y,z)=x^2+y^2-z=0$ and the normal line and the tangent plane to the graph of $f$ at the point $P=(1,1,2)$ are below.&lt;/p&gt;
+ &lt;img src=&#34;../img/derivativesn/tangent_plane_paraboloid.svg&#34; alt=&#34;Geometric interpretation of the partial derivative.&#34; width=&#34;350&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;/media/logo-geogebra.png#left&#34; /&gt; &lt;strong&gt;&lt;a href=&#34;https://ggbm.at/wTh7KKd3&#34; target=&#34;_blank&#34;&gt;Interactive Example&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;directional-derivative&#34;&gt;Directional derivative&lt;/h2&gt;
+&lt;p&gt;For a scalar field $f(x,y)$, we have seen that the partial derivative $\dfrac{\partial f}{\partial x}(x_0,y_0)$ is the instantaneous rate of change of $f$ with respect to $x$ at point $P=(x_0,y_0)$, that is, when we move along the $x$-axis.&lt;/p&gt;
+&lt;p&gt;In the same way, $\dfrac{\partial f}{\partial y}(x_0,y_0)$ is the instantaneous rate of change of $f$ with respect to $y$ at the point $P=(x_0,y_0)$, that is, when we move along the $y$-axis.&lt;/p&gt;
+&lt;p&gt;But, &lt;em&gt;what happens if we move along any other direction?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The instantaneous rate of change of $f$ at the point $P=(x_0,y_0)$ along the direction of a unitary vector $u$ is known as &lt;em&gt;directional derivative&lt;/em&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Directional derivative&lt;/strong&gt;. Given a scalar field $f$ of $\mathbb{R}^n$, a point $P$ and a unitary vector $\mathbf{u}$ in that space, we say that $f$ is differentiable at $P$ along the direction of $\mathbf{u}$ if exists the limit&lt;/p&gt;
+&lt;p&gt;$$f^\prime_{\mathbf{u}}(P) = \lim_{h\rightarrow 0}\frac{f(P+h\mathbf{u})-f(P)}{h}.$$&lt;/p&gt;
+&lt;p&gt;In such a case, the value of the limit is known as &lt;em&gt;directional derivative&lt;/em&gt; of $f$ at the point $P$ along the direction of $\mathbf{u}$.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - Directional derivative&lt;/strong&gt; . Given a scalar field $f$ of $\mathbb{R}^n$, a point $P$ and a unitary vector $\mathbf{u}$ in that space, the directional derivative of $f$ at the point $P$  along the direction of $\mathbf{u}$ can be computed as the dot product of the gradient of $f$ at $P$ and the unitary vector $\mathbf{u}$:&lt;/p&gt;
+&lt;p&gt;$$f^\prime_{\mathbf{u}}(P) = \nabla f(P)\cdot \mathbf{u}.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-22&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-22&#34;&gt;
+      Proof
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-22&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;If we consider a unitary vector $\mathbf{u}$, the trajectory that passes through $P$, following the direction of $\mathbf{u}$, has equation&lt;/p&gt;
+&lt;p&gt;$$g(t)=P+t\mathbf{u},\ t\in\mathbb{R}.$$&lt;/p&gt;
+&lt;p&gt;For $t=0$, this trajectory passes through the point $P=g(0)$ with velocity $\mathbf{u}=g&amp;rsquo;(0)$.&lt;/p&gt;
+&lt;p&gt;Thus, the directional derivative of $f$ at the point $P$ along the direction of $\mathbf{u}$ is&lt;/p&gt;
+&lt;p&gt;$$(f\circ g)&amp;rsquo;(0) = \nabla f(g(0))\cdot g&amp;rsquo;(0) = \nabla f(P)\cdot \mathbf{u}.$$&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    The partial derivatives are the directional derivatives along the vectors of the canonical basis.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the function $f(x,y) = x^2+y^2$, its gradient is&lt;/p&gt;
+&lt;p&gt;$$\nabla f(x,y) = (2x,2y).$$&lt;/p&gt;
+&lt;p&gt;The directional derivative of $f$ at the point $P=(1,1)$, along the unit vector $\mathbf{u}=(1/\sqrt{2},1/\sqrt{2})$ is&lt;/p&gt;
+&lt;p&gt;$$f_{\mathbf{u}}&amp;rsquo;(P) = \nabla f(P)\cdot \mathbf{u} = (2,2)\cdot(1/\sqrt{2},1/\sqrt{2}) = \frac{2}{\sqrt{2}}+\frac{2}{\sqrt{2}} = \frac{4}{\sqrt{2}}.$$&lt;/p&gt;
+&lt;p&gt;To compute the directional derivative along a non-unitary vector $\mathbf{v}$, we have to use the unitary vector that results from normalizing $v$ with the transformation&lt;/p&gt;
+&lt;p&gt;$$\mathbf{v&amp;rsquo;}=\frac{\mathbf{v}}{|\mathbf{v}|}.$$&lt;/p&gt;
+&lt;h3 id=&#34;geometric-interpretation-of-the-directional-derivative&#34;&gt;Geometric interpretation of the directional derivative&lt;/h3&gt;
+&lt;p&gt;Geometrically, a two-variable function $z=f(x,y)$ defines a surface. If we cut this surface with a plane of equation $a(y-y_0)=b(x-x_0)$ (that is, the vertical plane that passes through the point $P=(x_0,y_0)$ with the direction of vector $\mathbf{u}=(a,b)$) the intersection is a curve, and the directional derivative of $f$ at $P$ along the direction of $\mathbf{u}$ is the slope of the tangent line to that curve at point $P$.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/media/logo-geogebra.png#left&#34; /&gt; &lt;strong&gt;&lt;a href=&#34;https://ggbm.at/Bx8nFMNc&#34; target=&#34;_blank&#34;&gt;Interactive Example&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;growth-of-scalar-field-along-the-gradient&#34;&gt;Growth of scalar field along the gradient&lt;/h3&gt;
+&lt;p&gt;We have seen that for any vector $\mathbf{u}$&lt;/p&gt;
+&lt;p&gt;$$f^\prime_{\mathbf{u}}(P) = \nabla f(P)\cdot \mathbf{u} = |\nabla f(P)|\cos \theta,$$&lt;/p&gt;
+&lt;p&gt;where $\theta$ is the angle between $\mathbf{u}$ and the gradient $\nabla f(P)$.&lt;/p&gt;
+&lt;p&gt;Taking into account that $-1\leq \cos\theta\leq 1$, for any vector $\mathbf{u}$ it is satisfied that&lt;/p&gt;
+&lt;p&gt;$$-|\nabla f(P)|\leq f&amp;rsquo;_{\mathbf{u}}(P)\leq |\nabla f(P)| .$$&lt;/p&gt;
+&lt;p&gt;Furthermore, if $\mathbf{u}$ has the same direction and sense than the gradient, we have $f&amp;rsquo;_{\mathbf{u}}(P)=\vert\nabla f(P)\vert\cos 0=\vert\nabla f(P)\vert$.
+Therefore, &lt;em&gt;the maximum increase of a scalar field at a point $P$ is along the direction of the gradient at that point&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In the same manner, if $\mathbf{u}$ has the same direction but opposite sense than the gradient, we have $f_{\mathbf{u}}&amp;rsquo;(P)=\vert\nabla f(P)\vert\cos \pi=-\vert\nabla f(P)\vert$.
+Therefore, &lt;em&gt;the maximum decrease of a scalar field at a point $P$ is along the opposite direction of the gradient at that point&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;implicit-derivation&#34;&gt;Implicit derivation&lt;/h2&gt;
+&lt;p&gt;When we have a relation $f(x,y)=0$, sometimes we can consider $y$ as an &lt;em&gt;implicit function&lt;/em&gt; of $x$, at least in a neighbourhood of a point $(x_0,y_0)$.&lt;/p&gt;
+&lt;p&gt;The equation $x^2+y^2=25$, whose graph is the circle of radius 5 centred at the origin of coordinates, its not a function, because if we solve the equation for $y$, we have two images for some values of $x$,&lt;/p&gt;
+&lt;p&gt;$$y=\pm \sqrt{25-x^2}$$&lt;/p&gt;
+&lt;p&gt;However, near the point $(3,4)$ we can represent the relation as the function $y=\sqrt{25-x^2}$, and near the point $(3,-4)$ we can represent the relation as the function $y=-\sqrt{25-x^2}$.&lt;/p&gt;
+&lt;p&gt;If an equation $f(x,y)=0$ defines $y$ as a implicit function of $x$, $y=h(x)$, in a neighbourhood of $(x_0,y_0)$, then we can compute de derivative of $y$, $h&amp;rsquo;(x)$, even if we do not know the explicit formula for $h$.&lt;/p&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - Implicit derivation&lt;/strong&gt;. Let $f(x,y):\mathbb{R}^2\longrightarrow \mathbb{R}$ a two-variable function and let $(x_0,y_0)$ be a point in $\mathbb{R}^2$ such that $f(x_0,y_0)=0$. If $f$ has partial derivatives continuous at $(x_0,y_0)$ and $\frac{\partial f}{\partial y}(x_0,y_0)\neq 0$, then there is an open interval $I\subset \mathbb{R}$ with $x_0\in I$ and a function $h(x): I\longrightarrow \mathbb{R}$ such that&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$y_0=h(x_0)$.&lt;/li&gt;
+&lt;li&gt;$f(x,h(x))=0$ for all $x\in I$.&lt;/li&gt;
+&lt;li&gt;$h$ is differentiable on $I$, and $y&amp;rsquo;=h&amp;rsquo;(x)=\frac{-\dfrac{\partial f}{\partial x}}{\dfrac{\partial f}{\partial y}}$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Proof&lt;/strong&gt;. To prove the last result, take the trajectory $g(x)=(x,h(x))$ on the interval $I$. Then&lt;/p&gt;
+&lt;p&gt;$$(f\circ g)(x) = f(g(x)) = f(x,h(x))=0.$$&lt;/p&gt;
+&lt;p&gt;Thus, using the chain rule we have&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+(f\circ g)&amp;rsquo;(x) &amp;amp;= \nabla f(g(x))\cdot g&amp;rsquo;(x) = \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}\right)\cdot (1,h&amp;rsquo;(x)) = \newline
+&amp;amp;= \frac{\partial f}{\partial x}+\frac{\partial f}{\partial y}h&amp;rsquo;(x) = 0,
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;from where we can deduce&lt;/p&gt;
+&lt;p&gt;$$y&amp;rsquo;=h&amp;rsquo;(x)=\frac{-\dfrac{\partial f}{\partial x}}{\dfrac{\partial f}{\partial y}}.$$&lt;/p&gt;
+&lt;p&gt;This technique that allows us to compute $y&amp;rsquo;$ in a neighbourhood of $x_0$ without the explicit formula of $y=h(x)$, it is known as &lt;em&gt;implicit derivation&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Consider the equation of the circle of radius 5 centred at the origin $x^2+y^2=25$. It can also be written as&lt;/p&gt;
+&lt;p&gt;$$f(x,y) = x^2+y^2-25 = 0.$$
+Take the point $(3,4)$ that satisfies the equation, $f(3,4)=0$.&lt;/p&gt;
+&lt;p&gt;As $f$ have partial derivatives $\frac{\partial f}{\partial x}=2x$ and $\frac{\partial f}{\partial y}=2y$, that are continuous at $(3,4)$, and $\frac{\partial f}{\partial y}(3,4)=8\neq 0$, then $y$ can be expressed as a function of $x$ in a neighbourhood of $(3,4)$ and its derivative is&lt;/p&gt;
+&lt;p&gt;$$y&amp;rsquo;=\frac{-\frac{\partial f}{\partial x}}{\frac{\partial f}{\partial y}} = \frac{-2x}{2y}=\frac{-x}{y} \quad \mbox{and} \quad y&amp;rsquo;(3)=\frac{-3}{4}.$$&lt;/p&gt;
+&lt;p&gt;In this particular case, that we know the explicit formula of $y=\sqrt{1-x^2}$, we can get the same result computing the derivative as usual&lt;/p&gt;
+&lt;p&gt;$$y&amp;rsquo; = \frac{1}{2\sqrt{1-x^2}}(-2x) = \frac{-x}{\sqrt{1-x^2}}.$$&lt;/p&gt;
+&lt;p&gt;The implicit function theorem can be generalized to functions with several variables.&lt;/p&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - Implicit derivation&lt;/strong&gt;. Let $f(x_1,\ldots,x_n,y):\mathbb{R}^{n+1}\longrightarrow \mathbb{R}$ a $n+1$-variables function and let $(a_1,\ldots, a_n,b)$ be a point in $\mathbb{R}^{n+1}$ such that $f(a_1,\ldots,a_n,b)=0$. If $f$ has partial derivatives continuous at $(a_1,\ldots,a_n,b)$ and $\frac{\partial f}{\partial y}(a_1,\ldots,a_n,b)\neq 0$, then there is a region $I\subset \mathbb{R}^n$ with $(x_1,\ldots,x_n)\in I$ and a function $h(x_1,\ldots, x_n): I\longrightarrow \mathbb{R}$ such that&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$b=h(a_1,\ldots,a_n)$.&lt;/li&gt;
+&lt;li&gt;$f(x_1,\ldots,x_n,h(x_1,\ldots,x_n))=0$ for all $(x_1,\ldots,x_n)\in I$.&lt;/li&gt;
+&lt;li&gt;$h$ is differentiable on $I$, and $\dfrac{\partial y}{\partial x_i}=\frac{-\dfrac{\partial f}{\partial x_i}}{\dfrac{\partial f}{\partial y}}$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;second-order-partial-derivatives&#34;&gt;Second order partial derivatives&lt;/h2&gt;
+&lt;p&gt;As the partial derivatives of a function are also functions of several variables we can differentiate partially each of them.&lt;/p&gt;
+&lt;p&gt;If a function $f(x_1,\ldots,x_n)$ has a partial derivative $f^\prime_{x_i}(x_1,\ldots,x_n)$ with respect to the variable $x_i$ in a set $A$, then we can differentiate partially again $f_{x_i}^\prime$ with respect to the variable $x_j$. This second derivative, when exists, is known as &lt;em&gt;second order partial derivative&lt;/em&gt; of $f$ with respect to the variables $x_i$ and $x_j$; it is written as&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial ^2 f}{\partial x_j \partial x_i}= \frac{\partial}{\partial x_j}\left(\frac{\partial f}{\partial x_i}\right).$$&lt;/p&gt;
+&lt;p&gt;In the same way we can define higher order partial derivatives.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The two-variables function
+$$f(x,y)=x^y$$
+has 4 second order partial derivatives:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\frac{\partial^2 f}{\partial x^2}(x,y) &amp;amp;=
+\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial x}(x,y)\right) =
+\frac{\partial}{\partial x}\left(yx^{y-1}\right) =
+y(y-1)x^{y-2},\newline
+\frac{\partial^2 f}{\partial y \partial x}(x,y) &amp;amp;=
+\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}(x,y)\right) =
+\frac{\partial}{\partial y}\left(yx^{y-1}\right) =
+x^{y-1}+yx^{y-1}\log x,\newline
+\frac{\partial^2 f}{\partial x \partial y}(x,y) &amp;amp;=
+\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}(x,y)\right) =
+\frac{\partial}{\partial x}\left(x^y\log x \right) =
+yx^{y-1}\log x+x^y\frac{1}{x},\newline
+\frac{\partial^2 f}{\partial y^2}(x,y) &amp;amp;=
+\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial y}(x,y)\right) =
+\frac{\partial}{\partial y}\left(x^y\log x \right) =
+x^y(\log x)^2.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h2 id=&#34;hessian-matrix-and-hessian&#34;&gt;Hessian matrix and Hessian&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Hessian matrix&lt;/strong&gt;. Given a scalar field $f(x_1,\ldots,x_n)$, with second order partial derivatives at the point $a=(a_1,\ldots,a_n)$, the &lt;em&gt;Hessian matrix&lt;/em&gt; of $f$ at $a$, denoted by $\nabla^2f(a)$, is the matrix&lt;/p&gt;
+&lt;p&gt;$$
+\nabla^2f(a)=\left(
+\begin{array}{cccc}
+\dfrac{\partial^2 f}{\partial x_1^2}(a) &amp;amp;
+\dfrac{\partial^2 f}{\partial x_1 \partial x_2}(a) &amp;amp;
+\cdots &amp;amp;
+\dfrac{\partial^2 f}{\partial x_1 \partial x_n}(a)\newline
+\dfrac{\partial^2 f}{\partial x_2 \partial x_1}(a) &amp;amp;
+\dfrac{\partial^2 f}{\partial x_2^2}(a) &amp;amp;
+\cdots &amp;amp;
+\dfrac{\partial^2 f}{\partial x_2 \partial x_n}(a)\newline
+\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \newline
+\dfrac{\partial^2 f}{\partial x_n \partial x_1}(a) &amp;amp;
+\dfrac{\partial^2 f}{\partial x_n \partial x_2}(a) &amp;amp;
+\cdots &amp;amp;
+\dfrac{\partial^2 f}{\partial x_n^2}(a)
+\end{array}
+\right)
+$$&lt;/p&gt;
+&lt;p&gt;The determinant of this matrix is known as &lt;em&gt;Hessian&lt;/em&gt; of $f$ at $a$; it is denoted $Hf(a)=\vert\nabla^2f(a)\vert$.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Consider again the two-variables function&lt;/p&gt;
+&lt;p&gt;$$f(x,y)=x^y.$$&lt;/p&gt;
+&lt;p&gt;Its Hessian matrix is&lt;/p&gt;
+&lt;p&gt;$$
+\nabla^2f(x,y) =
+\left(
+\begin{array}{cc}
+\dfrac{\partial^2 f}{\partial x^2} &amp;amp; \dfrac{\partial^2 f}{\partial x \partial y}\newline
+\dfrac{\partial^2 f}{\partial y \partial x} &amp;amp; \dfrac{\partial^2 f}{\partial y^2}
+\end{array}
+\right) =
+\left(\begin{array}{cc}
+y(y-1)x^{y-2} &amp;amp; x^{y-1}(y\log x+1) \newline
+x^{y-1}(y\log x+1) &amp;amp; x^y(\log x)^2
+\end{array}
+\right).
+$$&lt;/p&gt;
+&lt;p&gt;At point $(1,2)$ is&lt;/p&gt;
+&lt;p&gt;$$
+\nabla^2 f(1,2) =
+\left(
+\begin{array}{cc}
+2(2-1)1^{2-2} &amp;amp; 1^{2-1}(2\log 1+1) \newline
+1^{2-1}(2\log 1+1) &amp;amp; 1^2(\log 1)^2
+\end{array}
+\right) =
+\left(
+\begin{array}{cc}
+2 &amp;amp; 1 \newline
+1 &amp;amp; 0
+\end{array}
+\right).
+$$&lt;/p&gt;
+&lt;p&gt;And its Hessian is&lt;/p&gt;
+&lt;p&gt;$$
+Hf(1,2)=\left|
+\begin{array}{cc}
+2 &amp;amp; 1 \newline
+1 &amp;amp; 0
+\end{array}
+\right|=
+2\cdot 0-1\cdot1= -1.
+$$&lt;/p&gt;
+&lt;h3 id=&#34;symmetry-of-second-partial-derivatives&#34;&gt;Symmetry of second partial derivatives&lt;/h3&gt;
+&lt;p&gt;In the previous example we can observe that the &lt;em&gt;mixed derivatives&lt;/em&gt; of second order $\frac{\partial^2 f}{\partial y\partial x}$ and $\frac{\partial^2 f}{\partial x\partial y}$ are the same. This fact is due to the following result.&lt;/p&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - Symmetry of second partial derivatives&lt;/strong&gt;. If $f(x_1,\ldots,x_n)$ is a scalar field with second order partial derivatives $\frac{\partial^2 f}{\partial x_i\partial x_j}$ and $\frac{\partial^2 f}{\partial x_j\partial x_i}$ continuous at a point $(a_1,\ldots,a_n)$, then&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial^2 f}{\partial x_i\partial x_j}(a_1,\ldots,a_n)=\frac{\partial^2 f}{\partial x_j\partial x_i}(a_1,\ldots,a_n).$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;This means that when computing a second partial derivative.&lt;/p&gt;
+&lt;p&gt;As a consequence, if the function satisfies the requirements of the theorem for all the second order partial derivatives, the Hessian matrix is symmetric.&lt;/p&gt;
+&lt;h2 id=&#34;taylor-polynomials&#34;&gt;Taylor polynomials&lt;/h2&gt;
+&lt;h3 id=&#34;linear-approximation-of-a-scalar-field&#34;&gt;Linear approximation of a scalar field&lt;/h3&gt;
+&lt;p&gt;In a previous chapter we saw how to approximate a one-variable function with a Taylor polynomial. This can be generalized to several-variables functions.&lt;/p&gt;
+&lt;p&gt;If $P$ is a point in the domain of a scalar field $f$ and $\mathbf{v}$ is a vector, the first degree &lt;em&gt;Taylor formula&lt;/em&gt; of $f$ around $P$ is&lt;/p&gt;
+&lt;p&gt;$$f(P+\mathbf{v}) = f(P) + \nabla f(P)\cdot \mathbf{v} +R^1_{f,P}(\mathbf{v}),$$&lt;/p&gt;
+&lt;p&gt;where&lt;/p&gt;
+&lt;p&gt;$$P^1_{f,P}(\mathbf{v}) = f(P)+\nabla f(P)\mathbf{v}$$&lt;/p&gt;
+&lt;p&gt;is the first degree &lt;em&gt;Taylor polynomial&lt;/em&gt; of $f$ at $P$, and $R^1_{f,P}(\mathbf{v})$ is the &lt;em&gt;Taylor remainder&lt;/em&gt; for the vector $\mathbf{v}$, that is the error in the approximation.&lt;/p&gt;
+&lt;p&gt;The remainder satisfies&lt;/p&gt;
+&lt;p&gt;$$\lim_{|\mathbf{v}|\rightarrow 0} \frac{R^1_{f,P}(\mathbf{v})}{|\mathbf{v}|} = 0$$&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    The first degree Taylor polynomial for a function of two variables is the tangent plane to the graph of $f$ at $P$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;linear-approximation-of-a-two-variable-function&#34;&gt;Linear approximation of a two-variable function&lt;/h3&gt;
+&lt;p&gt;If $f$ is a scalar field of two variables $f(x,y)$ and $P=(x_0,y_0)$, as for any point $Q=(x,y)$ we can take the vector $\mathbf{v}=\vec{PQ}=(x-x_0,y-y_0)$, then the first degree Taylor polynomial of $f$ at $P$, can be written as&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+P^1_{f,P}(x,y) &amp;amp;= f(x_0,y_0)+\nabla f(x_0,y_0)(x-x_0,y-y_0) =\newline
+&amp;amp;= f(x_0,y_0)+\frac{\partial f}{\partial x}(x_0,y_0)(x-x_0)+\frac{\partial f}{\partial y}(x_0,y_0)(y-y_0).
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the scalar field $f(x,y)=\log(xy)$, its gradient is&lt;/p&gt;
+&lt;p&gt;$$\nabla f(x,y) = \left(\frac{1}{x},\frac{1}{y}\right),$$&lt;/p&gt;
+&lt;p&gt;and the first degree Taylor polynomial at the point $P=(1,1)$ is&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+P^1_{f,P}(x,y) &amp;amp;= f(1,1) +\nabla f(1,1)\cdot (x-1,y-1) = \newline
+&amp;amp;= \log 1+(1,1)\cdot(x-1,y-1) = x-1+y-1 = x+y-2.
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;This polynomial approximates $f$ near the point $P$. For instance,&lt;/p&gt;
+&lt;p&gt;$$f(1.01,1.01) \approx P^1_{f,P}(1.01,1.01) = 1.01+1.01-2 = 0.02.$$&lt;/p&gt;
+&lt;p&gt;The graph of the scalar field $f(x,y)=\log(xy)$ and the first degree Taylor polynomial of $f$ at the point $P=(1,1)$ is below.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/first_degree_taylor_polynomial.svg&#34; alt=&#34;First degree Taylor polynomial&#34; width=&#34;350&#34;&gt;
+&lt;h3 id=&#34;quadratic-approximation-of-a-scalar-field&#34;&gt;Quadratic approximation of a scalar field&lt;/h3&gt;
+&lt;p&gt;If $P$ is a point in the domain of a scalar field $f$ and $\mathbf{v}$ is a vector, the second degree &lt;em&gt;Taylor formula&lt;/em&gt; of $f$ around $P$ is&lt;/p&gt;
+&lt;p&gt;$$f(P+\mathbf{v}) = f(P) + \nabla f(P)\cdot \mathbf{v} + \frac{1}{2}\left(\mathbf{v}\nabla^2f(P)\mathbf{v}\right) + R^2_{f,P}(\mathbf{v}),$$&lt;/p&gt;
+&lt;p&gt;where&lt;/p&gt;
+&lt;p&gt;$$P^2_{f,P}(\mathbf{v})f(P)+\nabla f(P)\mathbf{v}+\frac{1}{2}\left(\mathbf{v}\nabla^2f(P)\mathbf{v}\right)$$&lt;/p&gt;
+&lt;p&gt;is the second degree &lt;em&gt;Taylor polynomial&lt;/em&gt; of $f$ at the point $P$, and $R^2_{f,P}(\mathbf{v})$ is the &lt;em&gt;Taylor remainder&lt;/em&gt; for the vector $\mathbf{v}$, that is the error in the approximation.&lt;/p&gt;
+&lt;p&gt;The remainder satisfies&lt;/p&gt;
+&lt;p&gt;$$\lim_{|\mathbf{v}\rightarrow 0|} \frac{R^2_{f,P}(\mathbf{v})}{|\mathbf{v}|^2} = 0.$$&lt;/p&gt;
+&lt;p&gt;This means that the remainder is smaller than the square of the module of $\mathbf{v}$.&lt;/p&gt;
+&lt;h3 id=&#34;quadratic-approximation-of-a-two-variable-function&#34;&gt;Quadratic approximation of a two-variable function&lt;/h3&gt;
+&lt;p&gt;If $f$ is a scalar field of two variables $f(x,y)$ and $P=(x_0,y_0)$, then the second degree Taylor polynomial of $f$ at $P$, can be written as&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+P^2_{f,P}(x,y) &amp;amp;= f(x_0,y_0)+\nabla f(x_0,y_0)(x-x_0,y-y_0) + \newline &amp;amp; +
+\frac{1}{2}(x-x_0,y-y_0)\nabla^2f(x_0,y_0)(x-x_0,y-y_0)= \newline
+&amp;amp; = f(x_0,y_0)+\frac{\partial f}{\partial x}(x_0,y_0)(x-x_0)+\frac{\partial f}{\partial y}(x_0,y_0)(y-y_0)+ \newline &amp;amp; +
+\frac{1}{2}(\frac{\partial^2 f}{\partial x^2}(x_0,y_0) (x-x_0)^2 + 2\frac{\partial^2 f}{\partial y\partial x}(x_0,y_0)(x-x_0)(y-y_0) + \newline &amp;amp; + \frac{\partial^2 f}{\partial y^2}(x_0,y_0)(y-y_0^2))
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the scalar field $f(x,y)=\log(xy)$, its gradient is&lt;/p&gt;
+&lt;p&gt;$$\nabla f(x,y) = \left(\frac{1}{x},\frac{1}{y}\right),$$&lt;/p&gt;
+&lt;p&gt;its Hessian matrix is&lt;/p&gt;
+&lt;p&gt;$$Hf(x,y) = \left(
+\begin{array}{cc}
+\frac{-1}{x^2} &amp;amp; 0\newline
+0 &amp;amp; \frac{-1}{y^2}
+\end{array}
+\right)$$&lt;/p&gt;
+&lt;p&gt;and the second degree Taylor polynomial of $f$ at the point $P=(1,1)$ is&lt;/p&gt;
+&lt;p&gt;$$\begin{aligned}
+P^2_{f,P}(x,y) &amp;amp;= f(1,1) +\nabla f(1,1)\cdot (x-1,y-1) +\newline
+&amp;amp;+ \frac{1}{2}(x-1,y-1)\nabla^2f(1,1)\cdot(x-1,y-1)=\newline
+&amp;amp;= \log 1+(1,1)\cdot(x-1,y-1) +\newline
+&amp;amp;+ \frac{1}{2}(x-1,y-1)
+\left(
+\begin{array}{cc}
+-1 &amp;amp; 0\newline
+0 &amp;amp; -1
+\end{array}
+\right)
+\left(
+\begin{array}{c}
+x-1\newline
+y-1
+\end{array}
+\right)
+= \newline
+&amp;amp;= x-1+y-1+\frac{-x^2-y^2+2x+2y-2}{2} =\newline
+&amp;amp;= \frac{-x^2-y^2+4x+4y-6}{2}.
+\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;Thus,
+$$
+\begin{aligned}
+f(1.01,1.01) \approx P^1_{f,P}(1.01,1.01) &amp;amp;= \frac{-1.01^2-1.01^2+4\cdot 1.01+4\cdot 1.01-6}{2} \newline
+&amp;amp;= 0.0199.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;The graph of the scalar field $f(x,y)=\log(xy)$ and the second degree Taylor polynomial of $f$ at the point $P=(1,1)$ is below.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/second_degree_taylor_polynomial.svg&#34; alt=&#34;Second degree Taylor polynomial&#34; width=&#34;350&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;/media/logo-geogebra.png#left&#34; /&gt; &lt;strong&gt;&lt;a href=&#34;https://ggbm.at/Ehnz3hGb&#34; target=&#34;_blank&#34;&gt;Interactive Example&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;relative-extrema&#34;&gt;Relative extrema&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Relative extrema&lt;/strong&gt;.
+A scalar field $f$ in $\mathbb{R}^n$ has a &lt;em&gt;relative maximum&lt;/em&gt; at a point $P$ if there is a value $\epsilon&amp;gt;0$ such that&lt;/p&gt;
+&lt;p&gt;$$f(P)\geq f(X)\ \forall X, |\vec{PX}|&amp;lt;\epsilon.$$&lt;/p&gt;
+&lt;p&gt;$f$ has a &lt;em&gt;relative minimum&lt;/em&gt; at $f$ if there is a value $\epsilon&amp;gt;0$ such that&lt;/p&gt;
+&lt;p&gt;$$f(P)\leq f(X)\ \forall X, |\vec{PX}|&amp;lt;\epsilon.$$&lt;/p&gt;
+&lt;p&gt;Both relative maxima and minima are known as &lt;em&gt;relative extrema&lt;/em&gt; of $f$.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;critical-points&#34;&gt;Critical points&lt;/h3&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - Critical points&lt;/strong&gt;. If a scalar field $f$ in $\mathbb{R}^n$ has a relative maximum or minimum at a point $P$, then $P$ is a &lt;em&gt;critical or stationary point&lt;/em&gt; of $f$, that is, a point where the gradient vanishes&lt;/p&gt;
+&lt;p&gt;$$\nabla f(P) = 0.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-31&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-31&#34;&gt;
+      Proof
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-31&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Taking the trajectory that passes through $P$ with the direction of the gradient at that point $$g(t)=P+t\nabla f(P),$$ the function $h=(f\circ g)(t)$ does not decrease at $t=0$ since&lt;/p&gt;
+&lt;p&gt;$$h&amp;rsquo;(0)= (f\circ g)&amp;rsquo;(0) = \nabla f(g(0))\cdot g&amp;rsquo;(0) = \nabla f(P)\cdot \nabla f(P) = |\nabla f(P)|^2\geq 0,$$&lt;/p&gt;
+&lt;p&gt;and it only vanishes if $\nabla f(P)=0$.&lt;/p&gt;
+&lt;p&gt;Thus, if $\nabla f(P)\neq 0$, $f$ can not have a relative maximum at $P$ since following the trajectory of $g$ from $P$ there are points where $f$ has an image greater than the image at $P$. In the same way, following the trajectory of $g$ in the opposite direction there are points where $f$ has an image less than the image at $P$, so $f$ can not have relative minimum at $P$.&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the scalar field $f(x,y)=x^2+y^2$, it is obvious that $f$ only has a relative minimum at $(0,0)$ since&lt;/p&gt;
+&lt;p&gt;$$f(0,0)=0 \leq f(x,y)=x^2+y^2,\ \forall x,y\in \mathbb{R}.$$&lt;/p&gt;
+&lt;p&gt;Is easy to check that $f$ has a critical point at $(0,0)$, that is $\nabla f(0,0) = 0$.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/paraboloid_minimum.svg&#34; alt=&#34;Relative minimum of a two-variable function&#34; width=&#34;300&#34;&gt;
+&lt;h3 id=&#34;saddle-points&#34;&gt;Saddle points&lt;/h3&gt;
+&lt;p&gt;Not all the critical points of a scalar field are points where the scalar field has relative extrema. If we take, for instance, the scalar field $f(x,y)=x^2-y^2$, its gradient is&lt;/p&gt;
+&lt;p&gt;$$\nabla f(x,y) = (2x,-2y),$$&lt;/p&gt;
+&lt;p&gt;that only vanishes at $(0,0)$. However, this point is not a relative maximum since the points $(x,0)$ in the $x$-axis have images $f(x,0)=x^2\geq
+0=f(0,0)$, nor a relative minimum since the points $(0,y)$ in the $y$-axis have images $f(0,y)=-y^2\leq
+0=f(0,0)$. This type of critical points that are not relative extrema are known as &lt;em&gt;saddle points&lt;/em&gt;.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/saddle_point.svg&#34; alt=&#34;Saddle point of a two-variable function&#34; width=&#34;300&#34;&gt;
+&lt;h3 id=&#34;analysis-of-the-relative-extrema&#34;&gt;Analysis of the relative extrema&lt;/h3&gt;
+&lt;p&gt;From the second degree Taylor’s formula of a scalar field $f$ at a point $P$ we have&lt;/p&gt;
+&lt;p&gt;$$f(P+\mathbf{v})-f(P)\approx \nabla f(P)\mathbf{v}+\frac{1}{2}\nabla^2f(P)\mathbf{v}\cdot\mathbf{v}.$$&lt;/p&gt;
+&lt;p&gt;Thus, if $P$ is a critical point of $f$, as $\nabla f(P)=0$, we have&lt;/p&gt;
+&lt;p&gt;$$f(P+\mathbf{v})-f(P)\approx \frac{1}{2}\nabla^2f(P)\mathbf{v}\cdot\mathbf{v}.$$&lt;/p&gt;
+&lt;p&gt;Therefore, the sign of the $f(P+\mathbf{v})-f(P)$ is the sign of the second degree term $\nabla^2f(P)\mathbf{v}\cdot\mathbf{v}$.&lt;/p&gt;
+&lt;p&gt;There are four possibilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Definite positive: $\nabla^2f(P)\mathbf{v}\cdot\mathbf{v}&amp;gt;0$ $\forall \mathbf{v}\neq 0$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Definite negative: $\nabla^2f(P)\mathbf{v}\cdot\mathbf{v}&amp;lt;0$ $\forall \mathbf{v}\neq 0$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Indefinite: $\nabla^2f(P)\mathbf{v}\cdot\mathbf{v}&amp;gt;0$ for some $\mathbf{v}\neq 0$ and $\nabla^2f(P)\mathbf{u}\cdot\mathbf{u}&amp;lt;0$ for some $\mathbf{u}\neq 0$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Semidefinite: In any other case.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thus, depending on de sign of $\nabla^2 f(P)\mathbf{v}\cdot\mathbf{v}$, we have&lt;/p&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt;.
+Given a critical point $P$ of a scalar field $f$, it holds that&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $\nabla^2f(P)$ is definite positive then $f$ has a relative minimum at $P$.&lt;/li&gt;
+&lt;li&gt;If $\nabla^2f(P)$ is definite negative then $f$ has a relative maximum at $P$.&lt;/li&gt;
+&lt;li&gt;If $\nabla^2f(P)$ is indefinite then $f$ has a saddle point at $P$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When $\nabla^2f(P)$ is semidefinite we can not draw any conclusion and we need higher order partial derivatives to classify the critical point.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;analysis-of-the-relative-extrema-of-a-scalar-field-in-mathbbr2&#34;&gt;Analysis of the relative extrema of a scalar field in $\mathbb{R}^2$&lt;/h3&gt;
+&lt;p&gt;In the particular case of a scalar field of two variables, we have&lt;/p&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt;.
+Given a critical point $P=(x_0,y_0)$ of a scalar field $f(x,y)$, it holds that&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $Hf(P)&amp;gt;0$ and $\dfrac{\partial^2 f}{\partial x^2}(x_0,y_0)&amp;gt;0$ then $f$ has a relative minimum at $P$.&lt;/li&gt;
+&lt;li&gt;If $Hf(P)&amp;gt;0$ and $\dfrac{\partial^2 f}{\partial x^2}(x_0,y_0)&amp;lt;0$ then $f$ has a relative maximum at $P$.&lt;/li&gt;
+&lt;li&gt;IF $Hf(P)&amp;lt;0$ then $f$ has a saddle point at $P$.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the scalar field $f(x,y)=\dfrac{x^3}{3}-\dfrac{y^3}{3}-x+y$, its gradient is&lt;/p&gt;
+&lt;p&gt;$$\nabla f(x,y)= (x^2-1,-y^2+1),$$&lt;/p&gt;
+&lt;p&gt;and it has critical points at $(1,1)$, $(1,-1)$, $(-1,1)$ and $(-1,-1)$.&lt;/p&gt;
+&lt;p&gt;The hessian matrix is&lt;/p&gt;
+&lt;p&gt;$$\nabla^2f(x,y) = \left(
+\begin{array}{cc}
+2x &amp;amp; 0\newline
+0 &amp;amp; -2y
+\end{array}
+\right)$$&lt;/p&gt;
+&lt;p&gt;and the hessian is&lt;/p&gt;
+&lt;p&gt;$$Hf(x,y) = -4xy.$$&lt;/p&gt;
+&lt;p&gt;Thus, we have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Point $(1,1)$: $Hf(1,1)=-4&amp;lt;0 \Rightarrow$ Saddle point.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Point $(1,-1)$: $Hf(1,-1)=4&amp;gt;0$ and $\frac{\partial^2}{\partial x^2}(1,-1)=2&amp;gt;0 \Rightarrow$ Relative min.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Point $(-1,1)$: $Hf(-1,1)=4&amp;gt;0$ and $\frac{\partial^2}{\partial x^2}(-1,1)=-2&amp;lt;0 \Rightarrow$ Relative max.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Point $(-1,-1)$: $Hf(-1,-1)=-4&amp;lt;0 \Rightarrow$ Saddle point.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The graph of the function $f(x,y)=\dfrac{x^3}{3}-\dfrac{y^3}{3}-x+y$ and their relative extrema and saddle points are shown below.&lt;/p&gt;
+&lt;img src=&#34;../img/derivativesn/extrema_analysis.svg&#34; alt=&#34;Relative extrema and saddle points of a two-variable function&#34; width=&#34;350&#34;&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Turtle | Aprende con Alf</title>
+    <link>/tag/turtle/</link>
+      <atom:link href="/tag/turtle/index.xml" rel="self" type="application/rss+xml" />
+    <description>Turtle</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language><lastBuildDate>Thu, 01 Jan 1970 01:33:39 +0100</lastBuildDate>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Turtle</title>
+      <link>/tag/turtle/</link>
+    </image>
+    
+    <item>
+      <title>Estrellas regulares</title>
+      <link>/docencia/python/retos/estrellas-regulares/</link>
+      <pubDate>Thu, 01 Jan 1970 01:33:39 +0100</pubDate>
+      <guid>/docencia/python/retos/estrellas-regulares/</guid>
+      <description>&lt;h2 id=&#34;tarea&#34;&gt;Tarea&lt;/h2&gt;
+&lt;p&gt;El reto consiste en programar una función que dibuje estrellas como la que aparece a continuación con un número de puntas dado.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/estrella.png&#34; alt=&#34;Estrella&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Para ello hay que utilizar el módulo de Python 
+&lt;a href=&#34;https://docs.python.org/3/library/turtle.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Turtle&lt;/a&gt; que permite realizar trazos sencillos en una ventana gráfica.&lt;/p&gt;
+&lt;p&gt;En el siguiente video hay una introducción básica al módulo Turtle.&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/cX9efszLbJw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;Y también dispones de una 
+&lt;a href=&#34;doc/PythonTurtle-cheatsheet.pdf&#34;&gt;hoja de resumen con las principales funciones de Turtle&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;solución&#34;&gt;Solución&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/retos/soluciones/dibujo-estrellas-turtle.ipynb&#34; class=&#34;btn btn-info&#34; target=&#34;_blank&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

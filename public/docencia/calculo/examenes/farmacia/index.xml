@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exámenes de Cálculo de Farmacia | Aprende con Alf</title>
+    <link>/docencia/calculo/examenes/farmacia/</link>
+      <atom:link href="/docencia/calculo/examenes/farmacia/index.xml" rel="self" type="application/rss+xml" />
+    <description>Exámenes de Cálculo de Farmacia</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Exámenes de Cálculo de Farmacia</title>
+      <link>/docencia/calculo/examenes/farmacia/</link>
+    </image>
+    
+    <item>
+      <title>Examen de Farmacia 2021-01-18</title>
+      <link>/docencia/calculo/examenes/farmacia/farmacia-2021-01-18/</link>
+      <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>/docencia/calculo/examenes/farmacia/farmacia-2021-01-18/</guid>
+      <description>&lt;p&gt;Grados: Farmacia y Biotecnología&lt;br&gt;
+Fecha: 18 de enero de 2021&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Un medicamento se administra por vía intravenosa a una velocidad de 15 mg/hora. Al mismo tiempo, el cuerpo metaboliza el medicamento a una velocidad del 80% de la cantidad presente en el cuerpo por hora.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Si el medicamento se administra de forma indefinida y suponiendo que al principio no había nada de medicamento en el cuerpo, ¿cuál será la máxima cantidad de medicamento que habrá en el
+cuerpo?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Si el medicamento deja de administrarse después de haber administrado 150 mg, ¿cuánto tiempo tiene que pasar desde ese momento hasta que la cantidad de medicamento en el cuerpo sea 10
+mg?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Sea $x(t)$ la cantidad de medicamento en el cuerpo en el instante $t$.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Ecuación diferencial: $x&amp;rsquo;=15-0.8x$. Condición inicial $x(0)=0$. Solución particular: $x(t)=18.75-18.75e^{-0.8t}$ y la cantidad máxima de medicamento en el cuerpo será 18.75 mg.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ecuación diferencial: $x&amp;rsquo;=-0.8x$. Condición inicial $x(0)=18.74$. Solución particular: $x(t)=18.74e^{-0.8t}$ y el tiempo que tarda en haber una cantidad de 10 mg en el cuerpo es $0.7851$ horas.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RlqKkf1Sxpk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;La función $T(x,y)=\ln(3xy+2x^2-y)$ da la temperatura de la superficie de una montaña en la latitud $x$ y longitud $y$. Unos montañeros están perdidos en la posición $(1,2)$ y corren el riesgo de morir congelados.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;¿En qué dirección deben moverse para evitar el riesgo de congelación lo más rápidamente posible?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Si se mueven en una dirección equivocada de manera que la longitud decrece la mitad de lo que aumenta la latitud, ¿aumentará o disminuirá el riesgo de hipotermia?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;¿En qué dirección deben moverse para que la temperatura permanezca constante?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$\nabla T(1,2)=\frac{1}{3}(5,1)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sea $\mathbf{u}$ el vector $(1,-1/2)$, entonces $T&amp;rsquo;_{\mathbf{u}}(1,2) = \frac{3}{\sqrt{5}}$ ºC.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Siguiendo la dirección del vector $(1,-5)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NQ5ra7-IiOY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;Una pelota de playa tiene un volumen de 50 dm$^3$ en el momento que empieza a introducirse aire a razón de 2 dm$^3$/min.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;¿A qué velocidad cambiará el radio?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;¿Aproximadamente cuándo la superficie de la pelota se habrá duplicado?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Nota: El volumen de una esfera es $V(r)=\frac{4}{3}\pi r^3$ y la superficie $S(r)=4\pi r^2$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-4&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-4&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-4&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$\dfrac{dr}{dt}=0.0305$ dm/min.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Usando la aproximación lineal del diferencial $dt = S&amp;rsquo;/dS=37.5013$ minutos aproximadamente.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-5&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-5&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-5&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/JJK5kPhko0M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examen de Farmacia 2019-12-16</title>
+      <link>/docencia/calculo/examenes/farmacia/farmacia-2019-12-16/</link>
+      <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/docencia/calculo/examenes/farmacia/farmacia-2019-12-16/</guid>
+      <description>&lt;p&gt;Grados: Farmacia y Biotecnología
+Fecha: 16 de diciembre de 2019&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Una laguna contaminada con nitratos contiene 1000 toneladas de nitratos disueltos en 6 millones de metros cúbicos de agua.
+Para descontaminar la laguna se empieza a introducir agua pura a razón de 100000 metros cúbicos por día y se saca la misma cantidad de agua contaminada.
+Suponiendo que la concentración de nitratos se mantiene uniforme en la laguna, ¿cuál será la cantidad de nitratos en la laguna después de 2 semanas?
+Si la concentración máxima de nitratos para no considerar el agua contaminada es de $0.1$ kg/m$^3$, ¿cuándo se puede considerar que la laguna está descontaminada?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Sea $n(t)$ la cantidad de nitratos en la laguna en el instante $t$.&lt;br&gt;
+Ecuación diferencial: $n&amp;rsquo;=-n/60$.&lt;br&gt;
+Solución: $n(t)=10^6 e^{-t/60}$.&lt;br&gt;
+$n(14)=791889.6$ kg.&lt;br&gt;
+La laguna estará descontaminada después de $30.6495$ días.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;La temperatura $T$ de una reacción depende de las concentraciones de dos substancias $x$ e $y$ estando relacionadas por la expresión $$T(x,y)=-x^3+4x^2y-3y^2$$.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Si la concentración de las substancias $x$ e $y$ son 2 y 1 respectivamente, ¿cuál tendría que ser la variación de las mismas para que la temperatura se incrementase lo más rápidamente posible? ¿Cuál es la variación de la temperatura si cambiamos las concentraciones en esa dirección?&lt;/li&gt;
+&lt;li&gt;¿Cómo tendrían que incrementarse las concentraciones para que la tasa de variación de la temperatura fuese 10?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$x$ e $y$ deben cambiar siguiendo la dirección del vector gradiente $\nabla T(2,1) = (4, 10)$. A lo largo de esta dirección la tasa de variación instantánea de la temperatura es $|\nabla T(2,1)|=10.77$ ºC (gr/dl)$^{-1}$.&lt;/li&gt;
+&lt;li&gt;$x$ e $y$ deben cambiar siguiendo la dirección del vector unitario $(0, 1)$, es decir, $x$ debe mantenerse constante.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;Se administra una medicina a un enfermo y t horas después la concentración en sangre del principio activo viene dada por $c(t) = t^2e^{-t/2}$ miligramos por mililitro.
+Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular el valor máximo de la concentración e indicar en qué momento se alcanza dicho valor máximo.2. Estudiar la concavidad y calcular los puntos de inflexión de la concentración.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;El valor máximo se alcanza para $t=4$ horas y $c(4)=16e^{-2}$ mg/dl.&lt;/li&gt;
+&lt;li&gt;Hay dos puntos de inflexión en $t=1.1716$ y $t=6.8284$.&lt;br&gt;
+La función es cóncava hacia arriba en $(-\infty, 1.1716) \cup (6.8284, \infty)$ y cóncava hacia abajo en $(1.1716, 6.8284)$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examen de Farmacia 2018-12-17</title>
+      <link>/docencia/calculo/examenes/farmacia/farmacia-2018-12-17/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/docencia/calculo/examenes/farmacia/farmacia-2018-12-17/</guid>
+      <description>&lt;p&gt;Grados: Farmacia y Biotecnología&lt;br&gt;
+Fecha: 17 de diciembre de 2018&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Se sabe que un organismo metaboliza el alcohol a una velocidad de la mitad de la cantidad presente.
+Si inicialmente no había nada de alcohol y comenzamos a introducir alcohol a un ritmo constante de 2 ml/min, ¿qué cantidad de alcohol habrá en el organismo transcurridos 5 minutos?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Sea $a(t)$ la cantidad de alcohol en el organismo en el instante $t$.&lt;br&gt;
+Ecuación diferencial: $a&amp;rsquo;=2-a/2$.&lt;br&gt;
+Solución: $a(t)=4-4e^{-t/2}$.&lt;br&gt;
+$a(5)=3.6717$ ml.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;La cantidad $y$ de bacterias de tipo $B$ (en miles) en un cultivo está relacionado con la cantidad $x$ de bacterias de tipo $A$ (también en miles) mediante la función $y=f(x)$.
+Sabiendo que en este cultivo se cumple la ecuación $x^2y^3-6x^3y^2+2xy=1$ y que $f(1/2)=2$, estudiar si $f$ podría tener un máximo relativo en $x=1/2$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Derivada implícita: $y&amp;rsquo;= \dfrac{-2xy^3+18x^2y^2+2y}{3x^2y^2-12x^3y+2x}$.&lt;br&gt;
+$y&amp;rsquo;(1/2)=6\neq 0$, de manera que $f$ no tiene un máximo local en $x=1/2$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;Se han diseñado unas cápsulas con forma piramidal con base un rectángulo de lados  $a=3$ cm, $b=4$ cm, y altura $h=6$ cm.
+Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;¿Cómo deben cambiar las dimensiones de la cápsula para que el volumen aumente lo más rápidamente posible? ¿Cuál sería la tasa de variación del volumen si cambian las dimensiones de la cápsula en la proporciones anteriores?&lt;/li&gt;
+&lt;li&gt;Si se empiezan a cambiar las dimensiones de la cápsula de manera que el lado mayor del rectángulo disminuye la mitad de lo que aumenta el lado menor, y la altura aumenta el doble de lo que aumenta el lado menor, ¿cuál sería la tasa de variación del volumen de la cápsula en las condiciones anteriores?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Nota: El volumen de una pirámide es $1/3$ del área la base por la altura.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$\nabla V(3,4,6)=(8,6,4)$ y el volumen aumentará a razón de $|\nabla V(3,4,6)|=10.7703$ cm$^3$/s si cambiamos las dimensiones de la cápsula siguiendo esa dirección.&lt;/li&gt;
+&lt;li&gt;Derivada direccional de $V$ en $(3,4,6)$ siguiendo la dirección del vector $\mathbf{u}=(1,-1/2,2)$: $V&amp;rsquo;_{\mathbf{u}}(3,4,6)=5.6737$ cm$^3$/s.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;El rendimiento de una cosecha $y$ depende de las concentraciones de nitrógeno $n$ y fósforo $p$ según la ecuación
+$$y(n,p)=\frac{np}{e^{n+p}}.$$
+Calcular el valor de $n$ y $p$ que maximiza el rendimiento de la cosecha.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      $n=1$ y $p=1$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examen de Farmacia 2018-01-19</title>
+      <link>/docencia/calculo/examenes/farmacia/farmacia-2018-01-19/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/docencia/calculo/examenes/farmacia/farmacia-2018-01-19/</guid>
+      <description>&lt;p&gt;Grados: Farmacia y Biotecnología&lt;br&gt;
+Fecha: 19 de enero de 2018&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Obtén el plano tangente a la superficie $S: e^xy-zy^2+\frac{x^4}{z}=-1$ en el punto $P=(0,1,2)$ y la recta tangente a la curva obtenida al intersecar $S$ con el plano $z=2$ en el mismo punto $P$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Plano tangente: $x-3y-z+5=0$.&lt;br&gt;
+Recta tangente: $(3t,1+t)$ o $y=\frac{x}{3}+1$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;Se sabe que un organismo metaboliza el alcohol a un ritmo del triple de la cantidad de alcohol presente en cada instante.
+Si en el instante inicial el organismo no contiene alcohol y se empieza a suministrar alcohol a un ritmo constante de 12 cl la hora, ¿cuánto alcohol habrá en el organismo al cabo de 5 horas?
+¿Cuál será la máxima cantidad de alcohol que tendrá el organismo? ¿Cuándo alcanzará dicha cantidad?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Sea $y(t)$ la cantidad de alcohol en el organismo en el instante $t$.&lt;br&gt;
+Ecuación diferencia: $y&amp;rsquo;=12-3y$.&lt;br&gt;
+Solución: $y(t)=4-4e^{-3t}$.&lt;br&gt;
+$y(5)=3.99$ cl.&lt;br&gt;
+La cantidad máxima de alcohol será 4 cl y se alcanzará en $t=\infty$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;Tres alelos $A$, $B$ y $0$ determinan los cuatro grupos sanguíneos $A$ ($AA$ o $A0$), $B$ ($BB$ o $BO$), $0$ ($00$) y $AB$.
+La ley de Hardy-Weinberg establece que la proporción de individuos en una población que tiene dos alelos diferentes es&lt;/p&gt;
+&lt;p&gt;$$
+p(x,y,z)=2xy+2xz+2yz
+$$&lt;/p&gt;
+&lt;p&gt;donde $x$, $y$ y $z$ son las proporciones de $A$, $B$ y $O$ en la población.
+Calcular el máximo de $p$ sabiendo que $x+y+z=1$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Hay un mínimo local en $(\frac{1}{3},\frac{1}{3})$ y $f(\frac{1}{3},\frac{1}{3})=\frac{2}{3}$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;La ecuación&lt;/p&gt;
+&lt;p&gt;$$
+\ln z - \frac{x^2y}{z}=-1
+$$&lt;/p&gt;
+&lt;p&gt;expresa el equilibrio en una reacción en la que intervienen tres sustancias $x$, $y$ y $z$.
+Considerando a $z$ como una función implícita de $x$ e $y$, calcular la variación que experimenta $z$ en el instante en que $x=y=z=1$, cuando $y$ decrece a la misma velocidad de que crece $x$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Derivada direccional de $z$ en $(1,1,1)$ siguiendo la dirección del vector $\mathbf{v}=(1,-1)$: $z&amp;rsquo;_\mathbf{v}(1,1,1)=\frac{1}{2\sqrt{2}}$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examen de Farmacia 2017-11-06</title>
+      <link>/docencia/calculo/examenes/farmacia/farmacia-2017-11-06/</link>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/docencia/calculo/examenes/farmacia/farmacia-2017-11-06/</guid>
+      <description>&lt;p&gt;Grados: Farmacia y Biotecnología&lt;br&gt;
+Fecha: 6 de noviembre de 2017&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Un adenoma (tumor benigno) suele tener forma esférica.
+Se sabe que a lo largo del tiempo el radio del adenoma varía con una tasa igual a la mitad de su valor en cada momento.
+Determinar la variación del volumen del tumor cuando el radio es de 5mm.&lt;/p&gt;
+&lt;p&gt;Si el radio se ha medido con un margen de error de $\pm 0.01$ mm, ¿cuál será el margen de error en la medición del volumen?&lt;/p&gt;
+&lt;p&gt;Nota: El volumen de una esfera es $\frac{4}{3}\pi r^3$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Tasa de variación del volumen: $250\pi$ mm³/s.&lt;br&gt;
+Error en el volumen: $\pi$ mm³.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;El peso de un bebé durante los primeros meses de vida crece de manera proporcional al inverso del peso.
+Un bebé pesa 3.3 kg al nacer y 4.3 kg después de un mes.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Calcular el peso cuando el bebé tiene un año.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;¿Cuánto tiempo tiene que pasar para que el bebé tenga un peso de 8 kg?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;¿Es el modelo del peso bueno para estudiar el cambio de peso durante toda la vida de la persona?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;Sea $w(t)$ e peso del beé en el instante $t$.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ecuación diferencial: $w&amp;rsquo;=\dfrac{k}{w}$&lt;br&gt;
+Solución particular: $w(t)=\sqrt{7.6t+10.89}$.&lt;br&gt;
+$w(12)=10.1$ kg.&lt;/li&gt;
+&lt;li&gt;7 meses.&lt;/li&gt;
+&lt;li&gt;No, porque la función es siempre creciente.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;La función $f(x,y)=ye^{-x^2-\frac{1}{2}y^2}$, expresa la cantidad de una sustancia $z=f(x,y)$ en función de otras dos $x$ e $y$ en una reacción química.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Calcular el valor máximo local de $z$ teniendo en cuenta que $x\geq 0$ e $y\geq 0$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;¿Cuál será la variación de $z$ cuando $x=1$ e $y=0$, si comenzamos a aumentar la cantidad de $x$ al doble de ritmo de la de $y$?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Calcular el polinomio de Taylor de segundo grado de $f$ en el punto $(1,0)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$f$ tiene un máximo local en $(0,1)$ y el máximo valor es $z=f(0,1)=1/\sqrt{e}$.&lt;/li&gt;
+&lt;li&gt;Derivada direccional de $f$ en $(1,0)$ siguiendo la dirección del vector $v=(2,1)$: $f&amp;rsquo;_v(1,0)=\frac{1}{e\sqrt{5}}$.&lt;/li&gt;
+&lt;li&gt;$P^2_{f,(1,0)}(x,y)=\displaystyle\frac{-2xy+3y}{e}$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;Dada la función vectorial $h(t)=(t\cos(t), \cos(t), \ln(t^2+1))$, calcular la ecuación de la recta tangente y del plano normal a la trayectoria de $h$ en el punto $(0,1,0)$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Recta tangente: $(t,1,0)$.&lt;br&gt;
+Plano normal: $x=0$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examen de Farmacia 2017-01-10</title>
+      <link>/docencia/calculo/examenes/farmacia/farmacia-2017-01-10/</link>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/docencia/calculo/examenes/farmacia/farmacia-2017-01-10/</guid>
+      <description>&lt;p&gt;Grados: Farmacia y Biotecnología&lt;br&gt;
+Fecha: 10 de enero de 2017&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Un cultivo de bacterias crece al ritmo de la raíz cuadrada del número de bacterias en el cultivo.
+¿Cuánto se habrá incrementado el número de bacterias con respecto al número inicial tras una hora del comienzo del cultivo?
+¿Cuánto tiempo debe pasar para que el número de bacterias inicial se haya cuadruplicado?&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Sea $x(t)$ el número de bacterias en el instante $t$.&lt;br&gt;
+Solución particular: $x(t)=(\frac{t}{2}+C)^2$.&lt;br&gt;
+El número de bacterias habrá aumentado $\frac{1}{4}+C$ una hora después del comienzo del cultivo.&lt;br&gt;
+El número de bacterias se habrá cuadruplicado en el instante $t=2C$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;En un proceso químico, la temperatura depende de la cantidad de dos sustancias $x$ e $y$ de acuerdo a la fórmula $T(x,y)=4x^3+y^3-3xy$.
+Teniendo en cuenta que las cantidades de $x$ e $y$ no pueden ser negativas, estudiar los extremos relativos y los puntos de silla de la temperatura.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      $T$ tiene un punto de silla en $(0,0)$ y un mínimo local $(\frac{\sqrt[3]{4}}{4},\frac{\sqrt[3]{2}}{2})$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;Un modelo ecológico explica el número de individuos de una población mediante la función
+$$f(x,t)=\dfrac{e^t}{x},$$
+donde $t$ es el tiempo y $x$ el número de predadores en la región.
+Calcular el valor aproximado de individuos en la población para $t=0.1$ y $x=0.9$ utilizando el polinomio de Taylor de segundo grado de la función en el punto $(1,0)$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      Polinomio de Taylor de segundo orden de $f$ en el punto $(1,0)$: $P^2_{f,(1,0)}(x,y)=3-3x+2t+x^2+\frac{t^2}{2}-xt$.&lt;br&gt;
+$P^2_{f,(1,0)}(0.9,0.1)=1.225$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;Una partícula se mueve en el espacio de manera que su posición en cada instante $t$ viene dado por la función $f(t)=(e^{t/2}, \operatorname{sen}^2(t), \sqrt[3]{1-t})$.
+Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular los vectores velocidad y aceleración en el instante $t=0$.&lt;br&gt;
+Nota: La velocidad es la variación del espacio con respecto al tiempo y la aceleración es la variación de la velocidad con respecto al tiempo.&lt;/li&gt;
+&lt;li&gt;Calcular el plano normal a la trayectoria de la partícula en el instante $t=0$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$f&amp;rsquo;(t)=(\frac{e^{t/2}}{2},2\operatorname{sen} t \cos t, \frac{-(1-t)^{-2/3}}{3})$ y $f&amp;rsquo;(0)=(\frac{1}{2},0,-\frac{1}{3})$.&lt;br&gt;
+$f&amp;rsquo;&amp;rsquo;(t)=(\frac{e^{t/2}}{4},2(\cos^2 t-\operatorname{sen}^2 t), \frac{-2(1-t)^{-5/3}}{9})$ y $f&amp;rsquo;&amp;rsquo;(0)=(\frac{1}{4},2,-\frac{2}{9})$.&lt;/li&gt;
+&lt;li&gt;Plano normal a la trayectoria en el instante $t=0$: $3x-2z=1$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examen de Farmacia 2016-11-07</title>
+      <link>/docencia/calculo/examenes/farmacia/farmacia-2016-11-07/</link>
+      <pubDate>Mon, 07 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>/docencia/calculo/examenes/farmacia/farmacia-2016-11-07/</guid>
+      <description>&lt;p&gt;Grados: Farmacia y Biotecnología&lt;br&gt;
+Fecha: 7 de noviembre de 2016&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;La relación entre la cantidad de dos sustancias $x$ e $y$ (en mg) en una reacción química viene dada por la ecuación
+$$
+\log(\sqrt{x^2+y^2}) = y.
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Calcular la ecuación de las rectas tangente y normal a la gráfica de $y$ como función de $x$ en el punto $(1,0)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;En el mismo punto, calcular la variación aproximada que experimenta $y$ para una variación de $x$ de 2 mg.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;Recta tangente: $y=x-1$.&lt;br&gt;
+Recta normal: $y=-x+1$.&lt;/li&gt;
+&lt;li&gt;$\Delta y\approx 2$ mg.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;La temperatura en cualquier punto de un espacio tridimensional viene dada por la función
+$$
+T(x,y,z)= \frac{e^{xy}}{z}
+$$&lt;/p&gt;
+&lt;p&gt;Si nos encontramos en el punto $(1,1,1)$,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;¿cuál será la dirección en que la temperatura decrecerá lo más rápidamente posible? ¿Cuál será la tasa de variación de la temperatura en esa dirección? Interpretarla.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Calcular e interpretar la derivada direccional en la dirección en que $y$ aumenta el doble de $x$ y $z$ aumenta la mitad que $x$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;$-\nabla f(1,1,1)=(-e,-e,e)$. La tasa de decrecimiento es $\sqrt{3}e$.&lt;/li&gt;
+&lt;li&gt;Tomando el vector $\mathbf{u}=(1,2,1/2)$, $f_{\mathbf{u}}&amp;rsquo;(1,1,1)=5e/\sqrt{21}$, lo que quiere decir que por cada unidad que se avance en la dirección del vector $(1,2,1/2)$ la función aumentará $5e/\sqrt{21}$ unidades.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;El crecimiento alométrico explica la relación entre el tamaño de diversas partes de un organismo.
+Si $x(t)$ e $y(t)$ son los tamaños de dos órganos de un cuerpo de edad $t$, la relación viene dada por la ecuación
+$$
+\frac{1}{y}\frac{dy}{dt} = k \frac{1}{x}\frac{dx}{dt},
+$$
+donde $k$ es una constante positiva.
+Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Dar la ecuación diferencial que exprese $y$ en función de $x$ (es decir, tomando como variable independiente $x$ y como variable dependiente $y$) y resolverla para $y$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Suponiendo que $y$ es la masa de una célula y $x$ su volumen, con $k=0.0794$, calcular $y$ como función de $x$, sabiendo que a la edad en la que el volumen es 1000 $\mu$m$^3$, la masa es 1 ng.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-2&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-2&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-2&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;ol&gt;
+&lt;li&gt;Ecuación diferencial: $y&amp;rsquo;=k\dfrac{y}{x}$.&lt;br&gt;
+Solución general: $y=cx^k$.&lt;/li&gt;
+&lt;li&gt;Solución particular: $y=0.5778 x^{0.0794}$.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;Estudiar los extremos relativos y puntos de silla de la función $f(x,y)=e^y(y^2-x^2)$.&lt;/p&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      $f$ tiene un punto de silla en $(0,0)$ y un máximo local en $(0,-2)$.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,2205 @@
+<!DOCTYPE html><html lang="es-es" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alfredo Sánchez Alberca">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Tipos de estudios estadísticos más habituales con ejemplos implementados en R.">
+
+  
+  <link rel="alternate" hreflang="es-es" href="/docencia/r/estudios-estadisticos/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#6f5499">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700%7CSource Sans Pro:400+400italic%7COpen Sans:400+400italic%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/docencia/r/estudios-estadisticos/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@aprendeconalf">
+  <meta property="twitter:creator" content="@aprendeconalf">
+  
+  <meta property="og:site_name" content="Aprende con Alf">
+  <meta property="og:url" content="/docencia/r/estudios-estadisticos/">
+  <meta property="og:title" content="Tipos de estudios estadísticos | Aprende con Alf">
+  <meta property="og:description" content="Tipos de estudios estadísticos más habituales con ejemplos implementados en R."><meta property="og:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png">
+  <meta property="twitter:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png"><meta property="og:locale" content="es-es">
+  
+    
+    <meta property="article:modified_time" content="2022-03-13T11:26:15&#43;01:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Tipos de estudios estadísticos | Aprende con Alf</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Buscar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Buscar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Sobre mi</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Docencia</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/docencia/calculo/"><span>Cálculo</span></a>
+            
+              <a class="dropdown-item" href="/docencia/estadistica/"><span>Estadística</span></a>
+            
+              <a class="dropdown-item" href="/docencia/r/"><span>R</span></a>
+            
+              <a class="dropdown-item" href="/docencia/python/"><span>Python</span></a>
+            
+              <a class="dropdown-item" href="/docencia/spss/"><span>SPSS</span></a>
+            
+              <a class="dropdown-item" href="/docencia/geogebra/"><span>Geogebra</span></a>
+            
+              <a class="dropdown-item" href="/docencia/git/"><span>Git</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Proyectos</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publicaciones</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contacto</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Buscar"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Claro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Oscuro</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automático</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Buscar..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+ 
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/docencia/r/">Análisis de datos con R</a>
+    <ul class="nav docs-sidenav">
+          <li class=""><a href="/docencia/r/ejercicios/">Ejercicios de Bioestadística con R y el paquete rkTeaching</a></li>
+        
+          <li class="active"><a href="/docencia/r/estudios-estadisticos/">Tipos de estudios estadísticos</a></li>
+        </ul>
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">En esta página</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#una-variable-cuantitativa">Una variable cuantitativa</a>
+      <ul>
+        <li><a href="#estudios-descriptivos">Estudios descriptivos</a></li>
+        <li><a href="#estudios-inferenciales">Estudios inferenciales</a></li>
+      </ul>
+    </li>
+    <li><a href="#una-variable-cualitativa">Una variable cualitativa</a>
+      <ul>
+        <li><a href="#estudios-descriptivos-1">Estudios descriptivos</a></li>
+        <li><a href="#estudios-inferenciales-1">Estudios inferenciales</a></li>
+      </ul>
+    </li>
+    <li><a href="#dos-variables-variable-dependiente-cuantitativa-y-variable-independiente-culitativa-con-dos-categorías-o-grupos">Dos variables: Variable dependiente cuantitativa y variable independiente culitativa con dos categorías o grupos</a>
+      <ul>
+        <li><a href="#estudios-descriptivos-2">Estudios descriptivos</a></li>
+        <li><a href="#estudios-inferenciales-2">Estudios inferenciales</a></li>
+      </ul>
+    </li>
+    <li><a href="#dos-variables-variable-dependiente-cuantitativa-y-variable-independiente-culitativa-con-dos-categorías-o-grupos-pareados">Dos variables: Variable dependiente cuantitativa y variable independiente culitativa con dos categorías o grupos pareados</a>
+      <ul>
+        <li><a href="#estudios-descriptivos-3">Estudios descriptivos</a></li>
+        <li><a href="#estudios-inferenciales-3">Estudios inferenciales</a></li>
+      </ul>
+    </li>
+    <li><a href="#dos-variables-variable-dependiente-cuantitativa-y-variable-independiente-culitativa-con-más-de-dos-categorías-o-grupos">Dos variables: Variable dependiente cuantitativa y variable independiente culitativa con más de dos categorías o grupos</a>
+      <ul>
+        <li><a href="#estudios-descriptivos-4">Estudios descriptivos</a></li>
+        <li><a href="#estudios-inferenciales-4">Estudios inferenciales</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Tipos de estudios estadísticos</h1>
+
+          <div class="article-style">
+            <p>El tipo de estudio estadístico más apropiado en cada caso depende de varios factores:</p>
+<ul>
+<li>El objetivo del estudio.</li>
+<li>El número de variables que intervienen.</li>
+<li>El tipo de las variables dependientes e independientes.</li>
+<li>La naturaleza de las observaciones (independientes o emparejadas).</li>
+</ul>
+<p>A continuación se presentan los estudios estadísticos más habituales en función de estos factores. La siguiente tabla puede ayudar a identificar el más apropiado en cada caso.</p>
+<table width="1054" cellspacing="0" cellpadding="5" border="1">
+<tbody>
+<tr>
+<td bgcolor="#6d9eeb" width="95">
+<p><strong>Variables independientes</strong></p>
+</td>
+<td bgcolor="#6d9eeb" width="88">
+<p><strong>Variable dependiente</strong></p>
+</td>
+<td bgcolor="#6d9eeb" width="315">
+<p><strong>Objetivo</strong></p>
+</td>
+<td bgcolor="#6d9eeb" width="330">
+<p><strong>Ejemplo</strong></p>
+</td>
+<td bgcolor="#6d9eeb" width="174">
+<p><strong>Contraste</strong></p>
+</td>
+</tr>
+<tr>
+<td rowspan="6" width="95" height="14">
+<p>Ninguna<br /> (Una poblaci&oacute;n)</p>
+</td>
+<td rowspan="2" width="88">
+<p>Cuantitativa</p>
+</td>
+<td rowspan="2" width="315">
+<p>Contrastar la normalidad de una variable</p>
+</td>
+<td rowspan="2" width="330">
+<p>Comprobar si la nota de un examen tiene distribuci&oacute;n normal (forma de campana de Gauss)</p>
+</td>
+<td width="174">
+<p>Komogorov-Smirnov<br /> (requiere muestras grandes)</p>
+</td>
+</tr>
+<tr>
+<td width="174">
+<p>Shapiro-Willks</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cuantitativa normal</p>
+</td>
+<td width="315">
+<p>Contrastar si la media poblacional de una variable tiene un valor determinado</p>
+</td>
+<td width="330">
+<p>Comprobar si la nota media de un examen es 5</p>
+</td>
+<td width="174">
+<p>Test T para la media de una poblaci&oacute;n</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cuantitativa o cualitativa ordinal</p>
+</td>
+<td width="315">
+<p>Contrastar si la mediana poblacional de una variable tiene un valor determinado</p>
+</td>
+<td width="330">
+<p>Comprobar si la calificaci&oacute;n mediana de un examen es Aprobado</p>
+</td>
+<td width="174">
+<p>Test para la mediana de una poblaci&oacute;n</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cualitativa (2 categor&iacute;as)</p>
+</td>
+<td width="315">
+<p>Contrastar si la proporci&oacute;n poblacional de una de las categor&iacute;as tiene un valor determinado</p>
+</td>
+<td width="330">
+<p>Comprobar si la proporci&oacute;n de aprobados es de la mitad (o que el porcentaje es 50%)</p>
+</td>
+<td width="174">
+<p>Test Binomial</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cualitativa</p>
+</td>
+<td width="315">
+<p>Contrastar si las proporciones de cada una de las categor&iacute;as tienen un valor determinado</p>
+</td>
+<td width="330">
+<p>Comprobar si las proporciones de alumnos matriculados en ciencias, letras o mixtas son 0.5, 0.2 y 0.3 respectivamente</p>
+</td>
+<td width="174">
+<p>Test Chi-cuadrado de bondad de ajuste</p>
+</td>
+</tr>
+<tr>
+<td rowspan="7" width="95" height="13">
+<p>Una cualitativa con dos categor&iacute;as independientes <br /> (Dos poblaciones independientes)</p>
+</td>
+<td rowspan="3" width="88">
+<p>Cuantitativa normal</p>
+</td>
+<td width="315">
+<p>Contrastar si hay diferencias entre las medias la variable dependiente en dos poblaciones independientes</p>
+</td>
+<td width="330">
+<p>Comprobar si el grupo de ma&ntilde;ana y el grupo de tarde han tenido notas medias diferentes</p>
+</td>
+<td width="174">
+<p>Test T para la comparaci&oacute;n de medias de poblaciones independientes</p>
+</td>
+</tr>
+<tr>
+<td width="315">
+<p>Contrastar si hay diferencias entre las varianzas de la variable dependiente en dos poblaciones independientes</p>
+</td>
+<td width="330">
+<p>Comprobar si hay diferencias entre la variabilidad de las notas del grupo de ma&ntilde;ana y el de tarde</p>
+</td>
+<td width="174">
+<p>Test F de Fisher</p>
+</td>
+</tr>
+<tr>
+<td width="315">
+<p>Contrastar si hay concordancia o acuerdo entre las dos variables</p>
+</td>
+<td width="330">
+<p>Comprobar si hay concordancia o acuerdo entre las notas que ponen dos profesores distintos para los mismos ex&aacute;menes</p>
+</td>
+<td width="174">
+<p>Correlaci&oacute;n intraclase</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" width="88">
+<p>Cuantitativa o cualitativa ordinal</p>
+</td>
+<td width="315">
+<p>Contrastar si hay diferencias entre las distribuciones de la variable dependiente en dos poblaciones independientes</p>
+</td>
+<td width="330">
+<p>Comprobar si el grupo de ma&ntilde;ana y el grupo de tarde han tenido calificaciones diferentes</p>
+</td>
+<td width="174">
+<p>Test de la U de Mann-Whitney</p>
+</td>
+</tr>
+<tr>
+<td width="315">
+<p>Contrastar si hay concordancia o acuerdo entre las dos variables</p>
+</td>
+<td width="330">
+<p>Comprobar si hay concordancia o acuerdo entre las calificaciones que ponen dos profesores distintos para los mismos ex&aacute;menes</p>
+</td>
+<td width="174">
+<p>Kappa de Cohen</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" width="88">
+<p>Cualitativa</p>
+</td>
+<td width="315">
+<p>Contrastar si hay relaci&oacute;n entre las dos variables o bien si hay diferencias entre las proporciones de las categor&iacute;as de la variable dependiente en las dos poblaciones definidas por las categor&iacute;as de la variable independiente</p>
+</td>
+<td width="330">
+<p>Comprobar si existe relaci&oacute;n entre los aprobados en una asignatura y el grupo al que pertenecen los alumnos, es decir, si la proporci&oacute;n de aprobados es diferente en dos grupos distintos.</p>
+</td>
+<td width="174">
+<p>Test Chi-cuadrado <br /> (si no ha m&aacute;s del 20% de frecuencias esperadas menores que 5)<br /> Test exacto de Fisher</p>
+</td>
+</tr>
+<tr>
+<td width="315">
+<p>Contrastar si hay concordancia o acuerdo entre las dos variables</p>
+</td>
+<td width="330">
+<p>Comprobar si hay concordancia o acuerdo entre la valoraci&oacute;n (aprobado o suspenso) que hacen dos profesores distintos para los mismos ex&aacute;menes</p>
+</td>
+<td width="174">
+<p>Kappa de Cohen</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3" width="95" height="14">
+<p>Una cualitativa con dos categor&iacute;as relacionadas o pareadas<br /> (Dos poblaciones relacionadas o pareadas)</p>
+</td>
+<td width="88">
+<p>Cuantitativa normal</p>
+</td>
+<td width="315">
+<p>Contrastar si hay diferencias entre las medias de la variable dependiente en dos poblaciones relacionadas o pareadas</p>
+</td>
+<td width="330">
+<p>Comprobar si las notas medias de dos asignaturas cursadas por los mismos alumnos han sido diferentes o si las notas medias de un examen realizado al comienzo del curso (antes) y otro al final (despu&eacute;s) de una misma asignatura han sido diferentes</p>
+</td>
+<td width="174">
+<p>Test T para la comparaci&oacute;n de medias de poblaciones relacionadas o pareadas</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cuantitativa o cualitativa ordinal</p>
+</td>
+<td width="315">
+<p>Contrastar si hay diferencias entre las distribuciones de la variable dependiente en dos poblaciones relacionadas o pareadas</p>
+</td>
+<td width="330">
+<p>Comprobar si las calificaciones de dos asignaturas cursadas por los mismos alumnos han sido diferentes</p>
+</td>
+<td width="174">
+<p>Test de Wilcoxon</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cualitativa con dos categor&iacute;as</p>
+</td>
+<td width="315">
+<p>Contrastar si hay diferencias entre las proporciones de las categor&iacute;as de la variable dependiente en dos poblaciones relacionadas o pareadas</p>
+</td>
+<td width="330">
+<p>Comprobar si la proporci&oacute;n o el porcentaje de aprobados en un examen es distinta al comienzo y al final del curso</p>
+</td>
+<td width="174">
+<p>Test de McNemar</p>
+</td>
+</tr>
+<tr>
+<td rowspan="4" width="95" height="14">
+<p>Una cualitativa con dos o m&aacute;s categor&iacute;as</p>
+<p>independientes<br /> (Dos o m&aacute;s poblaciones independientes)</p>
+</td>
+<td width="88">
+<p>Cuantitativa normal y homogeneidad de varianzas</p>
+</td>
+<td width="315">
+<p>Contrastar si hay diferencias entre las medias la variable dependiente en cada una de las poblaciones definidas por las categor&iacute;as de la variable independiente</p>
+</td>
+<td width="330">
+<p>Comprobar si existen diferencias entre las notas medias de tres grupos distintos de clase.</p>
+</td>
+<td width="174">
+<p>An&aacute;lisis de la Varianza de un factor (ANOVA)<br /> Si hay diferencias &gt; Test de Tukey o Bonferroni para la diferencia por pares</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cuantitativa normal</p>
+</td>
+<td width="315">
+<p>Contrastar si hay diferencias entre las varianzas de la variable dependiente en cada una de las poblaciones definidas por las categor&iacute;as de la variable independiente</p>
+</td>
+<td width="330">
+<p>Comprobar si la variabilidad de las notas de una asignatura es distinta en tres grupos diferentes de clase</p>
+</td>
+<td width="174">
+<p>Prueba de Levene para la homogeneidad de varianzas</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cuantitativa o cualitativa ordinal</p>
+</td>
+<td width="315">
+<p>Contrastar si hay diferencias entre las distribuciones de la variable dependiente en cada una de las poblaciones definidas por las categor&iacute;as de la variable independiente</p>
+</td>
+<td width="330">
+<p>Comprobar si existen diferencias entre las calificaciones de tres grupos distintos de clase</p>
+</td>
+<td width="174">
+<p>Test de Kruskal Wallis</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cualitativa</p>
+</td>
+<td width="315">
+<p>Contrastar si hay relaci&oacute;n entre las dos variables o bien si hay diferencias entre las proporciones de las categor&iacute;as de la variable dependiente en cada una de las poblaciones definidas por las categor&iacute;as de la variable independiente</p>
+</td>
+<td width="330">
+<p>Comprobar si existe relaci&oacute;n entre los aprobados en una asignatura y el grupo al que pertenecen los alumnos, es decir, si la proporci&oacute;n de aprobados es diferente en los distintos grupos.</p>
+</td>
+<td width="174">
+<p>Test Chi-cuadrado <br /> (si no ha m&aacute;s del 20% de frecuencias esperadas menores que 5)<br /> Test exacto de Fisher</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3" width="95" height="14">
+<p>Una cualitativa con dos o m&aacute;s categor&iacute;as relacionadas <br /> (medidas repetidas)</p>
+</td>
+<td width="88">
+<p>Cuantitativa normal</p>
+</td>
+<td width="315">
+<p>Contrastar si hay diferencias entre las medias repetidas de la variable dependiente</p>
+</td>
+<td width="330">
+<p>Comprobar si hay diferencias entre las notas que otorgan varios profesores a un mismo examen</p>
+</td>
+<td width="174">
+<p>An&aacute;lisis de la Varianza (ANOVA) de medidas repetidas de un factor</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cuantitativa o cualitativa ordinal</p>
+</td>
+<td width="315">
+<p>Contrastar si hay diferencias entre las medidas repetidas de la variable dependiente</p>
+</td>
+<td width="330">
+<p>Comprobar si hay diferencias entre las calificaciones que otorgan varios profesores a un mismo examen</p>
+</td>
+<td width="174">
+<p>Test de Friedman</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cualitativa</p>
+</td>
+<td width="315">
+<p>Contrastar si hay diferencias entre las valoraciones repetidas de la variable dependiente</p>
+</td>
+<td width="330">
+<p>Comprobar si hay diferencias entre la valoraci&oacute;n (aprobado o suspenso) que hacen varios profesores de un mismo examen</p>
+</td>
+<td width="174">
+<p>Regresi&oacute;n log&iacute;stica de medidas repetidas</p>
+</td>
+</tr>
+<tr>
+<td rowspan="4" width="95" height="13">
+<p>Una cuantitativa normal</p>
+</td>
+<td rowspan="2" width="88">
+<p>Cuantitativa normal</p>
+</td>
+<td width="315">
+<p>Contrastar si existe relaci&oacute;n lineal entre las dos variables</p>
+</td>
+<td width="330">
+<p>Comprobar si existe relaci&oacute;n entre las notas de dos asignaturas</p>
+</td>
+<td width="174">
+<p>Correlaci&oacute;n de Pearson</p>
+</td>
+</tr>
+<tr>
+<td width="315">
+<p>Construir un modelo predictivo que explique la variable dependiente en funci&oacute;n de la independiente</p>
+</td>
+<td width="330">
+<p>Construir el modelo (funci&oacute;n de regresi&oacute;n) que mejor explique la relaci&oacute;n entre la nota de un examen y las horas dedicadas a su estudio</p>
+</td>
+<td width="174">
+<p>Regresi&oacute;n simple (lineal o no lineal)</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cuantitativa o cualitativa ordinal</p>
+</td>
+<td width="315">
+<p>Contrastar si existe relaci&oacute;n lineal entre las dos variables</p>
+</td>
+<td width="330">
+<p>Comprobar si existe relaci&oacute;n entre las calificaciones de dos asignaturas</p>
+</td>
+<td width="174">
+<p>Correlaci&oacute;n de Spearman</p>
+</td>
+</tr>
+<tr>
+<td width="88">
+<p>Cualitativa</p>
+</td>
+<td width="315">
+<p>Construir un modelo predictivo que explique la variable dependiente en funci&oacute;n de la independiente</p>
+</td>
+<td width="330">
+<p>Construir el modelo (funci&oacute;n log&iacute;stica) que mejor explique la relaci&oacute;n entre el resultado de un examen (aprobado o suspenso) y las horas dedicadas a su estudio</p>
+</td>
+<td width="174">
+<p>Regresi&oacute;n log&iacute;stica simple</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Los ejemplos de los distintos test que se presentan a continuación se han realizado a partir del siguiente conjunto de datos que contiene las notas y calificaciones de un curso. El fichero con los datos puede descargarse aquí para reproducir los estudios: 
+<a href="datos/datos-curso.csv">datos-curso.csv</a></p>
+<pre><code class="language-r">library(tidyverse)
+</code></pre>
+<h2 id="una-variable-cuantitativa">Una variable cuantitativa</h2>
+<h3 id="estudios-descriptivos">Estudios descriptivos</h3>
+<h4 id="estadísticos">Estadísticos</h4>
+<ul>
+<li>Tamaño muestral</li>
+<li>Media</li>
+<li>Desviación típica</li>
+<li>Mínimo, Máximo</li>
+<li>Cuartiles</li>
+<li>Coeficiente de asimetría</li>
+<li>Coeficiente de apuntamiento</li>
+</ul>
+<pre><code class="language-r"># Tamaño muestral
+nrow(df)
+</code></pre>
+<pre><code>## [1] 120
+</code></pre>
+<pre><code class="language-r"># Media
+mean(df$notaA, na.rm = TRUE)
+</code></pre>
+<pre><code>## [1] 6.028333
+</code></pre>
+<pre><code class="language-r"># Desviación típica
+sd(df$notaA, na.rm = TRUE)
+</code></pre>
+<pre><code>## [1] 1.340524
+</code></pre>
+<pre><code class="language-r"># Min, max
+min(df$notaA, na.rm = TRUE)
+</code></pre>
+<pre><code>## [1] 2.5
+</code></pre>
+<pre><code class="language-r">max(df$notaA, na.rm = TRUE)
+</code></pre>
+<pre><code>## [1] 9.3
+</code></pre>
+<pre><code class="language-r"># Cuartiles
+quantile(df$notaA, c(0.25, 0.5, 0.75), na.rm = TRUE)
+</code></pre>
+<pre><code>##   25%   50%   75% 
+## 5.100 5.900 6.825
+</code></pre>
+<pre><code class="language-r"># Coef. asimetría
+library(moments)
+skewness(df$notaA, na.rm = TRUE)
+</code></pre>
+<pre><code>## [1] 0.1373915
+</code></pre>
+<pre><code class="language-r"># Coef. apuntamiento
+kurtosis(df$notaA, na.rm = TRUE) - 3
+</code></pre>
+<pre><code>## [1] -0.102287
+</code></pre>
+<h4 id="gráficos">Gráficos</h4>
+<ul>
+<li>Diagrama de barras (variables discretas)</li>
+</ul>
+<pre><code class="language-r">df %&gt;% ggplot(aes(x = asinaturas.aprobadas)) + 
+  geom_bar(fill=&quot;#00BFC4&quot;) + 
+  # Cambio de escala del eje X
+  scale_x_discrete(limits=0:5) 
+</code></pre>
+<p><img src="img/one-quantitative-variable-bar-chart-1.svg" alt=""><!-- --></p>
+<ul>
+<li>Histograma</li>
+</ul>
+<pre><code class="language-r">library(ggplot2)
+# Límites de los intervalos
+breaks = 0:10
+# Histograma de las notasA
+df %&gt;% ggplot(aes(x = notaA)) + 
+  geom_histogram(breaks = breaks, fill=&quot;#00BFC4&quot;) + 
+  # Cambio de escala del eje X
+  scale_x_continuous(limits=c(0, 10), breaks = 0:10) 
+</code></pre>
+<p><img src="img/one-quantitative-variable-histogram-1.svg" alt=""><!-- --></p>
+<pre><code class="language-r"># Histograma de notasE
+df %&gt;% ggplot(aes(x = notaE)) + 
+  geom_histogram(breaks = breaks, fill=&quot;#00BFC4&quot;) + 
+  # Cambio de escala del eje X
+  scale_x_continuous(limits=c(0, 10), breaks = 0:10) 
+</code></pre>
+<p><img src="img/one-quantitative-variable-histogram-2.svg" alt=""><!-- --></p>
+<ul>
+<li>Diagrama de líneas</li>
+</ul>
+<pre><code class="language-r"># Variables discretas
+df %&gt;% count(asinaturas.aprobadas) %&gt;%
+  ggplot(aes(x = asinaturas.aprobadas, y = n)) +
+  geom_line(col=&quot;#00BFC4&quot;) + 
+  # Cambio de escala del eje X
+  scale_x_discrete(limits=0:5) 
+</code></pre>
+<p><img src="img/one-quantitative-variable-line-chart-1.svg" alt=""><!-- --></p>
+<pre><code class="language-r"># Agrupación de datos en intervalos
+df %&gt;% ggplot(aes(x = notaA)) + 
+  geom_freqpoly(breaks = breaks, col=&quot;#00BFC4&quot;) + 
+  # Cambio de escala del eje X
+  scale_x_continuous(limits=c(0, 10), breaks = 0:10) 
+</code></pre>
+<p><img src="img/one-quantitative-variable-line-chart-2.svg" alt=""><!-- --></p>
+<ul>
+<li>Diagrama de caja y bigotes</li>
+</ul>
+<pre><code class="language-r">df %&gt;% ggplot(aes(x = notaA)) + 
+  geom_boxplot(fill=&quot;#00BFC4&quot;) +
+  # Cambio de escala del eje X
+  scale_x_continuous(limits=c(0, 10), breaks = 0:10)
+</code></pre>
+<p><img src="img/one-quantitative-variable-box-plot-1.svg" alt=""><!-- --></p>
+<h3 id="estudios-inferenciales">Estudios inferenciales</h3>
+<h4 id="test-de-normalidad-de-shapiro-wilk">Test de normalidad de Shapiro-Wilk</h4>
+<p><strong>Objetivo</strong>: Comprobar la normalidad de la distribución.</p>
+<p><strong>Hipótesis nula</strong>: La distribución es normal.</p>
+<pre><code class="language-r">shapiro.test(df$notaA)
+</code></pre>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  df$notaA
+## W = 0.99424, p-value = 0.907
+</code></pre>
+<pre><code class="language-r">shapiro.test(df$notaE)
+</code></pre>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  df$notaE
+## W = 0.92264, p-value = 4.065e-06
+</code></pre>
+<h4 id="test-t-para-la-media-de-una-población">Test t para la media de una población</h4>
+<p><strong>Objetivo</strong>: Estimar la media de una variable o compararla con un valor
+dado <em>μ</em><sub>0</sub>.</p>
+<p><strong>Requisitos</strong>:</p>
+<ul>
+<li>Una variable cuantitativa.</li>
+<li>Distribución normal o tamaño muestral ≥ 30.</li>
+</ul>
+<p><strong>Hipótesis nula</strong>: La media de la población es igual a <em>μ</em><sub>0</sub>.</p>
+<p><strong>Ejemplo</strong>: Comprobar si la nota media de un examen es diferente de 5.</p>
+<pre><code class="language-r">t.test(df$notaA, mu = 5, alternative = &quot;two.sided&quot;)
+</code></pre>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  df$notaA
+## t = 8.4033, df = 119, p-value = 1.08e-13
+## alternative hypothesis: true mean is not equal to 5
+## 95 percent confidence interval:
+##  5.786023 6.270643
+## sample estimates:
+## mean of x 
+##  6.028333
+</code></pre>
+<h2 id="una-variable-cualitativa">Una variable cualitativa</h2>
+<h3 id="estudios-descriptivos-1">Estudios descriptivos</h3>
+<h4 id="estadísticos-1">Estadísticos</h4>
+<ul>
+<li>Tamaños muestral</li>
+<li>Frecuencias muestrales</li>
+<li>Proporciones/porcentajes muestrales</li>
+</ul>
+<pre><code class="language-r"># Tamaño muestral sin datos perdidos
+length(na.omit(df$calificacionB))
+</code></pre>
+<pre><code>## [1] 115
+</code></pre>
+<pre><code class="language-r"># Frecuencias
+table(df$calificacionB)
+</code></pre>
+<pre><code>## 
+## Aprobado Suspenso 
+##       98       17
+</code></pre>
+<pre><code class="language-r"># Proporciones
+table(df$calificacionB) / length(na.omit(df$calificacionB))
+</code></pre>
+<pre><code>## 
+##  Aprobado  Suspenso 
+## 0.8521739 0.1478261
+</code></pre>
+<pre><code class="language-r"># Porcentajes
+table(df$calificacionB) / length(na.omit(df$calificacionB)) * 100
+</code></pre>
+<pre><code>## 
+## Aprobado Suspenso 
+## 85.21739 14.78261
+</code></pre>
+<h4 id="gráficos-1">Gráficos</h4>
+<ul>
+<li>Diagrama de sectores</li>
+</ul>
+<pre><code class="language-r">df %&gt;% ggplot(aes(x = &quot;&quot;, fill = calificacionA)) + 
+  geom_bar() +
+  # Cambiar a coordenadas polares
+  coord_polar(theta = &quot;y&quot;) +
+  # Eliminar ejes
+   theme_void()
+</code></pre>
+<p><img src="img/piechart-1.svg" alt=""><!-- --></p>
+<h3 id="estudios-inferenciales-1">Estudios inferenciales</h3>
+<h4 id="test-binomial-para-una-proporción-de-una-población">Test binomial para una proporción de una población</h4>
+<p><strong>Objetivo</strong>: Estimar la propoción de una categoría en una población o
+compararla con un valor <em>p</em><sub>0</sub>.</p>
+<p><strong>Requisitos</strong>:</p>
+<ul>
+<li>One variable cualitativa</li>
+</ul>
+<p><strong>Hipótesis nula</strong>: La proporción poblacional es igual a
+<em>p</em><sub>0</sub>.</p>
+<p><strong>Ejemplo</strong>: Comprobar si la proporción de aprobados es mayor de 0.5.</p>
+<pre><code class="language-r">freq &lt;- table(df$calificacionA)[&quot;Aprobado&quot;]
+binom.test(freq, n, p = 0.7, alternative = &quot;greater&quot;)
+</code></pre>
+<pre><code>## 
+##  Exact binomial test
+## 
+## data:  freq and n
+## number of successes = 94, number of trials = 120, p-value = 0.02657
+## alternative hypothesis: true probability of success is greater than 0.7
+## 95 percent confidence interval:
+##  0.7123183 1.0000000
+## sample estimates:
+## probability of success 
+##              0.7833333
+</code></pre>
+<h4 id="test-z-para-la-proporción-de-una-población">Test Z para la proporción de una población</h4>
+<p><strong>Objetivo</strong>: Estimar la propoción de una categoría en una población o
+compararla con un valor <em>p</em><sub>0</sub>.</p>
+<p><strong>Requisitos</strong>:</p>
+<ul>
+<li>Una variable cualitativa</li>
+<li>Tamaño muestral &gt;= 30</li>
+</ul>
+<p><strong>Observación</strong>: Utiliza la aproximación normal de la distribución
+Binomal.</p>
+<p><strong>Ejemplo</strong>: Comprobar si la proporción de aprobados es mayor de 0.5.</p>
+<pre><code class="language-r">freq &lt;- table(df$calificacionA)[&quot;Aprobado&quot;]
+prop.test(freq, n, p = 0.7, alternative = &quot;greater&quot;)
+</code></pre>
+<pre><code>## 
+##  1-sample proportions test with continuity correction
+## 
+## data:  freq out of n, null probability 0.7
+## X-squared = 3.5813, df = 1, p-value = 0.02922
+## alternative hypothesis: true p is greater than 0.7
+## 95 percent confidence interval:
+##  0.7111099 1.0000000
+## sample estimates:
+##         p 
+## 0.7833333
+</code></pre>
+<h2 id="dos-variables-variable-dependiente-cuantitativa-y-variable-independiente-culitativa-con-dos-categorías-o-grupos">Dos variables: Variable dependiente cuantitativa y variable independiente culitativa con dos categorías o grupos</h2>
+<h3 id="estudios-descriptivos-2">Estudios descriptivos</h3>
+<h4 id="estadísticos-2">Estadísticos</h4>
+<ul>
+<li>Tamaño muestral de cada grupo</li>
+<li>Media de cada grupo</li>
+<li>Desviación típica de cada grupo</li>
+<li>Mínimo, Máximo de cada grupo</li>
+<li>Cuartiles de cada grupo</li>
+<li>Coeficiente de asimetría de cada grupo</li>
+<li>Coeficiente de apuntamiento de cada grupo</li>
+</ul>
+<pre><code class="language-r"># Tamaño muestral de notaA según el sexo
+df %&gt;% group_by(sexo) %&gt;% group_size()
+</code></pre>
+<pre><code>## [1] 71 49
+</code></pre>
+<pre><code class="language-r"># Media, Desviación típica, Mín, Máx, Cuartiles, Coef. Asimetría y Coef. Apuntamiento
+library(moments)
+df %&gt;% group_by(sexo) %&gt;% summarize(Media = mean(notaA, na.rm=TRUE), Des.Tip = sd(notaA, na.rm = TRUE), Mín = min(notaA), Máx = max(notaA), C1 = quantile(notaA, 0.25, na.rm = TRUE), C2 = quantile(notaA, 0.5, na.rm = TRUE), C3 = quantile(notaA, 0.75, na.rm = TRUE), Coef.Asimetría = skewness(notaA, na.rm = TRUE), Coef.Apuntamiento = kurtosis(notaA, na.rm = TRUE) - 3)
+</code></pre>
+<pre><code>## # A tibble: 2 x 10
+##   sexo   Media Des.Tip   Mín   Máx    C1    C2    C3 Coef.Asimetría
+##   &lt;chr&gt;  &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;          &lt;dbl&gt;
+## 1 Hombre  6.12    1.23   3.5   9.3   5.3   6.1  6.85          0.249
+## 2 Mujer   5.89    1.49   2.5   9.3   5     5.7  6.8           0.135
+## # … with 1 more variable: Coef.Apuntamiento &lt;dbl&gt;
+</code></pre>
+<h4 id="gráficos-2">Gráficos</h4>
+<ul>
+<li>Diagrama de cajas y bigotes</li>
+</ul>
+<pre><code class="language-r">df %&gt;% ggplot(aes(x = sexo, y = notaA, fill = sexo)) + 
+  geom_boxplot() +
+  # Cambio de escala del eje X
+  scale_y_continuous(limits=c(0, 10), breaks = 0:10)
+</code></pre>
+<p><img src="img/quantiative-vs-qualitative-box-plot-1.svg" alt=""><!-- --></p>
+<ul>
+<li>Diagrama de violín</li>
+</ul>
+<pre><code class="language-r">df %&gt;% ggplot(aes(x = sexo, y = notaA, fill = sexo)) + 
+  geom_violin() +
+  # Cambio de escala del eje X
+  scale_y_continuous(limits=c(0, 10), breaks = 0:10)
+</code></pre>
+<p><img src="img/quantiative-vs-qualitative-viol%C3%ADn-plot-1.svg" alt=""><!-- --></p>
+<h3 id="estudios-inferenciales-2">Estudios inferenciales</h3>
+<h4 id="test-de-normalidad-de-shapiro-wilks">Test de normalidad de Shapiro-Wilks</h4>
+<p><strong>Objetivo</strong>: Comprobar la normalidad de la distribución de cada
+población.</p>
+<p><strong>Hipótesis nula</strong>: La distribución es normal.</p>
+<pre><code class="language-r">df %&gt;% group_by(sexo) %&gt;% 
+  summarise(`Estadístico W` = shapiro.test(notaA)$statistic, `p-valor` = shapiro.test(notaA)$p.value)
+</code></pre>
+<pre><code>## # A tibble: 2 x 3
+##   sexo   `Estadístico W` `p-valor`
+##   &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;
+## 1 Hombre           0.990     0.872
+## 2 Mujer            0.990     0.942
+</code></pre>
+<h4 id="test-f-de-fisher-de-comparación-de-varianzas-de-dos-poblaciones-independientes">Test F de Fisher de comparación de varianzas de dos poblaciones independientes</h4>
+<p><strong>Objetivo</strong>: Comparar las varianzas de dos poblaciones independientes.</p>
+<p><strong>Requisitos</strong>:</p>
+<ul>
+<li>Variable dependiente cuantitativa.</li>
+<li>Una variable independiente cualitativa con dos categorías
+(poblaciones)</li>
+<li>Distribución normal de la variable dependiente en ambas poblaciones
+o tamaños de las muestras de cada población ≥ 30.</li>
+</ul>
+<p><strong>Hipótesis nula</strong>: La varianzas poblacionales son iguales (no existe
+una diferencia significativa entre las medias poblacionales).</p>
+<p><strong>Ejemplo</strong>: Comprobar si diferencias signicativas entre las notas
+medias de hombres y mujeres.</p>
+<pre><code class="language-r"># Test de comparación de varianzas
+var.test(notaA ~ sexo, data = df)
+</code></pre>
+<pre><code>## 
+##  F test to compare two variances
+## 
+## data:  notaA by sexo
+## F = 0.6769, num df = 70, denom df = 48, p-value = 0.1347
+## alternative hypothesis: true ratio of variances is not equal to 1
+## 95 percent confidence interval:
+##  0.3953421 1.1293155
+## sample estimates:
+## ratio of variances 
+##          0.6769032
+</code></pre>
+<h4 id="test-t-de-comparación-de-medias-de-dos-poblaciones-independientes">Test t de comparación de medias de dos poblaciones independientes</h4>
+<p><strong>Objetivo</strong>: Estimar la diferencia de medias en las dos poblaciones o
+comprobar si hay diferencias significativas entre ellas.</p>
+<p><strong>Requisitos</strong>:</p>
+<ul>
+<li>Variable dependiente cuantitativa.</li>
+<li>Una variable independiente cualitativa con dos categorías
+(poblaciones)</li>
+<li>Distribución normal de la variable dependiente en ambas poblaciones
+o tamaños de las muestras de cada población ≥ 30.</li>
+</ul>
+<p><strong>Hipótesis nula</strong>: La medias poblacionales son iguales (no existe una
+diferencia significativa entre las medias poblacionales).</p>
+<p><strong>Observación</strong>: El resultado del test depende de si las varianzas
+poblacionales son iguales o no.</p>
+<p><strong>Ejemplo</strong>: Comprobar si diferencias signicativas entre las notas
+medias de hombres y mujeres.</p>
+<pre><code class="language-r"># Test de comparación de varianzas
+var.test(notaA ~ sexo, data = df)
+</code></pre>
+<pre><code>## 
+##  F test to compare two variances
+## 
+## data:  notaA by sexo
+## F = 0.6769, num df = 70, denom df = 48, p-value = 0.1347
+## alternative hypothesis: true ratio of variances is not equal to 1
+## 95 percent confidence interval:
+##  0.3953421 1.1293155
+## sample estimates:
+## ratio of variances 
+##          0.6769032
+</code></pre>
+<pre><code class="language-r"># Test de comparación de medias asumiendo varianzas iguales
+t.test (notaA ~ sexo, data = df, alternative = &quot;two.sided&quot;, var.equal = FALSE)
+</code></pre>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  notaA by sexo
+## t = 0.89364, df = 89.873, p-value = 0.3739
+## alternative hypothesis: true difference in means between group Hombre and group Mujer is not equal to 0
+## 95 percent confidence interval:
+##  -0.2821809  0.7435779
+## sample estimates:
+## mean in group Hombre  mean in group Mujer 
+##             6.122535             5.891837
+</code></pre>
+<pre><code class="language-r"># Test de comparación de medias asumiendo varianzas iguales
+t.test (notaA ~ sexo, data = df, alternative = &quot;two.sided&quot;, var.equal = TRUE)
+</code></pre>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  notaA by sexo
+## t = 0.92608, df = 118, p-value = 0.3563
+## alternative hypothesis: true difference in means between group Hombre and group Mujer is not equal to 0
+## 95 percent confidence interval:
+##  -0.262615  0.724012
+## sample estimates:
+## mean in group Hombre  mean in group Mujer 
+##             6.122535             5.891837
+</code></pre>
+<ul>
+<li>Diagrama de medias</li>
+</ul>
+<pre><code class="language-r">df %&gt;% ggplot(aes(x = sexo, y = notaA, colour = sexo)) + 
+  # Puntos de medias
+  stat_summary(fun=&quot;mean&quot;, size=3,  geom=&quot;point&quot;, position=position_dodge(width=0.25)) + 
+  # Intervalos de confianza para la media
+  stat_summary(fun.data = function(x) mean_cl_normal(x, conf.int=0.95), geom = &quot;pointrange&quot;, position=position_dodge(width=0.25)) 
+</code></pre>
+<p><img src="img/quantitative-vs-qualitative-means-plot-1.svg" alt=""><!-- --></p>
+<h4 id="test-u-de-mann-whitney-de-comparación-de-dos-poblaciones-independientes-no-paramétrico">Test U de Mann-Whitney de comparación de dos poblaciones independientes (no paramétrico)</h4>
+<p><strong>Objetivo</strong>: Comprobar si hay diferencias significativas entre entre
+dos poblaciones independientes.</p>
+<p><strong>Requisitos</strong>:</p>
+<ul>
+<li>Variable dependiente cuantitativa.</li>
+<li>Una variable independiente cualitativa con dos categorías
+(poblaciones)</li>
+</ul>
+<p><strong>Hipótesis nula</strong>: La medianas poblacionales son iguales (no existe una
+diferencia significativa entre las medianas poblacionales).</p>
+<p><strong>Ejemplo</strong>: Comprobar si diferencias signicativas entre las notas de
+hombres y mujeres.</p>
+<pre><code class="language-r"># Test de rangos U the Mann-Whitney
+wilcox.test(notaA ~ sexo, data = df, alternative = &quot;two.sided&quot;)
+</code></pre>
+<pre><code>## 
+##  Wilcoxon rank sum test with continuity correction
+## 
+## data:  notaA by sexo
+## W = 1917, p-value = 0.3445
+## alternative hypothesis: true location shift is not equal to 0
+</code></pre>
+<h2 id="dos-variables-variable-dependiente-cuantitativa-y-variable-independiente-culitativa-con-dos-categorías-o-grupos-pareados">Dos variables: Variable dependiente cuantitativa y variable independiente culitativa con dos categorías o grupos pareados</h2>
+<p>Dos grupos o poblaciones están pareadas o emparejadas cuando los dos
+poblaciones contienen los mismos individuos, es decir, se trata en
+realidadad de una única población, pero la variable dependiente se mide
+dos veces en cada individuo (normalmente antes y después de la algún
+suceso) y por tanto cada individuo tiene asociado un par de valores.</p>
+<p>Este estudio puede realizarse también creando una nueva variable a
+partir de la resta de las dos mediciones y planteando un estudio de una
+sola variable cuantitativa.</p>
+<p><strong>Ejemplo</strong>: Creación de la diferencia de notas de las asignaturas A y
+B.</p>
+<pre><code class="language-r"># Creamos la variable diferencia = notaA - notaB
+df &lt;- df %&gt;% mutate(diferencia = notaA - notaB)
+</code></pre>
+<h3 id="estudios-descriptivos-3">Estudios descriptivos</h3>
+<h4 id="estadísticos-3">Estadísticos</h4>
+<ul>
+<li>Tamaño muestral del grupo</li>
+<li>Media de la diferencia</li>
+<li>Desviación típica de la diferencia</li>
+<li>Mínimo, Máximo de la diferencia</li>
+<li>Cuartiles de la diferencia</li>
+<li>Coeficiente de asimetría de la diferencia</li>
+<li>Coeficiente de apuntamiento de la diferencia</li>
+</ul>
+<p><strong>Ejemplo</strong>: Estadísticos descriptivos de la diferencia entre las notas
+de las asignaturas A y B de un mismo grupo de alumnos.</p>
+<pre><code class="language-r"># Tamaño muestral de sin contar los datos perdidos
+length(na.omit(df$diferencia))
+</code></pre>
+<pre><code>## [1] 115
+</code></pre>
+<pre><code class="language-r"># Media, Desviación típica, Mín, Máx, Cuartiles, Coef. Asimetría y Coef. Apuntamiento
+library(moments)
+df %&gt;% summarize(Media = mean(diferencia, na.rm=TRUE), Des.Tip = sd(diferencia, na.rm = TRUE), Mín = min(diferencia, na.rm = TRUE), Máx = max(diferencia, na.rm = TRUE), C1 = quantile(diferencia, 0.25, na.rm = TRUE), C2 = quantile(diferencia, 0.5, na.rm = TRUE), C3 = quantile(diferencia, 0.75, na.rm = TRUE), Coef.Asimetría = skewness(diferencia, na.rm = TRUE), Coef.Apuntamiento = kurtosis(diferencia, na.rm = TRUE) - 3)
+</code></pre>
+<pre><code>## # A tibble: 1 x 9
+##    Media Des.Tip   Mín   Máx    C1    C2     C3 Coef.Asimetría Coef.Apuntamiento
+##    &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;          &lt;dbl&gt;             &lt;dbl&gt;
+## 1 -0.882   0.900  -3.2  1.10  -1.5  -0.8 -0.300         -0.430            -0.137
+</code></pre>
+<h4 id="gráficos-3">Gráficos</h4>
+<ul>
+<li>Diagrama de cajas y bigotes</li>
+</ul>
+<pre><code class="language-r">df %&gt;% ggplot(aes(x = diferencia)) + 
+  geom_boxplot(fill=&quot;#00BFC4&quot;)
+</code></pre>
+<p><img src="img/quantiative-vs-qualitative-paired-box-plot-1.svg" alt=""><!-- --></p>
+<h3 id="estudios-inferenciales-3">Estudios inferenciales</h3>
+<h4 id="test-de-normalidad-de-shapiro-wilks-1">Test de normalidad de Shapiro-Wilks</h4>
+<p><strong>Objetivo</strong>: Comprobar la normalidad de la distribución de la
+diferencia.</p>
+<p><strong>Hipótesis nula</strong>: La distribución es normal.</p>
+<p><strong>Ejemplo</strong>: Comprobar la normalidad de la diferencia entre las notas de
+las asignaturas A y B de un mismo grupo de alumnos.</p>
+<pre><code class="language-r">df %&gt;% summarise(`Estadístico W` = shapiro.test(diferencia)$statistic, `p-valor` = shapiro.test(diferencia)$p.value)
+</code></pre>
+<pre><code>## # A tibble: 1 x 2
+##   `Estadístico W` `p-valor`
+##             &lt;dbl&gt;     &lt;dbl&gt;
+## 1           0.979    0.0737
+</code></pre>
+<h4 id="test-t-de-comparación-de-medias-de-dos-poblaciones-pareadas">Test t de comparación de medias de dos poblaciones pareadas</h4>
+<p><strong>Objetivo</strong>: Estimar la media de la diferencia o compararla con un
+valor dado <em>μ</em><sub>0</sub>.</p>
+<p><strong>Requisitos</strong>:</p>
+<ul>
+<li>Variable dependiente cuantitativa.</li>
+<li>Una variable independiente cualitativa con dos categorías
+(poblaciones) pareadas</li>
+<li>Distribución normal de la variable diferencia o tamaño muestral
+≥ 30.</li>
+</ul>
+<p><strong>Hipótesis nula</strong>: La medias poblacionales son iguales (no existe una
+diferencia significativa entre las medias poblacionales).</p>
+<p><strong>Ejemplo</strong>: Comprobar si hay una diferencia signicativa entre las notas
+medias de las asinaturas A y B, o lo que es lo mismo, comprobar si la
+media de la diferencia de las notas de A y B es distinta de 0.</p>
+<pre><code class="language-r">t.test (notaA, notaB, data = df, alternative = &quot;two.sided&quot;, paired = TRUE)
+</code></pre>
+<pre><code>## 
+##  Paired t-test
+## 
+## data:  notaA and notaB
+## t = -10.618, df = 114, p-value &lt; 2.2e-16
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -1.0515337 -0.7208695
+## sample estimates:
+## mean of the differences 
+##              -0.8862016
+</code></pre>
+<ul>
+<li>Diagrama de medias</li>
+</ul>
+<pre><code class="language-r">df %&gt;% ggplot(aes(x=&quot;&quot;, y = diferencia)) + 
+  # Puntos de medias
+  stat_summary(fun=&quot;mean&quot;, size=3,  geom=&quot;point&quot;) + 
+  # Intervalos de confianza para la media
+  stat_summary(fun.data = function(x) mean_cl_normal(x, conf.int=0.95), geom = &quot;pointrange&quot;, position=position_dodge(width=0.25)) 
+</code></pre>
+<p><img src="img/quantitative-vs-qualitative-paired-means-plot-1.svg" alt=""><!-- --></p>
+<h4 id="test-wilcoxon-de-comparación-de-dos-poblaciones-pareadas-no-paramétrico">Test Wilcoxon de comparación de dos poblaciones pareadas (no paramétrico)</h4>
+<p><strong>Objetivo</strong>: Comparar las medianas de las dos poblaciones.</p>
+<p><strong>Requisitos</strong>:</p>
+<ul>
+<li>Variable dependiente cuantitativa.</li>
+<li>Una variable independiente cualitativa con dos categorías
+(poblaciones) pareadas.</li>
+</ul>
+<p><strong>Hipótesis nula</strong>: La medianas poblacionales son iguales (no existe una
+diferencia significativa entre las medianas poblacionales).</p>
+<p><strong>Ejemplo</strong>: Comprobar si hay una diferencia signicativa entre las notas
+de las asignaturas A y B.</p>
+<pre><code class="language-r">wilcox.test(notaA, notaB, data = df, alternative = &quot;two.sided&quot;, paired = TRUE)
+</code></pre>
+<pre><code>## 
+##  Wilcoxon signed rank test with continuity correction
+## 
+## data:  notaA and notaB
+## V = 466, p-value = 1.192e-15
+## alternative hypothesis: true location shift is not equal to 0
+</code></pre>
+<h2 id="dos-variables-variable-dependiente-cuantitativa-y-variable-independiente-culitativa-con-más-de-dos-categorías-o-grupos">Dos variables: Variable dependiente cuantitativa y variable independiente culitativa con más de dos categorías o grupos</h2>
+<h3 id="estudios-descriptivos-4">Estudios descriptivos</h3>
+<h4 id="estadísticos-4">Estadísticos</h4>
+<ul>
+<li>Tamaño muestral de cada grupo</li>
+<li>Media de cada grupo</li>
+<li>Desviación típica de cada grupo</li>
+<li>Mínimo, Máximo de cada grupo</li>
+<li>Cuartiles de cada grupo</li>
+<li>Coeficiente de asimetría de cada grupo</li>
+<li>Coeficiente de apuntamiento de cada grupo</li>
+</ul>
+<pre><code class="language-r"># Tamaño muestral de notaA según el grupo
+df %&gt;% group_by(grupo) %&gt;% group_size()
+</code></pre>
+<pre><code>## [1] 38 35 47
+</code></pre>
+<pre><code class="language-r"># Media, Desviación típica, Mín, Máx, Cuartiles, Coef. Asimetría y Coef. Apuntamiento
+library(moments)
+df %&gt;% group_by(grupo) %&gt;% summarize(Media = mean(notaA, na.rm=TRUE), Des.Tip = sd(notaA, na.rm = TRUE), Mín = min(notaA, na.rm = TRUE), Máx = max(notaA, na.rm = TRUE), C1 = quantile(notaA, 0.25, na.rm = TRUE), C2 = quantile(notaA, 0.5, na.rm = TRUE), C3 = quantile(notaA, 0.75, na.rm = TRUE), Coef.Asimetría = skewness(notaA, na.rm = TRUE), Coef.Apuntamiento = kurtosis(notaA, na.rm = TRUE) - 3)
+</code></pre>
+<pre><code>## # A tibble: 3 x 10
+##   grupo Media Des.Tip   Mín   Máx    C1    C2    C3 Coef.Asimetría
+##   &lt;chr&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;          &lt;dbl&gt;
+## 1 A      6.54   0.998   4.3   8.6  5.93   6.6  7.15         -0.250
+## 2 B      6.96   1.23    3.5   9.3  6.2    6.8  7.7          -0.141
+## 3 C      4.92   0.771   2.5   5.9  4.5    5.1  5.5          -1.06 
+## # … with 1 more variable: Coef.Apuntamiento &lt;dbl&gt;
+</code></pre>
+<h4 id="gráficos-4">Gráficos</h4>
+<ul>
+<li>Diagrama de cajas y bigotes</li>
+</ul>
+<pre><code class="language-r">df %&gt;% ggplot(aes(x = grupo, y = notaA, fill = grupo)) + 
+  geom_boxplot() +
+  # Cambio de escala del eje X
+  scale_y_continuous(limits=c(0, 10), breaks = 0:10)
+</code></pre>
+<p><img src="img/quantiative-vs-qualitative-more-two-box-plot-1.svg" alt=""><!-- --></p>
+<ul>
+<li>Diagrama de violín</li>
+</ul>
+<pre><code class="language-r">df %&gt;% ggplot(aes(x = grupo, y = notaA, fill = grupo)) + 
+  geom_violin() +
+  # Cambio de escala del eje X
+  scale_y_continuous(limits=c(0, 10), breaks = 0:10)
+</code></pre>
+<p><img src="img/quantiative-vs-qualitative-more-two-viol%C3%ADn-plot-1.svg" alt=""><!-- --></p>
+<h3 id="estudios-inferenciales-4">Estudios inferenciales</h3>
+<h4 id="test-de-normalidad-de-shapiro-wilks-2">Test de normalidad de Shapiro-Wilks</h4>
+<p><strong>Objetivo</strong>: Comprobar la normalidad de la distribución de cada
+población.</p>
+<p><strong>Hipótesis nula</strong>: La distribución es normal.</p>
+<p><strong>Ejemplo</strong>: Comprobar la normalidad de las distribuciones de la nota A
+en los grupos A, B y C.</p>
+<pre><code class="language-r">df %&gt;% group_by(grupo) %&gt;% 
+  summarise(`Estadístico W` = shapiro.test(notaA)$statistic, `p-valor` = shapiro.test(notaA)$p.value)
+</code></pre>
+<pre><code>## # A tibble: 3 x 3
+##   grupo `Estadístico W` `p-valor`
+##   &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;
+## 1 A               0.984   0.840  
+## 2 B               0.963   0.277  
+## 3 C               0.918   0.00280
+</code></pre>
+<p><strong>Interpretación</strong>: La distribución de la nota A en los grupos A y B es
+normal (p-valores &gt; 0.05) pero no en el grupo C (p-valor &lt; 0.05)</p>
+<p><strong>Ejemplo</strong>: Comprobar la normalidad de las distribuciones de la nota A
+en los grupos A, B y C.</p>
+<pre><code class="language-r">df %&gt;% group_by(grupo) %&gt;% 
+  summarise(`Estadístico W` = shapiro.test(notaC)$statistic, `p-valor` = shapiro.test(notaC)$p.value)
+</code></pre>
+<pre><code>## # A tibble: 3 x 3
+##   grupo `Estadístico W` `p-valor`
+##   &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;
+## 1 A               0.989     0.961
+## 2 B               0.965     0.343
+## 3 C               0.976     0.442
+</code></pre>
+<p><strong>Interpretación</strong>: La distribución de la nota C en los tres grupos es
+normal (p-valores &gt; 0.05).</p>
+<h4 id="test-de-levene-de-comparación-de-varianzas-de-dos-o-más-poblaciones-independientes">Test de Levene de comparación de varianzas de dos o más poblaciones independientes</h4>
+<p><strong>Objetivo</strong>: Comparar las varianzas de dos o más poblaciones
+independientes.</p>
+<p><strong>Requisitos</strong>:</p>
+<ul>
+<li>Variable dependiente cuantitativa.</li>
+<li>Una variable independiente cualitativa con dos o más categorías
+(poblaciones)</li>
+<li>Distribución normal de la variable dependiente en todas las
+poblaciones o tamaños de las muestras de cada población ≥ 30.</li>
+</ul>
+<p><strong>Hipótesis nula</strong>: La varianzas poblacionales son iguales (no existe
+una diferencia significativa entre las medias poblacionales).</p>
+<p><strong>Ejemplo</strong>: Comprobar si diferencias signicativas entre las varianzas
+de las notas de la asignatura C de los grupos A, B y C.</p>
+<pre><code class="language-r"># El test de Levene está disponible en el paquete car
+library(car)
+# Test de comparación de varianzas
+leveneTest(notaC ~ grupo, data = df)
+</code></pre>
+<pre><code>## Levene's Test for Homogeneity of Variance (center = median)
+##        Df F value Pr(&gt;F)
+## group   2  0.3186 0.7278
+##       116
+</code></pre>
+<p><strong>Interpretación</strong>: No existe diferencia significativa entre las
+varianzas de la nota C en los grupos A, B y C (p-valor &gt; 0.05).</p>
+<h4 id="anova-de-un-factor-para-la-comparación-medias-de-más-de-dos-poblaciones-independientes">ANOVA de un factor para la comparación medias de más de dos poblaciones independientes</h4>
+<p><strong>Objetivo</strong>: Comprobar si hay diferencias significativas entre las
+medias de más de dos poblaciones independientes.</p>
+<p><strong>Requisitos</strong>:</p>
+<ul>
+<li>Variable dependiente cuantitativa.</li>
+<li>Una variable independiente cualitativa con más de dos categorías
+(poblaciones)-</li>
+<li>Distribución normal de la variable dependiente en todas las
+poblaciones o tamaños de las muestras de cada población ≥ 30.</li>
+<li>Homogeneidad de varianzas en las poblaciones.</li>
+</ul>
+<p><strong>Hipótesis nula</strong>: La medias poblacionales son iguales (no existe una
+diferencia significativa entre las medias poblacionales).</p>
+<p><strong>Ejemplo</strong>: Comprobar si diferencias signicativas entre las notas
+medias de la asignatura C de los grupos A, B y C.</p>
+<pre><code class="language-r"># Análisis de la varianza de un factor
+summary(aov(notaC ~ grupo, data = df))
+</code></pre>
+<pre><code>##              Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+## grupo         2  80.69   40.34   20.05 3.32e-08 ***
+## Residuals   116 233.41    2.01                     
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 1 observation deleted due to missingness
+</code></pre>
+<p><strong>Interpretación</strong>: Existen diferencias significativas entre las medias
+de la nota C entre al menos dos grupos (p-valor=3.32e-08 &lt; 0.05).</p>
+<p><strong>Observación</strong>: Cuando se detectan diferencias significativas entre las
+medias de al menos dos grupos conviene realizar un test de comparación
+múltiple por pares para ver entre qué poblaciones hay diferencias y
+entre cuáles no. Los test más habituales de comparación por pares son el
+de Tukey y el de Bonferroni.</p>
+<pre><code class="language-r"># Test de comparación múltiple de Tukey
+TukeyHSD(aov(notaC ~ grupo, data = df))
+</code></pre>
+<pre><code>##   Tukey multiple comparisons of means
+##     95% family-wise confidence level
+## 
+## Fit: aov(formula = notaC ~ grupo, data = df)
+## 
+## $grupo
+##           diff        lwr        upr     p adj
+## B-A  0.4312693 -0.3637573  1.2262960 0.4048482
+## C-A -1.4455767 -2.1802858 -0.7108676 0.0000241
+## C-B -1.8768461 -2.6350758 -1.1186163 0.0000001
+</code></pre>
+<p><strong>Interpretación</strong>: No existe una diferencia significativa entre las
+notas medias de la asignatura C de los grupos A y B (p-valor=0.4048 &gt;
+0.05), pero si existe una diferencia significativa entre las notas
+medias de los grupos A y C (p-valor=0.00002 &lt; 0.05) y también entre las
+notas medias de los grupos B y C (p-valor=0.0000001 &lt; 0.05).</p>
+<ul>
+<li>Diagrama de medias</li>
+</ul>
+<pre><code class="language-r">df %&gt;% ggplot(aes(x = grupo, y = notaC, colour = grupo)) + 
+  # Puntos de medias
+  stat_summary(fun=&quot;mean&quot;, size=3,  geom=&quot;point&quot;, position=position_dodge(width=0.25)) + 
+  # Intervalos de confianza para la media
+  stat_summary(fun.data = function(x) mean_cl_normal(x, conf.int=0.95), geom = &quot;pointrange&quot;, position=position_dodge(width=0.25)) 
+</code></pre>
+<p><img src="img/quantitative-vs-qualitative-more-two-means-plot-1.svg" alt=""><!-- --></p>
+<h4 id="test-kruskal-wallis-de-comparación-de-más-de-dos-poblaciones-independientes-no-paramétrico">Test Kruskal-Wallis de comparación de más de dos poblaciones independientes (no paramétrico)</h4>
+<p><strong>Objetivo</strong>: Comprobar si hay diferencias significativas entre entre
+más de dos poblaciones independientes.</p>
+<p><strong>Requisitos</strong>:</p>
+<ul>
+<li>Variable dependiente cuantitativa.</li>
+<li>Una variable independiente cualitativa con más de dos categorías
+(poblaciones)</li>
+</ul>
+<p><strong>Hipótesis nula</strong>: La medianas poblacionales son iguales (no existe una
+diferencia significativa entre las medianas poblacionales).</p>
+<p><strong>Ejemplo</strong>: Comprobar si diferencias signicativas entre las notas de la
+asignatura A de los grupos A, B y C.</p>
+<pre><code class="language-r"># Test de Kruskal-Wallis
+kruskal.test(notaA ~ grupo, data = df)
+</code></pre>
+<pre><code>## 
+##  Kruskal-Wallis rank sum test
+## 
+## data:  notaA by grupo
+## Kruskal-Wallis chi-squared = 62.218, df = 2, p-value = 3.087e-14
+</code></pre>
+<p><strong>Interpretación</strong>: Existen diferencias significativas entre las notas
+de la asignatura A de al menos dos de los grupos.</p>
+<p><strong>Observación</strong>: Cuando se detectan diferencias significativas entre al
+menos dos grupos conviene realizar un test de comparación múltiple por
+pares para ver entre qué poblaciones hay diferencias y entre cuáles no.
+El test más habitual es el de Wilcoxon.</p>
+<pre><code class="language-r"># Test de comparación múltiple de Wilcoxon
+pairwise.wilcox.test(df$notaA, df$grupo, p.adjust.method = &quot;BH&quot;)
+</code></pre>
+<pre><code>## 
+##  Pairwise comparisons using Wilcoxon rank sum test with continuity correction 
+## 
+## data:  df$notaA and df$grupo 
+## 
+##   A       B      
+## B 0.19    -      
+## C 4.2e-10 1.3e-11
+## 
+## P value adjustment method: BH
+</code></pre>
+<p><strong>Interpretación</strong>: No existe una diferencia significativa entre las
+notas de la asignatura A de los grupos A y B (p-valor=0.19 &gt; 0.05),
+pero si existe una diferencia significativa entre las notas de los
+grupos A y C (p-valor=4.2e-10 &lt; 0.05) y también entre las notas de los
+grupos B y C (p-valor=1.3e-11 &lt; 0.05).</p>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Última actualización el Mar 13, 2022</p>
+
+          
+
+
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "aprendeconalf" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt="CC SA icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No se encontraron resultados","placeholder":"Buscar...","results":"resultados encontrados"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Proyectos",
+        'publication' : "Publicaciones",
+        'talk' : "Charlas",
+        'slides' : "Diapositivas"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://aprendeconalf.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.f79ea001fad4564ac91850b0b5a8f31c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

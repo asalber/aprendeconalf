@@ -1,0 +1,25 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>Alfredo Sánchez-Alberca</foaf:name>
+<foaf:title>Mr</foaf:title>
+<foaf:givenname>Alfredo</foaf:givenname>
+<foaf:family_name>Sánchez-Alberca</foaf:family_name>
+<foaf:nick>Alf</foaf:nick>
+<foaf:mbox_sha1sum>396c0589fc8a03cfdb864395c18ddfb775c36515</foaf:mbox_sha1sum>
+<foaf:homepage rdf:resource="http://aprendeconalf.es"/>
+<foaf:depiction rdf:resource="http://aprendeconalf.es/images/foto_alf.jpg"/>
+<foaf:phone rdf:resource="tel:+34-913724710"/>
+<foaf:workplaceHomepage rdf:resource="http://www.uspceu.es"/>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Mariano Fernández</foaf:name>
+<foaf:mbox_sha1sum>811684ea2a7e90fa83767c0acd0579b38572d739</foaf:mbox_sha1sum></foaf:Person></foaf:knows></foaf:Person>
+</rdf:RDF>

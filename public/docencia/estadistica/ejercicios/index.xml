@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ejercicios de Estadística | Aprende con Alf</title>
+    <link>/docencia/estadistica/ejercicios/</link>
+      <atom:link href="/docencia/estadistica/ejercicios/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ejercicios de Estadística</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Ejercicios de Estadística</title>
+      <link>/docencia/estadistica/ejercicios/</link>
+    </image>
+    
+    <item>
+      <title>Ejercicios de Estadística Descriptiva</title>
+      <link>/docencia/estadistica/ejercicios/descriptiva/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/estadistica/ejercicios/descriptiva/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Titulación: Medicina, Farmacia&lt;/p&gt;
+&lt;p&gt;En un grupo de personas sometidas a una anestesia general se ha medido la dosis de sustancia anestésica recibida (X) en mg y el tiempo que estuvieron dormidas (Y) en horas.
+Las frecuencias observadas aparecen en la siguiente tabla:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{array}{|c|ccc|c|}
+\hline
+X\backslash Y &amp;amp; [1,2) &amp;amp; [2,3) &amp;amp; [3,4) &amp;amp; n_x \newline
+\hline
+(20,30] &amp;amp; 14 &amp;amp; 10 &amp;amp; 0 &amp;amp; 24 \newline
+(30,40] &amp;amp; 12 &amp;amp; 26 &amp;amp; 7 &amp;amp; 45 \newline
+(40,50] &amp;amp; 2 &amp;amp; 12 &amp;amp; 17 &amp;amp; 31 \newline
+\hline
+n_y &amp;amp; 28 &amp;amp; 48 &amp;amp; 24 &amp;amp; 100 \newline
+\hline
+\end{array}
+$$&lt;/p&gt;
+&lt;p&gt;Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;¿En qué variable es más representativa la media? Justificar la respuesta&lt;/li&gt;
+&lt;li&gt;¿Por encima de cuánto tiempo estarán dormidas el 10% de las personas que reciben una dosis entre 30 y 40 mg?&lt;/li&gt;
+&lt;li&gt;¿En qué variable hay más asimetría? Justificar la respuesta.&lt;/li&gt;
+&lt;li&gt;Según el modelo de regresión lineal, ¿cuánta sustancia anestésica será necesaria para domir a alguien durante al menos dos horas?
+¿Es fiable la predicción?
+Justificar la respuesta.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-0&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-0&#34;&gt;
+      Solución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-0&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
+      Resolución
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/q5j2ryj0oCQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ejercicios de Regresión Lineal</title>
+      <link>/docencia/estadistica/ejercicios/regresion-lineal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/estadistica/ejercicios/regresion-lineal/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Titulación: Todas&lt;/p&gt;
+&lt;p&gt;Al realizar un estudio de regresión lineal de dos variables X e Y, se sabe que
+las rectas de regresión se cortan en el punto (5,15), que el coeficiente de
+correlación lineal es -0.85 y que la pendiente de la recta de regresión de X
+sobre Y es el doble que la de la recta de Y sobre X. Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular las ecuaciones de las rectas de regresión de Y sobre X y de X sobre Y.&lt;/li&gt;
+&lt;li&gt;¿Qué porcentaje de la variabilidad de Y queda explicado por el modelo lineal?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;SOLUCIÓN&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/35214709&#34; width=&#34;640&#34; height=&#34;449&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;//www.youtube.com/embed/XKrRifxAfDg&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34;&gt; &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ejercicios de Regresión No Lineal</title>
+      <link>/docencia/estadistica/ejercicios/regresion-no-lineal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/estadistica/ejercicios/regresion-no-lineal/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Titulación: Química, Biotecnología&lt;/p&gt;
+&lt;p&gt;Se sometió a una persona a unas sesiones de entrenamiento para el manejo de una máquina de análisis químicos y se valoró la destreza en el manejo en diversas ocasiones, valorandola en una escala de 0 a 100.
+Los resultados obtenidos aparecen en la siguiente tabla&lt;/p&gt;
+&lt;p&gt;Sesiones  |  2 |  5 |  7 | 10 | 12 | 16
+Destreza  | 15 | 40 | 62 | 86 | 92 | 95&lt;/p&gt;
+&lt;p&gt;Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular la destreza alcanzada al cabo de 8 sesiones empleando el modelo logarítmico.&lt;/li&gt;
+&lt;li&gt;Calcular el número de sesiones necesarias para alcanzar una destreza de 80 empleando el modelo exponencial.&lt;/li&gt;
+&lt;li&gt;Justificar razonadamente cuál de las predicciones anteriores es más fiable.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;SOLUCIÓN&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/35215217&#34; width=&#34;640&#34; height=&#34;449&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
+&lt;iframe src=&#34;//www.youtube.com/embed/Jx8R4fTFjoE&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34;&gt; &lt;/iframe&gt; </description>
+    </item>
+    
+    <item>
+      <title>Ejercicios de Probabilidad</title>
+      <link>/docencia/estadistica/ejercicios/probabilidad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/estadistica/ejercicios/probabilidad/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Titulación: Farmacia&lt;/p&gt;
+&lt;p&gt;Un grupo de 50 alumnos tiene 3 asignaturas A, B y C en un curso.
+El número de aprobados en la convocatoria ordinaria y extraordinaria aparece en la siguiente tabla (se supone que quien
+ha aprobado en la convocatoria ordinaria no se presenta a la extraordinaria):&lt;/p&gt;
+&lt;p&gt;|Asignatura | Ordinaria | Extraordinaria|
+|A | 25 | 12 |
+|B | 14 | 10 |
+|C | 32 | 8|&lt;/p&gt;
+&lt;p&gt;Suponiendo que el aprobado en cada asignatura es independiente de las demás, se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;¿Cuál es la probabilidad de aprobar alguna asignatura en la convocatoria ordinaria?&lt;/li&gt;
+&lt;li&gt;¿Cuál es la probabilidad de aprobar las tres asignaturas?&lt;/li&gt;
+&lt;li&gt;Si un alumno ha aprobado la asignatura A, ¿cuál es la probabilidad de que hubiese aprobado en la convocatoria ordinaria?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;SOLUCIÓN&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/35219100&#34; width=&#34;640&#34; height=&#34;449&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
+&lt;iframe src=&#34;//www.youtube.com/embed/lsMNzMM3-GI&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34;&gt; &lt;/iframe&gt; </description>
+    </item>
+    
+    <item>
+      <title>Ejercicios de Tests Diagnósticos</title>
+      <link>/docencia/estadistica/ejercicios/tests-diagnosticos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/estadistica/ejercicios/tests-diagnosticos/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Titulación: Farmacia, Medicina&lt;/p&gt;
+&lt;p&gt;Para detectar el parásito del paludismo existe un test de respuesta inmediata que produce un 2 % de falsos
+positivos y un 4 % de falsos negativos.
+En una determinada región de África se sabe que hay un 32 % de personas con paludismo.
+Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;¿Cuál es la probabilidad de que el test de un diagnóstico acertado?&lt;/li&gt;
+&lt;li&gt;¿Cuál es el poder predictivo negativo del test?&lt;/li&gt;
+&lt;li&gt;¿Cuánto debería valer la sensibilidad del test para que el poder predictivo negativo fuese de al menos el 99 %?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;SOLUCIÓN&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/35218906&#34; width=&#34;640&#34; height=&#34;449&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
+&lt;iframe src=&#34;//www.youtube.com/embed/Py7ciwGGvqg&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34;&gt; &lt;/iframe&gt; 
+</description>
+    </item>
+    
+    <item>
+      <title>Ejercicios de Variables Aleatorias Discretas</title>
+      <link>/docencia/estadistica/ejercicios/variables-aleatorias-discretas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/estadistica/ejercicios/variables-aleatorias-discretas/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Titulación: Farmacia, Biotecnología&lt;/p&gt;
+&lt;p&gt;Se sabe que el 0.1 % de los comprimidos fabricados en un laboratorio no supera los controles de calidad.
+Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular la probabilidad de que en un envase de 500 comprimidos haya más de 2 comprimidos que no superan los controles de calidad.&lt;/li&gt;
+&lt;li&gt;Calcular la probabilidad de que en un lote de 10 envases haya más de 7 envases en los que todos sus comprimidos superen los controles de calidad.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;SOLUCIÓN&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/35218677&#34; width=&#34;640&#34; height=&#34;449&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
+&lt;iframe src=&#34;//www.youtube.com/embed/49i-So_DvbY&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34;&gt; &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ejercicios de Variables Aleatorias Continuas</title>
+      <link>/docencia/estadistica/ejercicios/variables-aleatorias-continuas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/estadistica/ejercicios/variables-aleatorias-continuas/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Titulación: Todas&lt;/p&gt;
+&lt;p&gt;En una población se sabe que las estaturas de los hombres y de las mujeres siguen una distribución
+normal con la misma desviación típica y que la media de los hombres es 5 cm mayor que la de las mujeres.
+También se sabe que el 75 % de los hombres miden menos de 178 cm y que el 10 % de las mujeres miden más de 176.8 cm.
+Se pide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calcular las medias y las desviaciones típicas de las distribuciones de estaturas de los hombres y de las mujeres.&lt;/li&gt;
+&lt;li&gt;Calcular la probabilidad de que un hombre mida entre 170 y 180 cm.&lt;/li&gt;
+&lt;li&gt;Calcular el percentil 90 de la estatura de los hombres.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;SOLUCIÓN&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/35218982&#34; width=&#34;640&#34; height=&#34;449&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
+&lt;iframe src=&#34;//www.youtube.com/embed/UwH4yRqutHY&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34;&gt; &lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

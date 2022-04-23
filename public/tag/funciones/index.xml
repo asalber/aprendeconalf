@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Funciones | Aprende con Alf</title>
+    <link>/tag/funciones/</link>
+      <atom:link href="/tag/funciones/index.xml" rel="self" type="application/rss+xml" />
+    <description>Funciones</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-es</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Funciones</title>
+      <link>/tag/funciones/</link>
+    </image>
+    
+    <item>
+      <title>Ejercicios de Funciones</title>
+      <link>/docencia/python/ejercicios/funciones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/ejercicios/funciones/</guid>
+      <description>&lt;h2 id=&#34;ejercicio-1&#34;&gt;Ejercicio 1&lt;/h2&gt;
+&lt;p&gt;Escribir una función que muestre por pantalla el saludo &lt;code&gt;¡Hola amiga!&lt;/code&gt; cada vez que se la invoque.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/funciones/ejercicio1.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-2&#34;&gt;Ejercicio 2&lt;/h2&gt;
+&lt;p&gt;Escribir una función a la que se le pase una cadena &lt;code&gt;&amp;lt;nombre&amp;gt;&lt;/code&gt; y muestre por pantalla el saludo &lt;code&gt;¡hola &amp;lt;nombre&amp;gt;!&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/funciones/ejercicio2.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-3&#34;&gt;Ejercicio 3&lt;/h2&gt;
+&lt;p&gt;Escribir una función que reciba un número entero positivo y devuelva su factorial.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/funciones/ejercicio3.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-4&#34;&gt;Ejercicio 4&lt;/h2&gt;
+&lt;p&gt;Escribir una función que calcule el total de una factura tras aplicarle el IVA. La función debe recibir la cantidad sin IVA y el porcentaje de IVA a aplicar, y devolver el total de la factura. Si se invoca la función sin pasarle el porcentaje de IVA, deberá aplicar un 21%.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/funciones/ejercicio4.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-5&#34;&gt;Ejercicio 5&lt;/h2&gt;
+&lt;p&gt;Escribir una función que calcule el área de un círculo y otra que calcule el volumen de un cilindro usando la primera función.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/funciones/ejercicio5.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-6&#34;&gt;Ejercicio 6&lt;/h2&gt;
+&lt;p&gt;Escribir una función que reciba una muestra de números en una lista y devuelva su media.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/funciones/ejercicio6.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-7&#34;&gt;Ejercicio 7&lt;/h2&gt;
+&lt;p&gt;Escribir una función que reciba una muestra de números en una lista y devuelva otra lista con sus cuadrados.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/funciones/ejercicio7.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-8&#34;&gt;Ejercicio 8&lt;/h2&gt;
+&lt;p&gt;Escribir una función que reciba una muestra de números en una lista y devuelva un diccionario con su media, varianza y desviación típica.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/funciones/ejercicio8.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-9&#34;&gt;Ejercicio 9&lt;/h2&gt;
+&lt;p&gt;Escribir una función que calcule el máximo común divisor de dos números y otra que calcule el mínimo común múltiplo.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/funciones/ejercicio9.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-10&#34;&gt;Ejercicio 10&lt;/h2&gt;
+&lt;p&gt;Escribir una función que convierta un número decimal en binario y otra que convierta un número binario en decimal.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/funciones/ejercicio10.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ejercicio-11&#34;&gt;Ejercicio 11&lt;/h2&gt;
+&lt;p&gt;Escribir un programa que reciba una cadena de caracteres y devuelva un diccionario con cada palabra que contiene y su frecuencia.
+Escribir otra función que reciba el diccionario generado con la función anterior y devuelva una tupla con la palabra más repetida y su frecuencia.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/ejercicios/soluciones/funciones/ejercicio11.ipynb&#34; class=&#34;btn btn-info&#34;&gt;Solución&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Funciones</title>
+      <link>/docencia/python/manual/funciones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docencia/python/manual/funciones/</guid>
+      <description>&lt;h2 id=&#34;funciones-def&#34;&gt;Funciones (&lt;code&gt;def&lt;/code&gt;)&lt;/h2&gt;
+&lt;p&gt;Una función es un bloque de código que tiene asociado un nombre, de manera que cada vez que se quiera ejecutar el bloque de código basta con invocar el nombre de la función.&lt;/p&gt;
+&lt;p&gt;Para declarar una función se utiliza la siguiente sintaxis:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;def &amp;lt;nombre-funcion&amp;gt; (&amp;lt;parámetros&amp;gt;):&lt;/code&gt;&lt;br&gt;
+     &lt;em&gt;&lt;code&gt;bloque código&lt;/code&gt;&lt;/em&gt;&lt;br&gt;
+     &lt;code&gt;return &amp;lt;objeto&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def bienvenida():
+...     print(&#39;¡Bienvenido a Python!&#39;)
+...     return
+...
+&amp;gt;&amp;gt;&amp;gt; type(bienvenida)
+&amp;lt;class &#39;function&#39;&amp;gt;
+&amp;gt;&amp;gt;&amp;gt; bienvenida()
+¡Bienvenido a Python!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;parámetros-y-argumentos-de-una-función&#34;&gt;Parámetros y argumentos de una función&lt;/h3&gt;
+&lt;p&gt;Una función puede recibir valores cuando se invoca a través de unas variables conocidas como &lt;em&gt;parámetros&lt;/em&gt; que se definen entre paréntesis en la declaración de la función. En el cuerpo de la función se pueden usar estos parámetros como si fuesen variables.&lt;/p&gt;
+&lt;p&gt;Los valores que se pasan a la función en una llamada o invocación concreta de ella se conocen como &lt;em&gt;argumentos&lt;/em&gt; y se asocian a los parámetros de la declaración de la función.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def bienvenida(nombre):
+...     print(&#39;¡Bienvenido a Python&#39;, nombre + &#39;!&#39;)
+...     return
+...
+&amp;gt;&amp;gt;&amp;gt; bienvenida(&#39;Alf&#39;)
+¡Bienvenido a Python Alf!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;paso-de-argumentos-a-una-función&#34;&gt;Paso de argumentos a una función&lt;/h3&gt;
+&lt;p&gt;Los argumentos se pueden pasar de dos formas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Argumentos posicionales&lt;/strong&gt;: Se asocian a los parámetros de la función en el mismo orden que aparecen en la definición de la función.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Argumentos nominales&lt;/strong&gt;: Se indica explícitamente el nombre del parámetro al que se asocia un argumento de la forma &lt;code&gt;parametro = argumento&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def bienvenida(nombre, apellido):
+...     print(&#39;¡Bienvenido a Python&#39;, nombre, apellido + &#39;!&#39;)
+...     return
+...
+&amp;gt;&amp;gt;&amp;gt; bienvenida(&#39;Alfredo&#39;, &#39;Sánchez)
+¡Bienvenido a Python Alfredo Sánchez!
+&amp;gt;&amp;gt;&amp;gt; bienvenida(apellido = &#39;Sánchez&#39;, nombre = &#39;Alfredo&#39;)
+¡Bienvenido a Python Alfredo Sánchez!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;retorno-de-una-función&#34;&gt;Retorno de una función&lt;/h3&gt;
+&lt;p&gt;Una función puede devolver un objeto de cualquier tipo tras su invocación. Para ello el objeto a devolver debe escribirse detrás de la palabra reservada &lt;code&gt;return&lt;/code&gt;. Si no se indica ningún objeto, la función no devolverá nada.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def area_triangulo(base, altura):
+...     return base * altura / 2
+...
+&amp;gt;&amp;gt;&amp;gt; area_triangulo(2, 3)
+3
+&amp;gt;&amp;gt;&amp;gt; area_triangulo(4, 5)
+10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Una función puede devolver más de un objeto separándolos por comas tras la palabra reservada &lt;code&gt;return&lt;/code&gt;. En tal caso, la función agrupará los objetos en una tupla y devolverá la tupla.&lt;/p&gt;
+&lt;h2 id=&#34;argumentos-por-defecto&#34;&gt;Argumentos por defecto&lt;/h2&gt;
+&lt;p&gt;En la definición de una función se puede asignar a cada parámetro un argumento por defecto, de manera que si se invoca la función sin proporcionar ningún argumento para ese parámetro, se utiliza el argumento por defecto.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def bienvenida(nombre, lenguaje = &#39;Python&#39;):
+...     print(&#39;¡Bienvenido a&#39;, lenguaje, nombre + &#39;!&#39;)
+...     return
+...
+&amp;gt;&amp;gt;&amp;gt; bienvenida(&#39;Alf&#39;)
+¡Bienvenido a Python Alf!
+&amp;gt;&amp;gt;&amp;gt; bienvenida(&#39;Alf&#39;, &#39;Java&#39;)
+¡Bienvenido a Java Alf!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;i class=&#34;fa fa-exclamation-triangle&#34; style=&#34;color:red;&#34;&gt;&lt;/i&gt;Los parámetros con un argumento por defecto deben indicarse después de los parámetros sin argumentos por defectos. De lo contrario se produce un error.&lt;/p&gt;
+&lt;h2 id=&#34;pasar-un-número-indeterminado-de-argumentos&#34;&gt;Pasar un número indeterminado de argumentos&lt;/h2&gt;
+&lt;p&gt;Por último, es posible pasar un número variable de argumentos a un parámetro. Esto se puede hacer de dos formas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;*parametro&lt;/code&gt;: Se antepone un asterisco al nombre del parámetro y en la invocación de la función se pasa el número variable de argumentos separados por comas. Los argumentos se guardan en una lista que se asocia al parámetro.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def menu(*platos):
+...     print(&#39;Hoy tenemos: &#39;, end=&#39;&#39;)
+...     for plato in platos:
+...         print(plato, end=&#39;, &#39;)
+...     return
+...
+&amp;gt;&amp;gt;&amp;gt; menu(&#39;pasta&#39;, &#39;pizza&#39;, &#39;ensalada&#39;)
+Hoy tenemos: pasta, pizza, ensalada,
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;**parametro&lt;/code&gt;: Se anteponen dos asteriscos al nombre del parámetro y en la invocación de la función se pasa el número variable de argumentos por pares &lt;code&gt;nombre = valor&lt;/code&gt;, separados por comas. Los argumentos se guardan en un diccionario que se asocia al parámetro.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def contacto(**info):
+...     print(&#39;Datos del contacto)
+...     for clave, valor in info.items():
+...         print(clave, &amp;quot;:&amp;quot;, valor)
+...     return
+...
+&amp;gt;&amp;gt;&amp;gt; contacto(Nombre = &amp;quot;Alf&amp;quot;, Email = &amp;quot;asalber@ceu.es&amp;quot;)
+Datos del contacto
+Nombre : Alf
+Email : asalber@ceu.es
+&amp;gt;&amp;gt;&amp;gt; contacto(Nombre = &amp;quot;Alf&amp;quot;, Email = &amp;quot;asalber@ceu.es&amp;quot;, Dirección = &amp;quot;Madrid&amp;quot;)
+Datos del contacto
+Nombre : Alf
+Email : asalber@ceu.es
+Dirección : Madrid
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;ámbito-de-los-parámetros-y-variables-de-una-función&#34;&gt;Ámbito de los parámetros y variables de una función&lt;/h2&gt;
+&lt;p&gt;Los parámetros y las variables declaradas dentro de una función son de &lt;strong&gt;ámbito local&lt;/strong&gt;, mientras que las definidas fuera de ella son de ámbito &lt;strong&gt;ámbito global&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Tanto los parámetros como las variables del ámbito local de una función sólo están accesibles durante la ejecución de la función, es decir, cuando termina la ejecución de la función estas variables desaparecen y no son accesibles desde fuera de la función.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def bienvenida(nombre):
+...     lenguaje = &#39;Python&#39;
+...     print(&#39;¡Bienvenido a&#39;, lenguaje, nombre + &#39;!&#39;)
+...     return
+...
+&amp;gt;&amp;gt;&amp;gt; bienvenida(&#39;Alf&#39;)
+¡Bienvenido a Python Alf!
+&amp;gt;&amp;gt;&amp;gt; lenguaje
+Traceback (most recent call last):
+  File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 1, in &amp;lt;module&amp;gt;
+NameError: name &#39;lenguaje&#39; is not defined
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si en el ámbito local de una función existe una variable que también existe en el ámbito global, durante la ejecución de la función la variable global queda eclipsada por la variable local y no es accesible hasta que finaliza la ejecución de la función.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; lenguaje = &#39;Java&#39;
+&amp;gt;&amp;gt;&amp;gt; def bienvenida():
+...     lenguaje = &#39;Python&#39;
+...     print(&#39;¡Bienvenido a&#39;, lenguaje + &#39;!&#39;)
+...     return
+...
+&amp;gt;&amp;gt;&amp;gt; bienvenida()
+¡Bienvenido a Python!
+&amp;gt;&amp;gt;&amp;gt; print(lenguaje)
+Java
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;paso-de-argumentos-por-asignación&#34;&gt;Paso de argumentos por asignación&lt;/h2&gt;
+&lt;p&gt;En Python los argumentos se pasan a una función por asignación, es decir, se asignan a los parámetros de la función como si fuesen variables locales. De este modo, cuando los argumentos son objetos mutables (listas, diccionarios, etc.) se pasa al parámetro una referencia al objeto, de manera que cualquier cambio que se haga dentro de la función mediante el parámetro asociado afectará al objeto original.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; primer_curso = [&#39;Matemáticas&#39;, &#39;Física&#39;]
+&amp;gt;&amp;gt;&amp;gt; def añade_asignatura(curso, asignatura):
+...     curso.append(asignatura)
+...     return
+...
+&amp;gt;&amp;gt;&amp;gt; añade_asignatura(primer_curso, &#39;Química&#39;)
+&amp;gt;&amp;gt;&amp;gt; print(primer_curso)
+[&#39;Matemáticas&#39;, &#39;Física&#39;, &#39;Química&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;las-funciones-son-objetos&#34;&gt;Las funciones son objetos&lt;/h2&gt;
+&lt;p&gt;En Python las funciones son objetos como el resto de tipos de datos, de manera que es posible asignar una función a una variable y luego utilizar la variable para hacer la llamada a la función.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def saludo(nombre):
+...     print(&amp;quot;Hola&amp;quot;, nombre)
+...     return
+... 
+&amp;gt;&amp;gt;&amp;gt; bienvenida = saludo
+&amp;gt;&amp;gt;&amp;gt; bienvenida(&amp;quot;Alf&amp;quot;)
+Hola Alf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esto permite, por tanto, pasar funciones como argumentos en la llamada a una función y que una función pueda devolver otras funciones.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def impuesto(porcentaje):
+...     def aplicar(base):
+...             return base * porcentaje / 100
+...     return aplicar
+... 
+&amp;gt;&amp;gt;&amp;gt; iva = impuesto(21)
+&amp;gt;&amp;gt;&amp;gt; iva(1000)
+210.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;funciones-recursivas&#34;&gt;Funciones recursivas&lt;/h2&gt;
+&lt;p&gt;Una función recursiva es una función que en su cuerpo contiene una llama a si misma.&lt;/p&gt;
+&lt;p&gt;La recursión es una práctica común en la mayoría de los lenguajes de programación ya que permite resolver las tareas recursivas de manera más natural.&lt;/p&gt;
+&lt;p&gt;Para garantizar el final de una función recursiva, las sucesivas llamadas tienen que reducir el grado de complejidad del problema, hasta que este pueda resolverse directamente sin necesidad de volver a llamar a la función.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def factorial(n):
+...     if n == 0:
+...         return 1
+...     else:
+...         return n * factorial(n-1)
+...
+&amp;gt;&amp;gt;&amp;gt; f(5)
+120
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;funciones-recursivas-múltiples&#34;&gt;Funciones recursivas múltiples&lt;/h3&gt;
+&lt;p&gt;Una función recursiva puede invocarse a si misma tantas veces como quiera en su cuerpo.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def fibonacci(n):
+...     if n &amp;lt;= 1:
+...         return n
+...     else:
+...         return fibonacci(n - 1) + fibonacci(n - 2)
+...
+&amp;gt;&amp;gt;&amp;gt; fibonacci(6)
+8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;los-riesgos-de-la-recursión&#34;&gt;Los riesgos de la recursión&lt;/h3&gt;
+&lt;p&gt;Aunque la recursión permite resolver las tareas recursivas de forma más natural, hay que tener cuidado con ella porque suele consumir bastante memoria, ya que cada llamada a la función crea un nuevo ámbito local con las variables y los parámetros de la función.&lt;/p&gt;
+&lt;p&gt;En muchos casos es más eficiente resolver la tarea recursiva de forma iterativa usando bucles.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def fibonacci(n):
+...     a, b = 0, 1
+...     for i in range(n):
+...         a, b = b, a + b
+...     return a
+...
+&amp;gt;&amp;gt;&amp;gt; fibonacci(6)
+8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;documentación-de-funciones&#34;&gt;Documentación de funciones&lt;/h2&gt;
+&lt;p&gt;Una práctica muy recomendable cuando se define una función es describir lo que la función hace en un comentario.&lt;/p&gt;
+&lt;p&gt;En Python esto se hace con un &lt;strong&gt;docstring&lt;/strong&gt; que es un tipo de comentario especial se hace en la línea siguiente al encabezado de la función entre tres comillas simples &lt;code&gt;&#39;&#39;&#39;&lt;/code&gt; o dobles &lt;code&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Después se puede acceder a la documentación de la función con la función &lt;code&gt;help(&amp;lt;nombre-función&amp;gt;)&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def area_triangulo(base, altura):
+... &amp;quot;&amp;quot;&amp;quot;Función que calcula el área de un triángulo.
+...
+... Parámetros:
+...     - base: Un número real con la base del triángulo.
+...     - altura: Un número real con la altura del triángulo.
+... Salida:
+...     Un número real con el área del triángulo de base y altura especificadas.
+... &amp;quot;&amp;quot;&amp;quot;
+...     return base * altura / 2
+...
+&amp;gt;&amp;gt;&amp;gt; help(area_triangulo)
+area_triangulo(base, altura)
+    Función que calcula el área de un triángulo.
+
+    Parámetros:
+        - base: Un número real con la base del triángulo.
+        - altura: Un número real con la altura del triángulo.
+    Salida:
+        Un número real con el área del triángulo de base y altura especificadas.
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

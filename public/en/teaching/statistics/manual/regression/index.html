@@ -1,0 +1,1653 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alfredo Sánchez Alberca">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="In the last chapter we saw how to describe the distribution of a single variable in a sample. However, in most cases, studies require to describe several variables that are often related.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/en/teaching/statistics/manual/regression/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#6f5499">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700%7CSource Sans Pro:400+400italic%7COpen Sans:400+400italic%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/en/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/en/teaching/statistics/manual/regression/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@aprendeconalf">
+  <meta property="twitter:creator" content="@aprendeconalf">
+  
+  <meta property="og:site_name" content="Aprende con Alf">
+  <meta property="og:url" content="/en/teaching/statistics/manual/regression/">
+  <meta property="og:title" content="Regression | Aprende con Alf">
+  <meta property="og:description" content="In the last chapter we saw how to describe the distribution of a single variable in a sample. However, in most cases, studies require to describe several variables that are often related."><meta property="og:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png">
+  <meta property="twitter:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2016-04-20T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-10-07T19:16:52&#43;02:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Regression | Aprende con Alf</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/en"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/en"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/en/teaching/calculus/"><span>Calculus</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/statistics/"><span>Statistics</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/R/"><span>R</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/excel/"><span>Excel</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/geogebra/"><span>Geogebra</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+ 
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/en/teaching/statistics/manual/">Statistics Manual</a>
+    <ul class="nav docs-sidenav">
+          <li class=""><a href="/en/teaching/statistics/manual/introduction/">Introduction</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/manual/descriptive-statistics/">Descriptive Statistics</a></li>
+        
+          <li class="active"><a href="/en/teaching/statistics/manual/regression/">Regression</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/manual/probability/">Probability</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/manual/discrete-random-variables/">Discrete Random Variables</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/manual/continuous-random-variables/">Continuous Random Variables</a></li>
+        </ul>
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#joint-distribution">Joint distribution</a>
+      <ul>
+        <li><a href="#joint-frequencies">Joint frequencies</a></li>
+        <li><a href="#joint-frequency-distribution">Joint frequency distribution</a></li>
+        <li><a href="#scatter-plot">Scatter plot</a></li>
+        <li><a href="#marginal-frequency-distributions">Marginal frequency distributions</a></li>
+      </ul>
+    </li>
+    <li><a href="#covariance">Covariance</a></li>
+    <li><a href="#regression">Regression</a>
+      <ul>
+        <li><a href="#simple-regression-models">Simple regression models</a></li>
+        <li><a href="#residuals-or-predictive-errors">Residuals or predictive errors</a></li>
+        <li><a href="#least-squares-fitting">Least squares fitting</a></li>
+      </ul>
+    </li>
+    <li><a href="#regression-line">Regression line</a>
+      <ul>
+        <li><a href="#relative-position-of-the-regression-lines">Relative position of the regression lines</a></li>
+        <li><a href="#regression-coefficient">Regression coefficient</a></li>
+        <li><a href="#regression-predictions">Regression predictions</a></li>
+      </ul>
+    </li>
+    <li><a href="#correlation">Correlation</a>
+      <ul>
+        <li><a href="#residual-variance">Residual variance</a></li>
+        <li><a href="#explained-and-non-explained-variation">Explained and non-explained variation</a></li>
+        <li><a href="#coefficient-of-determination">Coefficient of determination</a></li>
+        <li><a href="#correlation-coefficient">Correlation coefficient</a></li>
+        <li><a href="#different-linear-correlations">Different linear correlations</a></li>
+        <li><a href="#reliability-of-regression-predictions">Reliability of regression predictions</a></li>
+      </ul>
+    </li>
+    <li><a href="#non-linear-regression">Non-linear regression</a>
+      <ul>
+        <li><a href="#transformations-of-non-linear-regression-models">Transformations of non-linear regression models</a></li>
+        <li><a href="#exponential-relation">Exponential relation</a></li>
+      </ul>
+    </li>
+    <li><a href="#regression-risks">Regression risks</a>
+      <ul>
+        <li><a href="#lack-of-fit-does-not-mean-independence">Lack of fit does not mean independence</a></li>
+        <li><a href="#outliers-influence-in-regression">Outliers influence in regression</a></li>
+        <li><a href="#the-simpsons-paradox">The Simpson&rsquo;s paradox</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Regression</h1>
+
+          <div class="article-style">
+            <p>In the last chapter we saw how to describe the distribution of a single variable in a sample. However, in most cases, studies require to describe several variables that are often related. For instance, a nutritional study should consider all the variables that could be related to the weight, as height, age, gender, smoking, diet, physic exercise, etc.</p>
+<p>To understand a phenomenon that involve several variables is not enough to study every variable by its own. We have to study all the variables together to describe how they interact and the type of relation among them.</p>
+<p>Usually in a <em>dependency study</em> there is a <strong>dependent variable</strong> $Y$ that it is supposed to be influenced by a set of variables $X_1,\ldots,X_n$ known as <strong>independent variables</strong>. The simpler case is a <em>simple dependency study</em> when there is only one independent variable, that is the case covered in this chapter.</p>
+<h2 id="joint-distribution">Joint distribution</h2>
+<h3 id="joint-frequencies">Joint frequencies</h3>
+<p>To study the relation between two variables $X$ and $Y$, we have to study the joint distribution of the <strong>two-dimensional variable</strong> $(X,Y)$, whose values are pairs $(x_i,y_j)$ where the first element is a value of $X$ and the second a value of $Y$.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Joint sample frequencies</strong>. Given a sample of $n$ values and a two-dimensional variable $(X,Y)$, for every value of the variable $(x_i,y_j)$ is defined:</p>
+<ul>
+<li><strong>Absolute frequency</strong> $n_{ij}$: Is the number of times that the pair $(x_i,y_j)$ appears in the sample.</li>
+<li><strong>Relative frequency</strong> $f_{ij}$: Is the proportion of times that the pair $(x_i,y_j)$ appears in the sample.</li>
+</ul>
+<p>$$f_{ij}=\frac{n_{ij}}{n}.$$</p>
+  </div>
+</div>
+<div class="alert alert-warning">
+  <div>
+    For two-dimensional variables it make no sense cumulative frequencies.
+  </div>
+</div>
+<h3 id="joint-frequency-distribution">Joint frequency distribution</h3>
+<p>The values of the two-dimensional variable with their frequencies is known as <strong>joint frequency distribution</strong>, and is represented in a <strong>joint frequency table</strong>.</p>
+<p>$$\begin{array}{|c|ccccc|}
+\hline
+X\backslash Y &amp; y_1 &amp; \cdots &amp; y_j &amp; \cdots &amp; y_q \newline
+\hline
+x_1 &amp; n_{11} &amp; \cdots &amp; n_{1j} &amp; \cdots &amp; n_{1q} \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline
+x_i &amp; n_{i1} &amp; \cdots &amp; n_{ij} &amp; \cdots &amp; n_{iq} \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline
+x_p &amp; n_{p1} &amp; \cdots &amp; n_{pj} &amp; \cdots &amp; n_{pq} \newline
+\hline
+\end{array}$$</p>
+<p><strong>Example (grouped data)</strong>. The height (in cm) and weight (in kg) of a sample of 30 students is:</p>
+<div style="text-align:center">
+(179,85), (173,65), (181,71), (170,65), (158,51), (174,66),<br/>
+(172,62), (166,60), (194,90), (185,75), (162,55), (187,78),<br/>
+(198,109), (177,61), (178,70), (165,58), (154,50), (183,93),<br/>
+(166,51), (171,65), (175,70), (182,60), (167,59), (169,62),<br/>
+(172,70), (186,71), (172,54), (176,68),(168,67), (187,80).
+</div>
+<p>The joint frequency table is</p>
+<p>$$\begin{array}{|c||c|c|c|c|c|c|}
+\hline
+X/Y &amp; [50,60) &amp; [60,70) &amp; [70,80) &amp; [80,90) &amp; [90,100) &amp; [100,110) \ \newline
+\hline\hline
+(150,160] &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \ \newline
+\hline
+(160,170] &amp; 4 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \ \newline
+\hline
+(170,180] &amp; 1 &amp; 6 &amp; 3 &amp; 1 &amp; 0 &amp; 0 \ \newline
+\hline
+(180,190] &amp; 0 &amp; 1 &amp; 4 &amp; 1 &amp; 1 &amp; 0 \ \newline
+\hline
+(190,200] &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 \ \newline
+\hline
+\end{array}$$</p>
+<h3 id="scatter-plot">Scatter plot</h3>
+<p>The joint frequency distribution can be represented graphically with a <strong>scatter plot</strong>, where data is displayed as a collections of points on a $XY$ coordinate system.</p>
+<p>Usually the independent variable is represented in the $X$ axis and the dependent variable in the $Y$ axis. For every data pair $(x_i,y_j)$ in the sample a dot is drawn on the plane with those coordinates.</p>
+<img src="../img/regression/scatterplot.svg" alt="Scatter plot" width="300">
+<p>The result is a set of points that usually is known as a <em>point cloud</em>.</p>
+<p><strong>Example</strong>. The scatter plot below represent the distribution of heights and weights of the previous sample.</p>
+<img src="../img/regression/height_weight_scatterplot.svg" alt="Scatter plot of heights and weights" width="600">
+<div class="alert alert-int">
+  <div>
+    The shape of the point cloud in a scatter plot gives information about the type of relation between the variables.</p>
+<img src="../img/regression/scatterplot_different_relations.svg" alt="Scatter plot of different types of relations" width="700">
+  </div>
+</div>
+<h3 id="marginal-frequency-distributions">Marginal frequency distributions</h3>
+<p>The frequency distributions of each variable of the two-dimensional variable are known as <strong>marginal frequency distributions</strong>.</p>
+<p>We can get the marginal frequency distributions from the joint frequency table by adding frequencies by rows and columns.</p>
+<p>$$\begin{array}{|c|ccccc|c|}
+\hline
+X\backslash Y &amp; y_1 &amp; \cdots &amp; y_j &amp; \cdots &amp; y_q &amp; \color{red}{n_x} \newline
+\hline
+x_1 &amp; n_{11} &amp; \cdots &amp; n_{1j} &amp; \cdots &amp; n_{1q} &amp; \color{red}{n_{x_1}} \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \downarrow + &amp; \vdots &amp; \vdots &amp; \color{red}{\vdots}  \newline
+x_i &amp; n_{i1} &amp; \stackrel{+}{\rightarrow} &amp; n_{ij} &amp; \stackrel{+}{\rightarrow} &amp; n_{iq} &amp; \color{red}{n_{x_i}} \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \downarrow +  &amp; \vdots &amp; \vdots &amp; \color{red}{\vdots} \newline
+x_p &amp; n_{p1} &amp; \cdots &amp; n_{pj} &amp; \cdots &amp; n_{pq} &amp; \color{red}{n_{x_p}}  \newline
+\hline
+\color{red}{n_y} &amp; \color{red}{n_{y_1}} &amp; \color{red}{\cdots} &amp; \color{red}{n_{y_j}} &amp; \color{red}{\cdots} &amp; \color{red}{n_{y_q}} &amp; n \newline
+\hline
+\end{array}$$</p>
+<p><strong>Example</strong>. The marginal frequency distributions for the previous sample of heights and weights are</p>
+<p>$$
+\begin{array}{|c||c|c|c|c|c|c|c|}
+\hline
+X/Y &amp; [50,60) &amp; [60,70) &amp; [70,80) &amp; [80,90) &amp; [90,100) &amp; [100,110) &amp; \color{red}{n_x}\ \newline
+\hline\hline
+(150,160] &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \color{red}{2}\ \newline
+\hline
+(160,170] &amp; 4 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \color{red}{8}\ \newline
+\hline
+(170,180] &amp; 1 &amp; 6 &amp; 3 &amp; 1 &amp; 0 &amp; 0 &amp; \color{red}{11} \ \newline
+\hline
+(180,190] &amp; 0 &amp; 1 &amp; 4 &amp; 1 &amp; 1 &amp; 0 &amp; \color{red}{7} \ \newline
+\hline
+(190,200] &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; \color{red}{2}\ \newline
+\hline
+\color{red}{n_y} &amp; \color{red}{7} &amp; \color{red}{11} &amp; \color{red}{7} &amp; \color{red}{2} &amp; \color{red}{2} &amp; \color{red}{1} &amp; 30\ \newline
+\hline
+\end{array}
+$$</p>
+<p>and the corresponding statistics are</p>
+<p>$$
+\begin{array}{lllll}
+\bar x = 174.67 \mbox{ cm} &amp; \quad &amp; s^2_x = 102.06 \mbox{ cm}^2 &amp; \quad &amp; s_x = 10.1 \mbox{ cm} \newline
+\bar y = 69.67 \mbox{ Kg} &amp; &amp; s^2_y = 164.42 \mbox{ Kg}^2 &amp; &amp; s_y = 12.82 \mbox{ Kg}
+\end{array}
+$$</p>
+<h2 id="covariance">Covariance</h2>
+<p>To study the relation between two variables, we have to analyze the joint variation of them.</p>
+<img src="../img/regression/deviations_to_means.svg" alt="Devitations to means in an scatterplot" width="600">
+<p>Dividing the point cloud of the scatter plot in 4 quadrants centered in the mean point $(\bar x, \bar y)$, the sign of deviations from the mean is:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>Quadrant</strong></th>
+<th style="text-align:center">$(x_i-\bar x)$</th>
+<th style="text-align:center">$(y_j-\bar y)$</th>
+<th style="text-align:center">$(x_i-\bar x)(y_j-\bar y)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">$+$</td>
+<td style="text-align:center">$+$</td>
+<td style="text-align:center">$+$</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">$-$</td>
+<td style="text-align:center">$+$</td>
+<td style="text-align:center">$-$</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">$-$</td>
+<td style="text-align:center">$-$</td>
+<td style="text-align:center">$+$</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">$+$</td>
+<td style="text-align:center">$-$</td>
+<td style="text-align:center">$-$</td>
+</tr>
+</tbody>
+</table>
+<img src="../img/regression/scatterplot_quadrants.svg" alt="Quadrants of a scatter plot" width="400">
+<p>If there is an <em>increasing linear</em> relationship between the variables, most of the points will fall in quadrants 1 and 3, and the sum of the products of deviations from the mean will be positive.</p>
+<p>$$\sum(x_i-\bar x)(y_j-\bar y) &gt; 0$$</p>
+<img src="../img/regression/increasing_linear_scatterplot.svg" alt="Increasing linear scatter plot" width="500">
+<p>If there is an <em>decreasing linear</em> relationship between the variables, most of the points will fall in quadrants 2 and 4, and the sum of the products of deviations from the mean will be negative.</p>
+<p>$$\sum(x_i-\bar x)(y_j-\bar y) &lt; 0$$</p>
+<img src="../img/regression/decreasing_linear_scatterplot.svg" alt="Decreasing linear scatter plot" width="500">
+<p>Using the products of deviations from the means we get the following statistic.</p>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Sample covariance</strong>. The <em>sample covariance</em> of a two-dimensional variable $(X,Y)$ is the average of the products of deviations from the respective means.$$s_{xy}=\frac{\sum (x_i-\bar x)(y_j-\bar y)n_{ij}}{n}$$
+  </div>
+</div>
+<p>It can also be calculated using the formula</p>
+<p>$$s_{xy}=\frac{\sum x_iy_jn_{ij}}{n}-\bar x\bar y.$$</p>
+<div class="alert alert-int">
+  <div>
+    <p>The covariance measures the linear relation between two variables:</p>
+<ul>
+<li>If $s_{xy}&gt;0$ there exists an increasing linear relation.</li>
+<li>If $s_{xy}&lt;0$ there exists a decreasing linear relation.</li>
+<li>If $s_{xy}=0$ there is no linear relation.</li>
+</ul>
+  </div>
+</div>
+<p><strong>Example</strong>. Using the joint frequency table of the sample of heights and weights</p>
+<p>$$
+\begin{array}{|c||c|c|c|c|c|c|c|}
+\hline
+X/Y &amp; [50,60) &amp; [60,70) &amp; [70,80) &amp; [80,90) &amp; [90,100) &amp; [100,110) &amp; n_x\ \newline
+\hline\hline
+(150,160] &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2\ \newline
+\hline
+(160,170] &amp; 4 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 8\ \newline
+\hline
+(170,180] &amp; 1 &amp; 6 &amp; 3 &amp; 1 &amp; 0 &amp; 0 &amp; 11 \ \newline
+\hline
+(180,190] &amp; 0 &amp; 1 &amp; 4 &amp; 1 &amp; 1 &amp; 0 &amp; 7 \ \newline
+\hline
+(190,200] &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 2\ \newline
+\hline
+n_y &amp; 7 &amp; 11 &amp; 7 &amp; 2 &amp; 2 &amp; 1 &amp; 30\ \newline
+\hline
+\end{array}
+$$</p>
+<p>$$\bar x = 174.67 \mbox{ cm} \qquad \bar y = 69.67 \mbox{ Kg}$$</p>
+<p>we get that the covariance is equal to</p>
+<p>$$
+\begin{aligned}
+s_{xy} &amp;=\frac{\sum x_iy_jn_{ij}}{n}-\bar x\bar y =  \frac{155\cdot 55\cdot 2 + 165\cdot 55\cdot 4 + \cdots + 195\cdot 105\cdot 1}{30}-174.67\cdot 69.67 = \newline
+&amp; = \frac{368200}{30}-12169.26 = 104.07 \mbox{ cm$\cdot$ Kg}.
+\end{aligned}
+$$</p>
+<p>This means that there is a increasing linear relation between the weight and the height.</p>
+<h2 id="regression">Regression</h2>
+<p>In most cases the goal of a dependency study is not only to detect a relation between two variables, but also to express that relation with a mathematical function, $$y=f(x)$$ in order to predict the dependent variable for every value of the independent one.
+The part of Statistics in charge of constructing such a function is called  <strong>regression</strong>, and the function is known as <strong>regression function</strong> or <strong>regression model</strong>.</p>
+<h3 id="simple-regression-models">Simple regression models</h3>
+<p>There are a lot of types of regression models. The most common models are shown in the table below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Model</strong></th>
+<th style="text-align:center"><strong>Equation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Linear</td>
+<td style="text-align:center">$y=a+bx$</td>
+</tr>
+<tr>
+<td style="text-align:left">Quadratic</td>
+<td style="text-align:center">$y=a+bx+cx^2$</td>
+</tr>
+<tr>
+<td style="text-align:left">Cubic</td>
+<td style="text-align:center">$y=a+bx+cx^2+dx^3$</td>
+</tr>
+<tr>
+<td style="text-align:left">Potential</td>
+<td style="text-align:center">$y=a\cdot x^b$</td>
+</tr>
+<tr>
+<td style="text-align:left">Exponential</td>
+<td style="text-align:center">$y=e^{a+bx}$</td>
+</tr>
+<tr>
+<td style="text-align:left">Logarithmic</td>
+<td style="text-align:center">$y=a+b\log x$</td>
+</tr>
+<tr>
+<td style="text-align:left">Inverse</td>
+<td style="text-align:center">$y=a+\frac{b}{x}$</td>
+</tr>
+<tr>
+<td style="text-align:left">Sigmoidal</td>
+<td style="text-align:center">$y=e^{a+\frac{b}{x}}$</td>
+</tr>
+</tbody>
+</table>
+<p>The model choice depends on the shape of the points cloud in the scatterplot.</p>
+<h3 id="residuals-or-predictive-errors">Residuals or predictive errors</h3>
+<p>Once chosen the type of regression model, we have to determine which function of that family explains better the relation between the dependent and the independent variables, that is, the function that predicts better the dependent variable.</p>
+<p>That function is the function that minimizes the distances from the observed values for $Y$ in the sample to the predicted values of the regression function. These distances are known as <em>residuals</em> or <em>predictive errors</em>.</p>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Residuals or predictive errors</strong>. Given a regression model $y=f(x)$ for a two-dimensional variable $(X,Y)$, the <em>residual</em> or <em>predictive error</em> for every pair $(x_i,y_j)$ of the sample is the difference between the observed value of the dependent variable $y_j$ and the predicted value of the regression function for $x_i$,$$e_{ij} = y_j-f(x_i).$$
+  </div>
+</div>
+<img src="../img/regression/y_residuals.svg" alt="Regression rediduals on Y" width="600">
+<h3 id="least-squares-fitting">Least squares fitting</h3>
+<p>A way to get the regression function is the <em>least squares method</em>, that determines the function that minimizes the squared residuals.</p>
+<p>$$\sum e_{ij}^2.$$</p>
+<p>For a linear model $f(x) = a + bx$, the sum depends on two parameters,the intercept $a$, and the slope $b$ of the straight line,</p>
+<p>$$\theta(a,b) = \sum e_{ij}^2 =\sum (y_j - f(x_i))^2 =\sum (y_j-a-bx_i)^2.$$</p>
+<p>This reduces the problem to determine the values of $a$ and $b$ that minimize this sum.</p>
+<p>To solve the minimization problem, we have to set to zero the partial derivatives with respect to $a$ and $b$.</p>
+<p>$$
+\begin{aligned}
+\frac{\partial \theta(a,b)}{\partial a} &amp;=  \frac{\partial \sum (y_j-a-bx_i)^2 }{\partial a} =0 \newline
+\frac{\partial \theta(a,b)}{\partial b} &amp;=  \frac{\partial \sum (y_j-a-bx_i)^2 }{\partial b} =0
+\end{aligned}
+$$</p>
+<p>And solving the equation system, we get</p>
+<p>$$a= \bar y - \frac{s_{xy}}{s_x^2}\bar x \qquad b=\frac{s_{xy}}{s_x^2}$$</p>
+<p>This values minimize the residuals on $Y$ and give us the optimal linear model.</p>
+<h2 id="regression-line">Regression line</h2>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Regression line</strong>. Given a sample of a two-dimensional variable $(X,Y)$, the <em>regression line</em> of $Y$ on $X$ is$$y = \bar y +\frac{s_{xy}}{s_x^2}(x-\bar x).$$
+  </div>
+</div>
+<div class="alert alert-int">
+  <div>
+    The regression line of $Y$ on $X$ is the straight line that minimizes the predictive errors on $Y$, therefore it is the linear regression model that gives better predictions of $Y$.
+  </div>
+</div>
+<p><strong>Example</strong>. Using the previous sample of heights ($X$) and weights ($Y$) with the following statistics</p>
+<p>$$
+\begin{array}{lllll}
+\bar x = 174.67 \mbox{ cm} &amp; \quad &amp; s^2_x = 102.06 \mbox{ cm}^2 &amp; \quad &amp; s_x = 10.1 \mbox{ cm} \newline
+\bar y = 69.67 \mbox{ Kg} &amp; &amp; s^2_y = 164.42 \mbox{ Kg}^2 &amp; &amp; s_y = 12.82 \mbox{ Kg} \newline
+&amp; &amp; s_{xy} = 104.07 \mbox{ cm$\cdot$ Kg} &amp; &amp;
+\end{array}
+$$</p>
+<p>the regression line of weight on height is</p>
+<p>$$y = \bar y +\frac{s_{xy}}{s_x^2}(x-\bar x) = 69.67+\frac{104.07}{102.06}(x-174.67) = -108.49 +1.02 x$$</p>
+<p>And the regression line of height on weight is</p>
+<p>$$x = \bar x +\frac{s_{xy}}{s_y^2}(y-\bar y) = 174.67+\frac{104.07}{164.42}(y-69.67) = 130.78 + 0.63 y$$</p>
+<div class="alert alert-warning">
+  <div>
+    Observe that the regression lines are different!
+  </div>
+</div>
+<img src="../img/regression/regression_lines.svg" alt="Regression lines of heights and wieghts" width="600">
+<h3 id="relative-position-of-the-regression-lines">Relative position of the regression lines</h3>
+<p>Usually, the regression line of $Y$ on $X$ and the regression line of $X$ on $Y$ are not the same, but they always intersect in the mean point $(\bar x,\bar y)$.</p>
+<p>If there is a perfect linear relation between the variables, then both regression lines are the same, as that line makes both $X$-residuals and $Y$-residuals zero.</p>
+<img src="../img/regression/perfect_linear_regression.svg" alt="Perfect linear regression" width="500">
+<p>If there is no linear relation between the variables, then both regression lines are constant and equals to the respective means,</p>
+<p>$$y = \bar y,\quad x = \bar x.$$</p>
+<p>So, they intersect perpendicularly.</p>
+<img src="../img/regression/non_linear_regression.svg" alt="Non linear regression" width="500">
+<h3 id="regression-coefficient">Regression coefficient</h3>
+<p>The most important parameter of a regression line is the slope.</p>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Regression coefficient</strong> $b_{yx}$. Given a sample of a two-dimensional variable $(X,Y)$, the <em>regression coefficient</em> of the regression line of $Y$ on $X$ is its slope,$$b_{yx} = \frac{s_{xy}}{s_x^2}$$
+  </div>
+</div>
+<div class="alert alert-warning">
+  <div>
+    The regression coefficient has always the same sign as the covariance.
+  </div>
+</div>
+<div class="alert alert-int">
+  <div>
+    It measures how the dependent variable changes in relation to the independent one according to the regression line. In particular, it gives the number of units that the dependent variable increases or decreases for every unit that the independent variable increases.
+  </div>
+</div>
+<p><strong>Example</strong>. In the sample of heights and weights, the regression line of weight on height was</p>
+<p>$$y=-108.49 +1.02 x.$$</p>
+<p>Thus, the regression coefficient of weight on height is</p>
+<p>$$b_{yx}= 1.02 \mbox{Kg/cm.}$$</p>
+<p>That means that, according to the regression line of weight on height, the weight will increase $1.02$ Kg for every cm that the height increases.</p>
+<h3 id="regression-predictions">Regression predictions</h3>
+<p>Usually the regression models are used to predict the dependent variable for some values of the independent variable.</p>
+<p><strong>Example</strong>. In the sample of heights and weights, to predict the weight of a person with a height of 180 cm, we have to use the regression line of weight on height,</p>
+<p>$$y = -108.49 + 1.02 \cdot 180  = 75.11 \mbox{ Kg}.$$</p>
+<p>But to predict the height of a person with a weight of 79 Kg, we have to use the regression line of height on weight,</p>
+<p>$$x = 130.78 + 0.63\cdot 79 = 180.55 \mbox{ cm}.$$</p>
+<p><em>However, how reliable are these predictions?</em></p>
+<h2 id="correlation">Correlation</h2>
+<p>Once we have a regression model, in order to see if it is a good predictive model we have to assess the goodness of fit of the model and the strength of the of relation set by it. The part of Statistics in charge of this is <strong>correlation</strong>.</p>
+<p>The correlation study the residuals of a regression model: the smaller the residuals, the greater the goodness of fit, and the stronger the relation set by the model.</p>
+<h3 id="residual-variance">Residual variance</h3>
+<p>To measure the goodness of fit of a regression model is common to use the <em>residual variance</em>.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Sample residual variance</strong> $s_{ry}^2$. Given a regression model $y=f(x)$ of a two-dimensional variable $(X,Y)$, its <em>sample residual variance</em> is the average of the squared residuals,</p>
+<p>$$s_{ry}^2 = \frac{\sum e_{ij}^2n_{ij}}{n} = \frac{\sum (y_j - f(x_i))^2n_{ij}}{n}.$$</p>
+  </div>
+</div>
+<div class="alert alert-int">
+  <div>
+    <p>The greater the residuals, the greater the residual variance and the smaller the goodness of fit.</p>
+<p>When the linear relation is perfect, the residuals are zero and the residual variance is zero. Conversely, when there are no relation, the residuals coincide with deviations from the mean, and the residual variance is equal to the variance of the dependent variable.</p>
+<p>$$0\leq s_{ry}^2\leq s_y^2$$</p>
+  </div>
+</div>
+<h3 id="explained-and-non-explained-variation">Explained and non-explained variation</h3>
+<img src="../img/regression/variation_decomposition.gif" alt="Variation decomposition by regression model" width="600">
+<h3 id="coefficient-of-determination">Coefficient of determination</h3>
+<p>From the residual variance is possible to define another correlation statistic easier to interpret.</p>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Sample coefficient of determination $r^2$</strong>. Given a regression model $y=f(x)$ of a two-dimensional variable $(X,Y)$, its <em>coefficient of determination</em> is$$r^2 = 1- \frac{s_{ry}^2}{s_y^2}$$
+  </div>
+</div>
+<div class="alert alert-warning">
+  <div>
+    <p>As the residual variance ranges from 0 to $s_y^2$, we have</p>
+<p>$$0\leq r^2\leq 1$$</p>
+  </div>
+</div>
+<div class="alert alert-int">
+  <div>
+    <p>The greater $r^2$ is, the greater the goodness of fit of the regression model, and the more reliable will its predictions be. In particular,</p>
+<ul>
+<li>If $r^2 =0$ then there is no relation as set by the regression model.</li>
+<li>If $r^2=1$ then the relation set by the model is perfect.</li>
+</ul>
+  </div>
+</div>
+<div class="alert alert-warning">
+  <div>
+    <p>When the regression model is linear, the coefficient of determination can be computed with this formula</p>
+<p>$$ r^2 =  \frac{s_{xy}^2}{s_x^2s_y^2}.$$</p>
+  </div>
+</div>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-18" role="button" aria-expanded="false" aria-controls="spoiler-18">
+      Proof
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-18">
+    <div class="card-body">
+      <p>When the fitted model is the regression line, the the residual variance is</p>
+<p>$$
+\begin{aligned}
+s_{ry}^2 &amp; = \sum e_{ij}^2f_{ij} = \sum (y_j - f(x_i))^2f_{ij} = \sum \left(y_j - \bar y -\frac{s_{xy}}{s_x^2}(x_i-\bar x) \right)^2f_{ij}= \newline
+&amp; = \sum \left((y_j - \bar y)^2 +\frac{s_{xy}^2}{s_x^4}(x_i-\bar x)^2 - 2\frac{s_{xy}}{s_x^2}(x_i-\bar x)(y_j -\bar y)\right)f_{ij} = \newline
+&amp; = \sum (y_j - \bar y)^2f_{ij} +\frac{s_{xy}^2}{s_x^4}\sum (x_i-\bar x)^2f_{ij}- 2\frac{s_{xy}}{s_x^2}\sum (x_i-\bar x)(y_j -\bar y)f_{ij}= \newline
+&amp; = s_y^2 + \frac{s_{xy}^2}{s_x^4}s_x^2 - 2 \frac{s_{xy}}{s_x^2}s_{xy} = s_y^2 - \frac{s_{xy}^2}{s_x^2}.
+\end{aligned}
+$$</p>
+<p>and the coefficient of determination is</p>
+<p>$$
+\begin{aligned}
+r^2 &amp;= 1- \frac{s_{ry}^2}{s_y^2} = 1- \frac{s_y^2 - \frac{s_{xy}^2}{s_x^2}}{s_y^2} = 1 - 1 + \frac{s_{xy}^2}{s_x^2s_y^2} = \frac{s_{xy}^2}{s_x^2s_y^2}.
+\end{aligned}
+$$</p>
+
+    </div>
+  </div>
+</div>
+<p><strong>Example</strong>. In the sample of heights and weights, we had</p>
+<p>$$
+\begin{array}{lll}
+\bar x = 174.67 \mbox{ cm} &amp; \quad &amp; s^2_x = 102.06 \mbox{ cm}^2 \newline
+\bar y = 69.67 \mbox{ Kg} &amp; &amp; s^2_y = 164.42 \mbox{ Kg}^2 \newline
+s_{xy} = 104.07 \mbox{ cm$\cdot$ Kg}
+\end{array}
+$$</p>
+<p>Thus, the linear coefficient of determination is</p>
+<p>$$r^2 = \frac{s_{xy}^2}{s_x^2s_y^2} = \frac{(104.07 \mbox{ cm\cdot Kg})^2}{102.06 \mbox{ cm}^2 \cdot 164.42 \mbox{ Kg}^2} = 0.65.$$</p>
+<p>This means that the linear model of weight on height explains the 65% of the variation of weight, and the linear model of height on weight also explains 65% of the variation of height.</p>
+<h3 id="correlation-coefficient">Correlation coefficient</h3>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Sample correlation coefficient $r$</strong>. Given a sample of a two-dimensional variable $(X,Y)$, the <em>sample correlation coefficient</em> is the square root of the linear coefficient of determination, with the sign of the covariance,$$r = \dfrac{s_{xy}}{s_xs_y}.$$
+  </div>
+</div>
+<div class="alert alert-warning">
+  <div>
+    <p>As $r^2$ ranges from 0 to 1, $r$ ranges from -1 to 1,</p>
+<p>$$-1\leq r\leq 1.$$</p>
+  </div>
+</div>
+<div class="alert alert-int">
+  <div>
+    <p>The correlation coefficient measures not only the strength of the linear association but also its direction (increasing or decreasing):</p>
+<ul>
+<li>If $r=0$ then there is no linear relation.</li>
+<li>Si $r=1$ then there is a perfect increasing linear relation.</li>
+<li>Si $r=-1$ then there is a perfect decreasing linear relation.</li>
+</ul>
+  </div>
+</div>
+<p><strong>Example</strong>. In the sample of heights and weights, we had</p>
+<p>$$\begin{array}{lll}
+\bar x = 174.67 \mbox{ cm} &amp; \quad &amp; s^2_x = 102.06 \mbox{ cm}^2 \newline
+\bar y = 69.67 \mbox{ Kg} &amp; &amp; s^2_y = 164.42 \mbox{ Kg}^2 \newline
+s_{xy} = 104.07 \mbox{ cm$\cdot$ Kg}
+\end{array}
+$$</p>
+<p>Thus, the correlation coefficient is</p>
+<p>$$r = \frac{s_{xy}}{s_xs_y} = \frac{104.07 \mbox{ cm\cdot Kg}}{10.1 \mbox{ cm} \cdot 12.82 \mbox{ Kg}} = +0.8.$$</p>
+<p>This means that there is a rather strong linear, increasing, relation between height and weight.</p>
+<h3 id="different-linear-correlations">Different linear correlations</h3>
+<p>The scatter plots below show linear regression models with differents correlations.</p>
+<img src="../img/regression/different_correlations.svg" alt="Linear regression models with different correlations" width="700">
+<h3 id="reliability-of-regression-predictions">Reliability of regression predictions</h3>
+<p>The coefficient of determination explains the goodness of fit of a regression model, but there are other factors that influence the reliability of regression predictions:</p>
+<ul>
+<li>
+<p>The coefficient of determination: The greater $r^2$, the greater the goodness of fit and the more reliable the predictions are.</p>
+</li>
+<li>
+<p>The variability of the population distribution: The greater the variation, the more difficult to predict and the less reliable the predictions are.</p>
+</li>
+<li>
+<p>The sample size: The greater the sample size, the more information we have and the more reliable the predictions are.</p>
+</li>
+</ul>
+<div class="alert alert-warning">
+  <div>
+    In addition, we have to take into account that a regression model is only valid for the range of values observed in the sample. That means that, as we don’t have any information outside that range, we must not do predictions for values far from that range.
+  </div>
+</div>
+<h2 id="non-linear-regression">Non-linear regression</h2>
+<p>The fit of a non-linear regression can be also done by the least square fitting method.</p>
+<p>However, in some cases the fitting of a non-linear model can be reduced to the fitting of a linear model applying a simple transformation to the variables of the model.</p>
+<h3 id="transformations-of-non-linear-regression-models">Transformations of non-linear regression models</h3>
+<ul>
+<li>
+<p><strong>Logarithmic</strong>: A logarithmic model $y = a+b \log x$ can be transformed in a linear model with the change $t=\log x$:</p>
+<p>$$y=a+b\log x = a+bt.$$</p>
+</li>
+<li>
+<p><strong>Exponential</strong>: An exponential model $y = e^{a+bx}$ can be transformed in a linear model with the change $z = \log y$:</p>
+<p>$$z = \log y = \log(e^{a+bx}) =  a+bx.$$</p>
+</li>
+<li>
+<p><strong>Potential</strong>: A potential model $y = ax^b$ can be transformed in a linear model with the changes $t=\log x$ and $z=\log y$:</p>
+<p>$$z = \log y = \log(ax^b) = \log a + b \log x = a^\prime+bt.$$</p>
+</li>
+<li>
+<p><strong>Inverse</strong>: An inverse model $y = a+b/x$ can be transformed in a linear model with the change $t=1/x$:</p>
+<p>$$y = a + b(1/x) = a+bt.$$</p>
+</li>
+<li>
+<p><strong>Sigmoidal</strong>: A sigmoidal model $y = e^{a+b/x}$ can be transformed in a linear model with the changes $t=1/x$ and $z=\log y$:</p>
+<p>$$z = \log y = \log (e^{a+b/x}) = a+b(1/x) = a+bt.$$</p>
+</li>
+</ul>
+<h3 id="exponential-relation">Exponential relation</h3>
+<p><strong>Example</strong>. The number of bacteria in a culture evolves with time according to the table below.</p>
+<p>$$\begin{array}{c|c}
+\mbox{Hours} &amp; \mbox{Bacteria} \newline
+\hline
+0 &amp;  25  \newline
+1 &amp; 28  \newline
+2 &amp;  47 \newline
+3 &amp; 65  \newline
+4 &amp; 86 \newline
+5 &amp; 121 \newline
+6 &amp; 190 \newline
+7 &amp; 290 \newline
+8 &amp; 362
+\end{array}
+$$</p>
+<p>The scatter plot of the sample is showed below.</p>
+<img src="../img/regression/bacteria_evolution.svg" alt="Scatter plot of the evolution of a bacteria culture" width="500">
+<p>Fitting a linear model we get</p>
+<p>$$\mbox{Bacteria} = -30.18+41,27,\mbox{Hours, with } r^2=0.85.$$</p>
+<img src="../img/regression/linear_regression_bacteria.svg" alt="Linear regression of the bacteria evolution" width="500">
+<p><em>Is a good model?</em></p>
+<p>Although the linear model is not bad, according to the shape of the point cloud of the scatter plot, an exponential model looks more suitable.</p>
+<p>To construct an exponential model $y = e^{a+bx}$ we can apply the transformation $z=\log y$, that is, applying a logarithmic transformation to the dependent variable.</p>
+<p>$$\begin{array}{c|c|c}
+\mbox{Hours} &amp; \mbox{Bacteria} &amp; \mbox{$\log$(Bacteria)} \newline
+\hline
+0 &amp;  25 &amp; 3.22 \newline
+1 &amp; 28 &amp; 3.33 \newline
+2 &amp;  47 &amp; 3.85 \newline
+3 &amp; 65  &amp; 4.17 \newline
+4 &amp; 86 &amp; 4.45 \newline
+5 &amp; 121 &amp; 4.80 \newline
+6 &amp; 190 &amp; 5.25 \newline
+7 &amp; 290 &amp; 5.67 \newline
+8 &amp; 362 &amp; 5.89
+\end{array}
+$$</p>
+<img src="../img/regression/log_bacteria_evolution.svg" alt="Scatter plot of the evolution of the logarithm of bacteria culture" width="500">
+<p>Now it only remains to compute the regression line of the logarithm of bacteria on hours,</p>
+<p>$$\mbox{$\log$(Bacteria)} = 3.107 + 0.352, \mbox{Horas},$$</p>
+<p>and, undoing the change of variable,</p>
+<p>$$\mbox{Bacteria} = e^{3.107+0.352,\mbox{Hours}}, \mbox{ with } r^2=0.99.$$</p>
+<img src="../img/regression/exponential_regression_bacteria.svg" alt="Exponential regression of the bacteria evolution" width="500">
+<p>Thus, the exponential model fits much better than the linear model.</p>
+<h2 id="regression-risks">Regression risks</h2>
+<h3 id="lack-of-fit-does-not-mean-independence">Lack of fit does not mean independence</h3>
+<p>It is important to note that every regression model has its own coefficient of determination.</p>
+<div class="alert alert-warning">
+  <div>
+    Thus, a coefficient of determination near zero means that there is no relation as set by the model, but <em>that does not mean that the variables are independent</em>, because there could be a different type of relation.
+  </div>
+</div>
+<div class="center">
+<img src="../img/regression/linear_regression_parabolic_relation.svg" alt="Linear regression on a cuadratic relation" width="500">
+<img src="../img/regression/parabolic_regression.svg" alt="Cuadratic regression on a cuadratic relation" width="500">
+</div>
+<h3 id="outliers-influence-in-regression">Outliers influence in regression</h3>
+<p>Outliers in regression studies are points that clearly do not follow the tendency of the rest of points, even if the values of the pair are not outliers for every variable separately.</p>
+<img src="../img/regression/scatterplot_with_outliers.svg" alt="Scatter plot with an outlier" width="500">
+<p>Outliers in regression studies can provoke drastic changes in the regression models.</p>
+<div class="center">
+<img src="../img/regression/linear_regression_with_outliers.svg" alt="Linear regression with an outlier" width="500"> <img src="../img/regression/linear_regression_without_outliers.svg" alt="Linear regression without outliers" width="500">
+</div>
+<h3 id="the-simpsons-paradox">The Simpson&rsquo;s paradox</h3>
+<p>Sometimes a trend can disappears or even reverses when we split the sample into groups according to a qualitative variable that is related to the dependent variable.
+This is known as the <em>Simpson&rsquo;s paradox</em>.</p>
+<p><strong>Example</strong>. The scatterplot below shows an inverse relation between the study hours and the score in an exam.</p>
+<div class="center">
+<img src="../img/regression/simpson_paradox_1.svg" alt="Simpon's paradox. Inverse relation between study hours and the score in an exam." width="500">
+</div>
+<p>But if we split the sample in two groups (good and bad students) we get different trends and now the relation is direct, which makes more sense.</p>
+<div class="center">
+<img src="../img/regression/simpson_paradox_2.svg" alt="Simpon's paradox. Direct relation between study hours and the score in an exam."" width="500">
+</div>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tag/statistics/">Statistics</a>
+  
+  <a class="badge badge-light" href="/en/tag/biostatistics/">Biostatistics</a>
+  
+  <a class="badge badge-light" href="/en/tag/regression/">Regression</a>
+  
+</div>
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/en/teaching/statistics/manual/descriptive-statistics/" rel="next">Descriptive Statistics</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/en/teaching/statistics/manual/probability/" rel="prev">Probability</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Oct 7, 2021</p>
+
+          
+
+
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "aprendeconalf" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt="CC SA icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/en/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://aprendeconalf.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.f79ea001fad4564ac91850b0b5a8f31c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

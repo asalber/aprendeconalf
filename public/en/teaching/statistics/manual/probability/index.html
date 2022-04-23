@@ -1,0 +1,1917 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alfredo Sánchez Alberca">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Descriptive Statistics provides methods to describe the variables measured in the sample and their relations, but it does not allow to draw any conclusion about the population.
+Now it is time to take the leap from the sample to the population and the bridge for that is Probability Theory.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/en/teaching/statistics/manual/probability/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#6f5499">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700%7CSource Sans Pro:400+400italic%7COpen Sans:400+400italic%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/en/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5be262b229a6b188bfa60c297543a26c_4930_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="/en/teaching/statistics/manual/probability/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@aprendeconalf">
+  <meta property="twitter:creator" content="@aprendeconalf">
+  
+  <meta property="og:site_name" content="Aprende con Alf">
+  <meta property="og:url" content="/en/teaching/statistics/manual/probability/">
+  <meta property="og:title" content="Probability | Aprende con Alf">
+  <meta property="og:description" content="Descriptive Statistics provides methods to describe the variables measured in the sample and their relations, but it does not allow to draw any conclusion about the population.
+Now it is time to take the leap from the sample to the population and the bridge for that is Probability Theory."><meta property="og:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png">
+  <meta property="twitter:image" content="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2016-04-20T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-03-08T00:09:25&#43;01:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Probability | Aprende con Alf</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/en"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/en"><img src="/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_0x70_resize_lanczos_3.png" alt="Aprende con Alf"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/en/teaching/calculus/"><span>Calculus</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/statistics/"><span>Statistics</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/R/"><span>R</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/excel/"><span>Excel</span></a>
+            
+              <a class="dropdown-item" href="/en/teaching/geogebra/"><span>Geogebra</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+ 
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/en/teaching/statistics/manual/">Statistics Manual</a>
+    <ul class="nav docs-sidenav">
+          <li class=""><a href="/en/teaching/statistics/manual/introduction/">Introduction</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/manual/descriptive-statistics/">Descriptive Statistics</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/manual/regression/">Regression</a></li>
+        
+          <li class="active"><a href="/en/teaching/statistics/manual/probability/">Probability</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/manual/discrete-random-variables/">Discrete Random Variables</a></li>
+        
+          <li class=""><a href="/en/teaching/statistics/manual/continuous-random-variables/">Continuous Random Variables</a></li>
+        </ul>
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#random-experiments-and-events">Random experiments and events</a>
+      <ul>
+        <li><a href="#random-experiments">Random experiments</a></li>
+        <li><a href="#sample-space">Sample space</a></li>
+        <li><a href="#tree-diagrams">Tree diagrams</a></li>
+        <li><a href="#random-events">Random events</a></li>
+      </ul>
+    </li>
+    <li><a href="#set-theory">Set theory</a>
+      <ul>
+        <li><a href="#event-space">Event space</a></li>
+        <li><a href="#union-of-events">Union of events</a></li>
+        <li><a href="#intersection-of-events">Intersection of events</a></li>
+        <li><a href="#complement-of-an-event">Complement of an event</a></li>
+        <li><a href="#difference-of-events">Difference of events</a></li>
+        <li><a href="#algebra-of-events">Algebra of events</a></li>
+      </ul>
+    </li>
+    <li><a href="#probability-definition">Probability definition</a>
+      <ul>
+        <li><a href="#classical-definition-of-probability">Classical definition of probability</a></li>
+        <li><a href="#frequency-definition-of-probability">Frequency definition of probability</a></li>
+        <li><a href="#axiomatic-definition-of-probability">Axiomatic definition of probability</a></li>
+        <li><a href="#probability-interpretation">Probability interpretation</a></li>
+      </ul>
+    </li>
+    <li><a href="#conditional-probability">Conditional probability</a>
+      <ul>
+        <li><a href="#conditional-experiments">Conditional experiments</a></li>
+        <li><a href="#conditional-probability-1">Conditional probability</a></li>
+        <li><a href="#probability-of-the-intersection-event">Probability of the intersection event</a></li>
+        <li><a href="#independence-of-events">Independence of events</a></li>
+      </ul>
+    </li>
+    <li><a href="#probability-space">Probability Space</a>
+      <ul>
+        <li><a href="#probability-space-construction">Probability space construction</a></li>
+        <li><a href="#probability-tree-with-dependent-variables">Probability tree with dependent variables</a></li>
+        <li><a href="#probability-tree-with-independent-variables">Probability tree with independent variables</a></li>
+      </ul>
+    </li>
+    <li><a href="#total-probability-theorem">Total probability theorem</a>
+      <ul>
+        <li><a href="#partition-of-the-sample-space">Partition of the sample space</a></li>
+        <li><a href="#total-probability-theorem-1">Total probability theorem</a></li>
+      </ul>
+    </li>
+    <li><a href="#bayes-theorem">Bayes theorem</a></li>
+    <li><a href="#epidemiology">Epidemiology</a>
+      <ul>
+        <li><a href="#prevalence">Prevalence</a></li>
+        <li><a href="#incidence">Incidence</a></li>
+        <li><a href="#incidence-rate-or-absolute-risk">Incidence rate or Absolute risk</a></li>
+        <li><a href="#prevalence-vs-incidence">Prevalence vs Incidence</a></li>
+        <li><a href="#comparing-risks">Comparing risks</a></li>
+        <li><a href="#attributable-risk-or-risk-difference-rd">Attributable risk or Risk difference $RD$</a></li>
+        <li><a href="#relative-risk-rr">Relative risk $RR$</a></li>
+        <li><a href="#odds">Odds</a></li>
+        <li><a href="#odds-ratio-or">Odds ratio $OR$</a></li>
+        <li><a href="#relative-risk-vs-odds-ratio">Relative risk vs Odds ratio</a></li>
+      </ul>
+    </li>
+    <li><a href="#diagnostic-tests">Diagnostic tests</a>
+      <ul>
+        <li><a href="#sensitivity-and-specificity-of-a-diagnostic-test">Sensitivity and specificity of a diagnostic test</a></li>
+        <li><a href="#sensitivity-and-specificity-interpretation">Sensitivity and specificity interpretation</a></li>
+        <li><a href="#predictive-values-of-a-diagnostic-test">Predictive values of a diagnostic test</a></li>
+        <li><a href="#likelihood-ratios-of-a-diagnostic-test">Likelihood ratios of a diagnostic test</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Probability</h1>
+
+          <div class="article-style">
+            <p>Descriptive Statistics provides methods to describe the variables measured in the sample and their relations, but it does not allow to draw any conclusion about the population.</p>
+<p>Now it is time to take the leap from the sample to the population and the bridge for that is <strong>Probability Theory</strong>.</p>
+<p>Remember that the sample has a limited information about the population, and in order to draw valid conclusions for the population the sample must be representative of it. For that reason, to guarantee the representativeness of the sample, this must be drawn <em>randomly</em>. This means that the choice of individuals in the sample is by <em>chance</em>.</p>
+<p>Probability Theory will provide us the tools to control the random in the sampling and to determine the level of reliability of the conclusions drawn from the sample.</p>
+<h2 id="random-experiments-and-events">Random experiments and events</h2>
+<h3 id="random-experiments">Random experiments</h3>
+<p>The study of a characteristic of the population is conducted through random experiments.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Random experiment</strong>. A <em>random experiment</em> is an experiment that meets two conditions:</p>
+<ol>
+<li>The set of possible outcomes is known.</li>
+<li>It is impossible to predict the outcome with absolute certainty.</li>
+</ol>
+  </div>
+</div>
+<p><strong>Example</strong>. Gambling are typical examples of random experiments. The roll of a dice, for example, is a random experiment because</p>
+<ol>
+<li>It is known the set of possible outcomes: $\{1,2,3,4,5,6\}$.</li>
+<li>Before rolling the dice, it is impossible to predict with absolute certainty the outcome.</li>
+</ol>
+<p>Another non-gambling example is the random choice of an individual of a human population and the determination of its blood type.</p>
+<p>Generally, the draw of a sample by a random method is an random experiment.</p>
+<h3 id="sample-space">Sample space</h3>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Sample space</strong>. The set $\Omega$ of the possible outcomes of a random experiment is known as the <em>sample space</em>.
+  </div>
+</div>
+<p><strong>Example</strong>. Some examples of sample spaces are:</p>
+<ul>
+<li>For the toss of a coin $\Omega=\{\mbox{heads},\mbox{tails}\}$.</li>
+<li>For the roll of a dice $\Omega=\{1,2,3,4,5,6\}$.</li>
+<li>For the blood type of an individual drawn by chance $\Omega=\{\mbox{A},\mbox{B},\mbox{AB},\mbox{0}\}$.</li>
+<li>For the height of an individual drawn by chance $\Omega=\mathbb{R}^+$.</li>
+</ul>
+<h3 id="tree-diagrams">Tree diagrams</h3>
+<p>In experiments where more than one variable is measured, the determination of the sample space can be difficult. In such a cases, it is advisable to use a <strong>tree diagram</strong> to construct the sample space.</p>
+<p>In a tree diagram every variable is represented in a level of the tree and every possible outcome of the variable as a branch.</p>
+<p><strong>Example</strong>. The tree diagram below represents the sample space of a random experiment where the gender and the blood type is measured in a random individual.</p>
+<img src="../img/probability/sample_space.svg" alt="Tree diagram of gender and blood type" width="500">
+<h3 id="random-events">Random events</h3>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Random event</strong>. A <em>random event</em> is any subset of the sample space $\Omega$ of a random experiment.
+  </div>
+</div>
+<p>There are different types of events:</p>
+<ul>
+<li><strong>Impossible event:</strong> Is the event with no elements $\emptyset$. It has no chance of occurring.</li>
+<li><strong>Elemental events:</strong> Are events with only one element, that is, a singleton.</li>
+<li><strong>Composed events:</strong> Are events with two or more elements.</li>
+<li><strong>Sure event:</strong> Is the event that contains the whole sample space $\Omega$. It always happens.</li>
+</ul>
+<h2 id="set-theory">Set theory</h2>
+<h3 id="event-space">Event space</h3>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Event space</strong>. Given a sample space $\Omega$ of a random experiment, the <em>event space</em> of $\Omega$ is the set of all possible events of $\Omega$, and is noted $\mathcal{P}(\Omega).$
+  </div>
+</div>
+<p><strong>Example</strong>. Given the sample space $\Omega=\{a,b,c\}$, its even space is</p>
+<p>$$\mathcal{P}(\Omega)=\{\emptyset, {a},{b},{c},{a,b},{a,c},{b,c},{a,b,c}\}$$</p>
+<p>As events are subsets of the sample space, using the set theory we have the following operations on events:</p>
+<ul>
+<li>Union</li>
+<li>Intersection</li>
+<li>Complement</li>
+<li>Difference</li>
+</ul>
+<h3 id="union-of-events">Union of events</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Union event</strong>. Given two events $A,B\subseteq \Omega$, the <em>union</em> of $A$ and $B$, denoted by $A\cup B$, is the event of all elements that are members of $A$ or $B$ or both.</p>
+<p>$$A\cup B = \{x\,|\, x\in A\textrm{ or }x\in B\}.$$</p>
+  </div>
+</div>
+<img src="../img/probability/union.svg" alt="Union of two events" width="300">
+<p>The union event $A\cup B$ happens when $A$ <span style="color:red;">or</span> $B$ happen.</p>
+<h3 id="intersection-of-events">Intersection of events</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Intersection event</strong>. Given two events $A,B\subseteq \Omega$, the <em>intersection</em> of $A$ and $B$, denoted by $A\cap B$, is the event of all elements that are members of both $A$ and $B$.</p>
+<p>$$A\cap B = \{x\,|\, x\in A\textrm{ and }x\in B\}.$$</p>
+  </div>
+</div>
+<img src="../img/probability/intersection.svg" alt="Intersection of two events" width="300">
+<p>The intersection event $A\cap B$ happens when $A$ <span style="color:red;">and</span> $B$ happen.</p>
+<p>Two events are <strong>incompatible</strong> if their intersection is empty.</p>
+<h3 id="complement-of-an-event">Complement of an event</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Complementary event</strong>. Given an event $A\subseteq \Omega$, the <em>complementary or contrary event</em> of $A$, denoted by $\bar A$, is the event of all elements of $\Omega$ except the elements that are members of $A$.</p>
+<p>$$\bar A = \{x\,|\, x\not\in A\}.$$</p>
+  </div>
+</div>
+<img src="../img/probability/complement.svg" alt="Complement of an event" width="300">
+<p>The complementary event $\bar A$ happens when $A$ does <span style="color:red;">not</span> happen.</p>
+<h3 id="difference-of-events">Difference of events</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Difference event</strong>. Given two events $A,B\subseteq \Omega$, the <em>difference</em> of $A$ and $B$, denoted by $A-B$, is the event of all elements that are members of $A$ but not are members of $B$.</p>
+<p>$$A-B = \{x\,|\, x\in A\textrm{ and }x\not\in B\} = A \cap \bar B.$$</p>
+  </div>
+</div>
+<img src="../img/probability/difference.svg" alt="Diference of two events" width="300">
+<p>The difference event $A-B$ happens when $A$ happens but $B$ does not.</p>
+<p><strong>Example</strong>. Given the sample space of rolling a dice $\Omega=\{1,2,3,4,5,6\}$ and the events $A=\{2,4,6\}$ and $B=\{1,2,3,4\}$,</p>
+<ul>
+<li>The union of $A$ and $B$ is $A\cup B=\{1,2,3,4,6\}$.</li>
+<li>The intersection of $A$ and $B$ is $A\cap B=\{2,4\}$.</li>
+<li>The complement of $A$ is $\bar A=\{1,3,5\}$.</li>
+<li>The events $A$ and $\bar A$ are incompatible.</li>
+<li>The difference of $A$ and $B$ is $A-B=\{6\}$, and the difference of $B$ and $A$ is $B-A=\{1,3\}$.</li>
+</ul>
+<h3 id="algebra-of-events">Algebra of events</h3>
+<p>Given the events $A,B,C\subseteq \Omega$, the following properties are meet.</p>
+<ol>
+<li>$A\cup A=A$, $\quad A\cap A=A$ (idempotency).</li>
+<li>$A\cup B=B\cup A$, $\quad A\cap B = B\cap A$ (commutative).</li>
+<li>$(A\cup B)\cup C = A\cup (B\cup C)$, $\quad (A\cap B)\cap C = A\cap (B\cap C)$ (associative).</li>
+<li>$(A\cup B)\cap C = (A\cap C)\cup (B\cap C)$, $\quad (A\cap B)\cup C = (A\cup C)\cap (B\cup C)$ (distributive).</li>
+<li>$A\cup \emptyset=A$, $\quad A\cap \Omega=A$ (neutral element).</li>
+<li>$A\cup \Omega=\Omega$, $\quad A\cap \emptyset=\emptyset$ (absorbing element).</li>
+<li>$A\cup \overline A = \Omega$, $\quad A\cap \overline A= \emptyset$ (complementary symmetric element).</li>
+<li>$\overline{\overline A} = A$ (double contrary).</li>
+<li>$\overline{A\cup B} = \overline A\cap \overline B$, $\quad \overline{A\cap B} = \overline A\cup \overline B$ (Morgan’s laws).</li>
+<li>$A\cap B\subseteq A\cup B$.</li>
+</ol>
+<h2 id="probability-definition">Probability definition</h2>
+<h3 id="classical-definition-of-probability">Classical definition of probability</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Probability (Laplace)</strong>. Given a sample space $\Omega$ of a random experiment where all elements of $\Omega$ are equally likely, the <em>probability</em> of an event $A\subseteq \Omega$ is the quotient between the number of elements of $A$ and the number of elements of $\Omega$</p>
+<p>$$P(A) = \frac{|A|}{|\Omega|} = \frac{\mbox{number of favorable outcomes}}{\mbox{number of possible outcomes}}$$</p>
+  </div>
+</div>
+<p>This definition is well known, but it has important restrictions:</p>
+<ul>
+<li>It is required that all the elements of the sample space are equally likely (<em>equiprobability</em>).</li>
+<li>It can not be used with infinite sample spaces.</li>
+</ul>
+<p><strong>Example</strong>. Given the sample space of rolling a dice $\Omega=\{1,2,3,4,5,6\}$ and the event $A=\{2,4,6\}$, the probability of $A$ is</p>
+<p>$$P(A) = \frac{|A|}{|\Omega|} = \frac{3}{6} = 0.5.$$</p>
+<p>However, given the sample space of the blood type of a random individual $\Omega=\{O,A,B,AB\}$, it is not possible to use the classical definition to compute the probability of having group $A$,</p>
+<p>$$P(A) \neq \frac{|A|}{|\Omega|} = \frac{1}{4} = 0.25,$$</p>
+<p>because the blood types are not equally likely in human populations.</p>
+<h3 id="frequency-definition-of-probability">Frequency definition of probability</h3>
+<div class="alert alert-theo">
+  <div>
+    <strong>Theorem - Law of large numbers</strong>. When a random experiment is repeated a large number of times, the relative frequency of an event tends to the probability of the event.
+  </div>
+</div>
+<p>The following definition of probability uses this theorem.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Frequency probability</strong>. Given a sample space $\Omega$ of a replicable random experiment, the <em>probability</em> of an event $A\subseteq \Omega$ is the relative frequency of the event $A$ in an infinite number of repetitions of the experiment</p>
+<p>$$P(A) = lim_{n\rightarrow \infty}\frac{n_A}{n}$$</p>
+  </div>
+</div>
+<p>Although frequency probability avoid the restrictions of classical definition, it also have some drawbacks:</p>
+<ul>
+<li>It computes an estimation of the real probability (more accurate the higher the sample size).</li>
+<li>The repetition of the experiment must be in identical conditions.</li>
+</ul>
+<p><strong>Example</strong>. Given the sample space of tossing a coin $\Omega=\{H,T\}$, if after tossing the coin 100 times we got 54 heads, then the probability of $H$ is</p>
+<p>$$P(H) = \frac{n_H}{n} = \frac{54}{100} = 0.54.$$</p>
+<p>Given the sample space of the blood type of a random individual $\Omega=\{O,A,B,AB\}$, if after drawing a random sample of 1000 persons we got 412 with blood type $A$, then the probability of $A$ is</p>
+<p>$$P(A) = \frac{n_A}{n} = \frac{412}{1000} = 0.412.$$</p>
+<h3 id="axiomatic-definition-of-probability">Axiomatic definition of probability</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Probability (Kolmogórov)</strong>. Given a sample space $\Omega$ of a random experiment, a <em>probability</em> function is a function that maps every event $A\subseteq \Omega$ a real number $P(A)$, known as the probability of $A$, that meets the following axioms:</p>
+<ol>
+<li>
+<p>The probability of any event is nonnegative,</p>
+<p>$$P(A)\geq 0.$$</p>
+</li>
+<li>
+<p>The probability of the sure event is 1,</p>
+<p>$$P(\Omega)=1$$</p>
+</li>
+<li>
+<p>The probability of the union of two incompatible events ($A\cap B=\emptyset$) is the sum of their probabilities</p>
+<p>$$P(A\cup B) = P(A)+P(B).$$</p>
+</li>
+</ol>
+  </div>
+</div>
+<p>From the previous axioms is possible to deduce some important properties of a probability function.</p>
+<p>Given a sample space $\Omega$ of a random experiment and the events $A,B\subseteq \Omega$, the following properties are meet:</p>
+<ol>
+<li>
+<p>$P(\bar A) = 1-P(A)$.</p>
+</li>
+<li>
+<p>$P(\emptyset)= 0$.</p>
+</li>
+<li>
+<p>If $A\subseteq B$ then $P(A)\leq P(B)$.</p>
+</li>
+<li>
+<p>$P(A) \leq 1$. This means that $P(A)\in [0,1]$.</p>
+</li>
+<li>
+<p>$P(A-B)=P(A)-P(A\cap B)$.</p>
+</li>
+<li>
+<p>$P(A\cup B)= P(A) + P(B) - P(A\cap B)$.</p>
+</li>
+<li>
+<p>If $A=\{e_1,\ldots,e_n\}$, where $e_i$ $i=1,\ldots,n$ are elemental events, then</p>
+<p>$$P(A)=\sum_{i=1}^n P(e_i).$$</p>
+</li>
+</ol>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-12" role="button" aria-expanded="false" aria-controls="spoiler-12">
+      Proof
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-12">
+    <div class="card-body">
+      <ol>
+<li>
+<p>$\bar A = \Omega \Rightarrow P(A\cup \bar A) = P(\Omega) \Rightarrow P(A)+P(\bar A) = 1 \Rightarrow P(\bar A)=1-P(A)$.</p>
+</li>
+<li>
+<p>$\emptyset = \bar \Omega \Rightarrow P(\emptyset) = P(\bar \Omega) = 1-P(\Omega) = 1-1 = 0.$</p>
+</li>
+<li>
+<p>$B = A\cup (B-A)$. As $A$ and $B-A$ are incompatible, $P(B) = P(A\cup (B-A)) = P(A)+P(B-A) \geq P(A).$</p>
+<p>If we think of probabilities as areas, it is easy to see graphically,</p>
+ <img src="../img/probability/inclusion_probability.svg" alt="Probability of a event included in other" width="300">
+</li>
+<li>
+<p>$A\subseteq \Omega \Rightarrow P(A)\leq P(\Omega)=1.$</p>
+</li>
+<li>
+<p>$A=(A-B)\cup (A\cap B)$. As $A-B$ and $A\cap B$ are incompatible, $P(A)=P(A-B)+P(A\cap B) \Rightarrow P(A-B)=P(A)-P(A\cap B)$.</p>
+<p>If we think of probabilities as areas, it is easy to see graphically,</p>
+ <img src="../img/probability/difference_probability.svg" alt="Probability of the difference event" width="300">
+</li>
+<li>
+<p>$A\cup B= (A-B) \cup (B-A) \cup (A\cap B)$. As $A-B$, $B-A$ and $A\cap B$ are incompatible, $P(A\cup B)=P(A-B)+P(B-A)+P(A\cap B) =P(A)-P(A\cap B)+P(B)-P(A\cap B)+P(A\cap B)$ $=P(A)+P(B)-P(A\cup B)$.</p>
+<p>If we think again of probabilities as areas, it is easy to see graphically because the area of $A\cap B$ is added twice (one for $A$ and other for $), so it must be subtracted once.</p>
+ <img src="../img/probability/union_probability.svg" alt="Probability of the union event" width="300">
+</li>
+<li>
+<p>$A=\{e_1,\cdots,e_n\} = \{e_1\}\cup \cdots \cup \{e_n\} \Rightarrow P(A)=P(\{e_1\}\cup \cdots \cup \{e_n\}) =
+P(\{e_1\})+ \cdots P(\{e_n\}).$</p>
+</li>
+</ol>
+
+    </div>
+  </div>
+</div>
+<h3 id="probability-interpretation">Probability interpretation</h3>
+<p>As set by the previous axioms, the probability of an event $A$, is a real number $P(A)$ that always ranges from 0 to 1.</p>
+<p>In a certain way, this number expresses the plausibility of the event, that is, the chances that the event $A$ occurs in the experiment. Therefore, it also gives a measure of the uncertainty about the event.</p>
+<ul>
+<li>The maximum uncertainty correspond to probability $P(A)=0.5$ ($A$ and $\bar A$ have the same chances of happening).</li>
+<li>The minimum uncertainty correspond to probability $P(A)=1$ ($A$ will happen with absolute certainty) and $P(A)=0$ ($A$ won’t happen with absolute certainty)</li>
+</ul>
+<p>When $P(A)$ is closer to 0 than to 1, the chances of not happening $A$ are greater than the chances of happening $A$. On the contrary, when $P(A)$ is closer to 1 than to 0, the chances of happening $A$ are greater than the chances of not happening $A$.</p>
+<h2 id="conditional-probability">Conditional probability</h2>
+<h3 id="conditional-experiments">Conditional experiments</h3>
+<p>Occasionally, we can get some information about the experiment before its realization. Usually that information is given as an event $B$ of the same sample space that we know that is true before we conduct the experiment.</p>
+<p>In such a case, we will say that $B$ is a <em>conditioning</em> event and the probability of another event $A$ is known as a <em>conditional probability</em> and expressed $P(A\vert B)$. This must be read as <em>probability of $A$ given $B$</em> or <em>probability of $A$ under the condition $B$</em>.</p>
+<p>Usually, conditioning events change the sample space and therefore the probabilities of events.</p>
+<p><strong>Example</strong>. Assume that we have a sample of 100 women and 100 men with the following frequencies</p>
+<p>$$
+\begin{array}{|c|c|c|}
+\hline
+&amp; \mbox{Non-smokers} &amp; \mbox{Smokers} \newline
+\hline
+\mbox{Females} &amp; 80 &amp; 20 \newline
+\hline
+\mbox{Males} &amp; 60 &amp; 40 \newline
+\hline
+\end{array}
+$$</p>
+<p>Then, using the frequency definition of probability, the</p>
+<p>$$P(\mbox{Smoker})= \frac{60}{200}=0.3.$$</p>
+<p>However, if we know that the person is a woman, then the sample is reduced to the first row, and the probability of being smoker is</p>
+<p>$$P(\mbox{Smoker}\mid\mbox{Female})=\frac{20}{100}=0.2.$$</p>
+<h3 id="conditional-probability-1">Conditional probability</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Conditional probability</strong> Given a sample space $\Omega$ of a random experiment, and two events $A,B\subseteq \Omega$, the probability of $A$ conditional on $B$ occurring is</p>
+<p>$$P(A|B) = \frac{P(A\cap B)}{P(B)},$$as long as, $P(B)\neq 0$.</p>
+  </div>
+</div>
+<p>This definition allows to calculate conditional probabilities without changing the original sample space.</p>
+<p><strong>Example</strong>. In the previous example</p>
+<p>$$P(\mbox{Smoker}\mid\mbox{Female})= \frac{P(\mbox{Smoker}\cap \mbox{Female})}{P(\mbox{Female})} = \frac{20/200}{100/200}=\frac{80}{100}=0.8.$$</p>
+<h3 id="probability-of-the-intersection-event">Probability of the intersection event</h3>
+<p>From the definition of conditional probability it is possible to derive the formula for the probability of the intersection of two events.</p>
+<p>$$P(A\cap B) = P(A)P(B|A) = P(B)P(A|B).$$</p>
+<p><strong>Example</strong>. In a population there are a 30% of smokers and we know that there are a 40% of smokers with breast cancer. The probability of a random person being smoker and having breast cancer is</p>
+<p>$$P(\mbox{Smoker}\cap \mbox{Cancer})= P(\mbox{Smoker})P(\mbox{Cancer}\mid\mbox{Smoker}) = 0.3\times 0.4 = 0.12.$$</p>
+<h3 id="independence-of-events">Independence of events</h3>
+<p>Sometimes, the probability of the conditioning event does not change the original probability of the main event.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Independent events</strong>. Given a sample space $\Omega$ of a random experiment, two events $A,B\subseteq \Omega$ are <em>independents</em> if the probability of $A$ does not change when conditioning on $B$, and vice-versa, that is,</p>
+<p>$$P(A|B) = P(A) \quad \mbox{and} \quad P(B|A)=P(B),$$</p>
+<p>if $P(A)\neq 0$ and $P(B)\neq 0$.</p>
+  </div>
+</div>
+<p>This means that the occurrence of one event does not give relevant information to change the uncertainty of the other.</p>
+<p>When two events are independent, the probability of the intersection of them is equal to the product of their probabilities,</p>
+<p>$$P(A\cap B) = P(A)P(B).$$</p>
+<p><strong>Example</strong>. The sample space of tossing twice a coin is $\Omega=\{(H,H),(H,T),(T,H),(T,T)\}$ and all the elements are equiprobable if the coin is fair. Thus, applying the classical definition of probability we have</p>
+<p>$$P((H,H)) = \frac{1}{4} = 0.25.$$</p>
+<p>If we name $H_1={(H,H),(H,T)}$, that is, having heads in the first toss, and $H_2=\{(H,H),(T,H)\}$, that is, having heads in the second toss, we can get the same result assuming that these events are independent,</p>
+<p>$$P(H,H)= P(H_1\cap H_2) = P(H_1)P(H_2) = \frac{2}{4}\frac{2}{4}=\frac{1}{4}=0.25.$$</p>
+<h2 id="probability-space">Probability Space</h2>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Probability space</strong>. A <em>probability space</em> of a random experiment is a triplet $(\Omega,\mathcal{F},P)$ where</p>
+<ul>
+<li>$\Omega$ is the sample space of the experiment.</li>
+<li>$\mathcal{F}$ is a set of events of the experiment.</li>
+<li>$P$ is a probability function.</li>
+</ul>
+  </div>
+</div>
+<p>If we know the probabilities of all the elements of $\Omega$, then we can calculate the probability of every event in $\mathcal{F}$ and we can construct easily the probability space.</p>
+<h3 id="probability-space-construction">Probability space construction</h3>
+<p>In order to determine the probability of every elemental event we can use a tree diagram, using the following rules:</p>
+<ol>
+<li>For every node of the tree, label the incoming edge with the probability of the variable in that level having the value of the node, conditioned by events corresponding to its ancestor nodes in the tree.</li>
+<li>The probability of every elemental event in the leaves is the product of the probabilities on edges that go form the root to the leave.</li>
+</ol>
+<img src="../img/probability/probability_space.svg" alt="Diagram tree of a probability space" width="600">
+<h3 id="probability-tree-with-dependent-variables">Probability tree with dependent variables</h3>
+<p>In a probability tree with dependent variables, the probababilities of every level of the tree are different depending on the outcome of the previous leves.</p>
+<p><strong>Example</strong>. In a population there are a 30% of smokers and we know that there are a 40% of smokers with breast cancer, while only 10% of non-smokers have breast cancer. The probability tree of the probability space of the random experiment consisting of picking a random person and measuring the variables smoking and breast cancer is shown below.</p>
+<img src="../img/probability/smoking_cancer_probability_space.svg" alt="Tree diagram of the probability space of smoking and having breast cancer" width="550">
+<h3 id="probability-tree-with-independent-variables">Probability tree with independent variables</h3>
+<p>In a probability tree with independent variables, the probabilities of every level of the tree are the same no matter the outcome of the previous leves.</p>
+<p><strong>Example</strong>. The probability tree of the random experiment of tossing two coins is shown below.</p>
+<img src="../img/probability/coins_probability_space.svg" alt="Tree diagram of the probability space of tossing two coins" width="550">
+<p><strong>Example</strong>. In a population there are 40% of males and 60% of females, the probability tree of drawing a random sample of three persons is shown below.</p>
+<img src="../img/probability/sample_probability_space.svg" alt="Diagram tree of the probability space of the gender of three random individuals" width="600">
+<h2 id="total-probability-theorem">Total probability theorem</h2>
+<h3 id="partition-of-the-sample-space">Partition of the sample space</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Partition of the sample space</strong>. A collection of events $A_1,A_2,\ldots,A_n$ of the same sample space $\Omega$ is a <em>partition</em> of the sample space if it satisfies the following conditions</p>
+<ol>
+<li>The union of the events is the sample space, that is, $A_1\cup \cdots\cup A_n =\Omega$.</li>
+<li>All the events are mutually incompatible, that is, $A_i\cap A_j = \emptyset$ $\forall i\neq j$.</li>
+</ol>
+  </div>
+</div>
+<img src="../img/probability/sample_space_partition.svg" alt="Partition of a sample space" width="300">
+<p>Usually it is easy to get a partition of the sample space splitting a population according to some categorical variable, like for example gender, blood type, etc.</p>
+<h3 id="total-probability-theorem-1">Total probability theorem</h3>
+<p>If we have a partition of a sample space, we can use it to calculate the probabilities of other events in the same sample space.</p>
+<div class="alert alert-theo">
+  <div>
+    <p><strong>Theorem - Total probability</strong>. Given a partition $A_1,\ldots,A_n$ of a sample space $\Omega$, the probability of any other event $B$ of the same sample space can be calculated with the formula</p>
+<p>$$P(B) = \sum_{i=1}^n P(A_i\cap B) = \sum_{i=1}^n P(A_i)P(B|A_i).$$</p>
+  </div>
+</div>
+<div class="spoiler " >
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#spoiler-18" role="button" aria-expanded="false" aria-controls="spoiler-18">
+      Proof
+    </a>
+  </p>
+  <div class="collapse card " id="spoiler-18">
+    <div class="card-body">
+      <p>The proof of the theorem is quite simple. As $A_1,\ldots,A_n$ is a partition of $\Omega$, we have</p>
+<p>$$B = B\cap \Omega = B\cap (A_1\cup \cdots \cup A_n) = (B\cap A_1)\cup \cdots \cup (B\cap A_n).$$</p>
+<p>And all the events of this union are mutually incompatible as $A_1,\ldots,A_n$ are, thus</p>
+<p>$$
+\begin{aligned}
+P(B) &amp;= P((B\cap A_1)\cup \cdots \cup (B\cap A_n)) = P(B\cap A_1)+\cdots + P(B\cap A_n) =\newline
+&amp;= P(A_1)P(B|A_1)+\cdots + P(A_n)P(B|A_n) = \sum_{i=1}^n P(A_i)P(B|A_i).
+\end{aligned}
+$$</p>
+<img src="../img/probability/total_probability.svg" alt="Graphical proof of the total probability theorem" width="300">
+
+    </div>
+  </div>
+</div>
+<p><strong>Example</strong>. A symptom $S$ can be caused by a disease $D$, but it can also be present in persons without the disease. In a population, the rate of people with the disease is $0.2$. We know also that $90%$ of persons with the disease have the symptom, while only $40%$ of persons without the disease have it.</p>
+<p><em>What is the probability that a random person of the population has the symptom?</em></p>
+<p>To answer the question we can apply the total probability theorem using the partition $\{A,\bar A\}$:</p>
+<p>$$P(S) = P(D)P(S|D)+P(\bar D)P(S|\bar D) = 0.2\cdot 0.9 + 0.8\cdot 0.4 = 0.5.$$</p>
+<p>That is, half of the population has the symptom.</p>
+<p><em>Indeed, it is a weighted mean of probabilities!</em></p>
+<p>The answer to the previous question is even clearer with the tree diagram of the probability space.</p>
+<img src="../img/probability/total_probability_space.svg" alt="Diagram tree of the probability space of a diagnosis experiment" width="550">
+<p>$$
+\begin{aligned}
+P(S) &amp;= P(D,S) + P(\bar D,S) = P(D)P(S|D)+P(\bar D)P(S|\bar D)\newline
+&amp; = 0.2\cdot 0.9+ 0.8\cdot 0.4 = 0.18 + 0.32 = 0.5.
+\end{aligned}
+$$</p>
+<h2 id="bayes-theorem">Bayes theorem</h2>
+<p>A partition of a sample space $A_1,\cdots,A_n$ may also be interpreted as a set of feasible hypothesis for a fact $B$.</p>
+<p>In such cases it may be helpful to calculate the posterior probability $P(A_i\vert B)$ of every hypothesis.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Bayes</strong>. Given a partition $A_1,\ldots,A_n$ of a sample space $\Omega$ and another event $B$ of the same sample space, the conditional probability of every even $A_i$ $i=1,\ldots,n$ on $B$ can be calculated with the following formula</p>
+<p>$$P(A_i|B) = \frac{P(A_i\cap B)}{P(B)} = \frac{P(A_i)P(B|A_i)}{\sum_{i=1}^n P(A_i)P(B|A_i)}.$$</p>
+  </div>
+</div>
+<p><strong>Example</strong>. In the previous example, a more interesting question is about the diagnosis for a person with the symptom.</p>
+<p>In this case we can interpret $D$ and $\overline{D}$ as the two feasible hypothesis for the symptom $S$. The prior probabilities for them are $P(D)=0.2$ and $P(\overline{D})=0.8$. That means that if we do not have information about the symptom, the diagnosis would be that the person does not have the disease.</p>
+<p>However, if after examining the person we observe the symptom, that information changes the uncertainty about the hypothesis, and we need calculate the posterior probabilities to diagnose, that is, $P(D\vert S)$ and $P(\overline{D}\vert S)$.</p>
+<p>To calculate the posterior probabilities we can use the Bayes theorem.</p>
+<p>$$
+\begin{aligned}
+P(D|S) &amp;= \frac{P(D)P(S|D)}{P(D)P(S|D)+P(\overline{D})P(S|\overline{D})} = \frac{0.2\cdot 0.9}{0.2\cdot 0.9 + 0.8\cdot 0.4} = \frac{0.18}{0.5}=0.36,\newline
+P(\overline{D}|S) &amp;= \frac{P(\overline{D})P(S|\overline{D})}{P(D)P(S|D)+P(\overline{D})P(S|\overline{D})} = \frac{0.8\cdot 0.4}{0.2\cdot 0.9 + 0.8\cdot 0.4} = \frac{0.32}{0.5}=0.64.
+\end{aligned}
+$$</p>
+<p>As we can see the probability of having the disease has increased. Nevertheless, the probability of not having the disease is still greater than the probability of having it, and for that reason, the diagnosis is not having the disease.</p>
+<p>In this case it is said the the symptom $S$ is <em>not decisive</em> in order to diagnose the disease.</p>
+<h2 id="epidemiology">Epidemiology</h2>
+<p>One of the branches of Medicine that makes an intensive use of probability is , that study the distribution and causes of diseases in populations identifying risk factors for disease and targets for preventive healthcare.</p>
+<p>In Epidemiology we are interested in how often appears an event or <em>medical event</em> $D$ (typically a disease like flu, a risk factor like smoking or a protection factor like a vaccine) that is measured as a nominal variable with two categories (occurrence or not of the event).</p>
+<p>There are different measures related to the frequency of a medical event. The most important are:</p>
+<ul>
+<li>Prevalence</li>
+<li>Incidence</li>
+<li>Relative risk</li>
+<li>Odds ratio</li>
+</ul>
+<h3 id="prevalence">Prevalence</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Prevalence</strong>. The <em>prevalence</em> of a medical event $D$ is the proportion of a particular population that is affected by a medical event.</p>
+<p>$$\mbox{Prevalence}(D) = \frac{\mbox{Num people affected by $D$}}{\mbox{Population size}}$$</p>
+  </div>
+</div>
+<p>Often, the prevalence is estimated from a sample as the relative frequency of people affected by the event in the sample.
+It is also common to express that frequency as a percentage.</p>
+<p><strong>Example</strong>. To estimate the prevalence of flu a sample of 1000 persons has been studied and 150 of them had flu. Thus, the prevalence of flu is approximately 150/1000=0.15, that is, a 15%.</p>
+<h3 id="incidence">Incidence</h3>
+<p><em>Incidence</em> measures the probability of occurrence of a medical event in a population within a given period of time. Incidence can be measured as a cumulative proportion or as a rate.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Cumulative incidence</strong>. The <em>cumulative incidence</em> of a medical event $D$ is the proportion of people that experience the event in a period of time, that is, the number of new cases with the event in the period of time divided by the size of the population at risk.</p>
+<p>$$R(D)=\frac{\mbox{Num of new cases with $D$}}{\mbox{Population at risk size}}$$</p>
+  </div>
+</div>
+<p><strong>Example</strong>. A population initially contains 1000 persons without flu and after two years of observation 160 of them got the flu.
+The incidence proportion of flu is 160 cases per 1000 persons per two years, i.e. 16% per two years.</p>
+<h3 id="incidence-rate-or-absolute-risk">Incidence rate or Absolute risk</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Incidence rate</strong>. The <em>incidence rate</em> or <em>absolute risk</em> of a medical event $D$ is the number of new cases with the event divided by the size of the population at risk and by the number of units of time in a given period.</p>
+<p>$$R(D)=\frac{\mbox{Num of new cases with $D$}}{\mbox{Population at risk size}\times \mbox{Num of unit time intervals}}$$</p>
+  </div>
+</div>
+<p><strong>Example</strong>. A population initially contains $1000$ persons without flu and after two years of observation 160 of them got the flu.
+If we consider the year as the unit of time, the incidence rate of flu is 160 cases per $1000$ persons divided by two years, i.e. 80 cases per 1000 persons-year or 8% persons per year.</p>
+<h3 id="prevalence-vs-incidence">Prevalence vs Incidence</h3>
+<p>Prevalence must not be confused with incidence.
+Prevalence indicates how widespread the medical event is, and is more a measure of the burden of the event on society with no regard to time at risk or when  subjects may have been exposed to a possible risk factor, whereas incidence conveys information about the risk of being affected by the event.</p>
+<p>Prevalence can be measured in cross-sectional studies at a particular time, while in order to measure incidence we need a longitudinal study observing the individuals during a period of time.</p>
+<p>Incidence is usually more useful than prevalence in understanding the event etiology: for example, if the incidence of a disease in a population increases, then there is a risk factor that promotes it.</p>
+<p>When the incidence is approximately constant for the duration of the event, prevalence is approximately the product of event incidence and average event duration, so</p>
+<p>$$\mbox{prevalence} = \mbox{incidence} \times \mbox{duration}$$</p>
+<h3 id="comparing-risks">Comparing risks</h3>
+<p>In order to determine if a factor or characteristic is associated with the medical event we need to compare the risk of the medical event in two populations, one exposed to the factor and the other not exposed.
+The group of people exposed to the factor is known as the <em>treatment group</em> or <em>experimental group</em> and the group of people unexposed as the <em>control group</em>.</p>
+<p>Usually the cases observed for each group are represented in a 2$\times$2 table like the one below.</p>
+<table>
+<thead>
+<tr class="header">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Event $D$</td>
+<td style="text-align: left;">No event $\overline D$</td>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Treatment group (exposed)</td>
+<td style="text-align: center;">$a$</td>
+<td style="text-align: center;">$b$</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Control group(unexposed)</td>
+<td style="text-align: center;">$c$</td>
+<td style="text-align: center;">$d$</td>
+</tr>
+</tbody>
+</table>
+<h3 id="attributable-risk-or-risk-difference-rd">Attributable risk or Risk difference $RD$</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Attributable risk</strong>. The <em>attributable risk</em> or <em>risk difference</em> of a medical event $D$ for people exposed to a factor is the difference between the absolute risks of the treatment group and the control group.</p>
+<p>$$\begin{aligned}RD(D) &amp;= \mbox{Risk in treatment group}-\mbox{Risk in control group}=\newline
+&amp;= R_T(D)-R_C(D)=\frac{a}{a+b}-\frac{c}{c+d}.
+\end{aligned}
+$$</p>
+  </div>
+</div>
+<p>The attributable risk is the risk of an event that is specifically due to the factor of interest.</p>
+<p>Observe that the attributable risk can be positive, when the risk of the treatment group is greater than the risk of the control group, and negative, on the contrary.</p>
+<p><strong>Example</strong>. To determine the effectiveness of a vaccine against the flu, a sample of 1000 person without flu was selected at the beginning of the year.
+Half of them were vaccinated (treatment group) and the other received a placebo (control group).
+The table below summarize the results at the end of the year.</p>
+<table>
+<thead>
+<tr class="header">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">Flu $D$</td>
+<td style="text-align: center;">No flu $\overline D$</td>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Treatment group(vaccinated)</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">480</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Control group(Unvaccinated)</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">420</td>
+</tr>
+</tbody>
+</table>
+<p>The attributable risk of getting the flu for people vaccinated is</p>
+<p>$$AR(D) = \frac{20}{20+480}-\frac{80}{80+420} = -0.12.$$</p>
+<p>This means that the risk of getting flu in vaccinated people is a 12% less than in unvaccinated.</p>
+<h3 id="relative-risk-rr">Relative risk $RR$</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Relative risk</strong>. The <em>relative risk</em> of a medical event $D$ for people exposed to a factor is the quotient between the proportions of people that acquired the event in a period of time in the treatment and control groups. That is, the quotient between the incidences of the treatment and the control groups.</p>
+<p>$$RR(D)=\frac{\mbox{Risk in treatment group}}{\mbox{Risk in control group}}=\frac{R_1(D)}{R_0(D)}=\frac{a/(a+b)}{c/(c+d)}$$</p>
+  </div>
+</div>
+<p>Relative risk compares the risk of a medical event between the treatment and the control groups.</p>
+<div class="alert alert-int">
+  <div>
+    <ul>
+<li>$RR=1$ $\Rightarrow$ There is no association between the event and the exposure to the factor.</li>
+<li>$RR&lt;1$ $\Rightarrow$ Exposure to the factor decreases the risk of the event.</li>
+<li>$RR&gt;1$ $\Rightarrow$ Exposure to the factor increases the risk of the event.</li>
+</ul>
+<p>The further from 1, the stronger the association.
+  </div>
+</div>
+<p><strong>Example</strong>. To determine the effectiveness of a vaccine against the flu, a sample of 1000 person without flu was selected at the beginning of the year.
+Half of them were vaccinated (treatment group) and the other received a placebo (control group).
+The table below summarize the results at the end of the year.</p>
+<table>
+<thead>
+<tr class="header">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">Flu $D$</td>
+<td style="text-align: center;">No flu $\overline D$</td>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Treatment group(vaccinated)</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">480</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Control group(Unvaccinated)</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">420</td>
+</tr>
+</tbody>
+</table>
+<p>The relative risk of getting the flu for people vaccinated is</p>
+<p>$$RR(D) = \frac{20/(20+480)}{80/(80+420)} = 0.25.$$</p>
+<p>This means that vaccinated people were only one-fourth as likely to develop flu as were unvaccinated people, i.e. the vaccine reduce the risk of flu by 75%.</p>
+<h3 id="odds">Odds</h3>
+<p>An alternative way of measuring the risk of a medical event is the <em>odds</em>.</p>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Odds</strong>. The <em>odds</em> of a medical event $D$ in a population is the quotient between the people that acquired the event and people that not in a period of time.
+  </div>
+</div>
+<p>Unlike incidence or absolute risk, that is a proportion less than 1, the odds can be greater than 1. However, it is possible to convert an odd into a probability with the formula</p>
+<p>$$P(D) = \frac{\mbox{ODDS}(D)}{\mbox{ODDS}(D)+1}$$</p>
+<p><strong>Example</strong>. A population initially contains $1000$ persons without flu and after a year 160 of them got the flu. The odds of flu is 160/840.</p>
+<p>Observe that the incidence is 160/1000.</p>
+<h3 id="odds-ratio-or">Odds ratio $OR$</h3>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Odds ratio</strong>. The <em>odds ratio</em> of a medical event $D$ for people exposed to a factor is the quotient between the odds of people that acquired the event in a period of time in the treatment and control groups.</p>
+<p>$$OR(D)=\frac{\mbox{Odds in treatment group}}{\mbox{Odds in control group}}=\frac{a/b}{c/d}=\frac{ad}{bc}$$</p>
+  </div>
+</div>
+<p>Odds ratio compares the odds of a medical event between the treatment and the control groups.
+The interpretation is similar to the relative risk.</p>
+<div class="alert alert-int">
+  <div>
+    <ul>
+<li>$OR=1$ $\Rightarrow$ There is no association between the event and the exposure to the factor.</li>
+<li>$OR&lt;1$ $\Rightarrow$ Exposure to the factor decreases the risk of the event.</li>
+<li>$OR&gt;1$ $\Rightarrow$ Exposure to the factor increases the risk of the event.</li>
+</ul>
+<p>The further from 1, the stronger the association.
+  </div>
+</div>
+<p><strong>Example</strong>. To determine the effectiveness of a vaccine against the flu, a sample of 1000 person without flu was selected at the beginning of the year.
+Half of them were vaccinated (treatment group) and the other received a placebo (control group).
+The table below summarize the results at the end of the year.</p>
+<table>
+<thead>
+<tr class="header">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">Flu $D$</td>
+<td style="text-align: center;">No flu $\overline D$</td>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Treatment group(vaccinated)</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">480</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Control group(Unvaccinated)</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">420</td>
+</tr>
+</tbody>
+</table>
+<p>The odds ratio of getting the flu for people vaccinated is</p>
+<p>$$OR(D) = \frac{20/480}{80/420} = 0.21875.$$</p>
+<p>This means that the odds of getting the flu versus not getting the flu in vaccinated individuals is almost one fifth of that in unvaccinated, i.e. approximately for every 22 persons vaccinated with flu there will be 100 persons unvaccinated with flu.</p>
+<h3 id="relative-risk-vs-odds-ratio">Relative risk vs Odds ratio</h3>
+<p>Relative risk and odds ratio are two measures of association but their interpretation is slightly different. While the relative risk expresses a comparison of risks between the treatment and control groups, the odds ratio expresses a comparison of odds, that is not the same than the risk.
+Thus, an odds ratio of 2 <em>does not</em> mean that the treatment group has the double of risk of acquire the medical event.</p>
+<p>The interpretation of the odds ratio is trickier because is counterfactual, and give us how many times is more frequent the event in the treatment group in comparison with the control group, assuming that in the control group the event is as frequent as the non-event.</p>
+<p>The advantage of the odds ratio is that it does not depend on the prevalence or the incidence of the event, and must be used necessarily when the number of people with the medical event is selected arbitrarily in both groups, like in the case-control studies.</p>
+<p><strong>Example</strong>. In order to determine the association between lung cancer and smoking two samples were selected (the second one with the double of non-cancer individuals) getting the following results:</p>
+<p><em>Sample 1</em></p>
+<table>
+<thead>
+<tr class="header">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">Cancer</td>
+<td style="text-align: center;">No cancer</td>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Smokers</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">80</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Non-smokers</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">320</td>
+</tr>
+</tbody>
+</table>
+<p>$$
+\begin{aligned}
+RR(D) &amp;= \frac{60/(60+80)}{40/(40+320)} = 3.86.\newline
+OR(D) &amp;= \frac{60/80}{40/320} = 6.
+\end{aligned}
+$$</p>
+<p><em>Sample 2</em></p>
+<table>
+<thead>
+<tr class="header">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">Cancer</td>
+<td style="text-align: center;">No cancer</td>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Smokers</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">160</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Non-smokers</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">640</td>
+</tr>
+</tbody>
+</table>
+<p>$$
+\begin{aligned}
+RR(D) &amp;= \frac{60/(60+160)}{40/(40+640)} = 4.64.\newline
+OR(D) &amp;= \frac{60/160}{40/640} = 6.
+\end{aligned}
+$$</p>
+<p>Thus, when we change the incidence or the prevalence of the event (lung cancer) the relative risk changes, while the odds ratio not.</p>
+<p>The relation between the relative risk and the odds ratio is given by the following formula</p>
+<p>$$RR = \frac{OR}{1-R_0+R_0OR} = OR\frac{1-R_1}{1-R_0},$$</p>
+<p>where $R_0$ and $R_1$ are the prevalence or the incidence in control and treatment groups respectively.</p>
+<p>The odds ratio always overestimate the relative risk when it is greater than 1 and underestimate it when it is less than 1.
+However, with rare medical events (with very small prevalence or incidence) the relative risk and the odds ratio are almost the same.</p>
+<img src="../img/probability/odds_ratio_vs_relative_risk.svg" alt="Chart of the relation between the odds ratio and the relative risk for different incidences" width="500">
+<h2 id="diagnostic-tests">Diagnostic tests</h2>
+<p>In Epidemiology it is common to use diagnostic test to diagnose diseases.</p>
+<p>In general, diagnostic tests are not fully reliable and have some risk of misdiagnosis as it is represented in the table below.</p>
+<p>$$
+\begin{array}{|l|c|c|}
+\hline
+&amp; \mbox{Presence of disease }D &amp; \mbox{Absence of disease }\bar D\newline
+\hline
+\mbox{Test outcome positive } + &amp; \color{green}{ \mbox{True Positive } TP} &amp; \color{red}{\mbox{False
+Positive } FP}\newline
+\hline
+\mbox{Test outcome negative } - &amp; \color{red}{\mbox{False Negative } FN} &amp; \color{green}{\mbox{True Negative } TN}\newline
+\hline
+\end{array}
+$$</p>
+<h3 id="sensitivity-and-specificity-of-a-diagnostic-test">Sensitivity and specificity of a diagnostic test</h3>
+<p>The performance of a diagnostic test depends on the following two probabilities.</p>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Sensitivity</strong>. The <em>sensitivity</em> of a diagnostic test is the proportion of positive outcomes in persons with the disease$$P(+|D)=\frac{TP}{TP+FN}$$
+  </div>
+</div>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Specificity</strong>. The <em>specificity</em> of a diagnostic test is the proportion of negative outcomes in persons without the disease$$P(-|\overline{D})=\frac{TN}{TN+FP}$$
+  </div>
+</div>
+<h3 id="sensitivity-and-specificity-interpretation">Sensitivity and specificity interpretation</h3>
+<p>Usually, there is a trade-off between sensitivity and specificity.</p>
+<p>A test with high sensitivity will detect the disease in most sick persons, but it will produce also more false positives than a less sensitive test. This way, a positive outcome in a test with high sensitivity is not useful for confirming the disease, but a negative outcome is useful for ruling out the disease, since it rarely misdiagnoses those who have the disease.</p>
+<p>On the other hand, a test with a high specificity will rule out the disease in most healthy persons, but it will produce also more false negatives than a less specific test. Thus, a negative outcome in a test with high specificity is not useful for ruling out the disease, but a positive is useful to confirm the disease, since it rarely give positive outcomes in healthy people.</p>
+<p>Deciding on a test with greater sensitivity or a test with greater specificity depends on the type of disease and the goal of the test. In general, we will use a sensitive test when:</p>
+<ul>
+<li>The disease is serious and it is important to dectect it.</li>
+<li>The disease is curable.</li>
+<li>The false positives do not provoke serious traumas.</li>
+</ul>
+<p>An we will use a specific test when:</p>
+<ul>
+<li>The disease is important but difficult or impossible to cure.</li>
+<li>The false positives provoke serious traumas.</li>
+<li>The treatment of false positives can have dangerous consequences.</li>
+</ul>
+<h3 id="predictive-values-of-a-diagnostic-test">Predictive values of a diagnostic test</h3>
+<p>But the most important aspect of a diagnostic test is its predictive power, that is measured with the following two posterior probabilities.</p>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Positive predictive value $PPV$</strong>. The <em>positive predictive value</em> of a diagnostic test is the proportion of persons with the disease to persons with a positive outcome$$P(D|+) = \frac{TP}{TP+FP}$$
+  </div>
+</div>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Negative predictive value $NPV$</strong>. The <em>negative predictive value</em> of a diagnostic test is the proportion of persons without the disease to persons with a negative outcome$$P(\overline{D}|-) = \frac{TN}{TN+FN}$$
+  </div>
+</div>
+<p>Positive and negative predictive values allow to confirm or to rule out the disease, respectively, if they reach at least a threshold of $0.5$.</p>
+<p>$$
+\begin{array}{rcl}
+PPV&gt;0.5 &amp; \Rightarrow &amp; \mbox{Disease diagnostic}\newline
+NPV&gt;0.5 &amp; \Rightarrow &amp; \mbox{Not disease diagnostic}
+\end{array}
+$$</p>
+<p>However, these probabilities depends on the proportion of persons with the disease in the population $P(D)$ that is known as of the disease. They can be calculated from the sensitivity and the specificity of the diagnostic test using the Bayes theorem.</p>
+<p>$$
+\begin{aligned}
+PPV=P(D|+) &amp;= \frac{P(D)P(+|D)}{P(D)P(+|D)+P(\overline{D})P(+|\overline{D})}\newline
+NPV=P(\overline{D}|-) &amp;= \frac{P(\overline{D})P(-|\overline{D})}{P(D)P(-|D)+P(\overline{D})P(-|\overline{D})}
+\end{aligned}
+$$</p>
+<p>Thus, with frequent diseases, the positive predictive value increases, and with rare diseases, the negative predictive value increases.</p>
+<p><strong>Example</strong>. A diagnostic test for the flu has been tried in a random sample of 1000 persons. The results are summarized in the table below.</p>
+<p>$$
+\begin{array}{|l|c|c|}
+\hline
+&amp; \mbox{Presence of flu } D &amp; \mbox{Absence of flu } \bar D\newline
+\hline
+\mbox{Test outcome } + &amp; 95 &amp; 90 \newline
+\hline
+\mbox{Test outcome }- &amp; 5 &amp; 810 \newline
+\hline
+\end{array}
+$$</p>
+<p>According to this sample, the prevalence of the flu can be estimated as</p>
+<p>$$P(D) = \frac{95+5}{1000} = 0.1.$$</p>
+<p>The sensitivity of this diagnostic test is</p>
+<p>$$P(+|D) = \frac{95}{95+5}= 0.95.$$</p>
+<p>And the specificity is</p>
+<p>$$P(-|\overline{D}) = \frac{810}{90+810}=0.9.$$</p>
+<p>The predictive positive value of the diagnostic test is</p>
+<p>$$PPV = P(D|+) = \frac{95}{95+90} = 0.5135.$$</p>
+<p>As this value is over $0.5$, this means that we will diagnose the flu if the outcome of the test is positive. However, the confidence in the diagnostic will be low, as this value is pretty close to $0.5$.</p>
+<p>On the other hand, the predictive negative value is</p>
+<p>$$NPV = P(\overline{D}|-) = \frac{810}{5+810} = 0.9939.$$</p>
+<p>As this value is almost 1, that means that is almost sure that a person does not have the flu if he or she gets a negative outcome in the test.</p>
+<p>Thus, this test is a powerful test to rule out the flu, but not so powerful to confirm it.</p>
+<h3 id="likelihood-ratios-of-a-diagnostic-test">Likelihood ratios of a diagnostic test</h3>
+<p>The following measures are usually derived from sensitivity and specificity.</p>
+<div class="alert alert-def">
+  <div>
+    <p><strong>Definition - Positive likelihood ratio $LR+$</strong>. The <em>positive likelihood ratio</em> of a diagnostic test is the ratio between the probability of positive outcomes in persons with the disease and healthy persons respectively,</p>
+<p>$$LR+=\frac{P(+|D)}{P(+|\overline{D})} = \frac{\mbox{Sensitivity}}{1-\mbox{Specificity}}$$</p>
+  </div>
+</div>
+<div class="alert alert-def">
+  <div>
+    <strong>Definition - Negative likelihood ratio $LR-$</strong>. The <em>negative likelihood ratio</em> of a diagnostic test is the ratio between the probability of negative outcomes in persons with the disease and healthy persons respectively,
+$$LR-=\frac{P(-|D)}{P(-|\overline{D})} = \frac{1-\mbox{Sensitivity}}{\mbox{Specificity}}$$
+  </div>
+</div>
+<p>Positive likelihood ratio can be interpreted as the number of times that a positive outcome is more probable in people with the disease than in people without it.</p>
+<p>On the other hand, negative likelihood ratio can be interpreted as the number of times that a negative outcome is more probable in people with the disease than in people without it.</p>
+<p>Post-test probabilities can be calculated from pre-test probabilities through likelihood ratios.</p>
+<p>$$P(D|+) = \frac{P(D)P(+|D)}{P(D)P(+|D)+P(\overline{D})P(+|\overline{D})} = \frac{P(D)LR+}{1-P(D)+P(D)LR+}$$</p>
+<p>Thus,</p>
+<ul>
+<li>A likelihood ratio greater than 1 increases the probability of disease.</li>
+<li>A likelihood ratio less than 1 decreases the probability of disease.</li>
+<li>A likelihood ratio 1 does not change the pre-test probability.</li>
+</ul>
+<img src="../img/probability/likelihood_ratios.svg" alt="Chart of the relation between the likelihood ratio and the pre-test and post-test probabilities" width="600">
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tag/statistics/">Statistics</a>
+  
+  <a class="badge badge-light" href="/en/tag/biostatistics/">Biostatistics</a>
+  
+  <a class="badge badge-light" href="/en/tag/descriptive-statistics/">Descriptive-Statistics</a>
+  
+</div>
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/en/teaching/statistics/manual/regression/" rel="next">Regression</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/en/teaching/statistics/manual/discrete-random-variables/" rel="prev">Discrete Random Variables</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Mar 8, 2021</p>
+
+          
+
+
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "aprendeconalf" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">CC BY NC SA 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" alt="CC SA icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/shell.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/en/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://aprendeconalf.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.f79ea001fad4564ac91850b0b5a8f31c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

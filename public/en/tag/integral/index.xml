@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Integral | Aprende con Alf</title>
+    <link>/en/tag/integral/</link>
+      <atom:link href="/en/tag/integral/index.xml" rel="self" type="application/rss+xml" />
+    <description>Integral</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/images/logo_hude38443eeb2faa5fa84365aba7d86a77_3514_300x300_fit_lanczos_3.png</url>
+      <title>Integral</title>
+      <link>/en/tag/integral/</link>
+    </image>
+    
+    <item>
+      <title>Integral calculus</title>
+      <link>/en/teaching/calculus/manual/integrals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/teaching/calculus/manual/integrals/</guid>
+      <description>&lt;h2 id=&#34;antiderivative-of-a-function&#34;&gt;Antiderivative of a function&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Definition - Antiderivative of a function&lt;/strong&gt;. Given a function $f(x)$, the function $F(X)$ is an &lt;em&gt;antiderivative&lt;/em&gt; or &lt;em&gt;primitive function&lt;/em&gt; of $f$ if it satisfies that $F&amp;rsquo;(x)=f(x)$ $\forall x \in \mathop{\rm Dom}(f)$.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The function $F(x)=x^2$ is an antiderivative of the function $f(x)=2x$ as $F&amp;rsquo;(x)=2x$ on $\mathbb{R}$.&lt;/p&gt;
+&lt;p&gt;Roughly speaking, the calculus of antiderivatives is the reverse process of differentiation, and that is the reason for the name of antiderivative.&lt;/p&gt;
+&lt;h3 id=&#34;indefinite-integral-of-a-function&#34;&gt;Indefinite integral of a function&lt;/h3&gt;
+&lt;p&gt;As two functions that differs in a constant term have the same derivative, if $F(x)$ is an antiderivative of $f(x)$, so will be any function of the form $F(x)+k$ $\forall k \in \mathbb{R}$. This means that, when a function has an antiderivative, it has an infinite number of antiderivatives.&lt;/p&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Indefinite integral&lt;/strong&gt;. The &lt;em&gt;indefinite integral&lt;/em&gt; of a function $f(x)$ is the set of all its antiderivatives; it is denoted by&lt;/p&gt;
+&lt;p&gt;$$\int{f(x)}\,dx=F(x)+C$$ where $F(x)$ is an antiderivative of $f(x)$ and $C$ is a constant.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. The indefinite integral of the function $f(x)=2x$ is $$\int 2x\, dx = x^2+C.$$&lt;/p&gt;
+&lt;h3 id=&#34;interpretation-of-the-integral&#34;&gt;Interpretation of the integral&lt;/h3&gt;
+&lt;p&gt;We have seen in a previous chapter that the derivative of a function is the instantaneous rate of change of the function. Thus, if we know the instantaneous rate of change of the function at any point, we can compute the change of the function.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. What is the space covered by an free falling object?&lt;/p&gt;
+&lt;p&gt;Assume that the only force acting upon an object drop is gravity, with an acceleration of $9.8$ m/s$^2$. As acceleration is the the rate of change of the speed, that is constant at any moment, the antiderivative is the speed of the object,&lt;/p&gt;
+&lt;p&gt;$$v(t) = 9.8t  \mbox{ m/s}$$&lt;/p&gt;
+&lt;p&gt;And as the speed is the rate of change of the space covered by object during the fall, the antiderivative of the speed is the space covered by the object,&lt;/p&gt;
+&lt;p&gt;$$s(t) = \int 9.8t\, dt = 9,8\frac{t^2}{2}.$$&lt;/p&gt;
+&lt;p&gt;Thus, for instance, after 2 seconds, the covered space is $s(2) = 9.8\frac{2^2}{2} = 19.6$ m.&lt;/p&gt;
+&lt;h3 id=&#34;linearity-of-integration&#34;&gt;Linearity of integration&lt;/h3&gt;
+&lt;p&gt;Given two integrable functions $f(x)$ and $g(x)$ and a constant $k \in \mathbb{R}$, it is satisfied that&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$\int{(f(x)+g(x))}\,dx=\int{f(x)}\,dx+\int{g(x)}\,dx$,&lt;/li&gt;
+&lt;li&gt;$\int{kf(x)}\,dx=k\int{f(x)}\,dx$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This means that the integral of any linear combination of functions equals the same linear combination of the integrals of the functions.&lt;/p&gt;
+&lt;h2 id=&#34;elementary-integrals&#34;&gt;Elementary integrals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$\int a\,dx=ax+C$, with $a$ constant.&lt;/li&gt;
+&lt;li&gt;$\int x^n\,dx=\dfrac{x^{n+1}}{n+1}+C$ if $n\neq -1$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{1}{x}\, dx=\ln\vert x\vert+C$.&lt;/li&gt;
+&lt;li&gt;$\int e^x\,dx=e^x+C$.&lt;/li&gt;
+&lt;li&gt;$\int a^x\,dx=\dfrac{a^x}{\ln a}+C$.&lt;/li&gt;
+&lt;li&gt;$\int \sin x\, dx=-\cos x+C$.&lt;/li&gt;
+&lt;li&gt;$\int \cos x\, dx=\sin x+C$.&lt;/li&gt;
+&lt;li&gt;$\int \tan x\, dx=\ln\vert\sec x\vert+C$.&lt;/li&gt;
+&lt;li&gt;$\int \sec x\, dx = \ln\vert\sec x + \tan x\vert+C$.&lt;/li&gt;
+&lt;li&gt;$\int \csc x\, dx= \ln\vert\csc x-\cot x\vert+C$.&lt;/li&gt;
+&lt;li&gt;$\int \cot x \, dx= \ln\vert\sin x\vert+C$.&lt;/li&gt;
+&lt;li&gt;$\int \sec^2 x\, dx= \tan x+ C$.&lt;/li&gt;
+&lt;li&gt;$\int \csc^2 x\, dx= -\cot x+ C$.&lt;/li&gt;
+&lt;li&gt;$\int \sec x \tan x\, dx= \sec x+ C$.&lt;/li&gt;
+&lt;li&gt;$\int \csc x \cot x\, dx = -\csc x +C$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{dx}{\sqrt{a^2-x^2}}=\arcsin\dfrac{x}{a}+C$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{dx}{a^2+x^2}=\dfrac{1}{a}\arctan\dfrac{x}{a}+C$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{dx}{x\sqrt{x^2-a^2}}=\dfrac{1}{a}\sec^{-1}\dfrac{x}{a}+C$.&lt;/li&gt;
+&lt;li&gt;$\int \dfrac{dx}{a^2-x^2}=\dfrac{1}{2a}\ln\left\vert\dfrac{x+a}{x-a}\right\vert+C$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;techniques-of-integration&#34;&gt;Techniques of integration&lt;/h2&gt;
+&lt;p&gt;Unfortunately, unlike differential calculus, the is not a foolproof procedure to compute the antiderivative of a function. However, there are some techniques that allow to integrate some types of functions. The most common methods of integration are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integration by parts&lt;/li&gt;
+&lt;li&gt;Integration by reduction&lt;/li&gt;
+&lt;li&gt;Integration by substitution&lt;/li&gt;
+&lt;li&gt;Integration of rational functions&lt;/li&gt;
+&lt;li&gt;Integration of trigonometric functions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;integration-by-parts&#34;&gt;Integration by parts&lt;/h3&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - Integration by parts&lt;/strong&gt;. Given two differentiable functions $u(x)$ and $v(x)$,&lt;/p&gt;
+&lt;p&gt;$$\int{u(x)v&amp;rsquo;(x)}\,dx=u(x)v(x)-\int{u&amp;rsquo;(x)v(x)}\,dx,$$&lt;/p&gt;
+&lt;p&gt;or, writing $u&amp;rsquo;(x)dx=du$ and $v&amp;rsquo;(x)dx=dv$,&lt;/p&gt;
+&lt;p&gt;$$\int{u}\,dv=uv-\int{v}\,du.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;spoiler &#34; &gt;
+  &lt;p&gt;
+    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-3&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-3&#34;&gt;
+      Proof
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-3&#34;&gt;
+    &lt;div class=&#34;card-body&#34;&gt;
+      &lt;p&gt;From the rule for differentiating a product we have&lt;/p&gt;
+&lt;p&gt;$$ (uv)&amp;rsquo; = u&amp;rsquo;v + uv&amp;rsquo; $$&lt;/p&gt;
+&lt;p&gt;and computing the integrals both sides we get&lt;/p&gt;
+&lt;p&gt;$$
+\begin{gathered}
+\int (uv)&amp;rsquo; \, dx = \int u&amp;rsquo;v \, dx + \int uv&amp;rsquo;\, dx \Rightarrow\newline
+uv = \int v\,du + \int u\, dv \Rightarrow\newline
+\int{u}\,dv=uv-\int{v}\,du.
+\end{gathered}
+$$&lt;/p&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;To apply this method we have to choose the functions $u$ and $dv$ in a way so that the final integral is easier to compute than the original one.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. To integrate $\int{x \sin x}\,dx$ we have to choose $u=x$ and $dv=\sin x\, dx$, so $du=dx$ and $v=-\cos x$, getting $$\int{x \sin x}\,dx=-x\cos x-\int (-\cos x)\,dx = -x\cos x +\sin x.$$ If we had chosen $u=\sin x$ and $dv=x\,dx$, we would have got a more difficult integral.&lt;/p&gt;
+&lt;h3 id=&#34;integration-by-reduction&#34;&gt;Integration by reduction&lt;/h3&gt;
+&lt;p&gt;The reduction technique is used when we have to apply the integration by parts several times.&lt;/p&gt;
+&lt;p&gt;If we want to compute the antiderivative $I_{n}$ that depends on a natural number $n$, the reduction formulas allow us to write $I_{n}$ as a function of $I_{n-1}$, that is, we have a recurrent relation $$\ I_{n}=f(I_{n-1},x,n)$$ so by computing the first antiderivative $I_0$ we should be able to compute the others.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. To compute $I_{n}=\int{x^ne^x}\,dx$ applying integration by parts, we have to choose $u=x^n$ y $dv=e^x\,dx$, so $du=nx^{n-1}\,dx$ and $v=e^{x}$, getting&lt;/p&gt;
+&lt;p&gt;$$\ I_{n}=\int{x^ne^x}\,dx=x^ne^x-n\int{x^{n-1}e^x}\,dx=x^ne^x-nI_{n-1}.$$&lt;/p&gt;
+&lt;p&gt;Thus, for instance, for $n=3$ we have&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int x^3 e^x\, dx &amp;amp;= I_3 = x^3e^x-3I_2 = x^3e^x-3(x^2e^x-2I_1) =\newline
+&amp;amp;= x^3e^x-3(x^2e^x-(xe^x-I_0) = x^3e^x-3(x^2e^x-(xe^x-e^x) =\newline
+&amp;amp;= e^x(x^3-3x^2+6x-6).
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;integration-by-substitution&#34;&gt;Integration by substitution&lt;/h3&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;From the chain rule for differentiating the composition of two functions&lt;/p&gt;
+&lt;p&gt;$$f(g(x))&amp;rsquo; = f&amp;rsquo;(g(x))g&amp;rsquo;(x),$$&lt;/p&gt;
+&lt;p&gt;we can make a variable change $u=g(x)$, so $du=g&amp;rsquo;(x)dx$, and get&lt;/p&gt;
+&lt;p&gt;$$\int f&amp;rsquo;(g(x))g&amp;rsquo;(x)\, dx = \int f&amp;rsquo;(u)\, du = f(u)+C = f(g(x))+C.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. To compute the integral of $\int{\dfrac{1}{x\log x}}\, dx$ we can make the substitution $u=\log x$, so $du=\frac{1}{x}dx$, and we have&lt;/p&gt;
+&lt;p&gt;$$\int \frac{dx}{x\log x}=\int \frac{1}{\log x}\frac{1}{x}\,dx = \int \frac{1}{u}\,du = \log \vert u\vert+ C.$$&lt;/p&gt;
+&lt;p&gt;Finally, undoing the substitution we get&lt;/p&gt;
+&lt;p&gt;$$\int \frac{1}{x\log x}\,dx= \log \vert\log x\vert + C.$$&lt;/p&gt;
+&lt;h3 id=&#34;integration-of-rational-functions&#34;&gt;Integration of rational functions&lt;/h3&gt;
+&lt;h4 id=&#34;partial-fractions-decomposition&#34;&gt;Partial fractions decomposition&lt;/h4&gt;
+&lt;p&gt;A rational function can be written as the sum of a polynomial (with an immediate antiderivative) plus a proper rational function, that is, a rational function in which the degree of the numerator is less than the degree of the denominator.&lt;/p&gt;
+&lt;p&gt;On the other hand, depending of the factorization of the denominator, a proper rational function can be expressed as a sum of simpler fractions of the following types&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Denominator with a single linear factor: $\dfrac{A}{(x-a)}$&lt;/li&gt;
+&lt;li&gt;Denominator with a linear factor repeated $n$ times : $\dfrac{A}{(x-a)^{n}}$&lt;/li&gt;
+&lt;li&gt;Denominator with a single quadratic factor: $\dfrac{Ax+B}{x^2+cx+d}$&lt;/li&gt;
+&lt;li&gt;Denominator with a quadratic factor repeated $n$ times: $\dfrac{Ax+B}{(x^2+cx+d)^n}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;antiderivatives-of-partial-fractions&#34;&gt;Antiderivatives of partial fractions&lt;/h4&gt;
+&lt;p&gt;Using the linearity of integration, we can compute the antiderivative of a rational function from the antiderivative of these partial fractions&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \frac{A}{x-a}\,dx &amp;amp;= A\log\vert x-a\vert+C,\newline
+\int \frac{A}{(x-a)^n}\,dx &amp;amp;= \frac{-A}{(n-1)(x-a)^{n-1}}+C \textrm{ si $n\neq 1$}.\newline
+\int \frac{Ax+B}{x^2+cx+d} &amp;amp;= \frac{A}{2}\log\vert x^2+cx+d\vert + \frac{2B-Ac}{\sqrt{4d-c^2}}\arctan \frac{2x+c}{\sqrt{4d-c^2}}+C.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h4 id=&#34;integration-of-a-rational-function-with-a-denominator-with-linear-factors&#34;&gt;Integration of a rational function with a denominator with linear factors&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Consider the function $f(x)=\dfrac{x^2+3x-5}{x^3-3x+2}$.&lt;/p&gt;
+&lt;p&gt;The factorization of the denominator is $x^3-3x+2=(x-1)^2(x+2)$; it has a single linear factor $(x+2)$ and a linear factor $(x-1)$, repeated two times. In this case the decomposition in partial fractions is:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\frac{x^2+3x-5}{x^3-3x+2}&amp;amp;=\frac{A}{x-1}+\frac{B}{(x-1)^2}+\frac{C}{x+2} = \newline
+&amp;amp;= \frac{A(x-1)(x+2)+ B(x+2)+C(x-1)^2}{(x-1)^2(x+2)} = \newline
+&amp;amp;= \frac{(A+C)x^2+(A+B-2C)x+(-2A+2B+C)}{(x-1)^2(x+2)}
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;and equating the numerators we get $A=16/9$, $B=-1/3$ and $C=-7/9$, so&lt;/p&gt;
+&lt;p&gt;$$\frac{x^2+3x-5}{x^3-3x+2}= \frac{16/9}{x-1}+\frac{-1/3}{(x-1)^2}+\frac{-7/9}{x+2}.$$&lt;/p&gt;
+&lt;p&gt;Finally, integrating each partial fraction we have&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \frac{x^2+3x-5}{x^3-3x+2}\, dx &amp;amp;= \int \frac{16/9}{x-1}\,dx+\int \frac{-1/3}{(x-1)^2}\,dx+\int \frac{-7/9}{x+2}\,dx = \newline
+&amp;amp;= \frac{16}{9}\int\frac{1}{x-1}\,dx-\frac{1}{3}\int(x-1)^{-2}\,dx- \frac{7}{9}\int \frac{1}{x+2}\,dx = \newline
+&amp;amp;= \frac{16}{9}\ln\vert x-1\vert+\frac{1}{3(x-1)}-\frac{7}{9}\ln\vert x+2\vert+C.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h4 id=&#34;integration-of-a-rational-function-with-a-denominator-with-simple-quadratic-factors&#34;&gt;Integration of a rational function with a denominator with simple quadratic factors&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Consider the function $f(x)=\dfrac{x+1}{x^2-4x+8}$.&lt;/p&gt;
+&lt;p&gt;In this case the denominator cannot be factorised as a product of linear factors, but we can write&lt;/p&gt;
+&lt;p&gt;$$x^2-4x+8 = (x-2)^2+4,$$&lt;/p&gt;
+&lt;p&gt;so&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \dfrac{x+1}{x^2-4x+8}\, dx &amp;amp;= \int \dfrac{x-2+3}{(x-2)^2+4}\,dx = \newline
+&amp;amp;= \int \dfrac{x-2}{(x-2)^2+4}\,dx + \int \dfrac{3}{(x-2)^2+4}\,dx = \newline
+&amp;amp;= \frac{1}{2}\ln\vert(x-2)^2+4\vert + \dfrac{3}{2}\arctan\left(\frac{x-2}{2}\right)+C.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;integration-of-trigonometric-functions&#34;&gt;Integration of trigonometric functions&lt;/h3&gt;
+&lt;h4 id=&#34;integration-of-sinn-xcosm-x-with-n-or-m-odd&#34;&gt;Integration of $\sin^n x\cos^m x$ with $n$ or $m$ odd&lt;/h4&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    If $f(x)=\sin^n x\cos^m x$ with $n$ or $m$ odd, then we can make the substitution $t=\sin x$ or $t=\cos x$, to convert the function into a polynomial.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$\int \sin^2 x\cos^3 x\, dx = \int \sin^2 x\cos^2 x\cos x\, dx = \int \sin^2 x(1-\sin^2 x)\cos x\, dx,$$&lt;/p&gt;
+&lt;p&gt;and making the substitution $t=\sin x$, so $dt = \cos x dx$, we have&lt;/p&gt;
+&lt;p&gt;$$\int \sin^2 x(1-\sin^2 x)\cos x\, dx = \int t^2(1-t^2)\, dt = \int t^2-t^4 \, dt = \frac{t^3}{3}-\frac{t^5}{5}+C.$$&lt;/p&gt;
+&lt;p&gt;Finally, undoing the substitution we have&lt;/p&gt;
+&lt;p&gt;$$\int \sin^2 x\cos^3 x\, dx = \frac{\sin^3 x}{3}-\frac{\sin^5 x}{5}+C.$$&lt;/p&gt;
+&lt;h4 id=&#34;integration-of-sinn-xcosm-x-with-n-and-m-even&#34;&gt;Integration of $\sin^n x\cos^m x$ with $n$ and $m$ even&lt;/h4&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;If $f(x)=\sin^n x\cos^m x$ with $n$ and $m$ even, then we can make the following substitutions to simplify the integration&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\sin^2 x &amp;amp;= \frac{1}{2}(1-\cos(2x))\newline
+\cos^2 x &amp;amp;= \frac{1}{2}(1+\cos(2x))\newline
+\sin x\cos x &amp;amp;= \frac{1}{2}\sin(2x)
+\end{aligned}
+$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \sin^2 x\cos^4 x\, dx &amp;amp;= \int (\sin x\cos x)^2\cos^2 x\, dx = \int \left(\frac{1}{2}\sin(2x)\right)^2\frac{1}{2}(1+\cos(2x))\,dx =\newline
+&amp;amp;= \frac{1}{8}\int \sin^2(2x)\,dx+\frac{1}{8}\int \sin^2(2x) \cos(2x)\,dx,
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;the first integral is of the same type and the second one of the previous type, so
+$$\int \sin^2 x\cos^4 x\, dx = \frac{1}{32}x-\frac{1}{32}\sin(2x)+\frac{1}{24}\sin^3(2x).$$&lt;/p&gt;
+&lt;h4 id=&#34;products-of-sines-and-cosines&#34;&gt;Products of sines and cosines&lt;/h4&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;The equalities&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\sin x\cos y &amp;amp;= \frac{1}{2}(\sin(x-y)+\sin(x+y))\newline
+\sin x\sin y &amp;amp;= \frac{1}{2}(\cos(x-y)-\cos(x+y))\newline
+\cos x\cos y &amp;amp;= \frac{1}{2}(\cos(x-y)+\cos(x+y))
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;transform products in sums, simplifying the integration.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\int \sin x\cos 2x\, dx &amp;amp;= \int \frac{1}{2}(\sin(x-2x)+\sin(x+2x))\,dx = \newline
+&amp;amp;= \frac{1}{2}\int \sin (-x)\,dx +\frac{1}{2}\int \sin 3x\,dx = \newline
+&amp;amp;= \frac{1}{2}\cos(-x)- \frac{1}{6}\cos 3x +C.
+\end{aligned}
+$$&lt;/p&gt;
+&lt;h4 id=&#34;rational-functions-of-sines-and-cosines&#34;&gt;Rational functions of sines and cosines&lt;/h4&gt;
+&lt;div class=&#34;alert alert-tool&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;If $f(x,y)$ is a rational function then the function $f(\sin x,\cos x)$ can be transformed in an rational function of $t$ with the following substitutions&lt;/p&gt;
+&lt;p&gt;$$\tan \frac{x}{2}=t \quad \sin x=\frac{2t}{1+t^2} \quad \cos x = \frac{1-t^2}{1+t^2} \quad dx = \frac{2}{1+t^2}dt.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;$$\int \frac{1}{\sin x}\,dx = \int \frac{1}{\frac{2t}{1+t^2}}\frac{2}{1+t^2}\,dt = \int \frac{1}{t}\,dt = \log\vert t\vert+C =
+\log\vert\tan\frac{x}{2}\vert+C.$$&lt;/p&gt;
+&lt;h2 id=&#34;definite-integral&#34;&gt;Definite integral&lt;/h2&gt;
+&lt;div class=&#34;alert alert-def&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Definition - Definite integral&lt;/strong&gt;. Let $f(x)$ be a function which is continuous on an interval $[a, b]$. Divide this interval into $n$ subintervals of equal width $\Delta x$ and choose an arbitrary point $x_i$ from each subinterval. The &lt;em&gt;definite integral&lt;/em&gt; of $f$ from $a$ to $b$ is defined to be the limit&lt;/p&gt;
+&lt;p&gt;$$\int_a^b f(x)\,dx = \lim_{n\rightarrow \infty}\sum_{i=1}^n f(x_i)\Delta x.$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;img src=&#34;../img/integrals/riemann_sums.gif&#34; alt=&#34;Riemann sums&#34; width=&#34;350&#34;&gt;
+&lt;div class=&#34;alert alert-theo&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Theorem - First fundamental theorem of Calculus&lt;/strong&gt;.  If $f(x)$ is continuous on the interval $[a,b]$ and $F(x)$ is an antiderivative of $f$ on $[a,b]$, then&lt;/p&gt;
+&lt;p&gt;$$\int_a^b f(x)\,dx = F(b)-F(a)$$&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. Given the function $f(x)=x^2$, we have&lt;/p&gt;
+&lt;p&gt;$$\int_1^2 x^2\,dx = \left[\frac{x^3}{3}\right]_1^2 = \frac{2^3}{3}-\frac{1^3}{3} = \frac{7}{3}.$$&lt;/p&gt;
+&lt;h3 id=&#34;properties-of-the-definite-integral&#34;&gt;Properties of the definite integral&lt;/h3&gt;
+&lt;p&gt;Given two functions $f(x)$ and $g(x)$ integrable on $[a,b]$ and $k \in \mathbb{R}$ the following properties are satisfied:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$\int_{a}^{b}(f(x)+g(x))\,dx=\int_{a}^{b}f(x)\,dx+\int_{a}^{b}g(x)\,dx$ (linearity)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int_{a}^{b}{kf(x)}\,dx=k\int_{a}^{b}{f(x)}\,dx$ (linearity)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int_{a}^{b}{f(x)\,dx} \leq \int_{a}^{b}{g(x)\,dx}$ si $f(x)\leq g(x)\ \forall x \in [a,b]$ (monotony)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int_{a}^{b}{f(x)\,dx} = \int_{a}^{c}{f(x)\,dx}+\int_{c}^{b}{f(x)\,dx}$ for any $c\in(a,b)$ (additivity)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\int_a^b f(x)\,dx = -\int_b^a f(x)\,dx$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;area-calculation&#34;&gt;Area calculation&lt;/h2&gt;
+&lt;h3 id=&#34;area-between-a-positive-function-and-the-x-axis&#34;&gt;Area between a positive function and the $x$ axis&lt;/h3&gt;
+&lt;p&gt;If $f(x)$ is an integrable function on the interval $[a,b]$ and $f(x)\geq 0\ \forall x\in[a,b]$, then the definite integral&lt;/p&gt;
+&lt;p&gt;$$\int_a^b f(x)\,dx$$&lt;/p&gt;
+&lt;p&gt;measures the area between the graph of $f$ and the $x$ axis on the interval $[a,b]$.&lt;/p&gt;
+&lt;img src=&#34;../img/integrals/area_positive_function.svg&#34; alt=&#34;Area of a positive function&#34; width=&#34;350&#34;&gt;
+&lt;h3 id=&#34;area-between-a-negative-function-and-the-x-axis&#34;&gt;Area between a negative function and the $x$ axis&lt;/h3&gt;
+&lt;p&gt;If $f(x)$ is an integrable function on the interval $[a,b]$ and $f(x)\leq 0\ \forall x\in[a,b]$, then the area between the graph of $f$ and the $x$ axis on the interval $[a,b]$ is&lt;/p&gt;
+&lt;p&gt;$$-\int_a^b f(x)\,dx.$$&lt;/p&gt;
+&lt;img src=&#34;../img/integrals/area_negative_function.svg&#34; alt=&#34;Area of a negative function&#34; width=&#34;350&#34;&gt;
+&lt;h3 id=&#34;area-between-a-function-and-the-x-axis&#34;&gt;Area between a function and the $x$ axis&lt;/h3&gt;
+&lt;p&gt;In general, if $f(x)$ is an integrable function on the interval $[a,b]$, no matter the sign of $f$ on $[a,b]$, the area between the graph of $f$ and the $x$ axis on the interval $[a,b]$ is&lt;/p&gt;
+&lt;p&gt;$$\int_a^b \vert f(x)\vert\,dx.$$&lt;/p&gt;
+&lt;img src=&#34;../img/integrals/area_function.svg&#34; alt=&#34;Area of a function&#34; width=&#34;350&#34;&gt;
+&lt;h3 id=&#34;area-between-two-functions&#34;&gt;Area between two functions&lt;/h3&gt;
+&lt;p&gt;If $f(x)$ and $g(x)$ are two integrable functions on the interval $[a,b]$, then the area between the graph of $f$ and $g$ on the interval $[a,b]$ is
+$$\int_{a}^{b}{\vert f(x)- g(x)\vert\,dx}.$$&lt;/p&gt;
+&lt;img src=&#34;../img/integrals/area_between_functions.svg&#34; alt=&#34;Area between two function&#34; width=&#34;350&#34;&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
