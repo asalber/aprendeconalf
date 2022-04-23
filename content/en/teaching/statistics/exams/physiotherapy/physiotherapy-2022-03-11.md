@@ -9,7 +9,7 @@ type: book
 Degrees: Physiotherapy  
 Date: March 11, 2022
 
-### Question 1
+## Question 1
 
 The table below shows the number of credits obtained by the students of the first year of the physiotherapy grade.
 
