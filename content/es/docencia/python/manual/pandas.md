@@ -918,3 +918,52 @@ Carmen           5.0          3.5           9.0
 Luis             6.5          7.0           4.0
 María            8.0          8.5           6.5
 ```
+
+## Combinar varios DataFrames
+
+Dos o más DataFrames pueden combinarse en otro DataFrame. La combinación puede ser de dos formas: 
+
+- **Concatenación de filas**. Las filas de los DataFrames se concatenan unas a continuación de las otras para formar el nuevo DataFrame. Para ello es necesario que los DataFrames que se combinen tengan el mismo índice de columnas.
+
+    ![Concatenación de DataFrames por filas](../img/pandas-concatenacion-filas.png)
+
+- **Concatenación de columnas**. Las columnas de los DataFrames se concatenan unas a continuación de las otras para formar el nuevo DataFrame. Para ello es necesario que los DataFrames que se combinen tengan el mismo índice de filas.
+
+    ![Concatenación de DataFrames por columnas](../img/pandas-concatenacion-columnas.png)
+
+Para concatenar dos o más DataFrames se utiliza el siguiente método:
+
+- `df.concat(dataframes, axis = eje)`: Devuelve el DataFrame que resulta de concatenar los DataFrames de la lista `dataframes`. Si `eje` es 0 (valor por defecto) la concatenación se realiza por filas, y si `eje` es 1 se realiza por columnas.
+
+<i class='fa fa-exclamation-triangle' style='color:red'></i>Si los DataFrames que se concatenan por filas no tienen el mismo índice de columnas, el DataFrame resultante incluirá todas las columnas existentes en los DataFrames y rellenará con valores `NaN` los datos no disponibles. Si los DataFrames que se concatenan por columnas no tienen el mismo índice de filas, el DataFrame resultante incluirá todas las filas existentes en los DataFrames y rellenará con valores `NaN` los datos no disponibles.
+
+```python
+>>> import pandas as pd
+>>> df1 = pd.DataFrame({"Nombre":["Carmen", "Luis"], 
+... "Sexo":["Mujer", "Hombre"], "Edad":[22, 18]}).set_index("Nombre")
+>>> df2 = pd.DataFrame({"Nombre":["María", "Pedro"], 
+... "Sexo":["Mujer", "Hombre"], "Edad":[25, 30]}).set_index("Nombre")
+>>> df = pd.concat([df1, df2])
+>>> df
+          Sexo  Edad
+Nombre              
+Carmen   Mujer    22
+Luis    Hombre    18
+María    Mujer    25
+Pedro   Hombre    30
+```
+
+```python
+>>> import pandas as pd
+>>> df1 = pd.DataFrame({"Nombre":["Carmen", "Luis", "María"], 
+... "Sexo":["Mujer", "Hombre", "Mujer"]}).set_index("Nombre")
+>>> df2 = pd.DataFrame({"Nombre":["Carmen", "Luis", "María"], 
+... "Edad":[22, 18, 25]}).set_index("Nombre")
+>>> df = pd.concat([df1, df2], axis = 1)
+>>> df
+          Sexo  Edad
+Nombre              
+Carmen   Mujer    22
+Luis    Hombre    18
+María    Mujer    25
+```
