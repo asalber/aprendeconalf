@@ -494,6 +494,27 @@ Para cambiar el nombre de las filas y las columnas de un DataFrame se utiliza el
 ...
 ```
 
+## Cambiar el índice de un DataFrame
+
+Aunque el índice de un DataFrame suele fijarse en la creación del mismo, en ocasiones puede ser necesario cambiar el índice una vez creado el DataFrame. Para ello se utiliza el siguiente método:
+
+- `df.set_index(keys = columnas, verify_integrity = bool)`: Devuelve el DataFrame que resulta de eliminar las columnas de la lista `columnas` y convertirlas en el nuevo índice. El parámetro `verify_integrity` recibe un booleano (`False` por defecto) y realiza una comprobación para evitar duplicados en la clave cuando recibe `True`.
+
+```python
+>>> import pandas as pd
+>>> df = pd.read_csv(
+'https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv')
+>>> print(df.set_index("nombre").head())
+                              edad sexo  peso  altura  colesterol
+nombre                                                           
+José Luis Martínez Izquierdo    18    H  85.0    1.79       182.0
+Rosa Díaz Díaz                  32    M  65.0    1.73       232.0
+Javier García Sánchez           24    H   NaN    1.81       191.0
+Carmen López Pinzón             35    M  65.0    1.70       200.0
+Marisa López Collado            46    M  51.0    1.58       148.0
+>>> 
+```
+
 ## Reindexar un DataFrame
 
 Para reordenar los índices de las filas y las columnas de un DataFrame, así como añadir o eliminar índices, se utiliza el siguiente método:
@@ -921,7 +942,13 @@ María            8.0          8.5           6.5
 
 ## Combinar varios DataFrames
 
-Dos o más DataFrames pueden combinarse en otro DataFrame. La combinación puede ser de dos formas: 
+Dos o más DataFrames pueden combinarse en otro DataFrame. La combinación puede ser de varias formas: 
+
+- **Concatenación**: Combinación de varios DataFrames concatenando sus filas o columnas.
+- **Mezcla**: Combinación de varios DataFrames usando columnas o índices comunes.
+  
+
+### Concatenación de DataFrames
 
 - **Concatenación de filas**. Las filas de los DataFrames se concatenan unas a continuación de las otras para formar el nuevo DataFrame. Para ello es necesario que los DataFrames que se combinen tengan el mismo índice de columnas.
 
@@ -967,3 +994,70 @@ Carmen   Mujer    22
 Luis    Hombre    18
 María    Mujer    25
 ```
+
+### Mezcla de DataFrames
+
+La mezcla de DataFrames permite integrar filas de dos DataFrames que contienen información en común en una o varias columnas o índices que se conocen como _clave_.
+
+Para mezclar dos DataFrames se utiliza el siguiente método:
+
+- `df.merge(df1, df2, on = clave, how = tipo)`: Devuelve el DataFrame que resulta de mezclar el DataFrame `df2` con el DataFrame `df1`, usando como claves las columnas de la lista `clave` y siguiendo el método de mezcla indicado por `tipo`. 
+  
+El tipo de mezcla puede ser 
+
+- `"inner"` (por defecto): El DataFrame resultante solo contiene las filas cuyos valores en la clave están en los dos DataFrames. Es equivalente a la intersección de conjuntos.
+
+    ```python
+    >>> import pandas as pd
+    >>> df1 = pd.DataFrame({"Nombre":["Carmen", "Luis", "María"],  "Sexo":["Mujer", "Hombre", "Mujer"]})
+    >>> df2 = pd.DataFrame({"Nombre":["María", "Pedro", "Luis"], "Edad":[25, 30, 18]]})
+    >>> df = pd.merge(df1, df2, on="Nombre")
+    >>> print(df)
+      Nombre    Sexo  Edad
+    0   Luis  Hombre    18
+    1  María   Mujer    25
+    ```
+
+- `"outer"`: El DataFrame resultante contiene todas las filas de los dos DataFrames. Si una fila de un DataFrame no puede emparejarse con otra los mismos valores en la clave en el otro DataFrame, la fila se añade igualmente al DataFrame resultante rellenando las columnas del otro DataFrame con el valor `NaN`.
+Es equivalente a la unión de conjuntos.
+
+    ```python
+    >>> import pandas as pd
+    >>> df1 = pd.DataFrame({"Nombre":["Carmen", "Luis", "María"],  "Sexo":["Mujer", "Hombre", "Mujer"]})
+    >>> df2 = pd.DataFrame({"Nombre":["María", "Pedro", "Luis"], "Edad":[25, 30, 18]]})
+    >>> df = pd.merge(df1, df2, on="Nombre", how="outer")
+    >>> print(df)
+       Nombre    Sexo  Edad
+    0  Carmen   Mujer   NaN
+    1    Luis  Hombre  18.0
+    2   María   Mujer  25.0
+    3   Pedro     NaN  30.0
+    ```
+
+- `"left"`: El DataFrame resultante contiene todas las filas del primer DataFrame y descarta las filas del segundo DataFrame que no pueden emparejarse con alguna fila del primer DataFrame a través de la clave.
+
+    ```python
+    >>> import pandas as pd
+    >>> df1 = pd.DataFrame({"Nombre":["Carmen", "Luis", "María"],  "Sexo":["Mujer", "Hombre", "Mujer"]})
+    >>> df2 = pd.DataFrame({"Nombre":["María", "Pedro", "Luis"], "Edad":[25, 30, 18]]})
+    >>> df = pd.merge(df1, df2, on="Nombre", how="left")
+    >>> print(df)
+       Nombre    Sexo  Edad
+    0  Carmen   Mujer   NaN
+    1    Luis  Hombre  18.0
+    2   María   Mujer  25.0
+    ```
+
+- `"right"`: El DataFrame resultante contiene todas las filas del segundo DataFrame y descarta las filas del primer DataFrame que no pueden emparejarse con alguna fila del segundo DataFrame a través de la clave.
+
+    ```python
+    >>> import pandas as pd
+    >>> df1 = pd.DataFrame({"Nombre":["Carmen", "Luis", "María"],  "Sexo":["Mujer", "Hombre", "Mujer"]})
+    >>> df2 = pd.DataFrame({"Nombre":["María", "Pedro", "Luis"], "Edad":[25, 30, 18]]})
+    >>> df = pd.merge(df1, df2, on="Nombre", how="right")
+    >>> print(df)
+      Nombre    Sexo  Edad
+    0  María   Mujer    25
+    1  Pedro     NaN    30
+    2   Luis  Hombre    18
+    ```
