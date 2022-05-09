@@ -43,8 +43,6 @@ The mean of people working without computer is more representative than the mean
 ## Question 2
 The concentration of a drug in blood $C$, in mg/dl, depends on time $t$, in hours, according to the following table:
 
-
-
 $$
 \begin{array}{lrrrrrrr}
 \hline
@@ -64,18 +62,17 @@ $\sum x_i^2=203$, $\sum \log(x_i)^2=17.5205$, $\sum y_j^2=56937$, $\sum \log(y_j
 $\sum x_iy_j=3328$, $\sum x_i\log(y_j)=154.3387$, $\sum \log(x_i)y_j=951.6961$, $\sum \log(x_i)\log(y_j)=46.0805$.
 
 {{< spoiler text="Solution" >}}
-
 1. Linear model of Concentration on Time: 
 $\bar x=5$ hours, $s_x^2=4$ hours² . 
 $\bar y=77.2857$ mg/dl, $s_y^2=2160.7755$ (mg/dl)². 
-$s_{xy}=89$ hours⋅mg/dl. 
-Linear coefficient of determination of Concentration on Time $r^2=0.9165$. 
-
+$s_{xy}=89$ hours⋅mg/dl.  
+Linear coefficient of determination of Concentration on Time $r^2=0.9165$.  
 Exponential model of Concentration on Time: 
 $\overline{\log(y)}=4.1639$ log(mg/dl), $s_{\log(y)}^2=0.3785$ log(mg/dl)². 
-$s_{x\log(y)}=1.2291$ hours⋅log(mg/dl). 
-Exponential coefficient of determination of Concentration on Time $r^2=0.9979$. 
+$s_{x\log(y)}=1.2291$ hours⋅log(mg/dl).  
+Exponential coefficient of determination of Concentration on Time $r^2=0.9979$.  
 Therefore, the exponential model explains better than the linear one the relation between the concentration and time, since its coefficient of determination is greater.
+
 2. Exponential model of Concentration on Time: $y=e^{2.6275 + 0.3073x}$. 
 $y(4.8)=60.4853$ mg/dl.
 {{< /spoiler >}}

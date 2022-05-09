@@ -82,10 +82,10 @@ So the exponential regression model es better to predict the number of injuries 
 Exponential regression model: $y=e^{6.2168+-0.1607x}$.  
 Prediction: $y(20)=20.1341$ injuries.
 
-1. The logarithmic model is better to predict the warm-up time as a function of the number or injuries.
+1. The logarithmic model is better to predict the warm-up time as a function of the number of injuries.
 Logarithmic regression model: $x=164.1851+-47.3292\log(y)$.
 Prediction: $x(10)=55.2056112360638$ min.
-4. Both predictions are very reliable since de deternation coefficient is very high but the last one is a little less reliable as it is for a value further from the data range.
+4. Both predictions are very reliable since the determination coefficient is very high, but the last one is a little less reliable as it is for a value further from the data range.
 {{< /spoiler >}}
 
 ## Question 3
@@ -98,7 +98,7 @@ An ultrasonic technique is used to diagnose a disease with a sensitivity of 91% 
 
 3. Is this technique more reliable to confirm or to rule out the disease? Justify the answer.
 
-4. Compute the probability of having a correct diagnose with this technique.
+4. Compute the probability of having a correct diagnosis with this technique.
 
 {{< spoiler text="Solution" >}}
 Let $D$ the event corresponding to have the disease and + and - the events corresponding to have a positive and negative outcome respectively in the test.
@@ -113,7 +113,7 @@ It is known that the femur length of a fetus with 25 weeks of pregnancy follows 
 
 1. Compute the probability that the femur length of a fetus with 25 weeks is greater than 46 mm.
 
-2. Compute the probability that the femur lenght of a fetus with 25 weeks is between 46 and 49 mm.
+2. Compute the probability that the femur length of a fetus with 25 weeks is between 46 and 49 mm.
 
 3. Compute an interval $(a,b)$ centered at the mean, such that it contains 80% of the femur lengths of fetus with 25 weeks.
 
@@ -154,5 +154,5 @@ A physical therapy clinic opens 6 hours a day and the average number of patients
 {{< spoiler text="Solution" >}}
 1. Let $X$ be the number of patients that arrive in 1 hours. $X\sim P(2)$ and $P(X>4)=0.0527$.
 2. Let $Y$ be the number of hours in a day in which some patient can not be treated. $Y\sim B(6, 0.0527)$ and $P(Y>0)=0.2771$.  
-The clinic requires 5 phisiotherapists, since $P(X>5)=0.0527$ and $P(Y>0)=0.0954$, with $Y\sim B(6, 0.0166)$ now.
+The clinic requires 5 physiotherapists, since $P(X>5)=0.0527$ and $P(Y>0)=0.0954$, with $Y\sim B(6, 0.0166)$ now.
 {{< /spoiler >}}

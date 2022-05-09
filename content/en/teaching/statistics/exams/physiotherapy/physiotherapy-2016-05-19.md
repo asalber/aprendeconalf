@@ -125,7 +125,7 @@ The probability distribution of $X$ in a population is plotted below.
 2. Calculate the following probabilities: $P(X\leq 2)$, $P(X>3)$, $P(X=4.2)$ and $P(1<X\leq 4.2)$.
 3. Calculate the mean and the standard deviation of $X$. Is the mean representative?
 4. If a level of severity of 0.05 is considered incurable, what is the probability of having some person with an incurable injury in a sample of 10 persons with the injury?
-5. If there are 6 persons injuried per month in average, what is the probabilitiy of having more than 2 persons injuried? What is the probability of having more than 1 person injuried with an incurable injury?
+5. If there are 6 persons injured per month in average, what is the probability of having more than 2 persons injured? What is the probability of having more than 1 person injured with an incurable injury?
 
 {{< spoiler text="Solution" >}}
 1. $$F(x) = 
@@ -143,8 +143,8 @@ $$
 
 3. $\mu = 2.4$ and $s=1.0677$. The mean is moderately representative because $cv=0.4449$. 
 4. Naming $X$ to the number of persons having an incurable injury in a sample of 10 persons with the injury, $P(X\geq 1)=0.4013$. 
-5. Naming $Y$ to the number of persons injuried in a month, $P(T>2)=0.938$. 
-Naming $Z$ to the number of persons injuried with an incurable injury in an month, $P(T>1)=0.0369$. {{< /spoiler >}}
+5. Naming $Y$ to the number of persons injured in a month, $P(T>2)=0.938$. 
+Naming $Z$ to the number of persons injured with an incurable injury in an month, $P(T>1)=0.0369$. {{< /spoiler >}}
 
 ## Question 5
 

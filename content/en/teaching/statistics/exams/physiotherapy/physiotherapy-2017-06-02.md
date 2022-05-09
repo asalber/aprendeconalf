@@ -36,8 +36,6 @@ $$
 4. Which distribution is less symmetric, people with CDH or without CDH?
 5. Compute the standard score of a person with CDH that uses those devices 200 minutes a day and the same for a person without CDH. Interpret them.
 
-
-
 Use the following sums for the computations:  
 People with CDH: $\sum x_i=14640$, $\sum x_i^2=3538800$, $\sum(x_i-\bar x)^3=-8746878.8927$.  
 People without CDH: $\sum x_i=78090$, $\sum x_i^2=15650100$, $\sum(x_i-\bar x)^3=-3234289.0161$.  
@@ -59,7 +57,6 @@ Person without CDH: $z(200)=0.4222$<br>
 The person with CDH has a value less than the mean but relatively closer to the mean than the person without CDH.
 {{< /spoiler >}}
 
-
 ## Question 2
 A study try to determine the influence of electronic gadgets (mobile phones, tables, consoles, etc.) in neck disorders.
 One goal of the research is determining if there is some relation between the average daily time using some of those devices and the number of cervical vertigo attacks in the last year.
@@ -76,10 +73,8 @@ $$
 
 1. Which regression model is better to predict the number of vertigo attacks given the time using these devices, the linear or the exponential? Justify the answer.
 2. Use the best regression model (the exponential or the linear) to predict the number or vertigo attacks expected for a person that uses those devices 200 minutes every day.
-3. Which regression model would you use to predict the time using those devices required to have a given number of vertigo attacks, the linear, the exponential or the logarithmic?
+3. Which regression model would you use to predict the time using those devices required to have a number of vertigo attacks, the linear, the exponential or the logarithmic?
 Justify the answer.
-
-
 
 Use the following sums for the computations ($X$=Time and $Y$=Vertigo attacks):  
 $\sum x_i=2071$, $\sum \log(x_i)=59.3234$, $\sum y_j=146$, $\sum \log(y_j)=24.2119$,  
@@ -87,22 +82,22 @@ $\sum x_i^2=465587$, $\sum \log(x_i)^2=299.5558$, $\sum y_j^2=3618$, $\sum \log(
 $\sum x_iy_j=38162$, $\sum x_i\log(y_j)=5252.95$, $\sum \log(x_i)y_j=800.3072$, $\sum \log(x_i)\log(y_j)=127.0449$.
 
 {{< spoiler text="Solution" >}}
-
-1.Linear regression model of vertigo attacks on time : 
-$\bar x=172.5833$ min, $s_x^2=9013.9097$ min². 
-$\bar y=12.1667$ attacks, $s_y^2=153.4722$ attacks². 
-$s_{xy}=1080.4028$ min⋅attacks. 
-$r^2 = 0.8438$. 
+1. Linear regression model of vertigo attacks on time: 
+$\bar x=172.5833$ min, $s_x^2=9013.9097$ min².  
+$\bar y=12.1667$ attacks, $s_y^2=153.4722$ attacks².  
+$s_{xy}=1080.4028$ min⋅attacks.  
+$r^2 = 0.8438$.  
 Exponential regression model of vertigo attacks on time: 
 $\overline{\log(y)}=2.0177$ log(attacks), $s_{\log(y)}^2=0.9398$ log(attacks)². 
 $s_{x\log(y)}=89.5312$ min⋅log(attacks). 
-$r^2 = 0.9462$. 
-Therefore, the exponential regression model is better since its coefficient of determination is higher. 
-2. Exponential regression model of vertigo attacks on time: $y=e^{0.3035 + 0.0099x}$. 
-Number of vertigo attacks expected for 200 min usign electronic gadgets $y(200)=9.8747$.
-3. Since the exponential regression model is better than the linear one to predict the number of vertigo attacks as a function of time using electronic gadgets, to predic the time as a function of the number of vertigo attacks is better to use the inverse of the exponential regression model, that is, the logarithmic regression model.
-{{< /spoiler >}}
+$r^2 = 0.9462$.  
+Therefore, the exponential regression model is better since its coefficient of determination is higher.
 
+2. Exponential regression model of vertigo attacks on time: $y=e^{0.3035 + 0.0099x}$.   
+Number of vertigo attacks expected for 200 min usign electronic gadgets $y(200)=9.8747$.
+
+3. Since the exponential regression model is better than the linear one to predict the number of vertigo attacks as a function of time using electronic gadgets, to predict the time as a function of the number of vertigo attacks is better to use the inverse of the exponential regression model, that is, the logarithmic regression model.
+{{< /spoiler >}}
 
 ## Question 3
 Cervical radiculopathy occurs in 0.35% of men.
@@ -112,8 +107,6 @@ The Spurling test is a test to diagnose cervical radiculopathy with a sensitivit
 Is this test a good test as a screening test (to rule out the disease)?
 2. Compute the minimum specificity of the test to be able to diagnose the cervical radiculopathy with a positive outcome.
 
-
-
 {{< spoiler text="Solution" >}}
 1. $PPV=P(D|+)=0.0455$. 
 $NPV=P(\overline D|-)=0.9998$. It is a good screening test as the post test probability of not having the cervical radiculopathy for a negative outcome is very high. 
@@ -122,20 +115,17 @@ $NPV=P(\overline D|-)=0.9998$. It is a good screening test as the post test prob
 
 
 ## Question 4
-The hematocrit concentration in blood of healthy males follows a normal distribution with mean and standard deviation not known.
-However, it is know that the first quartile of hematotrit is 38.5% and the third quartile is 52%.
+The haematocrit concentration in blood of healthy males follows a normal distribution with mean and standard deviation not known.
+However, it is known that the first quartile of haematocrit is 38.5% and the third quartile is 52%.
 
-1. Compute the mean and the standard deviation of hematocrit in healthy males.  
-2. Compute the percentage of healthy males with more than 64 of hematocrit.
-
-
+1. Compute the mean and the standard deviation of haematocrit in healthy males.  
+2. Compute the percentage of healthy males with more than 64 of haematocrit.
 
 {{< spoiler text="Solution" >}}
-Naming $X$ to the hematocrit level in healthy males, 
+Naming $X$ to the haematocrit level in healthy males, 
 1. $\mu=45.25$ and $\sigma=10.07$, thus, $X\sim N(45.25, 10.07)$.<br>
 3. $P(X>64)=0.0313$, thus, a $3.13$% of healthy males. 
 {{< /spoiler >}}
-
 
 ## Question 5
 It is known that 20% of professional cyclists use Erythropoietin (EPO) to improve their physical performance, and 99% of the cyclists that use EPO, also use other forbidden substances to mask the use of EPO.
@@ -143,8 +133,6 @@ It is known that 20% of professional cyclists use Erythropoietin (EPO) to improv
 1. If there are 10 professional cyclists in a team, what is the probability that more than 2 are doped with EPO?
 2. If there are 100 professional cyclists doped with EPO in a competition, what is the probability that at least 98 of them had taken some substances to mask the use of EPO?
 3. If there are 2000 professional cyclists in a country, what is the probability that some of them has taken EPO without masking it?
-
-
 
 {{< spoiler text="Solution" >}}
 1. Naming $X$ to the number of cyclists doped with EPO in a team with 10 cyclists, $X\sim B(10,0.2)$ and $P(X>2)=0.3222$.
