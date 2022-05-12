@@ -51,7 +51,7 @@ Let $C$ the event of consuming cocaine and $H$ the event of having a heart attac
 
 ## Question 3
 
-The creatine phosphokinase (CPK3) is an enzyme in the body that causes the phosphorylation of creatine. This enzyme is found in the skeletal muscle and can be measured in a blood analysis. The concentration of CPK3 in blood is normally distributed, and the interval centered at the mean with the reference values, that accumulates 99% of the population, ranges from 40 to 308 IU/L in healthy adult males. 
+The creatine phosphokinase (CPK3) is an enzyme in the body that causes the phosphorylation of creatine. This enzyme is found in the skeletal muscle and can be measured in a blood analysis. The concentration of CPK3 in blood is normally distributed, and the interval centred at the mean with the reference values, that accumulates 99% of the population, ranges from 40 to 308 IU/L in healthy adult males. 
 
 1. Compute the mean and the standard deviation of the concentration of CPK3 in healthy males.
 
