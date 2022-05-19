@@ -22,77 +22,104 @@ Las operaciones más habituales con ficheros son:
 
 ### Creación y escritura de ficheros
 
-Para crear un fichero nuevo se utiliza la instrucción
+Para crear un fichero nuevo se utiliza la siguiente función:
 
-`open(ruta, 'w')` : Crea el fichero con la ruta `ruta`, lo abre en modo escritura (el argumento 'w' significa _write_) y devuelve un objeto que lo referencia.
+- `open(ruta, 'w')` : Crea el fichero con la ruta `ruta`, lo abre en modo escritura (el argumento 'w' significa _write_) y devuelve un objeto que lo referencia.
 
 <i class="fa fa-exclamation-triangle" style="color:red;"></i> Si el fichero indicado por la ruta ya existe en el sistema, se reemplazará por el nuevo.
 
-Una vez creado el fichero, para escribir datos en él se utiliza el método
+Una vez creado el fichero, para escribir datos en él se utiliza el siguiente método:
 
-`fichero.write(c)` : Escribe la cadena `c` en el fichero referenciado por `fichero`.
+- `f.write(c)` : Escribe la cadena `c` en el fichero referenciado por `f` y devuelve el número de caracteres escritos. 
 
 ```python
->>> f = open('bienvenida.txt', 'w')
-... f.write('¡Bienvenido a Python!')
+>>> f = open('saludo.txt', 'w')
+>>> f.write('¡Bienvenido a Python!')
+21
 ```
 
 ### Añadir datos a un fichero
 
-Si en lugar de crear un fichero nuevo queremos añadir datos a un fichero existente se debe utilizar la instrucción
+Si en lugar de crear un fichero nuevo queremos añadir datos a un fichero existente se debe utilizar la siguiente función:
 
-`open(ruta, 'a')` : Abre el fichero con la ruta `ruta` en modo añadir (el argumento 'a' significa _append_) y devuelve un objeto que lo referencia.
+- `open(ruta, 'a')` : Abre el fichero con la ruta `ruta` en modo añadir (el argumento 'a' significa _append_) y devuelve un objeto que lo referencia.
 
 Una vez abierto el fichero, se utiliza el método de escritura anterior y los datos se añaden al final del fichero.
 
 ```python
->>> f = open('bienvenida.txt', 'a')
-... f.write('\n¡Hasta pronto!')
+>>> f = open('saludo.txt', 'a')
+>>> f.write('\n¡Hasta pronto!')
+15
 ```
 
 ### Leer datos de un fichero
 
-Para abrir un fichero en modo lectura se utiliza la instrucción
+Para abrir un fichero en modo lectura se utiliza la siguiente función:
 
-`open(ruta, 'r')` : Abre el fichero con la ruta `ruta` en modo lectura (el argumento 'r' significa _read_) y devuelve un objeto que lo referencia.
+- `open(ruta, 'r')` : Abre el fichero con la ruta `ruta` en modo lectura (el argumento 'r' significa _read_) y devuelve un objeto que lo referencia.
 
-Una vez abierto el fichero, se puede leer todo el contenido del fichero o se puede leer línea a línea.
+Una vez abierto el fichero, se puede leer todo el contenido del fichero o se puede leer línea a línea. Para ello se utilizan las siguientes funciones:
 
-### Leer datos de un fichero
+- `f.read()` : Devuelve todos los datos contenidos en el fichero referenciado por `f` como una cadena de caracteres.
 
-`fichero.read()` : Devuelve todos los datos contenidos en `fichero` como una cadena de caracteres.
-
-`fichero.readlines()` : Devuelve una lista de cadenas de caracteres donde cada cadena es una linea del fichero referenciado por `fichero`.
+- `f.readlines()` : Devuelve una lista de cadenas de caracteres donde cada cadena es una linea del fichero referenciado por `f`.
 
 ```python
->>> f = open('bienvenida.txt', 'r')
-... print(f.read())
+>>> f = open('saludo.txt', 'r')
+>>> print(f.read())
 ¡Bienvenido a Python!
 ¡Hasta pronto!
 ```
 
 ```python
->>> f = open('bienvenida.txt', 'r')
-... lineas = f.readlines()
+>>> f = open('saludo.txt', 'r')
+>>> lineas = f.readlines()
 >>> print(lineas)
 ['Bienvenido a Python!\n', '¡Hasta pronto!']
 ```
 
 ### Cerrar un fichero
 
-Para cerrar un fichero se utiliza el método
+Para cerrar un fichero se utiliza el siguiente método:
 
-`fichero.close()` : Cierra el fichero referenciado por el objeto `fichero`.
+`f.close()` : Cierra el fichero referenciado por el objeto `f`.
 
 Cuando se termina de trabajar con un fichero conviene cerrarlo, sobre todo si se abre en modo escritura, ya que mientras está abierto en este modo no se puede abrir por otra aplicación. Si no se cierra explícitamente un fichero, Python intentará cerrarlo cuando estime que ya no se va a usar más.
 
 ```python
->>> f = open('bienvenida.txt'):
-... print(f.read())
-... f.close()  # Cierre del fichero
-...
+>>> f = open('saludo.txt'):
+>>> print(f.read())
 ¡Bienvenido a Python!
 ¡Hasta pronto!
+>>> f.close()  # Cierre del fichero
+>>> print(f.read())  # Produce un error
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: I/O operation on closed file.
+```
+
+### La estructura `with open(...) as`
+
+Para despreocuparnos del cierre de un fichero cuando ya no es necesario y no tener que cerrarlo explícitamente, se utiliza la siguiente estructura:
+
+> `with open(ruta, modo) as f`:  
+&ensp;&ensp;&ensp;&ensp;_`bloque código`_
+
+Esta estructura abre el fichero con la ruta `ruta` en el modo `modo` (`'w'` para escribir, `'a'` para añadir y `'r'` para leer) y devuelve una referencia al mismo en la variable `f`. El fichero permanece abierto mientras se ejecuta el bloque de código asociado y se cierra automáticamente cuando termina la ejecución del bloque. 
+
+```python
+>>> with open('saludo.txt', 'w') as f:
+...     f.write("Hola de nuevo")
+... 
+13
+>>> with open('saludo.txt', 'r') as f:
+...     print(f.read())
+... 
+Hola de nuevo
+>>> print(f.read())  # Produce un error al estar el fichero cerrado
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: I/O operation on closed file.
 ```
 
 ### Renombrado y borrado de un fichero
@@ -111,13 +138,13 @@ Antes de borrar o renombra un directorio conviene comprobar que existe para que 
 
 ```python
 >>> import os
->>> f = 'bienvenida.txt'
+>>> f = 'saludo.txt'
 >>> if os.path.isfile(f):
-...     os.rename(f, 'saludo.txt') # renombrado
+...     os.rename(f, 'bienvenida.txt') # renombrado
 ... else:
 ...     print('¡El fichero', f, 'no existe!')
 ...
->>> f = 'saludo.txt'
+>>> f = 'bienvenida.txt'
 >>> if os.path.isfile(f):
 ...     os.remove(f) # borrado
 ... else:
