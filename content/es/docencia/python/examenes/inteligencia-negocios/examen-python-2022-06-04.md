@@ -26,7 +26,7 @@ Introduce el número de filas del rombo (un número impar): 7
    *
 ```
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-04-24/ejercicio1.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-06-04/ejercicio1.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 2
 
@@ -89,7 +89,7 @@ Ingresos:  [1000.0, 500.0]
 Reintegros: [-800.0, -400.0]
 ```
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-04-04/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-06-04/ejercicio2.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 3
 
@@ -111,7 +111,7 @@ Las palabras donde se encuentra el carácter que más se repite:
 {'ipsum': 1, 'sit': 1, 'adipiscing': 3, 'elit,': 1, 'eiusmod': 1, 'incididunt': 3, 'aliqua.': 1, 'enim': 1, 'minim': 2, 'veniam,': 1, 'quis': 1, 'exercitation': 2, 'laboris': 1, 'nisi': 2, 'aliquip': 2, 'Duis': 1, 'irure': 1, 'in': 1, 'reprehenderit': 1, 'velit': 1, 'cillum': 1, 'fugiat': 1, 'pariatur.': 1, 'sint': 1, 'cupidatat': 1, 'proident,': 1, 'qui': 1, 'officia': 2, 'mollit': 1, 'anim': 1, 'id': 1}
 ```
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-04-04/ejercicio3.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-06-04/ejercicio3.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 4
 
@@ -153,7 +153,7 @@ Escriba un programa que obtenga el máximo y el mínimo de una serie de datos pr
     Máximo: ('BEBE', 48830)
     ```
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-04-04/ejercicio4.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-06-04/ejercicio4.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 5
 
@@ -198,4 +198,4 @@ El fichero [bitcoin-tweets.csv](https://aprendeconalf.es/docencia/python/examene
     {'#Bitcoin': 3, '#Ethereum': 1}
     ```
 
-
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-06-04/ejercicio6.ipynb" class="btn btn-info" target="_blank">Solución</a>
