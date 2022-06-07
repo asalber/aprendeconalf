@@ -171,7 +171,7 @@ El fichero [coches.csv ](https://aprendeconalf.es/docencia/python/examenes/intel
 10. Dibujar el diagrama de dispersión de la potencia y el precio.  
 Los gráficos deben guardarse en una carpeta con el nombre gráficos y deben tener un título adecuado. 
 
-<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-04-04/ejercicio5.ipynb" class="btn btn-info" target="_blank">Solución</a>
+<a href="https://colab.research.google.com/github/asalber/aprendeconalf/blob/master/content/es/docencia/python/examenes/inteligencia-negocios/soluciones/examen-2022-06-04/ejercicio5.ipynb" class="btn btn-info" target="_blank">Solución</a>
 
 ## Ejercicio 6
 
