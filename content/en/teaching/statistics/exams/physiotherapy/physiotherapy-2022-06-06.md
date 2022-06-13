@@ -39,9 +39,9 @@ Use the following sums for the computations: $\sum x_in_i=408$, $\sum x_i^2n_i=3
 {{< spoiler text="Show solution" >}}
 Let $X$ be the patient assessment.
 
-1. $Q_1= 4.4444$, $Q_3=9.0907$ and $IQR = 4.6463$, so the central dispersion is moderate.
+1. $Q_1= 4.2203$, $Q_3=8.5457$ and $IQR = 4.3254$, so the central dispersion is moderate.
 
-2. $F(5)=0.2695$, and the percentage of patients with an assessment greater than 5 is $73.05\\%$.
+2. $F(5)=0.305$, and the percentage of patients with an assessment greater than 5 is $69.5\\%$.
 
 3. $\bar x = 6.375$, $s_x^2 = 6.2344$, $s_x=2.4969$ and $cv=0.3917$, thus the representativity of the mean is moderate.
 
