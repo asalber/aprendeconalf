@@ -148,9 +148,9 @@ Remark: If you do not know how to compute the means, use a mean 44 cm for women 
 {{< spoiler text="Show solution" >}}
 Let $X$ and $Y$ be the femur length of women and men respectively. Then $X\sim N(\mu_x, 4)$ and $Y\sim N(\mu_y,4)$.
 
-1. $\mu_x = 44.91$ cm and $\mu_y = 48.02$ cm.
+1. $\mu_x = 44.91$ cm, $\mu_y = 48.02$ cm and $\mu_x - \mu_y = -3.11$ cm.
 
 2. 60th percentile in women $P_{60}=45.9234$ cm, and $P(Y<45.9234) = 0.3001$, that is, a $30.01\\%$ of men have a femur length less than the 60th percentile of women.
 
-3. $P(X<45 \cap Y<45) = 0.1146$. 
+3. $P(X\geq 45 \cap Y\geq 45) = 0.3805$. 
 {{< /spoiler >}}
