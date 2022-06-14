@@ -133,17 +133,18 @@ Las siguientes funciones permiten resumir varios aspectos de una serie:
 - `s.min()` : Devuelve el menor de los datos de la serie `s`.
 - `s.max()` : Devuelve el mayor de los datos de la serie `s`.
 - `s.mean()` : Devuelve la media de los datos de la serie `s` cuando los datos son de un tipo numérico.
+- `s.var()` : Devuelve la varianza de los datos de la serie `s` cuando los datos son de un tipo numérico.
 - `s.std()` : Devuelve la desviación típica de los datos de la serie `s` cuando los datos son de un tipo numérico.
 - `s.describe()`: Devuelve una serie con un resumen descriptivo que incluye el número de datos, su suma, el mínimo, el máximo, la media, la desviación típica y los cuartiles.
 
 ```python
 >>> import pandas as pd
 >>> s = pd.Series([1, 1, 1, 1, 2, 2, 2, 3, 3, 4])
->>> s.count()
+>>> s.count()  # Tamaño muestral
 10
->>> s.sum()
+>>> s.sum()  # Suma
 20
->>> s.cumsum()
+>>> s.cumsum()  # Suma acumulada
 0     1
 1     2
 2     3
@@ -155,27 +156,29 @@ Las siguientes funciones permiten resumir varios aspectos de una serie:
 8    16
 9    20
 dtype: int64
->>> s.value_counts()
+>>> s.value_counts()  # Frecuencias absolutas
 1    4
 2    3
 3    2
 4    1
 dtype: int64
->>> s.value_counts(normalize=True)
+>>> s.value_counts(normalize=True)  # Frecuencias relativas
 1    0.4
 2    0.3
 3    0.2
 4    0.1
 dtype: float64
->>> s.min()
+>>> s.min()  # Mínimo
 1
->>> s.max()
+>>> s.max()  # Máximo
 4
->>> s.mean()
+>>> s.mean()  # Media
 2.0
->>> s.std()
+>>> s.var()  # Varianza
+1.1111111111111112
+>>> s.std()  # Desviación típica
 1.0540925533894598
->>> s.describe()
+>>> s.describe()  # Resume descriptivo
 count    10.000000
 mean      2.000000
 std       1.054093
@@ -670,20 +673,43 @@ Name: Nacimiento, dtype: datetime64[ns]
 
 Al igual que para las series, los siguientes métodos permiten resumir la información de un DataFrame por columnas:
 
-- `df.count()` : Devuelve una serie número de elementos que no son nulos ni `NaN` en cada columna del DataFrame `df`.
+- `df.count()` : Devuelve una serie con el número de elementos que no son nulos ni `NaN` en cada columna del DataFrame `df`.
 - `df.sum()` : Devuelve una serie con la suma de los datos de las columnas del DataFrame `df` cuando los datos son de un tipo numérico, o la concatenación de ellos cuando son del tipo cadena `str`.
 - `df.cumsum()` : Devuelve un DataFrame con la suma acumulada de los datos de las columnas del DataFrame `df` cuando los datos son de un tipo numérico.
 - `df.min()` : Devuelve una serie con los menores de los datos de las columnas del DataFrame `df`.
 - `df.max()` : Devuelve una serie con los mayores de los datos de las columnas del DataFrame `df`.
-- `df.mean()` : Devuelve una serie con las media de los datos de las columnas del DataFrame `df` cuando los datos son de un tipo numérico.
-- `df.std()` : Devuelve una serie con las desviaciones típicas de los datos de las columnas del DataFrame `df` cuando los datos son de un tipo numérico.
-- `df.describe(include = tipo)` : Devuelve un DataFrame con un resumen estadístico de las columnas del DataFrame `df` del tipo `tipo`. Para los datos numéricos (`number`) se calcula la media, la desviación típica, el mínimo, el máximo y los cuartiles de las columnas numéricas. Para los datos no numéricos (`object`) se calcula el número de valores, el número de valores distintos, la moda y su frecuencia. Si no se indica el tipo solo se consideran las columnas numéricas.
+- `df.mean()` : Devuelve una serie con las medias de los datos de las columnas numéricas del DataFrame `df`.
+- `df.var()` : Devuelve una serie con las varianzas de los datos de las columnas numéricas del DataFrame `df`.
+- `df.std()` : Devuelve una serie con las desviaciones típicas de los datos de las columnas numéricas del DataFrame `df`.
+- `df.cov()` : Devuelve un DataFrame con las covarianzas de los datos de las columnas numéricas del DataFrame `df`.
+- `df.corr()` : Devuelve un DataFrame con los coeficientes de correlación de Pearson de los datos de las columnas numéricas del DataFrame `df`.
+- `df.describe(include = tipo)` : Devuelve un DataFrame con un resumen estadístico de las columnas del DataFrame `df` del tipo `tipo`. Para los datos numéricos (`number`) se calcula la media, la desviación típica, el mínimo, el máximo y los cuartiles. Para los datos no numéricos (`object`) se calcula el número de valores, el número de valores distintos, la moda y su frecuencia. Si no se indica el tipo solo se consideran las columnas numéricas.
 
 ```python
 >>> import pandas as pd
 >>> df = pd.read_csv(
 'https://raw.githubusercontent.com/asalber/manual-python/master/datos/colesterol.csv')
->>> print(df.describe())
+>>>df.edad.count()  # Tamaño muestral
+14
+>>> print(df.edad.mean())  # Media
+38.214285714285715
+>>> print(df.edad.var())  # Varianza
+244.02747252747255
+>>> print(df.edad.std())  # Desviación típica
+15.62137870123737
+>>> df.cov()  # Matriz de covarianzas
+                  edad        peso    altura   colesterol
+edad        244.027473  -69.891026 -0.326593   279.717949
+peso        -69.891026  260.076923  1.764615    -2.424242
+altura       -0.326593    1.764615  0.013229     0.563269
+colesterol  279.717949   -2.424242  0.563269  1587.858974
+>>> df.corr()  # Matriz de correlación
+                edad      peso    altura  colesterol
+edad        1.000000 -0.276185 -0.181774    0.452391
+peso       -0.276185  1.000000  0.918984   -0.003621
+altura     -0.181774  0.918984  1.000000    0.122694
+colesterol  0.452391 -0.003621  0.122694    1.000000
+>>> print(df.describe())  # Resumen descriptivo
             edad        peso     altura  colesterol
 count  14.000000   13.000000  14.000000   13.000000
 mean   38.214286   70.923077   1.768571  220.230769
