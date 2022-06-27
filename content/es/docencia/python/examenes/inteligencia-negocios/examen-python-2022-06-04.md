@@ -1,6 +1,6 @@
 ---
 title: Examen de Inteligencia de los Negocios 2022-06-04
-date: 2022-06-06
+date: 2022-06-04
 tags: [Exámen]
 categories: [Programación, Python, Inteligencia de los Negocios]
 type: book
@@ -100,8 +100,8 @@ _"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 Realizar un programa que analice dicho pasaje y realice las siguientes operaciones:
 
 1. Crear un diccionario con la frecuencia de cada carácter sin tener en cuenta el espacio.
-2. Muestre por pantalla el caracer que más se repite.
-3. Muestre por pantalla las palabras que contienen el caracter más repetido y su frecuencia por palabra.
+2. Muestre por pantalla el carácter que más se repite.
+3. Muestre por pantalla las palabras que contienen el carácter más repetido y su frecuencia por palabra.
 
 **Ejemplo de ejecución**
 
