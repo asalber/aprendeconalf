@@ -40,39 +40,46 @@
   weight = 33
 
 [[main]]
+  identifier = "latex"
+  parent = "docencia"
+  name = "LaTeX"
+  url = "docencia/latex/"
+  weight = 34
+
+[[main]]
   identifier = "r"
   parent = "docencia"
   name = "R"
   url = "docencia/r/"
-  weight = 34
+  weight = 35
 
 [[main]]
   identifier = "python"
   parent = "docencia"
   name = "Python"
   url = "docencia/python/"
-  weight = 35
+  weight = 36
 
 [[main]]
   identifier = "spss"
   parent = "docencia"
   name = "SPSS"
   url = "docencia/spss/"
-  weight = 36
+  weight = 37
 
 [[main]]
   identifier = "geogebra"
   parent = "docencia"
   name = "Geogebra"
   url = "docencia/geogebra/"
-  weight = 37
+  weight = 38
 
 [[main]]
   identifier = "git"
   parent = "docencia"
   name = "Git"
   url = "docencia/git/"
-  weight = 38
+  weight = 39
 
 [[main]]
   name = "Proyectos"

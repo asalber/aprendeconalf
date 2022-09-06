@@ -1,6 +1,6 @@
 ---
-title: Programación con Julia
-summary: Apuntes, ejercicios, exámenes y otros materiales.
+title: Composición de textos matemáticos con LaTeX
+summary: Apuntes, ejercicios y otros materiales.
 
 # View.
 #   1 = List
