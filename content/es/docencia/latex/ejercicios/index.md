@@ -1,6 +1,6 @@
 ---
 title: Ejercicios de $\LaTeX$
-summary: Ejercicios de resueltos.
+summary: Ejercicios resueltos
 linkTitle: 
 date: 
 lastmod:

@@ -19,82 +19,90 @@
   weight = 30
 
 [[main]]
+  identifier = "analisis"
+  parent = "docencia"
+  name = "Análisis"
+  url = "docencia/analisis/"
+  weight = 31
+
+
+[[main]]
   identifier = "calculo"
   parent = "docencia"
   name = "Cálculo"
   url = "docencia/calculo/"
-  weight = 31
+  weight = 32
 
 [[main]]
   identifier = "estadistica"
   parent = "docencia"
   name = "Estadística"
   url = "docencia/estadistica/"
-  weight = 32
-
-[[main]]
-  identifier = "julia"
-  parent = "docencia"
-  name = "Julia"
-  url = "docencia/julia/"
   weight = 33
 
-[[main]]
-  identifier = "latex"
-  parent = "docencia"
-  name = "LaTeX"
-  url = "docencia/latex/"
-  weight = 34
-
-[[main]]
-  identifier = "r"
-  parent = "docencia"
-  name = "R"
-  url = "docencia/r/"
-  weight = 35
-
-[[main]]
-  identifier = "python"
-  parent = "docencia"
-  name = "Python"
-  url = "docencia/python/"
-  weight = 36
-
-[[main]]
-  identifier = "spss"
-  parent = "docencia"
-  name = "SPSS"
-  url = "docencia/spss/"
-  weight = 37
-
-[[main]]
+  [[main]]
   identifier = "geogebra"
   parent = "docencia"
   name = "Geogebra"
   url = "docencia/geogebra/"
-  weight = 38
+  weight = 34
 
 [[main]]
   identifier = "git"
   parent = "docencia"
   name = "Git"
   url = "docencia/git/"
+  weight = 35
+
+[[main]]
+  identifier = "julia"
+  parent = "docencia"
+  name = "Julia"
+  url = "docencia/julia/"
+  weight = 36
+
+[[main]]
+  identifier = "latex"
+  parent = "docencia"
+  name = "LaTeX"
+  url = "docencia/latex/"
+  weight = 37
+
+[[main]]
+  identifier = "python"
+  parent = "docencia"
+  name = "Python"
+  url = "docencia/python/"
+  weight = 38
+
+[[main]]
+  identifier = "r"
+  parent = "docencia"
+  name = "R"
+  url = "docencia/r/"
   weight = 39
+
+[[main]]
+  identifier = "spss"
+  parent = "docencia"
+  name = "SPSS"
+  url = "docencia/spss/"
+  weight = 40
 
 [[main]]
   name = "Proyectos"
   url = "#projects"
-  weight = 40
+  weight = 50
 
 [[main]]
   name = "Publicaciones"
   url = "#featured"
-  weight = 50
+  weight = 60
 
 [[main]]
   name = "Contacto"
   url = "#contact"
-  weight = 60
+  weight = 70
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
