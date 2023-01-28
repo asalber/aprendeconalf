@@ -12,7 +12,7 @@ weight: 30
 <!-- [<button type="button" class="btn btn-outline-primary">{{< icon name="file-pdf" pack="fas" >}} Descargar</button>](manual-python.pdf)
 [<button type="button" class="btn btn-outline-primary">{{< icon name="desktop" pack="fas" >}}Presentación</button>](https://aprendeconalf.es/manual-python)  -->
 
-[<button type="button" class="btn btn-outline-primary">{{< icon name="book" pack="fas" >}}Prácticas</button>](https://aprendeconalf.es/practicas-analisis-julia/)
+[<button type="button" class="btn btn-outline-primary">{{< icon name="book" pack="fas" >}}Prácticas</button>](https://aprendeconalf.es/analisis-practicas-julia/)
 
 Este documento contiene prácticas de Análisis Matemático con el lenguaje Julia.
 
