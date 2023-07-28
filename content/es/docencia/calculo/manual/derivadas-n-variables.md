@@ -343,6 +343,7 @@ Y la función $\displaystyle f(x,y)=\frac{\operatorname{sen}(x^2+y^2)}{\sqrt{x^2
 {{% alert def %}}
 **Definición - Conjunto de nivel**. Dado un campo ecalar $f:\mathbb{R}^n\rightarrow \mathbb{R}$, se llama *conjunto de nivel* $c$ de $f$ al conjunto
 $$C_{f,c}=\{(x_1,\ldots,x_n): f(x_1,\ldots,x_n)=c\}.$$
+{{% /alert %}}
 
 **Ejemplo**. Si $f(x,y)=x^2+y^2$ y $P=(1,1)$, el conjunto de nivel de $f$ que incluye al punto $P$ es
 
@@ -359,6 +360,7 @@ que es la circunferencia del plano real centrada en el origen y de radio $\sqrt{
 $$f_i(x)=f(c_1,\ldots,c_{i-1},x,c_{i+1},\ldots,c_{n}),$$
 
 con $c_j$ $(j=1,\ldots, n,\ j\neq i)$ constantes.
+{{% /alert %}}
 
 **Ejemplo**. Si consideramos la función del área de un triángulo
 
@@ -414,6 +416,7 @@ $$\lim_{h\rightarrow 0} \frac{f(a_1,\ldots,a_{i-1},a_i+h,a_{i+1},\ldots,a_n)-f(a
 En tal caso, al valor del límite se le llama *derivada parcial* de $f$ en $a$ con respecto a la variable $x_i$, y se denota
 
 $$f'_{x_i}(a)=\frac{\partial f}{\partial x_i}(a).$$
+{{% /alert %}}
 
 La definición de derivada para funciones de una variable es un caso particular de esta definición para $n=1$.
 
@@ -451,6 +454,7 @@ Vector gradiente
 **Definición - Vector gradiente**. Dado un campo escalar $f(x_1,\ldots,x_n)$, se llama *gradiente* de $f$, y se escribe $\nabla f$, a la función que a cada punto $a=(a_1,\ldots,a_n)$ le asigna el vector cuyas coordenadas cartesianas son las derivadas parciales de $f$ en $a$,
 
 $$\nabla f(a)=\left(\frac{\partial f}{\partial x_1}(a),\ldots,\frac{\partial f}{\partial x_n}(a)\right).$$
+{{% /alert %}}
 
 Más adelante se mostrará que vector gradiente en un punto dado tiene la misma magnitud y dirección que la velocidad máxima de variación de la función en ese punto.
 
@@ -535,6 +539,7 @@ La tasa de variación instantánea de $f$ en un punto $P$ en la dirección de un
 $$f'_{\mathbf{u}}(P) = \lim_{h\rightarrow 0}\frac{f(P+h\mathbf{u})-f(P)}{h},$$
 
 cuando existe, se llama *derivada direccional* de $f$ en el punto $P$ en la dirección de $\mathbf{u}$.
+{{% /alert %}}
 
 Si se considera un vector unitario $\mathbf{u}$, la trayectoria que pasa por $P$, dirigida por $\mathbf{u}$, tiene ecuación
 
@@ -687,10 +692,12 @@ Derivadas parciales de segundo orden
 ------------------------------------
 
 Las derivadas parciales de una función son, a su vez, funciones de varias variables que muchas veces pueden volverse a derivar parcialmente con respecto a alguna de sus variables.
+
 {{% alert def %}}
 **Definición - Derivadas parciales de segundo orden**. Si una función $f(x_1,\ldots,x_n)$ tiene derivada parcial $$f'_{x_i}(x_1,\ldots,x_n)$$ con respecto a la variable $x_i$ en un conjunto $A$, entonces podemos derivar de nuevo parcialmente $f'_{x_i}$ con respecto a la variable $x_j$. Esta segunda derivada, cuando existe, se llama *derivada parcial de segundo orden* de $f$ con respecto a las variables $x_i$ y $x_j$, y se nota
 
 $$\frac{\partial ^2 f}{\partial x_j \partial x_i}= \frac{\partial}{\partial x_j}\left(\frac{\partial f}{\partial x_i}\right).$$
+{{% /alert %}}
 
 De forma análoga se definen las derivadas de orden superior.
 
@@ -738,6 +745,7 @@ $$\nabla^2f(a)=\left(
 \right).$$
 
 Al determinante de esta matriz se le llama *hessiano* de $f$ en $a$, y se nota $Hf(a)=\lvert \nabla^2f(a)\rvert$.
+{{% /alert %}}
 
 **Ejemplo**. Consideremos de nuevo la función de dos variables $f(x,y)=x^y$. Su matriz hessiana es
 
@@ -932,6 +940,7 @@ Del mismo modo se dice que un punto $P$ es un *mínimo relativo* de $f$ si exist
 $$f(P)\leq f(X)\ \forall X, |\vec{PX}|<\epsilon.$$
 
 A los máximos y mínimos de $f$ se les conoce como *extremos relativos* de $f$.
+{{% /alert %}}
 
 ### Anulación del gradiente en los extremos
 
