@@ -74,7 +74,7 @@ El siguiente vídeo muestra el proceso de instalación.
 
 Para instalar el software en plataformas Mac Os debe instalarse cada programa por separado con el siguiente orden:
 
-1. **Instalar R**. R puede descargarse desde la página [https://cran.r-project.org/](https://cran.r-project.org/bin/macosx/el-capitan/base/R-3.5.3.pkg).
+1. **Instalar R**. R puede descargarse desde la página [https://cran.r-project.org/](https://cran-archive.r-project.org/bin/macosx/base/R-3.5.3.pkg).
 Se recomienda instalar la versión 3.5.3 para MacOs.
 
 2. **Instalar RKWard**. RKWard puede descargarse desde la página <http://rkward.sourceforge.net>. 
