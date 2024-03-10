@@ -25,7 +25,6 @@
   url = "docencia/analisis/"
   weight = 31
 
-
 [[main]]
   identifier = "calculo"
   parent = "docencia"
@@ -76,18 +75,25 @@
   weight = 38
 
 [[main]]
+  identifier = "quarto"
+  parent = "docencia"
+  name = "Quarto"
+  url = "docencia/quarto/"
+  weight = 39
+
+[[main]]
   identifier = "r"
   parent = "docencia"
   name = "R"
   url = "docencia/r/"
-  weight = 39
+  weight = 40
 
 [[main]]
   identifier = "spss"
   parent = "docencia"
   name = "SPSS"
   url = "docencia/spss/"
-  weight = 40
+  weight = 41
 
 [[main]]
   name = "Proyectos"
