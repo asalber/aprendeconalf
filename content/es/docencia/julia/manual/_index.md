@@ -20,6 +20,6 @@ weight: 10
 
 [<button type="button" class="btn btn-outline-primary">{{< icon name="book" pack="fas" >}}Manual</button>](https://aprendeconalf.es/manual-julia/)
 
-[Julia](https://www.python.org/) es un moderno lenguaje de programación de propósito general pero con orientación al cálculo científico-técnico y el análisis de datos.
+[Julia](https://julialang.org/) es un moderno lenguaje de programación de propósito general pero con orientación al cálculo científico-técnico y el análisis de datos.
 
 

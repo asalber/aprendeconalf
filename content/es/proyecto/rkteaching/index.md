@@ -107,6 +107,19 @@ Para ello hay que introducir los siguientes comandos en la consola de R:
 
     {{< youtube SB1oER6HbEs >}}
 
+#### Instalación en MacOs mediante WMware Fusion
+
+Si el procedimiento anterior no funciona, es posible instalar una máquina virtual con RKward ya instalado mediante el software WMware Fusion. Para ello deben seguirse los siguientes pasos:
+
+1.  **Instalar WMware Fusion**. WMware Fusion es un software de virtualización que permite instalar sistemas operativos Windows o Linux en un Mac. [Descargar WMware Fusion](https://www.techspot.com/downloads/2755-vmware-fusion-mac.html) y seguir las instrucciones de instalación.
+
+2.  Descargar la máquina virtual con RKWard ya instalado. 
+   
+    - [Descargar máquina virtual con RKWard versión 0.8 y rkTeaching 1.4](https://ceu365-my.sharepoint.com/:u:/g/personal/asalber_ceu_es/EaRxOdvlm-pEo9ZemESsKgABH2LSM4IyWuhsOm2O4iVCRQ?e=RJtxER)
+    - [Descargar máquina virtual con RKWard versión 0.7 y rkTeaching 1.3](https://ceu365-my.sharepoint.com/:u:/g/personal/asalber_ceu_es/EcK0P2-es1pOl-3HtRYHn4sBswcpiil5q6QwVp01i0o0yA?e=fWtpe0)
+
+3.  Arrancar WMware Fusion y abrir la máquina virtual descargada. La máquina virtual arrancará con RKWard ya instalado y listo para su uso.
+
 ### Instalación en Linux
 
 Para instalar el software en plataformas Linux debe instalarse cada programa por separado con el siguiente orden:
@@ -118,7 +131,7 @@ Es necesario que la versión de R sea la 3.0 o superior.
     En sistemas Debian y Ubuntu, puede instalarse desde la línea de comandos con el comando:
 
     ```sh
-    sudo apt-get install rbase
+    sudo apt-get install r-base
     ```
 
 2.  **Instalar RKWard**. RKWard puede descargarse desde la página <https://rkward.kde.org/>. 
@@ -130,7 +143,7 @@ Debe seleccionarse la distribución correspondiente a Linux y seguir las instruc
     sudo apt-get install rkward
     ```
 
-    Es importante asegurarse de que la versión instalada es la 0.6.5 o superior.
+    Es importante asegurarse de que la versión instalada es la 0.7.2 o superior.
 
 3. **Instalar los paquetes de los que depende rkTeaching**. Para instalar rkTeaching primero hay que instalar los paquetes de R de los que depende. 
 Para ello, hay que ejecutar R en línea de comandos, o bien arrancar RKWard e ir a la solapa de la Consola de R (R console) e introducir los siguientes comandos:
@@ -191,7 +204,9 @@ Una vez instalado, al arrancar RKWard aparecerá un nuevo menú `Teaching` con l
     - ANOVA
     - Cálculo del tamaño muestral para la media
     - Cálculo del tamaño muestral para el test T
+    - Cálculo de la potencia de un test T
   - Varianzas
+    - Test para la varianza de una población
     - Test F de Fisher
     - Test de Levene
   - Proporciones
