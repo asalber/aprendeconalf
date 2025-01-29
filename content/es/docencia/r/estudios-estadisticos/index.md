@@ -3,6 +3,7 @@ title: Tipos de estudios estadísticos
 summary: Tipos de estudios estadísticos más habituales con ejemplos implementados en R.
 subtitle: Ejemplos implementados con R
 categories: [Estadística, R]
+weight: 40
 type: book
 ---
 
