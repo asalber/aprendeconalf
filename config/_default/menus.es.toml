@@ -26,74 +26,81 @@
   weight = 31
 
 [[main]]
+  identifier = "aprendizaje"
+  parent = "docencia"
+  name = "Aprendizaje Automático"
+  url = "docencia/aprendizaje-automatico/"
+  weight = 32
+
+[[main]]
   identifier = "calculo"
   parent = "docencia"
   name = "Cálculo"
   url = "docencia/calculo/"
-  weight = 32
+  weight = 33
 
 [[main]]
   identifier = "estadistica"
   parent = "docencia"
   name = "Estadística"
   url = "docencia/estadistica/"
-  weight = 33
+  weight = 34
 
   [[main]]
   identifier = "geogebra"
   parent = "docencia"
   name = "Geogebra"
   url = "docencia/geogebra/"
-  weight = 34
+  weight = 35
 
 [[main]]
   identifier = "git"
   parent = "docencia"
   name = "Git"
   url = "docencia/git/"
-  weight = 35
+  weight = 36
 
 [[main]]
   identifier = "julia"
   parent = "docencia"
   name = "Julia"
   url = "docencia/julia/"
-  weight = 36
+  weight = 37
 
 [[main]]
   identifier = "latex"
   parent = "docencia"
   name = "LaTeX"
   url = "docencia/latex/"
-  weight = 37
+  weight = 38
 
 [[main]]
   identifier = "python"
   parent = "docencia"
   name = "Python"
   url = "docencia/python/"
-  weight = 38
+  weight = 39
 
 [[main]]
   identifier = "quarto"
   parent = "docencia"
   name = "Quarto"
   url = "docencia/quarto/"
-  weight = 39
+  weight = 40
 
 [[main]]
   identifier = "r"
   parent = "docencia"
   name = "R"
   url = "docencia/r/"
-  weight = 40
+  weight = 41
 
 [[main]]
   identifier = "spss"
   parent = "docencia"
   name = "SPSS"
   url = "docencia/spss/"
-  weight = 41
+  weight = 42
 
 [[main]]
   name = "Proyectos"
