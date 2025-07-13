@@ -3,7 +3,7 @@ title: Prácticas de Aprendizaje Automático con Julia
 subtitle: Prácticas de Aprendizaje Automático con  ejercicios resueltos en Julia
 summary: Prácticas de Aprendizaje Automático con  ejercicios resueltos en Julia
 lastmod: 
-tags: [Prácticas]
+tags: [Prácticas, Julia]
 categories: [Aprendizaje Automático]
 type: book
 weight: 30
